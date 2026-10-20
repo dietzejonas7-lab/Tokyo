@@ -438,7 +438,6 @@ function chipKlick(ev) {
 
 function katUmschalten(id, an = !state.aktiv.has(id)) {
   an ? state.aktiv.add(id) : state.aktiv.delete(id);
-  an ? Klang.an() : Klang.aus();
   katGespeichert();
 }
 function katGespeichert() {
@@ -515,7 +514,6 @@ function katAuswahlVerbinden() {
       langGedrueckt = true;
       state.aktiv = new Set([kachel.dataset.kat]);
       katGespeichert();
-      Klang.datum();
       Effekte.nochmal(kachel, "bump");
       navigator.vibrate?.(20);
       toast(`Nur noch: ${kategorie(kachel.dataset.kat).icon} ${kategorie(kachel.dataset.kat).name}`);
@@ -529,7 +527,6 @@ function katAuswahlVerbinden() {
       const kats = state.kategorien.filter((k) => (k.gruppe || "erleben") === gruppe.dataset.gruppe);
       const alleAn = kats.every((k) => state.aktiv.has(k.id));
       kats.forEach((k) => (alleAn ? state.aktiv.delete(k.id) : state.aktiv.add(k.id)));
-      alleAn ? Klang.aus() : Klang.an();
       return katGespeichert();
     }
     const kachel = ev.target.closest(".kat-kachel");
@@ -537,8 +534,8 @@ function katAuswahlVerbinden() {
     katUmschalten(kachel.dataset.kat);
     Effekte.nochmal(kachel.querySelector(".kk-icon"), "huepf");
   });
-  $("#kat-alle").onclick = () => { state.aktiv = new Set(state.kategorien.map((k) => k.id)); katGespeichert(); Klang.an(); };
-  $("#kat-keine").onclick = () => { state.aktiv.clear(); katGespeichert(); Klang.aus(); };
+  $("#kat-alle").onclick = () => { state.aktiv = new Set(state.kategorien.map((k) => k.id)); katGespeichert(); };
+  $("#kat-keine").onclick = () => { state.aktiv.clear(); katGespeichert(); };
   $("#kat-live").onclick = () => {
     // Kategorien, in denen es zeitlich begrenzte Einträge gibt
     state.aktiv = new Set(state.eintraege.filter((e) => e.zeitraum).map((e) => e.kategorie));
@@ -643,7 +640,7 @@ function sheetSchliessen() {
 }
 
 function besuchtUmschalten(e) {
-  if (state.besucht.has(e.id)) { state.besucht.delete(e.id); Klang.aus(); }
+  if (state.besucht.has(e.id)) state.besucht.delete(e.id);
   else {
     state.besucht.add(e.id);
     state.frischGesammelt = e.id;
@@ -733,7 +730,6 @@ function sheetWischen() {
 let panelTab = "heute";
 
 function panelOeffnen(tab = panelTab) {
-  if (!$("#panel").classList.contains("open")) Klang.blatt();
   panelTab = tab;
   panelZeichnen();
   $("#panel").classList.add("open");
@@ -842,7 +838,7 @@ function panelZeichnen(suchbegriff = "") {
     $("#panel-title").textContent = "Einstellungen & Hilfe";
     html += `<button class="einstellung ${Klang.aktiv ? "on" : ""}" id="klang-schalter" aria-pressed="${Klang.aktiv}">
       <span class="es-icon">${Klang.aktiv ? "🔊" : "🔇"}</span>
-      <span class="es-text"><b>Klänge</b><small>Koto, Windspiel, Tempelglocke & Hanko-Stempel</small></span>
+      <span class="es-text"><b>Klänge</b><small>Leises Klicken & kurze Töne</small></span>
       <span class="schalter" aria-hidden="true"></span>
     </button>
     <h3 class="section-title">So funktioniert's</h3>
@@ -938,7 +934,6 @@ function kalenderZeichnen() {
 }
 
 function datumSetzen(iso) {
-  if (iso !== state.datum) Klang.datum();
   state.datum = iso;
   datumAnzeigen();
   kalenderZeichnen();
@@ -1084,7 +1079,7 @@ function ereignisseVerbinden() {
   $("#btn-theme").onclick = () => {
     const neu = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     speichern(SPEICHER.theme, neu);
-    neu === "dark" ? Klang.tempelglocke() : Klang.furin();
+    Klang.modus(neu === "dark");
     Effekte.themaWechsel($("#btn-theme"), () => themeSetzen(neu));
   };
   $("#panel").addEventListener("click", panelKlick);
