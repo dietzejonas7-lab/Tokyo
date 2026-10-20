@@ -17,8 +17,8 @@
     "id": "mode-laforet",
     "name": "Laforet Harajuku",
     "nameJa": "ラフォーレ原宿",
-    "lat": 35.6688,
-    "lng": 139.7055,
+    "lat": 35.66891,
+    "lng": 139.70555,
     "beschreibung": "Modekaufhaus und Zentrum der Harajuku-Subkultur. Besonders das Untergeschoss ist bekannt für Gothic-Lolita- und Alternative-Labels (z. B. Atelier Pierrot). Läden wechseln – einfach durchstöbern. Tipp: Second-Hand-Goth & Lolita gibt es bei „Closet Child“.",
     "zeiten": "ca. 11:00–20:00",
     "station": "Meiji-jingumae / Harajuku",
@@ -26,7 +26,8 @@
       "Gothic Lolita",
       "Designer",
       "Kaufhaus"
-    ]
+    ],
+    "adresse": "東京都渋谷区神宮前1-11-6"
   },
   {
     "id": "mode-takeshita",
@@ -46,15 +47,17 @@
     "id": "mode-dokidoki",
     "name": "6%DOKIDOKI",
     "nameJa": "6%DOKIDOKI",
-    "lat": 35.6705,
-    "lng": 139.7062,
-    "beschreibung": "Neon-buntes Kawaii-Paradies von Künstler Sebastian Masuda – Accessoires und Kleidung im „Decora“-Stil. Lage ungefähr – vor Ort kurz suchen.",
+    "lat": 35.66861,
+    "lng": 139.70648,
+    "beschreibung": "Neon-buntes Kawaii-Paradies von Künstler Sebastian Masuda – Accessoires und Kleidung im „Decora“-Stil.",
     "station": "Meiji-jingumae / Harajuku",
     "tags": [
       "Kawaii",
       "Decora",
       "Accessoires"
-    ]
+    ],
+    "adresse": "東京都渋谷区神宮前4-28-16",
+    "zeiten": "13:00–19:00 (Sa/So/Feiertag ab 12:00)"
   },
   {
     "id": "mode-ameyoko-sukajan",
@@ -74,8 +77,8 @@
     "id": "mode-uniqlo-ginza",
     "name": "UNIQLO Ginza – UT-Abteilung",
     "nameJa": "ユニクロ 銀座店",
-    "lat": 35.6703,
-    "lng": 139.7638,
+    "lat": 35.67009,
+    "lng": 139.76363,
     "beschreibung": "12-stöckiger Flagship-Store mit großer UT-Abteilung: T-Shirts mit Anime-, Manga- und Game-Motiven (One Piece, Pokémon, Jujutsu Kaisen …) – die Kollektionen wechseln ständig, oft limitiert. Günstig und mit guter Größenauswahl.",
     "zeiten": "ca. 11:00–21:00",
     "station": "Ginza",
@@ -83,7 +86,8 @@
       "Anime-Shirts",
       "Limitiert",
       "günstig"
-    ]
+    ],
+    "adresse": "東京都中央区銀座6-9-5"
   },
   {
     "id": "mode-kapital",
@@ -103,9 +107,9 @@
     "id": "mode-onitsuka",
     "name": "Onitsuka Tiger Omotesandō",
     "nameJa": "オニツカタイガー 表参道",
-    "lat": 35.6676,
-    "lng": 139.709,
-    "beschreibung": "Japanische Kult-Sneaker (z. B. „Mexico 66“) – in Japan oft mit Farben, die es in Europa nicht gibt. Lage ungefähr.",
+    "lat": 35.66828,
+    "lng": 139.7079,
+    "beschreibung": "Japanische Kult-Sneaker (z. B. „Mexico 66“) – in Japan oft mit Farben, die es in Europa nicht gibt. Direkt daneben der Spezial-Laden „NIPPON MADE“ mit in Japan handgefertigten Modellen.",
     "station": "Meiji-jingumae / Omotesando",
     "tags": [
       "Schuhe",
@@ -244,6 +248,265 @@
       "Pop-up",
       "Manga-Merch",
       "limitiert"
+    ]
+  },
+  {
+    "id": "popup-jjk",
+    "name": "Pop-up: Jujutsu Kaisen PLAZA",
+    "nameJa": "呪術廻戦PLAZA in 渋谷ロフト",
+    "lat": 35.662,
+    "lng": 139.6987,
+    "beschreibung": "Jujutsu-Kaisen-Merch auf der Kultur-Etage (6. Stock) im Shibuya LOFT.",
+    "zeitraum": [
+      {
+        "von": "2026-10-23",
+        "bis": "2026-11-10"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Jujutsu Kaisen"
+    ]
+  },
+  {
+    "id": "popup-yuyu",
+    "name": "Pop-up: Yu Yu Hakusho",
+    "nameJa": "TVアニメ『幽☆遊☆白書』POP UP SHOP（eeo Store 池袋本店）",
+    "lat": 35.7302,
+    "lng": 139.7149,
+    "beschreibung": "Yu-Yu-Hakusho-Merch im eeo Store Ikebukuro (Alpha-Gebäude, EG). Lage ungefähr.",
+    "zeitraum": [
+      {
+        "von": "2026-10-31",
+        "bis": "2026-11-12"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ikebukuro",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Yu Yu Hakusho",
+      "Retro-Anime"
+    ]
+  },
+  {
+    "id": "popup-haikyu",
+    "name": "Pop-up: Haikyū!! „Wakuwaku-Schulfest“",
+    "nameJa": "ハイキュー!! わくわく文化祭 POP UP SHOP",
+    "lat": 35.6906,
+    "lng": 139.7058,
+    "beschreibung": "Haikyū!!-Pop-up von Production I.G im 6. Stock des Shinjuku Marui Annex.",
+    "zeitraum": [
+      {
+        "von": "2026-10-23",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shinjuku-sanchome",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Haikyuu"
+    ]
+  },
+  {
+    "id": "popup-noragami",
+    "name": "Pop-up: Noragami",
+    "nameJa": "『ノラガミ』POP UP SHOP（紀伊國屋書店新宿本店）",
+    "lat": 35.6923,
+    "lng": 139.7025,
+    "beschreibung": "Noragami-Pop-up im Eingangsbereich der großen Buchhandlung Kinokuniya Shinjuku.",
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-12-06"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shinjuku-sanchome",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Noragami"
+    ]
+  },
+  {
+    "id": "popup-abyss",
+    "name": "Ausstellung: Made in Abyss",
+    "nameJa": "マンガ メイドインアビス展",
+    "lat": 35.72887,
+    "lng": 139.71163,
+    "beschreibung": "Manga-Ausstellung zu „Made in Abyss“ mit Merch im Seibu-Kaufhaus Ikebukuro (Buchgebäude).",
+    "zeitraum": [
+      {
+        "von": "2026-10-24",
+        "bis": "2026-11-29"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ikebukuro",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Made in Abyss",
+      "Ausstellung"
+    ]
+  },
+  {
+    "id": "popup-chiikawa",
+    "name": "Chiikawa Park – Weihnachten",
+    "nameJa": "ちいかわパーク クリスマス",
+    "lat": 35.73005,
+    "lng": 139.71728,
+    "beschreibung": "Weihnachts-Edition des Chiikawa-Parks in der Sunshine City (Annex) mit Merch und Fotospots.",
+    "zeitraum": [
+      {
+        "von": "2026-11-20",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Higashi-Ikebukuro",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Chiikawa",
+      "kawaii"
+    ]
+  },
+  {
+    "id": "popup-sakamoto",
+    "name": "Pop-up-Straße: SAKAMOTO DAYS in Asakusa",
+    "nameJa": "TVアニメ『SAKAMOTO DAYS』POP UP STREET",
+    "lat": 35.7135,
+    "lng": 139.7935,
+    "beschreibung": "Nur 1 Tag: SAKAMOTO-DAYS-Aktion in den Einkaufsstraßen Okuyama-Omairi-machi und Asakusa-Nishi-Sandō beim Sensō-ji.",
+    "zeitraum": [
+      {
+        "von": "2026-11-06",
+        "bis": "2026-11-06"
+      }
+    ],
+    "geprueft": true,
+    "station": "Asakusa",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Sakamoto Days"
+    ]
+  },
+  {
+    "id": "popup-blacktorch",
+    "name": "Pop-up: BLACK TORCH",
+    "nameJa": "TVアニメ「BLACK TORCH」POP UP SHOP",
+    "lat": 35.66,
+    "lng": 139.7006,
+    "beschreibung": "Pop-up im AMNIBUS STORE (MAGNET by SHIBUYA109, 5. Stock).",
+    "zeitraum": [
+      {
+        "von": "2026-10-23",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Black Torch"
+    ]
+  },
+  {
+    "id": "popup-needy",
+    "name": "Pop-up: NEEDY GIRL OVERDOSE × TRAVAS TOKYO",
+    "nameJa": "TRAVAS TOKYO×アニメ「NEEDY GIRL OVERDOSE」POP UP SHOP",
+    "lat": 35.6612,
+    "lng": 139.7011,
+    "beschreibung": "Kollaboration der Anime-Serie mit der Harajuku-Modemarke TRAVAS TOKYO – auffällige Kleidung im Anime-Stil! (Shibuya MODI, 3. Stock)",
+    "zeitraum": [
+      {
+        "von": "2026-10-23",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Mode",
+      "Kollaboration"
+    ]
+  },
+  {
+    "id": "popup-tokimemo",
+    "name": "Tokimeki Memorial Girl's Side × Sunshine 60",
+    "nameJa": "てんぼうパーク×ときめきメモリアル Girl's Side",
+    "lat": 35.7295,
+    "lng": 139.7182,
+    "beschreibung": "Kollaboration auf der Aussichtsplattform Sunshine 60 mit Spezial-Merch.",
+    "zeitraum": [
+      {
+        "von": "2026-10-09",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Higashi-Ikebukuro",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Games",
+      "Aussicht"
+    ]
+  },
+  {
+    "id": "popup-kitty",
+    "name": "Hello Kitty's Lounge",
+    "nameJa": "Hello Kitty's Lounge",
+    "lat": 35.6672,
+    "lng": 139.7088,
+    "beschreibung": "Hello-Kitty-Pop-up im Untergeschoss (B3) der Omotesandō Hills.",
+    "zeitraum": [
+      {
+        "von": "2026-10-28",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Omotesando",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Sanrio",
+      "kawaii"
+    ]
+  },
+  {
+    "id": "cafe-keroro",
+    "name": "Kollabo-Café: Keroro",
+    "nameJa": "ケロロ軍曹コラボカフェ",
+    "lat": 35.73083,
+    "lng": 139.7124,
+    "beschreibung": "Keroro-Kollabo-Café mit Motiv-Essen und exklusivem Merch im Ikebukuro PARCO (8. Stock).",
+    "zeitraum": [
+      {
+        "von": "2026-10-09",
+        "bis": "2026-11-16"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ikebukuro",
+    "tags": [
+      "Pop-up",
+      "limitiert",
+      "Kollabo-Café",
+      "Keroro"
     ]
   }
 ]

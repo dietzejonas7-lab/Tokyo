@@ -303,7 +303,7 @@
     "nameJa": "湯島天神 菊まつり",
     "lat": 35.7077,
     "lng": 139.7681,
-    "beschreibung": "Hunderte Chrysanthemen und Figuren aus Blumen im Schreinbezirk. Termine 2026 nicht bestätigt (meist fast den ganzen November).",
+    "beschreibung": "48. Bunkyō-Chrysanthemenfest: Hunderte Chrysanthemen und Figuren aus Blumen im Schreinbezirk (ab 1.11.; Ende laut Vorjahren um den 23.11.).",
     "zeiten": "tagsüber",
     "zeitraum": [
       {
@@ -316,6 +316,426 @@
     "tags": [
       "Blumen",
       "Schrein"
+    ]
+  },
+  {
+    "id": "ev-tori-suga",
+    "name": "Tori-no-Ichi am Suga-Jinja (Yotsuya)",
+    "nameJa": "四谷 須賀神社 酉の市",
+    "lat": 35.6862,
+    "lng": 139.7245,
+    "beschreibung": "Kleines Tori-no-Ichi am Suga-Jinja – berühmt durch die Treppe aus dem Anime-Film „Your Name.“ (Kimi no Na wa), die direkt am Schrein liegt. Ideal für ein Foto am Abend.",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": true,
+    "station": "Yotsuya / Yotsuya-sanchome",
+    "tags": [
+      "Tori-no-Ichi",
+      "Anime-Drehort",
+      "Schrein"
+    ]
+  },
+  {
+    "id": "ev-tori-meguro",
+    "name": "Tori-no-Ichi am Ōtori-Jinja (Meguro)",
+    "nameJa": "目黒 大鳥神社 酉の市",
+    "lat": 35.63268,
+    "lng": 139.70825,
+    "beschreibung": "Tori-no-Ichi mit Kumade-Ständen am ältesten Schrein im Bezirk Meguro – nur ein paar Minuten vom Bahnhof Meguro.",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": true,
+    "station": "Meguro",
+    "tags": [
+      "Tori-no-Ichi",
+      "Schrein"
+    ]
+  },
+  {
+    "id": "ev-tori-juban",
+    "name": "Tori-no-Ichi am Jūban-Inari (Azabu-Jūban)",
+    "nameJa": "麻布十番 十番稲荷神社 酉の市",
+    "lat": 35.65702,
+    "lng": 139.73509,
+    "beschreibung": "Kleines Tori-no-Ichi im charmanten Viertel Azabu-Jūban – gut mit einem Abendbummel kombinierbar.",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": true,
+    "station": "Azabu-juban",
+    "tags": [
+      "Tori-no-Ichi",
+      "Schrein"
+    ]
+  },
+  {
+    "id": "ev-tori-hanabata",
+    "name": "Tori-no-Ichi am Ōtori-Jinja Hanabata",
+    "nameJa": "花畑 大鷲神社 酉の市",
+    "lat": 35.80926,
+    "lng": 139.82021,
+    "beschreibung": "Gilt als Ursprung aller Tori-no-Ichi-Märkte – etwas abgelegen im Norden (Adachi), dafür sehr traditionell.",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": true,
+    "station": "Rokucho",
+    "tags": [
+      "Tori-no-Ichi",
+      "Schrein",
+      "Ursprung"
+    ]
+  },
+  {
+    "id": "ev-ikebukuro-cosplay",
+    "name": "Ikebukuro Halloween Cosplay Fest",
+    "nameJa": "池袋ハロウィンコスプレフェス2026",
+    "lat": 35.73153,
+    "lng": 139.71501,
+    "beschreibung": "Eines der größten Cosplay-Events Japans: Tausende Cosplayer in den Straßen rund um Ikebukuro-Ost und Naka-Ikebukuro-Park. Zuschauen ist kostenlos.",
+    "zeitraum": [
+      {
+        "von": "2026-10-30",
+        "bis": "2026-11-01"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ikebukuro",
+    "tags": [
+      "Cosplay",
+      "Anime"
+    ]
+  },
+  {
+    "id": "ev-agf",
+    "name": "Animate Girls Festival 2026 (AGF)",
+    "nameJa": "アニメイトガールズフェスティバル2026",
+    "lat": 35.72885,
+    "lng": 139.71955,
+    "beschreibung": "Große Anime-Messe rund um die Sunshine City mit Ständen vieler Anime- und Game-Firmen, Merch und Exklusivartikeln (Ticket nötig).",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Higashi-Ikebukuro",
+    "tags": [
+      "Anime",
+      "Messe",
+      "Merch"
+    ],
+    "preis": "Ticket nötig"
+  },
+  {
+    "id": "ev-suginami-anime",
+    "name": "Anime- & Manga-Fest Nakano × Suginami × Toshima",
+    "nameJa": "中野×杉並×豊島アニメ・マンガフェス2026",
+    "lat": 35.71046,
+    "lng": 139.60772,
+    "beschreibung": "Anime-Fest am Suginami Animation Museum in Ogikubo (Eintritt ins Museum frei).",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ogikubo",
+    "tags": [
+      "Anime",
+      "Museum"
+    ]
+  },
+  {
+    "id": "ev-torasan",
+    "name": "Tora-san-Gipfel in Shibamata",
+    "nameJa": "寅さんサミット2026",
+    "lat": 35.75845,
+    "lng": 139.87877,
+    "beschreibung": "Fest rund um die Kultfilmfigur Tora-san auf der nostalgischen Tempelstraße zum Shibamata Taishakuten – mit Traditionshandwerk-Markt.",
+    "zeitraum": [
+      {
+        "von": "2026-10-31",
+        "bis": "2026-11-01"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibamata",
+    "tags": [
+      "Tradition",
+      "Showa-Flair"
+    ]
+  },
+  {
+    "id": "ev-yamamototei",
+    "name": "Yamamoto-tei – Herbstabend-Light-up",
+    "nameJa": "山本亭「秋の夜のライトアップと夕餉」",
+    "lat": 35.75805,
+    "lng": 139.88002,
+    "beschreibung": "Ein traditionelles japanisch-westliches Herrenhaus mit Garten in Shibamata wird abends beleuchtet (mit Abendessen-Angebot).",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-28"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibamata",
+    "tags": [
+      "Tradition",
+      "Garten",
+      "Light-up"
+    ]
+  },
+  {
+    "id": "ev-goldengai",
+    "name": "Golden-Gai-Herbstfest",
+    "nameJa": "新宿ゴールデン街 秋祭り 2026",
+    "lat": 35.69399,
+    "lng": 139.7047,
+    "beschreibung": "Herbstfest in den winzigen Bar-Gassen der Golden Gai in Shinjuku.",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-01"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shinjuku-sanchome",
+    "tags": [
+      "Nachtleben",
+      "Fest"
+    ]
+  },
+  {
+    "id": "ev-takao",
+    "name": "Takao-san Herbstlaubfest",
+    "nameJa": "2026年 高尾山もみじまつり",
+    "lat": 35.63229,
+    "lng": 139.26998,
+    "beschreibung": "Herbstlaub-Fest am beliebtesten Wanderberg Tokios (ca. 1 Std. ab Shinjuku) – mit Bühnen und Ständen am Fuß des Berges. Am Gipfel liegt der Tempel Yakuō-in (Goshuin!).",
+    "zeitraum": [
+      {
+        "von": "2026-10-24",
+        "bis": "2026-12-13"
+      }
+    ],
+    "geprueft": true,
+    "station": "Takaosanguchi",
+    "tags": [
+      "Koyo",
+      "Wandern",
+      "Ausflug"
+    ]
+  },
+  {
+    "id": "ev-hachioji-icho",
+    "name": "Hachiōji Ginkgo-Fest",
+    "nameJa": "第47回 八王子いちょう祭り",
+    "lat": 35.66146,
+    "lng": 139.32004,
+    "beschreibung": "Fest entlang der langen goldenen Ginkgo-Allee am alten Kōshū-Kaidō in Hachiōji.",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-11-22"
+      }
+    ],
+    "geprueft": true,
+    "station": "Nishi-Hachioji",
+    "tags": [
+      "Ginkgo",
+      "Koyo",
+      "Ausflug"
+    ]
+  },
+  {
+    "id": "ev-furukawa",
+    "name": "Kyū-Furukawa-Garten – Herbstlaub & Rosen",
+    "nameJa": "旧古河庭園「紅葉とバラ、和と洋の秋」",
+    "lat": 35.74245,
+    "lng": 139.74624,
+    "beschreibung": "Japanischer Garten in Herbstfarben plus Herbstrosen vor der westlichen Villa – Ost trifft West.",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-12-06"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kami-Nakazato",
+    "tags": [
+      "Garten",
+      "Koyo",
+      "Rosen"
+    ]
+  },
+  {
+    "id": "ev-washu",
+    "name": "Wa-shu-Fest (japanischer Sake) in Nakameguro",
+    "nameJa": "第32回 和酒フェス in 中目黒",
+    "lat": 35.6438,
+    "lng": 139.6987,
+    "beschreibung": "Sake-, Shōchū- und Umeshu-Probieren unter freiem Himmel in Nakameguro.",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Naka-Meguro",
+    "tags": [
+      "Sake",
+      "Essen & Trinken"
+    ]
+  },
+  {
+    "id": "ev-kakuuchi",
+    "name": "Sakaya-Kakuuchi-Fest im Ueno-Park",
+    "nameJa": "第13回 酒屋角打ちフェス",
+    "lat": 35.7155,
+    "lng": 139.7735,
+    "beschreibung": "Getränkehändler aus ganz Japan schenken im Ueno-Park aus – Sake probieren wie in einer traditionellen Kakuuchi-Ecke.",
+    "zeitraum": [
+      {
+        "von": "2026-11-06",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ueno",
+    "tags": [
+      "Sake",
+      "Essen & Trinken"
+    ]
+  },
+  {
+    "id": "ev-shoujo-manga",
+    "name": "Ausstellung: Shōjo-Manga Infinity",
+    "nameJa": "少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展",
+    "lat": 35.66534,
+    "lng": 139.72644,
+    "beschreibung": "Große Ausstellung zu drei Legenden des Shōjo-Manga im National Art Center Tokyo.",
+    "zeitraum": [
+      {
+        "von": "2026-10-28",
+        "bis": "2027-02-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Nogizaka",
+    "tags": [
+      "Manga",
+      "Ausstellung"
+    ]
+  },
+  {
+    "id": "ev-xmas-tower",
+    "name": "Tokyo Tower Christmas Market",
+    "nameJa": "TOKYO TOWER Christmas Market 2026",
+    "lat": 35.65845,
+    "lng": 139.74554,
+    "beschreibung": "Weihnachtsmarkt direkt vor dem Tokyo Tower – abends mit beleuchtetem Turm.",
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Akabanebashi",
+    "tags": [
+      "Weihnachtsmarkt"
+    ]
+  },
+  {
+    "id": "ev-xmas-toyosu",
+    "name": "Tokyo Christmas Market in Shin-Toyosu",
+    "nameJa": "東京クリスマスマーケット2026 in 新豊洲",
+    "lat": 35.64852,
+    "lng": 139.78961,
+    "beschreibung": "Einer der größten Weihnachtsmärkte Tokios mit deutscher Weihnachtspyramide und Glühwein.",
+    "zeitraum": [
+      {
+        "von": "2026-11-20",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shin-Toyosu",
+    "tags": [
+      "Weihnachtsmarkt"
+    ]
+  },
+  {
+    "id": "ev-xmas-ueno",
+    "name": "Tokyo Christmas Advent (Ueno-Park)",
+    "nameJa": "東京クリスマスアドベント",
+    "lat": 35.71187,
+    "lng": 139.77086,
+    "beschreibung": "Weihnachtsmarkt und Lichter am Shinobazu-Teich im Ueno-Park.",
+    "zeitraum": [
+      {
+        "von": "2026-11-06",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ueno",
+    "tags": [
+      "Weihnachtsmarkt"
+    ]
+  },
+  {
+    "id": "ev-xmas-azabudai",
+    "name": "Azabudai Hills Christmas Market",
+    "nameJa": "麻布台ヒルズ クリスマスマーケット 2026",
+    "lat": 35.66147,
+    "lng": 139.74083,
+    "beschreibung": "Weihnachtsmarkt am Hauptplatz der Azabudai Hills – direkt neben teamLab Borderless.",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kamiyacho",
+    "tags": [
+      "Weihnachtsmarkt"
     ]
   }
 ]

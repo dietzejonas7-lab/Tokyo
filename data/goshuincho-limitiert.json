@@ -3,24 +3,357 @@
     "id": "gc-tori-no-ichi",
     "name": "Tori-no-Ichi Sonder-Goshuin (Ōtori-Jinja)",
     "nameJa": "酉の市 限定御朱印",
-    "lat": 35.7238, "lng": 139.7919,
-    "beschreibung": "An den Tori-no-Ichi-Tagen bieten Ōtori-Jinja und der Nachbartempel Chōkoku-ji oft besondere Goshuin an. Ob es 2026 ein eigenes Goshuincho gibt, ist noch nicht bekannt – vorab auf dem Instagram/X-Account des Schreins nachsehen.",
+    "lat": 35.7238,
+    "lng": 139.7919,
+    "beschreibung": "An den Tori-no-Ichi-Tagen gibt es am Ōtori-Jinja (und am Nachbartempel Chōkoku-ji) besondere Goshuin – an diesen Tagen ist der Schalter sogar rund um die Uhr geöffnet. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
     "zeitraum": [
-      { "von": "2026-11-07", "bis": "2026-11-07" },
-      { "von": "2026-11-19", "bis": "2026-11-19" }
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
     ],
     "geprueft": false,
     "station": "Iriya",
-    "tags": ["Sonder-Goshuin", "Fest"]
+    "tags": [
+      "Sonder-Goshuin",
+      "Fest"
+    ]
   },
   {
     "id": "gc-kanda-myojin",
     "name": "Kanda Myōjin – wechselnde Goshuincho",
     "nameJa": "神田明神 御朱印帳",
-    "lat": 35.7020, "lng": 139.7679,
+    "lat": 35.702,
+    "lng": 139.7679,
     "beschreibung": "Kanda Myōjin verkauft regelmäßig saisonale und Anime-Kollaborations-Goshuincho. Was im November 2026 erhältlich ist, steht noch nicht fest – vor Ort am Schalter fragen.",
     "geprueft": false,
     "station": "Ochanomizu / Akihabara",
-    "tags": ["Kollaboration", "Anime"]
+    "tags": [
+      "Kollaboration",
+      "Anime"
+    ]
+  },
+  {
+    "id": "gc-chokokuji",
+    "name": "Chōkoku-ji – Tori-no-Ichi-Goshuin",
+    "nameJa": "長國寺 酉の市限定御朱印",
+    "lat": 35.72301,
+    "lng": 139.79202,
+    "beschreibung": "Der „Tori-no-Ichi-Tempel“ direkt neben dem Ōtori-Jinja vergibt an den Markttagen ein eigenes Sonder-Goshuin. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": false,
+    "station": "Iriya",
+    "tags": [
+      "Tori-no-Ichi",
+      "Tempel"
+    ]
+  },
+  {
+    "id": "gc-tomioka",
+    "name": "Tomioka Hachimangū – Tori-no-Ichi-Goshuin",
+    "nameJa": "富岡八幡宮 酉の市限定御朱印",
+    "lat": 35.67162,
+    "lng": 139.79975,
+    "beschreibung": "Einer der „Tokio Zehn Schreine“ – an den Tori-no-Ichi-Tagen mit Sonder-Goshuin. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": false,
+    "station": "Monzen-nakacho",
+    "tags": [
+      "Tori-no-Ichi",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "gc-namiyoke",
+    "name": "Namiyoke-Jinja (Tsukiji) – Tori-no-Ichi-Goshuin",
+    "nameJa": "波除神社 酉の市限定御朱印",
+    "lat": 35.66351,
+    "lng": 139.77159,
+    "beschreibung": "Schrein am alten Fischmarkt Tsukiji mit riesigen Löwenkopf-Masken; hat auch ein eigenes Goshuincho. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": false,
+    "station": "Tsukiji / Tsukiji-shijo",
+    "tags": [
+      "Tori-no-Ichi",
+      "Tsukiji"
+    ]
+  },
+  {
+    "id": "gc-sugamo-otori",
+    "name": "Sugamo Ōtori-Jinja – Tori-no-Ichi-Goshuin",
+    "nameJa": "巣鴨大鳥神社 酉の市限定御朱印",
+    "lat": 35.73011,
+    "lng": 139.74006,
+    "beschreibung": "Kleiner Ōtori-Schrein nahe Sugamo mit Sonder-Goshuin an den Markttagen. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": false,
+    "station": "Sugamo",
+    "tags": [
+      "Tori-no-Ichi"
+    ]
+  },
+  {
+    "id": "gc-matsushima",
+    "name": "Matsushima-Jinja (Ningyōchō) – Tori-no-Ichi-Goshuin",
+    "nameJa": "松島神社 酉の市限定御朱印",
+    "lat": 35.68465,
+    "lng": 139.78544,
+    "beschreibung": "„Ōtori-sama von Nihonbashi“ – mit Sonder-Goshuin an den Markttagen. Teil der Nihonbashi-Glücksgötter-Route. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": false,
+    "station": "Ningyocho",
+    "tags": [
+      "Tori-no-Ichi",
+      "Nihonbashi"
+    ]
+  },
+  {
+    "id": "gc-azabu-hikawa",
+    "name": "Azabu-Hikawa-Jinja – Niiname-sai-Goshuin",
+    "nameJa": "麻布氷川神社 新嘗祭限定御朱印",
+    "lat": 35.65289,
+    "lng": 139.73106,
+    "beschreibung": "Vorbild für den Hikawa-Schrein von Rei Hino aus „Sailor Moon“! Zum Erntedankfest Niiname-sai gibt es ein Sonder-Goshuin. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": false,
+    "station": "Azabu-juban",
+    "tags": [
+      "Niiname-sai",
+      "Sailor Moon",
+      "Anime-Drehort"
+    ]
+  },
+  {
+    "id": "gc-akasaka-hikawa",
+    "name": "Akasaka Hikawa-Jinja – Niiname-sai & Monats-Goshuin",
+    "nameJa": "赤坂氷川神社 新嘗祭限定御朱印",
+    "lat": 35.66811,
+    "lng": 139.73583,
+    "beschreibung": "Monatlich wechselnde Goshuin auf besonderem Washi (ab dem 1., in begrenzter Zahl) und ein Sonder-Goshuin zum Niiname-sai. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-30"
+      }
+    ],
+    "geprueft": false,
+    "station": "Akasaka",
+    "tags": [
+      "Niiname-sai",
+      "Monats-Goshuin",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "gc-asakusa-jinja",
+    "name": "Asakusa-Jinja – Niiname-sai-Goshuin",
+    "nameJa": "浅草神社 新嘗祭限定御朱印",
+    "lat": 35.71481,
+    "lng": 139.7975,
+    "beschreibung": "Der Schrein neben dem Sensō-ji vergibt zum Niiname-sai ein Sonder-Goshuin. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-23",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": false,
+    "station": "Asakusa",
+    "tags": [
+      "Niiname-sai"
+    ]
+  },
+  {
+    "id": "gc-takagi",
+    "name": "Takagi-Jinja (Musubi-Schrein) – Niiname-sai-Goshuin",
+    "nameJa": "高木神社 新嘗祭限定御朱印",
+    "lat": 35.71476,
+    "lng": 139.81519,
+    "beschreibung": "Niedlicher „Onigiri-/Musubi“-Schrein nahe Skytree mit vielen verspielten Goshuin, zum Niiname-sai ein Sonder-Motiv. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": false,
+    "station": "Hikifune / Oshiage",
+    "tags": [
+      "Niiname-sai",
+      "kawaii"
+    ]
+  },
+  {
+    "id": "gc-yushima-kiku",
+    "name": "Yushima Tenmangū – Chrysanthemen-Goshuin",
+    "nameJa": "湯島天満宮 菊まつり限定御朱印",
+    "lat": 35.70769,
+    "lng": 139.76805,
+    "beschreibung": "Zum Bunkyō-Chrysanthemenfest gibt es ein Sonder-Goshuin mit Chrysanthemen-Motiv. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": false,
+    "station": "Yushima",
+    "tags": [
+      "Chrysanthemen"
+    ]
+  },
+  {
+    "id": "gc-kameido-kiku",
+    "name": "Kameido Tenjin – Chrysanthemen-Goshuin",
+    "nameJa": "亀戸天神社 菊まつり限定御朱印",
+    "lat": 35.70262,
+    "lng": 139.82073,
+    "beschreibung": "Zum Chrysanthemen-Fest (24.10.–21.11.2026) gibt es ein Sonder-Goshuin – mit Skytree-Blick über die Trommelbrücke. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-10-24",
+        "bis": "2026-11-21"
+      }
+    ],
+    "geprueft": false,
+    "station": "Kameido",
+    "tags": [
+      "Chrysanthemen",
+      "Skytree-Blick"
+    ]
+  },
+  {
+    "id": "gc-sarue",
+    "name": "Sarue-Jinja – „Kōyō-Mairi“ Herbstlaub-Goshuin",
+    "nameJa": "猿江神社 紅葉参り限定御朱印",
+    "lat": 35.6857,
+    "lng": 139.81423,
+    "beschreibung": "Herbstlaub-Sonder-Goshuin den ganzen November. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-30"
+      }
+    ],
+    "geprueft": false,
+    "station": "Sumiyoshi",
+    "tags": [
+      "Herbstlaub"
+    ]
+  },
+  {
+    "id": "gc-ushitenjin",
+    "name": "Ushi-Tenjin Kitano-Jinja – Herbst-Goshuin",
+    "nameJa": "牛天神北野神社 菊わらべまつり・新嘗祭限定御朱印",
+    "lat": 35.70779,
+    "lng": 139.74676,
+    "beschreibung": "Kleiner Schrein bei Tokyo Dome mit einer ganzen Reihe Sonder-Goshuin im November (Chrysanthemen-Fest, Niiname-sai) – insgesamt 5 Goshuin an einem Ort. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-29"
+      }
+    ],
+    "geprueft": false,
+    "station": "Korakuen / Kasuga",
+    "tags": [
+      "Chrysanthemen",
+      "Niiname-sai"
+    ]
+  },
+  {
+    "id": "gc-takahata",
+    "name": "Takahata Fudōson – Herbstlaub-Goshuin",
+    "nameJa": "高幡不動尊 もみじ限定御朱印",
+    "lat": 35.66222,
+    "lng": 139.41088,
+    "beschreibung": "Ab 1. November Herbstlaub-Sonder-Goshuin in begrenzter Zahl – passend zum Herbstlaubfest mit Pagode. (Angabe nach den Vorjahren – kurz auf Instagram/X des Schreins prüfen.)",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-30"
+      }
+    ],
+    "geprueft": false,
+    "station": "Takahatafudo",
+    "tags": [
+      "Herbstlaub",
+      "Pagode",
+      "Ausflug"
+    ]
+  },
+  {
+    "id": "gc-iwai",
+    "name": "Iwai-Jinja – 4 Herbst-Goshuin",
+    "nameJa": "磐井神社 限定御朱印",
+    "lat": 35.58511,
+    "lng": 139.73562,
+    "beschreibung": "Vier Sonder-Goshuin mit Hase, Chrysantheme, Herbstlaub und Pfingstrose – vom 1.9. bis 31.12.2026.",
+    "zeitraum": [
+      {
+        "von": "2026-09-01",
+        "bis": "2026-12-31"
+      }
+    ],
+    "geprueft": true,
+    "station": "Omori-kaigan",
+    "tags": [
+      "Hase",
+      "Herbst"
+    ]
   }
 ]

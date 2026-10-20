@@ -3,8 +3,8 @@
     "id": "gacha-depato-ikebukuro",
     "name": "Gashapon Department Store Ikebukuro (Flagship)",
     "nameJa": "ガシャポンのデパート 池袋総本店",
-    "lat": 35.7292,
-    "lng": 139.7187,
+    "lat": 35.72778,
+    "lng": 139.72012,
     "beschreibung": "Der Gachapon-Himmel: rund 3.000 Kapselautomaten in der Sunshine City – laut mehreren Guides Guinness-Rekord für die meisten Automaten an einem Ort. Im selben Komplex außerdem „Gachagacha no Mori“ (ca. 1.200 Automaten) und das Pokémon Center Mega Tokyo. Tipp: Viele 100-Yen-Münzen mitnehmen, es gibt aber auch Wechselautomaten.",
     "zeiten": "ca. 10:00–22:00",
     "station": "Ikebukuro / Higashi-Ikebukuro",
@@ -12,7 +12,8 @@
       "Gachapon",
       "Rekord",
       "Pokémon"
-    ]
+    ],
+    "adresse": "東京都豊島区東池袋3-1-2"
   },
   {
     "id": "gacha-bandai-akiba",
@@ -20,7 +21,7 @@
     "nameJa": "ガシャポンバンダイオフィシャルショップ＆ガシャポンのデパート 秋葉原店",
     "lat": 35.699,
     "lng": 139.772,
-    "beschreibung": "Offizieller Bandai-Gachapon-Shop mit rund 800 Automaten – nur ca. 1 Minute vom JR-Bahnhof Akihabara. Viele neue Reihen zuerst hier. Genaue Lage vor Ort prüfen.",
+    "beschreibung": "Offizieller Bandai-Gachapon-Shop mit rund 800 Automaten – nur ca. 1 Minute vom JR-Bahnhof Akihabara. Viele neue Reihen zuerst hier. Genaue Lage vor Ort prüfen. Ob der Laden noch so besteht, konnte ich nicht bestätigen.",
     "station": "Akihabara",
     "tags": [
       "Gachapon",
@@ -32,14 +33,15 @@
     "id": "gacha-kaikan-akiba",
     "name": "Akihabara Gachapon Kaikan",
     "nameJa": "秋葉原ガチャポン会館",
-    "lat": 35.7009,
-    "lng": 139.7705,
+    "lat": 35.70189,
+    "lng": 139.77132,
     "beschreibung": "Der Klassiker seit 2002: kleiner, offener Laden vollgestopft mit rund 500 Automaten – viele seltene und skurrile Reihen.",
     "station": "Akihabara / Suehirocho",
     "tags": [
       "Gachapon",
       "Klassiker"
-    ]
+    ],
+    "adresse": "東京都千代田区外神田3-15-5"
   },
   {
     "id": "gacha-kenele-akiba",
@@ -58,15 +60,16 @@
     "id": "gacha-yodobashi-akiba",
     "name": "Yodobashi Akiba – Spielzeug-Etage",
     "nameJa": "ヨドバシAkiba",
-    "lat": 35.6987,
-    "lng": 139.7744,
+    "lat": 35.69864,
+    "lng": 139.77461,
     "beschreibung": "Im 6. Stock des riesigen Elektronikkaufhauses: über 200 Gachapon-Automaten an der Wand, dazu Figuren, Gunpla und Sammelkarten.",
     "station": "Akihabara",
     "tags": [
       "Gachapon",
       "Figuren",
       "Karten"
-    ]
+    ],
+    "adresse": "東京都千代田区神田花岡町1-1"
   },
   {
     "id": "gacha-mori-subnade",
@@ -104,6 +107,22 @@
     "tags": [
       "Gachapon",
       "Shibuya"
+    ]
+  },
+  {
+    "id": "gacha-bandai-tokyo-station",
+    "name": "Gashapon Bandai Official Shop @ Tokyo Station",
+    "nameJa": "ガシャポンバンダイオフィシャルショップ@TOKYO STATION",
+    "lat": 35.68125,
+    "lng": 139.76724,
+    "beschreibung": "Offizieller Bandai-Gachapon-Shop (seit März 2025) in der Tokyo Character Street im Untergeschoss des Bahnhofs Tokyo – direkt neben Pokémon-, Ghibli- und Jump-Shops. Ideal vor oder nach einer Shinkansen-Fahrt.",
+    "zeiten": "10:00–20:30",
+    "station": "Tokyo (Yaesu-Seite, B1)",
+    "adresse": "東京都千代田区丸の内1-9-1 東京駅一番街 B1",
+    "tags": [
+      "Gachapon",
+      "Bandai",
+      "Bahnhof"
     ]
   }
 ]

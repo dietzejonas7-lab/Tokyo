@@ -96,7 +96,7 @@
     "nameJa": "谷中骨董市",
     "lat": 35.7266,
     "lng": 139.768,
-    "beschreibung": "Kleiner, gemütlicher Antikmarkt im Tempel Enmei-in im nostalgischen Viertel Yanaka – ideal mit einem Spaziergang durch Yanaka Ginza kombinierbar.",
+    "beschreibung": "26. Yanaka-Antikmarkt im Tempel Enmei-in – gemütlich, mit Tempel-Atmosphäre im nostalgischen Viertel Yanaka.",
     "zeiten": "tagsüber",
     "zeitraum": [
       {
@@ -208,6 +208,292 @@
       "Markt",
       "Streetfood",
       "Kunsthandwerk"
+    ]
+  },
+  {
+    "id": "fl-shibuya-nomi",
+    "name": "Shibuya-Flohmarkt (Shibuya Nomi no Ichi)",
+    "nameJa": "渋谷蚤の市",
+    "lat": 35.65397,
+    "lng": 139.694,
+    "beschreibung": "Stilvoller Flohmarkt mit Antiquitäten, Vintage-Geschirr, Kleidung und Kuriositäten am Shibuya Garden Tower.",
+    "zeitraum": [
+      {
+        "von": "2026-11-08",
+        "bis": "2026-11-08"
+      },
+      {
+        "von": "2026-11-22",
+        "bis": "2026-11-22"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shinsen / Shibuya",
+    "tags": [
+      "Flohmarkt",
+      "Vintage"
+    ]
+  },
+  {
+    "id": "fl-furugi",
+    "name": "Furugi Fes – Vintage-Kleider-Messe",
+    "nameJa": "古着フェス（東京ビッグサイト）",
+    "lat": 35.62976,
+    "lng": 139.79398,
+    "beschreibung": "Riesige Second-Hand- und Vintage-Kleidungsmesse im Tokyo Big Sight – perfekt für ausgefallene Shirts, Jacken und Sneaker.",
+    "zeitraum": [
+      {
+        "von": "2026-11-15",
+        "bis": "2026-11-15"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kokusai-tenjijo",
+    "tags": [
+      "Vintage",
+      "Kleidung",
+      "Messe"
+    ]
+  },
+  {
+    "id": "fl-hanakawado",
+    "name": "Flohmarkt im Hanakawado-Park (Asakusa)",
+    "nameJa": "花川戸公園フリーマーケット",
+    "lat": 35.71422,
+    "lng": 139.79961,
+    "beschreibung": "Kleiner Nachbarschafts-Flohmarkt nur ein paar Schritte vom Sensō-ji.",
+    "zeitraum": [
+      {
+        "von": "2026-11-08",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Asakusa",
+    "tags": [
+      "Flohmarkt"
+    ]
+  },
+  {
+    "id": "fl-nakaikebukuro",
+    "name": "Handmade- & Flohmarkt im Naka-Ikebukuro-Park",
+    "nameJa": "中池袋公園フリーマーケット",
+    "lat": 35.73153,
+    "lng": 139.71501,
+    "beschreibung": "Flohmarkt mit Handgemachtem im kleinen Park neben Animate Ikebukuro.",
+    "zeitraum": [
+      {
+        "von": "2026-11-12",
+        "bis": "2026-11-12"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ikebukuro",
+    "tags": [
+      "Flohmarkt",
+      "Handgemacht"
+    ]
+  },
+  {
+    "id": "fl-superart",
+    "name": "Super Art & Craft Market (Midtown Hibiya)",
+    "nameJa": "SUPER ART & CRAFT MARKET 2026",
+    "lat": 35.67347,
+    "lng": 139.75925,
+    "beschreibung": "Kunsthandwerks- und Design-Markt in der Untergeschoss-Arkade von Tokyo Midtown Hibiya.",
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-11-15"
+      }
+    ],
+    "geprueft": true,
+    "station": "Hibiya",
+    "tags": [
+      "Kunsthandwerk",
+      "Design"
+    ]
+  },
+  {
+    "id": "fl-kinshi",
+    "name": "Flohmarkt im Kinshi-Park",
+    "nameJa": "錦糸公園 フリーマーケット",
+    "lat": 35.6975,
+    "lng": 139.8135,
+    "beschreibung": "Großer Wochenend-Flohmarkt im Park am Bahnhof Kinshichō.",
+    "zeitraum": [
+      {
+        "von": "2026-11-22",
+        "bis": "2026-11-22"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kinshicho",
+    "tags": [
+      "Flohmarkt"
+    ]
+  },
+  {
+    "id": "fl-zoshigaya",
+    "name": "Zōshigaya Tezukuri-Ichi (Handwerksmarkt am Tempel)",
+    "nameJa": "雑司ヶ谷 手創り市",
+    "lat": 35.72213,
+    "lng": 139.71343,
+    "beschreibung": "Beliebter Handwerksmarkt auf dem Gelände des Kishimojin-Tempels – Keramik, Textilien, Schmuck von Kunsthandwerkern. Schöne Tempel-Atmosphäre.",
+    "zeitraum": [
+      {
+        "von": "2026-11-15",
+        "bis": "2026-11-15"
+      }
+    ],
+    "geprueft": true,
+    "station": "Zoshigaya",
+    "tags": [
+      "Handgemacht",
+      "Tempel"
+    ]
+  },
+  {
+    "id": "fl-ekimise",
+    "name": "Asakusa Tezukuri-Ichi (EKIMISE)",
+    "nameJa": "浅草手づくり市 in 浅草EKIMISE",
+    "lat": 35.71198,
+    "lng": 139.79834,
+    "beschreibung": "Handgemachtes im Bahnhofskaufhaus EKIMISE in Asakusa.",
+    "zeitraum": [
+      {
+        "von": "2026-11-04",
+        "bis": "2026-11-10"
+      }
+    ],
+    "geprueft": true,
+    "station": "Asakusa",
+    "tags": [
+      "Handgemacht"
+    ]
+  },
+  {
+    "id": "fl-toneri",
+    "name": "All-Japan-Keramikmarkt (Toneri-Park)",
+    "nameJa": "全国大陶器市（都立舎人公園会場）",
+    "lat": 35.79866,
+    "lng": 139.77332,
+    "beschreibung": "Töpfer und Keramik-Händler aus ganz Japan – Geschirr, Schalen und Becher günstig zum Mitnehmen.",
+    "zeitraum": [
+      {
+        "von": "2026-10-31",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Toneri-koen",
+    "tags": [
+      "Keramik",
+      "Markt"
+    ]
+  },
+  {
+    "id": "fl-hikarie",
+    "name": "Shibuya Designers Market (Hikarie)",
+    "nameJa": "渋谷デザイナーズマーケット",
+    "lat": 35.65918,
+    "lng": 139.70369,
+    "beschreibung": "Junge Designer verkaufen Mode, Accessoires und Kunst im Shibuya Hikarie.",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Design",
+      "Mode"
+    ]
+  },
+  {
+    "id": "fl-lovepark",
+    "name": "Love The Park Market (Meiji-Park)",
+    "nameJa": "Love The Park Market",
+    "lat": 35.6775,
+    "lng": 139.7155,
+    "beschreibung": "Großer Wochenendmarkt mit Essen, Kunsthandwerk und Vintage im neuen Meiji-Park am Nationalstadion.",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-11-22"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kokuritsu-kyogijo",
+    "tags": [
+      "Markt",
+      "Streetfood"
+    ]
+  },
+  {
+    "id": "fl-yebisu",
+    "name": "Yebisu Marché",
+    "nameJa": "YEBISU マルシェ",
+    "lat": 35.6422,
+    "lng": 139.7136,
+    "beschreibung": "Kleiner Markt mit regionalen Produkten am Château-Platz des Ebisu Garden Place.",
+    "zeitraum": [
+      {
+        "von": "2026-11-08",
+        "bis": "2026-11-08"
+      },
+      {
+        "von": "2026-11-22",
+        "bis": "2026-11-22"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ebisu",
+    "tags": [
+      "Markt"
+    ]
+  },
+  {
+    "id": "fl-record",
+    "name": "Plattenmarkt im BONUS TRACK (Shimokitazawa)",
+    "nameJa": "レコード・フェア at BONUS TRACK",
+    "lat": 35.6603,
+    "lng": 139.664,
+    "beschreibung": "Schallplatten- und Pop-up-Markt im kreativen Mini-Viertel BONUS TRACK.",
+    "zeitraum": [
+      {
+        "von": "2026-10-31",
+        "bis": "2026-11-01"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shimokitazawa / Setagaya-Daita",
+    "tags": [
+      "Vintage",
+      "Musik"
+    ]
+  },
+  {
+    "id": "fl-nekoten",
+    "name": "Neko-ten – Katzen-Kunst- & Warenmesse",
+    "nameJa": "第12回 ねこ展～ねこ・猫・ネコ アート＆グッズフェア",
+    "lat": 35.66967,
+    "lng": 139.7681,
+    "beschreibung": "Alles rund um Katzen: Kunst, Accessoires und Merch von vielen Künstlern im Untergeschoss des Kabuki-za-Turms.",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-29"
+      }
+    ],
+    "geprueft": true,
+    "station": "Higashi-Ginza",
+    "tags": [
+      "Katzen",
+      "Kunst",
+      "Merch"
     ]
   }
 ]

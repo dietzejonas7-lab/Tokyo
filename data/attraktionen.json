@@ -3,8 +3,8 @@
     "id": "att-teamlab-borderless",
     "name": "teamLab Borderless",
     "nameJa": "森ビル デジタルアート ミュージアム：エプソン チームラボボーダレス",
-    "lat": 35.6605,
-    "lng": 139.7403,
+    "lat": 35.6622,
+    "lng": 139.74179,
     "beschreibung": "Begehbare digitale Kunstwelt in den Azabudai Hills: Räume voller Licht, Blumen und Projektionen, die ineinanderfließen. Tickets mit Uhrzeit – oft Wochen vorher ausverkauft, also früh buchen! Meist am 1. & 3. Dienstag geschlossen.",
     "zeiten": "ca. 10:00–21:00 (je nach Tag)",
     "preis": "ab ca. 3.200 ¥",
@@ -18,14 +18,15 @@
         "titel": "Offizielle Seite",
         "url": "https://www.teamlab.art/e/borderless-azabudai/"
       }
-    ]
+    ],
+    "adresse": "東京都港区麻布台1-2-4"
   },
   {
     "id": "att-teamlab-planets",
     "name": "teamLab Planets",
     "nameJa": "チームラボプラネッツ TOKYO DMM",
-    "lat": 35.6491,
-    "lng": 139.7898,
+    "lat": 35.64888,
+    "lng": 139.79002,
     "beschreibung": "Digitale Kunst zum Eintauchen – teils barfuß durch knietiefes Wasser mit leuchtenden Koi. Hose zum Hochkrempeln anziehen! Läuft bis Ende 2027. Tickets vorab buchen.",
     "zeiten": "je nach Tag (ca. 9:00–22:00)",
     "station": "Shin-Toyosu",
@@ -38,7 +39,8 @@
         "titel": "Offizielle Seite",
         "url": "https://www.teamlab.art/e/planets/"
       }
-    ]
+    ],
+    "adresse": "東京都江東区豊洲6-1-16"
   },
   {
     "id": "att-pokepark",
@@ -59,8 +61,8 @@
     "id": "att-harry-potter",
     "name": "Warner Bros. Studio Tour Tokyo – Harry Potter",
     "nameJa": "ワーナー ブラザース スタジオツアー東京 メイキング・オブ・ハリー・ポッター",
-    "lat": 35.7437,
-    "lng": 139.6488,
+    "lat": 35.74562,
+    "lng": 139.64575,
     "beschreibung": "Riesige Studio-Tour mit Original-Sets: Große Halle, Winkelgasse, Hogwarts Express. Plane 4 Stunden ein. Tickets nur vorab mit Uhrzeit.",
     "station": "Toshimaen",
     "tags": [
@@ -72,28 +74,30 @@
     "id": "att-ghibli",
     "name": "Ghibli-Museum Mitaka",
     "nameJa": "三鷹の森ジブリ美術館",
-    "lat": 35.6962,
-    "lng": 139.5704,
+    "lat": 35.69638,
+    "lng": 139.57002,
     "beschreibung": "Verspieltes Museum von Hayao Miyazaki mit exklusivem Kurzfilm und Robot-Soldat auf dem Dach. Tickets nur vorab mit festem Datum – werden etwa einen Monat vorher freigeschaltet und sind schnell weg.",
     "station": "Mitaka / Kichijoji",
     "tags": [
       "Ghibli",
       "Reservierung"
-    ]
+    ],
+    "adresse": "東京都三鷹市下連雀1-1-83"
   },
   {
     "id": "att-sumida-aquarium",
     "name": "Sumida Aquarium",
     "nameJa": "すみだ水族館",
-    "lat": 35.7102,
-    "lng": 139.8095,
+    "lat": 35.71008,
+    "lng": 139.80861,
     "beschreibung": "Modernes Aquarium im Skytree-Komplex – bekannt für das große Quallen-Becken und die Pinguine. Gut mit Skytree und Pokémon Center kombinierbar.",
     "station": "Oshiage (Skytree)",
     "tags": [
       "Aquarium",
       "Quallen",
       "Pinguine"
-    ]
+    ],
+    "adresse": "東京都墨田区押上1-1-2"
   },
   {
     "id": "att-sunshine-aquarium",
@@ -112,29 +116,31 @@
     "id": "att-maxell-aqua",
     "name": "Maxell Aqua Park Shinagawa",
     "nameJa": "マクセル アクアパーク品川",
-    "lat": 35.6268,
-    "lng": 139.735,
+    "lat": 35.62857,
+    "lng": 139.73698,
     "beschreibung": "Aquarium mit Licht-, Sound- und Projektions-Shows – die Delfinshows sind abends teils mit Lichteffekten. Direkt am Bahnhof Shinagawa.",
     "station": "Shinagawa",
     "tags": [
       "Aquarium",
       "Delfine",
       "abends"
-    ]
+    ],
+    "adresse": "東京都港区高輪4-10-30"
   },
   {
     "id": "att-shibuya-sky",
     "name": "Shibuya Sky",
     "nameJa": "渋谷スカイ",
-    "lat": 35.6585,
-    "lng": 139.7024,
+    "lat": 35.65795,
+    "lng": 139.70232,
     "beschreibung": "Offene Dachterrasse über Shibuya mit 360°-Blick – zum Sonnenuntergang am schönsten (diese Zeitfenster früh buchen).",
     "station": "Shibuya",
     "tags": [
       "Aussicht",
       "Sonnenuntergang",
       "Reservierung"
-    ]
+    ],
+    "adresse": "東京都渋谷区渋谷2-24-12"
   },
   {
     "id": "att-skytree",
@@ -165,42 +171,45 @@
     "id": "att-small-worlds",
     "name": "Small Worlds Tokyo",
     "nameJa": "スモールワールズTOKYO",
-    "lat": 35.6365,
-    "lng": 139.7913,
-    "beschreibung": "Riesige Miniaturwelt in Ariake – inklusive Anime-Bereichen (z. B. Evangelion) und einem Mini-Flughafen mit startenden Flugzeugen. Lage ungefähr.",
+    "lat": 35.63731,
+    "lng": 139.78882,
+    "beschreibung": "Riesige Miniaturwelt in Ariake – inklusive Anime-Bereichen (z. B. Evangelion) und einem Mini-Flughafen mit startenden Flugzeugen.",
     "station": "Ariake / Ariake-tennis-no-mori",
     "tags": [
       "Miniaturen",
       "Anime"
-    ]
+    ],
+    "adresse": "東京都江東区有明1-3-33"
   },
   {
     "id": "att-joypolis",
     "name": "Tokyo Joypolis",
     "nameJa": "東京ジョイポリス",
-    "lat": 35.6286,
-    "lng": 139.7753,
+    "lat": 35.62906,
+    "lng": 139.77589,
     "beschreibung": "Indoor-Freizeitpark von SEGA in Odaiba mit VR-Attraktionen, Achterbahn und oft Anime-Kollaborationen. Ideal bei Regen.",
     "station": "Odaiba-kaihinkoen",
     "tags": [
       "Indoor",
       "SEGA",
       "Regenwetter"
-    ]
+    ],
+    "adresse": "東京都港区台場1-6-1"
   },
   {
     "id": "att-puroland",
     "name": "Sanrio Puroland",
     "nameJa": "サンリオピューロランド",
-    "lat": 35.6245,
-    "lng": 139.4287,
+    "lat": 35.62462,
+    "lng": 139.42932,
     "beschreibung": "Indoor-Themenpark von Hello Kitty & Co. mit Paraden und Shows – kawaii pur. Halbtages-Ausflug (Tama).",
     "station": "Tama-Center",
     "tags": [
       "Sanrio",
       "Indoor",
       "Ausflug"
-    ]
+    ],
+    "adresse": "東京都多摩市落合1-31"
   },
   {
     "id": "att-disney",
@@ -214,6 +223,56 @@
       "Freizeitpark",
       "Ausflug",
       "Reservierung"
+    ]
+  },
+  {
+    "id": "att-ueno-zoo",
+    "name": "Ueno Zoo",
+    "nameJa": "恩賜上野動物園",
+    "lat": 35.71588,
+    "lng": 139.7729,
+    "beschreibung": "Ältester Zoo Japans mitten im Ueno-Park – bekannt für die Pandas. Günstig und gut mit Museen und Ameyoko kombinierbar.",
+    "zeiten": "9:30–17:00, montags geschlossen",
+    "preis": "600 ¥",
+    "station": "Ueno",
+    "adresse": "東京都台東区上野公園9-83",
+    "tags": [
+      "Pandas",
+      "Tiere"
+    ]
+  },
+  {
+    "id": "att-mori-art",
+    "name": "Mori Art Museum & Tokyo City View",
+    "nameJa": "森美術館・東京シティビュー",
+    "lat": 35.66021,
+    "lng": 139.7292,
+    "beschreibung": "Zeitgenössische Kunst im 53. Stock von Roppongi Hills plus Aussichtsdeck mit Blick auf Tokyo Tower – abends besonders schön. Wechselnde (oft Anime-/Manga-)Ausstellungen.",
+    "zeiten": "meist 10:00–22:00 (Di bis 17:00)",
+    "preis": "ca. 2.000–2.500 ¥",
+    "station": "Roppongi",
+    "adresse": "東京都港区六本木6-10-1",
+    "tags": [
+      "Kunst",
+      "Aussicht",
+      "Nachts"
+    ]
+  },
+  {
+    "id": "att-gotokuji",
+    "name": "Gōtoku-ji – Tempel der Winkekatzen",
+    "nameJa": "豪徳寺",
+    "lat": 35.64767,
+    "lng": 139.6472,
+    "beschreibung": "Ruhiger Zen-Tempel mit tausenden weißen Maneki-neko (Winkekatzen) – gilt als Ursprungsort der Winkekatze. Kleine Katzen zum Mitnehmen gibt es am Tempelbüro.",
+    "zeiten": "6:00–17:00 (Büro 8:00–16:30)",
+    "preis": "Eintritt frei",
+    "station": "Gōtokuji / Miyanosaka",
+    "adresse": "東京都世田谷区豪徳寺2-24-7",
+    "tags": [
+      "Winkekatzen",
+      "Tempel",
+      "Fotospot"
     ]
   }
 ]

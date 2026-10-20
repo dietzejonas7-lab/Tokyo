@@ -3,8 +3,8 @@
     "id": "pf-prime1",
     "name": "Prime 1 Studio Gallery Shop",
     "nameJa": "プライム1スタジオ ギャラリーショップ 有楽町マルイ",
-    "lat": 35.6747,
-    "lng": 139.7628,
+    "lat": 35.67421,
+    "lng": 139.76366,
     "beschreibung": "Weltweit einziger offizieller Laden von Prime 1 Studio (seit 18.09.2026) im 7. Stock des Yūrakuchō Marui. Hier kann man auch kaufen: High-End-Statuen aus Film, Games und Anime, dazu kleinere Figuren, Plastikmodelle und Merch. Große Statuen kosten grob 115.000 ¥ bis über 475.000 ¥ und sind oft limitiert bzw. nur auf Vorbestellung. Anschauen ist kostenlos.",
     "station": "Yurakucho",
     "tags": [
@@ -12,28 +12,30 @@
       "High-End",
       "Galerie"
     ],
-    "preis": "Merch ab ca. 2.000 ¥ · Statuen ca. 115.000–475.000 ¥+"
+    "preis": "Merch ab ca. 2.000 ¥ · Statuen ca. 115.000–475.000 ¥+",
+    "adresse": "東京都千代田区有楽町2-7-1"
   },
   {
     "id": "pf-tamashii",
     "name": "Tamashii Nations Store Tokyo",
     "nameJa": "TAMASHII NATIONS STORE TOKYO",
-    "lat": 35.6988,
-    "lng": 139.7718,
-    "beschreibung": "Flagship von Bandais Premium-Figurenmarke (S.H.Figuarts, Figuarts ZERO, METAL BUILD, Soul of Chogokin) mit Ausstellungsetage für Neuheiten und Prototypen. Oft Store-exklusive Modelle. Lage ungefähr – genaue Adresse vorab prüfen.",
+    "lat": 35.69864,
+    "lng": 139.77461,
+    "beschreibung": "Flagship von Bandais Premium-Figurenmarke (S.H.Figuarts, Figuarts ZERO, METAL BUILD, Soul of Chogokin) mit Ausstellungsetage für Neuheiten und Prototypen. Oft Store-exklusive Modelle.",
     "station": "Akihabara",
     "tags": [
       "Bandai",
       "METAL BUILD",
       "exklusiv"
-    ]
+    ],
+    "adresse": "東京都千代田区神田花岡町1-1"
   },
   {
     "id": "pf-kotobukiya",
     "name": "Kotobukiya Akihabara-kan",
     "nameJa": "コトブキヤ秋葉原館",
-    "lat": 35.6997,
-    "lng": 139.7714,
+    "lat": 35.69926,
+    "lng": 139.77055,
     "beschreibung": "Flagship des Figurenherstellers Kotobukiya auf mehreren Etagen: hochwertige ARTFX-Statuen und Bishōjo-Figuren, dazu limitierte Shop-Editionen und Figuren anderer Hersteller.",
     "zeiten": "ca. 10:00–20:00",
     "station": "Akihabara",
@@ -41,21 +43,23 @@
       "ARTFX",
       "Scale-Figuren",
       "limitiert"
-    ]
+    ],
+    "adresse": "東京都千代田区外神田1-8-8"
   },
   {
     "id": "pf-kaiyodo",
     "name": "Kaiyodo Hobby Lobby Tokyo",
     "nameJa": "海洋堂ホビーロビー東京",
-    "lat": 35.6981,
-    "lng": 139.7716,
+    "lat": 35.69767,
+    "lng": 139.77188,
     "beschreibung": "Showroom und Shop der legendären Figurenschmiede Kaiyodo (Revoltech, extrem realistische Tier- und Charakterfiguren) im 5. Stock des Radio Kaikan.",
     "station": "Akihabara",
     "tags": [
       "Kaiyodo",
       "Revoltech",
       "Showroom"
-    ]
+    ],
+    "adresse": "東京都千代田区外神田1-15-16"
   },
   {
     "id": "pf-volks",
@@ -75,28 +79,30 @@
     "id": "pf-amiami-tower",
     "name": "AmiAmi Akihabara Figure Tower",
     "nameJa": "あみあみ 秋葉原フィギュアタワー店",
-    "lat": 35.7004,
-    "lng": 139.7712,
-    "beschreibung": "Achtstöckiger Figuren-Turm (seit 2024): neue und gebrauchte Figuren nach Etagen sortiert – Scale-Figuren im 2. Stock. Gute Chance auf hochwertige, gebrauchte Scale-Figuren zu fairen Preisen. Lage ungefähr.",
+    "lat": 35.69801,
+    "lng": 139.77142,
+    "beschreibung": "Achtstöckiger Figuren-Turm (seit 2024): neue und gebrauchte Figuren nach Etagen sortiert – Scale-Figuren im 2. Stock. Gute Chance auf hochwertige, gebrauchte Scale-Figuren zu fairen Preisen.",
     "station": "Akihabara",
     "tags": [
       "Scale-Figuren",
       "Neu & gebraucht"
-    ]
+    ],
+    "adresse": "東京都千代田区外神田1-15-3"
   },
   {
     "id": "pf-medicom",
     "name": "MEDICOM TOY TOKYO",
     "nameJa": "メディコム・トイ トウキョウ",
-    "lat": 35.6614,
-    "lng": 139.6982,
-    "beschreibung": "Neuer Flagship-Store (seit 23.08.2025) in Shibuya: riesige BE@RBRICK (bis 1000 %), Real Action Heroes und Designer-Kollaborationen – Sammlerstücke mit Preisen im höheren Bereich. Lage ungefähr (Udagawachō).",
+    "lat": 35.66198,
+    "lng": 139.69562,
+    "beschreibung": "Neuer Flagship-Store (seit 23.08.2025) in Shibuya: riesige BE@RBRICK (bis 1000 %), Real Action Heroes und Designer-Kollaborationen – Sammlerstücke mit Preisen im höheren Bereich.",
     "zeiten": "11:00–20:00",
     "station": "Shibuya",
     "tags": [
       "BE@RBRICK",
       "Designer-Toys",
       "Kollaborationen"
-    ]
+    ],
+    "adresse": "東京都渋谷区宇田川町37-10"
   }
 ]

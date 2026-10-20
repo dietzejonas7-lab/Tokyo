@@ -1,65 +1,448 @@
 [
-  { "id": "g-meiji-jingu", "name": "Meiji Jingū", "nameJa": "明治神宮", "lat": 35.6764, "lng": 139.6993,
+  {
+    "id": "g-meiji-jingu",
+    "name": "Meiji Jingū",
+    "nameJa": "明治神宮",
+    "lat": 35.6764,
+    "lng": 139.6993,
     "beschreibung": "Großer Schrein im Wald zwischen Harajuku und Yoyogi. Goshuin am Amulettschalter (授与所). Achtung: Schließt bei Sonnenuntergang. Am 15.11. (Shichi-Go-San) sehr voll mit Familien in Kimono.",
-    "station": "Harajuku / Meiji-jingumae", "tags": ["Schrein", "Shichi-Go-San"] },
-  { "id": "g-sensoji", "name": "Sensō-ji", "nameJa": "浅草寺", "lat": 35.7148, "lng": 139.7967,
+    "station": "Harajuku / Meiji-jingumae",
+    "tags": [
+      "Schrein",
+      "Shichi-Go-San"
+    ]
+  },
+  {
+    "id": "g-sensoji",
+    "name": "Sensō-ji",
+    "nameJa": "浅草寺",
+    "lat": 35.7148,
+    "lng": 139.7967,
     "beschreibung": "Goshuin gibt es an der Yōgō-dō-Halle (影向堂) links neben der Haupthalle.",
-    "station": "Asakusa", "tags": ["Tempel"] },
-  { "id": "g-asakusa-jinja", "name": "Asakusa-Jinja", "nameJa": "浅草神社", "lat": 35.7154, "lng": 139.7978,
+    "station": "Asakusa",
+    "tags": [
+      "Tempel"
+    ]
+  },
+  {
+    "id": "g-asakusa-jinja",
+    "name": "Asakusa-Jinja",
+    "nameJa": "浅草神社",
+    "lat": 35.7154,
+    "lng": 139.7978,
     "beschreibung": "Kleiner Schrein direkt rechts neben dem Sensō-ji – zwei Goshuin an einem Ort!",
-    "station": "Asakusa", "tags": ["Schrein"] },
-  { "id": "g-kanda-myojin", "name": "Kanda Myōjin", "nameJa": "神田明神", "lat": 35.7020, "lng": 139.7679,
+    "station": "Asakusa",
+    "tags": [
+      "Schrein"
+    ]
+  },
+  {
+    "id": "g-kanda-myojin",
+    "name": "Kanda Myōjin",
+    "nameJa": "神田明神",
+    "lat": 35.702,
+    "lng": 139.7679,
     "beschreibung": "Schutzschrein von Akihabara – bekannt für Anime-Kollaborationen und eine große Auswahl an Goshuincho und Amuletten.",
-    "station": "Ochanomizu / Akihabara", "tags": ["Schrein", "Anime"] },
-  { "id": "g-yushima", "name": "Yushima Tenmangū", "nameJa": "湯島天満宮", "lat": 35.7077, "lng": 139.7681,
+    "station": "Ochanomizu / Akihabara",
+    "tags": [
+      "Schrein",
+      "Anime",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-yushima",
+    "name": "Yushima Tenmangū",
+    "nameJa": "湯島天満宮",
+    "lat": 35.7077,
+    "lng": 139.7681,
     "beschreibung": "Schrein des Gelehrsamkeits-Gottes. Im November findet hier traditionell ein Chrysanthemen-Fest statt.",
-    "station": "Yushima", "tags": ["Schrein", "Chrysanthemen"] },
-  { "id": "g-nezu", "name": "Nezu-Jinja", "nameJa": "根津神社", "lat": 35.7202, "lng": 139.7608,
+    "station": "Yushima",
+    "tags": [
+      "Schrein",
+      "Chrysanthemen"
+    ]
+  },
+  {
+    "id": "g-nezu",
+    "name": "Nezu-Jinja",
+    "nameJa": "根津神社",
+    "lat": 35.7202,
+    "lng": 139.7608,
     "beschreibung": "Wunderschöner Schrein mit eigenem Mini-Torii-Tunnel – wie ein kleines Fushimi Inari.",
-    "station": "Nezu / Sendagi", "tags": ["Schrein", "Torii-Tunnel"] },
-  { "id": "g-hie", "name": "Hie-Jinja", "nameJa": "日枝神社", "lat": 35.6747, "lng": 139.7395,
+    "station": "Nezu / Sendagi",
+    "tags": [
+      "Schrein",
+      "Torii-Tunnel",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-hie",
+    "name": "Hie-Jinja",
+    "nameJa": "日枝神社",
+    "lat": 35.6747,
+    "lng": 139.7395,
     "beschreibung": "Schrein mit roter Torii-Treppe mitten im Regierungsviertel.",
-    "station": "Tameike-sanno / Akasaka", "tags": ["Schrein", "Torii"] },
-  { "id": "g-tokyo-daijingu", "name": "Tōkyō Daijingū", "nameJa": "東京大神宮", "lat": 35.6997, "lng": 139.7464,
+    "station": "Tameike-sanno / Akasaka",
+    "tags": [
+      "Schrein",
+      "Torii",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-tokyo-daijingu",
+    "name": "Tōkyō Daijingū",
+    "nameJa": "東京大神宮",
+    "lat": 35.6997,
+    "lng": 139.7464,
     "beschreibung": "Beliebt für Liebes-Glück (en-musubi), sehr hübsche Amulette.",
-    "station": "Iidabashi", "tags": ["Schrein", "Liebe"] },
-  { "id": "g-zojoji", "name": "Zōjō-ji", "nameJa": "増上寺", "lat": 35.6575, "lng": 139.7484,
+    "station": "Iidabashi",
+    "tags": [
+      "Schrein",
+      "Liebe"
+    ]
+  },
+  {
+    "id": "g-zojoji",
+    "name": "Zōjō-ji",
+    "nameJa": "増上寺",
+    "lat": 35.6575,
+    "lng": 139.7484,
     "beschreibung": "Großer Tempel am Fuß des Tokyo Tower.",
-    "station": "Onarimon / Daimon", "tags": ["Tempel", "Tokyo Tower"] },
-  { "id": "g-gotokuji", "name": "Gōtoku-ji", "nameJa": "豪徳寺", "lat": 35.6489, "lng": 139.6474,
+    "station": "Onarimon / Daimon",
+    "tags": [
+      "Tempel",
+      "Tokyo Tower"
+    ]
+  },
+  {
+    "id": "g-gotokuji",
+    "name": "Gōtoku-ji",
+    "nameJa": "豪徳寺",
+    "lat": 35.6489,
+    "lng": 139.6474,
     "beschreibung": "Der Tempel der Maneki-Neko (Winkekatzen) – tausende weiße Katzenfiguren. Schließt früh am Nachmittag.",
-    "station": "Miyanosaka / Gotokuji", "tags": ["Tempel", "Maneki-Neko"] },
-  { "id": "g-atago", "name": "Atago-Jinja", "nameJa": "愛宕神社", "lat": 35.6649, "lng": 139.7484,
+    "station": "Miyanosaka / Gotokuji",
+    "tags": [
+      "Tempel",
+      "Maneki-Neko"
+    ]
+  },
+  {
+    "id": "g-atago",
+    "name": "Atago-Jinja",
+    "nameJa": "愛宕神社",
+    "lat": 35.6649,
+    "lng": 139.7484,
     "beschreibung": "Auf dem höchsten natürlichen Hügel der Innenstadt – über die steile „Treppe des Erfolgs“ hinauf.",
-    "station": "Kamiyacho / Toranomon", "tags": ["Schrein", "Treppe"] },
-  { "id": "g-akasaka-hikawa", "name": "Akasaka Hikawa-Jinja", "nameJa": "赤坂氷川神社", "lat": 35.6697, "lng": 139.7357,
+    "station": "Kamiyacho / Toranomon",
+    "tags": [
+      "Schrein",
+      "Treppe"
+    ]
+  },
+  {
+    "id": "g-akasaka-hikawa",
+    "name": "Akasaka Hikawa-Jinja",
+    "nameJa": "赤坂氷川神社",
+    "lat": 35.6697,
+    "lng": 139.7357,
     "beschreibung": "Ruhiger, alter Schrein mit riesigem Ginkgo-Baum – im November leuchtend gelb.",
-    "station": "Akasaka / Roppongi-itchome", "tags": ["Schrein", "Ginkgo"] },
-  { "id": "g-kameido", "name": "Kameido Tenjin", "nameJa": "亀戸天神社", "lat": 35.7027, "lng": 139.8197,
+    "station": "Akasaka / Roppongi-itchome",
+    "tags": [
+      "Schrein",
+      "Ginkgo",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-kameido",
+    "name": "Kameido Tenjin",
+    "nameJa": "亀戸天神社",
+    "lat": 35.7027,
+    "lng": 139.8197,
     "beschreibung": "Schrein mit Trommelbrücke und Blick auf den Skytree. Im Herbst Chrysanthemen-Fest.",
-    "station": "Kameido", "tags": ["Schrein", "Skytree"] },
-  { "id": "g-tomioka", "name": "Tomioka Hachimangū", "nameJa": "富岡八幡宮", "lat": 35.6718, "lng": 139.7995,
+    "station": "Kameido",
+    "tags": [
+      "Schrein",
+      "Skytree",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-tomioka",
+    "name": "Tomioka Hachimangū",
+    "nameJa": "富岡八幡宮",
+    "lat": 35.6718,
+    "lng": 139.7995,
     "beschreibung": "Großer Schrein in Monzen-Nakacho, Geburtsort des Profi-Sumō.",
-    "station": "Monzen-nakacho", "tags": ["Schrein", "Sumo"] },
-  { "id": "g-hanazono", "name": "Hanazono-Jinja", "nameJa": "花園神社", "lat": 35.6930, "lng": 139.7050,
+    "station": "Monzen-nakacho",
+    "tags": [
+      "Schrein",
+      "Sumo",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-hanazono",
+    "name": "Hanazono-Jinja",
+    "nameJa": "花園神社",
+    "lat": 35.693,
+    "lng": 139.705,
     "beschreibung": "Schrein mitten in Shinjuku neben dem Golden Gai. Auch hier finden an den Tori-no-Ichi-Tagen Feste statt.",
-    "station": "Shinjuku-sanchome", "tags": ["Schrein", "Shinjuku"] },
-  { "id": "g-ootori", "name": "Ōtori-Jinja (Asakusa)", "nameJa": "鷲神社", "lat": 35.7238, "lng": 139.7919,
+    "station": "Shinjuku-sanchome",
+    "tags": [
+      "Schrein",
+      "Shinjuku"
+    ]
+  },
+  {
+    "id": "g-ootori",
+    "name": "Ōtori-Jinja (Asakusa)",
+    "nameJa": "鷲神社",
+    "lat": 35.7238,
+    "lng": 139.7919,
     "beschreibung": "Hauptschauplatz des Tori-no-Ichi (7. & 19.11.2026).",
-    "station": "Iriya", "tags": ["Schrein", "Tori-no-Ichi"] },
-  { "id": "g-koami", "name": "Koami-Jinja", "nameJa": "小網神社", "lat": 35.6855, "lng": 139.7826,
+    "station": "Iriya",
+    "tags": [
+      "Schrein",
+      "Tori-no-Ichi"
+    ]
+  },
+  {
+    "id": "g-koami",
+    "name": "Koami-Jinja",
+    "nameJa": "小網神社",
+    "lat": 35.6855,
+    "lng": 139.7826,
     "beschreibung": "Winziger Schrein in Nihonbashi, berühmt für Geld- und Schutz-Glück. Oft Schlange vor dem Goshuin-Schalter.",
-    "station": "Ningyocho / Nihombashi", "tags": ["Schrein", "Geld-Glück"] },
-  { "id": "g-imado", "name": "Imado-Jinja", "nameJa": "今戸神社", "lat": 35.7203, "lng": 139.8038,
+    "station": "Ningyocho / Nihombashi",
+    "tags": [
+      "Schrein",
+      "Geld-Glück"
+    ]
+  },
+  {
+    "id": "g-imado",
+    "name": "Imado-Jinja",
+    "nameJa": "今戸神社",
+    "lat": 35.7203,
+    "lng": 139.8038,
     "beschreibung": "Katzen-Schrein und angeblicher Geburtsort der Maneki-Neko, beliebt für Liebes-Glück.",
-    "station": "Asakusa", "tags": ["Schrein", "Katzen"] },
-  { "id": "g-yasukuni", "name": "Yasukuni-Jinja", "nameJa": "靖国神社", "lat": 35.6942, "lng": 139.7436,
+    "station": "Asakusa",
+    "tags": [
+      "Schrein",
+      "Katzen"
+    ]
+  },
+  {
+    "id": "g-yasukuni",
+    "name": "Yasukuni-Jinja",
+    "nameJa": "靖国神社",
+    "lat": 35.6942,
+    "lng": 139.7436,
     "beschreibung": "Großer Schrein mit politisch umstrittener Geschichte. Gute Ginkgo-Allee.",
-    "station": "Kudanshita", "tags": ["Schrein"] },
-  { "id": "g-togo", "name": "Tōgō-Jinja", "nameJa": "東郷神社", "lat": 35.6713, "lng": 139.7058,
+    "station": "Kudanshita",
+    "tags": [
+      "Schrein"
+    ]
+  },
+  {
+    "id": "g-togo",
+    "name": "Tōgō-Jinja",
+    "nameJa": "東郷神社",
+    "lat": 35.6713,
+    "lng": 139.7058,
     "beschreibung": "Ruhige Oase direkt an der Takeshita-dori in Harajuku.",
-    "station": "Harajuku / Meiji-jingumae", "tags": ["Schrein", "Harajuku"] },
-  { "id": "g-shibamata", "name": "Shibamata Taishakuten", "nameJa": "柴又帝釈天", "lat": 35.7587, "lng": 139.8783,
+    "station": "Harajuku / Meiji-jingumae",
+    "tags": [
+      "Schrein",
+      "Harajuku"
+    ]
+  },
+  {
+    "id": "g-shibamata",
+    "name": "Shibamata Taishakuten",
+    "nameJa": "柴又帝釈天",
+    "lat": 35.7587,
+    "lng": 139.8783,
     "beschreibung": "Tempel mit unglaublichen Holzschnitzereien in einem nostalgischen Showa-Viertel. Halbtagesausflug.",
-    "station": "Shibamata", "tags": ["Tempel", "Ausflug"] }
+    "station": "Shibamata",
+    "tags": [
+      "Tempel",
+      "Ausflug"
+    ]
+  },
+  {
+    "id": "g-shiba-daijingu",
+    "name": "Shiba Daijingū",
+    "nameJa": "芝大神宮",
+    "lat": 35.65759,
+    "lng": 139.75308,
+    "beschreibung": "„Ise von Kantō“ – einer der Tokio Zehn Schreine, nahe Hamamatsuchō und Tokyo Tower.",
+    "station": "Daimon / Hamamatsucho",
+    "tags": [
+      "Schrein",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-hakusan",
+    "name": "Hakusan-Jinja (Bunkyō)",
+    "nameJa": "白山神社",
+    "lat": 35.7219,
+    "lng": 139.75058,
+    "beschreibung": "Einer der Tokio Zehn Schreine – im Juni berühmt für Hortensien, ganzjährig ruhig und schön.",
+    "station": "Hakusan",
+    "tags": [
+      "Schrein",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-shinagawa",
+    "name": "Shinagawa-Jinja",
+    "nameJa": "品川神社",
+    "lat": 35.61852,
+    "lng": 139.73999,
+    "beschreibung": "Einer der Tokio Zehn Schreine – mit steiler Treppe, Drachen-Torii und kleinem Fuji-Hügel (Fujizuka) zum Besteigen.",
+    "station": "Shimbamba (Keikyu)",
+    "tags": [
+      "Schrein",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-oji",
+    "name": "Ōji-Jinja",
+    "nameJa": "王子神社",
+    "lat": 35.75321,
+    "lng": 139.73589,
+    "beschreibung": "Einer der Tokio Zehn Schreine im Norden – in der Nähe liegt der Asukayama-Park.",
+    "station": "Oji",
+    "tags": [
+      "Schrein",
+      "Tokio 10 Schreine"
+    ]
+  },
+  {
+    "id": "g-ueno-toshogu",
+    "name": "Ueno Tōshōgū",
+    "nameJa": "上野東照宮",
+    "lat": 35.71537,
+    "lng": 139.77063,
+    "beschreibung": "Prächtiger, goldener Schrein im Ueno-Park für Tokugawa Ieyasu – mit monatlich wechselnden Goshuin.",
+    "station": "Ueno",
+    "tags": [
+      "Schrein",
+      "Gold",
+      "Monats-Goshuin"
+    ]
+  },
+  {
+    "id": "g-suitengu",
+    "name": "Suitengū",
+    "nameJa": "水天宮",
+    "lat": 35.68351,
+    "lng": 139.78518,
+    "beschreibung": "Moderner Schrein in Nihonbashi für sichere Geburt – mit vielen Sonder-Goshuin an Glückstagen.",
+    "station": "Suitengumae",
+    "tags": [
+      "Schrein"
+    ]
+  },
+  {
+    "id": "g-benten",
+    "name": "Shinobazu-no-Ike Bentendō",
+    "nameJa": "不忍池弁天堂",
+    "lat": 35.71214,
+    "lng": 139.77115,
+    "beschreibung": "Achteckige Halle auf einer Insel im Shinobazu-Teich (Ueno) – besonders schön mit Lotus.",
+    "station": "Ueno / Yushima",
+    "tags": [
+      "Tempel",
+      "Teich"
+    ]
+  },
+  {
+    "id": "g-kaneiji",
+    "name": "Kan'ei-ji",
+    "nameJa": "寛永寺",
+    "lat": 35.7216,
+    "lng": 139.77432,
+    "beschreibung": "Großer Tempel der Tokugawa-Shōgune in Ueno, oft mit saisonalen Sonder-Goshuin (im Herbst z. B. Scherenschnitt-Goshuin).",
+    "station": "Uguisudani / Ueno",
+    "tags": [
+      "Tempel",
+      "Scherenschnitt"
+    ]
+  },
+  {
+    "id": "g-gokokuji",
+    "name": "Gokoku-ji",
+    "nameJa": "護国寺",
+    "lat": 35.721,
+    "lng": 139.72683,
+    "beschreibung": "Weitläufiger, ruhiger Tempel aus der Edo-Zeit mit beeindruckender Haupthalle – kaum Touristen.",
+    "station": "Gokokuji",
+    "tags": [
+      "Tempel",
+      "ruhig"
+    ]
+  },
+  {
+    "id": "g-tsukiji-hongwanji",
+    "name": "Tsukiji Hongwanji",
+    "nameJa": "築地本願寺",
+    "lat": 35.6666,
+    "lng": 139.77213,
+    "beschreibung": "Außergewöhnlicher Tempel im indischen Stil am Tsukiji-Markt – mit Café und Goshuin.",
+    "station": "Tsukiji",
+    "tags": [
+      "Tempel",
+      "Architektur"
+    ]
+  },
+  {
+    "id": "g-namiyoke",
+    "name": "Namiyoke-Jinja",
+    "nameJa": "波除神社",
+    "lat": 35.66351,
+    "lng": 139.77159,
+    "beschreibung": "Schrein am Tsukiji-Außenmarkt mit riesigen Löwenkopf-Masken – perfekt nach einem Sushi-Frühstück.",
+    "station": "Tsukiji",
+    "tags": [
+      "Schrein",
+      "Tsukiji"
+    ]
+  },
+  {
+    "id": "g-azabu-hikawa",
+    "name": "Azabu-Hikawa-Jinja",
+    "nameJa": "麻布氷川神社",
+    "lat": 35.65289,
+    "lng": 139.73106,
+    "beschreibung": "Vorbild für den Hikawa-Schrein von Rei Hino aus „Sailor Moon“.",
+    "station": "Azabu-juban",
+    "tags": [
+      "Schrein",
+      "Sailor Moon",
+      "Anime-Drehort"
+    ]
+  },
+  {
+    "id": "g-takagi",
+    "name": "Takagi-Jinja",
+    "nameJa": "高木神社",
+    "lat": 35.71476,
+    "lng": 139.81519,
+    "beschreibung": "Verspielter „Musubi“-Schrein nahe Skytree mit vielen niedlichen Goshuin.",
+    "station": "Hikifune / Oshiage",
+    "tags": [
+      "Schrein",
+      "kawaii"
+    ]
+  }
 ]

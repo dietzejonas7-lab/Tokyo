@@ -1,1094 +1,1982 @@
 [
   {
-    "id": "stempel-yamanote-tokyo",
-    "name": "Tokyo – Eki-Stempel",
-    "nameJa": "東京駅 駅スタンプ",
-    "lat": 35.6812,
-    "lng": 139.7671,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 1/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Tokyo",
+    "id": "stempel-jr-akabane",
+    "name": "Akabane – JR-Stempel",
+    "nameJa": "赤羽駅 駅スタンプ",
+    "lat": 35.77893,
+    "lng": 139.72025,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Akabane",
     "tags": [
       "JR",
-      "Yamanote"
-    ]
-  },
-  {
-    "id": "stempel-yamanote-kanda",
-    "name": "Kanda – Eki-Stempel",
-    "nameJa": "神田駅 駅スタンプ",
-    "lat": 35.6918,
-    "lng": 139.7709,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 2/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Kanda",
-    "tags": [
-      "JR",
-      "Yamanote"
+      "78er-Serie"
     ]
   },
   {
     "id": "stempel-yamanote-akihabara",
-    "name": "Akihabara – Eki-Stempel",
+    "name": "Akihabara – JR-Stempel",
     "nameJa": "秋葉原駅 駅スタンプ",
-    "lat": 35.6984,
-    "lng": 139.7731,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 3/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.69716,
+    "lng": 139.77516,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Akihabara",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-okachimachi",
-    "name": "Okachimachi – Eki-Stempel",
-    "nameJa": "御徒町駅 駅スタンプ",
-    "lat": 35.7075,
-    "lng": 139.7748,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 4/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Okachimachi",
+    "id": "stempel-jr-asagaya",
+    "name": "Asagaya – JR-Stempel",
+    "nameJa": "阿佐ケ谷駅 駅スタンプ",
+    "lat": 35.70497,
+    "lng": 139.63542,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Asagaya",
     "tags": [
       "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-abiko",
+    "name": "Abiko – JR-Stempel",
+    "nameJa": "我孫子駅 駅スタンプ",
+    "lat": 35.87277,
+    "lng": 140.0108,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Abiko",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-jr-iidabashi",
+    "name": "Iidabashi – JR-Stempel",
+    "nameJa": "飯田橋駅 駅スタンプ",
+    "lat": 35.70103,
+    "lng": 139.74748,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Iidabashi",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-ikebukuro",
+    "name": "Ikebukuro – JR-Stempel",
+    "nameJa": "池袋駅 駅スタンプ",
+    "lat": 35.7302,
+    "lng": 139.71297,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Ikebukuro",
+    "tags": [
+      "JR",
+      "78er-Serie",
       "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-itabashi",
+    "name": "Itabashi – JR-Stempel",
+    "nameJa": "板橋駅 駅スタンプ",
+    "lat": 35.7466,
+    "lng": 139.71956,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Itabashi",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-ichigaya",
+    "name": "Ichigaya – JR-Stempel",
+    "nameJa": "市ヶ谷駅 駅スタンプ",
+    "lat": 35.69332,
+    "lng": 139.7367,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Ichigaya",
+    "tags": [
+      "JR",
+      "78er-Serie"
     ]
   },
   {
     "id": "stempel-yamanote-ueno",
-    "name": "Ueno – Eki-Stempel",
+    "name": "Ueno – JR-Stempel",
     "nameJa": "上野駅 駅スタンプ",
-    "lat": 35.7138,
-    "lng": 139.7773,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 5/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.71404,
+    "lng": 139.77712,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Ueno",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-ukima-funado",
+    "name": "Ukimafunado – JR-Stempel",
+    "nameJa": "浮間舟渡駅 駅スタンプ",
+    "lat": 35.79159,
+    "lng": 139.69171,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Ukimafunado",
+    "tags": [
+      "JR",
+      "78er-Serie"
     ]
   },
   {
     "id": "stempel-yamanote-uguisudani",
-    "name": "Uguisudani – Eki-Stempel",
+    "name": "Uguisudani – JR-Stempel",
     "nameJa": "鶯谷駅 駅スタンプ",
-    "lat": 35.7215,
-    "lng": 139.7781,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 6/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.72027,
+    "lng": 139.77911,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Uguisudani",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-nippori",
-    "name": "Nippori – Eki-Stempel",
-    "nameJa": "日暮里駅 駅スタンプ",
-    "lat": 35.7278,
-    "lng": 139.771,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 7/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Nippori",
+    "id": "stempel-jr-etchujima",
+    "name": "Etchujima – JR-Stempel",
+    "nameJa": "越中島駅 駅スタンプ",
+    "lat": 35.6687,
+    "lng": 139.79194,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Etchujima",
     "tags": [
       "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-ebisu",
+    "name": "Ebisu – JR-Stempel",
+    "nameJa": "恵比寿駅 駅スタンプ",
+    "lat": 35.6464,
+    "lng": 139.7077,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Ebisu",
+    "tags": [
+      "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-nishi-nippori",
-    "name": "Nishi-Nippori – Eki-Stempel",
-    "nameJa": "西日暮里駅 駅スタンプ",
-    "lat": 35.732,
-    "lng": 139.7668,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 8/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Nishi-Nippori",
+    "id": "stempel-jr-oji",
+    "name": "Oji – JR-Stempel",
+    "nameJa": "王子駅 駅スタンプ",
+    "lat": 35.75405,
+    "lng": 139.73723,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Oji",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie"
     ]
   },
   {
-    "id": "stempel-yamanote-tabata",
-    "name": "Tabata – Eki-Stempel",
-    "nameJa": "田端駅 駅スタンプ",
-    "lat": 35.7381,
-    "lng": 139.7608,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 9/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Tabata",
+    "id": "stempel-jr-oimachi",
+    "name": "Oimachi – JR-Stempel",
+    "nameJa": "大井町駅 駅スタンプ",
+    "lat": 35.60765,
+    "lng": 139.73432,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Oimachi",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie"
     ]
   },
   {
-    "id": "stempel-yamanote-komagome",
-    "name": "Komagome – Eki-Stempel",
-    "nameJa": "駒込駅 駅スタンプ",
-    "lat": 35.7365,
-    "lng": 139.747,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 10/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Komagome",
+    "id": "stempel-jr-okubo",
+    "name": "Okubo – JR-Stempel",
+    "nameJa": "大久保駅 駅スタンプ",
+    "lat": 35.70153,
+    "lng": 139.69678,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Okubo",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie"
     ]
   },
   {
-    "id": "stempel-yamanote-sugamo",
-    "name": "Sugamo – Eki-Stempel",
-    "nameJa": "巣鴨駅 駅スタンプ",
-    "lat": 35.7334,
-    "lng": 139.7393,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 11/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Sugamo",
+    "id": "stempel-yamanote-osaki",
+    "name": "Osaki – JR-Stempel",
+    "nameJa": "大崎駅 駅スタンプ",
+    "lat": 35.61932,
+    "lng": 139.72911,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Osaki",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
     "id": "stempel-yamanote-otsuka",
-    "name": "Otsuka – Eki-Stempel",
+    "name": "Otsuka – JR-Stempel",
     "nameJa": "大塚駅 駅スタンプ",
-    "lat": 35.7318,
-    "lng": 139.7286,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 12/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.73145,
+    "lng": 139.72924,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Otsuka",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-ikebukuro",
-    "name": "Ikebukuro – Eki-Stempel",
-    "nameJa": "池袋駅 駅スタンプ",
-    "lat": 35.7295,
-    "lng": 139.7109,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 13/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Ikebukuro",
+    "id": "stempel-jr-omori",
+    "name": "Omori – JR-Stempel",
+    "nameJa": "大森駅 駅スタンプ",
+    "lat": 35.58805,
+    "lng": 139.72885,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Omori",
     "tags": [
       "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-okachimachi",
+    "name": "Okachimachi – JR-Stempel",
+    "nameJa": "御徒町駅 駅スタンプ",
+    "lat": 35.70695,
+    "lng": 139.77463,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Okachimachi",
+    "tags": [
+      "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-mejiro",
-    "name": "Mejiro – Eki-Stempel",
-    "nameJa": "目白駅 駅スタンプ",
-    "lat": 35.7212,
-    "lng": 139.7066,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 14/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Mejiro",
+    "id": "stempel-jr-ogikubo",
+    "name": "Ogikubo – JR-Stempel",
+    "nameJa": "荻窪駅 駅スタンプ",
+    "lat": 35.70433,
+    "lng": 139.62102,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Ogikubo",
     "tags": [
       "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-oku",
+    "name": "Oku – JR-Stempel",
+    "nameJa": "尾久駅 駅スタンプ",
+    "lat": 35.74678,
+    "lng": 139.75461,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Oku",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-ochanomizu",
+    "name": "Ochanomizu – JR-Stempel",
+    "nameJa": "御茶ノ水駅 駅スタンプ",
+    "lat": 35.7004,
+    "lng": 139.76424,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Ochanomizu",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-kashiwa",
+    "name": "Kashiwa – JR-Stempel",
+    "nameJa": "柏駅 駅スタンプ",
+    "lat": 35.86171,
+    "lng": 139.97017,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Kashiwa",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-jr-kanamachi",
+    "name": "Kanamachi – JR-Stempel",
+    "nameJa": "金町駅 駅スタンプ",
+    "lat": 35.76958,
+    "lng": 139.87069,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Kanamachi",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-kamata",
+    "name": "Kamata – JR-Stempel",
+    "nameJa": "蒲田駅 駅スタンプ",
+    "lat": 35.56263,
+    "lng": 139.71409,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Kamata",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-kami-nakazato",
+    "name": "Kami-Nakazato – JR-Stempel",
+    "nameJa": "上中里駅 駅スタンプ",
+    "lat": 35.74695,
+    "lng": 139.74639,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Kami-Nakazato",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-kameari",
+    "name": "Kameari – JR-Stempel",
+    "nameJa": "亀有駅 駅スタンプ",
+    "lat": 35.766,
+    "lng": 139.84788,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Kameari",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-kanda",
+    "name": "Kanda – JR-Stempel",
+    "nameJa": "神田駅 駅スタンプ",
+    "lat": 35.69528,
+    "lng": 139.77049,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Kanda",
+    "tags": [
+      "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-takadanobaba",
-    "name": "Takadanobaba – Eki-Stempel",
-    "nameJa": "高田馬場駅 駅スタンプ",
-    "lat": 35.7128,
-    "lng": 139.7038,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 15/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Takadanobaba",
+    "id": "stempel-jr-kita-akabane",
+    "name": "Kita-Akabane – JR-Stempel",
+    "nameJa": "北赤羽駅 駅スタンプ",
+    "lat": 35.7871,
+    "lng": 139.7058,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Kita-Akabane",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie"
     ]
   },
   {
-    "id": "stempel-yamanote-shin-okubo",
-    "name": "Shin-Okubo – Eki-Stempel",
-    "nameJa": "新大久保駅 駅スタンプ",
-    "lat": 35.7012,
-    "lng": 139.7,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 16/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Shin-Okubo",
+    "id": "stempel-jr-kita-kashiwa",
+    "name": "Kita-Kashiwa – JR-Stempel",
+    "nameJa": "北柏駅 駅スタンプ",
+    "lat": 35.8753,
+    "lng": 139.98778,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Kita-Kashiwa",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie",
+      "Chiba"
     ]
   },
   {
-    "id": "stempel-yamanote-shinjuku",
-    "name": "Shinjuku – Eki-Stempel",
-    "nameJa": "新宿駅 駅スタンプ",
-    "lat": 35.6896,
-    "lng": 139.7006,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 17/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Shinjuku",
+    "id": "stempel-jr-kita-koganei",
+    "name": "Kita-Koganei – JR-Stempel",
+    "nameJa": "北小金駅 駅スタンプ",
+    "lat": 35.83336,
+    "lng": 139.93149,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Kita-Koganei",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie",
+      "Chiba"
     ]
   },
   {
-    "id": "stempel-yamanote-yoyogi",
-    "name": "Yoyogi – Eki-Stempel",
-    "nameJa": "代々木駅 駅スタンプ",
-    "lat": 35.683,
-    "lng": 139.702,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 18/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Yoyogi",
+    "id": "stempel-jr-kita-senju",
+    "name": "Kita-Senju – JR-Stempel",
+    "nameJa": "北千住駅 駅スタンプ",
+    "lat": 35.75026,
+    "lng": 139.80439,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Kita-Senju",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie"
     ]
   },
   {
-    "id": "stempel-yamanote-harajuku",
-    "name": "Harajuku – Eki-Stempel",
-    "nameJa": "原宿駅 駅スタンプ",
-    "lat": 35.6702,
-    "lng": 139.7027,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 19/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Harajuku",
+    "id": "stempel-jr-kita-matsudo",
+    "name": "Kita-Matsudo – JR-Stempel",
+    "nameJa": "北松戸駅 駅スタンプ",
+    "lat": 35.80061,
+    "lng": 139.91221,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Kita-Matsudo",
     "tags": [
       "JR",
-      "Yamanote"
+      "78er-Serie",
+      "Chiba"
     ]
   },
   {
-    "id": "stempel-yamanote-shibuya",
-    "name": "Shibuya – Eki-Stempel",
-    "nameJa": "渋谷駅 駅スタンプ",
-    "lat": 35.658,
-    "lng": 139.7016,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 20/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Shibuya",
+    "id": "stempel-jr-koenji",
+    "name": "Koenji – JR-Stempel",
+    "nameJa": "高円寺駅 駅スタンプ",
+    "lat": 35.70534,
+    "lng": 139.65,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Koenji",
     "tags": [
       "JR",
-      "Yamanote"
-    ]
-  },
-  {
-    "id": "stempel-yamanote-ebisu",
-    "name": "Ebisu – Eki-Stempel",
-    "nameJa": "恵比寿駅 駅スタンプ",
-    "lat": 35.6467,
-    "lng": 139.7101,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 21/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Ebisu",
-    "tags": [
-      "JR",
-      "Yamanote"
-    ]
-  },
-  {
-    "id": "stempel-yamanote-meguro",
-    "name": "Meguro – Eki-Stempel",
-    "nameJa": "目黒駅 駅スタンプ",
-    "lat": 35.6339,
-    "lng": 139.7158,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 22/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Meguro",
-    "tags": [
-      "JR",
-      "Yamanote"
+      "78er-Serie"
     ]
   },
   {
     "id": "stempel-yamanote-gotanda",
-    "name": "Gotanda – Eki-Stempel",
+    "name": "Gotanda – JR-Stempel",
     "nameJa": "五反田駅 駅スタンプ",
-    "lat": 35.6262,
-    "lng": 139.7236,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 23/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.62636,
+    "lng": 139.72396,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Gotanda",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-osaki",
-    "name": "Osaki – Eki-Stempel",
-    "nameJa": "大崎駅 駅スタンプ",
-    "lat": 35.6197,
-    "lng": 139.7286,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 24/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Osaki",
+    "id": "stempel-yamanote-komagome",
+    "name": "Komagome – JR-Stempel",
+    "nameJa": "駒込駅 駅スタンプ",
+    "lat": 35.73658,
+    "lng": 139.74724,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Komagome",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
     "id": "stempel-yamanote-shinagawa",
-    "name": "Shinagawa – Eki-Stempel",
+    "name": "Shinagawa – JR-Stempel",
     "nameJa": "品川駅 駅スタンプ",
-    "lat": 35.6285,
-    "lng": 139.7387,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 25/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.62748,
+    "lng": 139.73777,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Shinagawa",
     "tags": [
       "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-shinanomachi",
+    "name": "Shinanomachi – JR-Stempel",
+    "nameJa": "信濃町駅 駅スタンプ",
+    "lat": 35.68002,
+    "lng": 139.72049,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Shinanomachi",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shibuya",
+    "name": "Shibuya – JR-Stempel",
+    "nameJa": "渋谷駅 駅スタンプ",
+    "lat": 35.66057,
+    "lng": 139.70253,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Shibuya",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-jujo",
+    "name": "Jujo – JR-Stempel",
+    "nameJa": "十条駅 駅スタンプ",
+    "lat": 35.7598,
+    "lng": 139.72154,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Jujo",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shin-okubo",
+    "name": "Shin-Okubo – JR-Stempel",
+    "nameJa": "新大久保駅 駅スタンプ",
+    "lat": 35.7013,
+    "lng": 139.70024,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Shin-Okubo",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shinjuku",
+    "name": "Shinjuku – JR-Stempel",
+    "nameJa": "新宿駅 駅スタンプ",
+    "lat": 35.68873,
+    "lng": 139.69876,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Shinjuku",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-shin-nihombashi",
+    "name": "Shin-Nihombashi – JR-Stempel",
+    "nameJa": "新日本橋駅 駅スタンプ",
+    "lat": 35.68849,
+    "lng": 139.77353,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Shin-Nihombashi",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shimbashi",
+    "name": "Shimbashi – JR-Stempel",
+    "nameJa": "新橋駅 駅スタンプ",
+    "lat": 35.66711,
+    "lng": 139.75882,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Shimbashi",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-shin-matsudo",
+    "name": "Shin-Matsudo – JR-Stempel",
+    "nameJa": "新松戸駅 駅スタンプ",
+    "lat": 35.82548,
+    "lng": 139.92118,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Shin-Matsudo",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-jr-suidobashi",
+    "name": "Suidobashi – JR-Stempel",
+    "nameJa": "水道橋駅 駅スタンプ",
+    "lat": 35.70224,
+    "lng": 139.75222,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Suidobashi",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-sugamo",
+    "name": "Sugamo – JR-Stempel",
+    "nameJa": "巣鴨駅 駅スタンプ",
+    "lat": 35.73341,
+    "lng": 139.73943,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Sugamo",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-sendagaya",
+    "name": "Sendagaya – JR-Stempel",
+    "nameJa": "千駄ヶ谷駅 駅スタンプ",
+    "lat": 35.68097,
+    "lng": 139.71109,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Sendagaya",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-takadanobaba",
+    "name": "Takadanobaba – JR-Stempel",
+    "nameJa": "高田馬場駅 駅スタンプ",
+    "lat": 35.71348,
+    "lng": 139.70447,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Takadanobaba",
+    "tags": [
+      "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
     "id": "stempel-yamanote-takanawa-gateway",
-    "name": "Takanawa Gateway – Eki-Stempel",
+    "name": "Takanawa Gateway – JR-Stempel",
     "nameJa": "高輪ゲートウェイ駅 駅スタンプ",
-    "lat": 35.6355,
-    "lng": 139.7407,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 26/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.63471,
+    "lng": 139.73819,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Takanawa Gateway",
     "tags": [
       "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-tabata",
+    "name": "Tabata – JR-Stempel",
+    "nameJa": "田端駅 駅スタンプ",
+    "lat": 35.73832,
+    "lng": 139.76069,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Tabata",
+    "tags": [
+      "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
     "id": "stempel-yamanote-tamachi",
-    "name": "Tamachi – Eki-Stempel",
+    "name": "Tamachi – JR-Stempel",
     "nameJa": "田町駅 駅スタンプ",
-    "lat": 35.6457,
-    "lng": 139.7476,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 27/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.64574,
+    "lng": 139.74769,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Tamachi",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-tennodai",
+    "name": "Tennodai – JR-Stempel",
+    "nameJa": "天王台駅 駅スタンプ",
+    "lat": 35.87216,
+    "lng": 140.0404,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Tennodai",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-tokyo",
+    "name": "Tokyo – JR-Stempel",
+    "nameJa": "東京駅 駅スタンプ",
+    "lat": 35.68243,
+    "lng": 139.76486,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Tokyo",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-toride",
+    "name": "Toride – JR-Stempel",
+    "nameJa": "取手駅 駅スタンプ",
+    "lat": 35.89751,
+    "lng": 140.06388,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Toride",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-jr-nakano",
+    "name": "Nakano – JR-Stempel",
+    "nameJa": "中野駅 駅スタンプ",
+    "lat": 35.70578,
+    "lng": 139.66579,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Nakano",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-nishi-oi",
+    "name": "Nishi-Oi – JR-Stempel",
+    "nameJa": "西大井駅 駅スタンプ",
+    "lat": 35.60186,
+    "lng": 139.72172,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Nishi-Oi",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-nishi-ogikubo",
+    "name": "Nishi-Ogikubo – JR-Stempel",
+    "nameJa": "西荻窪駅 駅スタンプ",
+    "lat": 35.70403,
+    "lng": 139.60044,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Nishi-Ogikubo",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-nishi-nippori",
+    "name": "Nishi-Nippori – JR-Stempel",
+    "nameJa": "西日暮里駅 駅スタンプ",
+    "lat": 35.73373,
+    "lng": 139.76811,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Nishi-Nippori",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-nippori",
+    "name": "Nippori – JR-Stempel",
+    "nameJa": "日暮里駅 駅スタンプ",
+    "lat": 35.72801,
+    "lng": 139.77138,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Nippori",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-bakurocho",
+    "name": "Bakurocho – JR-Stempel",
+    "nameJa": "馬喰町駅 駅スタンプ",
+    "lat": 35.69337,
+    "lng": 139.78244,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Bakurocho",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-hatchobori",
+    "name": "Hatchobori – JR-Stempel",
+    "nameJa": "八丁堀駅 駅スタンプ",
+    "lat": 35.67401,
+    "lng": 139.77647,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Hatchobori",
+    "tags": [
+      "JR",
+      "78er-Serie"
     ]
   },
   {
     "id": "stempel-yamanote-hamamatsucho",
-    "name": "Hamamatsucho – Eki-Stempel",
+    "name": "Hamamatsucho – JR-Stempel",
     "nameJa": "浜松町駅 駅スタンプ",
-    "lat": 35.6555,
-    "lng": 139.757,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 28/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.65511,
+    "lng": 139.75706,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Hamamatsucho",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-yamanote-shimbashi",
-    "name": "Shimbashi – Eki-Stempel",
-    "nameJa": "新橋駅 駅スタンプ",
-    "lat": 35.6663,
-    "lng": 139.7583,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 29/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
-    "station": "Shimbashi",
+    "id": "stempel-yamanote-harajuku",
+    "name": "Harajuku – JR-Stempel",
+    "nameJa": "原宿駅 駅スタンプ",
+    "lat": 35.6705,
+    "lng": 139.70241,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Harajuku",
     "tags": [
       "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-jr-higashi-jujo",
+    "name": "Higashi-Jujo – JR-Stempel",
+    "nameJa": "東十条駅 駅スタンプ",
+    "lat": 35.76386,
+    "lng": 139.7269,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Higashi-Jujo",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-higashi-nakano",
+    "name": "Higashi-Nakano – JR-Stempel",
+    "nameJa": "東中野駅 駅スタンプ",
+    "lat": 35.70735,
+    "lng": 139.68323,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Higashi-Nakano",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-matsudo",
+    "name": "Matsudo – JR-Stempel",
+    "nameJa": "松戸駅 駅スタンプ",
+    "lat": 35.7843,
+    "lng": 139.90013,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Matsudo",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-jr-mabashi",
+    "name": "Mabashi – JR-Stempel",
+    "nameJa": "馬橋駅 駅スタンプ",
+    "lat": 35.81155,
+    "lng": 139.91735,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Mabashi",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-jr-mikawashima",
+    "name": "Mikawajima – JR-Stempel",
+    "nameJa": "三河島駅 駅スタンプ",
+    "lat": 35.73317,
+    "lng": 139.77847,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Mikawajima",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-minami-kashiwa",
+    "name": "Minami-Kashiwa – JR-Stempel",
+    "nameJa": "南柏駅 駅スタンプ",
+    "lat": 35.84469,
+    "lng": 139.95409,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Minami-Kashiwa",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-jr-minami-senju",
+    "name": "Minami-Senju – JR-Stempel",
+    "nameJa": "南千住駅 駅スタンプ",
+    "lat": 35.73289,
+    "lng": 139.79923,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
+    "station": "Minami-Senju",
+    "tags": [
+      "JR",
+      "78er-Serie"
+    ]
+  },
+  {
+    "id": "stempel-jr-minami-nagareyama",
+    "name": "Minami-Nagareyama – JR-Stempel",
+    "nameJa": "南流山駅 駅スタンプ",
+    "lat": 35.83892,
+    "lng": 139.90434,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“ Liegt in der Präfektur Chiba (bzw. Ibaraki bei Toride) – ein Ausflug für Sammler.",
+    "linie": "JR East",
+    "station": "Minami-Nagareyama",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Chiba"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-meguro",
+    "name": "Meguro – JR-Stempel",
+    "nameJa": "目黒駅 駅スタンプ",
+    "lat": 35.63407,
+    "lng": 139.71573,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Meguro",
+    "tags": [
+      "JR",
+      "78er-Serie",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-mejiro",
+    "name": "Mejiro – JR-Stempel",
+    "nameJa": "目白駅 駅スタンプ",
+    "lat": 35.72034,
+    "lng": 139.70619,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Mejiro",
+    "tags": [
+      "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
     "id": "stempel-yamanote-yurakucho",
-    "name": "Yurakucho – Eki-Stempel",
+    "name": "Yurakucho – JR-Stempel",
     "nameJa": "有楽町駅 駅スタンプ",
-    "lat": 35.6751,
-    "lng": 139.763,
-    "beschreibung": "JR-Bahnhofsstempel (Yamanote-Linie – Station 30/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yamanote",
+    "lat": 35.67597,
+    "lng": 139.76214,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
     "station": "Yurakucho",
     "tags": [
       "JR",
+      "78er-Serie",
       "Yamanote"
     ]
   },
   {
-    "id": "stempel-jr-ochanomizu",
-    "name": "Ochanomizu – Eki-Stempel",
-    "nameJa": "御茶ノ水駅 駅スタンプ",
-    "lat": 35.6995,
-    "lng": 139.765,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Ochanomizu",
-    "tags": [
-      "JR",
-      "Chuo/Sobu"
-    ]
-  },
-  {
-    "id": "stempel-jr-suidobashi",
-    "name": "Suidobashi – Eki-Stempel",
-    "nameJa": "水道橋駅 駅スタンプ",
-    "lat": 35.7021,
-    "lng": 139.7535,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Suidobashi",
-    "tags": [
-      "JR",
-      "Chuo/Sobu"
-    ]
-  },
-  {
-    "id": "stempel-jr-iidabashi",
-    "name": "Iidabashi – Eki-Stempel",
-    "nameJa": "飯田橋駅 駅スタンプ",
-    "lat": 35.702,
-    "lng": 139.745,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Iidabashi",
-    "tags": [
-      "JR",
-      "Chuo/Sobu"
-    ]
-  },
-  {
-    "id": "stempel-jr-ichigaya",
-    "name": "Ichigaya – Eki-Stempel",
-    "nameJa": "市ケ谷駅 駅スタンプ",
-    "lat": 35.6912,
-    "lng": 139.7356,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Ichigaya",
-    "tags": [
-      "JR",
-      "Chuo/Sobu"
-    ]
-  },
-  {
     "id": "stempel-jr-yotsuya",
-    "name": "Yotsuya – Eki-Stempel",
+    "name": "Yotsuya – JR-Stempel",
     "nameJa": "四ツ谷駅 駅スタンプ",
-    "lat": 35.686,
-    "lng": 139.7302,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
+    "lat": 35.68621,
+    "lng": 139.72948,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East",
     "station": "Yotsuya",
     "tags": [
       "JR",
-      "Chuo/Sobu"
+      "78er-Serie"
     ]
   },
   {
-    "id": "stempel-jr-shinanomachi",
-    "name": "Shinanomachi – Eki-Stempel",
-    "nameJa": "信濃町駅 駅スタンプ",
-    "lat": 35.68,
-    "lng": 139.7203,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Shinanomachi",
+    "id": "stempel-yamanote-yoyogi",
+    "name": "Yoyogi – JR-Stempel",
+    "nameJa": "代々木駅 駅スタンプ",
+    "lat": 35.68395,
+    "lng": 139.70166,
+    "beschreibung": "Teil der offiziellen JR-East-Stempelserie im Großraum Tokio (78 Bahnhöfe, 2020 neu gestaltet: je ein Kanji aus dem Bahnhofsnamen im Stil eines Familienwappens). Der Stempel steht meist außerhalb der Ticketsperre – im Zweifel fragen: „Sutampu wa doko desu ka?“",
+    "linie": "JR East · Yamanote-Linie",
+    "station": "Yoyogi",
     "tags": [
       "JR",
-      "Chuo/Sobu"
+      "78er-Serie",
+      "Yamanote"
     ]
   },
   {
-    "id": "stempel-jr-sendagaya",
-    "name": "Sendagaya – Eki-Stempel",
-    "nameJa": "千駄ケ谷駅 駅スタンプ",
-    "lat": 35.6812,
-    "lng": 139.7113,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Sendagaya",
+    "id": "stempel-toei-nishi-magome",
+    "name": "Nishi-magome – Toei-U-Bahn-Stempel",
+    "nameJa": "西馬込駅 都営地下鉄 駅スタンプ",
+    "lat": 35.5873,
+    "lng": 139.70631,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A01). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Nishi-magome",
     "tags": [
-      "JR",
-      "Chuo/Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-okubo",
-    "name": "Okubo – Eki-Stempel",
-    "nameJa": "大久保駅 駅スタンプ",
-    "lat": 35.7006,
-    "lng": 139.6975,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Okubo",
+    "id": "stempel-toei-magome",
+    "name": "Magome – Toei-U-Bahn-Stempel",
+    "nameJa": "馬込駅 都営地下鉄 駅スタンプ",
+    "lat": 35.59678,
+    "lng": 139.71193,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A02). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Magome",
     "tags": [
-      "JR",
-      "Chuo/Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-higashi-nakano",
-    "name": "Higashi-Nakano – Eki-Stempel",
-    "nameJa": "東中野駅 駅スタンプ",
-    "lat": 35.7066,
-    "lng": 139.6826,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo/Sobu",
-    "station": "Higashi-Nakano",
+    "id": "stempel-toei-nakanobu",
+    "name": "Nakanobu – Toei-U-Bahn-Stempel",
+    "nameJa": "中延駅 都営地下鉄 駅スタンプ",
+    "lat": 35.60593,
+    "lng": 139.71288,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A03). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Nakanobu",
     "tags": [
-      "JR",
-      "Chuo/Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-nakano",
-    "name": "Nakano – Eki-Stempel",
-    "nameJa": "中野駅 駅スタンプ",
-    "lat": 35.7056,
-    "lng": 139.6657,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo",
-    "station": "Nakano",
+    "id": "stempel-toei-togoshi",
+    "name": "Togoshi – Toei-U-Bahn-Stempel",
+    "nameJa": "戸越駅 都営地下鉄 駅スタンプ",
+    "lat": 35.6145,
+    "lng": 139.71636,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A04). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Togoshi",
     "tags": [
-      "JR",
-      "Chuo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-koenji",
-    "name": "Koenji – Eki-Stempel",
-    "nameJa": "高円寺駅 駅スタンプ",
-    "lat": 35.7052,
-    "lng": 139.6497,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo",
-    "station": "Koenji",
+    "id": "stempel-toei-gotanda",
+    "name": "Gotanda – Toei-U-Bahn-Stempel",
+    "nameJa": "五反田駅 都営地下鉄 駅スタンプ",
+    "lat": 35.62636,
+    "lng": 139.72396,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A05). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Gotanda",
     "tags": [
-      "JR",
-      "Chuo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-asagaya",
-    "name": "Asagaya – Eki-Stempel",
-    "nameJa": "阿佐ケ谷駅 駅スタンプ",
-    "lat": 35.7049,
-    "lng": 139.6359,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo",
-    "station": "Asagaya",
+    "id": "stempel-toei-takanawadai",
+    "name": "Takanawadai – Toei-U-Bahn-Stempel",
+    "nameJa": "高輪台駅 都営地下鉄 駅スタンプ",
+    "lat": 35.63168,
+    "lng": 139.73068,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A06). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Takanawadai",
     "tags": [
-      "JR",
-      "Chuo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-ogikubo",
-    "name": "Ogikubo – Eki-Stempel",
-    "nameJa": "荻窪駅 駅スタンプ",
-    "lat": 35.7046,
-    "lng": 139.62,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo",
-    "station": "Ogikubo",
+    "id": "stempel-toei-sengakuji",
+    "name": "Sengakuji – Toei-U-Bahn-Stempel",
+    "nameJa": "泉岳寺駅 都営地下鉄 駅スタンプ",
+    "lat": 35.63775,
+    "lng": 139.73922,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A07). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Sengakuji",
     "tags": [
-      "JR",
-      "Chuo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-nishi-ogikubo",
-    "name": "Nishi-Ogikubo – Eki-Stempel",
-    "nameJa": "西荻窪駅 駅スタンプ",
-    "lat": 35.7039,
-    "lng": 139.5995,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Chuo",
-    "station": "Nishi-Ogikubo",
+    "id": "stempel-toei-mita",
+    "name": "Mita – Toei-U-Bahn-Stempel",
+    "nameJa": "三田駅 都営地下鉄 駅スタンプ",
+    "lat": 35.6479,
+    "lng": 139.7465,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A08). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Mita",
     "tags": [
-      "JR",
-      "Chuo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-kichijoji",
-    "name": "Kichijoji – Eki-Stempel",
-    "nameJa": "吉祥寺駅 駅スタンプ",
-    "lat": 35.7033,
-    "lng": 139.5797,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“ Tipp: Ghibli-Museum (Mitaka) ist zu Fuß durch den Inokashira-Park erreichbar.",
-    "linie": "JR Chuo",
-    "station": "Kichijoji",
+    "id": "stempel-toei-daimon",
+    "name": "Daimon – Toei-U-Bahn-Stempel",
+    "nameJa": "大門駅 都営地下鉄 駅スタンプ",
+    "lat": 35.65616,
+    "lng": 139.75477,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie & Toei Asakusa-Linie & Toei Ōedo-Linie & Toei Ōedo-Linie, Station A09 / E20 / E20 / A09). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie · Toei Asakusa-Linie · Toei Ōedo-Linie · Toei Ōedo-Linie",
+    "station": "Daimon",
     "tags": [
-      "JR",
-      "Chuo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa",
+      "Asakusa",
+      "Ōedo",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-asakusabashi",
-    "name": "Asakusabashi – Eki-Stempel",
-    "nameJa": "浅草橋駅 駅スタンプ",
-    "lat": 35.6974,
-    "lng": 139.7863,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu",
+    "id": "stempel-toei-shimbashi",
+    "name": "Shimbashi – Toei-U-Bahn-Stempel",
+    "nameJa": "新橋駅 都営地下鉄 駅スタンプ",
+    "lat": 35.66711,
+    "lng": 139.75882,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A10). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Shimbashi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-higashi-ginza",
+    "name": "Higashi-ginza – Toei-U-Bahn-Stempel",
+    "nameJa": "東銀座駅 都営地下鉄 駅スタンプ",
+    "lat": 35.6687,
+    "lng": 139.76826,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A11). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Higashi-ginza",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-takaracho",
+    "name": "Takaracho – Toei-U-Bahn-Stempel",
+    "nameJa": "宝町駅 都営地下鉄 駅スタンプ",
+    "lat": 35.67543,
+    "lng": 139.77188,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A12). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Takaracho",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-nihombashi",
+    "name": "Nihombashi – Toei-U-Bahn-Stempel",
+    "nameJa": "日本橋駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68165,
+    "lng": 139.7762,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A13). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Nihombashi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-ningyocho",
+    "name": "Ningyocho – Toei-U-Bahn-Stempel",
+    "nameJa": "人形町駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68628,
+    "lng": 139.78219,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A14). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Ningyocho",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-higashi-nihombashi",
+    "name": "Higashi-nihombashi – Toei-U-Bahn-Stempel",
+    "nameJa": "東日本橋駅 都営地下鉄 駅スタンプ",
+    "lat": 35.69229,
+    "lng": 139.78478,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A15). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Higashi-nihombashi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-asakusabashi",
+    "name": "Asakusabashi – Toei-U-Bahn-Stempel",
+    "nameJa": "浅草橋駅 都営地下鉄 駅スタンプ",
+    "lat": 35.69827,
+    "lng": 139.78671,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A16). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
     "station": "Asakusabashi",
     "tags": [
-      "JR",
-      "Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
     ]
   },
   {
-    "id": "stempel-jr-ryogoku",
-    "name": "Ryogoku – Eki-Stempel",
-    "nameJa": "両国駅 駅スタンプ",
-    "lat": 35.6956,
-    "lng": 139.7934,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu",
+    "id": "stempel-toei-kuramae",
+    "name": "Kuramae – Toei-U-Bahn-Stempel",
+    "nameJa": "蔵前駅 都営地下鉄 駅スタンプ",
+    "lat": 35.7029,
+    "lng": 139.79032,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie & Toei Asakusa-Linie & Toei Ōedo-Linie & Toei Ōedo-Linie, Station A17 / E11 / E11 / A17). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie · Toei Asakusa-Linie · Toei Ōedo-Linie · Toei Ōedo-Linie",
+    "station": "Kuramae",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa",
+      "Asakusa",
+      "Ōedo",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-asakusa",
+    "name": "Asakusa – Toei-U-Bahn-Stempel",
+    "nameJa": "浅草駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70933,
+    "lng": 139.79688,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A18). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Asakusa",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-honjoazumabashi",
+    "name": "Honjoazumabashi – Toei-U-Bahn-Stempel",
+    "nameJa": "本所吾妻橋駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70856,
+    "lng": 139.80435,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A19). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Honjoazumabashi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-oshiage",
+    "name": "Oshiage – Toei-U-Bahn-Stempel",
+    "nameJa": "押上駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70952,
+    "lng": 139.81359,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Asakusa-Linie, Station A20). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Asakusa-Linie",
+    "station": "Oshiage",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Asakusa"
+    ]
+  },
+  {
+    "id": "stempel-toei-shinjuku-nishiguchi",
+    "name": "Shinjuku-nishiguchi – Toei-U-Bahn-Stempel",
+    "nameJa": "新宿西口駅 都営地下鉄 駅スタンプ",
+    "lat": 35.6929,
+    "lng": 139.6991,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E01). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Shinjuku-nishiguchi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-higashi-shinjuku",
+    "name": "Higashi-shinjuku – Toei-U-Bahn-Stempel",
+    "nameJa": "東新宿駅 都営地下鉄 駅スタンプ",
+    "lat": 35.6979,
+    "lng": 139.70754,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E02). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Higashi-shinjuku",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-wakamatsu-kawada",
+    "name": "Wakamatsu-kawada – Toei-U-Bahn-Stempel",
+    "nameJa": "若松河田駅 都営地下鉄 駅スタンプ",
+    "lat": 35.69944,
+    "lng": 139.71854,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E03). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Wakamatsu-kawada",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-ushigome-yanagicho",
+    "name": "Ushigome-yanagicho – Toei-U-Bahn-Stempel",
+    "nameJa": "牛込柳町駅 都営地下鉄 駅スタンプ",
+    "lat": 35.69946,
+    "lng": 139.72557,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E04). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Ushigome-yanagicho",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-ushigome-kagurazaka",
+    "name": "Ushigome-kagurazaka – Toei-U-Bahn-Stempel",
+    "nameJa": "牛込神楽坂駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70091,
+    "lng": 139.73595,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E05). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Ushigome-kagurazaka",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-iidabashi",
+    "name": "Iidabashi – Toei-U-Bahn-Stempel",
+    "nameJa": "飯田橋駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70103,
+    "lng": 139.74748,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E06). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Iidabashi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-kasuga",
+    "name": "Kasuga – Toei-U-Bahn-Stempel",
+    "nameJa": "春日駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70816,
+    "lng": 139.75356,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E07). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Kasuga",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-hongo-sanchome",
+    "name": "Hongo-sanchome – Toei-U-Bahn-Stempel",
+    "nameJa": "本郷三丁目駅 都営地下鉄 駅スタンプ",
+    "lat": 35.7066,
+    "lng": 139.75994,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E08). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Hongo-sanchome",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-ueno-okachimachi",
+    "name": "Ueno-okachimachi – Toei-U-Bahn-Stempel",
+    "nameJa": "上野御徒町駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70798,
+    "lng": 139.7733,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E09). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Ueno-okachimachi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-shin-okachimachi",
+    "name": "Shin-okachimachi – Toei-U-Bahn-Stempel",
+    "nameJa": "新御徒町駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70706,
+    "lng": 139.78184,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E10). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Shin-okachimachi",
+    "tags": [
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
+    ]
+  },
+  {
+    "id": "stempel-toei-ryogoku",
+    "name": "Ryogoku – Toei-U-Bahn-Stempel",
+    "nameJa": "両国駅 都営地下鉄 駅スタンプ",
+    "lat": 35.696,
+    "lng": 139.79275,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E12). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
     "station": "Ryogoku",
     "tags": [
-      "JR",
-      "Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-kinshicho",
-    "name": "Kinshicho – Eki-Stempel",
-    "nameJa": "錦糸町駅 駅スタンプ",
-    "lat": 35.6966,
-    "lng": 139.8141,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu",
-    "station": "Kinshicho",
+    "id": "stempel-toei-morishita",
+    "name": "Morishita – Toei-U-Bahn-Stempel",
+    "nameJa": "森下駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68823,
+    "lng": 139.79825,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E13). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Morishita",
     "tags": [
-      "JR",
-      "Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-kameido",
-    "name": "Kameido – Eki-Stempel",
-    "nameJa": "亀戸駅 駅スタンプ",
-    "lat": 35.6973,
-    "lng": 139.8263,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu",
-    "station": "Kameido",
+    "id": "stempel-toei-kiyosumi-shirakawa",
+    "name": "Kiyosumi-shirakawa – Toei-U-Bahn-Stempel",
+    "nameJa": "清澄白河駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68205,
+    "lng": 139.79876,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E14). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Kiyosumi-shirakawa",
     "tags": [
-      "JR",
-      "Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-hirai",
-    "name": "Hirai – Eki-Stempel",
-    "nameJa": "平井駅 駅スタンプ",
-    "lat": 35.7062,
-    "lng": 139.8424,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu",
-    "station": "Hirai",
+    "id": "stempel-toei-monzen-nakacho",
+    "name": "Monzen-nakacho – Toei-U-Bahn-Stempel",
+    "nameJa": "門前仲町駅 都営地下鉄 駅スタンプ",
+    "lat": 35.67262,
+    "lng": 139.795,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E15). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Monzen-nakacho",
     "tags": [
-      "JR",
-      "Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-shin-koiwa",
-    "name": "Shin-Koiwa – Eki-Stempel",
-    "nameJa": "新小岩駅 駅スタンプ",
-    "lat": 35.7168,
-    "lng": 139.8585,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu",
-    "station": "Shin-Koiwa",
+    "id": "stempel-toei-tsukishima",
+    "name": "Tsukishima – Toei-U-Bahn-Stempel",
+    "nameJa": "月島駅 都営地下鉄 駅スタンプ",
+    "lat": 35.66478,
+    "lng": 139.78435,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E16). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Tsukishima",
     "tags": [
-      "JR",
-      "Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-koiwa",
-    "name": "Koiwa – Eki-Stempel",
-    "nameJa": "小岩駅 駅スタンプ",
-    "lat": 35.7331,
-    "lng": 139.8819,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu",
-    "station": "Koiwa",
+    "id": "stempel-toei-kachidoki",
+    "name": "Kachidoki – Toei-U-Bahn-Stempel",
+    "nameJa": "勝どき駅 都営地下鉄 駅スタンプ",
+    "lat": 35.65893,
+    "lng": 139.77733,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E17). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Kachidoki",
     "tags": [
-      "JR",
-      "Sobu"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-shin-nihombashi",
-    "name": "Shin-Nihombashi – Eki-Stempel",
-    "nameJa": "新日本橋駅 駅スタンプ",
-    "lat": 35.689,
-    "lng": 139.774,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu-Schnelllinie",
-    "station": "Shin-Nihombashi",
+    "id": "stempel-toei-tsukijishijo",
+    "name": "Tsukijishijo – Toei-U-Bahn-Stempel",
+    "nameJa": "築地市場駅 都営地下鉄 駅スタンプ",
+    "lat": 35.66488,
+    "lng": 139.76688,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E18). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Tsukijishijo",
     "tags": [
-      "JR",
-      "Sobu-Schnelllinie"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-bakurocho",
-    "name": "Bakurocho – Eki-Stempel",
-    "nameJa": "馬喰町駅 駅スタンプ",
-    "lat": 35.6936,
-    "lng": 139.783,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Sobu-Schnelllinie",
-    "station": "Bakurocho",
+    "id": "stempel-toei-shiodome",
+    "name": "Shiodome – Toei-U-Bahn-Stempel",
+    "nameJa": "汐留駅 都営地下鉄 駅スタンプ",
+    "lat": 35.66324,
+    "lng": 139.76027,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E19). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Shiodome",
     "tags": [
-      "JR",
-      "Sobu-Schnelllinie"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-kamata",
-    "name": "Kamata – Eki-Stempel",
-    "nameJa": "蒲田駅 駅スタンプ",
-    "lat": 35.5625,
-    "lng": 139.7161,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keihin-Tohoku",
-    "station": "Kamata",
+    "id": "stempel-toei-akabanebashi",
+    "name": "Akabanebashi – Toei-U-Bahn-Stempel",
+    "nameJa": "赤羽橋駅 都営地下鉄 駅スタンプ",
+    "lat": 35.65504,
+    "lng": 139.74398,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E21). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Akabanebashi",
     "tags": [
-      "JR",
-      "Keihin-Tohoku"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-omori",
-    "name": "Omori – Eki-Stempel",
-    "nameJa": "大森駅 駅スタンプ",
-    "lat": 35.5884,
-    "lng": 139.7279,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keihin-Tohoku",
-    "station": "Omori",
+    "id": "stempel-toei-azabu-juban",
+    "name": "Azabu-juban – Toei-U-Bahn-Stempel",
+    "nameJa": "麻布十番駅 都営地下鉄 駅スタンプ",
+    "lat": 35.65689,
+    "lng": 139.73515,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E22). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Azabu-juban",
     "tags": [
-      "JR",
-      "Keihin-Tohoku"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-oimachi",
-    "name": "Oimachi – Eki-Stempel",
-    "nameJa": "大井町駅 駅スタンプ",
-    "lat": 35.6064,
-    "lng": 139.7346,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keihin-Tohoku",
-    "station": "Oimachi",
+    "id": "stempel-toei-roppongi",
+    "name": "Roppongi – Toei-U-Bahn-Stempel",
+    "nameJa": "六本木駅 都営地下鉄 駅スタンプ",
+    "lat": 35.66566,
+    "lng": 139.7295,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E23). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Roppongi",
     "tags": [
-      "JR",
-      "Keihin-Tohoku"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-nishi-oi",
-    "name": "Nishi-Oi – Eki-Stempel",
-    "nameJa": "西大井駅 駅スタンプ",
-    "lat": 35.6018,
-    "lng": 139.7217,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Yokosuka",
-    "station": "Nishi-Oi",
+    "id": "stempel-toei-aoyama-icchome",
+    "name": "Aoyama-icchome – Toei-U-Bahn-Stempel",
+    "nameJa": "青山一丁目駅 都営地下鉄 駅スタンプ",
+    "lat": 35.67314,
+    "lng": 139.72358,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E24). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Aoyama-icchome",
     "tags": [
-      "JR",
-      "Yokosuka"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-oji",
-    "name": "Oji – Eki-Stempel",
-    "nameJa": "王子駅 駅スタンプ",
-    "lat": 35.7527,
-    "lng": 139.738,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keihin-Tohoku",
-    "station": "Oji",
+    "id": "stempel-toei-kokuritsu-kyogijo",
+    "name": "Kokuritsu-kyogijo – Toei-U-Bahn-Stempel",
+    "nameJa": "国立競技場駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68053,
+    "lng": 139.71198,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E25). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Kokuritsu-kyogijo",
     "tags": [
-      "JR",
-      "Keihin-Tohoku"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-kami-nakazato",
-    "name": "Kami-Nakazato – Eki-Stempel",
-    "nameJa": "上中里駅 駅スタンプ",
-    "lat": 35.7471,
-    "lng": 139.7457,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keihin-Tohoku",
-    "station": "Kami-Nakazato",
+    "id": "stempel-toei-yoyogi",
+    "name": "Yoyogi – Toei-U-Bahn-Stempel",
+    "nameJa": "代々木駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68395,
+    "lng": 139.70166,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E26). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Yoyogi",
     "tags": [
-      "JR",
-      "Keihin-Tohoku"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-higashi-jujo",
-    "name": "Higashi-Jujo – Eki-Stempel",
-    "nameJa": "東十条駅 駅スタンプ",
-    "lat": 35.7636,
-    "lng": 139.7268,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keihin-Tohoku",
-    "station": "Higashi-Jujo",
+    "id": "stempel-toei-shinjuku",
+    "name": "Shinjuku – Toei-U-Bahn-Stempel",
+    "nameJa": "新宿駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68873,
+    "lng": 139.69876,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E27). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Shinjuku",
     "tags": [
-      "JR",
-      "Keihin-Tohoku"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-akabane",
-    "name": "Akabane – Eki-Stempel",
-    "nameJa": "赤羽駅 駅スタンプ",
-    "lat": 35.7779,
-    "lng": 139.721,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keihin-Tohoku",
-    "station": "Akabane",
+    "id": "stempel-toei-tochomae",
+    "name": "Tochomae – Toei-U-Bahn-Stempel",
+    "nameJa": "都庁前駅 都営地下鉄 駅スタンプ",
+    "lat": 35.69061,
+    "lng": 139.69281,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E28). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Tochomae",
     "tags": [
-      "JR",
-      "Keihin-Tohoku"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-itabashi",
-    "name": "Itabashi – Eki-Stempel",
-    "nameJa": "板橋駅 駅スタンプ",
-    "lat": 35.7457,
-    "lng": 139.7193,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Saikyo",
-    "station": "Itabashi",
+    "id": "stempel-toei-nishi-shinjuku-gochome",
+    "name": "Nishi-shinjuku-gochome – Toei-U-Bahn-Stempel",
+    "nameJa": "西新宿五丁目駅 都営地下鉄 駅スタンプ",
+    "lat": 35.68992,
+    "lng": 139.68478,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E29). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Nishi-shinjuku-gochome",
     "tags": [
-      "JR",
-      "Saikyo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-jujo",
-    "name": "Jujo – Eki-Stempel",
-    "nameJa": "十条駅 駅スタンプ",
-    "lat": 35.7606,
-    "lng": 139.7222,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Saikyo",
-    "station": "Jujo",
+    "id": "stempel-toei-nakano-sakaue",
+    "name": "Nakano-sakaue – Toei-U-Bahn-Stempel",
+    "nameJa": "中野坂上駅 都営地下鉄 駅スタンプ",
+    "lat": 35.6963,
+    "lng": 139.68292,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E30). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Nakano-sakaue",
     "tags": [
-      "JR",
-      "Saikyo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-kita-akabane",
-    "name": "Kita-Akabane – Eki-Stempel",
-    "nameJa": "北赤羽駅 駅スタンプ",
-    "lat": 35.7871,
-    "lng": 139.7058,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Saikyo",
-    "station": "Kita-Akabane",
+    "id": "stempel-toei-higashi-nakano",
+    "name": "Higashi-nakano – Toei-U-Bahn-Stempel",
+    "nameJa": "東中野駅 都営地下鉄 駅スタンプ",
+    "lat": 35.70735,
+    "lng": 139.68323,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E31). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Higashi-nakano",
     "tags": [
-      "JR",
-      "Saikyo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-ukima-funado",
-    "name": "Ukima-Funado – Eki-Stempel",
-    "nameJa": "浮間舟渡駅 駅スタンプ",
-    "lat": 35.7911,
-    "lng": 139.6913,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Saikyo",
-    "station": "Ukima-Funado",
+    "id": "stempel-toei-nakai",
+    "name": "Nakai – Toei-U-Bahn-Stempel",
+    "nameJa": "中井駅 都営地下鉄 駅スタンプ",
+    "lat": 35.71648,
+    "lng": 139.68763,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E32). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Nakai",
     "tags": [
-      "JR",
-      "Saikyo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-oku",
-    "name": "Oku – Eki-Stempel",
-    "nameJa": "尾久駅 駅スタンプ",
-    "lat": 35.747,
-    "lng": 139.7537,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Utsunomiya/Takasaki",
-    "station": "Oku",
+    "id": "stempel-toei-ochiai-minami-nagasaki",
+    "name": "Ochiai-minami-nagasaki – Toei-U-Bahn-Stempel",
+    "nameJa": "落合南長崎駅 都営地下鉄 駅スタンプ",
+    "lat": 35.72269,
+    "lng": 139.68481,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E33). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Ochiai-minami-nagasaki",
     "tags": [
-      "JR",
-      "Utsunomiya/Takasaki"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-mikawashima",
-    "name": "Mikawashima – Eki-Stempel",
-    "nameJa": "三河島駅 駅スタンプ",
-    "lat": 35.7332,
-    "lng": 139.777,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Joban",
-    "station": "Mikawashima",
+    "id": "stempel-toei-shin-egota",
+    "name": "Shin-egota – Toei-U-Bahn-Stempel",
+    "nameJa": "新江古田駅 都営地下鉄 駅スタンプ",
+    "lat": 35.73227,
+    "lng": 139.67109,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E34). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Shin-egota",
     "tags": [
-      "JR",
-      "Joban"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-minami-senju",
-    "name": "Minami-Senju – Eki-Stempel",
-    "nameJa": "南千住駅 駅スタンプ",
-    "lat": 35.7339,
-    "lng": 139.7993,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Joban",
-    "station": "Minami-Senju",
+    "id": "stempel-toei-nerima",
+    "name": "Nerima – Toei-U-Bahn-Stempel",
+    "nameJa": "練馬駅 都営地下鉄 駅スタンプ",
+    "lat": 35.73813,
+    "lng": 139.65419,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E35). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Nerima",
     "tags": [
-      "JR",
-      "Joban"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-kita-senju",
-    "name": "Kita-Senju – Eki-Stempel",
-    "nameJa": "北千住駅 駅スタンプ",
-    "lat": 35.7493,
-    "lng": 139.8048,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Joban",
-    "station": "Kita-Senju",
+    "id": "stempel-toei-toshimaen",
+    "name": "Toshimaen – Toei-U-Bahn-Stempel",
+    "nameJa": "豊島園駅 都営地下鉄 駅スタンプ",
+    "lat": 35.74179,
+    "lng": 139.64799,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E36). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Toshimaen",
     "tags": [
-      "JR",
-      "Joban"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-ayase",
-    "name": "Ayase – Eki-Stempel",
-    "nameJa": "綾瀬駅 駅スタンプ",
-    "lat": 35.7623,
-    "lng": 139.8247,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Joban",
-    "station": "Ayase",
+    "id": "stempel-toei-nerima-kasugacho",
+    "name": "Nerima-kasugacho – Toei-U-Bahn-Stempel",
+    "nameJa": "練馬春日町駅 都営地下鉄 駅スタンプ",
+    "lat": 35.7514,
+    "lng": 139.64038,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E37). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Nerima-kasugacho",
     "tags": [
-      "JR",
-      "Joban"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
-    "id": "stempel-jr-kameari",
-    "name": "Kameari – Eki-Stempel",
-    "nameJa": "亀有駅 駅スタンプ",
-    "lat": 35.7663,
-    "lng": 139.8478,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“ Kameari: Hier steht auch die berühmte Kochikame-Statue!",
-    "linie": "JR Joban",
-    "station": "Kameari",
+    "id": "stempel-toei-hikarigaoka",
+    "name": "Hikarigaoka – Toei-U-Bahn-Stempel",
+    "nameJa": "光が丘駅 都営地下鉄 駅スタンプ",
+    "lat": 35.75902,
+    "lng": 139.62957,
+    "beschreibung": "Stempel der städtischen Toei-U-Bahn (Toei Ōedo-Linie, Station E38). Meist am Schalter oder neben den Ticketsperren – das Personal hilft gern.",
+    "linie": "Toei Ōedo-Linie",
+    "station": "Hikarigaoka",
     "tags": [
-      "JR",
-      "Joban"
-    ]
-  },
-  {
-    "id": "stempel-jr-kanamachi",
-    "name": "Kanamachi – Eki-Stempel",
-    "nameJa": "金町駅 駅スタンプ",
-    "lat": 35.769,
-    "lng": 139.8706,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Joban",
-    "station": "Kanamachi",
-    "tags": [
-      "JR",
-      "Joban"
-    ]
-  },
-  {
-    "id": "stempel-jr-hatchobori",
-    "name": "Hatchobori – Eki-Stempel",
-    "nameJa": "八丁堀駅 駅スタンプ",
-    "lat": 35.6748,
-    "lng": 139.7778,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keiyo",
-    "station": "Hatchobori",
-    "tags": [
-      "JR",
-      "Keiyo"
-    ]
-  },
-  {
-    "id": "stempel-jr-etchujima",
-    "name": "Etchujima – Eki-Stempel",
-    "nameJa": "越中島駅 駅スタンプ",
-    "lat": 35.668,
-    "lng": 139.7924,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keiyo",
-    "station": "Etchujima",
-    "tags": [
-      "JR",
-      "Keiyo"
-    ]
-  },
-  {
-    "id": "stempel-jr-shiomi",
-    "name": "Shiomi – Eki-Stempel",
-    "nameJa": "潮見駅 駅スタンプ",
-    "lat": 35.6603,
-    "lng": 139.8172,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keiyo",
-    "station": "Shiomi",
-    "tags": [
-      "JR",
-      "Keiyo"
-    ]
-  },
-  {
-    "id": "stempel-jr-shin-kiba",
-    "name": "Shin-Kiba – Eki-Stempel",
-    "nameJa": "新木場駅 駅スタンプ",
-    "lat": 35.6458,
-    "lng": 139.827,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“",
-    "linie": "JR Keiyo",
-    "station": "Shin-Kiba",
-    "tags": [
-      "JR",
-      "Keiyo"
-    ]
-  },
-  {
-    "id": "stempel-jr-kasai-rinkai-koen",
-    "name": "Kasai-Rinkai-Koen – Eki-Stempel",
-    "nameJa": "葛西臨海公園駅 駅スタンプ",
-    "lat": 35.644,
-    "lng": 139.8616,
-    "beschreibung": "JR-Bahnhofsstempel. Fast jeder JR-Bahnhof in Tokio hat einen – meist außerhalb der Ticketsperre am Hauptausgang. Im Zweifel fragen: „Sutampu wa doko desu ka?“ Tipp: Riesenrad & Aquarium direkt am Bahnhof.",
-    "linie": "JR Keiyo",
-    "station": "Kasai-Rinkai-Koen",
-    "tags": [
-      "JR",
-      "Keiyo"
+      "Toei-U-Bahn",
+      "U-Bahn",
+      "Ōedo"
     ]
   },
   {
@@ -1113,7 +2001,7 @@
     "nameJa": "エキタグ",
     "lat": 35.6717,
     "lng": 139.765,
-    "beschreibung": "Tokyo Metro hat seit 2025 digitale Stempel über die App „Ekitag“ (Handy an das NFC-Schild halten). Inzwischen an ca. 50 Metro-Stationen. Die aktuelle Liste siehst du in der App – trag die Stationen, die du findest, über ➕ hier ein!",
+    "beschreibung": "Tokyo Metro (die andere U-Bahn-Gesellschaft) setzt seit 2025 auf digitale Stempel über die App „Ekitag“ – Handy an das NFC-Schild halten. Inzwischen an rund 50 Metro-Stationen. Die aktuelle Liste siehst du in der Ekitag-App. Papier-Stempel gibt es dagegen an allen Toei-U-Bahnhöfen (diese Karte) und im Metro-Museum.",
     "linie": "Tokyo Metro",
     "station": "Ginza (Beispiel)",
     "tags": [
@@ -1128,5 +2016,26 @@
       }
     ],
     "fotoSuche": false
+  },
+  {
+    "id": "stempel-gaerten-rallye",
+    "name": "Herbstlaub-Stempelrallye der 9 Metropolgärten",
+    "nameJa": "都立9庭園 紅葉めぐりスタンプラリー2026",
+    "lat": 35.67998,
+    "lng": 139.79779,
+    "beschreibung": "Stempel sammeln in den 9 historischen Gärten der Stadt Tokio – u. a. Kiyosumi, Rikugien, Hama-rikyū, Kyū-Furukawa, Koishikawa Kōrakuen. Startpunkt beliebig; Stempelkarte an jedem Gartentor.",
+    "zeitraum": [
+      {
+        "von": "2026-10-10",
+        "bis": "2026-12-06"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kiyosumi-shirakawa (u. a.)",
+    "tags": [
+      "Stempelrallye",
+      "Garten",
+      "Koyo"
+    ]
   }
 ]
