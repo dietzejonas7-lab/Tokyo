@@ -7,6 +7,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | | Kategorie | Was drin ist |
 |---|---|---|
 | 🎴 | Anime & Pokémon | Pokémon Center, Akihabara, Nakano Broadway, Kartenläden … |
+| 💎 | Premium-Figuren | Hochwertige Figuren & Statuen: Prime 1 Studio, Tamashii Nations, Kotobukiya, Kaiyodo … |
 | 🧸 | Gachapon | Kapselautomaten-Läden – vom Rekord-Laden in Ikebukuro bis Akihabara |
 | 👕 | Mode & Merch | Auffällige Mode (Anime, Gothic, Punk, japanische Designs) und zeitlich begrenzte Pop-up-Shops |
 | 🏺 | Flohmärkte | Antik- und Flohmärkte, **gefiltert nach dem gewählten Tag** |

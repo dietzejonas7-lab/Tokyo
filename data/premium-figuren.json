@@ -1,0 +1,101 @@
+[
+  {
+    "id": "pf-prime1",
+    "name": "Prime 1 Studio Gallery Shop",
+    "nameJa": "プライム1スタジオ ギャラリーショップ 有楽町マルイ",
+    "lat": 35.6747,
+    "lng": 139.7628,
+    "beschreibung": "Weltweit einziger offizieller Laden von Prime 1 Studio (seit 18.09.2026) im 7. Stock des Yūrakuchō Marui: riesige, extrem detaillierte High-End-Statuen aus Film, Games und Anime – oft mehrere hundert bis tausende Euro. Allein zum Anschauen ein Erlebnis.",
+    "station": "Yurakucho",
+    "tags": [
+      "Statuen",
+      "High-End",
+      "Galerie"
+    ]
+  },
+  {
+    "id": "pf-tamashii",
+    "name": "Tamashii Nations Store Tokyo",
+    "nameJa": "TAMASHII NATIONS STORE TOKYO",
+    "lat": 35.6988,
+    "lng": 139.7718,
+    "beschreibung": "Flagship von Bandais Premium-Figurenmarke (S.H.Figuarts, Figuarts ZERO, METAL BUILD, Soul of Chogokin) mit Ausstellungsetage für Neuheiten und Prototypen. Oft Store-exklusive Modelle. Lage ungefähr – genaue Adresse vorab prüfen.",
+    "station": "Akihabara",
+    "tags": [
+      "Bandai",
+      "METAL BUILD",
+      "exklusiv"
+    ]
+  },
+  {
+    "id": "pf-kotobukiya",
+    "name": "Kotobukiya Akihabara-kan",
+    "nameJa": "コトブキヤ秋葉原館",
+    "lat": 35.6997,
+    "lng": 139.7714,
+    "beschreibung": "Flagship des Figurenherstellers Kotobukiya auf mehreren Etagen: hochwertige ARTFX-Statuen und Bishōjo-Figuren, dazu limitierte Shop-Editionen und Figuren anderer Hersteller.",
+    "zeiten": "ca. 10:00–20:00",
+    "station": "Akihabara",
+    "tags": [
+      "ARTFX",
+      "Scale-Figuren",
+      "limitiert"
+    ]
+  },
+  {
+    "id": "pf-kaiyodo",
+    "name": "Kaiyodo Hobby Lobby Tokyo",
+    "nameJa": "海洋堂ホビーロビー東京",
+    "lat": 35.6981,
+    "lng": 139.7716,
+    "beschreibung": "Showroom und Shop der legendären Figurenschmiede Kaiyodo (Revoltech, extrem realistische Tier- und Charakterfiguren) im 5. Stock des Radio Kaikan.",
+    "station": "Akihabara",
+    "tags": [
+      "Kaiyodo",
+      "Revoltech",
+      "Showroom"
+    ]
+  },
+  {
+    "id": "pf-volks",
+    "name": "Volks Akihabara Hobby Heaven",
+    "nameJa": "ボークス秋葉原ホビー天国",
+    "lat": 35.6993,
+    "lng": 139.7705,
+    "beschreibung": "Bekannt für die hochwertigen Dollfie-Dream-Puppen (mehrere hundert Euro aufwärts) und anspruchsvolle Resin-Bausätze (z. B. Five Star Stories). Lage ungefähr – genaue Adresse vorab prüfen.",
+    "station": "Akihabara",
+    "tags": [
+      "Dollfie Dream",
+      "Resin-Kits",
+      "Puppen"
+    ]
+  },
+  {
+    "id": "pf-amiami-tower",
+    "name": "AmiAmi Akihabara Figure Tower",
+    "nameJa": "あみあみ 秋葉原フィギュアタワー店",
+    "lat": 35.7004,
+    "lng": 139.7712,
+    "beschreibung": "Achtstöckiger Figuren-Turm (seit 2024): neue und gebrauchte Figuren nach Etagen sortiert – Scale-Figuren im 2. Stock. Gute Chance auf hochwertige, gebrauchte Scale-Figuren zu fairen Preisen. Lage ungefähr.",
+    "station": "Akihabara",
+    "tags": [
+      "Scale-Figuren",
+      "Neu & gebraucht"
+    ]
+  },
+  {
+    "id": "pf-medicom",
+    "name": "MEDICOM TOY TOKYO",
+    "nameJa": "メディコム・トイ トウキョウ",
+    "lat": 35.6614,
+    "lng": 139.6982,
+    "beschreibung": "Neuer Flagship-Store (seit 23.08.2025) in Shibuya: riesige BE@RBRICK (bis 1000 %), Real Action Heroes und Designer-Kollaborationen – Sammlerstücke mit Preisen im höheren Bereich. Lage ungefähr (Udagawachō).",
+    "zeiten": "11:00–20:00",
+    "station": "Shibuya",
+    "tags": [
+      "BE@RBRICK",
+      "Designer-Toys",
+      "Kollaborationen"
+    ]
+  }
+]

@@ -9,6 +9,16 @@
     "gruppe": "shoppen"
   },
   {
+    "id": "premiumfiguren",
+    "name": "Premium-Figuren",
+    "icon": "💎",
+    "farbe": "#a67c00",
+    "datei": "premium-figuren.json",
+    "gruppe": "shoppen",
+    "bildersuche": "",
+    "beschreibung": "Hochwertige, detaillierte Figuren & Statuen – teurer, aber Sammlerqualität."
+  },
+  {
     "id": "gacha",
     "name": "Gachapon",
     "icon": "🧸",
