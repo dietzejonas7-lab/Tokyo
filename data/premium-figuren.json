@@ -5,13 +5,14 @@
     "nameJa": "プライム1スタジオ ギャラリーショップ 有楽町マルイ",
     "lat": 35.6747,
     "lng": 139.7628,
-    "beschreibung": "Weltweit einziger offizieller Laden von Prime 1 Studio (seit 18.09.2026) im 7. Stock des Yūrakuchō Marui: riesige, extrem detaillierte High-End-Statuen aus Film, Games und Anime – oft mehrere hundert bis tausende Euro. Allein zum Anschauen ein Erlebnis.",
+    "beschreibung": "Weltweit einziger offizieller Laden von Prime 1 Studio (seit 18.09.2026) im 7. Stock des Yūrakuchō Marui. Hier kann man auch kaufen: High-End-Statuen aus Film, Games und Anime, dazu kleinere Figuren, Plastikmodelle und Merch. Große Statuen kosten grob 115.000 ¥ bis über 475.000 ¥ und sind oft limitiert bzw. nur auf Vorbestellung. Anschauen ist kostenlos.",
     "station": "Yurakucho",
     "tags": [
       "Statuen",
       "High-End",
       "Galerie"
-    ]
+    ],
+    "preis": "Merch ab ca. 2.000 ¥ · Statuen ca. 115.000–475.000 ¥+"
   },
   {
     "id": "pf-tamashii",
