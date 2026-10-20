@@ -123,6 +123,7 @@ index.html              ← das Gerüst der Seite
 css/style.css           ← Design „Washi & Sumi“, Farben & Animationen (Farben ganz oben änderbar)
 js/app.js               ← die Logik (Karte, Filter, Kalender …), mit Kommentaren
 js/effekte.js           ← Animationen & Effekte (Stempel, Übergänge, Wellen)
+js/klang.js             ← Klänge (Koto, Windspiel, Tempelglocke) – direkt im Browser erzeugt
 data/kategorien.json    ← Liste aller Kategorien
 data/*.json             ← die Orte, eine Datei pro Kategorie
 bilder/                 ← eigene Bilder hier hochladen

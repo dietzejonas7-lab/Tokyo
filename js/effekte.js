@@ -11,7 +11,9 @@ const Effekte = {
   wellenAktivieren() {
     document.addEventListener("pointerdown", (ev) => {
       const ziel = ev.target.closest(".btn, .dock-btn, .logo-btn, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button, .kat-kachel");
-      if (!ziel || this.ruhig) return;
+      if (!ziel) return;
+      Klang.tippen();
+      if (this.ruhig) return;
       const r = ziel.getBoundingClientRect();
       const groesse = Math.max(r.width, r.height) * 2;
       const welle = document.createElement("span");

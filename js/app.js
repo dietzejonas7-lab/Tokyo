@@ -438,6 +438,7 @@ function chipKlick(ev) {
 
 function katUmschalten(id, an = !state.aktiv.has(id)) {
   an ? state.aktiv.add(id) : state.aktiv.delete(id);
+  an ? Klang.an() : Klang.aus();
   katGespeichert();
 }
 function katGespeichert() {
@@ -514,6 +515,7 @@ function katAuswahlVerbinden() {
       langGedrueckt = true;
       state.aktiv = new Set([kachel.dataset.kat]);
       katGespeichert();
+      Klang.datum();
       Effekte.nochmal(kachel, "bump");
       navigator.vibrate?.(20);
       toast(`Nur noch: ${kategorie(kachel.dataset.kat).icon} ${kategorie(kachel.dataset.kat).name}`);
@@ -527,6 +529,7 @@ function katAuswahlVerbinden() {
       const kats = state.kategorien.filter((k) => (k.gruppe || "erleben") === gruppe.dataset.gruppe);
       const alleAn = kats.every((k) => state.aktiv.has(k.id));
       kats.forEach((k) => (alleAn ? state.aktiv.delete(k.id) : state.aktiv.add(k.id)));
+      alleAn ? Klang.aus() : Klang.an();
       return katGespeichert();
     }
     const kachel = ev.target.closest(".kat-kachel");
@@ -534,8 +537,8 @@ function katAuswahlVerbinden() {
     katUmschalten(kachel.dataset.kat);
     Effekte.nochmal(kachel.querySelector(".kk-icon"), "huepf");
   });
-  $("#kat-alle").onclick = () => { state.aktiv = new Set(state.kategorien.map((k) => k.id)); katGespeichert(); };
-  $("#kat-keine").onclick = () => { state.aktiv.clear(); katGespeichert(); };
+  $("#kat-alle").onclick = () => { state.aktiv = new Set(state.kategorien.map((k) => k.id)); katGespeichert(); Klang.an(); };
+  $("#kat-keine").onclick = () => { state.aktiv.clear(); katGespeichert(); Klang.aus(); };
   $("#kat-live").onclick = () => {
     // Kategorien, in denen es zeitlich begrenzte Einträge gibt
     state.aktiv = new Set(state.eintraege.filter((e) => e.zeitraum).map((e) => e.kategorie));
@@ -548,6 +551,8 @@ function katAuswahlVerbinden() {
 let offenerEintrag = null;
 
 function sheetOeffnen(e) {
+  const warSchonOffen = $("#sheet").classList.contains("open") && offenerEintrag?.id === e.id;
+  if (!warSchonOffen) Klang.oeffnen();
   offenerEintrag = e;
   const k = kategorie(e.kategorie);
   const status = zeitStatus(e);
@@ -630,6 +635,7 @@ function markerHervorheben(e) {
 }
 
 function sheetSchliessen() {
+  if ($("#sheet").classList.contains("open")) Klang.schliessen();
   markerHervorheben(null);
   $("#sheet").classList.remove("open");
   $("#sheet").setAttribute("aria-hidden", "true");
@@ -637,11 +643,12 @@ function sheetSchliessen() {
 }
 
 function besuchtUmschalten(e) {
-  if (state.besucht.has(e.id)) state.besucht.delete(e.id);
+  if (state.besucht.has(e.id)) { state.besucht.delete(e.id); Klang.aus(); }
   else {
     state.besucht.add(e.id);
     state.frischGesammelt = e.id;
     konfetti();
+    Klang.sammeln();
     if (kategorie(e.kategorie).sammelbar && !state.fotos.has(e.id)) toast("Tipp: Halte es mit 📷 Mein Foto fest!");
   }
   speichern(SPEICHER.besucht, [...state.besucht]);
@@ -661,6 +668,7 @@ async function fotoSpeichern(e, datei) {
       markerZeichnen();
     }
     konfetti();
+    Klang.sammeln();
     toast("📷 Foto gespeichert");
     sheetOeffnen(e);
   } catch {
@@ -725,6 +733,7 @@ function sheetWischen() {
 let panelTab = "heute";
 
 function panelOeffnen(tab = panelTab) {
+  if (!$("#panel").classList.contains("open")) Klang.blatt();
   panelTab = tab;
   panelZeichnen();
   $("#panel").classList.add("open");
@@ -749,7 +758,7 @@ function nachDistanz(liste) {
 }
 
 function panelZeichnen(suchbegriff = "") {
-  const tabs = [["heute", "📅 Tag"], ["sammlung", "🏆 Sammlung"], ["meine", "✏️ Meine"], ["hilfe", "❔"]];
+  const tabs = [["heute", "📅 Tag"], ["sammlung", "🏆 Sammlung"], ["meine", "✏️ Meine"], ["hilfe", "⚙️"]];
   let html = `<div class="tabs">${tabs.map(([id, t]) => `<button data-tab="${id}" class="${panelTab === id ? "on" : ""}">${t}</button>`).join("")}</div>`;
 
   if (panelTab === "suche") {
@@ -830,10 +839,16 @@ function panelZeichnen(suchbegriff = "") {
   }
 
   if (panelTab === "hilfe") {
-    $("#panel-title").textContent = "So funktioniert's";
-    html += `<div class="list" style="gap:12px;line-height:1.5">
-      <p>🎛️ <b>Kategorien</b>: Oben einzelne Kategorien antippen = ein-/ausblenden. Der dunkle Knopf „Kategorien“ öffnet die große Übersicht (lange drücken = nur diese Kategorie).</p>
-      <p>📅 <b>Datum</b> (roter Knopf) = Illuminationen & limitierte Goshuincho für diesen Tag. Pulsierende Marker laufen am gewählten Tag.</p>
+    $("#panel-title").textContent = "Einstellungen & Hilfe";
+    html += `<button class="einstellung ${Klang.aktiv ? "on" : ""}" id="klang-schalter" aria-pressed="${Klang.aktiv}">
+      <span class="es-icon">${Klang.aktiv ? "🔊" : "🔇"}</span>
+      <span class="es-text"><b>Klänge</b><small>Koto, Windspiel, Tempelglocke & Hanko-Stempel</small></span>
+      <span class="schalter" aria-hidden="true"></span>
+    </button>
+    <h3 class="section-title">So funktioniert's</h3>
+    <div class="list" style="gap:12px;line-height:1.5">
+      <p>🎛️ <b>Kategorien</b>: Oben einzelne Kategorien antippen = ein-/ausblenden. Der Knopf „Kategorien“ öffnet die große Übersicht (lange drücken = nur diese Kategorie).</p>
+      <p>📅 <b>Datum</b> (Knopf oben rechts) = Illuminationen & limitierte Goshuincho für diesen Tag. Pulsierende Marker laufen am gewählten Tag.</p>
       <p>✅ <b>Gesammelt/Besucht</b> markieren – Fortschritt unter 🏆 Sammlung.</p>
       <p>⚠️ <b>Datum unbestätigt</b> = Termin geschätzt aus dem Vorjahr. Bitte kurz auf der offiziellen Seite prüfen.</p>
       <p>＋ <b>Eigener Ort</b>: Karte verschieben, ＋ tippen, nochmal ＋ – oder lange auf die Karte drücken.</p>
@@ -860,6 +875,10 @@ function panelKlick(ev) {
     setTimeout(() => sheetOeffnen(e), 500);
   }
   if (ev.target.id === "btn-export") exportieren();
+  if (ev.target.closest("#klang-schalter")) {
+    Klang.umschalten();
+    panelZeichnen();
+  }
 }
 
 function exportieren() {
@@ -919,6 +938,7 @@ function kalenderZeichnen() {
 }
 
 function datumSetzen(iso) {
+  if (iso !== state.datum) Klang.datum();
   state.datum = iso;
   datumAnzeigen();
   kalenderZeichnen();
@@ -1000,6 +1020,7 @@ async function formularSpeichern(ev) {
   markerZeichnen();
   modal("add-modal", false);
   konfetti();
+  Klang.sammeln();
   toast("📌 Gespeichert!");
   const e = state.eintraege.find((x) => x.id === eintrag.id);
   setTimeout(() => sheetOeffnen(e), 400);
@@ -1063,6 +1084,7 @@ function ereignisseVerbinden() {
   $("#btn-theme").onclick = () => {
     const neu = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     speichern(SPEICHER.theme, neu);
+    neu === "dark" ? Klang.tempelglocke() : Klang.furin();
     Effekte.themaWechsel($("#btn-theme"), () => themeSetzen(neu));
   };
   $("#panel").addEventListener("click", panelKlick);

@@ -702,6 +702,19 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .kat-kachel.on .schalter { background: var(--c); border-color: var(--tusche); }
 .kat-kachel.on .schalter::after { transform: translateX(20px); border-color: var(--tusche); }
+/* Einstellung (z. B. Klänge an/aus) */
+.einstellung {
+  width: 100%; display: grid; grid-template-columns: 44px 1fr 46px; gap: 12px; align-items: center;
+  padding: 12px; border-radius: 16px; border: 1.5px solid var(--rand); text-align: left;
+  background: var(--karte); box-shadow: 0 3px 0 var(--rand);
+  transition: border-color 0.3s, background 0.3s;
+}
+.einstellung.on { border-color: var(--shu); background: color-mix(in srgb, var(--shu) 8%, var(--karte)); }
+.es-icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-size: 1.3rem; background: var(--line); }
+.es-text { display: grid; gap: 2px; }
+.es-text small { color: var(--muted); font-size: 0.78rem; }
+.einstellung.on .schalter { background: var(--shu); border-color: var(--tusche); }
+.einstellung.on .schalter::after { transform: translateX(20px); border-color: var(--tusche); }
 .kat-tipp { text-align: center; font-size: 0.78rem; margin: 4px 0 0; }
 
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
