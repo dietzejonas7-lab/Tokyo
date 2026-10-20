@@ -24,6 +24,11 @@ const VEKTOR_KARTE = {
   dunkel: "https://tiles.openfreemap.org/styles/dark",
   attribution: '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
 };
+// Eigene Kartenfarben passend zum App-Design (nur Flächen – Straßen bleiben wie im Original)
+const KARTEN_FARBEN = {
+  light: { hintergrund: "#f3ede2", wasser: "#9cc2dd", gruen: "#cfe2bd", gebaeude: "#e3d9c8" },
+  dark: { hintergrund: "#121029", wasser: "#0c1f3f", gruen: "#15302b", gebaeude: "#211d45" },
+};
 // Sprache der Kartenbeschriftung: erst Deutsch, dann Englisch, dann lateinische Schrift, sonst Japanisch
 const KARTEN_SPRACHE = ["name:de", "name_de", "name:en", "name_en", "name:latin", "name"];
 // Ersatz-Karten (Bilder-Kacheln), falls die Vektor-Karte nicht lädt. Dunkelmodus dann per CSS-Filter.
@@ -247,7 +252,7 @@ async function karteSetzen() {
     try {
       const antwort = await fetch(dunkel ? VEKTOR_KARTE.dunkel : VEKTOR_KARTE.hell);
       if (!antwort.ok) throw new Error("Stil nicht geladen: " + antwort.status);
-      const stil = beschriftungDeutsch(await antwort.json());
+      const stil = kartenFarben(beschriftungDeutsch(await antwort.json()), dunkel ? "dark" : "light");
       if (vektor) vektor.getMaplibreMap().setStyle(stil);
       else vektorStarten(stil);
       return;
@@ -273,6 +278,23 @@ function beschriftungDeutsch(stil) {
   stil.layers.forEach((layer) => {
     const text = layer.layout?.["text-field"];
     if (text && JSON.stringify(text).includes("name")) layer.layout["text-field"] = name;
+  });
+  return stil;
+}
+
+/** Flächen der Vektor-Karte (Hintergrund, Wasser, Grün, Gebäude) in den App-Farben einfärben */
+function kartenFarben(stil, theme) {
+  const f = KARTEN_FARBEN[theme];
+  stil.layers.forEach((layer) => {
+    const id = layer.id.toLowerCase();
+    layer.paint ??= {};
+    if (layer.type === "background") layer.paint["background-color"] = f.hintergrund;
+    if (layer.type === "fill") {
+      if (id.includes("water")) layer.paint["fill-color"] = f.wasser;
+      else if (/park|wood|forest|grass|landcover/.test(id)) layer.paint["fill-color"] = f.gruen;
+      else if (id.includes("building")) layer.paint["fill-color"] = f.gebaeude;
+    }
+    if (layer.type === "fill-extrusion" && id.includes("building")) layer.paint["fill-extrusion-color"] = f.gebaeude;
   });
   return stil;
 }
@@ -337,7 +359,7 @@ function markerZeichnen() {
     if (e.eigen) klassen.push("mine");
     const icon = L.divIcon({
       className: "pin-wrap",
-      html: `<div class="${klassen.join(" ")}" style="--c:${k.farbe};--d:${Math.min(i * 12, 400)}ms"><span>${k.icon}</span></div>`,
+      html: `<i class="pin-schatten" style="--d:${Math.min(i * 12, 400)}ms"></i><div class="${klassen.join(" ")}" style="--c:${k.farbe};--d:${Math.min(i * 12, 400)}ms"><span>${k.icon}</span></div>`,
       iconSize: [40, 40],
       iconAnchor: [20, 44],
     });
@@ -664,6 +686,8 @@ function konfetti() {
 /** Nach unten wischen schließt die Detail-Karte */
 function sheetWischen() {
   const sheet = $("#sheet");
+  // Parallax: Das Bild oben bewegt sich beim Scrollen langsamer als der Text
+  sheet.addEventListener("scroll", () => sheet.style.setProperty("--scroll", Math.min(sheet.scrollTop, 300)), { passive: true });
   let startY = null, dy = 0;
   sheet.addEventListener("touchstart", (ev) => {
     if (sheet.scrollTop > 0) return;
@@ -982,7 +1006,7 @@ function modal(id, auf) {
 
 function themeSetzen(theme) {
   document.documentElement.dataset.theme = theme;
-  $("#btn-theme").textContent = theme === "dark" ? "☀️" : "🌙";
+  $("#btn-theme span").textContent = theme === "dark" ? "☀️" : "🌙";
   document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#0f0d22" : "#f6f1ea";
   if (vektor) karteSetzen(); // Vektor-Karte hat einen eigenen Dunkel-Stil
 }
@@ -1004,6 +1028,8 @@ function ereignisseVerbinden() {
   $("#chips").addEventListener("click", chipKlick);
   katAuswahlVerbinden();
   $("#btn-menu").onclick = () => panelOeffnen("heute");
+  $("#dock-tag").onclick = () => panelOeffnen("heute");
+  $("#dock-sammlung").onclick = () => panelOeffnen("sammlung");
   $("#btn-date").onclick = () => { kalenderZeichnen(); modal("date-modal", true); };
   $("#btn-today").onclick = () => { datumSetzen(heuteInTokio()); modal("date-modal", false); };
   $("#calendar").addEventListener("click", (ev) => {

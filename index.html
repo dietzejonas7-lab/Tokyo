@@ -20,9 +20,9 @@
   <!-- Schriften -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@500;700;900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
 
@@ -38,6 +38,7 @@
       <path d="M60 18 V30" />
     </svg>
     <h1><b class="kanji">東京</b><span>Tokio Entdecker</span></h1>
+    <p class="tategaki" aria-hidden="true">東京探訪記</p>
     <p class="splash-sub">1. – 25. November</p>
     <div class="wellen"></div>
   </div>
@@ -48,7 +49,7 @@
   <!-- ===== Kopfzeile ===== -->
   <header id="topbar">
     <div class="topbar-row">
-      <button class="icon-btn" id="btn-menu" aria-label="Übersicht öffnen">☰</button>
+      <button class="logo-btn" id="btn-menu" aria-label="Übersicht öffnen"><span>東</span></button>
       <label class="search">
         <span aria-hidden="true">🔍</span>
         <input id="search" type="search" placeholder="Suchen … z. B. Pokémon, 浅草" autocomplete="off">
@@ -61,12 +62,14 @@
     <nav id="chips" aria-label="Kategorien"></nav>
   </header>
 
-  <!-- ===== Schwebende Knöpfe ===== -->
-  <div id="fabs">
-    <button class="fab" id="btn-theme" aria-label="Hell/Dunkel wechseln">🌙</button>
-    <button class="fab" id="btn-locate" aria-label="Mein Standort">📍</button>
-    <button class="fab fab-main" id="btn-add" aria-label="Eigenen Ort hinzufügen">＋</button>
-  </div>
+  <!-- ===== Bedienleiste unten ===== -->
+  <nav id="dock" aria-label="Hauptmenü">
+    <button class="dock-btn" id="dock-tag"><span>📅</span><small>Tag</small></button>
+    <button class="dock-btn" id="dock-sammlung"><span>🏆</span><small>Sammlung</small></button>
+    <button class="dock-main" id="btn-add" aria-label="Eigenen Ort hinzufügen"><span>＋</span></button>
+    <button class="dock-btn" id="btn-locate" aria-label="Mein Standort"><span>📍</span><small>Ich</small></button>
+    <button class="dock-btn" id="btn-theme" aria-label="Hell/Dunkel wechseln"><span>🌙</span><small>Modus</small></button>
+  </nav>
 
   <!-- ===== Seitenpanel: Heute / Sammlung / Suche ===== -->
   <aside id="panel" aria-hidden="true">
@@ -153,7 +156,7 @@
   <script src="lib/maplibre/leaflet-maplibre-gl.js"></script>
   <script src="lib/markercluster/leaflet.markercluster.js"></script>
   <!-- Unsere App -->
-  <script src="js/effekte.js?v=9"></script>
-  <script src="js/app.js?v=9"></script>
+  <script src="js/effekte.js?v=10"></script>
+  <script src="js/app.js?v=10"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
      Änderungen sofort ankommen. Nur ohne Internet wird die gespeicherte Version genutzt.
    - Kartenkacheln und Schriften: aus dem Speicher, wenn möglich
      (so funktioniert die Karte auch in der U-Bahn ohne Netz – für bereits angesehene Gebiete). */
-const VERSION = "v9"; // hochzählen löscht alte gespeicherte Daten (auch Kartenkacheln)
+const VERSION = "v10"; // hochzählen löscht alte gespeicherte Daten (auch Kartenkacheln)
 const SHELL = [
   "./", "index.html", "css/style.css", "js/app.js", "js/effekte.js", "manifest.webmanifest", "icons/icon.svg",
   "lib/leaflet/leaflet.js", "lib/leaflet/leaflet.css",
