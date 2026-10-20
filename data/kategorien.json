@@ -19,6 +19,16 @@
     "beschreibung": "Kapselautomaten-Läden mit hunderten bis tausenden Gacha-Maschinen."
   },
   {
+    "id": "mode",
+    "name": "Mode & Merch",
+    "icon": "👕",
+    "farbe": "#7b2d8e",
+    "datei": "mode.json",
+    "gruppe": "shoppen",
+    "bildersuche": "",
+    "beschreibung": "Auffällige Mode: Anime, Gothic, Punk, japanische Designs – plus zeitlich begrenzte Pop-up-Shops."
+  },
+  {
     "id": "flohmarkt",
     "name": "Flohmärkte",
     "icon": "🏺",
@@ -44,6 +54,16 @@
     "datei": "events.json",
     "gruppe": "erleben",
     "beschreibung": "Feste, Festivals & besondere Tage – tagesaktuell gefiltert."
+  },
+  {
+    "id": "attraktionen",
+    "name": "Attraktionen",
+    "icon": "🎡",
+    "farbe": "#06b6d4",
+    "datei": "attraktionen.json",
+    "gruppe": "erleben",
+    "bildersuche": "",
+    "beschreibung": "Erlebnisse: teamLab, PokéPark, Aquarien, Aussichtstürme, Freizeitparks."
   },
   {
     "id": "gaerten",

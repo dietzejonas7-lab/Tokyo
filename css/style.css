@@ -602,7 +602,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transform: translateY(100%); transition: transform 0.5s var(--spring);
 }
 .modal.unten.open .modal-card { transform: none; }
-.kat-karte .sheet-grip { margin-bottom: -6px; background: var(--surface-solid); }
+.kat-karte .sheet-grip { margin-bottom: -6px; background: var(--surface-solid) var(--koernung); }
+.kat-karte .panel-head h2 { font-size: 1.15rem; }
 .kat-karte .panel-head { align-items: flex-start; margin-bottom: 0; }
 .kat-karte .panel-head .muted { margin: 4px 0 0; }
 .kat-schnell { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }

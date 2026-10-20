@@ -1,0 +1,249 @@
+[
+  {
+    "id": "mode-acdc-rag",
+    "name": "ACDC RAG",
+    "nameJa": "ACDC RAG 原宿",
+    "lat": 35.6714,
+    "lng": 139.7037,
+    "beschreibung": "Kult-Laden auf der Takeshita-dōri: Punk, Rock und „Yami-kawaii“ (krank-süß) – Nieten, Netz, Pastell-Goth, Plateau-Schuhe. Günstig und schrill.",
+    "station": "Harajuku",
+    "tags": [
+      "Punk",
+      "Yami-kawaii",
+      "Gothic"
+    ]
+  },
+  {
+    "id": "mode-laforet",
+    "name": "Laforet Harajuku",
+    "nameJa": "ラフォーレ原宿",
+    "lat": 35.6688,
+    "lng": 139.7055,
+    "beschreibung": "Modekaufhaus und Zentrum der Harajuku-Subkultur. Besonders das Untergeschoss ist bekannt für Gothic-Lolita- und Alternative-Labels (z. B. Atelier Pierrot). Läden wechseln – einfach durchstöbern. Tipp: Second-Hand-Goth & Lolita gibt es bei „Closet Child“.",
+    "zeiten": "ca. 11:00–20:00",
+    "station": "Meiji-jingumae / Harajuku",
+    "tags": [
+      "Gothic Lolita",
+      "Designer",
+      "Kaufhaus"
+    ]
+  },
+  {
+    "id": "mode-takeshita",
+    "name": "Takeshita-dōri",
+    "nameJa": "竹下通り",
+    "lat": 35.6712,
+    "lng": 139.7041,
+    "beschreibung": "Die schrillste Einkaufsstraße Tokios: Kawaii, Punk, Metal, Goth, Cosplay-Zubehör, bunte Socken und Accessoires – plus Crêpes. Am Wochenende sehr voll, morgens unter der Woche entspannter.",
+    "station": "Harajuku",
+    "tags": [
+      "Kawaii",
+      "Punk",
+      "Straße"
+    ]
+  },
+  {
+    "id": "mode-dokidoki",
+    "name": "6%DOKIDOKI",
+    "nameJa": "6%DOKIDOKI",
+    "lat": 35.6705,
+    "lng": 139.7062,
+    "beschreibung": "Neon-buntes Kawaii-Paradies von Künstler Sebastian Masuda – Accessoires und Kleidung im „Decora“-Stil. Lage ungefähr – vor Ort kurz suchen.",
+    "station": "Meiji-jingumae / Harajuku",
+    "tags": [
+      "Kawaii",
+      "Decora",
+      "Accessoires"
+    ]
+  },
+  {
+    "id": "mode-ameyoko-sukajan",
+    "name": "Ameyoko – Sukajan & Freak Market",
+    "nameJa": "アメ横 スカジャン",
+    "lat": 35.7096,
+    "lng": 139.7744,
+    "beschreibung": "Hier gibt es Sukajan: bestickte Satin-Jacken mit Drachen, Tigern, Koi und Kirschblüten – der Japan-Look schlechthin. Große Auswahl an Größen; „Freak Market“ hat auch bestickte T-Shirts mit japanischen Designs. Handeln ist teils möglich.",
+    "station": "Ueno / Okachimachi",
+    "tags": [
+      "Sukajan",
+      "Japanische Designs",
+      "Stickerei"
+    ]
+  },
+  {
+    "id": "mode-uniqlo-ginza",
+    "name": "UNIQLO Ginza – UT-Abteilung",
+    "nameJa": "ユニクロ 銀座店",
+    "lat": 35.6703,
+    "lng": 139.7638,
+    "beschreibung": "12-stöckiger Flagship-Store mit großer UT-Abteilung: T-Shirts mit Anime-, Manga- und Game-Motiven (One Piece, Pokémon, Jujutsu Kaisen …) – die Kollektionen wechseln ständig, oft limitiert. Günstig und mit guter Größenauswahl.",
+    "zeiten": "ca. 11:00–21:00",
+    "station": "Ginza",
+    "tags": [
+      "Anime-Shirts",
+      "Limitiert",
+      "günstig"
+    ]
+  },
+  {
+    "id": "mode-kapital",
+    "name": "KAPITAL Ebisu",
+    "nameJa": "キャピタル 恵比寿",
+    "lat": 35.6464,
+    "lng": 139.7081,
+    "beschreibung": "Kult-Label aus Okayama mit wilden japanischen Designs: Boro-Patchwork, Indigo, Bandanas, Skelett-Motive. Teuer, aber einzigartig – auch zum Anschauen lohnend. Lage ungefähr.",
+    "station": "Ebisu / Daikanyama",
+    "tags": [
+      "Japanische Designs",
+      "Denim",
+      "Designer"
+    ]
+  },
+  {
+    "id": "mode-onitsuka",
+    "name": "Onitsuka Tiger Omotesandō",
+    "nameJa": "オニツカタイガー 表参道",
+    "lat": 35.6676,
+    "lng": 139.709,
+    "beschreibung": "Japanische Kult-Sneaker (z. B. „Mexico 66“) – in Japan oft mit Farben, die es in Europa nicht gibt. Lage ungefähr.",
+    "station": "Meiji-jingumae / Omotesando",
+    "tags": [
+      "Schuhe",
+      "Sneaker",
+      "Japan-Marke"
+    ]
+  },
+  {
+    "id": "mode-shimokita",
+    "name": "Shimokitazawa Vintage-Viertel",
+    "nameJa": "下北沢 古着屋街",
+    "lat": 35.6616,
+    "lng": 139.668,
+    "beschreibung": "Dutzende Vintage- und Second-Hand-Läden mit coolen, ausgefallenen Teilen – günstig und mit Hipster-Café-Flair.",
+    "station": "Shimokitazawa",
+    "tags": [
+      "Vintage",
+      "Second-Hand",
+      "Viertel"
+    ]
+  },
+  {
+    "id": "mode-koenji",
+    "name": "Kōenji Vintage & Punk",
+    "nameJa": "高円寺 古着屋",
+    "lat": 35.7052,
+    "lng": 139.6497,
+    "beschreibung": "Noch alternativer als Shimokita: Vintage, Punk, Band-Shirts, Nischen-Läden in kleinen Gassen rund um den Bahnhof.",
+    "station": "Koenji",
+    "tags": [
+      "Vintage",
+      "Punk",
+      "Viertel"
+    ]
+  },
+  {
+    "id": "popup-dnangel",
+    "name": "Pop-up: D・N・ANGEL",
+    "nameJa": "D・N・ANGEL POP UP SHOP",
+    "lat": 35.66,
+    "lng": 139.7006,
+    "beschreibung": "Zeitlich begrenzter Merch-Shop zu D・N・ANGEL im AMNIBUS STORE -blue- (MAGNET by SHIBUYA109, 5. Stock).",
+    "zeitraum": [
+      {
+        "von": "2026-11-06",
+        "bis": "2026-11-22"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Pop-up",
+      "Anime-Merch",
+      "limitiert"
+    ]
+  },
+  {
+    "id": "popup-reborn",
+    "name": "Pop-up: Katekyo Hitman REBORN!",
+    "nameJa": "家庭教師ヒットマンREBORN! POP UP SHOP",
+    "lat": 35.6593,
+    "lng": 139.7003,
+    "beschreibung": "Zeitlich begrenzter Merch-Shop im MEDICOS SHOP Shibuya. Lage ungefähr – Adresse vorab prüfen.",
+    "zeitraum": [
+      {
+        "von": "2026-11-05",
+        "bis": "2026-12-27"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Pop-up",
+      "Anime-Merch",
+      "limitiert"
+    ]
+  },
+  {
+    "id": "popup-rayearth",
+    "name": "Pop-up: Magic Knight Rayearth",
+    "nameJa": "魔法騎士レイアース POP UP SHOP",
+    "lat": 35.7295,
+    "lng": 139.7109,
+    "beschreibung": "Pop-up im „Ikebukuro Sukima Store“ – im Untergeschoss des JR-Bahnhofs Ikebukuro, mittlerer Durchgang vor dem Central-Ausgang.",
+    "zeitraum": [
+      {
+        "von": "2026-10-28",
+        "bis": "2026-11-10"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ikebukuro (im Bahnhof)",
+    "tags": [
+      "Pop-up",
+      "Anime-Merch",
+      "limitiert"
+    ]
+  },
+  {
+    "id": "popup-toloveru",
+    "name": "Pop-up: To LOVE-Ru 20 Jahre",
+    "nameJa": "To LOVEる 20周年ポップアップ",
+    "lat": 35.6597,
+    "lng": 139.7006,
+    "beschreibung": "Jubiläums-Pop-up im SHIBUYA TSUTAYA direkt an der Scramble Crossing.",
+    "zeitraum": [
+      {
+        "von": "2026-10-08",
+        "bis": "2026-11-02"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Pop-up",
+      "Anime-Merch",
+      "limitiert"
+    ]
+  },
+  {
+    "id": "popup-tenkawa",
+    "name": "Pop-up: Red River (Sora wa Akai Kawa no Hotori)",
+    "nameJa": "天は赤い河のほとり POP UP STORE",
+    "lat": 35.662,
+    "lng": 139.6987,
+    "beschreibung": "Pop-up im 6. Stock des Shibuya LOFT.",
+    "zeitraum": [
+      {
+        "von": "2026-10-15",
+        "bis": "2026-11-02"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shibuya",
+    "tags": [
+      "Pop-up",
+      "Manga-Merch",
+      "limitiert"
+    ]
+  }
+]

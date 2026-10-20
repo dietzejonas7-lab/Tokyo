@@ -1,0 +1,219 @@
+[
+  {
+    "id": "att-teamlab-borderless",
+    "name": "teamLab Borderless",
+    "nameJa": "森ビル デジタルアート ミュージアム：エプソン チームラボボーダレス",
+    "lat": 35.6605,
+    "lng": 139.7403,
+    "beschreibung": "Begehbare digitale Kunstwelt in den Azabudai Hills: Räume voller Licht, Blumen und Projektionen, die ineinanderfließen. Tickets mit Uhrzeit – oft Wochen vorher ausverkauft, also früh buchen! Meist am 1. & 3. Dienstag geschlossen.",
+    "zeiten": "ca. 10:00–21:00 (je nach Tag)",
+    "preis": "ab ca. 3.200 ¥",
+    "station": "Kamiyacho",
+    "tags": [
+      "Digitale Kunst",
+      "Reservierung"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://www.teamlab.art/e/borderless-azabudai/"
+      }
+    ]
+  },
+  {
+    "id": "att-teamlab-planets",
+    "name": "teamLab Planets",
+    "nameJa": "チームラボプラネッツ TOKYO DMM",
+    "lat": 35.6491,
+    "lng": 139.7898,
+    "beschreibung": "Digitale Kunst zum Eintauchen – teils barfuß durch knietiefes Wasser mit leuchtenden Koi. Hose zum Hochkrempeln anziehen! Läuft bis Ende 2027. Tickets vorab buchen.",
+    "zeiten": "je nach Tag (ca. 9:00–22:00)",
+    "station": "Shin-Toyosu",
+    "tags": [
+      "Digitale Kunst",
+      "Reservierung"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://www.teamlab.art/e/planets/"
+      }
+    ]
+  },
+  {
+    "id": "att-pokepark",
+    "name": "PokéPark KANTO",
+    "nameJa": "ポケパーク カントー",
+    "lat": 35.6262,
+    "lng": 139.519,
+    "beschreibung": "Der erste dauerhafte Pokémon-Freizeitpark der Welt (seit Februar 2026) im Gelände von Yomiuriland. ⚠️ Tickets nur per Lotterie über die offizielle Seite (Mitgliedskonto nötig) – Anmeldefenster jeden Monat vom 1. bis 12. JETZT prüfen, welches Fenster für November gilt! Mit dem Ticket kommst du auch in Yomiuriland.",
+    "preis": "ab ca. 11.000 ¥ (je nach Pass)",
+    "station": "Keio-Yomiuri-Land",
+    "tags": [
+      "Pokémon",
+      "Freizeitpark",
+      "Lotterie"
+    ]
+  },
+  {
+    "id": "att-harry-potter",
+    "name": "Warner Bros. Studio Tour Tokyo – Harry Potter",
+    "nameJa": "ワーナー ブラザース スタジオツアー東京 メイキング・オブ・ハリー・ポッター",
+    "lat": 35.7437,
+    "lng": 139.6488,
+    "beschreibung": "Riesige Studio-Tour mit Original-Sets: Große Halle, Winkelgasse, Hogwarts Express. Plane 4 Stunden ein. Tickets nur vorab mit Uhrzeit.",
+    "station": "Toshimaen",
+    "tags": [
+      "Harry Potter",
+      "Reservierung"
+    ]
+  },
+  {
+    "id": "att-ghibli",
+    "name": "Ghibli-Museum Mitaka",
+    "nameJa": "三鷹の森ジブリ美術館",
+    "lat": 35.6962,
+    "lng": 139.5704,
+    "beschreibung": "Verspieltes Museum von Hayao Miyazaki mit exklusivem Kurzfilm und Robot-Soldat auf dem Dach. Tickets nur vorab mit festem Datum – werden etwa einen Monat vorher freigeschaltet und sind schnell weg.",
+    "station": "Mitaka / Kichijoji",
+    "tags": [
+      "Ghibli",
+      "Reservierung"
+    ]
+  },
+  {
+    "id": "att-sumida-aquarium",
+    "name": "Sumida Aquarium",
+    "nameJa": "すみだ水族館",
+    "lat": 35.7102,
+    "lng": 139.8095,
+    "beschreibung": "Modernes Aquarium im Skytree-Komplex – bekannt für das große Quallen-Becken und die Pinguine. Gut mit Skytree und Pokémon Center kombinierbar.",
+    "station": "Oshiage (Skytree)",
+    "tags": [
+      "Aquarium",
+      "Quallen",
+      "Pinguine"
+    ]
+  },
+  {
+    "id": "att-sunshine-aquarium",
+    "name": "Sunshine Aquarium",
+    "nameJa": "サンシャイン水族館",
+    "lat": 35.7289,
+    "lng": 139.72,
+    "beschreibung": "Aquarium auf dem Dach der Sunshine City mit „fliegenden“ Pinguinen über den Köpfen der Besucher. Perfekt mit Gashapon-Rekordladen und Pokémon Center Mega Tokyo kombinierbar.",
+    "station": "Ikebukuro / Higashi-Ikebukuro",
+    "tags": [
+      "Aquarium",
+      "Pinguine"
+    ]
+  },
+  {
+    "id": "att-maxell-aqua",
+    "name": "Maxell Aqua Park Shinagawa",
+    "nameJa": "マクセル アクアパーク品川",
+    "lat": 35.6268,
+    "lng": 139.735,
+    "beschreibung": "Aquarium mit Licht-, Sound- und Projektions-Shows – die Delfinshows sind abends teils mit Lichteffekten. Direkt am Bahnhof Shinagawa.",
+    "station": "Shinagawa",
+    "tags": [
+      "Aquarium",
+      "Delfine",
+      "abends"
+    ]
+  },
+  {
+    "id": "att-shibuya-sky",
+    "name": "Shibuya Sky",
+    "nameJa": "渋谷スカイ",
+    "lat": 35.6585,
+    "lng": 139.7024,
+    "beschreibung": "Offene Dachterrasse über Shibuya mit 360°-Blick – zum Sonnenuntergang am schönsten (diese Zeitfenster früh buchen).",
+    "station": "Shibuya",
+    "tags": [
+      "Aussicht",
+      "Sonnenuntergang",
+      "Reservierung"
+    ]
+  },
+  {
+    "id": "att-skytree",
+    "name": "Tokyo Skytree",
+    "nameJa": "東京スカイツリー",
+    "lat": 35.7101,
+    "lng": 139.8107,
+    "beschreibung": "Japans höchster Turm (634 m) mit zwei Aussichtsplattformen – bei klarem Wetter bis zum Fuji.",
+    "station": "Oshiage (Skytree)",
+    "tags": [
+      "Aussicht"
+    ]
+  },
+  {
+    "id": "att-tokyo-tower",
+    "name": "Tokyo Tower",
+    "nameJa": "東京タワー",
+    "lat": 35.6586,
+    "lng": 139.7454,
+    "beschreibung": "Der rot-weiße Klassiker – abends wunderschön beleuchtet. Darunter liegt der Zōjō-ji-Tempel.",
+    "station": "Akabanebashi / Kamiyacho",
+    "tags": [
+      "Aussicht",
+      "Wahrzeichen"
+    ]
+  },
+  {
+    "id": "att-small-worlds",
+    "name": "Small Worlds Tokyo",
+    "nameJa": "スモールワールズTOKYO",
+    "lat": 35.6365,
+    "lng": 139.7913,
+    "beschreibung": "Riesige Miniaturwelt in Ariake – inklusive Anime-Bereichen (z. B. Evangelion) und einem Mini-Flughafen mit startenden Flugzeugen. Lage ungefähr.",
+    "station": "Ariake / Ariake-tennis-no-mori",
+    "tags": [
+      "Miniaturen",
+      "Anime"
+    ]
+  },
+  {
+    "id": "att-joypolis",
+    "name": "Tokyo Joypolis",
+    "nameJa": "東京ジョイポリス",
+    "lat": 35.6286,
+    "lng": 139.7753,
+    "beschreibung": "Indoor-Freizeitpark von SEGA in Odaiba mit VR-Attraktionen, Achterbahn und oft Anime-Kollaborationen. Ideal bei Regen.",
+    "station": "Odaiba-kaihinkoen",
+    "tags": [
+      "Indoor",
+      "SEGA",
+      "Regenwetter"
+    ]
+  },
+  {
+    "id": "att-puroland",
+    "name": "Sanrio Puroland",
+    "nameJa": "サンリオピューロランド",
+    "lat": 35.6245,
+    "lng": 139.4287,
+    "beschreibung": "Indoor-Themenpark von Hello Kitty & Co. mit Paraden und Shows – kawaii pur. Halbtages-Ausflug (Tama).",
+    "station": "Tama-Center",
+    "tags": [
+      "Sanrio",
+      "Indoor",
+      "Ausflug"
+    ]
+  },
+  {
+    "id": "att-disney",
+    "name": "Tokyo Disneyland & DisneySea",
+    "nameJa": "東京ディズニーリゾート",
+    "lat": 35.6329,
+    "lng": 139.8804,
+    "beschreibung": "Zwei Parks – DisneySea gilt als einer der schönsten Freizeitparks der Welt. Ab Mitte November oft schon Weihnachts-Deko. Tickets mit Datum vorab kaufen. (Liegt schon in Chiba.)",
+    "station": "Maihama",
+    "tags": [
+      "Freizeitpark",
+      "Ausflug",
+      "Reservierung"
+    ]
+  }
+]

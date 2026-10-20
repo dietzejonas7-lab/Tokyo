@@ -8,9 +8,11 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 |---|---|---|
 | 🎴 | Anime & Pokémon | Pokémon Center, Akihabara, Nakano Broadway, Kartenläden … |
 | 🧸 | Gachapon | Kapselautomaten-Läden – vom Rekord-Laden in Ikebukuro bis Akihabara |
+| 👕 | Mode & Merch | Auffällige Mode (Anime, Gothic, Punk, japanische Designs) und zeitlich begrenzte Pop-up-Shops |
 | 🏺 | Flohmärkte | Antik- und Flohmärkte, **gefiltert nach dem gewählten Tag** |
 | ✨ | Illuminationen | Lichter-Events, **gefiltert nach dem gewählten Tag** |
 | 🎏 | Events & Feste | Festivals, Feste und besondere Tage, **gefiltert nach dem gewählten Tag** |
+| 🎡 | Attraktionen | teamLab, PokéPark KANTO, Aquarien, Aussichtstürme, Freizeitparks |
 | 🍁 | Gärten | Edo-Gärten, Ginkgo-Allee, Herbstlaub |
 | 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |
 | 🚇 | Bahnhofs-Stempel | 78 JR-Bahnhöfe in Tokio, das Metro-Museum und Infos zu Ekitag – zum Abhaken |
