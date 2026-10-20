@@ -7,22 +7,6 @@
 const Effekte = {
   ruhig: matchMedia("(prefers-reduced-motion: reduce)").matches,
 
-  /** Schwebende Stimmung über der Karte: Ahornblätter (hell) bzw. Laternenlichter (dunkel) */
-  stimmungStarten() {
-    if (this.ruhig) return;
-    const box = document.getElementById("ambient");
-    for (let i = 0; i < 9; i++) {
-      const teil = document.createElement("span");
-      teil.className = "ambient-teil";
-      teil.style.left = Math.random() * 100 + "%";
-      teil.style.setProperty("--dauer", 16 + Math.random() * 14 + "s");
-      teil.style.setProperty("--verz", -Math.random() * 30 + "s");
-      teil.style.setProperty("--drift", Math.random() * 140 - 70 + "px");
-      teil.style.setProperty("--gr", (0.6 + Math.random() * 0.7).toFixed(2));
-      box.appendChild(teil);
-    }
-  },
-
   /** Wellen-Effekt beim Antippen von Knöpfen */
   wellenAktivieren() {
     document.addEventListener("pointerdown", (ev) => {

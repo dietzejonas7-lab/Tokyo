@@ -970,7 +970,6 @@ async function start() {
   $("#splash").classList.add("hide");
   setTimeout(() => $("#splash").remove(), 800);
   markerZeichnen();
-  Effekte.stimmungStarten();
 
   if ("serviceWorker" in navigator) {
     // Gibt es eine neue App-Version, einmal automatisch neu laden
