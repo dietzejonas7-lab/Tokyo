@@ -438,6 +438,24 @@ button { font: inherit; color: inherit; cursor: pointer; }
   text-shadow: 0 2px 0 rgba(43, 38, 34, 0.25);
   animation: rise 0.8s 0.15s both var(--ease);
 }
+/* Beispielfoto von Wikimedia Commons */
+.hero img.commons {
+  position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover;
+  opacity: 0; transition: opacity 0.6s var(--ease);
+}
+.hero img.commons.da { opacity: 1; }
+.hero.mit-foto { cursor: pointer; }
+.hero.mit-foto::before, .hero.mit-foto::after { display: none; }
+.hero.mit-foto .hero-icon { opacity: 0; transition: opacity 0.4s; }
+.hero.mit-foto .hero-ja { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 0 14px rgba(0, 0, 0, 0.5); }
+.foto-credit {
+  position: absolute; left: 10px; bottom: 8px; z-index: 2; max-width: calc(100% - 90px);
+  padding: 3px 8px; border-radius: 8px; background: rgba(20, 16, 12, 0.6); color: #fff;
+  font-size: 0.66rem; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.foto-punkte { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: flex; gap: 4px; }
+.foto-punkte i { width: 6px; height: 6px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); transition: background 0.3s, transform 0.3s; }
+.foto-punkte i.an { background: #fff; transform: scale(1.3); }
 .hero.mein { height: 360px; background: #1c1814; }
 .hero.mein img { object-fit: contain; }
 .hero-badge {

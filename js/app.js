@@ -611,6 +611,12 @@ function sheetOeffnen(e) {
   if (gesammelt) Effekte.hanko($("#sheet .hero"), state.frischGesammelt === e.id);
   state.frischGesammelt = null;
   markerHervorheben(e);
+  // Ohne eigenes Foto: freie Beispielfotos von Wikimedia Commons nachladen
+  if (!bild) {
+    OrtFotos.fuer(e, k).then((fotos) => {
+      if (offenerEintrag?.id === e.id && fotos.length) heroFotosZeigen(e, fotos);
+    });
+  }
   $("#btn-collect").onclick = () => besuchtUmschalten(e);
   if (e.eigen) $("#btn-delete").onclick = () => eigenenLoeschen(e);
   $("#foto-input").onchange = (ev) => ev.target.files[0] && fotoSpeichern(e, ev.target.files[0]);
@@ -620,6 +626,45 @@ function sheetOeffnen(e) {
   sheet.scrollTop = 0;
   sheet.classList.add("open");
   sheet.setAttribute("aria-hidden", "false");
+}
+
+/** Beispielfotos im Kopfbild zeigen – mit Fotograf & Lizenz; Antippen = nächstes Foto */
+function heroFotosZeigen(e, fotos) {
+  const hero = $("#sheet .hero");
+  if (!hero || hero.querySelector("img.commons")) return;
+  let nr = 0;
+  const img = new Image();
+  img.className = "commons";
+  img.alt = e.name;
+  const nachweis = document.createElement("a");
+  nachweis.className = "foto-credit";
+  nachweis.target = "_blank";
+  nachweis.rel = "noopener";
+  const punkte = document.createElement("div");
+  punkte.className = "foto-punkte";
+  punkte.innerHTML = fotos.length > 1 ? fotos.map(() => "<i></i>").join("") : "";
+
+  const zeigen = () => {
+    const foto = fotos[nr];
+    img.classList.remove("da");
+    img.src = foto.bild;
+    nachweis.href = foto.seite;
+    nachweis.textContent = `📷 ${foto.autor} · ${foto.lizenz} · Wikimedia Commons`;
+    punkte.querySelectorAll("i").forEach((p, i) => p.classList.toggle("an", i === nr));
+  };
+  img.onload = () => { img.classList.add("da"); hero.classList.add("mit-foto"); };
+  img.onerror = () => { if (nr < fotos.length - 1) { nr++; zeigen(); } };
+
+  hero.prepend(img);
+  hero.append(nachweis, punkte);
+  if (fotos.length > 1) {
+    hero.addEventListener("click", (ev) => {
+      if (ev.target.closest(".foto-credit")) return;
+      nr = (nr + 1) % fotos.length;
+      zeigen();
+    });
+  }
+  zeigen();
 }
 
 /** Den Marker des geöffneten Orts hüpfen lassen und hervorheben */
@@ -841,6 +886,11 @@ function panelZeichnen(suchbegriff = "") {
       <span class="es-text"><b>Klänge</b><small>Leises Klicken & kurze Töne</small></span>
       <span class="schalter" aria-hidden="true"></span>
     </button>
+    <button class="einstellung ${OrtFotos.aktiv ? "on" : ""}" id="foto-schalter" aria-pressed="${OrtFotos.aktiv}" style="margin-top:10px">
+      <span class="es-icon">🖼️</span>
+      <span class="es-text"><b>Beispielfotos</b><small>Freie Fotos von Wikimedia Commons (braucht Internet)</small></span>
+      <span class="schalter" aria-hidden="true"></span>
+    </button>
     <h3 class="section-title">So funktioniert's</h3>
     <div class="list" style="gap:12px;line-height:1.5">
       <p>🎛️ <b>Kategorien</b>: Oben einzelne Kategorien antippen = ein-/ausblenden. Der Knopf „Kategorien“ öffnet die große Übersicht (lange drücken = nur diese Kategorie).</p>
@@ -871,6 +921,10 @@ function panelKlick(ev) {
     setTimeout(() => sheetOeffnen(e), 500);
   }
   if (ev.target.id === "btn-export") exportieren();
+  if (ev.target.closest("#foto-schalter")) {
+    OrtFotos.umschalten();
+    panelZeichnen();
+  }
   if (ev.target.closest("#klang-schalter")) {
     Klang.umschalten();
     panelZeichnen();
