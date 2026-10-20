@@ -1,0 +1,321 @@
+[
+  {
+    "id": "kanda-furuhon",
+    "name": "Kanda-Buchfestival (Jimbōchō)",
+    "nameJa": "第66回 東京名物 神田古本まつり",
+    "lat": 35.6958,
+    "lng": 139.7577,
+    "beschreibung": "Das größte Antiquariats-Fest Japans: Kilometer von Bücherregalen auf der Straße im Bücherviertel Jimbōchō – auch alte Manga, Artbooks und Drucke.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-10-23",
+        "bis": "2026-11-01"
+      }
+    ],
+    "geprueft": true,
+    "station": "Jimbocho",
+    "tags": [
+      "Bücher",
+      "Manga",
+      "Fest"
+    ]
+  },
+  {
+    "id": "ramen-festa",
+    "name": "Tokyo Ramen Festa 2026",
+    "nameJa": "東京ラーメンフェスタ 2026",
+    "lat": 35.6253,
+    "lng": 139.6614,
+    "beschreibung": "Großes Ramen-Festival mit Ständen bekannter Ramen-Läden aus ganz Japan im Komazawa Olympic Park. Ort bitte vorab bestätigen.",
+    "zeiten": "tagsüber bis abends",
+    "zeitraum": [
+      {
+        "von": "2026-10-30",
+        "bis": "2026-11-03"
+      }
+    ],
+    "geprueft": true,
+    "station": "Komazawa-daigaku",
+    "tags": [
+      "Essen",
+      "Ramen",
+      "Festival"
+    ]
+  },
+  {
+    "id": "yakiimo-fes",
+    "name": "Yakiimo-Fes Tokyo 2026",
+    "nameJa": "やきいもフェス TOKYO 2026",
+    "lat": 35.7086,
+    "lng": 139.6638,
+    "beschreibung": "Festival rund um gebackene Süßkartoffeln (Yakiimo) – Herbst-Klassiker in Japan, mit vielen Varianten und Süßspeisen.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-10-30",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Nakano",
+    "tags": [
+      "Essen",
+      "Herbst",
+      "Festival"
+    ]
+  },
+  {
+    "id": "tiff-2026",
+    "name": "Tokyo International Film Festival",
+    "nameJa": "第39回 東京国際映画祭",
+    "lat": 35.674,
+    "lng": 139.7594,
+    "beschreibung": "Internationales Filmfestival rund um Hibiya, Yūrakuchō und Ginza – oft auch Anime-Vorführungen und Premieren mit roten Teppichen.",
+    "zeiten": "je nach Vorstellung",
+    "zeitraum": [
+      {
+        "von": "2026-10-26",
+        "bis": "2026-11-04"
+      }
+    ],
+    "geprueft": true,
+    "station": "Hibiya / Yurakucho",
+    "tags": [
+      "Film",
+      "Anime"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://2026.tiff-jp.net/"
+      }
+    ]
+  },
+  {
+    "id": "midtown-design-live",
+    "name": "Tokyo Midtown Design Live 2026",
+    "nameJa": "TOKYO MIDTOWN DESIGN LIVE 2026",
+    "lat": 35.6658,
+    "lng": 139.7311,
+    "beschreibung": "Design-Festival mit Ausstellungen und Installationen in und um Tokyo Midtown.",
+    "zeiten": "tagsüber bis abends",
+    "zeitraum": [
+      {
+        "von": "2026-10-16",
+        "bis": "2026-11-04"
+      }
+    ],
+    "geprueft": true,
+    "station": "Roppongi",
+    "tags": [
+      "Design",
+      "Kunst"
+    ]
+  },
+  {
+    "id": "designart-tokyo",
+    "name": "DESIGNART TOKYO 2026",
+    "nameJa": "DESIGNART TOKYO 2026",
+    "lat": 35.6654,
+    "lng": 139.712,
+    "beschreibung": "Design- und Kunstfestival an vielen Orten in Omotesandō, Harajuku, Shibuya und Umgebung – Galerien, Shops und Pop-ups.",
+    "zeiten": "je nach Ort",
+    "zeitraum": [
+      {
+        "von": "2026-10-30",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Omotesando",
+    "tags": [
+      "Design",
+      "Kunst"
+    ]
+  },
+  {
+    "id": "meiji-herbstfest",
+    "name": "Herbstfest des Meiji Jingū",
+    "nameJa": "明治神宮 秋の大祭",
+    "lat": 35.6764,
+    "lng": 139.6993,
+    "beschreibung": "Rund um den 3. November (Geburtstag von Kaiser Meiji) gibt es traditionelle Vorführungen wie Bugaku-Tänze, Kampfkunst und berittenes Bogenschießen (Yabusame). Termine 2026 noch nicht bestätigt.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-03"
+      }
+    ],
+    "geprueft": false,
+    "station": "Harajuku / Meiji-jingumae",
+    "tags": [
+      "Tradition",
+      "Schrein"
+    ]
+  },
+  {
+    "id": "funabori-matsuri",
+    "name": "Funabori-Matsuri",
+    "nameJa": "第51回 船堀まつり",
+    "lat": 35.6837,
+    "lng": 139.864,
+    "beschreibung": "Lokales Stadtteilfest im Osten Tokios mit Ständen und Aufführungen – echtes Nachbarschafts-Japan.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-01"
+      }
+    ],
+    "geprueft": true,
+    "station": "Funabori",
+    "tags": [
+      "Stadtfest"
+    ]
+  },
+  {
+    "id": "dream-yosakoi",
+    "name": "Dream Yosakoi Festival",
+    "nameJa": "ドリーム夜さ来い祭り",
+    "lat": 35.6268,
+    "lng": 139.774,
+    "beschreibung": "Hunderte Tanzgruppen in bunten Kostümen tanzen den energiegeladenen Yosakoi-Tanz – vor allem in Odaiba.",
+    "zeiten": "tagsüber bis abends",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Daiba / Tokyo Teleport",
+    "tags": [
+      "Tanz",
+      "Festival"
+    ]
+  },
+  {
+    "id": "design-festa-64",
+    "name": "Design Festa vol.64",
+    "nameJa": "デザインフェスタ vol.64",
+    "lat": 35.6302,
+    "lng": 139.7946,
+    "beschreibung": "Riesige Kunst- und Kreativmesse im Tokyo Big Sight mit tausenden Künstlern: Illustrationen, Accessoires, Figuren, Handgemachtes – perfekt für einzigartige Souvenirs.",
+    "zeiten": "10:00–18:00",
+    "preis": "Eintritt kostenpflichtig",
+    "zeitraum": [
+      {
+        "von": "2026-11-14",
+        "bis": "2026-11-15"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kokusai-tenjijo / Tokyo Big Sight",
+    "tags": [
+      "Kunst",
+      "Handgemacht",
+      "Messe"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://designfesta.com/"
+      }
+    ]
+  },
+  {
+    "id": "shichi-go-san",
+    "name": "Shichi-Go-San im Meiji Jingū",
+    "nameJa": "七五三",
+    "lat": 35.6766,
+    "lng": 139.699,
+    "beschreibung": "Am 15. November feiern Familien Kinder im Alter von 3, 5 und 7 Jahren. Die Kinder kommen in festlichen Kimonos zum Schrein – wunderschön, aber bitte respektvoll fotografieren. Auch an den Wochenenden davor ist viel los.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-15",
+        "bis": "2026-11-15"
+      }
+    ],
+    "geprueft": true,
+    "station": "Harajuku / Meiji-jingumae",
+    "tags": [
+      "Tradition",
+      "Kimono"
+    ]
+  },
+  {
+    "id": "sugamo-ennichi",
+    "name": "Sugamo Jizō-dōri Markttag",
+    "nameJa": "とげぬき地蔵 縁日",
+    "lat": 35.7357,
+    "lng": 139.7356,
+    "beschreibung": "An jedem 4., 14. und 24. des Monats säumen Stände die Einkaufsstraße „Harajuku der Omas“ zum Tempel Kōgan-ji: rote Unterwäsche als Glücksbringer, Süßigkeiten, Snacks.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-04",
+        "bis": "2026-11-04"
+      },
+      {
+        "von": "2026-11-14",
+        "bis": "2026-11-14"
+      },
+      {
+        "von": "2026-11-24",
+        "bis": "2026-11-24"
+      }
+    ],
+    "geprueft": true,
+    "station": "Sugamo",
+    "tags": [
+      "Markt",
+      "Tradition"
+    ]
+  },
+  {
+    "id": "chrysanthemen-gyoen",
+    "name": "Chrysanthemen-Ausstellung Shinjuku Gyoen",
+    "nameJa": "新宿御苑 菊花壇展",
+    "lat": 35.6852,
+    "lng": 139.7101,
+    "beschreibung": "Traditionelle Chrysanthemen-Kunst in kunstvoll gestalteten Pavillons. Termine 2026 nicht bestätigt (meist ca. 1.–15. November).",
+    "zeiten": "9:00–16:00",
+    "preis": "Parkeintritt 500 ¥",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-15"
+      }
+    ],
+    "geprueft": false,
+    "station": "Shinjuku-gyoemmae",
+    "tags": [
+      "Blumen",
+      "Tradition"
+    ]
+  },
+  {
+    "id": "kiku-yushima",
+    "name": "Chrysanthemen-Fest Yushima Tenmangū",
+    "nameJa": "湯島天神 菊まつり",
+    "lat": 35.7077,
+    "lng": 139.7681,
+    "beschreibung": "Hunderte Chrysanthemen und Figuren aus Blumen im Schreinbezirk. Termine 2026 nicht bestätigt (meist fast den ganzen November).",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": false,
+    "station": "Yushima",
+    "tags": [
+      "Blumen",
+      "Schrein"
+    ]
+  }
+]

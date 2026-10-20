@@ -158,16 +158,20 @@ button { font: inherit; color: inherit; cursor: pointer; }
   padding: 8px 14px 8px 10px; border-radius: 999px; border: 2px solid transparent;
   background: var(--surface); backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur);
   box-shadow: var(--shadow); font-weight: 700; font-size: 0.88rem; white-space: nowrap;
-  opacity: 0.55; filter: grayscale(0.7);
+  opacity: 0.7; filter: grayscale(0.5);
   transition: all 0.3s var(--spring);
   animation: popIn 0.5s both var(--spring); animation-delay: calc(var(--i, 0) * 60ms);
 }
 #chips.ruhig .chip { animation: none; }
 #chips .chip.bump { animation: chipBump 0.5s var(--spring); }
 .chip.on {
-  opacity: 1; filter: none; border-color: var(--c);
-  background: linear-gradient(135deg, color-mix(in srgb, var(--c) 22%, var(--surface-solid)), var(--surface));
+  opacity: 1; filter: none; color: #fff;
+  background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 70%, #000));
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--c) 45%, transparent);
 }
+.chip.on .count { background: rgba(255, 255, 255, 0.28); }
+.chip-filter { opacity: 1; filter: none; background: var(--text); color: var(--bg); }
+.chip-filter .count { background: var(--accent); }
 .chip.on > span:first-child { display: inline-block; animation: wackeln 2.8s ease-in-out infinite; }
 @keyframes chipBump { 30% { transform: scale(0.86); } 65% { transform: scale(1.08); } }
 @keyframes wackeln { 0%, 86%, 100% { transform: rotate(0); } 90% { transform: rotate(-14deg); } 95% { transform: rotate(10deg); } }
@@ -495,7 +499,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .tk-info strong { font-family: "Zen Maru Gothic", sans-serif; font-size: 1.2rem; }
 
 /* ---------- Wellen beim Antippen ---------- */
-.btn, .fab, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button { position: relative; overflow: hidden; }
+.btn, .fab, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button, .kat-kachel { position: relative; overflow: hidden; }
 .welle {
   position: absolute; border-radius: 50%; pointer-events: none;
   background: currentColor; opacity: 0.25; transform: scale(0);
@@ -505,3 +509,56 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* ---------- Hell/Dunkel-Wechsel ---------- */
 ::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+
+/* ---------- Kategorien-Auswahl ---------- */
+.modal.unten { place-items: end center; padding: 0; }
+.modal.unten .modal-card {
+  width: min(560px, 100%); max-height: 88vh; border-radius: 26px 26px 0 0; padding-top: 0;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 18px);
+  transform: translateY(100%); transition: transform 0.5s var(--spring);
+}
+.modal.unten.open .modal-card { transform: none; }
+.kat-karte .sheet-grip { margin-bottom: -6px; background: var(--surface-solid); }
+.kat-karte .panel-head { align-items: flex-start; margin-bottom: 0; }
+.kat-karte .panel-head .muted { margin: 4px 0 0; }
+.kat-schnell { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.kat-schnell .btn { flex: none; padding: 8px 12px; font-size: 0.82rem; white-space: nowrap; }
+.kat-gruppe header { display: flex; justify-content: space-between; align-items: baseline; margin: 8px 2px 8px; }
+.kat-gruppe h3 { font-size: 1rem; }
+.kat-link { border: 0; background: none; color: var(--accent); font-weight: 800; font-size: 0.82rem; }
+.kat-grid { display: grid; gap: 10px; }
+@media (min-width: 600px) { .kat-grid { grid-template-columns: 1fr 1fr; } }
+.kat-kachel {
+  display: grid; grid-template-columns: 52px 1fr 46px; gap: 12px; align-items: center;
+  padding: 12px; border-radius: 18px; border: 2px solid transparent; text-align: left;
+  background: var(--line); user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+  transition: background 0.3s, border-color 0.3s, transform 0.2s var(--spring);
+  animation: rise 0.45s both var(--ease); animation-delay: calc(var(--i) * 45ms);
+}
+.kat-kachel:active { transform: scale(0.97); }
+.kat-kachel.on { background: color-mix(in srgb, var(--c) 13%, var(--surface-solid)); border-color: var(--c); }
+.kat-kachel.bump { animation: chipBump 0.5s var(--spring); }
+.kk-icon {
+  width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; font-size: 1.6rem;
+  background: color-mix(in srgb, var(--c) 22%, transparent); filter: grayscale(0.6);
+  transition: background 0.3s, filter 0.3s, box-shadow 0.3s;
+}
+.kat-kachel.on .kk-icon { background: var(--c); filter: none; box-shadow: 0 6px 14px color-mix(in srgb, var(--c) 45%, transparent); }
+.kk-icon.huepf { animation: huepf 0.5s var(--spring); }
+@keyframes huepf { 40% { transform: scale(1.25) rotate(-10deg); } }
+.kk-text { display: grid; gap: 2px; min-width: 0; }
+.kk-text b { font-size: 0.98rem; }
+.kk-text small { color: var(--muted); font-size: 0.78rem; line-height: 1.3; }
+.kk-zahlen { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; font-size: 0.72rem; font-weight: 800; color: var(--muted); }
+.kk-live { padding: 1px 8px; border-radius: 999px; color: var(--text); background: color-mix(in srgb, var(--c) 22%, transparent); }
+.schalter {
+  position: relative; width: 46px; height: 28px; border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 45%, transparent); transition: background 0.3s;
+}
+.schalter::after {
+  content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%;
+  background: #fff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); transition: transform 0.35s var(--spring);
+}
+.kat-kachel.on .schalter { background: var(--c); }
+.kat-kachel.on .schalter::after { transform: translateX(18px); }
+.kat-tipp { text-align: center; font-size: 0.78rem; margin: 4px 0 0; }

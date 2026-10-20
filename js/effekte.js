@@ -10,7 +10,7 @@ const Effekte = {
   /** Wellen-Effekt beim Antippen von Knöpfen */
   wellenAktivieren() {
     document.addEventListener("pointerdown", (ev) => {
-      const ziel = ev.target.closest(".btn, .fab, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button");
+      const ziel = ev.target.closest(".btn, .fab, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button, .kat-kachel");
       if (!ziel || this.ruhig) return;
       const r = ziel.getBoundingClientRect();
       const groesse = Math.max(r.width, r.height) * 2;

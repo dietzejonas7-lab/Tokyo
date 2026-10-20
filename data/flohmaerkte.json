@@ -1,0 +1,213 @@
+[
+  {
+    "id": "oedo-kotto",
+    "name": "Ōedo-Antikmarkt",
+    "nameJa": "大江戸骨董市",
+    "lat": 35.6766,
+    "lng": 139.7637,
+    "beschreibung": "Japans größter Open-Air-Antikmarkt mit rund 250 Ständen auf dem Platz vor dem Tokyo International Forum: Kimonos, Keramik, alte Spielzeuge, Holzschnitte, Kuriositäten. Eintritt frei. Bei Regen fällt er aus.",
+    "zeiten": "9:00–16:00",
+    "preis": "Eintritt frei",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-23",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": true,
+    "station": "Yurakucho / Tokyo",
+    "tags": [
+      "Antik",
+      "Kimono",
+      "Keramik"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://www.t-i-forum.co.jp/visitors/antique/"
+      }
+    ]
+  },
+  {
+    "id": "oi-flohmarkt",
+    "name": "Tokyo City Flea Market (Ōi-Rennbahn)",
+    "nameJa": "大井競馬場フリーマーケット",
+    "lat": 35.5935,
+    "lng": 139.7415,
+    "beschreibung": "Einer der größten Flohmärkte Tokios auf dem Parkplatz der Ōi-Pferderennbahn – fast jedes Wochenende. Viel Kleidung, Haushaltswaren, manchmal Spielzeug & Figuren. Die genauen Tage unterscheiden sich je nach Quelle – vorher auf der Seite des Veranstalters prüfen.",
+    "zeiten": "ca. 9:00–14:30 (teils verkürzt)",
+    "preis": "Eintritt frei",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-01"
+      },
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-08",
+        "bis": "2026-11-08"
+      },
+      {
+        "von": "2026-11-14",
+        "bis": "2026-11-14"
+      },
+      {
+        "von": "2026-11-15",
+        "bis": "2026-11-15"
+      },
+      {
+        "von": "2026-11-21",
+        "bis": "2026-11-21"
+      },
+      {
+        "von": "2026-11-22",
+        "bis": "2026-11-22"
+      },
+      {
+        "von": "2026-11-28",
+        "bis": "2026-11-28"
+      },
+      {
+        "von": "2026-11-29",
+        "bis": "2026-11-29"
+      },
+      {
+        "von": "2026-11-23",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": false,
+    "station": "Oi-Keibajo-mae (Monorail)",
+    "tags": [
+      "Flohmarkt",
+      "Second-Hand"
+    ]
+  },
+  {
+    "id": "yanaka-kotto",
+    "name": "Yanaka-Antikmarkt (Enmei-in)",
+    "nameJa": "谷中骨董市",
+    "lat": 35.7266,
+    "lng": 139.768,
+    "beschreibung": "Kleiner, gemütlicher Antikmarkt im Tempel Enmei-in im nostalgischen Viertel Yanaka – ideal mit einem Spaziergang durch Yanaka Ginza kombinierbar.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-14",
+        "bis": "2026-11-15"
+      }
+    ],
+    "geprueft": true,
+    "station": "Nishi-Nippori / Nippori",
+    "tags": [
+      "Antik",
+      "Yanaka",
+      "Tempel"
+    ]
+  },
+  {
+    "id": "fudaten-kotto",
+    "name": "Fudaten-Antikmarkt (Chōfu)",
+    "nameJa": "布多天骨董てんこもり市",
+    "lat": 35.6567,
+    "lng": 139.5463,
+    "beschreibung": "Antikmarkt am Fuda-Tenjinja-Schrein in Chōfu. Ganz in der Nähe: das Kitarō-Viertel (Gegege no Kitarō) am Tempel Jindai-ji.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-08",
+        "bis": "2026-11-08"
+      }
+    ],
+    "geprueft": true,
+    "station": "Chofu (Keio-Linie)",
+    "tags": [
+      "Antik",
+      "Schrein",
+      "Ausflug"
+    ]
+  },
+  {
+    "id": "shinjuku-chuo-flohmarkt",
+    "name": "Flohmarkt im Shinjuku Central Park",
+    "nameJa": "新宿中央公園 フリーマーケット",
+    "lat": 35.6903,
+    "lng": 139.6888,
+    "beschreibung": "Beliebter Flohmarkt am Wasserplatz des Parks zwischen den Hochhäusern von West-Shinjuku.",
+    "zeiten": "tagsüber",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-11-21"
+      }
+    ],
+    "geprueft": true,
+    "station": "Tochomae / Shinjuku",
+    "tags": [
+      "Flohmarkt",
+      "Shinjuku"
+    ]
+  },
+  {
+    "id": "farmers-market-unu",
+    "name": "Farmers Market @ UNU (Aoyama)",
+    "nameJa": "青山ファーマーズマーケット",
+    "lat": 35.6627,
+    "lng": 139.7104,
+    "beschreibung": "Jedes Wochenende vor der United Nations University: regionale Produkte, Streetfood, Kaffee und oft Kunsthandwerk. Schöner Wochenend-Bummel zwischen Shibuya und Omotesando.",
+    "zeiten": "ca. 10:00–16:00",
+    "preis": "Eintritt frei",
+    "zeitraum": [
+      {
+        "von": "2026-11-01",
+        "bis": "2026-11-01"
+      },
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-08",
+        "bis": "2026-11-08"
+      },
+      {
+        "von": "2026-11-14",
+        "bis": "2026-11-14"
+      },
+      {
+        "von": "2026-11-15",
+        "bis": "2026-11-15"
+      },
+      {
+        "von": "2026-11-21",
+        "bis": "2026-11-21"
+      },
+      {
+        "von": "2026-11-22",
+        "bis": "2026-11-22"
+      },
+      {
+        "von": "2026-11-28",
+        "bis": "2026-11-28"
+      },
+      {
+        "von": "2026-11-29",
+        "bis": "2026-11-29"
+      }
+    ],
+    "geprueft": false,
+    "station": "Omotesando / Shibuya",
+    "tags": [
+      "Markt",
+      "Streetfood",
+      "Kunsthandwerk"
+    ]
+  }
+]

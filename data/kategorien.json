@@ -5,7 +5,17 @@
     "icon": "🎴",
     "farbe": "#ff4f8b",
     "datei": "anime-shops.json",
-    "beschreibung": "Figuren, Pokémon-Karten, Merch & Second-Hand-Schätze."
+    "beschreibung": "Figuren, Pokémon-Karten, Merch & Second-Hand-Schätze.",
+    "gruppe": "shoppen"
+  },
+  {
+    "id": "flohmarkt",
+    "name": "Flohmärkte",
+    "icon": "🏺",
+    "farbe": "#b7793e",
+    "datei": "flohmaerkte.json",
+    "gruppe": "shoppen",
+    "beschreibung": "Antik- und Flohmärkte – die Karte zeigt nur, was am gewählten Tag stattfindet."
   },
   {
     "id": "illumination",
@@ -13,7 +23,17 @@
     "icon": "✨",
     "farbe": "#f7b500",
     "datei": "illuminationen.json",
-    "beschreibung": "Lichter-Events – die Karte zeigt nur, was am gewählten Tag läuft."
+    "beschreibung": "Lichter-Events – die Karte zeigt nur, was am gewählten Tag läuft.",
+    "gruppe": "erleben"
+  },
+  {
+    "id": "events",
+    "name": "Events & Feste",
+    "icon": "🎏",
+    "farbe": "#0fa3a3",
+    "datei": "events.json",
+    "gruppe": "erleben",
+    "beschreibung": "Feste, Festivals & besondere Tage – tagesaktuell gefiltert."
   },
   {
     "id": "gaerten",
@@ -21,7 +41,8 @@
     "icon": "🍁",
     "farbe": "#2fae6f",
     "datei": "gaerten.json",
-    "beschreibung": "Japanische Landschaftsgärten & Herbstlaub (Koyo)."
+    "beschreibung": "Japanische Landschaftsgärten & Herbstlaub (Koyo).",
+    "gruppe": "erleben"
   },
   {
     "id": "nachttempel",
@@ -29,7 +50,8 @@
     "icon": "🏮",
     "farbe": "#ff6a2b",
     "datei": "tempel-nachts.json",
-    "beschreibung": "Tempel & Schreine, die abends beleuchtet und zugänglich sind."
+    "beschreibung": "Tempel & Schreine, die abends beleuchtet und zugänglich sind.",
+    "gruppe": "erleben"
   },
   {
     "id": "stempel",
@@ -39,7 +61,8 @@
     "datei": "bahnhof-stempel.json",
     "sammelbar": true,
     "beschreibung": "Eki-Stempel zum Sammeln. Hake ab, was du schon hast!",
-    "bildersuche": ""
+    "bildersuche": "",
+    "gruppe": "sammeln"
   },
   {
     "id": "goshuin",
@@ -49,7 +72,8 @@
     "datei": "goshuin.json",
     "sammelbar": true,
     "beschreibung": "Tempel & Schreine mit Goshuin (handgeschriebene Siegel).",
-    "bildersuche": "御朱印"
+    "bildersuche": "御朱印",
+    "gruppe": "sammeln"
   },
   {
     "id": "goshuincho",
@@ -58,6 +82,7 @@
     "farbe": "#8f5bff",
     "datei": "goshuincho-limitiert.json",
     "beschreibung": "Zeitlich begrenzte Goshuin-Bücher & Sonder-Goshuin – tagesaktuell gefiltert.",
-    "bildersuche": "御朱印帳"
+    "bildersuche": "御朱印帳",
+    "gruppe": "sammeln"
   }
 ]

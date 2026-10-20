@@ -43,6 +43,7 @@ const SPEICHER = {
   besucht: "tokio.besucht",
   eigene: "tokio.eigene",
   aktiv: "tokio.aktiveKategorien",
+  bekannt: "tokio.bekannteKategorien",
   theme: "tokio.theme",
 };
 
@@ -155,6 +156,10 @@ function zeitStatus(e, datum = state.datum) {
   const laufend = e.zeitraum.find((z) => z.von <= datum && datum <= z.bis);
   if (laufend) {
     const rest = tageZwischen(datum, laufend.bis);
+    const naechster = e.zeitraum.filter((z) => z.von > laufend.bis).sort((a, b) => a.von.localeCompare(b.von))[0];
+    if (rest === 0 && naechster) {
+      return { art: "live", text: `Heute! Wieder am ${datumSchoen(naechster.von)}`, kurz: "heute" };
+    }
     const text = rest === 0 ? "Nur noch heute!" : `Läuft – noch ${rest} ${rest === 1 ? "Tag" : "Tage"}`;
     return { art: "live", text, kurz: rest === 0 ? "letzter Tag" : `noch ${rest} T.` };
   }
@@ -200,6 +205,12 @@ async function datenLaden() {
 
   const gespeichert = laden(SPEICHER.aktiv, null);
   state.aktiv = new Set(gespeichert || kats.map((k) => k.id));
+  // Neu hinzugekommene Kategorien automatisch einschalten
+  // (Ohne gespeicherte Liste: die 7 Kategorien der ersten App-Version gelten als bekannt)
+  const ersteVersion = ["anime", "illumination", "gaerten", "nachttempel", "stempel", "goshuin", "goshuincho"];
+  const bekannt = new Set(laden(SPEICHER.bekannt, ersteVersion));
+  kats.filter((k) => gespeichert && !bekannt.has(k.id)).forEach((k) => state.aktiv.add(k.id));
+  speichern(SPEICHER.bekannt, kats.map((k) => k.id));
 }
 
 function alleEintraegeNeu(ausDateien = state.eintraege.filter((e) => !e.eigen)) {
@@ -365,11 +376,13 @@ function standortSuchen() {
 /* ---------- 5. Kategorien-Chips ---------- */
 function chipsZeichnen() {
   const nav = $("#chips");
-  nav.innerHTML = state.kategorien
+  const filter = `<button class="chip chip-filter" id="chip-filter" style="--i:0" aria-label="Kategorien auswählen">
+    <span>🎛️</span>Kategorien<span class="count">${state.aktiv.size}/${state.kategorien.length}</span></button>`;
+  nav.innerHTML = filter + state.kategorien
     .map((k, i) => {
       const anzahl = state.eintraege.filter((e) => e.kategorie === k.id && (state.alleZeigen || istAktiv(e))).length;
       return `<button class="chip ${state.aktiv.has(k.id) ? "on" : ""}" data-kat="${esc(k.id)}"
-        style="--c:${esc(k.farbe)};--i:${i}" title="${esc(k.beschreibung)}">
+        style="--c:${esc(k.farbe)};--i:${i + 1}" title="${esc(k.beschreibung)}">
         <span>${k.icon}</span>${esc(k.name)}<span class="count">${anzahl}</span></button>`;
     })
     .join("");
@@ -379,14 +392,121 @@ function chipsZeichnen() {
 }
 
 function chipKlick(ev) {
+  if (ev.target.closest("#chip-filter")) return katAuswahlOeffnen();
   const chip = ev.target.closest(".chip");
   if (!chip) return;
   const id = chip.dataset.kat;
-  state.aktiv.has(id) ? state.aktiv.delete(id) : state.aktiv.add(id);
-  speichern(SPEICHER.aktiv, [...state.aktiv]);
-  markerZeichnen();
+  katUmschalten(id);
   Effekte.nochmal($(`.chip[data-kat="${id}"]`), "bump");
   if (state.aktiv.has(id)) toast(`${kategorie(id).icon} ${kategorie(id).beschreibung}`);
+}
+
+function katUmschalten(id, an = !state.aktiv.has(id)) {
+  an ? state.aktiv.add(id) : state.aktiv.delete(id);
+  katGespeichert();
+}
+function katGespeichert() {
+  speichern(SPEICHER.aktiv, [...state.aktiv]);
+  markerZeichnen();
+  katAuswahlAktualisieren();
+}
+
+/* ---------- 5b. Kategorien-Auswahl (große Übersicht) ---------- */
+const GRUPPEN = [
+  ["shoppen", "🛍️ Shoppen & Stöbern"],
+  ["erleben", "✨ Erleben"],
+  ["sammeln", "🏆 Sammeln"],
+];
+
+function katAuswahlOeffnen() {
+  katAuswahlZeichnen();
+  modal("kat-modal", true);
+}
+
+function katAuswahlZeichnen() {
+  let i = 0;
+  $("#kat-liste").innerHTML = GRUPPEN.map(([gruppe, titel]) => {
+    const kats = state.kategorien.filter((k) => (k.gruppe || "erleben") === gruppe);
+    if (!kats.length) return "";
+    return `<section class="kat-gruppe">
+      <header><h3>${titel}</h3><button class="kat-link" data-gruppe="${gruppe}"></button></header>
+      <div class="kat-grid">${kats.map((k) => katKachel(k, i++)).join("")}</div>
+    </section>`;
+  }).join("");
+  katAuswahlAktualisieren();
+}
+
+function katKachel(k, i) {
+  const alle = state.eintraege.filter((e) => e.kategorie === k.id);
+  const sichtbar = alle.filter((e) => state.alleZeigen || istAktiv(e)).length;
+  const live = alle.filter((e) => e.zeitraum && istAktiv(e)).length;
+  return `<button class="kat-kachel" data-kat="${esc(k.id)}" style="--c:${esc(k.farbe)};--i:${i}">
+    <span class="kk-icon">${k.icon}</span>
+    <span class="kk-text">
+      <b>${esc(k.name)}</b>
+      <small>${esc(k.beschreibung)}</small>
+      <span class="kk-zahlen"><span>${sichtbar} ${sichtbar === 1 ? "Ort" : "Orte"}</span>
+        ${live ? `<span class="kk-live">✨ ${live} am ${datumSchoen(state.datum, { day: "numeric", month: "short" })}</span>` : ""}</span>
+    </span>
+    <span class="schalter" aria-hidden="true"></span>
+  </button>`;
+}
+
+/** Nur Klassen umschalten (ohne neu zu zeichnen), damit die Animationen flüssig bleiben */
+function katAuswahlAktualisieren() {
+  document.querySelectorAll(".kat-kachel").forEach((el) => {
+    const an = state.aktiv.has(el.dataset.kat);
+    el.classList.toggle("on", an);
+    el.setAttribute("aria-pressed", an);
+  });
+  document.querySelectorAll("[data-gruppe]").forEach((b) => {
+    const kats = state.kategorien.filter((k) => (k.gruppe || "erleben") === b.dataset.gruppe);
+    b.textContent = kats.every((k) => state.aktiv.has(k.id)) ? "alle aus" : "alle an";
+  });
+  const n = sichtbareEintraege().length;
+  $("#kat-zaehler").textContent = `${state.aktiv.size} von ${state.kategorien.length} Kategorien · ${n} ${n === 1 ? "Ort" : "Orte"} auf der Karte`;
+}
+
+function katAuswahlVerbinden() {
+  const liste = $("#kat-liste");
+  let druckTimer, langGedrueckt = false;
+  liste.addEventListener("pointerdown", (ev) => {
+    const kachel = ev.target.closest(".kat-kachel");
+    if (!kachel) return;
+    langGedrueckt = false;
+    druckTimer = setTimeout(() => {
+      // Langes Drücken: nur diese Kategorie
+      langGedrueckt = true;
+      state.aktiv = new Set([kachel.dataset.kat]);
+      katGespeichert();
+      Effekte.nochmal(kachel, "bump");
+      navigator.vibrate?.(20);
+      toast(`Nur noch: ${kategorie(kachel.dataset.kat).icon} ${kategorie(kachel.dataset.kat).name}`);
+    }, 550);
+  });
+  ["pointerup", "pointerleave", "pointercancel"].forEach((t) => liste.addEventListener(t, () => clearTimeout(druckTimer)));
+  liste.addEventListener("contextmenu", (ev) => ev.preventDefault());
+  liste.addEventListener("click", (ev) => {
+    const gruppe = ev.target.closest("[data-gruppe]");
+    if (gruppe) {
+      const kats = state.kategorien.filter((k) => (k.gruppe || "erleben") === gruppe.dataset.gruppe);
+      const alleAn = kats.every((k) => state.aktiv.has(k.id));
+      kats.forEach((k) => (alleAn ? state.aktiv.delete(k.id) : state.aktiv.add(k.id)));
+      return katGespeichert();
+    }
+    const kachel = ev.target.closest(".kat-kachel");
+    if (!kachel || langGedrueckt) return;
+    katUmschalten(kachel.dataset.kat);
+    Effekte.nochmal(kachel.querySelector(".kk-icon"), "huepf");
+  });
+  $("#kat-alle").onclick = () => { state.aktiv = new Set(state.kategorien.map((k) => k.id)); katGespeichert(); };
+  $("#kat-keine").onclick = () => { state.aktiv.clear(); katGespeichert(); };
+  $("#kat-live").onclick = () => {
+    // Kategorien, in denen es zeitlich begrenzte Einträge gibt
+    state.aktiv = new Set(state.eintraege.filter((e) => e.zeitraum).map((e) => e.kategorie));
+    katGespeichert();
+    toast("✨ Nur Kategorien mit zeitlich begrenzten Highlights");
+  };
 }
 
 /* ---------- 6. Detail-Karte (Bottom Sheet) ---------- */
@@ -671,7 +791,7 @@ function panelZeichnen(suchbegriff = "") {
   if (panelTab === "hilfe") {
     $("#panel-title").textContent = "So funktioniert's";
     html += `<div class="list" style="gap:12px;line-height:1.5">
-      <p>🎴 <b>Kategorien</b> oben antippen = ein-/ausblenden.</p>
+      <p>🎛️ <b>Kategorien</b>: Oben einzelne Kategorien antippen = ein-/ausblenden. Der dunkle Knopf „Kategorien“ öffnet die große Übersicht (lange drücken = nur diese Kategorie).</p>
       <p>📅 <b>Datum</b> (roter Knopf) = Illuminationen & limitierte Goshuincho für diesen Tag. Pulsierende Marker laufen am gewählten Tag.</p>
       <p>✅ <b>Gesammelt/Besucht</b> markieren – Fortschritt unter 🏆 Sammlung.</p>
       <p>⚠️ <b>Datum unbestätigt</b> = Termin geschätzt aus dem Vorjahr. Bitte kurz auf der offiziellen Seite prüfen.</p>
@@ -882,6 +1002,7 @@ function splashBlueten() {
 
 function ereignisseVerbinden() {
   $("#chips").addEventListener("click", chipKlick);
+  katAuswahlVerbinden();
   $("#btn-menu").onclick = () => panelOeffnen("heute");
   $("#btn-date").onclick = () => { kalenderZeichnen(); modal("date-modal", true); };
   $("#btn-today").onclick = () => { datumSetzen(heuteInTokio()); modal("date-modal", false); };

@@ -7,7 +7,9 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | | Kategorie | Was drin ist |
 |---|---|---|
 | 🎴 | Anime & Pokémon | Pokémon Center, Akihabara, Nakano Broadway, Kartenläden … |
+| 🏺 | Flohmärkte | Antik- und Flohmärkte, **gefiltert nach dem gewählten Tag** |
 | ✨ | Illuminationen | Lichter-Events, **gefiltert nach dem gewählten Tag** |
+| 🎏 | Events & Feste | Festivals, Feste und besondere Tage, **gefiltert nach dem gewählten Tag** |
 | 🍁 | Gärten | Edo-Gärten, Ginkgo-Allee, Herbstlaub |
 | 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |
 | 🚇 | Bahnhofs-Stempel | 78 JR-Bahnhöfe in Tokio, das Metro-Museum und Infos zu Ekitag – zum Abhaken |
@@ -93,8 +95,9 @@ Pflicht sind nur `id`, `name`, `lat` und `lng`. Alles andere ist optional.
 1. Neue Datei in `data/` anlegen, z. B. `data/ramen.json`, mit dem Inhalt `[ ]` (eine leere Liste), und dann Einträge hineinschreiben.
 2. In `data/kategorien.json` einen Block ergänzen:
    ```json
-   { "id": "ramen", "name": "Ramen", "icon": "🍜", "farbe": "#d97706", "datei": "ramen.json", "beschreibung": "Die besten Nudelsuppen." }
+   { "id": "ramen", "name": "Ramen", "icon": "🍜", "farbe": "#d97706", "datei": "ramen.json", "gruppe": "erleben", "beschreibung": "Die besten Nudelsuppen." }
    ```
+   `gruppe` legt fest, unter welcher Überschrift die Kategorie in der Auswahl steht: `shoppen`, `erleben` oder `sammeln`.
    Mit `"sammelbar": true` erscheint die Kategorie zusätzlich mit Fortschrittsbalken unter 🏆 Sammlung.
 
 ---
