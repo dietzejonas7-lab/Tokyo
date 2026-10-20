@@ -18,6 +18,8 @@
   --radius: 20px;
   --blur: saturate(1.6) blur(16px);
   --spring: cubic-bezier(0.22, 1.4, 0.36, 1);
+  /* Seigaiha – traditionelles japanisches Wellenmuster */
+  --seigaiha: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' viewBox='0 0 48 24'%3E%3Cg fill='none' stroke='white' stroke-width='1.3'%3E%3Cpath d='M0 24a24 24 0 0 1 48 0M6 24a18 18 0 0 1 36 0M12 24a12 12 0 0 1 24 0M18 24a6 6 0 0 1 12 0'/%3E%3Cpath d='M-24 12a24 24 0 0 1 48 0M-18 12a18 18 0 0 1 36 0M-12 12a12 12 0 0 1 24 0M-6 12a6 6 0 0 1 12 0'/%3E%3Cpath d='M24 12a24 24 0 0 1 48 0M30 12a18 18 0 0 1 36 0M36 12a12 12 0 0 1 24 0M42 12a6 6 0 0 1 12 0'/%3E%3C/g%3E%3C/svg%3E");
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
   color-scheme: light;
 }
@@ -66,10 +68,30 @@ button { font: inherit; color: inherit; cursor: pointer; }
   overflow: hidden;
 }
 #splash.hide { opacity: 0; transform: scale(1.08); pointer-events: none; }
-#splash h1 { font-size: 2.6rem; font-weight: 900; text-align: center; animation: rise 0.9s 0.6s both var(--ease); }
-#splash h1 span { display: block; font-size: 1.05rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; opacity: 0.8; }
+#splash h1 { font-size: 2.6rem; font-weight: 900; text-align: center; position: relative; z-index: 1; }
+#splash .kanji { display: block; font-size: 3.4rem; letter-spacing: 0.1em; }
+#splash .kanji i { display: inline-block; font-style: normal; animation: brush 0.9s both var(--spring); animation-delay: calc(0.55s + var(--i) * 0.18s); }
+#splash h1 span { animation: rise 0.9s 1s both var(--ease); }
+.sun {
+  position: absolute; left: 50%; top: 50%; width: 230px; height: 230px; margin: -205px 0 0 -115px; border-radius: 50%;
+  background: radial-gradient(circle, #ff5a5f 0%, #e5383b 55%, rgba(229, 56, 59, 0) 72%);
+  opacity: 0.55; filter: blur(2px);
+  animation: sunrise 1.6s both var(--ease), glow 3s 1.6s infinite alternate ease-in-out;
+}
+.wellen {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 26vh;
+  background: var(--seigaiha); background-size: 48px 24px; opacity: 0.12;
+  -webkit-mask-image: linear-gradient(transparent, #000); mask-image: linear-gradient(transparent, #000);
+  animation: wellen 1.4s 0.3s both var(--ease), wellenZiehen 18s linear infinite;
+}
+@keyframes brush { from { opacity: 0; transform: translateY(14px) scale(0.6); filter: blur(8px); } }
+@keyframes sunrise { from { opacity: 0; transform: translateY(80px) scale(0.7); } }
+@keyframes glow { to { opacity: 0.75; transform: scale(1.06); } }
+@keyframes wellen { from { opacity: 0; transform: translateY(40px); } }
+@keyframes wellenZiehen { to { background-position: 480px 0; } }
+#splash h1 > span { display: block; font-size: 1.05rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; opacity: 0.8; }
 .splash-sub { margin: 0; opacity: 0.7; animation: rise 0.9s 0.9s both var(--ease); }
-.torii { width: 130px; fill: none; stroke: var(--accent); stroke-width: 7; stroke-linecap: round; filter: drop-shadow(0 0 18px rgba(229, 56, 59, 0.7)); }
+.torii { position: relative; z-index: 1; width: 130px; fill: none; stroke: var(--accent); stroke-width: 7; stroke-linecap: round; filter: drop-shadow(0 0 18px rgba(229, 56, 59, 0.7)); }
 .torii path { stroke-dasharray: 140; stroke-dashoffset: 140; animation: draw 0.9s forwards var(--ease); }
 .torii path:nth-child(2) { animation-delay: 0.15s; }
 .torii path:nth-child(3) { animation-delay: 0.3s; }
@@ -121,6 +143,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transition: transform 0.2s var(--spring);
 }
 .date-pill:active { transform: scale(0.92); }
+.date-pill.flip { animation: flip 0.6s var(--spring); }
+@keyframes flip { from { transform: perspective(300px) rotateX(-100deg); opacity: 0.4; } }
 .date-day { font-weight: 800; font-size: 1rem; }
 .date-label { font-size: 0.68rem; opacity: 0.9; }
 
@@ -136,9 +160,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
   box-shadow: var(--shadow); font-weight: 700; font-size: 0.88rem; white-space: nowrap;
   opacity: 0.55; filter: grayscale(0.7);
   transition: all 0.3s var(--spring);
-  animation: popIn 0.5s both var(--spring);
+  animation: popIn 0.5s both var(--spring); animation-delay: calc(var(--i, 0) * 60ms);
 }
-.chip.on { opacity: 1; filter: none; border-color: var(--c); }
+#chips.ruhig .chip { animation: none; }
+#chips .chip.bump { animation: chipBump 0.5s var(--spring); }
+.chip.on {
+  opacity: 1; filter: none; border-color: var(--c);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--c) 22%, var(--surface-solid)), var(--surface));
+}
+.chip.on > span:first-child { display: inline-block; animation: wackeln 2.8s ease-in-out infinite; }
+@keyframes chipBump { 30% { transform: scale(0.86); } 65% { transform: scale(1.08); } }
+@keyframes wackeln { 0%, 86%, 100% { transform: rotate(0); } 90% { transform: rotate(-14deg); } 95% { transform: rotate(10deg); } }
 .chip:active { transform: scale(0.92); }
 .chip .count {
   font-size: 0.72rem; padding: 1px 7px; border-radius: 999px;
@@ -174,6 +206,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
   background: #2fae6f; color: #fff; font-size: 12px; font-weight: 900; border: 2px solid #fff;
 }
 .pin.mine { border-style: dashed; }
+.pin.gewaehlt {
+  animation: hop 0.7s var(--spring);
+  box-shadow: 0 0 0 7px color-mix(in srgb, var(--c) 35%, transparent), 0 12px 26px rgba(0, 0, 0, 0.4);
+}
+@keyframes hop {
+  0% { transform: rotate(-45deg); }
+  35% { transform: rotate(-45deg) translate(9px, -9px) scale(1.2); }
+  70% { transform: rotate(-45deg) scale(0.95); }
+  100% { transform: rotate(-45deg); }
+}
 
 @keyframes pinDrop { from { opacity: 0; transform: rotate(-45deg) translate(30px, -30px) scale(0.3); } }
 @keyframes pulse { from { opacity: 0.9; transform: scale(0.9); } to { opacity: 0; transform: scale(1.5); } }
@@ -244,7 +286,32 @@ button { font: inherit; color: inherit; cursor: pointer; }
   position: relative; height: 190px; margin: -22px 0 0; overflow: hidden;
   border-radius: 26px 26px 0 0;
   display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 40%, #14122b));
+  background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 40%, #14122b), var(--c));
+  background-size: 220% 220%;
+  animation: farbfluss 9s ease-in-out infinite alternate;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: var(--seigaiha); background-size: 48px 24px; opacity: 0.16;
+  -webkit-mask-image: linear-gradient(to top, #000, transparent 80%); mask-image: linear-gradient(to top, #000, transparent 80%);
+}
+.hero.mein::before { display: none; }
+@keyframes farbfluss { to { background-position: 100% 100%; } }
+
+.hanko {
+  position: absolute; right: 18px; top: 26px; z-index: 2; width: 74px; height: 74px;
+  display: grid; place-items: center; border-radius: 14px;
+  border: 4px solid #d62828; outline: 2px solid #d62828; outline-offset: 3px;
+  color: #d62828; background: #fff8ef;
+  font-family: "Zen Maru Gothic", serif; font-weight: 900; font-size: 2.6rem; line-height: 1;
+  transform: rotate(-12deg); opacity: 0.95;
+  box-shadow: inset 0 0 8px rgba(214, 40, 40, 0.3), 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+.hanko.schwung { animation: stempeln 0.55s cubic-bezier(0.3, 1.6, 0.5, 1) both; }
+@keyframes stempeln {
+  0% { transform: rotate(-30deg) scale(2.6); opacity: 0; }
+  60% { transform: rotate(-10deg) scale(0.9); opacity: 1; }
+  100% { transform: rotate(-12deg) scale(1); opacity: 0.95; }
 }
 .hero img { width: 100%; height: 100%; object-fit: cover; animation: zoomIn 6s both var(--ease); }
 .hero .hero-icon { font-size: 4.5rem; filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3)); animation: floaty 3s infinite alternate ease-in-out; }
@@ -341,6 +408,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .progress-card { padding: 14px; border-radius: 16px; background: var(--line); display: grid; gap: 8px; margin-bottom: 10px; }
 .progress-card header { display: flex; justify-content: space-between; font-weight: 800; }
 .bar { height: 12px; border-radius: 9px; background: var(--surface-solid); overflow: hidden; }
+.progress-card.voll { background: linear-gradient(120deg, rgba(247, 181, 0, 0.18), rgba(247, 181, 0, 0.05), rgba(247, 181, 0, 0.25)); background-size: 200% 100%; animation: farbfluss 3s infinite alternate; }
+.progress-card.voll header span:first-child::after { content: " 🏆"; }
 .bar i { display: block; height: 100%; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--c), var(--accent-2)); transition: width 1s var(--ease); }
 
 /* ---------- Modals ---------- */
@@ -403,3 +472,62 @@ button { font: inherit; color: inherit; cursor: pointer; }
 @media (min-width: 900px) {
   #sheet { left: auto; right: 90px; bottom: 20px; border-radius: 26px; max-height: calc(100vh - 160px); }
 }
+
+/* ---------- Tageskarte im Panel ---------- */
+.tageskarte {
+  position: relative; overflow: hidden; display: flex; gap: 14px; align-items: center;
+  padding: 16px; border-radius: 20px; color: #fff; margin-bottom: 6px;
+  background: linear-gradient(135deg, var(--accent), #ff6a2b 60%, var(--gold));
+  box-shadow: 0 10px 26px rgba(229, 56, 59, 0.35);
+  animation: popIn 0.6s both var(--spring);
+}
+.tageskarte::before {
+  content: ""; position: absolute; inset: 0; background: var(--seigaiha); background-size: 48px 24px; opacity: 0.2;
+}
+.tk-datum {
+  position: relative; display: grid; place-items: center; width: 74px; height: 80px; flex: none;
+  border-radius: 14px; background: rgba(255, 255, 255, 0.95); color: var(--accent);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+.tk-datum b { font-family: "Zen Maru Gothic", sans-serif; font-size: 2.2rem; line-height: 1; }
+.tk-datum span { font-size: 0.72rem; font-weight: 800; color: #1d1a2e; }
+.tk-info { position: relative; display: grid; gap: 2px; font-size: 0.88rem; }
+.tk-info strong { font-family: "Zen Maru Gothic", sans-serif; font-size: 1.2rem; }
+
+/* ---------- Wellen beim Antippen ---------- */
+.btn, .fab, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button { position: relative; overflow: hidden; }
+.welle {
+  position: absolute; border-radius: 50%; pointer-events: none;
+  background: currentColor; opacity: 0.25; transform: scale(0);
+  animation: welle 0.6s ease-out forwards;
+}
+@keyframes welle { to { transform: scale(1); opacity: 0; } }
+
+/* ---------- Stimmung über der Karte ---------- */
+#ambient { position: fixed; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+.ambient-teil {
+  position: absolute; top: -40px;
+  animation: blattFall var(--dauer) linear infinite; animation-delay: var(--verz);
+}
+.ambient-teil::before {
+  content: "🍁"; display: block; font-size: calc(18px * var(--gr)); opacity: 0.55;
+  animation: blattDreh 4s ease-in-out infinite alternate;
+}
+.ambient-teil:nth-child(3n)::before { content: "🍂"; }
+.ambient-teil:nth-child(4n)::before { content: "🌸"; opacity: 0.45; }
+@keyframes blattFall { to { transform: translate(var(--drift), calc(100vh + 80px)); } }
+@keyframes blattDreh { from { transform: rotate(-35deg) translateX(-12px); } to { transform: rotate(40deg) translateX(12px); } }
+
+/* Dunkel: warme Laternenlichter steigen langsam auf */
+:root[data-theme="dark"] .ambient-teil { top: auto; bottom: -40px; animation-name: lichtSteigt; }
+:root[data-theme="dark"] .ambient-teil::before {
+  content: ""; width: calc(10px * var(--gr)); height: calc(10px * var(--gr)); border-radius: 50%;
+  background: radial-gradient(circle, #ffd36b, #ff8a3d 60%, transparent 70%);
+  box-shadow: 0 0 14px 4px rgba(255, 170, 60, 0.45); opacity: 0.7;
+  animation: flackern 2.4s ease-in-out infinite alternate;
+}
+@keyframes lichtSteigt { to { transform: translate(var(--drift), calc(-100vh - 80px)); } }
+@keyframes flackern { to { opacity: 0.25; transform: scale(0.7); } }
+
+/* ---------- Hell/Dunkel-Wechsel ---------- */
+::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }

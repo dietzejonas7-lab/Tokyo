@@ -209,6 +209,7 @@ function alleEintraegeNeu(ausDateien = state.eintraege.filter((e) => !e.eigen)) 
 
 /* ---------- 4. Karte & Marker ---------- */
 let map, tiles, vektor, cluster, meinMarker;
+const markerNachId = new Map();
 
 function karteStarten() {
   map = L.map("map", { zoomControl: false, tapHold: true, attributionControl: true, maxZoom: 19 })
@@ -315,6 +316,7 @@ function sichtbareEintraege() {
 
 function markerZeichnen() {
   cluster.clearLayers();
+  markerNachId.clear();
   const liste = sichtbareEintraege();
   const marker = liste.map((e, i) => {
     const k = kategorie(e.kategorie);
@@ -330,6 +332,7 @@ function markerZeichnen() {
     });
     const m = L.marker([e.lat, e.lng], { icon, farbe: k.farbe, title: e.name });
     m.on("click", () => sheetOeffnen(e));
+    markerNachId.set(e.id, m);
     return m;
   });
   cluster.addLayers(marker);
@@ -366,12 +369,12 @@ function chipsZeichnen() {
     .map((k, i) => {
       const anzahl = state.eintraege.filter((e) => e.kategorie === k.id && (state.alleZeigen || istAktiv(e))).length;
       return `<button class="chip ${state.aktiv.has(k.id) ? "on" : ""}" data-kat="${esc(k.id)}"
-        style="--c:${esc(k.farbe)};animation-delay:${i * 60}ms" title="${esc(k.beschreibung)}">
+        style="--c:${esc(k.farbe)};--i:${i}" title="${esc(k.beschreibung)}">
         <span>${k.icon}</span>${esc(k.name)}<span class="count">${anzahl}</span></button>`;
     })
     .join("");
   // Einflug-Animation nur beim ersten Mal
-  if (chipsZeichnen.schonGezeigt) nav.querySelectorAll(".chip").forEach((c) => (c.style.animation = "none"));
+  if (chipsZeichnen.schonGezeigt) nav.classList.add("ruhig");
   chipsZeichnen.schonGezeigt = true;
 }
 
@@ -382,6 +385,7 @@ function chipKlick(ev) {
   state.aktiv.has(id) ? state.aktiv.delete(id) : state.aktiv.add(id);
   speichern(SPEICHER.aktiv, [...state.aktiv]);
   markerZeichnen();
+  Effekte.nochmal($(`.chip[data-kat="${id}"]`), "bump");
   if (state.aktiv.has(id)) toast(`${kategorie(id).icon} ${kategorie(id).beschreibung}`);
 }
 
@@ -447,6 +451,9 @@ function sheetOeffnen(e) {
       ${e.links?.length ? `<div class="links">${e.links.filter((l) => sichereUrl(l.url)).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">↗ ${esc(l.titel)}</a>`).join("")}</div>` : ""}
     </div>`;
 
+  if (gesammelt) Effekte.hanko($("#sheet .hero"), state.frischGesammelt === e.id);
+  state.frischGesammelt = null;
+  markerHervorheben(e);
   $("#btn-collect").onclick = () => besuchtUmschalten(e);
   if (e.eigen) $("#btn-delete").onclick = () => eigenenLoeschen(e);
   $("#foto-input").onchange = (ev) => ev.target.files[0] && fotoSpeichern(e, ev.target.files[0]);
@@ -458,7 +465,17 @@ function sheetOeffnen(e) {
   sheet.setAttribute("aria-hidden", "false");
 }
 
+/** Den Marker des geöffneten Orts hüpfen lassen und hervorheben */
+function markerHervorheben(e) {
+  document.querySelectorAll(".pin.gewaehlt").forEach((p) => p.classList.remove("gewaehlt"));
+  const m = e && markerNachId.get(e.id);
+  if (!m) return;
+  m.setZIndexOffset(1000);
+  Effekte.nochmal(m.getElement()?.querySelector(".pin"), "gewaehlt");
+}
+
 function sheetSchliessen() {
+  markerHervorheben(null);
   $("#sheet").classList.remove("open");
   $("#sheet").setAttribute("aria-hidden", "true");
   offenerEintrag = null;
@@ -468,6 +485,7 @@ function besuchtUmschalten(e) {
   if (state.besucht.has(e.id)) state.besucht.delete(e.id);
   else {
     state.besucht.add(e.id);
+    state.frischGesammelt = e.id;
     konfetti();
     if (kategorie(e.kategorie).sammelbar && !state.fotos.has(e.id)) toast("Tipp: Halte es mit 📷 Mein Foto fest!");
   }
@@ -483,6 +501,7 @@ async function fotoSpeichern(e, datei) {
     state.fotos.set(e.id, bild);
     if (!state.besucht.has(e.id)) {
       state.besucht.add(e.id);
+      state.frischGesammelt = e.id;
       speichern(SPEICHER.besucht, [...state.besucht]);
       markerZeichnen();
     }
@@ -588,12 +607,22 @@ function panelZeichnen(suchbegriff = "") {
   }
 
   if (panelTab === "heute") {
-    $("#panel-title").textContent = datumSchoen(state.datum, { weekday: "long", day: "numeric", month: "long" });
+    $("#panel-title").textContent = "Dein Tag";
     const zeitlich = state.eintraege.filter((e) => e.zeitraum && istAktiv(e));
     const naechsterStart = (e) => e.zeitraum.map((z) => z.von).filter((v) => v > state.datum).sort()[0];
     const bald = state.eintraege
       .filter((e) => e.zeitraum && !istAktiv(e) && naechsterStart(e))
       .sort((a, b) => naechsterStart(a).localeCompare(naechsterStart(b)));
+    const reiseTag = tageZwischen(REISE.von, state.datum) + 1;
+    const reiseTage = tageZwischen(REISE.von, REISE.bis) + 1;
+    html += `<div class="tageskarte">
+      <div class="tk-datum"><b>${Number(state.datum.slice(8))}</b><span>${datumSchoen(state.datum, { month: "long" })}</span></div>
+      <div class="tk-info">
+        <strong>${datumSchoen(state.datum, { weekday: "long" })}</strong>
+        ${reiseTag >= 1 && reiseTag <= reiseTage ? `<span>Reisetag ${reiseTag} von ${reiseTage}</span>` : ""}
+        <span>✨ <b data-ziel="${zeitlich.length}">0</b> Highlights an diesem Tag</span>
+      </div>
+    </div>`;
     html += `<h3 class="section-title">✨ Läuft an diesem Tag (${zeitlich.length})</h3>`;
     html += zeitlich.length
       ? `<div class="list">${nachDistanz(zeitlich).map((e, i) => listItem(e, i, zeitStatus(e).kurz)).join("")}</div>`
@@ -611,8 +640,8 @@ function panelZeichnen(suchbegriff = "") {
         const alle = state.eintraege.filter((e) => e.kategorie === k.id);
         const done = alle.filter((e) => state.besucht.has(e.id)).length;
         const pz = alle.length ? Math.round((done / alle.length) * 100) : 0;
-        return `<div class="progress-card" style="--c:${esc(k.farbe)}">
-          <header><span>${k.icon} ${esc(k.name)}</span><span>${done} / ${alle.length}</span></header>
+        return `<div class="progress-card ${pz === 100 ? "voll" : ""}" style="--c:${esc(k.farbe)}">
+          <header><span>${k.icon} ${esc(k.name)}</span><span><b data-ziel="${done}">0</b> / ${alle.length}</span></header>
           <div class="bar"><i data-w="${pz}%"></i></div></div>`;
       })
       .join("");
@@ -652,6 +681,7 @@ function panelZeichnen(suchbegriff = "") {
   }
 
   $("#panel-body").innerHTML = html;
+  Effekte.hochzaehlen($("#panel-body"));
   // Fortschrittsbalken animiert füllen
   requestAnimationFrame(() => document.querySelectorAll(".bar i").forEach((b) => (b.style.width = b.dataset.w)));
 }
@@ -707,6 +737,7 @@ function datumAnzeigen() {
   const heute = heuteInTokio();
   $("#date-day").textContent = datumSchoen(state.datum, { day: "numeric", month: "short" });
   $("#date-label").textContent = state.alleZeigen ? "alle Tage" : state.datum === heute ? "Heute" : datumSchoen(state.datum, { weekday: "short" });
+  Effekte.nochmal($("#btn-date"), "flip");
 }
 
 function kalenderZeichnen() {
@@ -868,7 +899,7 @@ function ereignisseVerbinden() {
   $("#btn-theme").onclick = () => {
     const neu = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     speichern(SPEICHER.theme, neu);
-    themeSetzen(neu);
+    Effekte.themaWechsel($("#btn-theme"), () => themeSetzen(neu));
   };
   $("#panel").addEventListener("click", panelKlick);
   $("#panel").addEventListener("change", (ev) => { if (ev.target.id === "import-file" && ev.target.files[0]) importieren(ev.target.files[0]); });
@@ -912,6 +943,8 @@ async function start() {
   const gespeichertesTheme = laden(SPEICHER.theme, null);
   themeSetzen(gespeichertesTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
   splashBlueten();
+  Effekte.titelZerlegen($("#splash .kanji"));
+  Effekte.wellenAktivieren();
   const splashMin = new Promise((r) => setTimeout(r, 1800));
 
   // Außerhalb der Reise: Kalender trotzdem auf den 1. November stellen
@@ -937,6 +970,7 @@ async function start() {
   $("#splash").classList.add("hide");
   setTimeout(() => $("#splash").remove(), 800);
   markerZeichnen();
+  Effekte.stimmungStarten();
 
   if ("serviceWorker" in navigator) {
     // Gibt es eine neue App-Version, einmal automatisch neu laden
