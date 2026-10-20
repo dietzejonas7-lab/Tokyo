@@ -6,7 +6,8 @@
     "farbe": "#ff4f8b",
     "datei": "anime-shops.json",
     "beschreibung": "Figuren, Pokémon-Karten, Merch & Second-Hand-Schätze.",
-    "gruppe": "shoppen"
+    "gruppe": "shoppen",
+    "bildersuche": ""
   },
   {
     "id": "premiumfiguren",
@@ -45,7 +46,8 @@
     "farbe": "#b7793e",
     "datei": "flohmaerkte.json",
     "gruppe": "shoppen",
-    "beschreibung": "Antik- und Flohmärkte – die Karte zeigt nur, was am gewählten Tag stattfindet."
+    "beschreibung": "Antik- und Flohmärkte – die Karte zeigt nur, was am gewählten Tag stattfindet.",
+    "bildersuche": ""
   },
   {
     "id": "illumination",
@@ -54,7 +56,8 @@
     "farbe": "#f7b500",
     "datei": "illuminationen.json",
     "beschreibung": "Lichter-Events – die Karte zeigt nur, was am gewählten Tag läuft.",
-    "gruppe": "erleben"
+    "gruppe": "erleben",
+    "bildersuche": ""
   },
   {
     "id": "events",
@@ -63,7 +66,8 @@
     "farbe": "#0fa3a3",
     "datei": "events.json",
     "gruppe": "erleben",
-    "beschreibung": "Feste, Festivals & besondere Tage – tagesaktuell gefiltert."
+    "beschreibung": "Feste, Festivals & besondere Tage – tagesaktuell gefiltert.",
+    "bildersuche": ""
   },
   {
     "id": "attraktionen",
@@ -82,7 +86,8 @@
     "farbe": "#2fae6f",
     "datei": "gaerten.json",
     "beschreibung": "Japanische Landschaftsgärten & Herbstlaub (Koyo).",
-    "gruppe": "erleben"
+    "gruppe": "erleben",
+    "bildersuche": ""
   },
   {
     "id": "nachttempel",
@@ -91,7 +96,8 @@
     "farbe": "#ff6a2b",
     "datei": "tempel-nachts.json",
     "beschreibung": "Tempel & Schreine, die abends beleuchtet und zugänglich sind.",
-    "gruppe": "erleben"
+    "gruppe": "erleben",
+    "bildersuche": ""
   },
   {
     "id": "stempel",
