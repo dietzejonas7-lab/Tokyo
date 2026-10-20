@@ -26,13 +26,8 @@ const VEKTOR_KARTE = {
 };
 // Eigene Kartenfarben passend zum App-Design (nur Flächen – Straßen bleiben wie im Original)
 const KARTEN_FARBEN = {
-  light: { hintergrund: "#eef0f7", wasser: "#b5d6f2", gruen: "#d2ecd8", gebaeude: "#e2e0ef" },
-  dark: {
-    hintergrund: "#0a0818", wasser: "#071a3a", gruen: "#0c2420", gebaeude: "#1a1538",
-    // Neon-Straßen: Autobahnen pink, Hauptstraßen lila, der Rest dunkel
-    neon: { schnell: "#ff2bd6", haupt: "#9d4dff", neben: "#3a2f78", klein: "#221c48", rand: "#0a0818" },
-    text: "#cfc8ff", textRand: "#07060f",
-  },
+  light: { hintergrund: "#efe7d6", wasser: "#b7cdd6", gruen: "#d3dfbd", gebaeude: "#e3d8c3" },
+  dark: { hintergrund: "#171b2c", wasser: "#1c2a44", gruen: "#1e2d27", gebaeude: "#242838" },
 };
 // Sprache der Kartenbeschriftung: erst Deutsch, dann Englisch, dann lateinische Schrift, sonst Japanisch
 const KARTEN_SPRACHE = ["name:de", "name_de", "name:en", "name_en", "name:latin", "name"];
@@ -682,7 +677,7 @@ async function fotoEntfernen(e) {
 
 /** Kleine Feier-Animation beim Sammeln */
 function konfetti() {
-  const farben = ["#ff2bd6", "#00f0ff", "#ffe600", "#39ff88", "#9d4dff", "#ff4d6d"];
+  const farben = ["#f4b6c2", "#fbd3dc", "#ffffff", "#d2462c", "#c9a14a", "#f7c9d2"];
   for (let i = 0; i < 28; i++) {
     const p = document.createElement("i");
     const winkel = Math.random() * Math.PI * 2, weite = 80 + Math.random() * 140;
@@ -778,7 +773,11 @@ function panelZeichnen(suchbegriff = "") {
     const reiseTag = tageZwischen(REISE.von, state.datum) + 1;
     const reiseTage = tageZwischen(REISE.von, REISE.bis) + 1;
     html += `<div class="tageskarte">
-      <div class="tk-datum"><b>${Number(state.datum.slice(8))}</b><span>${datumSchoen(state.datum, { month: "long" })}</span></div>
+      <div class="tk-datum">
+        <span class="tk-monat">${datumSchoen(state.datum, { month: "long" })}</span>
+        <b>${Number(state.datum.slice(8))}</b>
+        <span class="tk-kanji">${"日月火水木金土"[new Date(state.datum + "T12:00:00Z").getUTCDay()]}曜日</span>
+      </div>
       <div class="tk-info">
         <strong>${datumSchoen(state.datum, { weekday: "long" })}</strong>
         ${reiseTag >= 1 && reiseTag <= reiseTage ? `<span>Reisetag ${reiseTag} von ${reiseTage}</span>` : ""}
@@ -1025,7 +1024,7 @@ function modal(id, auf) {
 function themeSetzen(theme) {
   document.documentElement.dataset.theme = theme;
   $("#btn-theme span").textContent = theme === "dark" ? "☀️" : "🌙";
-  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#07060f" : "#f4f2fb";
+  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#141826" : "#f5efe3";
   if (vektor) karteSetzen(); // Vektor-Karte hat einen eigenen Dunkel-Stil
 }
 
@@ -1105,12 +1104,12 @@ function ereignisseVerbinden() {
 
 /* ---------- 10. Start ---------- */
 async function start() {
-  // Neon-Design: startet einmalig im Nacht-Modus, danach gilt deine Auswahl
-  if (laden(SPEICHER.design, 0) < 2) {
-    speichern(SPEICHER.design, 2);
-    speichern(SPEICHER.theme, "dark");
+  // Washi-Design: startet einmalig im Tag-Modus, danach gilt deine Auswahl
+  if (laden(SPEICHER.design, 0) < 3) {
+    speichern(SPEICHER.design, 3);
+    speichern(SPEICHER.theme, "light");
   }
-  themeSetzen(laden(SPEICHER.theme, "dark"));
+  themeSetzen(laden(SPEICHER.theme, "light"));
   splashBlueten();
   Effekte.titelZerlegen($("#splash .kanji"));
   Effekte.wellenAktivieren();
