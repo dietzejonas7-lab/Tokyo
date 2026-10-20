@@ -796,7 +796,14 @@ async function start() {
   setTimeout(() => $("#splash").remove(), 800);
   markerZeichnen();
 
-  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+  if ("serviceWorker" in navigator) {
+    // Gibt es eine neue App-Version, einmal automatisch neu laden
+    const hatteAlteVersion = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (hatteAlteVersion && !start.neuGeladen) { start.neuGeladen = true; location.reload(); }
+    });
+    navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(() => {});
+  }
 }
 
 start();

@@ -3,7 +3,7 @@
      Änderungen sofort ankommen. Nur ohne Internet wird die gespeicherte Version genutzt.
    - Bibliotheken, Schriften und Kartenkacheln: aus dem Speicher, wenn möglich
      (so funktioniert die Karte auch in der U-Bahn ohne Netz – für bereits angesehene Gebiete). */
-const VERSION = "v2"; // hochzählen löscht alte gespeicherte Daten (auch Kartenkacheln)
+const VERSION = "v3"; // hochzählen löscht alte gespeicherte Daten (auch Kartenkacheln)
 const SHELL = [
   "./", "index.html", "css/style.css", "js/app.js", "manifest.webmanifest", "icons/icon.svg",
   "lib/leaflet/leaflet.js", "lib/leaflet/leaflet.css",
@@ -30,7 +30,8 @@ self.addEventListener("fetch", (ev) => {
   // Daten & App-Code: Netz zuerst, Speicher als Notfall
   if (url.origin === location.origin) {
     ev.respondWith(
-      fetch(req)
+      // "no-cache": beim Server nachfragen, ob es eine neue Version gibt (statt alte Kopie zu nehmen)
+      fetch(url.href, { cache: "no-cache" })
         .then((res) => {
           const kopie = res.clone();
           caches.open(VERSION).then((c) => c.put(req, kopie));
