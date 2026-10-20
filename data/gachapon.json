@@ -1,0 +1,109 @@
+[
+  {
+    "id": "gacha-depato-ikebukuro",
+    "name": "Gashapon Department Store Ikebukuro (Flagship)",
+    "nameJa": "ガシャポンのデパート 池袋総本店",
+    "lat": 35.7292,
+    "lng": 139.7187,
+    "beschreibung": "Der Gachapon-Himmel: rund 3.000 Kapselautomaten in der Sunshine City – laut mehreren Guides Guinness-Rekord für die meisten Automaten an einem Ort. Im selben Komplex außerdem „Gachagacha no Mori“ (ca. 1.200 Automaten) und das Pokémon Center Mega Tokyo. Tipp: Viele 100-Yen-Münzen mitnehmen, es gibt aber auch Wechselautomaten.",
+    "zeiten": "ca. 10:00–22:00",
+    "station": "Ikebukuro / Higashi-Ikebukuro",
+    "tags": [
+      "Gachapon",
+      "Rekord",
+      "Pokémon"
+    ]
+  },
+  {
+    "id": "gacha-bandai-akiba",
+    "name": "Gashapon Bandai Official Shop Akihabara",
+    "nameJa": "ガシャポンバンダイオフィシャルショップ＆ガシャポンのデパート 秋葉原店",
+    "lat": 35.699,
+    "lng": 139.772,
+    "beschreibung": "Offizieller Bandai-Gachapon-Shop mit rund 800 Automaten – nur ca. 1 Minute vom JR-Bahnhof Akihabara. Viele neue Reihen zuerst hier. Genaue Lage vor Ort prüfen.",
+    "station": "Akihabara",
+    "tags": [
+      "Gachapon",
+      "Bandai",
+      "Neuheiten"
+    ]
+  },
+  {
+    "id": "gacha-kaikan-akiba",
+    "name": "Akihabara Gachapon Kaikan",
+    "nameJa": "秋葉原ガチャポン会館",
+    "lat": 35.7009,
+    "lng": 139.7705,
+    "beschreibung": "Der Klassiker seit 2002: kleiner, offener Laden vollgestopft mit rund 500 Automaten – viele seltene und skurrile Reihen.",
+    "station": "Akihabara / Suehirocho",
+    "tags": [
+      "Gachapon",
+      "Klassiker"
+    ]
+  },
+  {
+    "id": "gacha-kenele-akiba",
+    "name": "Ken-Ele Stand im Bahnhof Akihabara",
+    "nameJa": "ケンエレスタンド 秋葉原店",
+    "lat": 35.6984,
+    "lng": 139.7731,
+    "beschreibung": "Direkt im Bahnhof Akihabara, mit über 150 Automaten – perfekt zum Umsteigen. Bekannt für Miniatur-Figuren und Kunst-Kollaborationen.",
+    "station": "Akihabara (im Bahnhof)",
+    "tags": [
+      "Gachapon",
+      "Miniaturen"
+    ]
+  },
+  {
+    "id": "gacha-yodobashi-akiba",
+    "name": "Yodobashi Akiba – Spielzeug-Etage",
+    "nameJa": "ヨドバシAkiba",
+    "lat": 35.6987,
+    "lng": 139.7744,
+    "beschreibung": "Im 6. Stock des riesigen Elektronikkaufhauses: über 200 Gachapon-Automaten an der Wand, dazu Figuren, Gunpla und Sammelkarten.",
+    "station": "Akihabara",
+    "tags": [
+      "Gachapon",
+      "Figuren",
+      "Karten"
+    ]
+  },
+  {
+    "id": "gacha-mori-subnade",
+    "name": "Gachagacha no Mori Shinjuku Subnade",
+    "nameJa": "ガチャガチャの森 新宿サブナード店",
+    "lat": 35.6935,
+    "lng": 139.702,
+    "beschreibung": "Unterirdisch in der Einkaufspassage Subnade mit rund 1.000 Automaten – günstige Preise, auch bei Regen ideal.",
+    "station": "Shinjuku / Shinjuku-sanchome",
+    "tags": [
+      "Gachapon",
+      "Regenwetter"
+    ]
+  },
+  {
+    "id": "gacha-cpla-shinjuku",
+    "name": "#C-pla Shinjuku (Ad-hoc)",
+    "nameJa": "#C-pla アドホック新宿店",
+    "lat": 35.6915,
+    "lng": 139.7046,
+    "beschreibung": "Einer der größten Kapselspielzeug-Läden in Shinjuku mit über 2.000 Gacha-Fächern.",
+    "station": "Shinjuku-sanchome",
+    "tags": [
+      "Gachapon"
+    ]
+  },
+  {
+    "id": "gacha-cpla-shibuya",
+    "name": "#C-pla Shibuya Center-gai",
+    "nameJa": "#C-pla 渋谷センター街店",
+    "lat": 35.6608,
+    "lng": 139.6985,
+    "beschreibung": "Riesiger Gacha-Laden mitten in Shibuyas Center-gai mit fast 2.000 Automaten (Zahlen je nach Quelle unterschiedlich).",
+    "station": "Shibuya",
+    "tags": [
+      "Gachapon",
+      "Shibuya"
+    ]
+  }
+]

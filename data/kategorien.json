@@ -9,6 +9,16 @@
     "gruppe": "shoppen"
   },
   {
+    "id": "gacha",
+    "name": "Gachapon",
+    "icon": "🧸",
+    "farbe": "#7cb518",
+    "datei": "gachapon.json",
+    "gruppe": "shoppen",
+    "bildersuche": "",
+    "beschreibung": "Kapselautomaten-Läden mit hunderten bis tausenden Gacha-Maschinen."
+  },
+  {
     "id": "flohmarkt",
     "name": "Flohmärkte",
     "icon": "🏺",

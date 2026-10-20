@@ -322,6 +322,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hero .hero-ja {
   position: absolute; right: 14px; bottom: 6px; font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 900; font-size: 1.7rem; color: rgba(255, 255, 255, 0.28); white-space: nowrap;
+  max-width: calc(100% - 28px); overflow: hidden; text-overflow: ellipsis;
 }
 .hero.mein { height: 360px; background: #111; }
 .hero.mein img { object-fit: contain; }
