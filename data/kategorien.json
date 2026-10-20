@@ -1,0 +1,60 @@
+[
+  {
+    "id": "anime",
+    "name": "Anime & Pokémon",
+    "icon": "🎴",
+    "farbe": "#ff4f8b",
+    "datei": "anime-shops.json",
+    "beschreibung": "Figuren, Pokémon-Karten, Merch & Second-Hand-Schätze."
+  },
+  {
+    "id": "illumination",
+    "name": "Illuminationen",
+    "icon": "✨",
+    "farbe": "#f7b500",
+    "datei": "illuminationen.json",
+    "beschreibung": "Lichter-Events – die Karte zeigt nur, was am gewählten Tag läuft."
+  },
+  {
+    "id": "gaerten",
+    "name": "Gärten",
+    "icon": "🍁",
+    "farbe": "#2fae6f",
+    "datei": "gaerten.json",
+    "beschreibung": "Japanische Landschaftsgärten & Herbstlaub (Koyo)."
+  },
+  {
+    "id": "nachttempel",
+    "name": "Tempel bei Nacht",
+    "icon": "🏮",
+    "farbe": "#ff6a2b",
+    "datei": "tempel-nachts.json",
+    "beschreibung": "Tempel & Schreine, die abends beleuchtet und zugänglich sind."
+  },
+  {
+    "id": "stempel",
+    "name": "Bahnhofs-Stempel",
+    "icon": "🚇",
+    "farbe": "#2f8cff",
+    "datei": "bahnhof-stempel.json",
+    "sammelbar": true,
+    "beschreibung": "Eki-Stempel zum Sammeln. Hake ab, was du schon hast!"
+  },
+  {
+    "id": "goshuin",
+    "name": "Goshuin",
+    "icon": "⛩️",
+    "farbe": "#e5383b",
+    "datei": "goshuin.json",
+    "sammelbar": true,
+    "beschreibung": "Tempel & Schreine mit Goshuin (handgeschriebene Siegel)."
+  },
+  {
+    "id": "goshuincho",
+    "name": "Limitierte Goshuincho",
+    "icon": "📕",
+    "farbe": "#8f5bff",
+    "datei": "goshuincho-limitiert.json",
+    "beschreibung": "Zeitlich begrenzte Goshuin-Bücher & Sonder-Goshuin – tagesaktuell gefiltert."
+  }
+]

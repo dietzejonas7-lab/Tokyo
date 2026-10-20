@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tokio Entdecker</title>
+  <meta name="description" content="Meine persönliche Tokio-Karte: Anime-Shops, Illuminationen, Gärten, Tempel, Stempel & Goshuin.">
+  <meta name="theme-color" content="#14122b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Tokio">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <!-- Karte (Leaflet) + Cluster-Plugin, liegen direkt im Projekt (Ordner lib/) -->
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+  <link rel="stylesheet" href="lib/markercluster/MarkerCluster.css">
+  <!-- Schriften -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Startbildschirm ===== -->
+  <div id="splash" aria-hidden="true">
+    <div class="petals"></div>
+    <svg class="torii" viewBox="0 0 120 100" aria-hidden="true">
+      <path d="M8 18 Q60 6 112 18" />
+      <path d="M18 30 H102" />
+      <path d="M30 18 V96" />
+      <path d="M90 18 V96" />
+      <path d="M60 18 V30" />
+    </svg>
+    <h1>東京 <span>Tokio Entdecker</span></h1>
+    <p class="splash-sub">1. – 25. November</p>
+  </div>
+
+  <!-- ===== Karte ===== -->
+  <div id="map"></div>
+
+  <!-- ===== Kopfzeile ===== -->
+  <header id="topbar">
+    <div class="topbar-row">
+      <button class="icon-btn" id="btn-menu" aria-label="Übersicht öffnen">☰</button>
+      <label class="search">
+        <span aria-hidden="true">🔍</span>
+        <input id="search" type="search" placeholder="Suchen … z. B. Pokémon, 浅草" autocomplete="off">
+      </label>
+      <button class="date-pill" id="btn-date" aria-label="Datum wählen">
+        <span class="date-day" id="date-day">–</span>
+        <span class="date-label" id="date-label">Heute</span>
+      </button>
+    </div>
+    <nav id="chips" aria-label="Kategorien"></nav>
+  </header>
+
+  <!-- ===== Schwebende Knöpfe ===== -->
+  <div id="fabs">
+    <button class="fab" id="btn-theme" aria-label="Hell/Dunkel wechseln">🌙</button>
+    <button class="fab" id="btn-locate" aria-label="Mein Standort">📍</button>
+    <button class="fab fab-main" id="btn-add" aria-label="Eigenen Ort hinzufügen">＋</button>
+  </div>
+
+  <!-- ===== Seitenpanel: Heute / Sammlung / Suche ===== -->
+  <aside id="panel" aria-hidden="true">
+    <div class="panel-head">
+      <h2 id="panel-title">Übersicht</h2>
+      <button class="icon-btn" data-close="panel" aria-label="Schließen">✕</button>
+    </div>
+    <div id="panel-body"></div>
+  </aside>
+
+  <!-- ===== Detail-Karte (von unten) ===== -->
+  <section id="sheet" aria-hidden="true">
+    <div class="sheet-grip"></div>
+    <div id="sheet-body"></div>
+  </section>
+
+  <!-- ===== Datum wählen ===== -->
+  <div class="modal" id="date-modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="panel-head">
+        <h2>Welcher Tag?</h2>
+        <button class="icon-btn" data-close="date-modal" aria-label="Schließen">✕</button>
+      </div>
+      <p class="muted">Illuminationen & limitierte Goshuincho werden für diesen Tag gefiltert.</p>
+      <div id="calendar"></div>
+      <div class="modal-actions">
+        <button class="btn ghost" id="btn-today">Heute</button>
+        <label class="switch"><input type="checkbox" id="show-all"> <span>Auch Vergangenes/Zukünftiges zeigen</span></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Eigenen Ort hinzufügen ===== -->
+  <div class="modal" id="add-modal" aria-hidden="true">
+    <form class="modal-card" id="add-form">
+      <div class="panel-head">
+        <h2>Neuer Ort</h2>
+        <button type="button" class="icon-btn" data-close="add-modal" aria-label="Schließen">✕</button>
+      </div>
+      <p class="muted">Der Ort wird dort gespeichert, wo die Karte gerade ihre Mitte hat (📌). Tipp: Lange auf die Karte drücken setzt den Punkt genau dort.</p>
+      <label>Name<input name="name" required placeholder="z. B. Toller Kartenladen"></label>
+      <label>Kategorie<select name="kategorie" id="add-kategorie"></select></label>
+      <label>Beschreibung<textarea name="beschreibung" rows="3" placeholder="Was ist dort besonders?"></textarea></label>
+      <div class="row2">
+        <label>Von (optional)<input type="date" name="von"></label>
+        <label>Bis (optional)<input type="date" name="bis"></label>
+      </div>
+      <label>Öffnungszeiten (optional)<input name="zeiten" placeholder="z. B. 10:00–20:00"></label>
+      <label class="file">📷 Foto (optional)<input type="file" name="foto" accept="image/*"></label>
+      <img id="add-preview" alt="" hidden>
+      <div class="modal-actions">
+        <button type="submit" class="btn">Speichern</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="center-pin" aria-hidden="true">📌</div>
+  <div id="toast" role="status"></div>
+
+  <!-- Bibliotheken -->
+  <script src="lib/leaflet/leaflet.js"></script>
+  <script src="lib/markercluster/leaflet.markercluster.js"></script>
+  <!-- Unsere App -->
+  <script src="js/app.js"></script>
+</body>
+</html>

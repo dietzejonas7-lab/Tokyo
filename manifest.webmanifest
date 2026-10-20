@@ -1,0 +1,17 @@
+{
+  "name": "Tokio Entdecker",
+  "short_name": "Tokio",
+  "description": "Meine Tokio-Karte: Anime-Shops, Illuminationen, Gärten, Tempel, Stempel & Goshuin",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#120f2a",
+  "theme_color": "#14122b",
+  "lang": "de",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

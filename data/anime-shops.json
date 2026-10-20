@@ -1,0 +1,125 @@
+[
+  {
+    "id": "pokemon-center-mega-tokyo",
+    "name": "Pokémon Center Mega Tokyo",
+    "nameJa": "ポケモンセンターメガトウキョー",
+    "lat": 35.7289, "lng": 139.7193,
+    "beschreibung": "Einer der größten Pokémon Center Japans in der Sunshine City (Ikebukuro). Riesige Plüsch- und Merch-Auswahl, Karten-Ecke. Am Wochenende früh kommen!",
+    "zeiten": "ca. 10:00–20:00",
+    "station": "Ikebukuro / Higashi-Ikebukuro",
+    "tags": ["Pokémon", "Karten", "Plüsch"],
+    "links": [{ "titel": "Offizielle Seite", "url": "https://www.pokemon.co.jp/shop/pokecen/megatokyo/" }]
+  },
+  {
+    "id": "pokemon-center-shibuya",
+    "name": "Pokémon Center Shibuya & Nintendo Tokyo",
+    "nameJa": "ポケモンセンターシブヤ / Nintendo TOKYO",
+    "lat": 35.6619, "lng": 139.6986,
+    "beschreibung": "Im 6. Stock von Shibuya PARCO: Pokémon Center (mit lebensgroßem Mewtu) direkt neben dem offiziellen Nintendo-Store. Im selben Stock auch Jump Shop & Capcom Store.",
+    "zeiten": "ca. 10:00–21:00",
+    "station": "Shibuya",
+    "tags": ["Pokémon", "Nintendo", "Jump"],
+    "links": [{ "titel": "Shibuya PARCO", "url": "https://shibuya.parco.jp/" }]
+  },
+  {
+    "id": "pokemon-center-tokyo-dx",
+    "name": "Pokémon Center Tokyo DX & Pokémon Café",
+    "nameJa": "ポケモンセンタートウキョーDX＆ポケモンカフェ",
+    "lat": 35.6815, "lng": 139.7735,
+    "beschreibung": "Im Nihonbashi Takashimaya S.C. Das Pokémon Café nebenan braucht eine Reservierung – Plätze gehen meist ca. 31 Tage im Voraus um 18:00 Uhr (JST) online raus.",
+    "zeiten": "ca. 10:30–21:00",
+    "station": "Nihombashi",
+    "tags": ["Pokémon", "Café", "Reservierung"],
+    "links": [{ "titel": "Pokémon Café Reservierung", "url": "https://www.pokemoncenter-online.com/cafe/" }]
+  },
+  {
+    "id": "pokemon-center-skytree",
+    "name": "Pokémon Center Skytree Town",
+    "nameJa": "ポケモンセンタースカイツリータウン",
+    "lat": 35.7101, "lng": 139.8107,
+    "beschreibung": "In Tokyo Solamachi am Fuß des Skytree – gut kombinierbar mit Aussichtsplattform und der Weihnachts-Illumination.",
+    "zeiten": "ca. 10:00–21:00",
+    "station": "Oshiage (Skytree)",
+    "tags": ["Pokémon", "Skytree"]
+  },
+  {
+    "id": "pokemon-store-tokyo-station",
+    "name": "Pokémon Store Tokyo Station",
+    "nameJa": "ポケモンストア 東京駅店",
+    "lat": 35.6807, "lng": 139.7676,
+    "beschreibung": "Kleiner Store in der Tokyo Character Street (Untergeschoss Tokyo Station, Yaesu-Seite). Dort auch Shops von Ghibli, Jump, Sanrio, Kirby u. v. m.",
+    "zeiten": "ca. 10:00–20:30",
+    "station": "Tokyo",
+    "tags": ["Pokémon", "Character Street", "Ghibli"]
+  },
+  {
+    "id": "mandarake-complex",
+    "name": "Mandarake Complex Akihabara",
+    "nameJa": "まんだらけ コンプレックス",
+    "lat": 35.7003, "lng": 139.7713,
+    "beschreibung": "8 Etagen Second-Hand-Paradies: Vintage-Figuren, Sammelkarten, Manga, Retro-Spielzeug. Pflichtbesuch für Figuren-Jäger.",
+    "zeiten": "ca. 12:00–20:00",
+    "station": "Akihabara",
+    "tags": ["Figuren", "Second-Hand", "Karten"]
+  },
+  {
+    "id": "radio-kaikan",
+    "name": "Akihabara Radio Kaikan",
+    "nameJa": "秋葉原ラジオ会館",
+    "lat": 35.6981, "lng": 139.7716,
+    "beschreibung": "Hochhaus voller Hobby-Shops direkt am Bahnhof: Figuren, Gunpla, Sammelkarten-Läden, Prize-Figuren. Etage für Etage durchstöbern!",
+    "zeiten": "ca. 10:00/11:00–20:00 (je Shop)",
+    "station": "Akihabara",
+    "tags": ["Figuren", "Karten", "Gunpla"]
+  },
+  {
+    "id": "akiba-karten-meile",
+    "name": "Akihabara Sammelkarten-Viertel",
+    "nameJa": "秋葉原 トレカショップ街",
+    "lat": 35.6996, "lng": 139.7708,
+    "beschreibung": "Rund um die Chuo-dori und die Seitenstraßen nördlich des Bahnhofs reihen sich viele Trading-Card-Shops (Pokémon, One Piece, Yu-Gi-Oh!). Einzelkarten liegen in Vitrinen mit Preisschildern – gut zum Vergleichen.",
+    "zeiten": "meist ab ca. 11:00",
+    "station": "Akihabara / Suehirocho",
+    "tags": ["Pokémon-Karten", "TCG", "Einzelkarten"]
+  },
+  {
+    "id": "nakano-broadway",
+    "name": "Nakano Broadway",
+    "nameJa": "中野ブロードウェイ",
+    "lat": 35.7088, "lng": 139.6657,
+    "beschreibung": "Legendäre Einkaufspassage mit zahlreichen Mandarake-Filialen, Vintage-Figuren, Karten & Kuriositäten – entspannter als Akihabara.",
+    "zeiten": "Shops meist ca. 12:00–20:00",
+    "station": "Nakano",
+    "tags": ["Figuren", "Vintage", "Karten"]
+  },
+  {
+    "id": "animate-ikebukuro",
+    "name": "Animate Ikebukuro (Flagship)",
+    "nameJa": "アニメイト池袋本店",
+    "lat": 35.7307, "lng": 139.7185,
+    "beschreibung": "Größter Animate-Store der Welt – brandneues Anime-Merch, Manga, Events. Gleich um die Ecke beginnt die Otome Road.",
+    "zeiten": "ca. 10:00/11:00–21:00",
+    "station": "Ikebukuro",
+    "tags": ["Anime-Merch", "Manga", "Neuware"]
+  },
+  {
+    "id": "gundam-base",
+    "name": "The Gundam Base Tokyo",
+    "nameJa": "ガンダムベース東京",
+    "lat": 35.6252, "lng": 139.7756,
+    "beschreibung": "Gunpla-Mekka in DiverCity Odaiba – davor steht der lebensgroße Unicorn Gundam (abends mit Licht-Show!).",
+    "zeiten": "ca. 10:00–21:00",
+    "station": "Daiba / Tokyo Teleport",
+    "tags": ["Gunpla", "Figuren", "Odaiba"]
+  },
+  {
+    "id": "kiddy-land",
+    "name": "Kiddy Land Harajuku",
+    "nameJa": "キデイランド原宿店",
+    "lat": 35.6687, "lng": 139.7067,
+    "beschreibung": "Mehrstöckiger Charakter-Laden an der Omotesando: Sanrio, Ghibli, Snoopy, Pokémon u. v. m.",
+    "zeiten": "ca. 11:00–20:00",
+    "station": "Meiji-jingumae / Harajuku",
+    "tags": ["Charaktere", "Ghibli", "Sanrio"]
+  }
+]

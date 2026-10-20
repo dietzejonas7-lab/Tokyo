@@ -1,0 +1,123 @@
+[
+  {
+    "id": "rikugien",
+    "name": "Rikugien",
+    "nameJa": "六義園",
+    "lat": 35.7330, "lng": 139.7468,
+    "beschreibung": "Einer der schönsten Edo-Gärten Tokios. Ende November Herbstlaub-Höhepunkt – plus abendliche Licht-Show (siehe Kategorie Illuminationen).",
+    "zeiten": "9:00–17:00 (Einlass bis 16:30)",
+    "preis": "300 ¥",
+    "station": "Komagome",
+    "tags": ["Edo-Garten", "Koyo", "Teehaus"]
+  },
+  {
+    "id": "koishikawa-korakuen",
+    "name": "Koishikawa Kōrakuen",
+    "nameJa": "小石川後楽園",
+    "lat": 35.7056, "lng": 139.7495,
+    "beschreibung": "Ältester Garten Tokios mit roter Tsutenkyo-Brücke – im Herbstlaub ein Postkartenmotiv. Direkt neben Tokyo Dome.",
+    "zeiten": "9:00–17:00",
+    "preis": "300 ¥",
+    "station": "Iidabashi / Korakuen",
+    "tags": ["Edo-Garten", "Koyo", "Brücke"]
+  },
+  {
+    "id": "shinjuku-gyoen",
+    "name": "Shinjuku Gyoen",
+    "nameJa": "新宿御苑",
+    "lat": 35.6852, "lng": 139.7101,
+    "beschreibung": "Riesiger Park mit japanischem, englischem und französischem Garten. Im November Chrysanthemen-Ausstellung (Anfang–Mitte Nov.) und buntes Laub.",
+    "zeiten": "9:00–16:00 (Einlass bis 15:30), montags geschlossen",
+    "preis": "500 ¥",
+    "station": "Shinjuku-gyoemmae",
+    "tags": ["Park", "Chrysanthemen", "Koyo"]
+  },
+  {
+    "id": "hamarikyu",
+    "name": "Hama-rikyū",
+    "nameJa": "浜離宮恩賜庭園",
+    "lat": 35.6597, "lng": 139.7634,
+    "beschreibung": "Garten mit Meerwasser-Teich vor der Skyline von Shiodome. Matcha im Teehaus Nakajima-no-Ochaya auf dem Wasser!",
+    "zeiten": "9:00–17:00",
+    "preis": "300 ¥",
+    "station": "Shiodome / Shimbashi",
+    "tags": ["Teehaus", "Skyline"]
+  },
+  {
+    "id": "kiyosumi",
+    "name": "Kiyosumi Teien",
+    "nameJa": "清澄庭園",
+    "lat": 35.6815, "lng": 139.7965,
+    "beschreibung": "Ruhiger Garten mit Trittsteinen über den Teich und vielen Schildkröten. Kaum Touristen.",
+    "zeiten": "9:00–17:00",
+    "preis": "150 ¥",
+    "station": "Kiyosumi-shirakawa",
+    "tags": ["Teich", "ruhig"]
+  },
+  {
+    "id": "higo-hosokawa",
+    "name": "Higo-Hosokawa-Garten",
+    "nameJa": "肥後細川庭園",
+    "lat": 35.7140, "lng": 139.7255,
+    "beschreibung": "Kleiner, kostenloser Teichgarten am Kanda-Fluss mit wunderschönem Herbstlaub. Im Herbst teilweise mit abendlicher Beleuchtung.",
+    "zeiten": "9:00–17:00",
+    "preis": "kostenlos",
+    "station": "Edogawabashi / Waseda",
+    "tags": ["kostenlos", "Koyo"]
+  },
+  {
+    "id": "kyu-furukawa",
+    "name": "Kyū-Furukawa-Garten",
+    "nameJa": "旧古河庭園",
+    "lat": 35.7418, "lng": 139.7466,
+    "beschreibung": "Westliche Villa mit Rosengarten (Herbstrosen im Oktober/November) plus japanischer Garten am Hang.",
+    "zeiten": "9:00–17:00",
+    "preis": "150 ¥",
+    "station": "Kami-Nakazato / Nishigahara",
+    "tags": ["Rosen", "Villa"]
+  },
+  {
+    "id": "jingu-gaien-icho",
+    "name": "Ginkgo-Allee Jingū Gaien",
+    "nameJa": "明治神宮外苑 いちょう並木",
+    "lat": 35.6745, "lng": 139.7176,
+    "beschreibung": "Die berühmte goldene Ginkgo-Allee. Höhepunkt meist Mitte/Ende November – dann mit Food-Ständen (Ginkgo-Festival).",
+    "zeiten": "rund um die Uhr (Straße)",
+    "preis": "kostenlos",
+    "station": "Gaiemmae / Aoyama-itchome",
+    "tags": ["Ginkgo", "Koyo", "Fotospot"]
+  },
+  {
+    "id": "tonogayato",
+    "name": "Tonogayato-Garten",
+    "nameJa": "殿ヶ谷戸庭園",
+    "lat": 35.7027, "lng": 139.4800,
+    "beschreibung": "Versteckter Hanggarten mit Bambushain und Ahorn – ideal mit Halbtagesausflug nach Westen kombinierbar.",
+    "zeiten": "9:00–17:00",
+    "preis": "150 ¥",
+    "station": "Kokubunji",
+    "tags": ["Bambus", "Koyo", "Ausflug"]
+  },
+  {
+    "id": "showa-kinen",
+    "name": "Shōwa Kinen Park",
+    "nameJa": "国営昭和記念公園",
+    "lat": 35.7059, "lng": 139.4140,
+    "beschreibung": "Riesiger Park mit japanischem Garten und langen Ginkgo-Alleen. Im Herbst teils Abendöffnung mit Beleuchtung.",
+    "zeiten": "9:30–16:30 (im Winter)",
+    "preis": "450 ¥",
+    "station": "Nishi-Tachikawa",
+    "tags": ["Ginkgo", "Park", "Ausflug"]
+  },
+  {
+    "id": "imperial-east-gardens",
+    "name": "Ostgarten des Kaiserpalasts",
+    "nameJa": "皇居東御苑",
+    "lat": 35.6858, "lng": 139.7554,
+    "beschreibung": "Ehemaliges Gelände der Burg Edo mit Burgmauern und Ninomaru-Garten. Kostenlos, Mo. & Fr. meist geschlossen.",
+    "zeiten": "9:00–16:00 (im November)",
+    "preis": "kostenlos",
+    "station": "Otemachi",
+    "tags": ["kostenlos", "Burg", "Geschichte"]
+  }
+]

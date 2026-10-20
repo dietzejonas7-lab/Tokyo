@@ -1,0 +1,26 @@
+[
+  {
+    "id": "gc-tori-no-ichi",
+    "name": "Tori-no-Ichi Sonder-Goshuin (Ōtori-Jinja)",
+    "nameJa": "酉の市 限定御朱印",
+    "lat": 35.7238, "lng": 139.7919,
+    "beschreibung": "An den Tori-no-Ichi-Tagen bieten Ōtori-Jinja und der Nachbartempel Chōkoku-ji oft besondere Goshuin an. Ob es 2026 ein eigenes Goshuincho gibt, ist noch nicht bekannt – vorab auf dem Instagram/X-Account des Schreins nachsehen.",
+    "zeitraum": [
+      { "von": "2026-11-07", "bis": "2026-11-07" },
+      { "von": "2026-11-19", "bis": "2026-11-19" }
+    ],
+    "geprueft": false,
+    "station": "Iriya",
+    "tags": ["Sonder-Goshuin", "Fest"]
+  },
+  {
+    "id": "gc-kanda-myojin",
+    "name": "Kanda Myōjin – wechselnde Goshuincho",
+    "nameJa": "神田明神 御朱印帳",
+    "lat": 35.7020, "lng": 139.7679,
+    "beschreibung": "Kanda Myōjin verkauft regelmäßig saisonale und Anime-Kollaborations-Goshuincho. Was im November 2026 erhältlich ist, steht noch nicht fest – vor Ort am Schalter fragen.",
+    "geprueft": false,
+    "station": "Ochanomizu / Akihabara",
+    "tags": ["Kollaboration", "Anime"]
+  }
+]

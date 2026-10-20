@@ -1,0 +1,459 @@
+[
+  {
+    "id": "stempel-yamanote-tokyo",
+    "name": "Tokyo – Eki-Stempel",
+    "nameJa": "東京駅 駅スタンプ",
+    "lat": 35.6812,
+    "lng": 139.7671,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 1/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Tokyo",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-kanda",
+    "name": "Kanda – Eki-Stempel",
+    "nameJa": "神田駅 駅スタンプ",
+    "lat": 35.6918,
+    "lng": 139.7709,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 2/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Kanda",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-akihabara",
+    "name": "Akihabara – Eki-Stempel",
+    "nameJa": "秋葉原駅 駅スタンプ",
+    "lat": 35.6984,
+    "lng": 139.7731,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 3/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Akihabara",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-okachimachi",
+    "name": "Okachimachi – Eki-Stempel",
+    "nameJa": "御徒町駅 駅スタンプ",
+    "lat": 35.7075,
+    "lng": 139.7748,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 4/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Okachimachi",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-ueno",
+    "name": "Ueno – Eki-Stempel",
+    "nameJa": "上野駅 駅スタンプ",
+    "lat": 35.7138,
+    "lng": 139.7773,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 5/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Ueno",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-uguisudani",
+    "name": "Uguisudani – Eki-Stempel",
+    "nameJa": "鶯谷駅 駅スタンプ",
+    "lat": 35.7215,
+    "lng": 139.7781,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 6/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Uguisudani",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-nippori",
+    "name": "Nippori – Eki-Stempel",
+    "nameJa": "日暮里駅 駅スタンプ",
+    "lat": 35.7278,
+    "lng": 139.771,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 7/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Nippori",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-nishi-nippori",
+    "name": "Nishi-Nippori – Eki-Stempel",
+    "nameJa": "西日暮里駅 駅スタンプ",
+    "lat": 35.732,
+    "lng": 139.7668,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 8/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Nishi-Nippori",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-tabata",
+    "name": "Tabata – Eki-Stempel",
+    "nameJa": "田端駅 駅スタンプ",
+    "lat": 35.7381,
+    "lng": 139.7608,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 9/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Tabata",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-komagome",
+    "name": "Komagome – Eki-Stempel",
+    "nameJa": "駒込駅 駅スタンプ",
+    "lat": 35.7365,
+    "lng": 139.747,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 10/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Komagome",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-sugamo",
+    "name": "Sugamo – Eki-Stempel",
+    "nameJa": "巣鴨駅 駅スタンプ",
+    "lat": 35.7334,
+    "lng": 139.7393,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 11/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Sugamo",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-otsuka",
+    "name": "Otsuka – Eki-Stempel",
+    "nameJa": "大塚駅 駅スタンプ",
+    "lat": 35.7318,
+    "lng": 139.7286,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 12/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Otsuka",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-ikebukuro",
+    "name": "Ikebukuro – Eki-Stempel",
+    "nameJa": "池袋駅 駅スタンプ",
+    "lat": 35.7295,
+    "lng": 139.7109,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 13/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Ikebukuro",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-mejiro",
+    "name": "Mejiro – Eki-Stempel",
+    "nameJa": "目白駅 駅スタンプ",
+    "lat": 35.7212,
+    "lng": 139.7066,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 14/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Mejiro",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-takadanobaba",
+    "name": "Takadanobaba – Eki-Stempel",
+    "nameJa": "高田馬場駅 駅スタンプ",
+    "lat": 35.7128,
+    "lng": 139.7038,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 15/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Takadanobaba",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shin-okubo",
+    "name": "Shin-Okubo – Eki-Stempel",
+    "nameJa": "新大久保駅 駅スタンプ",
+    "lat": 35.7012,
+    "lng": 139.7,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 16/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Shin-Okubo",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shinjuku",
+    "name": "Shinjuku – Eki-Stempel",
+    "nameJa": "新宿駅 駅スタンプ",
+    "lat": 35.6896,
+    "lng": 139.7006,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 17/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Shinjuku",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-yoyogi",
+    "name": "Yoyogi – Eki-Stempel",
+    "nameJa": "代々木駅 駅スタンプ",
+    "lat": 35.683,
+    "lng": 139.702,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 18/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Yoyogi",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-harajuku",
+    "name": "Harajuku – Eki-Stempel",
+    "nameJa": "原宿駅 駅スタンプ",
+    "lat": 35.6702,
+    "lng": 139.7027,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 19/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Harajuku",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shibuya",
+    "name": "Shibuya – Eki-Stempel",
+    "nameJa": "渋谷駅 駅スタンプ",
+    "lat": 35.658,
+    "lng": 139.7016,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 20/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Shibuya",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-ebisu",
+    "name": "Ebisu – Eki-Stempel",
+    "nameJa": "恵比寿駅 駅スタンプ",
+    "lat": 35.6467,
+    "lng": 139.7101,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 21/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Ebisu",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-meguro",
+    "name": "Meguro – Eki-Stempel",
+    "nameJa": "目黒駅 駅スタンプ",
+    "lat": 35.6339,
+    "lng": 139.7158,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 22/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Meguro",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-gotanda",
+    "name": "Gotanda – Eki-Stempel",
+    "nameJa": "五反田駅 駅スタンプ",
+    "lat": 35.6262,
+    "lng": 139.7236,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 23/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Gotanda",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-osaki",
+    "name": "Osaki – Eki-Stempel",
+    "nameJa": "大崎駅 駅スタンプ",
+    "lat": 35.6197,
+    "lng": 139.7286,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 24/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Osaki",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shinagawa",
+    "name": "Shinagawa – Eki-Stempel",
+    "nameJa": "品川駅 駅スタンプ",
+    "lat": 35.6285,
+    "lng": 139.7387,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 25/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Shinagawa",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-takanawa-gateway",
+    "name": "Takanawa Gateway – Eki-Stempel",
+    "nameJa": "高輪ゲートウェイ駅 駅スタンプ",
+    "lat": 35.6355,
+    "lng": 139.7407,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 26/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Takanawa Gateway",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-tamachi",
+    "name": "Tamachi – Eki-Stempel",
+    "nameJa": "田町駅 駅スタンプ",
+    "lat": 35.6457,
+    "lng": 139.7476,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 27/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Tamachi",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-hamamatsucho",
+    "name": "Hamamatsucho – Eki-Stempel",
+    "nameJa": "浜松町駅 駅スタンプ",
+    "lat": 35.6555,
+    "lng": 139.757,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 28/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Hamamatsucho",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-shimbashi",
+    "name": "Shimbashi – Eki-Stempel",
+    "nameJa": "新橋駅 駅スタンプ",
+    "lat": 35.6663,
+    "lng": 139.7583,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 29/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Shimbashi",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-yamanote-yurakucho",
+    "name": "Yurakucho – Eki-Stempel",
+    "nameJa": "有楽町駅 駅スタンプ",
+    "lat": 35.6751,
+    "lng": 139.763,
+    "beschreibung": "JR-Bahnhofsstempel der Yamanote-Linie (Station 30/30). Meist an einem Stempeltisch nahe dem Haupt-Ticketschalter – frag im Zweifel das Personal: „Sutampu wa doko desu ka?“",
+    "linie": "JR Yamanote",
+    "station": "Yurakucho",
+    "tags": [
+      "JR",
+      "Yamanote"
+    ]
+  },
+  {
+    "id": "stempel-metro-museum",
+    "name": "Metro-Museum – Stempel aller 9 Linien",
+    "nameJa": "地下鉄博物館",
+    "lat": 35.6636,
+    "lng": 139.8727,
+    "beschreibung": "Im Tokyo-Metro-Museum gibt es Original-Stempel für jede der 9 U-Bahn-Linien – auf einen Schlag! Dazu echte alte U-Bahn-Wagen und Fahrsimulatoren. Montags geschlossen.",
+    "zeiten": "10:00–17:00",
+    "preis": "220 ¥",
+    "linie": "Tokyo Metro",
+    "station": "Kasai (Tozai-Linie)",
+    "tags": [
+      "Tokyo Metro",
+      "Museum"
+    ]
+  },
+  {
+    "id": "stempel-ekitag-info",
+    "name": "Tokyo Metro: digitale Stempel (Ekitag)",
+    "nameJa": "エキタグ",
+    "lat": 35.6717,
+    "lng": 139.765,
+    "beschreibung": "Tokyo Metro hat seit 2025 digitale Stempel über die App „Ekitag“ (Handy an das NFC-Schild halten). Inzwischen an ca. 50 Metro-Stationen. Die aktuelle Liste siehst du in der App – trag die Stationen, die du findest, über ➕ hier ein!",
+    "linie": "Tokyo Metro",
+    "station": "Ginza (Beispiel)",
+    "tags": [
+      "Tokyo Metro",
+      "digital",
+      "Info"
+    ],
+    "links": [
+      {
+        "titel": "Tokyo Metro News zu Ekitag",
+        "url": "https://www.tokyometro.jp/news/2025/222001.html"
+      }
+    ]
+  }
+]

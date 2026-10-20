@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sensoji-nacht",
+    "name": "Sensō-ji bei Nacht",
+    "nameJa": "浅草寺 ライトアップ",
+    "lat": 35.7148, "lng": 139.7967,
+    "beschreibung": "Tokios ältester Tempel wird jeden Abend angestrahlt. Nach Ladenschluss der Nakamise-dori fast menschenleer – magische Stimmung, ideal für Fotos von Pagode und Kaminarimon.",
+    "zeiten": "Beleuchtung ca. Sonnenuntergang–23:00 (Gelände offen)",
+    "preis": "kostenlos",
+    "station": "Asakusa",
+    "tags": ["Pagode", "Fotospot", "täglich"]
+  },
+  {
+    "id": "zojoji-nacht",
+    "name": "Zōjō-ji mit Tokyo Tower",
+    "nameJa": "増上寺と東京タワー",
+    "lat": 35.6575, "lng": 139.7484,
+    "beschreibung": "Das Sangedatsumon-Tor und die Haupthalle vor dem leuchtenden Tokyo Tower – eines der ikonischsten Nachtmotive Tokios. Das Tor ist abends geschlossen, aber von außen toll zu sehen.",
+    "zeiten": "Tokyo Tower leuchtet bis 24:00",
+    "preis": "kostenlos",
+    "station": "Onarimon / Shibakoen / Daimon",
+    "tags": ["Tokyo Tower", "Fotospot", "täglich"]
+  },
+  {
+    "id": "kanda-myojin-nacht",
+    "name": "Kanda Myōjin am Abend",
+    "nameJa": "神田明神",
+    "lat": 35.7020, "lng": 139.7679,
+    "beschreibung": "Prächtiger Schrein mit Laternen nahe Akihabara – perfekt nach einer Shopping-Tour. Der Schreinbezirk ist auch abends betretbar.",
+    "zeiten": "Gelände abends offen",
+    "preis": "kostenlos",
+    "station": "Ochanomizu / Akihabara / Suehirocho",
+    "tags": ["Laternen", "Akihabara"]
+  },
+  {
+    "id": "akagi-jinja-nacht",
+    "name": "Akagi-Jinja (Kagurazaka)",
+    "nameJa": "赤城神社",
+    "lat": 35.7036, "lng": 139.7334,
+    "beschreibung": "Moderner Glas-Schrein (Architekt Kengo Kuma), abends sanft beleuchtet. Danach durch die Gassen von Kagurazaka bummeln.",
+    "zeiten": "abends beleuchtet",
+    "preis": "kostenlos",
+    "station": "Kagurazaka",
+    "tags": ["Architektur", "Kagurazaka"]
+  },
+  {
+    "id": "tori-no-ichi",
+    "name": "Tori-no-Ichi im Ōtori-Jinja",
+    "nameJa": "酉の市 鷲神社",
+    "lat": 35.7238, "lng": 139.7919,
+    "beschreibung": "Großes Glücks-Fest mit hunderten Laternen und Ständen voller Kumade (Glücksrechen). Läuft 24 Stunden – nachts am stimmungsvollsten! Rufe und Klatschen, wenn ein Kumade verkauft wird.",
+    "zeiten": "0:00–24:00",
+    "preis": "kostenlos",
+    "zeitraum": [
+      { "von": "2026-11-07", "bis": "2026-11-07" },
+      { "von": "2026-11-19", "bis": "2026-11-19" }
+    ],
+    "geprueft": true,
+    "station": "Iriya / Asakusa",
+    "tags": ["Fest", "Laternen", "Kumade"]
+  }
+]

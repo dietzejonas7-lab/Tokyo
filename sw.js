@@ -1,0 +1,57 @@
+/* Service Worker: macht die App offline-fähig.
+   - Eigene Dateien (HTML/CSS/JS/Daten): immer zuerst frisch aus dem Netz, damit
+     Änderungen sofort ankommen. Nur ohne Internet wird die gespeicherte Version genutzt.
+   - Bibliotheken, Schriften und Kartenkacheln: aus dem Speicher, wenn möglich
+     (so funktioniert die Karte auch in der U-Bahn ohne Netz – für bereits angesehene Gebiete). */
+const VERSION = "v1";
+const SHELL = [
+  "./", "index.html", "css/style.css", "js/app.js", "manifest.webmanifest", "icons/icon.svg",
+  "lib/leaflet/leaflet.js", "lib/leaflet/leaflet.css",
+  "lib/markercluster/leaflet.markercluster.js", "lib/markercluster/MarkerCluster.css",
+];
+
+self.addEventListener("install", (ev) => {
+  ev.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener("activate", (ev) => {
+  ev.waitUntil(
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((k) => !k.startsWith(VERSION)).map((k) => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener("fetch", (ev) => {
+  const req = ev.request;
+  if (req.method !== "GET") return;
+  const url = new URL(req.url);
+
+  // Daten & App-Code: Netz zuerst, Speicher als Notfall
+  if (url.origin === location.origin) {
+    ev.respondWith(
+      fetch(req)
+        .then((res) => {
+          const kopie = res.clone();
+          caches.open(VERSION).then((c) => c.put(req, kopie));
+          return res;
+        })
+        .catch(() => caches.match(req, { ignoreSearch: true }))
+    );
+    return;
+  }
+
+  // Bibliotheken, Schriften, Kartenkacheln: Speicher zuerst
+  ev.respondWith(
+    caches.match(req).then((treffer) =>
+      treffer ||
+      fetch(req).then((res) => {
+        if (res.ok || res.type === "opaque") {
+          const kopie = res.clone();
+          caches.open(VERSION + "-extern").then((c) => c.put(req, kopie));
+        }
+        return res;
+      })
+    )
+  );
+});
