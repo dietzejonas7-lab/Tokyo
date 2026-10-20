@@ -10,10 +10,12 @@
 
 const OrtFotos = {
   API: "https://commons.wikimedia.org/w/api.php",
-  SPEICHER: "tokio.fotoCache",
+  SPEICHER: "tokio.fotoCache2",   // neuer Name = alte (ungenaue) Treffer werden verworfen
   GUELTIG_TAGE: 14,
   aktiv: (() => { try { return JSON.parse(localStorage.getItem("tokio.ortFotos") ?? "true"); } catch { return true; } })(),
-  cache: (() => { try { return JSON.parse(localStorage.getItem("tokio.fotoCache")) || {}; } catch { return {}; } })(),
+  cache: (() => { try { localStorage.removeItem("tokio.fotoCache"); return JSON.parse(localStorage.getItem("tokio.fotoCache2")) || {}; } catch { return {}; } })(),
+  // Nur bei diesen Kategorien zeigt ein Foto aus der direkten Umgebung wirklich den Ort
+  UMGEBUNG_OK: ["gaerten", "nachttempel", "goshuin", "stempel"],
   laufend: new Map(),
 
   umschalten(an = !this.aktiv) {
@@ -45,27 +47,46 @@ const OrtFotos = {
     try { localStorage.setItem(this.SPEICHER, JSON.stringify(this.cache)); } catch {}
   },
 
-  /** Erst nach dem japanischen Namen suchen, sonst Fotos direkt vom Ort */
+  /**
+   * Suche mit Titel-Prüfung: Ein Foto zählt nur, wenn der Name des Ortes im Dateinamen vorkommt.
+   * Reihenfolge: (Goshuin-Foto) → englischer/deutscher Name → japanischer Name → Umgebung (nur bei passenden Kategorien).
+   * In den Daten kann ein Ort mit "fotoSuche": "Suchbegriff" gezielt gesteuert oder mit false ausgeschaltet werden.
+   */
   async suchen(e, kategorie) {
-    const begriffe = [];
-    const name = (e.nameJa || "").trim();
-    if (name) {
-      if (kategorie?.bildersuche) begriffe.push(`${name} ${kategorie.bildersuche}`);
-      begriffe.push(name);
-    }
-    // Bahnhöfe: zusätzlich nur der Bahnhofsname (z. B. „東京駅“)
-    if (kategorie?.id === "stempel" && name.includes("駅")) begriffe.push(name.split("駅")[0] + "駅");
+    if (e.fotoSuche === false) return [];
+    const latein = e.fotoSuche || this.kernName(e, kategorie);
+    const japanisch = (e.nameJa || "").trim().split(/[\s\u3000]/)[0];
+    const versuche = [];
+    if (kategorie?.id === "goshuin" && latein) versuche.push({ suche: `goshuin ${latein}`, pflicht: ["goshuin", latein] });
+    if (latein) versuche.push({ suche: latein, pflicht: [latein] });
+    if (japanisch && !e.fotoSuche) versuche.push({ suche: japanisch, pflicht: [japanisch] });
 
-    for (const begriff of begriffe) {
+    for (const v of versuche) {
+      if (v.pflicht.some((w) => this.norm(w).length < (/[a-z0-9]/.test(this.norm(w)) ? 5 : 2))) continue;
       const fotos = await this.anfrage({
-        generator: "search", gsrsearch: `${begriff} filetype:bitmap`, gsrnamespace: "6", gsrlimit: "6",
+        generator: "search", gsrsearch: `${v.suche} filetype:bitmap`, gsrnamespace: "6", gsrlimit: "20",
       });
-      if (fotos.length) return fotos;
+      const passend = fotos.filter((f) => v.pflicht.every((w) => this.norm(f.titel).includes(this.norm(w))))
+        // Goshuin-Fotos nur in den Goshuin-Kategorien zeigen
+        .filter((f) => kategorie?.id?.startsWith("goshuin") || !/goshuin|御朱印/i.test(f.titel));
+      if (passend.length) return passend.slice(0, 6);
     }
-    if (!isFinite(e.lat) || !isFinite(e.lng)) return [];
-    return this.anfrage({
-      generator: "geosearch", ggscoord: `${e.lat}|${e.lng}`, ggsradius: "150", ggsnamespace: "6", ggslimit: "6",
-    });
+    if (!this.UMGEBUNG_OK.includes(kategorie?.id) || !isFinite(e.lat) || !isFinite(e.lng)) return [];
+    return (await this.anfrage({
+      generator: "geosearch", ggscoord: `${e.lat}|${e.lng}`, ggsradius: "70", ggsnamespace: "6", ggslimit: "6",
+    })).slice(0, 6);
+  },
+
+  /** Lateinischer Kern-Name: „Sensō-ji bei Nacht“ → „Sensō-ji“, Bahnhof „Tokyo“ → „Tokyo Station“ */
+  kernName(e, kategorie) {
+    if (kategorie?.id === "stempel") return e.station && !e.station.includes(" ") ? `${e.station} Station` : "";
+    return e.name.split(/ – | \(|: /)[0].replace(/ (bei Nacht|am Abend)$/, "").trim();
+  },
+
+  /** Zum Vergleichen: klein, ohne Akzente, ohne Leer- und Sonderzeichen („Sensō-ji“ → „sensoji“) */
+  norm(text) {
+    return String(text).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9\u3040-\u30ff\u3400-\u9fff]/g, "");
   },
 
   async anfrage(extra) {
@@ -81,9 +102,10 @@ const OrtFotos = {
     const daten = await antwort.json();
     return Object.values(daten.query?.pages || {})
       .sort((a, b) => (a.index ?? 0) - (b.index ?? 0))
-      .map((seite) => seite.imageinfo?.[0])
+      .map((seite) => seite.imageinfo?.[0] && { ...seite.imageinfo[0], titel: seite.title || "" })
       .filter((info) => info && /^image\/(jpeg|png|webp)$/.test(info.mime))
       .map((info) => ({
+        titel: info.titel.replace(/^File:/, ""),
         bild: info.thumburl || info.url,
         seite: info.descriptionurl,
         autor: this.nurText(info.extmetadata?.Artist?.value) || "unbekannt",
