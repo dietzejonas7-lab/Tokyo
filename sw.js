@@ -1,13 +1,14 @@
 /* Service Worker: macht die App offline-fähig.
    - Eigene Dateien (HTML/CSS/JS/Daten): immer zuerst frisch aus dem Netz, damit
      Änderungen sofort ankommen. Nur ohne Internet wird die gespeicherte Version genutzt.
-   - Bibliotheken, Schriften und Kartenkacheln: aus dem Speicher, wenn möglich
+   - Kartenkacheln und Schriften: aus dem Speicher, wenn möglich
      (so funktioniert die Karte auch in der U-Bahn ohne Netz – für bereits angesehene Gebiete). */
-const VERSION = "v3"; // hochzählen löscht alte gespeicherte Daten (auch Kartenkacheln)
+const VERSION = "v4"; // hochzählen löscht alte gespeicherte Daten (auch Kartenkacheln)
 const SHELL = [
   "./", "index.html", "css/style.css", "js/app.js", "manifest.webmanifest", "icons/icon.svg",
   "lib/leaflet/leaflet.js", "lib/leaflet/leaflet.css",
   "lib/markercluster/leaflet.markercluster.js", "lib/markercluster/MarkerCluster.css",
+  "lib/maplibre/maplibre-gl.js", "lib/maplibre/maplibre-gl.css", "lib/maplibre/leaflet-maplibre-gl.js",
 ];
 
 self.addEventListener("install", (ev) => {
@@ -42,17 +43,33 @@ self.addEventListener("fetch", (ev) => {
     return;
   }
 
-  // Bibliotheken, Schriften, Kartenkacheln: Speicher zuerst
+  // Kartenkacheln, Schriften, Bilder: Speicher zuerst (ändern sich nicht)
+  if (/\.(pbf|mvt|png|jpe?g|webp|woff2?)$/.test(url.pathname) || url.pathname.includes("/tile/")) {
+    ev.respondWith(
+      caches.match(req).then((treffer) =>
+        treffer ||
+        fetch(req).then((res) => {
+          if (res.ok || res.type === "opaque") {
+            const kopie = res.clone();
+            caches.open(VERSION + "-extern").then((c) => c.put(req, kopie));
+          }
+          return res;
+        })
+      )
+    );
+    return;
+  }
+
+  // Kartenstil & Kartenverzeichnis: Netz zuerst (zeigen auf die jeweils aktuellen Kacheln)
   ev.respondWith(
-    caches.match(req).then((treffer) =>
-      treffer ||
-      fetch(req).then((res) => {
-        if (res.ok || res.type === "opaque") {
+    fetch(req)
+      .then((res) => {
+        if (res.ok) {
           const kopie = res.clone();
           caches.open(VERSION + "-extern").then((c) => c.put(req, kopie));
         }
         return res;
       })
-    )
+      .catch(() => caches.match(req))
   );
 });

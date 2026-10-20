@@ -118,11 +118,11 @@ js/app.js               ← die Logik (Karte, Filter, Kalender …), mit Komment
 data/kategorien.json    ← Liste aller Kategorien
 data/*.json             ← die Orte, eine Datei pro Kategorie
 bilder/                 ← eigene Bilder hier hochladen
-lib/                    ← Karten-Bibliothek Leaflet (nicht ändern)
+lib/                    ← Karten-Bibliotheken Leaflet & MapLibre (nicht ändern)
 sw.js                   ← macht die App offline-fähig
 manifest.webmanifest    ← App-Name und Icon für den Home-Bildschirm
 ```
 
 **Auf dem Computer testen:** Im Projektordner `python3 -m http.server` ausführen und dann http://localhost:8000 öffnen. Ein Doppelklick auf `index.html` funktioniert nicht, weil der Browser dann die Daten-Dateien nicht laden darf.
 
-Kartendaten © OpenStreetMap-Mitwirkende (Ersatz-Kartendienst: Esri). Karten-Bibliothek: Leaflet (BSD-2) und Leaflet.markercluster (MIT).
+Kartendaten © OpenStreetMap-Mitwirkende, Kartenstil © OpenFreeMap / OpenMapTiles (Ersatz-Karten: OpenStreetMap, Esri). Bibliotheken: MapLibre GL JS (BSD-3) und maplibre-gl-leaflet (ISC). Karten-Bibliothek: Leaflet (BSD-2) und Leaflet.markercluster (MIT).

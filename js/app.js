@@ -18,8 +18,15 @@
 /* ---------- 1. Einstellungen ---------- */
 const REISE = { von: "2026-11-01", bis: "2026-11-25" };
 const START_ANSICHT = { lat: 35.6895, lng: 139.7400, zoom: 12 };
-// Kartendienste ohne API-Schlüssel. Lädt der erste nicht, wird automatisch der nächste genommen.
-// Der Dunkelmodus der Karte entsteht per CSS-Filter (siehe style.css).
+// Hauptkarte: moderne Vektor-Karte (ähnlich wie Google Maps) von OpenFreeMap – kostenlos, ohne API-Schlüssel.
+const VEKTOR_KARTE = {
+  hell: "https://tiles.openfreemap.org/styles/liberty",
+  dunkel: "https://tiles.openfreemap.org/styles/dark",
+  attribution: '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+};
+// Sprache der Kartenbeschriftung: erst Deutsch, dann Englisch, dann lateinische Schrift, sonst Japanisch
+const KARTEN_SPRACHE = ["name:de", "name_de", "name:en", "name_en", "name:latin", "name"];
+// Ersatz-Karten (Bilder-Kacheln), falls die Vektor-Karte nicht lädt. Dunkelmodus dann per CSS-Filter.
 const KARTEN_DIENSTE = [
   {
     url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -165,12 +172,12 @@ function alleEintraegeNeu(ausDateien = state.eintraege.filter((e) => !e.eigen)) 
 }
 
 /* ---------- 4. Karte & Marker ---------- */
-let map, tiles, cluster, meinMarker;
+let map, tiles, vektor, cluster, meinMarker;
 
 function karteStarten() {
   map = L.map("map", { zoomControl: false, tapHold: true, attributionControl: true, maxZoom: 19 })
     .setView([START_ANSICHT.lat, START_ANSICHT.lng], START_ANSICHT.zoom);
-  tilesSetzen();
+  karteSetzen();
 
   cluster = L.markerClusterGroup({
     showCoverageOnHover: false,
@@ -185,7 +192,57 @@ function karteStarten() {
   map.on("click", () => { sheetSchliessen(); });
 }
 
+/** Vektor-Karte laden; klappt das nicht, Bilder-Kacheln als Ersatz nehmen */
+async function karteSetzen() {
+  const dunkel = document.documentElement.dataset.theme === "dark";
+  if (webglMoeglich()) {
+    try {
+      const antwort = await fetch(dunkel ? VEKTOR_KARTE.dunkel : VEKTOR_KARTE.hell);
+      if (!antwort.ok) throw new Error("Stil nicht geladen: " + antwort.status);
+      const stil = beschriftungDeutsch(await antwort.json());
+      if (vektor) vektor.getMaplibreMap().setStyle(stil);
+      else vektorStarten(stil);
+      return;
+    } catch (err) {
+      console.warn("Vektor-Karte nicht verfügbar, nutze Ersatz-Karte", err);
+    }
+  }
+  tilesSetzen();
+}
+
+function webglMoeglich() {
+  try {
+    const c = document.createElement("canvas");
+    return !!(window.maplibregl && L.maplibreGL && (c.getContext("webgl2") || c.getContext("webgl")));
+  } catch {
+    return false;
+  }
+}
+
+/** Alle Beschriftungen im Kartenstil auf Deutsch (bzw. Englisch/lateinisch) umstellen */
+function beschriftungDeutsch(stil) {
+  const name = ["coalesce", ...KARTEN_SPRACHE.map((feld) => ["get", feld])];
+  stil.layers.forEach((layer) => {
+    const text = layer.layout?.["text-field"];
+    if (text && JSON.stringify(text).includes("name")) layer.layout["text-field"] = name;
+  });
+  return stil;
+}
+
+function vektorStarten(stil) {
+  if (tiles) { map.removeLayer(tiles); tiles = null; }
+  vektor = L.maplibreGL({ style: stil, attributionControl: { customAttribution: VEKTOR_KARTE.attribution } }).addTo(map);
+  document.documentElement.classList.add("vektor");
+  // Kommen gar keine Kartendaten an, auf die Ersatz-Karte wechseln
+  const ml = vektor.getMaplibreMap();
+  let geladen = false, fehler = 0;
+  ml.on("data", (ev) => { if (ev.dataType === "source" && ev.tile) geladen = true; });
+  ml.on("error", () => { if (!geladen && ++fehler === 5) tilesSetzen(); });
+}
+
 function tilesSetzen(nr = 0) {
+  if (vektor) { map.removeLayer(vektor); vektor = null; }
+  document.documentElement.classList.remove("vektor");
   if (tiles) map.removeLayer(tiles);
   const dienst = KARTEN_DIENSTE[nr];
   let geladen = false, fehler = 0;
@@ -697,6 +754,7 @@ function themeSetzen(theme) {
   document.documentElement.dataset.theme = theme;
   $("#btn-theme").textContent = theme === "dark" ? "☀️" : "🌙";
   document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#0f0d22" : "#f6f1ea";
+  if (vektor) karteSetzen(); // Vektor-Karte hat einen eigenen Dunkel-Stil
 }
 
 function splashBlueten() {

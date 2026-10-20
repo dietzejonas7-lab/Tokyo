@@ -53,8 +53,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .leaflet-control-attribution { font-size: 10px; background: var(--surface) !important; color: var(--muted); }
 .leaflet-control-attribution a { color: var(--muted); }
 .leaflet-control-zoom { display: none; }
-/* Dunkelmodus: Karte invertieren, Farbtöne zurückdrehen = dunkle Karte */
-:root[data-theme="dark"] .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.6); }
+/* Dunkelmodus der Ersatz-Karte: invertieren, Farbtöne zurückdrehen = dunkle Karte */
+:root[data-theme="dark"]:not(.vektor) .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.6); }
 
 /* ---------- Startbildschirm ---------- */
 #splash {
