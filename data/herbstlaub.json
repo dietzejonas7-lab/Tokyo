@@ -1,0 +1,1684 @@
+[
+  {
+    "id": "laub-hibiya",
+    "name": "Hibiya-Park",
+    "nameJa": "日比谷公園",
+    "lat": 35.6749,
+    "lng": 139.75645,
+    "beschreibung": "Erster westlicher Park Japans (1903), mitten zwischen Bürotürmen. Gelbe Ginkgo-Allee entlang der S-förmigen Wege, rote Ahorne am Kranich-Brunnen und die berühmte „Kopfwetten-Ginkgo“ – ein Riese, für dessen Verpflanzung der Parkplaner einst „seinen Kopf verwettete“.",
+    "preis": "frei",
+    "station": "Hibiya / Kasumigaseki",
+    "adresse": "東京都千代田区日比谷公園1-6",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154521/"
+      }
+    ]
+  },
+  {
+    "id": "laub-yasukuni",
+    "name": "Yasukuni-Schrein – Ginkgo-Allee",
+    "nameJa": "靖国神社",
+    "lat": 35.69403,
+    "lng": 139.7429,
+    "beschreibung": "Vom großen Torii bis zum zweiten Tor leuchten ca. 25 m hohe Ginkgos goldgelb – ein beeindruckender Blick Richtung Haupthalle. Hinter dem Schrein: roter Ahorn am Teichgarten.",
+    "preis": "frei (Museum Yūshūkan 1.000 ¥)",
+    "station": "Kudanshita",
+    "adresse": "東京都千代田区九段北3-1-1",
+    "laub": {
+      "beginn": "2026-11-10",
+      "von": "2026-11-10",
+      "bis": "2026-12-01",
+      "vorjahr": "10.11.–1.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Schrein"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154522/"
+      }
+    ]
+  },
+  {
+    "id": "laub-kokyo-higashi",
+    "name": "Ostgarten des Kaiserpalasts",
+    "nameJa": "皇居東御苑",
+    "lat": 35.68687,
+    "lng": 139.75717,
+    "beschreibung": "Auf dem Gelände der alten Edo-Burg. Im Ninomaru-Wäldchen färben sich Eichen und Ahorn rot-gelb. Montag & Freitag geschlossen! Manchmal öffnet im Herbst zusätzlich die Inui-dōri-Straße im Palast (Termine vorab prüfen).",
+    "preis": "frei",
+    "station": "Ōtemachi",
+    "adresse": "東京都千代田区千代田1-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-11",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Burg"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e393170/"
+      }
+    ]
+  },
+  {
+    "id": "laub-kitanomaru",
+    "name": "Kitanomaru-Park",
+    "nameJa": "北の丸公園",
+    "lat": 35.69137,
+    "lng": 139.74998,
+    "beschreibung": "Wie ein Stück Natur mitten in der Stadt: am „Ahornhügel“ im Westen färbt sich ein ganzer Hang rot, daneben ein kleiner Wasserfall. Riesige Ginkgo vor dem Nippon Budōkan (Höhepunkt Anfang Dezember).",
+    "preis": "frei",
+    "station": "Kudanshita / Takebashi",
+    "adresse": "東京都千代田区北の丸公園1-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e612281/"
+      }
+    ]
+  },
+  {
+    "id": "laub-hamarikyu-koyo",
+    "name": "Hama-rikyū – Herbstlaub",
+    "nameJa": "浜離宮恩賜庭園",
+    "lat": 35.66019,
+    "lng": 139.76354,
+    "beschreibung": "Gezeiten-Teichgarten mit Teehäusern vor der Hochhauskulisse; ca. 260 Bäume färben sich. Im Teehaus auf der Insel gibt es Matcha mit Süßigkeit. 30.10.–3.11.2026 abends verlängerte Öffnung mit Licht zum 80. Garten-Jubiläum.",
+    "preis": "300 ¥",
+    "station": "Shiodome",
+    "adresse": "東京都中央区浜離宮庭園1-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-26",
+      "bis": "2026-12-08",
+      "vorjahr": "26.11.–8.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Edo-Garten",
+      "Teehaus",
+      "Lichter",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154508/"
+      }
+    ]
+  },
+  {
+    "id": "laub-shiba-koen",
+    "name": "Shiba-Park – Momiji-Tal & Tokyo Tower",
+    "nameJa": "芝公園",
+    "lat": 35.65327,
+    "lng": 139.74934,
+    "beschreibung": "Eines der schönsten Motive Tokios: gelbe Ginkgos vor dem Tokyo Tower. Im „Momiji-dani“ (Ahorn-Tal) fällt ein 10 m hoher Wasserfall zwischen roten Bäumen. Lichter im Ahorn-Tal 5.–25.12.2026 (also erst nach deiner Reise).",
+    "preis": "frei",
+    "station": "Shibakōen",
+    "adresse": "東京都港区芝公園4-10-17",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-27",
+      "bis": "2026-12-18",
+      "vorjahr": "27.11.–18.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Tokyo Tower",
+      "Fotospot",
+      "Lichter"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154517/"
+      }
+    ]
+  },
+  {
+    "id": "laub-shizen-kyoikuen",
+    "name": "Naturpark Shizen Kyōiku-en",
+    "nameJa": "国立科学博物館附属自然教育園",
+    "lat": 35.63599,
+    "lng": 139.7213,
+    "beschreibung": "Echter Wald mitten in der Stadt (gehört zum Naturkundemuseum). Ruhige Wege, Ahorn am Hyōtan-Teich. Färbt sich spät – eher Ende November. Montags geschlossen, begrenzte Besucherzahl.",
+    "preis": "320 ¥",
+    "station": "Shirokanedai / Meguro",
+    "adresse": "東京都港区白金台5-21-5",
+    "laub": {
+      "beginn": "2026-11-21",
+      "von": "2026-12-01",
+      "bis": "2026-12-16",
+      "vorjahr": "1.12.–16.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Wald",
+      "ruhig"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154520/"
+      }
+    ]
+  },
+  {
+    "id": "laub-teien-museum",
+    "name": "Tokyo Metropolitan Teien Art Museum",
+    "nameJa": "東京都庭園美術館",
+    "lat": 35.63687,
+    "lng": 139.71944,
+    "beschreibung": "Art-déco-Prinzenvilla mit japanischem Garten – spannender Mix aus europäischer Architektur und rotem Ahorn. Nur der Garten kostet wenig; abends teils bis 20 Uhr geöffnet (21./22., 28./29.11.).",
+    "preis": "Garten 200 ¥",
+    "station": "Meguro / Shirokanedai",
+    "adresse": "東京都港区白金台5-21-9",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-18",
+      "bis": "2026-12-13",
+      "vorjahr": "18.11.–13.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Art déco",
+      "Museum"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154523/"
+      }
+    ]
+  },
+  {
+    "id": "laub-arisugawa",
+    "name": "Arisugawa-Park",
+    "nameJa": "有栖川宮記念公園",
+    "lat": 35.65203,
+    "lng": 139.7258,
+    "beschreibung": "Hügeliger Park im Diplomatenviertel Hiro-o mit Bach, Teich und Wasserfall – fühlt sich an wie in den Bergen. Rote Ahorne hinter dem Reiterstandbild.",
+    "preis": "frei",
+    "station": "Hiro-o",
+    "adresse": "東京都港区南麻布5-7-29",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-11",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "ruhig"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372621/"
+      }
+    ]
+  },
+  {
+    "id": "laub-kyu-shiba-koyo",
+    "name": "Kyū-Shiba-rikyū – Herbstlaub",
+    "nameJa": "旧芝離宮恩賜庭園",
+    "lat": 35.6549,
+    "lng": 139.75887,
+    "beschreibung": "Einer der ältesten Edo-Gärten, direkt am Bahnhof. Ca. 220 Kiefern bilden einen grünen Kontrast zum roten Ahorn, der sich im Teich spiegelt. Färbt sich eher spät.",
+    "preis": "150 ¥",
+    "station": "Hamamatsuchō",
+    "adresse": "東京都港区海岸1-4-1",
+    "laub": {
+      "beginn": "2026-11-21",
+      "von": "2026-12-02",
+      "bis": "2026-12-15",
+      "vorjahr": "2.12.–15.12.2025",
+      "farbe": "rot"
+    },
+    "tags": [
+      "Edo-Garten",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372632/"
+      }
+    ]
+  },
+  {
+    "id": "laub-happoen",
+    "name": "Happō-en",
+    "nameJa": "八芳園",
+    "lat": 35.63819,
+    "lng": 139.72796,
+    "beschreibung": "400 Jahre alter Teichgarten (heute Hochzeits-Location) mit ca. 160 Ahornbäumen und uralten Bonsai (bis 525 Jahre!). Eintritt in den Garten frei; schönes Café mit Blick ins Grüne.",
+    "preis": "frei",
+    "station": "Shirokanedai",
+    "adresse": "東京都港区白金台1-1-1",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-11",
+      "bis": "2026-12-31"
+    },
+    "tags": [
+      "Bonsai",
+      "Café"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e612278/"
+      }
+    ]
+  },
+  {
+    "id": "laub-gaien-icho-koyo",
+    "name": "Ginkgo-Allee Jingū Gaien",
+    "nameJa": "明治神宮外苑",
+    "lat": 35.67502,
+    "lng": 139.71943,
+    "beschreibung": "DIE Ginkgo-Allee Tokios: 300 m goldene Bäume in Kegelform, die zum Gemäldemuseum führen. Am Boden ein gelber Teppich. Dazu läuft meist das Ginkgo-Fest mit Essensständen.",
+    "preis": "frei",
+    "station": "Aoyama-itchōme / Gaienmae",
+    "adresse": "東京都新宿区霞ヶ丘町1-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-17",
+      "bis": "2026-12-01",
+      "vorjahr": "17.11.–1.12.2025",
+      "farbe": "gelb"
+    },
+    "tags": [
+      "Ginkgo",
+      "Fotospot"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12672/"
+      }
+    ]
+  },
+  {
+    "id": "laub-toyama-koen",
+    "name": "Toyama-Park – Hakone-yama",
+    "nameJa": "都立戸山公園",
+    "lat": 35.70691,
+    "lng": 139.70483,
+    "beschreibung": "Hier steht der höchste „Berg“ innerhalb der Yamanote-Linie: der Hakone-yama mit 44,6 m – mit Gipfel-Urkunde! Rote Ahorne am Hang. Bis 13.12. Stempelrallye durch 8 Parks.",
+    "preis": "frei",
+    "station": "Nishi-Waseda",
+    "adresse": "東京都新宿区大久保3-5-1",
+    "laub": {
+      "beginn": "2026-11-21",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "kurios"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e373498/"
+      }
+    ]
+  },
+  {
+    "id": "laub-gyoen-koyo",
+    "name": "Shinjuku Gyoen – Herbstlaub",
+    "nameJa": "新宿御苑",
+    "lat": 35.68661,
+    "lng": 139.70863,
+    "beschreibung": "Riesiger Park mit französischem, englischem und japanischem Garten. Ahorn-Bogen am Shinjuku-Tor, Platanen-Allee, Ginkgos – und zuletzt der „Momiji-yama“. 1.–15.11.2026 Chrysanthemen-Ausstellung im japanischen Garten. Montags geschlossen.",
+    "preis": "500 ¥",
+    "station": "Shinjuku-gyoemmae",
+    "adresse": "東京都新宿区内藤町11",
+    "laub": {
+      "beginn": "2026-11-07",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Chrysanthemen"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e392494/"
+      }
+    ]
+  },
+  {
+    "id": "laub-korakuen-koyo",
+    "name": "Koishikawa Kōrakuen – Herbstlaub",
+    "nameJa": "小石川後楽園",
+    "lat": 35.70494,
+    "lng": 139.74813,
+    "beschreibung": "Mit ca. 500 Fächerahornen einer der rotesten Gärten Tokios – vor allem am „Momiji-Wald“, Maruya und Innengarten. Lichter 13.–24.11.2026, Kulturprogramm 21.11.–6.12.",
+    "preis": "300 ¥",
+    "station": "Iidabashi / Kōrakuen",
+    "adresse": "東京都文京区後楽1-6-6",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-26",
+      "bis": "2026-12-01",
+      "vorjahr": "26.11.–1.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Edo-Garten",
+      "Lichter",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12666/"
+      }
+    ]
+  },
+  {
+    "id": "laub-rikugien-koyo",
+    "name": "Rikugien – Herbstlaub",
+    "nameJa": "六義園",
+    "lat": 35.73276,
+    "lng": 139.74771,
+    "beschreibung": "Edo-Fürstengarten mit ca. 560 färbenden Bäumen (400 Ahorne). Schönste Stellen: Suikō-e im Westen, Tsutsuji-Teehaus und Yamakage-Brücke. Abends Lichter-Spezial (2025: 28.11.–9.12.; Termine 2026 vorab prüfen).",
+    "preis": "300 ¥ (abends ca. 1.000–1.200 ¥)",
+    "station": "Komagome",
+    "adresse": "東京都文京区本駒込6-16-3",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-08",
+      "vorjahr": "21.11.–8.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Edo-Garten",
+      "Lichter",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12667/"
+      }
+    ]
+  },
+  {
+    "id": "laub-higo-koyo",
+    "name": "Higo-Hosokawa-Garten – Herbstlaub",
+    "nameJa": "文京区立肥後細川庭園",
+    "lat": 35.71327,
+    "lng": 139.7219,
+    "beschreibung": "Kleiner Teichgarten am Hang am Kanda-Fluss – Ahorn, Zelkoven und die Seil-Schirme gegen Schnee an den Kiefern (Yukitsuri). Lichter 20.–29.11.2026, 17:30–20:00.",
+    "preis": "frei (Lichter 500 ¥)",
+    "station": "Waseda (Toden)",
+    "adresse": "東京都文京区目白台1-1-22",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Lichter",
+      "Yukitsuri"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372630/"
+      }
+    ]
+  },
+  {
+    "id": "laub-tohaku-garten",
+    "name": "Garten des Nationalmuseums Tokio",
+    "nameJa": "東京国立博物館",
+    "lat": 35.71893,
+    "lng": 139.77649,
+    "beschreibung": "Hinter dem Hauptgebäude: Teich mit fünf Teehäusern (eins 400 Jahre alt) und Ahorn, der sich im Wasser spiegelt. Färbt sich früher als andere Orte – gut für Anfang November.",
+    "preis": "Museum 1.000 ¥",
+    "station": "Ueno",
+    "adresse": "東京都台東区上野公園13-9",
+    "laub": {
+      "beginn": "2026-10-21",
+      "von": "2026-10-21",
+      "bis": "2026-11-30",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Museum",
+      "früh"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e201125/"
+      }
+    ]
+  },
+  {
+    "id": "laub-iwasaki-koyo",
+    "name": "Kyū-Iwasaki-tei – Ginkgo",
+    "nameJa": "旧岩崎邸庭園",
+    "lat": 35.70973,
+    "lng": 139.7676,
+    "beschreibung": "Bei der Meiji-Villa von 1896 steht eine ca. 400 Jahre alte Riesen-Ginkgo – vor der Villa liegt dann ein gelber Teppich. Dazu roter Ahorn im Rasengarten.",
+    "preis": "400 ¥",
+    "station": "Yushima",
+    "adresse": "東京都台東区池之端1丁目3-45",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-01",
+      "vorjahr": "21.11.–1.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Villa",
+      "Ginkgo",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372633/"
+      }
+    ]
+  },
+  {
+    "id": "laub-ueno-koyo",
+    "name": "Ueno-Park",
+    "nameJa": "上野恩賜公園",
+    "lat": 35.71538,
+    "lng": 139.77402,
+    "beschreibung": "Herbstlaub zwischen Museen, Tempeln und dem Shinobazu-Teich. Besonders: der riesige Tulpenbaum vor dem Nationalmuseum. Gut mit Zoo und Ameyoko kombinierbar.",
+    "preis": "frei",
+    "station": "Ueno",
+    "adresse": "東京都台東区上野公園5-20",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-18",
+      "bis": "2026-12-05",
+      "vorjahr": "18.11.–5.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Museen"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e373493/"
+      }
+    ]
+  },
+  {
+    "id": "laub-hyakkaen-koyo",
+    "name": "Mukōjima-Hyakkaen – Herbstlaub",
+    "nameJa": "向島百花園",
+    "lat": 35.72423,
+    "lng": 139.81545,
+    "beschreibung": "Bürgerlicher Blumengarten aus der Edo-Zeit: Pflaumen- und Ahornlaub, dazu Chrysanthemen, Kamelien und rote Beeren. Färbt sich spät – eher Anfang Dezember am schönsten.",
+    "preis": "150 ¥",
+    "station": "Higashi-Mukōjima",
+    "adresse": "東京都墨田区東向島3-18-3",
+    "laub": {
+      "beginn": "2026-11-21",
+      "von": "2026-12-05",
+      "bis": "2026-12-18",
+      "vorjahr": "5.12.–18.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Edo-Garten",
+      "spät",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12668/"
+      }
+    ]
+  },
+  {
+    "id": "laub-kiyosumi-koyo",
+    "name": "Kiyosumi Teien – Herbstlaub",
+    "nameJa": "清澄庭園",
+    "lat": 35.68099,
+    "lng": 139.79759,
+    "beschreibung": "Teichgarten mit Trittsteinen und Laub in Rot und Gelb – weniger voll als die großen Gärten. 21.11.–6.12.2026 Teestube mit Matcha und Saison-Süßigkeit.",
+    "preis": "150 ¥",
+    "station": "Kiyosumi-shirakawa",
+    "adresse": "東京都江東区清澄3-3-9",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-26",
+      "bis": "2026-12-01",
+      "vorjahr": "26.11.–1.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Edo-Garten",
+      "ruhig"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e392862/"
+      }
+    ]
+  },
+  {
+    "id": "laub-sendaibori",
+    "name": "Sendaibori-gawa-Park",
+    "nameJa": "仙台堀川公園",
+    "lat": 35.67358,
+    "lng": 139.83572,
+    "beschreibung": "Langer Kanal-Park im Osten mit „Momiji-Teich“ und Kunstwerken am Weg – sehr lokal und ruhig.",
+    "preis": "frei",
+    "station": "Ōjima / Minami-sunamachi",
+    "adresse": "東京都江東区北砂6、南砂2",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "lokal"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e393418/"
+      }
+    ]
+  },
+  {
+    "id": "laub-sarue",
+    "name": "Sarue-Onshi-Park",
+    "nameJa": "猿江恩賜公園",
+    "lat": 35.69051,
+    "lng": 139.81923,
+    "beschreibung": "Park mit Japangarten; Ginkgo, Metasequoia und Pappeln färben sich – an klaren Tagen mit Skytree im Hintergrund. Färbt sich etwas früher (Anfang–Ende November).",
+    "preis": "frei",
+    "station": "Sumiyoshi",
+    "adresse": "東京都江東区住吉2、毛利2",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-01",
+      "bis": "2026-11-30",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Skytree"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e393638/"
+      }
+    ]
+  },
+  {
+    "id": "laub-rinshi-no-mori",
+    "name": "Rinshi-no-mori-Park",
+    "nameJa": "林試の森公園",
+    "lat": 35.62518,
+    "lng": 139.7037,
+    "beschreibung": "Ehemaliges Forst-Versuchsgelände mit seltenen Bäumen und Riesen über 3 m Umfang. Rundweg ca. 45 Min.; Sumpfzypressen am Sechseck-Pavillon.",
+    "preis": "frei",
+    "station": "Musashi-Koyama",
+    "adresse": "東京都品川区小山台2-6-11",
+    "laub": {
+      "beginn": "2026-11-07",
+      "von": "2026-11-21",
+      "bis": "2026-12-08",
+      "vorjahr": "21.11.–8.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Bäume"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154502/"
+      }
+    ]
+  },
+  {
+    "id": "laub-gotenyama",
+    "name": "Gotenyama-Garten",
+    "nameJa": "御殿山庭園",
+    "lat": 35.62083,
+    "lng": 139.73715,
+    "beschreibung": "Versteckter Japangarten zwischen Hochhäusern bei Shinagawa – Teich und Wasserfall mit rotem Ahorn. Schnell erreichbar, ideal für eine Pause.",
+    "preis": "frei",
+    "station": "Kita-Shinagawa / Shinagawa",
+    "adresse": "東京都品川区北品川4-7-35",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-11",
+      "bis": "2026-11-30",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "versteckt"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e393648/"
+      }
+    ]
+  },
+  {
+    "id": "laub-komazawa",
+    "name": "Komazawa-Olympiapark",
+    "nameJa": "駒沢オリンピック公園",
+    "lat": 35.62388,
+    "lng": 139.65974,
+    "beschreibung": "Olympiapark von 1964 mit goldener Ginkgo- und Zelkoven-Allee – ein Tunnel aus Gelb. Am Blumenbeet gibt es altmodische Koppe-Brötchen.",
+    "preis": "frei",
+    "station": "Komazawa-daigaku",
+    "adresse": "東京都世田谷区駒沢公園1-1",
+    "laub": {
+      "beginn": "2026-11-04",
+      "von": "2026-11-18",
+      "bis": "2026-11-27",
+      "vorjahr": "18.11.–27.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Olympia"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12669/"
+      }
+    ]
+  },
+  {
+    "id": "laub-kinuta",
+    "name": "Kinuta-Park",
+    "nameJa": "砧公園",
+    "lat": 35.62903,
+    "lng": 139.62135,
+    "beschreibung": "Ehemaliger Golfplatz mit riesigen Wiesen und ca. 1.000 Zelkoven; Laubteppich im Family Park. Daneben das Setagaya-Kunstmuseum.",
+    "preis": "frei",
+    "station": "Yōga",
+    "adresse": "東京都世田谷区砧公園1-1",
+    "laub": {
+      "beginn": "2026-11-18",
+      "von": "2026-11-18",
+      "bis": "2026-12-01",
+      "vorjahr": "18.11.–1.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Wiese"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154503/"
+      }
+    ]
+  },
+  {
+    "id": "laub-todoroki-fudo",
+    "name": "Todoroki Fudōson & Schlucht",
+    "nameJa": "等々力不動尊",
+    "lat": 35.60376,
+    "lng": 139.64707,
+    "beschreibung": "Tempel am Rand der Todoroki-Schlucht (einzige Schlucht in Tokio!). Roter Ahorn vor der Haupthalle mit großer Laterne, Ahorntunnel zum Benten-Schrein. Der Spazierweg durch die Schlucht war zuletzt teilweise gesperrt – vorher prüfen.",
+    "preis": "frei",
+    "station": "Todoroki",
+    "adresse": "東京都世田谷区等々力1-22-47",
+    "laub": {
+      "beginn": "2026-11-21",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Tempel",
+      "Schlucht"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372629/"
+      }
+    ]
+  },
+  {
+    "id": "laub-yoyogi-koyo",
+    "name": "Yoyogi-Park",
+    "nameJa": "代々木公園",
+    "lat": 35.67183,
+    "lng": 139.69501,
+    "beschreibung": "Ca. 1.300 Laubbäume: Ginkgo-Allee am Harajuku-Tor, roter Ahorn westlich des Brunnens, Zelkoven in Rot-Gelb-Grün. Direkt neben Meiji-Schrein und Harajuku.",
+    "preis": "frei",
+    "station": "Harajuku / Yoyogi-kōen",
+    "adresse": "東京都渋谷区代々木神園町2-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-11",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Harajuku"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12590/"
+      }
+    ]
+  },
+  {
+    "id": "laub-otaguro",
+    "name": "Ōtaguro-Park",
+    "nameJa": "大田黒公園",
+    "lat": 35.70086,
+    "lng": 139.62484,
+    "beschreibung": "Ehemaliges Anwesen eines Musikkritikers: 27 riesige Ginkgos als Allee, Teich und Teehaus. Abends Lichter mit Spiegelung im Teich (2025: 28.11.–7.12.).",
+    "preis": "frei (abends 300 ¥)",
+    "station": "Ogikubo",
+    "adresse": "東京都杉並区荻窪3-33-12",
+    "laub": {
+      "beginn": "2026-11-20",
+      "von": "2026-11-20",
+      "bis": "2026-12-04",
+      "vorjahr": "20.11.–4.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Lichter",
+      "Ginkgo"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372631/"
+      }
+    ]
+  },
+  {
+    "id": "laub-mejiro-teien",
+    "name": "Mejiro-Garten",
+    "nameJa": "豊島区立目白庭園",
+    "lat": 35.72453,
+    "lng": 139.70552,
+    "beschreibung": "Kleiner Garten, bekannt für seine Lichter: Ahorn spiegelt sich im Teich („Spiegelbild-Koyo“). Lichter 21.11.–6.12.2026, 17:30–21:00.",
+    "preis": "frei (Lichter 500 ¥)",
+    "station": "Mejiro",
+    "adresse": "東京都豊島区目白3-20-18",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Lichter"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372628/"
+      }
+    ]
+  },
+  {
+    "id": "laub-furukawa-koyo",
+    "name": "Kyū-Furukawa-Garten – Herbstlaub",
+    "nameJa": "旧古河庭園",
+    "lat": 35.74196,
+    "lng": 139.74652,
+    "beschreibung": "Steinvilla mit Rosengarten und japanischem Garten darunter – „Herbstrosen und Ahorn“ gleichzeitig. Ca. 200 Ahorne; Matcha im Teehaus.",
+    "preis": "150 ¥",
+    "station": "Kami-Nakazato",
+    "adresse": "東京都北区西ヶ原1-27-39",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-24",
+      "bis": "2026-12-08",
+      "vorjahr": "24.11.–8.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Rosen",
+      "Villa",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154509/"
+      }
+    ]
+  },
+  {
+    "id": "laub-otonashi",
+    "name": "Otonashi-Shinsui-Park",
+    "nameJa": "音無親水公園",
+    "lat": 35.75291,
+    "lng": 139.73623,
+    "beschreibung": "Nostalgischer Uferpark im alten Flussbett, direkt am Bahnhof Ōji – Ahorn und Zelkoven an Brücke und Bach. Klein, aber sehr stimmungsvoll; gut mit dem Ōji-Inari-Schrein kombinierbar.",
+    "preis": "frei",
+    "station": "Ōji",
+    "adresse": "東京都北区王子本町1丁目",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-11",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Fluss"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e330999/"
+      }
+    ]
+  },
+  {
+    "id": "laub-asukayama",
+    "name": "Asukayama-Park",
+    "nameJa": "飛鳥山公園",
+    "lat": 35.75047,
+    "lng": 139.73889,
+    "beschreibung": "Hügelpark mit kostenloser Mini-Zahnradbahn „Asuka Park Rail“. Verschiedene Ahornarten, dazu drei Museen (u. a. Shibusawa).",
+    "preis": "frei",
+    "station": "Ōji",
+    "adresse": "東京都北区王子1-1-3",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-11",
+      "bis": "2026-12-10",
+      "farbe": "rot"
+    },
+    "tags": [
+      "Bahn"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e373497/"
+      }
+    ]
+  },
+  {
+    "id": "laub-shakujii",
+    "name": "Shakujii-Park",
+    "nameJa": "石神井公園",
+    "lat": 35.73894,
+    "lng": 139.59776,
+    "beschreibung": "Zwei Teiche: der stille Sanpōji-Teich mit Holzsteg und der Bootsteich. Ahorn, Ginkgo und Sumpfzypressen spiegeln sich im Wasser.",
+    "preis": "frei",
+    "station": "Shakujii-kōen",
+    "adresse": "東京都練馬区石神井台1-26-1",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-26",
+      "bis": "2026-12-04",
+      "vorjahr": "26.11.–4.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Teich",
+      "Boote"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154506/"
+      }
+    ]
+  },
+  {
+    "id": "laub-hikarigaoka",
+    "name": "Hikarigaoka-Park",
+    "nameJa": "光が丘公園",
+    "lat": 35.76638,
+    "lng": 139.63012,
+    "beschreibung": "200-m-Ginkgo-Tunnel aus 28 Bäumen der früheren US-Siedlung „Grant Heights“ – mit Bäumen über 130 Jahre alt. 28./29.11. Parkfest.",
+    "preis": "frei",
+    "station": "Hikarigaoka",
+    "adresse": "東京都練馬区光が丘4-1-1",
+    "laub": {
+      "beginn": "2026-11-04",
+      "von": "2026-11-18",
+      "bis": "2026-12-01",
+      "vorjahr": "18.11.–1.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ginkgo"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154507/"
+      }
+    ]
+  },
+  {
+    "id": "laub-johoku-chuo",
+    "name": "Jōhoku-Chūō-Park",
+    "nameJa": "都立城北中央公園",
+    "lat": 35.75593,
+    "lng": 139.67396,
+    "beschreibung": "Großer Sportpark mit Ginkgo-Allee am Haupteingang – der Weg wird zum gelben Teppich.",
+    "preis": "frei",
+    "station": "Kami-Itabashi",
+    "adresse": "東京都練馬区氷川台1-3-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "lokal"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e373501/"
+      }
+    ]
+  },
+  {
+    "id": "laub-toneri",
+    "name": "Toneri-Park",
+    "nameJa": "都立舎人公園",
+    "lat": 35.79748,
+    "lng": 139.77213,
+    "beschreibung": "Weiter Park im Norden mit Metasequoia-Reihen in Rostrot. Vom Hügel „Asahi no hiroba“ siehst du Skytree und bei klarem Wetter den Fuji.",
+    "preis": "frei",
+    "station": "Toneri-kōen",
+    "adresse": "東京都足立区舎人公園1-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-11",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Fuji-Blick"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e373499/"
+      }
+    ]
+  },
+  {
+    "id": "laub-mizumoto",
+    "name": "Mizumoto-Park",
+    "nameJa": "水元公園",
+    "lat": 35.78641,
+    "lng": 139.86924,
+    "beschreibung": "Wasserpark im Osten: der „Metasequoia-Wald“ wird ziegelrot und spiegelt sich im Wasser – Höhepunkt eher Anfang Dezember.",
+    "preis": "frei",
+    "station": "Kanamachi (Bus)",
+    "adresse": "東京都葛飾区水元公園3-2",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-04",
+      "vorjahr": "21.11.–4.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Metasequoia"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e160399/"
+      }
+    ]
+  },
+  {
+    "id": "laub-koshu-kaido",
+    "name": "Ginkgo-Allee am Kōshū-Kaidō (Hachiōji)",
+    "nameJa": "甲州街道いちょう並木",
+    "lat": 35.66092,
+    "lng": 139.31834,
+    "beschreibung": "Ca. 760 Ginkgos auf 4,2 km – ein goldener Tunnel über der Straße. Ginkgo-Fest in Hachiōji am 21./22.11.2026 (siehe Events).",
+    "preis": "frei",
+    "station": "Nishi-Hachiōji / Takao",
+    "adresse": "東京都八王子市",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-11",
+      "bis": "2026-12-20",
+      "farbe": "gelb"
+    },
+    "tags": [
+      "Ginkgo",
+      "Fest"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e13089/"
+      }
+    ]
+  },
+  {
+    "id": "laub-takao",
+    "name": "Takao-san",
+    "nameJa": "高尾山",
+    "lat": 35.6311,
+    "lng": 139.26697,
+    "beschreibung": "Beliebter Ausflugsberg (599 m), 1 Std. vom Zentrum. Ahorn-Tunnel an der Seilbahn, roter Ahorn an Gipfel und Yakuō-in-Tempel. Momiji-Fest 24.10.–13.12.2026. Am Wochenende sehr voll – früh fahren!",
+    "preis": "frei (Seilbahn ca. 500 ¥)",
+    "station": "Takaosan-guchi",
+    "adresse": "東京都八王子市",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-12",
+      "bis": "2026-11-25",
+      "vorjahr": "12.11.–25.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Wandern",
+      "Ausflug"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e13090/"
+      }
+    ]
+  },
+  {
+    "id": "laub-ryonan",
+    "name": "Ryōnan-Park",
+    "nameJa": "陵南公園",
+    "lat": 35.64905,
+    "lng": 139.28917,
+    "beschreibung": "Park am Minami-Asakawa-Fluss, liegt am Ende der Hachiōji-Ginkgo-Allee. Beim Ginkgo-Fest (21./22.11.) sehr belebt.",
+    "preis": "frei",
+    "station": "Takao",
+    "adresse": "東京都八王子市長房町1369",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-13",
+      "bis": "2026-11-29",
+      "vorjahr": "13.11.–29.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ginkgo"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e373496/"
+      }
+    ]
+  },
+  {
+    "id": "laub-showa-koyo",
+    "name": "Shōwa Kinen Park – Herbstlaub",
+    "nameJa": "国営昭和記念公園",
+    "lat": 35.71077,
+    "lng": 139.39732,
+    "beschreibung": "Platz 1 in Tokio: zwei Ginkgo-Alleen (300 m und 200 m) als goldene Tunnel, ca. 300 Ahorne im Japangarten. Herbstfest 29.10.–29.11.2026 mit Abendlichtern „Aki no Yoru Sanpo“.",
+    "preis": "450 ¥",
+    "station": "Nishi-Tachikawa",
+    "adresse": "東京都立川市緑町3173",
+    "laub": {
+      "beginn": "2026-10-21",
+      "von": "2026-11-14",
+      "bis": "2026-11-27",
+      "vorjahr": "14.11.–27.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ginkgo",
+      "Lichter"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e13052/"
+      }
+    ]
+  },
+  {
+    "id": "laub-inokashira",
+    "name": "Inokashira-Park",
+    "nameJa": "井の頭恩賜公園",
+    "lat": 35.69974,
+    "lng": 139.57319,
+    "beschreibung": "Teich mit Tretbooten, Laubwald rundherum – 5 Min. vom Bahnhof Kichijōji. Perfekt mit dem Ghibli-Museum (gleicher Park!).",
+    "preis": "frei",
+    "station": "Kichijōji",
+    "adresse": "東京都武蔵野市御殿山1-18-31",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-18",
+      "bis": "2026-12-05",
+      "vorjahr": "18.11.–5.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ghibli",
+      "Boote"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e372624/"
+      }
+    ]
+  },
+  {
+    "id": "laub-mitake-keikoku",
+    "name": "Mitake-Schlucht",
+    "nameJa": "御岳渓谷",
+    "lat": 35.80082,
+    "lng": 139.18303,
+    "beschreibung": "Klares Wasser zwischen großen Felsen, rote und gelbe Ufer – 4 km Uferweg direkt ab Bahnhof. Riesen-Ginkgo vor dem Gyokudō-Museum. Ca. 1,5 Std. Fahrt.",
+    "preis": "frei",
+    "station": "Mitake",
+    "adresse": "東京都青梅市御岳362-8他",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-11",
+      "bis": "2026-11-30",
+      "vorjahr": "11.11.–30.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ausflug",
+      "Fluss"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12661/"
+      }
+    ]
+  },
+  {
+    "id": "laub-mitake-san",
+    "name": "Mitake-san",
+    "nameJa": "御岳山",
+    "lat": 35.7895,
+    "lng": 139.15332,
+    "beschreibung": "Heiliger Berg (929 m) mit Musashi-Mitake-Schrein, per Seilbahn erreichbar. „Rock Garden“-Wanderweg an Moosfelsen und Wasserfall. Momiji-Fest mit Lichtern 24.10.–23.11.2026.",
+    "preis": "frei (Seilbahn extra)",
+    "station": "Mitake (Bus + Seilbahn)",
+    "adresse": "東京都青梅市",
+    "laub": {
+      "beginn": "2026-10-21",
+      "von": "2026-11-11",
+      "bis": "2026-11-30",
+      "vorjahr": "11.11.–30.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ausflug",
+      "Schrein",
+      "Lichter"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12662/"
+      }
+    ]
+  },
+  {
+    "id": "laub-fuchu-no-mori",
+    "name": "Fuchū-no-Mori-Park",
+    "nameJa": "府中の森公園",
+    "lat": 35.67693,
+    "lng": 139.49255,
+    "beschreibung": "Japangarten mit zwei Teichen voller rotem Ahorn, dazu 10 Skulpturen im Park.",
+    "preis": "frei",
+    "station": "Higashi-Fuchū",
+    "adresse": "東京都府中市浅間町1-3-1",
+    "laub": {
+      "beginn": "2026-11-04",
+      "von": "2026-11-18",
+      "bis": "2026-12-08",
+      "vorjahr": "18.11.–8.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "lokal"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154513/"
+      }
+    ]
+  },
+  {
+    "id": "laub-musashino-koen",
+    "name": "Musashino-Park",
+    "nameJa": "都立武蔵野公園",
+    "lat": 35.68797,
+    "lng": 139.52033,
+    "beschreibung": "Ahorn-Allee entlang des Nogawa-Flusses wird zum roten Tunnel – ein Geheimtipp.",
+    "preis": "frei",
+    "station": "Musashi-Koganei (Bus)",
+    "adresse": "東京都府中市多磨町2-24-1",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-18",
+      "bis": "2026-11-30",
+      "vorjahr": "18.11.–30.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Geheimtipp"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e393647/"
+      }
+    ]
+  },
+  {
+    "id": "laub-jindai",
+    "name": "Botanischer Garten Jindai",
+    "nameJa": "神代植物公園",
+    "lat": 35.66947,
+    "lng": 139.54721,
+    "beschreibung": "Riesiger botanischer Garten: Ahorn-Garten mit 55 Arten, dazu Herbstrosen. Daneben der alte Tempel Jindai-ji mit Soba-Nudeln. Digitale Stempelrallye 10.11.–13.12.",
+    "preis": "500 ¥",
+    "station": "Chōfu / Kichijōji (Bus)",
+    "adresse": "東京都調布市深大寺元町5-31-10",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-26",
+      "bis": "2026-12-08",
+      "vorjahr": "26.11.–8.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Rosen",
+      "Soba"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e204848/"
+      }
+    ]
+  },
+  {
+    "id": "laub-yakushi-ike",
+    "name": "Yakushi-ike-Park (Machida)",
+    "nameJa": "町田薬師池公園四季彩の杜 薬師池",
+    "lat": 35.5785,
+    "lng": 139.44775,
+    "beschreibung": "Edo-Teich mit Trommelbrücke, altem Bauernhaus und 500 Jahre alter Ginkgo. Lichter + künstlicher „Wolkennebel“ über dem Teich 14.–29.11.2026.",
+    "preis": "frei",
+    "station": "Machida (Bus)",
+    "adresse": "東京都町田市野津田町3270",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-11",
+      "bis": "2026-11-30",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Lichter",
+      "Ausflug"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e612279/"
+      }
+    ]
+  },
+  {
+    "id": "laub-koganei",
+    "name": "Koganei-Park",
+    "nameJa": "小金井公園",
+    "lat": 35.71622,
+    "lng": 139.51908,
+    "beschreibung": "Riesiger Park mit Fahrradverleih und Ginkgo-Teppich. Im Park liegt das Edo-Tokyo-Freilichtmuseum (Lichter-Abende Ende November).",
+    "preis": "frei",
+    "station": "Musashi-Koganei (Bus)",
+    "adresse": "東京都小金井市関野町1-13-1",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-11",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Fahrrad",
+      "Museum",
+      "Lichter"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154512/"
+      }
+    ]
+  },
+  {
+    "id": "laub-mogusaen",
+    "name": "Keiō Mogusaen",
+    "nameJa": "京王百草園",
+    "lat": 35.65431,
+    "lng": 139.42725,
+    "beschreibung": "Edo-zeitlicher Hanggarten mit großen, tiefroten Ahornen (Ōsakazuki). Momiji-Fest 7.–29.11.2026 mit Teezeremonie und digitaler Lichtkunst.",
+    "preis": "500 ¥",
+    "station": "Mogusaen",
+    "adresse": "東京都日野市百草560",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-11",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Lichter",
+      "Ausflug"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e373491/"
+      }
+    ]
+  },
+  {
+    "id": "laub-takahata-koyo",
+    "name": "Takahata Fudōson – Herbstlaub",
+    "nameJa": "高幡不動尊 金剛寺",
+    "lat": 35.66231,
+    "lng": 139.40967,
+    "beschreibung": "Großer Tempel mit fünfstöckiger Pagode und viel Ahorn. Momiji-Fest 18.–30.11., am 23.11. Laternenweg „Momiji Tōro“. Saisonaler Papierschnitt-Goshuin!",
+    "preis": "frei",
+    "station": "Takahatafudō",
+    "adresse": "東京都日野市高幡733",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot"
+    },
+    "tags": [
+      "Tempel",
+      "Goshuin"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e612935/"
+      }
+    ]
+  },
+  {
+    "id": "laub-tonogayato-koyo",
+    "name": "Tonogayato-Garten – Herbstlaub",
+    "nameJa": "殿ヶ谷戸庭園",
+    "lat": 35.69865,
+    "lng": 139.48209,
+    "beschreibung": "Hanggarten direkt am Bahnhof: ca. 200 Ahorne über dem Quellteich, Blick vom Momiji-Pavillon. 14.11. Vorführung „Yukitsuri“.",
+    "preis": "150 ¥",
+    "station": "Kokubunji",
+    "adresse": "東京都国分寺市南町2-16",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-11-26",
+      "bis": "2026-12-08",
+      "vorjahr": "26.11.–8.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Edo-Garten",
+      "Nationale Landschaft"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12671/"
+      }
+    ]
+  },
+  {
+    "id": "laub-daigaku-dori",
+    "name": "Universitätsstraße Kunitachi",
+    "nameJa": "国立駅前 大学通り",
+    "lat": 35.6968,
+    "lng": 139.44662,
+    "beschreibung": "Breite Ginkgo-Allee vom roten Dreiecks-Bahnhofsgebäude Richtung Hitotsubashi-Uni, mit Cafés und kleinen Läden.",
+    "preis": "frei",
+    "station": "Kunitachi",
+    "adresse": "東京都国立市東1",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "gelb"
+    },
+    "tags": [
+      "Ginkgo",
+      "Cafés"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e393416/"
+      }
+    ]
+  },
+  {
+    "id": "laub-higashiyamato",
+    "name": "Higashiyamato-Minami-Park",
+    "nameJa": "東大和南公園",
+    "lat": 35.73345,
+    "lng": 139.4248,
+    "beschreibung": "Ehemaliges US-Gelände mit Eichenwald – so viel Laub, dass Kinder darin baden.",
+    "preis": "frei",
+    "station": "Tamagawa-jōsui",
+    "adresse": "東京都東大和市桜が丘2-106-2",
+    "laub": {
+      "beginn": "2026-11-21",
+      "von": "2026-11-21",
+      "bis": "2026-12-04",
+      "vorjahr": "21.11.–4.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "lokal"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154510/"
+      }
+    ]
+  },
+  {
+    "id": "laub-noyama-kita",
+    "name": "Noyamakita-Rokudōyama-Park",
+    "nameJa": "野山北・六道山公園",
+    "lat": 35.76598,
+    "lng": 139.37977,
+    "beschreibung": "Größter Tokioter Stadtpark in den Sayama-Hügeln: Laubwald, Reisterrassen und alte Bauernhäuser – Satoyama-Gefühl.",
+    "preis": "frei",
+    "station": "Tachikawa (Bus)",
+    "adresse": "東京都武蔵村山市三ツ木4-2",
+    "laub": {
+      "beginn": "2026-11-17",
+      "von": "2026-11-17",
+      "bis": "2026-12-04",
+      "vorjahr": "17.11.–4.12.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Wandern"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154516/"
+      }
+    ]
+  },
+  {
+    "id": "laub-akigawa",
+    "name": "Akigawa-Schlucht",
+    "nameJa": "秋川渓谷",
+    "lat": 35.72666,
+    "lng": 139.18981,
+    "beschreibung": "Blauer Fluss und rotes Laub; schönster Blick von der Hängebrücke Ishifune-bashi. Danach kostenloses Fußbad im Onsen „Seoto no Yu“.",
+    "preis": "frei",
+    "station": "Musashi-Itsukaichi (Bus)",
+    "adresse": "東京都あきる野市",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-14",
+      "bis": "2026-11-24",
+      "vorjahr": "14.11.–24.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ausflug",
+      "Onsen"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12663/"
+      }
+    ]
+  },
+  {
+    "id": "laub-okutama-ko",
+    "name": "Okutama-See",
+    "nameJa": "奥多摩(奥多摩湖畔)",
+    "lat": 35.79156,
+    "lng": 139.04553,
+    "beschreibung": "Stausee in den Bergen im Westen Tokios – bunte Hänge spiegeln sich im Wasser. Ca. 2 Std. Anfahrt, Tagesausflug. Färbt sich früher als die Stadt.",
+    "preis": "frei",
+    "station": "Okutama (Bus)",
+    "adresse": "東京都西多摩郡奥多摩町原",
+    "laub": {
+      "beginn": "2026-10-31",
+      "von": "2026-11-14",
+      "bis": "2026-11-28",
+      "vorjahr": "14.11.–28.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ausflug",
+      "See"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e12825/"
+      }
+    ]
+  },
+  {
+    "id": "laub-hatonosu",
+    "name": "Hatonosu-Schlucht",
+    "nameJa": "鳩ノ巣渓谷",
+    "lat": 35.81335,
+    "lng": 139.12818,
+    "beschreibung": "40 m tiefe Felsschlucht am Tama-Fluss; Blick von der kleinen Hängebrücke. Gut mit Okutama oder Mitake kombinierbar.",
+    "preis": "frei",
+    "station": "Hatonosu",
+    "adresse": "東京都西多摩郡奥多摩町棚沢",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-14",
+      "bis": "2026-11-28",
+      "vorjahr": "14.11.–28.11.2025",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Ausflug",
+      "Schlucht"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0313e154501/"
+      }
+    ]
+  },
+  {
+    "id": "laub-todai",
+    "name": "Universität Tokio – Ginkgo-Allee",
+    "nameJa": "東京大学 本郷キャンパス 銀杏並木",
+    "lat": 35.71295,
+    "lng": 139.76045,
+    "beschreibung": "Der Ginkgo ist das Symbol der Uni Tokio: auf dem Hongo-Campus führt eine goldene Allee vom Haupttor zum Yasuda-Turm. Dazu das rote Akamon-Tor und der Sanshirō-Teich. Campus frei zugänglich – bitte ruhig verhalten.",
+    "preis": "frei",
+    "station": "Hongō-sanchōme / Tōdaimae",
+    "adresse": "東京都文京区本郷7-3-1",
+    "laub": {
+      "beginn": "2026-11-10",
+      "von": "2026-11-21",
+      "bis": "2026-12-05",
+      "farbe": "gelb"
+    },
+    "tags": [
+      "Ginkgo",
+      "Uni"
+    ]
+  }
+]

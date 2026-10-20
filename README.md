@@ -16,6 +16,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | 🎡 | Attraktionen | teamLab, PokéPark KANTO, Aquarien, Aussichtstürme, Freizeitparks |
 | 🍁 | Gärten | Edo-Gärten, Ginkgo-Allee, Herbstlaub |
 | 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |
+| 🍁 | Herbstlaub | 62 Koyo-Orte. Die Pin-Farbe zeigt den Laub-Stand am gewählten Tag (grün → färbt sich → Höhepunkt → vorbei) |
 | 🚇 | Bahnhofs-Stempel | Alle 78 offiziellen JR-East-Stempel der Tokio-Serie, 56 Toei-U-Bahn-Stationen, Metro-Museum, Ekitag & Garten-Stempelrallye – zum Abhaken |
 | ⛩️ | Goshuin | 21 Tempel und Schreine mit Goshuin – zum Abhaken, mit 📷 eigenem Foto und 🔍 Beispielbildern |
 | 📕 | Limitierte Goshuincho | zeitlich begrenzte Goshuin und Goshuincho, tagesaktuell gefiltert |
@@ -111,6 +112,7 @@ Pflicht sind nur `id`, `name`, `lat` und `lng`. Alles andere ist optional.
 - **Bestätigt für 2026** (aus offiziellen Ankündigungen und Presseberichten): Asakusa Culture & Lights (30.10.–3.11.), Roppongi Hills (5.11.–25.12.), Weihnachtsmarkt Roppongi (ab 21.11.), Marunouchi (ab 12.11.), Midtown Yaesu (ab 19.11.), Tokyo Midtown (ab 26.11.), Rikugien Light-up (25.11.–6.12.), Tori-no-Ichi (7. & 19.11.).
 - **⚠️ Datum unbestätigt:** Diese Termine habe ich aus dem Vorjahr geschätzt. Bitte kurz vor dem Besuch auf der offiziellen Seite prüfen und dann in der Datei `"geprueft": true` setzen.
 - **Bahnhofs-Stempel:** Die **78 JR-Bahnhöfe** stammen aus der offiziellen JR-East-Stempelliste „東京エリア“ (Quelle: dotanstamp.com). 12 davon liegen schon in Chiba (z. B. Funabashi, Kashiwa) – das steht im Text. Dazu kommen **56 Stationen der Toei-U-Bahn** (Asakusa- und Ōedo-Linie) mit Papier-Stempel. Toei Mita- und Shinjuku-Linie sind noch nicht drin. **Tokyo Metro** setzt auf **digitale Stempel** über die App **„Ekitag“**. Papier-Stempel aller 9 Metro-Linien gibt es im **Metro-Museum** (Kasai). Fehlt ein Stempel, frag das Personal oder ergänze ihn mit ＋.
+- **Herbstlaub:** Die Zeiten stammen von koyo.walkerplus.com. Wo es Daten gibt, gilt der Höhepunkt vom letzten Jahr (2025), sonst die üblichen Jahre. 2026 soll das Laub etwas später dran sein als normal. Den aktuellen Stand zeigt der Link „Aktueller Laub-Stand“ bei jedem Ort (täglich aktualisiert, japanisch: 青葉 = grün, 色づき始め = färbt sich, 見頃 = Höhepunkt, 落葉 = Laub fällt). Im Datenfeld `laub` stehen `beginn` (färbt sich ab), `von` und `bis` (Höhepunkt).
 - **Illuminationen:** 42 Lichter-Events mit den Terminen für 2026 (Quellen: kyochika.jp, walkerplus). Nur Caretta Shiodome und das Mogusaen sind noch nicht bestätigt.
 - **Limitierte Goshuin im November:** Die meisten wurden von den Vorjahren übernommen und sind als „ungeprüft“ markiert. Vor Ort oder auf Instagram des Schreins nachschauen.
 - **Adressen:** Die meisten Läden haben jetzt die genaue japanische Adresse (Feld `adresse`). Die Koordinaten stammen aus dem japanischen Vermessungsamt (GSI). Noch ungefähr: Volks Akihabara, Kapital und zwei Pop-ups.

@@ -484,6 +484,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .badge.soon { background: color-mix(in srgb, var(--kin) 22%, transparent); border-color: var(--kin); }
 .badge.past { opacity: 0.6; }
 .badge.warn { border: 1.5px dashed var(--kin); background: transparent; }
+.badge.laub { background: color-mix(in srgb, var(--c) 18%, transparent); border-color: var(--c); }
 .sheet-title h2 { font-size: 1.5rem; line-height: 1.2; }
 .sheet-title .ja { font-family: var(--pinsel); color: var(--muted); font-size: 1.05rem; margin-top: 2px; }
 .desc { margin: 0; line-height: 1.6; }

@@ -177,6 +177,34 @@ function zeitStatus(e, datum = state.datum) {
   return { art: "past", text: "Schon vorbei", kurz: "vorbei" };
 }
 
+/**
+ * Herbstlaub: Wie weit ist das Laub am Tag `datum`? (nach typischen Jahren bzw. dem Vorjahr)
+ * Daten-Feld: "laub": { beginn, von, bis } – beginn = färbt sich, von–bis = Höhepunkt.
+ */
+const LAUB_STUFEN = {
+  gruen:   { icon: "🌿", farbe: "#5f8f3e", name: "Noch grün" },
+  faerbt:  { icon: "🍁", farbe: "#d9a21b", name: "Färbt sich" },
+  hoch:    { icon: "🍁", farbe: "#c8361f", name: "Höhepunkt" },
+  vorbei:  { icon: "🍂", farbe: "#8a6a4f", name: "Meist vorbei" },
+};
+function laubStatus(e, datum = state.datum) {
+  const l = e.laub;
+  if (!l) return null;
+  const kurzDatum = (iso) => datumSchoen(iso, { day: "numeric", month: "numeric" });
+  let stufe, text, kurz;
+  if (datum < l.beginn) {
+    stufe = "gruen"; text = `Noch grün – färbt sich ab ca. ${kurzDatum(l.beginn)}`; kurz = "noch grün";
+  } else if (datum < l.von) {
+    const n = tageZwischen(datum, l.von);
+    stufe = "faerbt"; text = `Färbt sich – Höhepunkt in ca. ${n} ${n === 1 ? "Tag" : "Tagen"}`; kurz = `färbt sich`;
+  } else if (datum <= l.bis) {
+    stufe = "hoch"; text = "Höhepunkt! (laut Vorjahren)"; kurz = "Höhepunkt";
+  } else {
+    stufe = "vorbei"; text = "Meist schon vorbei"; kurz = "vorbei";
+  }
+  return { stufe, text, kurz, ...LAUB_STUFEN[stufe] };
+}
+
 function distanzKm(a, b) {
   const R = 6371, rad = Math.PI / 180;
   const dLat = (b.lat - a.lat) * rad, dLng = (b.lng - a.lng) * rad;
@@ -370,9 +398,13 @@ function markerZeichnen() {
     if (e.zeitraum && istAktiv(e)) klassen.push("live");
     if (state.besucht.has(e.id)) klassen.push("done");
     if (e.eigen) klassen.push("mine");
+    // Herbstlaub: Pin-Farbe zeigt den Laub-Stand am gewählten Tag
+    const laub = laubStatus(e);
+    if (laub?.stufe === "hoch") klassen.push("live");
+    const farbe = laub ? laub.farbe : k.farbe;
     const icon = L.divIcon({
       className: "pin-wrap",
-      html: `<i class="pin-schatten" style="--d:${Math.min(i * 12, 400)}ms"></i><div class="${klassen.join(" ")}" style="--c:${k.farbe};--d:${Math.min(i * 12, 400)}ms"><span>${k.icon}</span></div>`,
+      html: `<i class="pin-schatten" style="--d:${Math.min(i * 12, 400)}ms"></i><div class="${klassen.join(" ")}" style="--c:${farbe};--d:${Math.min(i * 12, 400)}ms"><span>${laub ? laub.icon : k.icon}</span></div>`,
       iconSize: [40, 40],
       iconAnchor: [20, 44],
     });
@@ -565,7 +597,13 @@ function sheetOeffnen(e) {
     .map((z) => (z.von === z.bis ? datumSchoen(z.von) : `${datumSchoen(z.von)} – ${datumSchoen(z.bis)}`))
     .join(" · ");
 
+  const laub = laubStatus(e);
+  const laubZeit = e.laub && `Höhepunkt ca. ${datumSchoen(e.laub.von, { day: "numeric", month: "numeric" })}–${datumSchoen(e.laub.bis, { day: "numeric", month: "numeric" })}`;
+
   const fakten = [
+    ["🍁", laubZeit],
+    ["📊", e.laub?.vorjahr && `Letztes Jahr: ${e.laub.vorjahr}`],
+    ["🎨", e.laub?.farbe && `Farben: ${e.laub.farbe}`],
     ["🗓️", zeitraeume],
     ["🕒", e.zeiten],
     ["💴", e.preis],
@@ -584,6 +622,7 @@ function sheetOeffnen(e) {
       <div class="kicker">
         <span class="badge cat" style="--c:${esc(k.farbe)}">${k.icon} ${esc(k.name)}</span>
         ${status ? `<span class="badge ${status.art}">${esc(status.text)}</span>` : ""}
+        ${laub ? `<span class="badge laub" style="--c:${laub.farbe}">${laub.icon} ${esc(laub.text)}</span>` : ""}
         ${e.zeitraum && e.geprueft === false ? `<span class="badge warn" title="Datum geschätzt – bitte vorher prüfen">⚠️ Datum unbestätigt</span>` : ""}
         ${e.eigen ? `<span class="badge">✏️ Mein Ort</span>` : ""}
       </div>
@@ -841,6 +880,19 @@ function panelZeichnen(suchbegriff = "") {
     if (bald.length) {
       html += `<h3 class="section-title">⏳ Startet bald</h3>`;
       html += `<div class="list">${bald.map((e, i) => listItem(e, i, zeitStatus(e).kurz)).join("")}</div>`;
+    }
+    // Herbstlaub: was ist an diesem Tag auf dem Höhepunkt / färbt sich gerade?
+    const laubOrte = state.eintraege.filter((e) => e.laub);
+    const aufHoehe = laubOrte.filter((e) => laubStatus(e).stufe === "hoch");
+    const faerbt = laubOrte.filter((e) => laubStatus(e).stufe === "faerbt")
+      .sort((a, b) => a.laub.von.localeCompare(b.laub.von));
+    if (aufHoehe.length) {
+      html += `<h3 class="section-title">🍁 Herbstlaub auf dem Höhepunkt (${aufHoehe.length})</h3>`;
+      html += `<div class="list">${nachDistanz(aufHoehe).map((e, i) => listItem(e, i, "Höhepunkt")).join("")}</div>`;
+    }
+    if (faerbt.length) {
+      html += `<h3 class="section-title">🍂 Färbt sich gerade (${faerbt.length})</h3>`;
+      html += `<div class="list">${faerbt.slice(0, 12).map((e, i) => listItem(e, i, "ab " + datumSchoen(e.laub.von, { day: "numeric", month: "numeric" }))).join("")}</div>`;
     }
   }
 

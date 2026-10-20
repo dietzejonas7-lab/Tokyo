@@ -15,7 +15,7 @@ const OrtFotos = {
   aktiv: (() => { try { return JSON.parse(localStorage.getItem("tokio.ortFotos") ?? "true"); } catch { return true; } })(),
   cache: (() => { try { localStorage.removeItem("tokio.fotoCache"); return JSON.parse(localStorage.getItem("tokio.fotoCache2")) || {}; } catch { return {}; } })(),
   // Nur bei diesen Kategorien zeigt ein Foto aus der direkten Umgebung wirklich den Ort
-  UMGEBUNG_OK: ["gaerten", "nachttempel", "goshuin", "stempel"],
+  UMGEBUNG_OK: ["gaerten", "herbstlaub", "nachttempel", "goshuin", "stempel"],
   laufend: new Map(),
 
   umschalten(an = !this.aktiv) {
