@@ -125,4 +125,4 @@ manifest.webmanifest    ← App-Name und Icon für den Home-Bildschirm
 
 **Auf dem Computer testen:** Im Projektordner `python3 -m http.server` ausführen und dann http://localhost:8000 öffnen. Ein Doppelklick auf `index.html` funktioniert nicht, weil der Browser dann die Daten-Dateien nicht laden darf.
 
-Kartendaten © OpenStreetMap-Mitwirkende, Kartenstil © CARTO. Karten-Bibliothek: Leaflet (BSD-2) und Leaflet.markercluster (MIT).
+Kartendaten © OpenStreetMap-Mitwirkende (Ersatz-Kartendienst: Esri). Karten-Bibliothek: Leaflet (BSD-2) und Leaflet.markercluster (MIT).

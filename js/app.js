@@ -18,10 +18,20 @@
 /* ---------- 1. Einstellungen ---------- */
 const REISE = { von: "2026-11-01", bis: "2026-11-25" };
 const START_ANSICHT = { lat: 35.6895, lng: 139.7400, zoom: 12 };
-const KARTEN_STIL = {
-  light: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
-  dark: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-};
+// Kartendienste ohne API-Schlüssel. Lädt der erste nicht, wird automatisch der nächste genommen.
+// Der Dunkelmodus der Karte entsteht per CSS-Filter (siehe style.css).
+const KARTEN_DIENSTE = [
+  {
+    url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  },
+  {
+    url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+    maxZoom: 19,
+    attribution: "Tiles &copy; Esri",
+  },
+];
 const SPEICHER = {
   besucht: "tokio.besucht",
   eigene: "tokio.eigene",
@@ -158,7 +168,7 @@ function alleEintraegeNeu(ausDateien = state.eintraege.filter((e) => !e.eigen)) 
 let map, tiles, cluster, meinMarker;
 
 function karteStarten() {
-  map = L.map("map", { zoomControl: false, tapHold: true, attributionControl: true })
+  map = L.map("map", { zoomControl: false, tapHold: true, attributionControl: true, maxZoom: 19 })
     .setView([START_ANSICHT.lat, START_ANSICHT.lng], START_ANSICHT.zoom);
   tilesSetzen();
 
@@ -175,14 +185,17 @@ function karteStarten() {
   map.on("click", () => { sheetSchliessen(); });
 }
 
-function tilesSetzen() {
-  const dunkel = document.documentElement.dataset.theme === "dark";
+function tilesSetzen(nr = 0) {
   if (tiles) map.removeLayer(tiles);
-  tiles = L.tileLayer(dunkel ? KARTEN_STIL.dark : KARTEN_STIL.light, {
-    maxZoom: 20,
-    subdomains: "abcd",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-  }).addTo(map);
+  const dienst = KARTEN_DIENSTE[nr];
+  let geladen = false, fehler = 0;
+  tiles = L.tileLayer(dienst.url, { maxZoom: dienst.maxZoom, attribution: dienst.attribution })
+    .on("tileload", () => (geladen = true))
+    .on("tileerror", () => {
+      // Kommt vom aktuellen Dienst gar nichts an, zum nächsten wechseln
+      if (!geladen && ++fehler === 4 && nr + 1 < KARTEN_DIENSTE.length) tilesSetzen(nr + 1);
+    })
+    .addTo(map);
 }
 
 function clusterIcon(c) {
@@ -684,7 +697,6 @@ function themeSetzen(theme) {
   document.documentElement.dataset.theme = theme;
   $("#btn-theme").textContent = theme === "dark" ? "☀️" : "🌙";
   document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#0f0d22" : "#f6f1ea";
-  if (map) tilesSetzen();
 }
 
 function splashBlueten() {
