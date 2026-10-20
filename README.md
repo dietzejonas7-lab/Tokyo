@@ -14,7 +14,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | ✨ | Illuminationen | Lichter-Events, **gefiltert nach dem gewählten Tag** |
 | 🎏 | Events & Feste | Festivals, Feste und besondere Tage, **gefiltert nach dem gewählten Tag** |
 | 🎡 | Attraktionen | teamLab, PokéPark KANTO, Aquarien, Aussichtstürme, Freizeitparks |
-| 🍁 | Gärten | Edo-Gärten, Ginkgo-Allee, Herbstlaub |
+| 🌳 | Gärten | Edo-Gärten mit Teehäusern |
 | 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |
 | 🍁 | Herbstlaub | 62 Koyo-Orte. Die Pin-Farbe zeigt den Laub-Stand am gewählten Tag (grün → färbt sich → Höhepunkt → vorbei) |
 | 🚇 | Bahnhofs-Stempel | Alle 78 offiziellen JR-East-Stempel der Tokio-Serie, 56 Toei-U-Bahn-Stationen, Metro-Museum, Ekitag & Garten-Stempelrallye – zum Abhaken |
