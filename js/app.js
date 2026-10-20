@@ -26,8 +26,13 @@ const VEKTOR_KARTE = {
 };
 // Eigene Kartenfarben passend zum App-Design (nur Flächen – Straßen bleiben wie im Original)
 const KARTEN_FARBEN = {
-  light: { hintergrund: "#f3ede2", wasser: "#9cc2dd", gruen: "#cfe2bd", gebaeude: "#e3d9c8" },
-  dark: { hintergrund: "#121029", wasser: "#0c1f3f", gruen: "#15302b", gebaeude: "#211d45" },
+  light: { hintergrund: "#eef0f7", wasser: "#b5d6f2", gruen: "#d2ecd8", gebaeude: "#e2e0ef" },
+  dark: {
+    hintergrund: "#0a0818", wasser: "#071a3a", gruen: "#0c2420", gebaeude: "#1a1538",
+    // Neon-Straßen: Autobahnen pink, Hauptstraßen lila, der Rest dunkel
+    neon: { schnell: "#ff2bd6", haupt: "#9d4dff", neben: "#3a2f78", klein: "#221c48", rand: "#0a0818" },
+    text: "#cfc8ff", textRand: "#07060f",
+  },
 };
 // Sprache der Kartenbeschriftung: erst Deutsch, dann Englisch, dann lateinische Schrift, sonst Japanisch
 const KARTEN_SPRACHE = ["name:de", "name_de", "name:en", "name_en", "name:latin", "name"];
@@ -50,6 +55,7 @@ const SPEICHER = {
   aktiv: "tokio.aktiveKategorien",
   bekannt: "tokio.bekannteKategorien",
   theme: "tokio.theme",
+  design: "tokio.designVersion",
 };
 
 const state = {
@@ -295,6 +301,18 @@ function kartenFarben(stil, theme) {
       else if (id.includes("building")) layer.paint["fill-color"] = f.gebaeude;
     }
     if (layer.type === "fill-extrusion" && id.includes("building")) layer.paint["fill-extrusion-color"] = f.gebaeude;
+    if (!f.neon) return;
+    if (layer.type === "line" && !/water|rail|boundary|admin|ferry|aeroway/.test(id) && /road|highway|street|motorway|trunk|primary|secondary|tertiary|minor|service|path|bridge|tunnel/.test(id)) {
+      if (id.includes("casing")) layer.paint["line-color"] = f.neon.rand;
+      else if (/motorway|trunk/.test(id)) layer.paint["line-color"] = f.neon.schnell;
+      else if (/primary/.test(id)) layer.paint["line-color"] = f.neon.haupt;
+      else if (/secondary|tertiary/.test(id)) layer.paint["line-color"] = f.neon.neben;
+      else layer.paint["line-color"] = f.neon.klein;
+    }
+    if (layer.type === "symbol" && layer.layout?.["text-field"]) {
+      layer.paint["text-color"] = f.text;
+      layer.paint["text-halo-color"] = f.textRand;
+    }
   });
   return stil;
 }
@@ -664,7 +682,7 @@ async function fotoEntfernen(e) {
 
 /** Kleine Feier-Animation beim Sammeln */
 function konfetti() {
-  const farben = ["#e5383b", "#ff8fab", "#f7b500", "#2fae6f", "#2f8cff", "#8f5bff"];
+  const farben = ["#ff2bd6", "#00f0ff", "#ffe600", "#39ff88", "#9d4dff", "#ff4d6d"];
   for (let i = 0; i < 28; i++) {
     const p = document.createElement("i");
     const winkel = Math.random() * Math.PI * 2, weite = 80 + Math.random() * 140;
@@ -1007,7 +1025,7 @@ function modal(id, auf) {
 function themeSetzen(theme) {
   document.documentElement.dataset.theme = theme;
   $("#btn-theme span").textContent = theme === "dark" ? "☀️" : "🌙";
-  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#0f0d22" : "#f6f1ea";
+  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#07060f" : "#f4f2fb";
   if (vektor) karteSetzen(); // Vektor-Karte hat einen eigenen Dunkel-Stil
 }
 
@@ -1087,8 +1105,12 @@ function ereignisseVerbinden() {
 
 /* ---------- 10. Start ---------- */
 async function start() {
-  const gespeichertesTheme = laden(SPEICHER.theme, null);
-  themeSetzen(gespeichertesTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  // Neon-Design: startet einmalig im Nacht-Modus, danach gilt deine Auswahl
+  if (laden(SPEICHER.design, 0) < 2) {
+    speichern(SPEICHER.design, 2);
+    speichern(SPEICHER.theme, "dark");
+  }
+  themeSetzen(laden(SPEICHER.theme, "dark"));
   splashBlueten();
   Effekte.titelZerlegen($("#splash .kanji"));
   Effekte.wellenAktivieren();

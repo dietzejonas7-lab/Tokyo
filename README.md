@@ -120,7 +120,7 @@ Pflicht sind nur `id`, `name`, `lat` und `lng`. Alles andere ist optional.
 
 ```
 index.html              ← das Gerüst der Seite
-css/style.css           ← Farben, Design, Animationen (Farben ganz oben änderbar)
+css/style.css           ← Neon-Design, Farben & Animationen (Farben ganz oben änderbar)
 js/app.js               ← die Logik (Karte, Filter, Kalender …), mit Kommentaren
 js/effekte.js           ← Animationen & Effekte (Stempel, Übergänge, Wellen)
 data/kategorien.json    ← Liste aller Kategorien
