@@ -38,7 +38,8 @@
     "farbe": "#2f8cff",
     "datei": "bahnhof-stempel.json",
     "sammelbar": true,
-    "beschreibung": "Eki-Stempel zum Sammeln. Hake ab, was du schon hast!"
+    "beschreibung": "Eki-Stempel zum Sammeln. Hake ab, was du schon hast!",
+    "bildersuche": ""
   },
   {
     "id": "goshuin",
@@ -47,7 +48,8 @@
     "farbe": "#e5383b",
     "datei": "goshuin.json",
     "sammelbar": true,
-    "beschreibung": "Tempel & Schreine mit Goshuin (handgeschriebene Siegel)."
+    "beschreibung": "Tempel & Schreine mit Goshuin (handgeschriebene Siegel).",
+    "bildersuche": "御朱印"
   },
   {
     "id": "goshuincho",
@@ -55,6 +57,7 @@
     "icon": "📕",
     "farbe": "#8f5bff",
     "datei": "goshuincho-limitiert.json",
-    "beschreibung": "Zeitlich begrenzte Goshuin-Bücher & Sonder-Goshuin – tagesaktuell gefiltert."
+    "beschreibung": "Zeitlich begrenzte Goshuin-Bücher & Sonder-Goshuin – tagesaktuell gefiltert.",
+    "bildersuche": "御朱印帳"
   }
 ]

@@ -3,60 +3,185 @@
     "id": "sensoji-nacht",
     "name": "Sensō-ji bei Nacht",
     "nameJa": "浅草寺 ライトアップ",
-    "lat": 35.7148, "lng": 139.7967,
+    "lat": 35.7148,
+    "lng": 139.7967,
     "beschreibung": "Tokios ältester Tempel wird jeden Abend angestrahlt. Nach Ladenschluss der Nakamise-dori fast menschenleer – magische Stimmung, ideal für Fotos von Pagode und Kaminarimon.",
     "zeiten": "Beleuchtung ca. Sonnenuntergang–23:00 (Gelände offen)",
     "preis": "kostenlos",
     "station": "Asakusa",
-    "tags": ["Pagode", "Fotospot", "täglich"]
+    "tags": [
+      "Pagode",
+      "Fotospot",
+      "täglich"
+    ]
   },
   {
     "id": "zojoji-nacht",
     "name": "Zōjō-ji mit Tokyo Tower",
     "nameJa": "増上寺と東京タワー",
-    "lat": 35.6575, "lng": 139.7484,
+    "lat": 35.6575,
+    "lng": 139.7484,
     "beschreibung": "Das Sangedatsumon-Tor und die Haupthalle vor dem leuchtenden Tokyo Tower – eines der ikonischsten Nachtmotive Tokios. Das Tor ist abends geschlossen, aber von außen toll zu sehen.",
     "zeiten": "Tokyo Tower leuchtet bis 24:00",
     "preis": "kostenlos",
     "station": "Onarimon / Shibakoen / Daimon",
-    "tags": ["Tokyo Tower", "Fotospot", "täglich"]
+    "tags": [
+      "Tokyo Tower",
+      "Fotospot",
+      "täglich"
+    ]
   },
   {
     "id": "kanda-myojin-nacht",
     "name": "Kanda Myōjin am Abend",
     "nameJa": "神田明神",
-    "lat": 35.7020, "lng": 139.7679,
-    "beschreibung": "Prächtiger Schrein mit Laternen nahe Akihabara – perfekt nach einer Shopping-Tour. Der Schreinbezirk ist auch abends betretbar.",
-    "zeiten": "Gelände abends offen",
+    "lat": 35.702,
+    "lng": 139.7679,
+    "beschreibung": "Prächtiger Schrein nahe Akihabara. Das Gelände ist rund um die Uhr offen und die Gebäude sind jeden Abend bis 23 Uhr beleuchtet – perfekt nach einer Shopping-Tour.",
+    "zeiten": "Gelände 24 h offen, Beleuchtung bis 23:00",
     "preis": "kostenlos",
     "station": "Ochanomizu / Akihabara / Suehirocho",
-    "tags": ["Laternen", "Akihabara"]
+    "tags": [
+      "Laternen",
+      "Akihabara"
+    ]
   },
   {
     "id": "akagi-jinja-nacht",
     "name": "Akagi-Jinja (Kagurazaka)",
     "nameJa": "赤城神社",
-    "lat": 35.7036, "lng": 139.7334,
+    "lat": 35.7036,
+    "lng": 139.7334,
     "beschreibung": "Moderner Glas-Schrein (Architekt Kengo Kuma), abends sanft beleuchtet. Danach durch die Gassen von Kagurazaka bummeln.",
     "zeiten": "abends beleuchtet",
     "preis": "kostenlos",
     "station": "Kagurazaka",
-    "tags": ["Architektur", "Kagurazaka"]
+    "tags": [
+      "Architektur",
+      "Kagurazaka"
+    ]
   },
   {
     "id": "tori-no-ichi",
     "name": "Tori-no-Ichi im Ōtori-Jinja",
     "nameJa": "酉の市 鷲神社",
-    "lat": 35.7238, "lng": 139.7919,
+    "lat": 35.7238,
+    "lng": 139.7919,
     "beschreibung": "Großes Glücks-Fest mit hunderten Laternen und Ständen voller Kumade (Glücksrechen). Läuft 24 Stunden – nachts am stimmungsvollsten! Rufe und Klatschen, wenn ein Kumade verkauft wird.",
     "zeiten": "0:00–24:00",
     "preis": "kostenlos",
     "zeitraum": [
-      { "von": "2026-11-07", "bis": "2026-11-07" },
-      { "von": "2026-11-19", "bis": "2026-11-19" }
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
     ],
     "geprueft": true,
     "station": "Iriya / Asakusa",
-    "tags": ["Fest", "Laternen", "Kumade"]
+    "tags": [
+      "Fest",
+      "Laternen",
+      "Kumade"
+    ]
+  },
+  {
+    "id": "hanazono-nacht",
+    "name": "Hanazono-Jinja (Shinjuku)",
+    "nameJa": "花園神社",
+    "lat": 35.693,
+    "lng": 139.705,
+    "beschreibung": "Schrein mitten im Nachtleben von Shinjuku, direkt neben dem Golden Gai. Rote Laternen, abends stimmungsvoll und betretbar.",
+    "zeiten": "abends zugänglich",
+    "preis": "kostenlos",
+    "station": "Shinjuku-sanchome",
+    "tags": [
+      "Laternen",
+      "Shinjuku",
+      "Golden Gai"
+    ]
+  },
+  {
+    "id": "hanazono-tori-no-ichi",
+    "name": "Tori-no-Ichi im Hanazono-Jinja",
+    "nameJa": "花園神社 酉の市",
+    "lat": 35.6932,
+    "lng": 139.7047,
+    "beschreibung": "Neben Asakusa das bekannteste Tori-no-Ichi Tokios: hunderte Stände mit Kumade-Glücksrechen, Laternen und Essensständen – bis tief in die Nacht.",
+    "zeiten": "ganztägig, abends am schönsten",
+    "preis": "kostenlos",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      },
+      {
+        "von": "2026-11-19",
+        "bis": "2026-11-19"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shinjuku-sanchome",
+    "tags": [
+      "Fest",
+      "Laternen",
+      "Kumade"
+    ]
+  },
+  {
+    "id": "tokyo-daijingu-nacht",
+    "name": "Tōkyō Daijingū am Abend",
+    "nameJa": "東京大神宮",
+    "lat": 35.6997,
+    "lng": 139.7464,
+    "beschreibung": "Wird in Reiseführern unter den Schreinen genannt, die man auch abends besuchen kann. Ruhige Atmosphäre nach Feierabend. Schließzeit vorher prüfen.",
+    "zeiten": "auch abends geöffnet (Zeit prüfen)",
+    "preis": "kostenlos",
+    "station": "Iidabashi",
+    "tags": [
+      "Schrein",
+      "Abend"
+    ]
+  },
+  {
+    "id": "toyokawa-inari-nacht",
+    "name": "Toyokawa Inari (Akasaka)",
+    "nameJa": "豊川稲荷 東京別院",
+    "lat": 35.6766,
+    "lng": 139.7299,
+    "beschreibung": "Tempel mit hunderten Fuchsstatuen und roten Laternen-Fahnen – in der Dämmerung besonders mystisch.",
+    "zeiten": "ca. 5:00–20:00",
+    "preis": "kostenlos",
+    "station": "Akasaka-mitsuke / Aoyama-itchome",
+    "tags": [
+      "Füchse",
+      "Laternen",
+      "Tempel"
+    ]
+  },
+  {
+    "id": "takahata-fudo-light",
+    "name": "Takahata Fudōson – Lichterabend",
+    "nameJa": "高幡不動尊 もみじまつり",
+    "lat": 35.6612,
+    "lng": 139.4128,
+    "beschreibung": "Großer Tempel mit fünfstöckiger Pagode im Westen Tokios. Zur Herbstlaub-Zeit werden an zwei Abenden Lichter entzündet. Ca. 45 Min. ab Shinjuku (Keio-Linie).",
+    "zeiten": "abends",
+    "zeitraum": [
+      {
+        "von": "2026-11-22",
+        "bis": "2026-11-23"
+      }
+    ],
+    "geprueft": false,
+    "station": "Takahatafudo",
+    "tags": [
+      "Pagode",
+      "Koyo",
+      "Ausflug"
+    ]
   }
 ]

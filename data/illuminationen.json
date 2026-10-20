@@ -3,159 +3,323 @@
     "id": "asakusa-culture-lights",
     "name": "Asakusa Culture & Lights 2026",
     "nameJa": "ASAKUSA CULTURE & LIGHTS 2026",
-    "lat": 35.7148, "lng": 139.7967,
+    "lat": 35.7148,
+    "lng": 139.7967,
     "beschreibung": "Kostenlose Projection Mapping auf Haupthalle und Hōzōmon-Tor des Sensō-ji. Zusätzlich (kostenpflichtig) Sonderöffnung des sonst geschlossenen Denbōin-Gartens.",
     "zeiten": "9:00–21:00",
-    "zeitraum": [{ "von": "2026-10-30", "bis": "2026-11-03" }],
+    "zeitraum": [
+      {
+        "von": "2026-10-30",
+        "bis": "2026-11-03"
+      }
+    ],
     "geprueft": true,
     "station": "Asakusa",
-    "tags": ["Projection Mapping", "Tempel", "kostenlos"]
+    "tags": [
+      "Projection Mapping",
+      "Tempel",
+      "kostenlos"
+    ]
   },
   {
     "id": "roppongi-keyakizaka",
     "name": "Roppongi Hills – Keyakizaka-Illumination",
     "nameJa": "六本木ヒルズ けやき坂イルミネーション",
-    "lat": 35.6593, "lng": 139.7298,
+    "lat": 35.6593,
+    "lng": 139.7298,
     "beschreibung": "Thema 2026 „SNOW & BLUE“: ca. 970.000 LEDs in Weiß und Blau entlang der Keyakizaka-Straße, mit Tokyo Tower im Hintergrund. Ab 21.11. zusätzlich Weihnachtsmarkt.",
     "zeiten": "17:00–22:00",
-    "zeitraum": [{ "von": "2026-11-05", "bis": "2026-12-25" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-05",
+        "bis": "2026-12-25"
+      }
+    ],
     "geprueft": true,
     "station": "Roppongi",
-    "tags": ["Tokyo Tower", "Fotospot", "kostenlos"],
-    "links": [{ "titel": "Roppongi Hills", "url": "https://www.roppongihills.com/" }]
+    "tags": [
+      "Tokyo Tower",
+      "Fotospot",
+      "kostenlos"
+    ],
+    "links": [
+      {
+        "titel": "Roppongi Hills",
+        "url": "https://www.roppongihills.com/"
+      }
+    ]
   },
   {
     "id": "roppongi-xmas-market",
     "name": "Roppongi Hills Weihnachtsmarkt",
     "nameJa": "六本木ヒルズ クリスマスマーケット",
-    "lat": 35.6603, "lng": 139.7293,
+    "lat": 35.6603,
+    "lng": 139.7293,
     "beschreibung": "Deutscher Weihnachtsmarkt unter dem Ōyane-Plaza – Glühwein in Tokio!",
     "zeiten": "11:00–21:00",
-    "zeitraum": [{ "von": "2026-11-21", "bis": "2026-12-25" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-12-25"
+      }
+    ],
     "geprueft": true,
     "station": "Roppongi",
-    "tags": ["Weihnachtsmarkt"]
+    "tags": [
+      "Weihnachtsmarkt"
+    ]
   },
   {
     "id": "marunouchi",
     "name": "Marunouchi Bright Holiday",
     "nameJa": "丸の内 ブライトホリデー",
-    "lat": 35.6800, "lng": 139.7637,
+    "lat": 35.68,
+    "lng": 139.7637,
     "beschreibung": "Champagnergoldene Lichter in den Bäumen der Naka-dori zwischen Tokyo Station und Kaiserpalast – elegant und ruhig zum Spazieren.",
     "zeiten": "ca. 16:00–23:00",
-    "zeitraum": [{ "von": "2026-11-12", "bis": "2026-12-25" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-12",
+        "bis": "2026-12-25"
+      }
+    ],
     "geprueft": true,
     "station": "Tokyo / Nijubashimae",
-    "tags": ["Spaziergang", "kostenlos"]
+    "tags": [
+      "Spaziergang",
+      "kostenlos"
+    ]
   },
   {
     "id": "midtown-yaesu",
     "name": "Midtown Yaesu Christmas",
     "nameJa": "MIDTOWN YAESU CHRISTMAS 2026",
-    "lat": 35.6797, "lng": 139.7690,
+    "lat": 35.6797,
+    "lng": 139.769,
     "beschreibung": "Weihnachtsdeko & Lichter am neuen Hochhaus direkt an der Yaesu-Seite der Tokyo Station.",
     "zeiten": "abends",
-    "zeitraum": [{ "von": "2026-11-19", "bis": "2026-12-25" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-19",
+        "bis": "2026-12-25"
+      }
+    ],
     "geprueft": true,
     "station": "Tokyo",
-    "tags": ["Weihnachten"]
+    "tags": [
+      "Weihnachten"
+    ]
   },
   {
     "id": "tokyo-midtown",
     "name": "Tokyo Midtown – Midwinter Lights",
     "nameJa": "東京ミッドタウン MIDWINTER LIGHTS",
-    "lat": 35.6658, "lng": 139.7311,
+    "lat": 35.6658,
+    "lng": 139.7311,
     "beschreibung": "Licht-Show auf dem Rasen hinter Tokyo Midtown, 2026 mit schwebenden Seifenblasen (bis 20.12.). Startet erst kurz nach deiner Reise – nur am 25.11. erlebbar!",
     "zeiten": "17:00–23:00",
-    "zeitraum": [{ "von": "2026-11-26", "bis": "2026-12-25" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-26",
+        "bis": "2026-12-25"
+      }
+    ],
     "geprueft": true,
     "station": "Roppongi",
-    "tags": ["Licht-Show", "kostenlos"]
+    "tags": [
+      "Licht-Show",
+      "kostenlos"
+    ]
   },
   {
     "id": "rikugien-light",
     "name": "Rikugien – Herbstlaub bei Nacht",
     "nameJa": "六義園 紅葉と大名庭園のライトアップ",
-    "lat": 35.7330, "lng": 139.7468,
+    "lat": 35.733,
+    "lng": 139.7468,
     "beschreibung": "Beleuchtetes Herbstlaub im Edo-Garten, Spiegelungen im Teich. Garten schließt um 17 Uhr und öffnet abends neu. Lange Schlangen – Vorverkaufsticket lohnt sich.",
     "zeiten": "18:00–20:30 (Einlass bis 19:30)",
     "preis": "1.000 ¥ Vorverkauf / 1.200 ¥ vor Ort",
-    "zeitraum": [{ "von": "2026-11-25", "bis": "2026-12-06" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-25",
+        "bis": "2026-12-06"
+      }
+    ],
     "geprueft": true,
     "station": "Komagome",
-    "tags": ["Koyo", "Garten", "Light-up"]
+    "tags": [
+      "Koyo",
+      "Garten",
+      "Light-up"
+    ]
   },
   {
     "id": "hibiya-magic-time",
     "name": "Hibiya Magic Time Illumination",
     "nameJa": "日比谷マジックタイムイルミネーション",
-    "lat": 35.6740, "lng": 139.7594,
+    "lat": 35.674,
+    "lng": 139.7594,
     "beschreibung": "Lichter-Platz vor Tokyo Midtown Hibiya mit großem Baum. Termine 2026 noch nicht bestätigt (2025: ab 13.11.).",
     "zeiten": "ca. 17:00–23:00",
-    "zeitraum": [{ "von": "2026-11-12", "bis": "2027-02-28" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-12",
+        "bis": "2027-02-28"
+      }
+    ],
     "geprueft": false,
     "station": "Hibiya",
-    "tags": ["Weihnachten"]
+    "tags": [
+      "Weihnachten"
+    ]
   },
   {
     "id": "caretta-shiodome",
     "name": "Caretta Shiodome",
     "nameJa": "カレッタ汐留 イルミネーション",
-    "lat": 35.6643, "lng": 139.7620,
+    "lat": 35.6643,
+    "lng": 139.762,
     "beschreibung": "Bekannt für Licht-Shows mit Musik („Blue Ocean“-artige Inszenierungen). Termine 2026 noch nicht bestätigt – meist ab Mitte November.",
     "zeiten": "ca. 17:00–23:00",
-    "zeitraum": [{ "von": "2026-11-13", "bis": "2026-12-25" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-12-25"
+      }
+    ],
     "geprueft": false,
     "station": "Shiodome",
-    "tags": ["Licht-Show"]
+    "tags": [
+      "Licht-Show"
+    ]
   },
   {
     "id": "ebisu-baccarat",
     "name": "Ebisu Garden Place – Baccarat-Lüster",
     "nameJa": "恵比寿ガーデンプレイス バカラ シャンデリア",
-    "lat": 35.6422, "lng": 139.7136,
+    "lat": 35.6422,
+    "lng": 139.7136,
     "beschreibung": "Ein riesiger Kristall-Kronleuchter unter freiem Himmel – romantischer Klassiker. Termine 2026 noch nicht bestätigt (meist Anfang Nov. bis Anfang Jan.).",
     "zeiten": "ca. 16:00–24:00",
-    "zeitraum": [{ "von": "2026-11-07", "bis": "2027-01-11" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2027-01-11"
+      }
+    ],
     "geprueft": false,
     "station": "Ebisu",
-    "tags": ["Kronleuchter", "Fotospot"]
+    "tags": [
+      "Kronleuchter",
+      "Fotospot"
+    ]
   },
   {
     "id": "tokyo-dome-city",
     "name": "Tokyo Dome City Winter-Illumination",
     "nameJa": "東京ドームシティ ウィンターイルミネーション",
-    "lat": 35.7056, "lng": 139.7519,
+    "lat": 35.7056,
+    "lng": 139.7519,
     "beschreibung": "Lichter rund um Achterbahn und Riesenrad. Termine 2026 noch nicht bestätigt (meist ab Mitte Nov.).",
     "zeiten": "ca. 17:00–24:00",
-    "zeitraum": [{ "von": "2026-11-13", "bis": "2027-02-28" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2027-02-28"
+      }
+    ],
     "geprueft": false,
     "station": "Suidobashi / Korakuen",
-    "tags": ["Freizeitpark"]
+    "tags": [
+      "Freizeitpark"
+    ]
   },
   {
     "id": "skytree-christmas",
     "name": "Tokyo Skytree Town – Dream Christmas",
     "nameJa": "東京スカイツリータウン ドリームクリスマス",
-    "lat": 35.7100, "lng": 139.8107,
+    "lat": 35.71,
+    "lng": 139.8107,
     "beschreibung": "Weihnachtsbaum, Lichter und Eisbahn am Skytree. Termine 2026 noch nicht bestätigt (meist ab Mitte Nov.).",
     "zeiten": "abends",
-    "zeitraum": [{ "von": "2026-11-13", "bis": "2026-12-25" }],
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-12-25"
+      }
+    ],
     "geprueft": false,
     "station": "Oshiage (Skytree)",
-    "tags": ["Skytree", "Weihnachten"]
+    "tags": [
+      "Skytree",
+      "Weihnachten"
+    ]
   },
   {
     "id": "yomiuriland",
     "name": "Yomiuriland Jewellumination",
     "nameJa": "よみうりランド ジュエルミネーション",
-    "lat": 35.6255, "lng": 139.5175,
+    "lat": 35.6255,
+    "lng": 139.5175,
     "beschreibung": "Eine der größten Illuminationen Kantos: Millionen Lichter in Juwelenfarben, Wasser- und Licht-Shows. Etwas außerhalb (ca. 45 Min. ab Shinjuku). Läuft traditionell ab Mitte Oktober – 2026 bitte bestätigen.",
     "zeiten": "ca. 16:00–20:30",
     "preis": "Eintritt Park",
-    "zeitraum": [{ "von": "2026-10-16", "bis": "2027-05-31" }],
+    "zeitraum": [
+      {
+        "von": "2026-10-16",
+        "bis": "2027-05-31"
+      }
+    ],
     "geprueft": false,
     "station": "Keio-Yomiuri-Land",
-    "tags": ["Freizeitpark", "Ausflug"]
+    "tags": [
+      "Freizeitpark",
+      "Ausflug"
+    ]
+  },
+  {
+    "id": "koishikawa-light",
+    "name": "Koishikawa Kōrakuen – Herbstlaub bei Nacht",
+    "nameJa": "小石川後楽園 深山“光”葉を楽しむ",
+    "lat": 35.7056,
+    "lng": 139.7495,
+    "beschreibung": "Nächtliche Sonderöffnung des ältesten Gartens Tokios mit beleuchtetem Herbstlaub und der roten Tsutenkyo-Brücke. Termin laut Reiseportalen – bitte offiziell prüfen.",
+    "zeiten": "abends",
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-11-24"
+      }
+    ],
+    "geprueft": false,
+    "station": "Iidabashi / Korakuen",
+    "tags": [
+      "Koyo",
+      "Garten",
+      "Light-up"
+    ]
+  },
+  {
+    "id": "showa-kinen-light",
+    "name": "Shōwa Kinen Park – Herbstnacht-Spaziergang",
+    "nameJa": "昭和記念公園 秋の夜散歩",
+    "lat": 35.7059,
+    "lng": 139.414,
+    "beschreibung": "Beleuchtete Ginkgo-Alleen und Ahorn im japanischen Garten während des Herbstlaub-Festivals. Ausflug in den Westen (Tachikawa).",
+    "zeiten": "abends (nur an bestimmten Tagen – vorher prüfen)",
+    "zeitraum": [
+      {
+        "von": "2026-10-29",
+        "bis": "2026-11-29"
+      }
+    ],
+    "geprueft": true,
+    "station": "Nishi-Tachikawa",
+    "tags": [
+      "Ginkgo",
+      "Koyo",
+      "Ausflug"
+    ]
   }
 ]

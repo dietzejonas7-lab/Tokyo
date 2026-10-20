@@ -9,12 +9,12 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | 🎴 | Anime & Pokémon | Pokémon Center, Akihabara, Nakano Broadway, Kartenläden … |
 | ✨ | Illuminationen | Lichter-Events, **gefiltert nach dem gewählten Tag** |
 | 🍁 | Gärten | Edo-Gärten, Ginkgo-Allee, Herbstlaub |
-| 🏮 | Tempel bei Nacht | Tempel, die abends beleuchtet sind, plus Tori-no-Ichi (7. & 19.11.) |
-| 🚇 | Bahnhofs-Stempel | alle 30 Yamanote-Bahnhöfe, Metro-Museum, Infos zu Ekitag – zum Abhaken |
-| ⛩️ | Goshuin | 21 Tempel und Schreine mit Goshuin – zum Abhaken |
+| 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |
+| 🚇 | Bahnhofs-Stempel | 78 JR-Bahnhöfe in Tokio, das Metro-Museum und Infos zu Ekitag – zum Abhaken |
+| ⛩️ | Goshuin | 21 Tempel und Schreine mit Goshuin – zum Abhaken, mit 📷 eigenem Foto und 🔍 Beispielbildern |
 | 📕 | Limitierte Goshuincho | zeitlich begrenzte Goshuin und Goshuincho, tagesaktuell gefiltert |
 
-**Funktionen:** große Karte · Kategorien an/aus · Kalender (1.–25.11.) mit Event-Punkten · „Was läuft heute?“ · Suche (auch auf Japanisch) · Route über Google Maps · Sammel-Fortschritt · eigene Orte mit Foto · hell und dunkel · funktioniert offline.
+**Funktionen:** große Karte · Kategorien an/aus · Kalender (1.–25.11.) mit Event-Punkten · „Was läuft heute?“ · Suche (auch auf Japanisch) · Route über Google Maps · Sammel-Fortschritt · Fotos deiner Goshuin und Stempel (Galerie) · eigene Orte mit Foto · hell und dunkel · funktioniert offline.
 
 ---
 
@@ -103,7 +103,8 @@ Pflicht sind nur `id`, `name`, `lat` und `lng`. Alles andere ist optional.
 
 - **Bestätigt für 2026** (aus offiziellen Ankündigungen und Presseberichten): Asakusa Culture & Lights (30.10.–3.11.), Roppongi Hills (5.11.–25.12.), Weihnachtsmarkt Roppongi (ab 21.11.), Marunouchi (ab 12.11.), Midtown Yaesu (ab 19.11.), Tokyo Midtown (ab 26.11.), Rikugien Light-up (25.11.–6.12.), Tori-no-Ichi (7. & 19.11.).
 - **⚠️ Datum unbestätigt:** Diese Termine habe ich aus dem Vorjahr geschätzt. Bitte kurz vor dem Besuch auf der offiziellen Seite prüfen und dann in der Datei `"geprueft": true` setzen.
-- **Metro-Stempel:** Die klassischen **Papier-Stempel** gibt es vor allem an **JR-Bahnhöfen**, z. B. an allen 30 Yamanote-Bahnhöfen in der App. **Tokyo Metro** setzt seit 2025 auf **digitale Stempel** über die App **„Ekitag“**, inzwischen an etwa 50 Stationen. Eine vollständige Liste konnte ich nicht zuverlässig finden. Trag die Stationen ein, sobald du sie in der Ekitag-App siehst. Im **Metro-Museum** (Kasai) gibt es Papier-Stempel für alle 9 Linien.
+- **Bahnhofs-Stempel:** Papier-Stempel gibt es vor allem an **JR-Bahnhöfen**. JR East hat im Tokioter Gebiet **78 Bahnhöfe** mit eigenem Stempel. Die App enthält 78 JR-Bahnhöfe in Tokio. Die genaue offizielle Liste konnte ich nicht abrufen, deshalb kann einzelnes abweichen. Wenn ein Stempel fehlt, frag das Personal. **Tokyo Metro** setzt seit 2025 auf **digitale Stempel** über die App **„Ekitag“** (ca. 50 Stationen). Papier-Stempel aller 9 Metro-Linien gibt es im **Metro-Museum** (Kasai). Auch Privatbahnen und Sonderaktionen (Stempel-Rallyes) haben oft eigene Stempel. Die kannst du mit ＋ ergänzen.
+- **Goshuin-Bilder:** Fremde Fotos darf ich wegen der Urheberrechte nicht in die App kopieren. Stattdessen gibt es zwei Knöpfe: **🔍 So sieht's aus** öffnet Google Bilder mit echten Fotos genau dieses Goshuin. Mit **📷 Mein Foto** fotografierst du dein eigenes Goshuin. Es wird dann groß angezeigt und erscheint unter 🏆 Sammlung in deiner Galerie. Die Fotos liegen nur auf deinem Handy. Wenn du die Website-Daten löschst, sind sie weg.
 - **Limitierte Goshuincho:** Für November 2026 waren noch keine konkreten Ausgaben angekündigt. Die meisten Schreine geben solche Bücher erst kurz vorher auf **Instagram** oder **X** bekannt. Gute Suchbegriffe: `#限定御朱印帳`, `#限定御朱印`, `#御朱印帳 東京`. Wenn du etwas findest: über ＋ eintragen, mit Zeitraum und Foto. Ab dann erscheint es tagesaktuell auf der Karte.
 - Öffnungszeiten sind ungefähre Angaben.
 

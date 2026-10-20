@@ -252,6 +252,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
   position: absolute; right: 14px; bottom: 6px; font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 900; font-size: 1.7rem; color: rgba(255, 255, 255, 0.28); white-space: nowrap;
 }
+.hero.mein { height: 360px; background: #111; }
+.hero.mein img { object-fit: contain; }
+.hero-badge {
+  position: absolute; left: 12px; bottom: 10px; padding: 4px 10px; border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55); color: #fff; font-size: 0.75rem; font-weight: 800;
+}
+.actions label.btn { cursor: pointer; }
+.galerie { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.list-item.foto { display: block; padding: 0; aspect-ratio: 3 / 4; overflow: hidden; }
+.list-item.foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
 @keyframes zoomIn { from { transform: scale(1.12); } }
 @keyframes floaty { to { transform: translateY(-10px) rotate(-6deg); } }
 

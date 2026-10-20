@@ -54,6 +54,7 @@ const state = {
   alleZeigen: false,       // Zeitraum-Filter ignorieren?
   besucht: new Set(laden(SPEICHER.besucht, [])),
   eigene: laden(SPEICHER.eigene, []),
+  fotos: new Map(),        // eigene Fotos (z. B. vom Goshuin), gespeichert in IndexedDB
   meinOrt: null,           // GPS-Position
   addModus: false,
   neuerPunkt: null,
@@ -82,6 +83,41 @@ function speichern(key, wert) {
   try { localStorage.setItem(key, JSON.stringify(wert)); return true; }
   catch { toast("⚠️ Speicher voll – evtl. Foto zu groß"); return false; }
 }
+/** Fotos brauchen mehr Platz als localStorage hat – darum IndexedDB (Datenbank im Browser) */
+const fotoSpeicher = {
+  db: null,
+  oeffnen() {
+    this.db ??= new Promise((ok, fehler) => {
+      const r = indexedDB.open("tokio", 1);
+      r.onupgradeneeded = () => r.result.createObjectStore("fotos");
+      r.onsuccess = () => ok(r.result);
+      r.onerror = () => fehler(r.error);
+    });
+    return this.db;
+  },
+  async aktion(modus, fn) {
+    const db = await this.oeffnen();
+    return new Promise((ok, fehler) => {
+      const t = db.transaction("fotos", modus);
+      fn(t.objectStore("fotos"));
+      t.oncomplete = () => ok();
+      t.onerror = () => fehler(t.error);
+    });
+  },
+  async alleLaden() {
+    const fotos = new Map();
+    await this.aktion("readonly", (store) => {
+      store.openCursor().onsuccess = (ev) => {
+        const c = ev.target.result;
+        if (c) { fotos.set(c.key, c.value); c.continue(); }
+      };
+    });
+    return fotos;
+  },
+  setzen: (id, bild) => fotoSpeicher.aktion("readwrite", (store) => store.put(bild, id)),
+  loeschen: (id) => fotoSpeicher.aktion("readwrite", (store) => store.delete(id)),
+};
+
 function esc(text) {
   return String(text ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
@@ -356,9 +392,13 @@ function sheetOeffnen(e) {
   offenerEintrag = e;
   const k = kategorie(e.kategorie);
   const status = zeitStatus(e);
-  const bild = sichereUrl(e.bild || e.foto);
+  const meinFoto = state.fotos.get(e.id);
+  const bild = meinFoto || sichereUrl(e.bild || e.foto);
   const gesammelt = state.besucht.has(e.id);
   const route = `https://www.google.com/maps/dir/?api=1&destination=${e.lat},${e.lng}&travelmode=transit`;
+  // Kategorien mit "bildersuche" bekommen einen Link zu Google Bilder (zeigt echte, aktuelle Fotos)
+  const bilderLink = k.bildersuche === undefined ? "" :
+    "https://www.google.com/search?tbm=isch&q=" + encodeURIComponent(`${e.nameJa || e.name} ${k.bildersuche}`.trim());
 
   const zeitraeume = (e.zeitraum || [])
     .map((z) => (z.von === z.bis ? datumSchoen(z.von) : `${datumSchoen(z.von)} – ${datumSchoen(z.bis)}`))
@@ -374,9 +414,10 @@ function sheetOeffnen(e) {
   ].filter(([, wert]) => wert);
 
   $("#sheet-body").innerHTML = `
-    <div class="hero" style="--c:${esc(k.farbe)}">
+    <div class="hero ${meinFoto ? "mein" : ""}" style="--c:${esc(k.farbe)}">
       ${bild ? `<img src="${esc(bild)}" alt="${esc(e.name)}" loading="lazy">`
              : `<span class="hero-icon">${k.icon}</span><span class="hero-ja">${esc(e.nameJa || "")}</span>`}
+      ${meinFoto ? `<span class="hero-badge">📷 Mein Foto</span>` : ""}
     </div>
     <div class="sheet-content">
       <div class="kicker">
@@ -397,6 +438,10 @@ function sheetOeffnen(e) {
         <button class="btn collect ${gesammelt ? "done" : ""}" id="btn-collect">
           ${gesammelt ? "✓ Erledigt" : k.sammelbar ? "✅ Gesammelt!" : "✅ Besucht"}
         </button>
+        ${bilderLink ? `<a class="btn ghost" href="${bilderLink}" target="_blank" rel="noopener">🔍 So sieht's aus</a>` : ""}
+        <label class="btn ghost ${bilderLink ? "" : "full"}">${meinFoto ? "📷 Foto ändern" : "📷 Mein Foto"}
+          <input type="file" accept="image/*" id="foto-input" hidden></label>
+        ${meinFoto ? `<button class="btn ghost full" id="btn-foto-weg">Foto entfernen</button>` : ""}
         ${e.eigen ? `<button class="btn danger full" id="btn-delete">🗑️ Meinen Ort löschen</button>` : ""}
       </div>
       ${e.links?.length ? `<div class="links">${e.links.filter((l) => sichereUrl(l.url)).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">↗ ${esc(l.titel)}</a>`).join("")}</div>` : ""}
@@ -404,6 +449,8 @@ function sheetOeffnen(e) {
 
   $("#btn-collect").onclick = () => besuchtUmschalten(e);
   if (e.eigen) $("#btn-delete").onclick = () => eigenenLoeschen(e);
+  $("#foto-input").onchange = (ev) => ev.target.files[0] && fotoSpeichern(e, ev.target.files[0]);
+  if (meinFoto) $("#btn-foto-weg").onclick = () => fotoEntfernen(e);
 
   const sheet = $("#sheet");
   sheet.scrollTop = 0;
@@ -422,9 +469,35 @@ function besuchtUmschalten(e) {
   else {
     state.besucht.add(e.id);
     konfetti();
+    if (kategorie(e.kategorie).sammelbar && !state.fotos.has(e.id)) toast("Tipp: Halte es mit 📷 Mein Foto fest!");
   }
   speichern(SPEICHER.besucht, [...state.besucht]);
   markerZeichnen();
+  sheetOeffnen(e);
+}
+
+async function fotoSpeichern(e, datei) {
+  try {
+    const bild = await fotoVerkleinern(datei, 1200);
+    await fotoSpeicher.setzen(e.id, bild);
+    state.fotos.set(e.id, bild);
+    if (!state.besucht.has(e.id)) {
+      state.besucht.add(e.id);
+      speichern(SPEICHER.besucht, [...state.besucht]);
+      markerZeichnen();
+    }
+    konfetti();
+    toast("📷 Foto gespeichert");
+    sheetOeffnen(e);
+  } catch {
+    toast("⚠️ Foto konnte nicht gespeichert werden");
+  }
+}
+
+async function fotoEntfernen(e) {
+  if (!confirm("Foto wirklich entfernen?")) return;
+  await fotoSpeicher.loeschen(e.id);
+  state.fotos.delete(e.id);
   sheetOeffnen(e);
 }
 
@@ -543,6 +616,12 @@ function panelZeichnen(suchbegriff = "") {
           <div class="bar"><i data-w="${pz}%"></i></div></div>`;
       })
       .join("");
+    const mitFoto = state.eintraege.filter((e) => state.fotos.has(e.id));
+    if (mitFoto.length) {
+      html += `<h3 class="section-title">📷 Meine Fotos (${mitFoto.length})</h3><div class="galerie">${mitFoto
+        .map((e, i) => `<button class="list-item foto" data-id="${esc(e.id)}" style="--i:${i}" title="${esc(e.name)}">
+          <img src="${state.fotos.get(e.id)}" alt="${esc(e.name)}" loading="lazy"></button>`).join("")}</div>`;
+    }
     const erledigt = state.eintraege.filter((e) => state.besucht.has(e.id));
     if (erledigt.length) html += `<h3 class="section-title">✓ Erledigt</h3><div class="list">${erledigt.map((e, i) => listItem(e, i, "✓")).join("")}</div>`;
   }
@@ -842,6 +921,11 @@ async function start() {
 
   karteStarten();
   ereignisseVerbinden();
+  try {
+    state.fotos = await fotoSpeicher.alleLaden();
+  } catch (err) {
+    console.warn("Fotos nicht verfügbar", err);
+  }
   try {
     await datenLaden();
   } catch (err) {
