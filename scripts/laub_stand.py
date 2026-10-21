@@ -60,7 +60,7 @@ def stand_lesen(html):
 def main():
     orte = json.loads(QUELLE.read_text(encoding="utf-8"))
     alt = json.loads(ZIEL.read_text(encoding="utf-8")).get("orte", {}) if ZIEL.exists() else {}
-    neu, ok, ohne = {}, 0, 0
+    neu, ok, ohne_liste = {}, 0, []
 
     for ort in orte:
         url = next((l["url"] for l in ort.get("links", []) if "koyo.walkerplus.com/detail/" in l.get("url", "")), None)
@@ -73,7 +73,7 @@ def main():
             ok += 1
             print(f"{ort['id']}: {stand} ({zeit})")
         elif html:
-            ohne += 1  # Seite ohne täglichen Stand (gibt es bei manchen Orten)
+            ohne_liste.append(ort["id"])  # Seite ohne täglichen Stand (gibt es bei manchen Orten)
             print(f"{ort['id']}: kein Stand auf der Seite")
         elif ort["id"] in alt:
             neu[ort["id"]] = alt[ort["id"]]  # Abruf fehlgeschlagen: letzten bekannten Stand behalten
@@ -88,9 +88,10 @@ def main():
         "quelle": "koyo.walkerplus.com (色づき状況, Daten von JRシステム)",
         "abgerufen": datetime.now(TOKIO).isoformat(timespec="minutes"),
         "orte": neu,
+        "ohneStand": ohne_liste,  # Walkerplus liefert hier keinen täglichen Stand
     }
     ZIEL.write_text(json.dumps(ergebnis, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"Fertig: {ok} Orte mit Stand, {ohne} ohne täglichen Stand.")
+    print(f"Fertig: {ok} Orte mit Stand, {len(ohne_liste)} ohne täglichen Stand.")
 
 
 if __name__ == "__main__":

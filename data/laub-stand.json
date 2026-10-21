@@ -150,5 +150,31 @@
    "stand": "色づき始め",
    "aktualisiert": "2026-10-21T16:05+09:00"
   }
- }
+ },
+ "ohneStand": [
+  "laub-hibiya",
+  "laub-kokyo-higashi",
+  "laub-kitanomaru",
+  "laub-arisugawa",
+  "laub-happoen",
+  "laub-toyama-koen",
+  "laub-gyoen-koyo",
+  "laub-higo-koyo",
+  "laub-tohaku-garten",
+  "laub-sendaibori",
+  "laub-sarue",
+  "laub-gotenyama",
+  "laub-todoroki-fudo",
+  "laub-yoyogi-koyo",
+  "laub-mejiro-teien",
+  "laub-otonashi",
+  "laub-asukayama",
+  "laub-johoku-chuo",
+  "laub-toneri",
+  "laub-koshu-kaido",
+  "laub-yakushi-ike",
+  "laub-mogusaen",
+  "laub-takahata-koyo",
+  "laub-daigaku-dori"
+ ]
 }

@@ -1261,27 +1261,34 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .lw-kopf b { font-family: var(--pinsel); font-weight: 400; font-size: 1.15rem; }
 .lw-kopf span { font-size: 0.78rem; color: var(--muted); }
 .lw-zeile {
-  position: relative; display: grid; grid-template-columns: 12px 88px 1fr auto; gap: 8px; align-items: center;
+  position: relative; display: grid; grid-template-columns: 12px 84px 1fr auto; gap: 8px; align-items: center;
   padding: 6px 8px; border-radius: 10px; animation: vonLinks 0.45s both var(--ease); animation-delay: calc(0.3s + var(--i) * 60ms);
 }
 .lw-punkt { width: 12px; height: 12px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 2px color-mix(in srgb, var(--c) 25%, transparent); }
 .lw-ja { font-family: var(--pinsel); font-weight: 400; font-size: 1.12rem; color: var(--c); white-space: nowrap; }
 .lw-text { display: grid; font-size: 0.84rem; line-height: 1.25; }
 .lw-text small { font-size: 0.7rem; color: var(--muted); font-style: italic; }
-.lw-zeile.jetzt { background: color-mix(in srgb, var(--c) 14%, transparent); outline: 1.5px solid color-mix(in srgb, var(--c) 60%, transparent); }
+.lw-zeile.jetzt { background: color-mix(in srgb, var(--c) 16%, transparent); outline: 2px solid color-mix(in srgb, var(--c) 70%, transparent); }
 .lw-zeile.jetzt .lw-punkt { animation: blinken 1.6s infinite; }
+.lw-zeile.vorhersage:not(.jetzt) { outline: 1.5px dashed color-mix(in srgb, var(--c) 75%, transparent); }
+.lw-zeile.vorhersage.jetzt { outline-style: solid; box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 18%, transparent); }
+.lw-marken { display: grid; gap: 3px; justify-items: end; }
 .lw-zeile em {
-  font-style: normal; font-size: 0.64rem; font-weight: 800; padding: 2px 7px; border-radius: 999px;
+  font-style: normal; font-size: 0.62rem; font-weight: 800; padding: 2px 7px; border-radius: 999px;
   color: #fff; background: var(--c); white-space: nowrap;
 }
+.lw-zeile em.vh { color: var(--c); background: transparent; border: 1.5px dashed var(--c); }
+.lw-mini { display: inline-block; width: 18px; height: 10px; border-radius: 3px; vertical-align: -1px; border: 2px solid var(--muted); }
+.lw-mini.gestrichelt { border-style: dashed; }
 .lw-live {
   padding: 8px 10px; border-radius: 10px; font-size: 0.84rem; line-height: 1.4;
   background: color-mix(in srgb, var(--matcha) 14%, transparent); border: 1.5px solid color-mix(in srgb, var(--matcha) 55%, transparent);
   animation: popIn 0.5s 0.2s both var(--spring);
 }
-.lw-live b { font-family: var(--pinsel); font-weight: 400; font-size: 1.05rem; }
+.lw-live b.gross { font-family: var(--pinsel); font-weight: 400; }
 .lw-live small { display: block; margin-top: 2px; font-size: 0.72rem; color: var(--muted); }
-.lw-live.alt { background: var(--line); border-color: var(--rand); }
+.lw-live b.gross { font-size: 1.25rem; }
+.lw-live.keine { background: var(--line); border: 1.5px dashed var(--rand); }
 .lw-tipp { margin: 4px 0 0; font-size: 0.74rem; line-height: 1.45; color: var(--muted); }
 
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
