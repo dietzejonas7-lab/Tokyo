@@ -73,6 +73,7 @@ const SPEICHER = {
   design: "tokio.designVersion",
   favoriten: "tokio.favoriten",
   erledigtAus: "tokio.erledigteAusblenden",
+  favZeigen: "tokio.favoritenZeigen",
 };
 
 const state = {
@@ -82,8 +83,9 @@ const state = {
   datum: heuteInTokio(),   // gewählter Tag (YYYY-MM-DD)
   alleZeigen: false,       // Zeitraum-Filter ignorieren?
   besucht: new Set(laden(SPEICHER.besucht, [])),
-  favoriten: new Set(laden(SPEICHER.favoriten, [])), // ❤️ gemerkte Orte – immer auf der Karte
+  favoriten: new Set(laden(SPEICHER.favoriten, [])), // ❤️ gemerkte Orte
   nurFavoriten: false,     // Karte zeigt nur die Favoriten
+  favZeigen: laden(SPEICHER.favZeigen, true), // Favoriten immer zeigen (auch wenn ihre Kategorie aus ist)
   erledigteAusblenden: laden(SPEICHER.erledigtAus, false), // Erledigtes ganz von der Karte nehmen
   laubLive: {},            // echter Laub-Stand von Walkerplus (data/laub-stand.json, täglich automatisch)
   laubOhne: new Set(),     // Orte, für die Walkerplus keinen täglichen Stand liefert
@@ -506,10 +508,11 @@ function clusterIcon(c) {
 function sichtbareEintraege() {
   // Erledigtes ist halb durchsichtig – oder (Einstellung) ganz ausgeblendet
   const zeigen = (e) => !(state.erledigteAusblenden && state.besucht.has(e.id));
-  // Favoriten sind immer zu sehen – egal welche Kategorie oder welcher Tag gewählt ist
+  // Favoriten-Chip an: Favoriten sind immer zu sehen – egal welche Kategorie oder welcher Tag gewählt ist.
+  // Aus: Favoriten verhalten sich wie alle anderen Orte (nur sichtbar, wenn ihre Kategorie an ist).
   if (state.nurFavoriten) return state.eintraege.filter((e) => state.favoriten.has(e.id) && zeigen(e));
   return state.eintraege.filter((e) => zeigen(e) &&
-    (state.favoriten.has(e.id) || (state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e)))));
+    ((state.favZeigen && state.favoriten.has(e.id)) || (state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e)))));
 }
 
 /** Erledigte Orte in Listen nach unten schieben (Reihenfolge sonst unverändert) */
@@ -585,9 +588,10 @@ function chipsZeichnen() {
   const nav = $("#chips");
   const filter = `<button class="chip chip-filter" id="chip-filter" style="--i:0" aria-label="Kategorien auswählen">
     <span>🎛️</span>Kategorien<span class="count">${state.aktiv.size}/${state.kategorien.length}</span></button>`;
-  const favChip = `<button class="chip chip-fav ${state.nurFavoriten ? "on" : ""}" id="chip-fav" style="--i:1;--c:#e0607e"
-    aria-pressed="${state.nurFavoriten}" title="Nur Favoriten auf der Karte zeigen">
-    <span>${state.nurFavoriten ? "❤️" : "🤍"}</span>Favoriten<span class="count">${state.favoriten.size}</span></button>`;
+  const favAn = state.nurFavoriten || state.favZeigen;
+  const favChip = `<button class="chip chip-fav ${favAn ? "on" : ""} ${state.nurFavoriten ? "nur" : ""}" id="chip-fav" style="--i:1;--c:#e0607e"
+    aria-pressed="${favAn}" title="Antippen: Favoriten ein-/ausblenden · Lange drücken: nur Favoriten">
+    <span>${favAn ? "❤️" : "🤍"}</span>${state.nurFavoriten ? "Nur Favoriten" : "Favoriten"}<span class="count">${state.favoriten.size}</span></button>`;
   nav.innerHTML = filter + favChip + state.kategorien
     .map((k, i) => {
       const anzahl = state.eintraege.filter((e) => e.kategorie === k.id && (state.alleZeigen || istAktiv(e))).length;
@@ -603,7 +607,10 @@ function chipsZeichnen() {
 
 function chipKlick(ev) {
   if (ev.target.closest("#chip-filter")) return katAuswahlOeffnen();
-  if (ev.target.closest("#chip-fav")) return nurFavoritenUmschalten();
+  if (ev.target.closest("#chip-fav")) {
+    if (Date.now() - (chipKlick.langGedrueckt || 0) < 600) return; // Loslassen nach langem Drücken zählt nicht als Tippen
+    return state.nurFavoriten ? nurFavoritenUmschalten() : favoritenZeigenUmschalten();
+  }
   const chip = ev.target.closest(".chip");
   if (!chip) return;
   const id = chip.dataset.kat;
@@ -918,13 +925,23 @@ function favoritUmschalten(e) {
     $("#btn-fav").onclick = () => favoritUmschalten(e);
     if (an) Effekte.herzen($("#btn-fav"));
   }
-  if (an) { Klang.sammeln(); toast("❤️ Als Favorit gemerkt – ist jetzt immer auf der Karte"); }
+  if (an) { Klang.sammeln(); toast(state.favZeigen ? "❤️ Als Favorit gemerkt – ist jetzt immer auf der Karte" : "❤️ Als Favorit gemerkt"); }
   else toast("Aus den Favoriten entfernt");
   // Nur diesen einen Punkt neu zeichnen – außer er verschwindet dadurch von der Karte
   const m = markerNachId.get(e.id);
-  const bleibtSichtbar = !state.nurFavoriten && state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e));
-  if (m && (an || bleibtSichtbar)) { m.setIcon(pinIcon(e)); chipsZeichnen(); markerHervorheben(e); }
+  const sichtbar = sichtbareEintraege().some((x) => x.id === e.id);
+  if (m && sichtbar) { m.setIcon(pinIcon(e)); chipsZeichnen(); markerHervorheben(e); }
   else markerZeichnen();
+  if ($("#panel").classList.contains("open")) panelZeichnen();
+}
+
+/** Favoriten auf der Karte ein-/ausblenden (wie eine Kategorie) */
+function favoritenZeigenUmschalten() {
+  state.favZeigen = !state.favZeigen;
+  speichern(SPEICHER.favZeigen, state.favZeigen);
+  markerZeichnen();
+  Effekte.nochmal($("#chip-fav"), "bump");
+  toast(state.favZeigen ? "❤️ Favoriten sind immer auf der Karte" : "🤍 Favoriten ausgeblendet (außer ihre Kategorie ist an)");
   if ($("#panel").classList.contains("open")) panelZeichnen();
 }
 
@@ -1269,11 +1286,15 @@ function panelZeichnen(suchbegriff = "") {
     const favs = state.eintraege.filter((e) => state.favoriten.has(e.id));
     if (!favs.length) {
       html += `<div class="empty fav-leer"><span>♡</span>Noch keine Favoriten.<br>Öffne einen Ort und tippe auf das Herz ♡ neben dem Namen –
-        dann landet er hier und ist immer auf der Karte zu sehen.</div>`;
+        dann landet er hier und ist auf der Karte mit einem kleinen Herz markiert.</div>`;
     } else {
-      html += `<button class="einstellung ${state.nurFavoriten ? "on" : ""}" id="fav-schalter" aria-pressed="${state.nurFavoriten}">
+      html += `<button class="einstellung ${state.favZeigen ? "on" : ""}" id="fav-zeigen-schalter" aria-pressed="${state.favZeigen}">
+        <span class="es-icon">❤️</span>
+        <span class="es-text"><b>Favoriten immer zeigen</b><small>Auch wenn ihre Kategorie ausgeschaltet ist</small></span>
+        <span class="schalter" aria-hidden="true"></span></button>
+        <button class="einstellung ${state.nurFavoriten ? "on" : ""}" id="fav-schalter" aria-pressed="${state.nurFavoriten}" style="margin-top:10px">
         <span class="es-icon">🗺️</span>
-        <span class="es-text"><b>Nur Favoriten auf der Karte</b><small>Blendet alles andere aus</small></span>
+        <span class="es-text"><b>Nur Favoriten auf der Karte</b><small>Blendet alles andere aus (oder lange auf den Favoriten-Chip drücken)</small></span>
         <span class="schalter" aria-hidden="true"></span></button>`;
       const seite = (e) => distanzText(e) || laubStatus(e)?.kurz || zeitStatus(e)?.kurz || kategorie(e.kategorie).name;
       html += `<h3 class="section-title">❤️ ${favs.length} ${favs.length === 1 ? "Ort" : "Orte"} gemerkt</h3>
@@ -1346,6 +1367,10 @@ function panelKlick(ev) {
     panelZeichnen();
   }
   if (ev.target.closest("#fav-schalter")) nurFavoritenUmschalten();
+  if (ev.target.closest("#fav-zeigen-schalter")) {
+    if (state.nurFavoriten) nurFavoritenUmschalten();
+    favoritenZeigenUmschalten();
+  }
   if (ev.target.closest("#indoor-knopf")) nurDrinnenZeigen();
   if (ev.target.closest("#erledigt-schalter")) {
     state.erledigteAusblenden = !state.erledigteAusblenden;
@@ -1561,6 +1586,14 @@ function splashBlueten() {
 
 function ereignisseVerbinden() {
   $("#chips").addEventListener("click", chipKlick);
+  // Lange auf den Favoriten-Chip drücken = nur Favoriten zeigen
+  let favDruck;
+  $("#chips").addEventListener("pointerdown", (ev) => {
+    if (!ev.target.closest("#chip-fav")) return;
+    favDruck = setTimeout(() => { chipKlick.langGedrueckt = Date.now(); navigator.vibrate?.(25); nurFavoritenUmschalten(); }, 550);
+  });
+  ["pointerup", "pointerleave", "pointercancel"].forEach((art) => $("#chips").addEventListener(art, () => clearTimeout(favDruck)));
+  $("#chips").addEventListener("contextmenu", (ev) => ev.target.closest("#chip-fav") && ev.preventDefault());
   katAuswahlVerbinden();
   $("#btn-menu").onclick = () => panelOeffnen("heute");
   $("#dock-tag").onclick = () => panelOeffnen("heute");

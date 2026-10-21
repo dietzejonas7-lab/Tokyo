@@ -23,7 +23,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 
 **Unser Hotel:** Tosei Hotel Cocone Kanda ist immer als goldenes 宿-Schild auf der Karte, unabhängig von den Kategorien. Der runde 宿-Knopf unten rechts fliegt direkt dorthin. Ändern kannst du es in `js/app.js` unter `HOTEL`.
 
-**Favoriten:** In jedem Ort mit dem Herz ♡ neben dem Namen merken. Favoriten sind immer auf der Karte (kleines Herz am Punkt), stehen unter ☰ → ❤️ Favoriten, und der Chip „Favoriten“ blendet alles andere aus. Gespeichert wird auf deinem Handy.
+**Favoriten:** In jedem Ort mit dem Herz ♡ neben dem Namen merken. Favoriten haben ein kleines Herz am Punkt und stehen unter ☰ → ❤️ Favoriten. Der Chip „Favoriten“ funktioniert wie eine Kategorie: antippen = Favoriten immer zeigen bzw. ausblenden, lange drücken = nur noch Favoriten. Gespeichert wird auf deinem Handy.
 
 **Wetter & Sonne:** Unter „Dein Tag“ steht für den gewählten Tag die Vorhersage (ca. 16 Tage im Voraus, mit Verlauf alle 2 Stunden). Ist der Tag weiter weg, steht dort der Durchschnitt der letzten 10 Jahre. Immer dabei ist das Wetter „jetzt gerade“ in Tokio. Dazu kommen Sonnenauf- und -untergang, die blaue Stunde und ab wann sich Illuminationen lohnen. An Regentagen zeigt ein Knopf nur Ziele unter Dach. Daten: Open-Meteo.com, kostenlos, wird alle 30 Minuten automatisch aufgefrischt (`js/wetter.js`).
 

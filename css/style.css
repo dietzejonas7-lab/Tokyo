@@ -1231,6 +1231,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 @keyframes pinHerz { 0%, 30%, 100% { transform: rotate(45deg) scale(1); } 12% { transform: rotate(45deg) scale(1.2); } }
 .chip.chip-fav.on { background: color-mix(in srgb, #e0607e 16%, var(--surface-solid)); }
+.chip.chip-fav.nur { color: #fff; background: #d65b78; border-color: var(--tusche); }
+.chip.chip-fav.nur .count { background: #fff; color: #d65b78; }
+.chip.chip-fav { user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .fav-leer { line-height: 1.6; }
 .fav-leer span { display: block; font-size: 3rem; color: #d65b78; animation: herzSchlag 2.4s ease-in-out infinite; }
 /* Fünf Reiter im Seitenpanel: bei Platzmangel seitlich wischbar */
