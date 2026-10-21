@@ -72,6 +72,7 @@ const SPEICHER = {
   theme: "tokio.theme",
   design: "tokio.designVersion",
   favoriten: "tokio.favoriten",
+  erledigtAus: "tokio.erledigteAusblenden",
 };
 
 const state = {
@@ -83,6 +84,7 @@ const state = {
   besucht: new Set(laden(SPEICHER.besucht, [])),
   favoriten: new Set(laden(SPEICHER.favoriten, [])), // ❤️ gemerkte Orte – immer auf der Karte
   nurFavoriten: false,     // Karte zeigt nur die Favoriten
+  erledigteAusblenden: laden(SPEICHER.erledigtAus, false), // Erledigtes ganz von der Karte nehmen
   eigene: laden(SPEICHER.eigene, []),
   fotos: new Map(),        // eigene Fotos (z. B. vom Goshuin), gespeichert in IndexedDB
   meinOrt: null,           // GPS-Position
@@ -429,10 +431,17 @@ function clusterIcon(c) {
 }
 
 function sichtbareEintraege() {
+  // Erledigtes ist halb durchsichtig – oder (Einstellung) ganz ausgeblendet
+  const zeigen = (e) => !(state.erledigteAusblenden && state.besucht.has(e.id));
   // Favoriten sind immer zu sehen – egal welche Kategorie oder welcher Tag gewählt ist
-  if (state.nurFavoriten) return state.eintraege.filter((e) => state.favoriten.has(e.id));
-  return state.eintraege.filter((e) =>
-    state.favoriten.has(e.id) || (state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e))));
+  if (state.nurFavoriten) return state.eintraege.filter((e) => state.favoriten.has(e.id) && zeigen(e));
+  return state.eintraege.filter((e) => zeigen(e) &&
+    (state.favoriten.has(e.id) || (state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e)))));
+}
+
+/** Erledigte Orte in Listen nach unten schieben (Reihenfolge sonst unverändert) */
+function erledigtNachHinten(liste) {
+  return [...liste].sort((a, b) => state.besucht.has(a.id) - state.besucht.has(b.id));
 }
 
 /** Aussehen eines Kartenpunkts (Farbe, Symbol, Erledigt-Stempel, Favoriten-Herz) */
@@ -461,7 +470,12 @@ function markerZeichnen() {
   const liste = sichtbareEintraege();
   const marker = liste.map((e, i) => {
     const k = kategorie(e.kategorie);
-    const m = L.marker([e.lat, e.lng], { icon: pinIcon(e, i), farbe: k.farbe, title: e.name });
+    const erledigt = state.besucht.has(e.id);
+    // Erledigtes liegt hinter den anderen Punkten und färbt die Gruppen-Ringe nur grau
+    const m = L.marker([e.lat, e.lng], {
+      icon: pinIcon(e, i), title: e.name,
+      farbe: erledigt ? "#c9bfb2" : k.farbe, zIndexOffset: erledigt ? -1000 : 0,
+    });
     m.on("click", () => sheetOeffnen(e));
     markerNachId.set(e.id, m);
     return m;
@@ -964,7 +978,9 @@ function dockMarkieren() {
 
 function listItem(e, i, seite = "") {
   const k = kategorie(e.kategorie);
-  return `<button class="list-item" data-id="${esc(e.id)}" style="--c:${esc(k.farbe)};--i:${i}">
+  // In der Sammlung ist alles erledigt – dort nicht blass machen
+  const blass = state.besucht.has(e.id) && panelTab !== "sammlung";
+  return `<button class="list-item ${blass ? "erledigt" : ""}" data-id="${esc(e.id)}" style="--c:${esc(k.farbe)};--i:${i}">
     <span class="li-icon">${k.icon}</span>
     <span><b>${esc(e.name)}</b><small>${esc(e.station || k.name)}</small></span>
     <span class="li-side">${esc(seite)}</span>
@@ -1025,11 +1041,11 @@ function panelZeichnen(suchbegriff = "") {
     </div>`;
     html += `<h3 class="section-title">✨ Läuft an diesem Tag (${zeitlich.length})</h3>`;
     html += zeitlich.length
-      ? `<div class="list">${nachDistanz(zeitlich).map((e, i) => listItem(e, i, zeitStatus(e).kurz)).join("")}</div>`
+      ? `<div class="list">${erledigtNachHinten(nachDistanz(zeitlich)).map((e, i) => listItem(e, i, zeitStatus(e).kurz)).join("")}</div>`
       : `<div class="empty">Keine zeitlich begrenzten Events an diesem Tag.</div>`;
     if (bald.length) {
       html += `<h3 class="section-title">⏳ Startet bald</h3>`;
-      html += `<div class="list">${bald.map((e, i) => listItem(e, i, zeitStatus(e).kurz)).join("")}</div>`;
+      html += `<div class="list">${erledigtNachHinten(bald).map((e, i) => listItem(e, i, zeitStatus(e).kurz)).join("")}</div>`;
     }
     // Herbstlaub: was ist an diesem Tag auf dem Höhepunkt / färbt sich gerade?
     const laubOrte = state.eintraege.filter((e) => e.laub);
@@ -1038,11 +1054,11 @@ function panelZeichnen(suchbegriff = "") {
       .sort((a, b) => a.laub.von.localeCompare(b.laub.von));
     if (aufHoehe.length) {
       html += `<h3 class="section-title">🍁 Herbstlaub auf dem Höhepunkt (${aufHoehe.length})</h3>`;
-      html += `<div class="list">${nachDistanz(aufHoehe).map((e, i) => listItem(e, i, "Höhepunkt")).join("")}</div>`;
+      html += `<div class="list">${erledigtNachHinten(nachDistanz(aufHoehe)).map((e, i) => listItem(e, i, "Höhepunkt")).join("")}</div>`;
     }
     if (faerbt.length) {
       html += `<h3 class="section-title">🍂 Färbt sich gerade (${faerbt.length})</h3>`;
-      html += `<div class="list">${faerbt.slice(0, 12).map((e, i) => listItem(e, i, "ab " + datumSchoen(e.laub.von, { day: "numeric", month: "numeric" }))).join("")}</div>`;
+      html += `<div class="list">${erledigtNachHinten(faerbt).slice(0, 12).map((e, i) => listItem(e, i, "ab " + datumSchoen(e.laub.von, { day: "numeric", month: "numeric" }))).join("")}</div>`;
     }
   }
 
@@ -1089,7 +1105,7 @@ function panelZeichnen(suchbegriff = "") {
         <span class="schalter" aria-hidden="true"></span></button>`;
       const seite = (e) => distanzText(e) || laubStatus(e)?.kurz || zeitStatus(e)?.kurz || kategorie(e.kategorie).name;
       html += `<h3 class="section-title">❤️ ${favs.length} ${favs.length === 1 ? "Ort" : "Orte"} gemerkt</h3>
-        <div class="list">${nachDistanz(favs).map((e, i) => listItem(e, i, seite(e))).join("")}</div>`;
+        <div class="list">${erledigtNachHinten(nachDistanz(favs)).map((e, i) => listItem(e, i, seite(e))).join("")}</div>`;
     }
   }
 
@@ -1116,6 +1132,11 @@ function panelZeichnen(suchbegriff = "") {
     <button class="einstellung ${OrtFotos.aktiv ? "on" : ""}" id="foto-schalter" aria-pressed="${OrtFotos.aktiv}" style="margin-top:10px">
       <span class="es-icon">🖼️</span>
       <span class="es-text"><b>Beispielfotos</b><small>Freie Fotos von Wikimedia Commons (braucht Internet)</small></span>
+      <span class="schalter" aria-hidden="true"></span>
+    </button>
+    <button class="einstellung ${state.erledigteAusblenden ? "on" : ""}" id="erledigt-schalter" aria-pressed="${state.erledigteAusblenden}" style="margin-top:10px">
+      <span class="es-icon">✓</span>
+      <span class="es-text"><b>Erledigtes ausblenden</b><small>Aus: erledigte Orte bleiben halb durchsichtig auf der Karte</small></span>
       <span class="schalter" aria-hidden="true"></span>
     </button>
     <h3 class="section-title">So funktioniert's</h3>
@@ -1153,6 +1174,13 @@ function panelKlick(ev) {
     panelZeichnen();
   }
   if (ev.target.closest("#fav-schalter")) nurFavoritenUmschalten();
+  if (ev.target.closest("#erledigt-schalter")) {
+    state.erledigteAusblenden = !state.erledigteAusblenden;
+    speichern(SPEICHER.erledigtAus, state.erledigteAusblenden);
+    markerZeichnen();
+    panelZeichnen();
+    toast(state.erledigteAusblenden ? "✓ Erledigtes ist ausgeblendet" : "✓ Erledigtes wird wieder (blass) gezeigt");
+  }
   if (ev.target.closest("#klang-schalter")) {
     Klang.umschalten();
     panelZeichnen();

@@ -1235,6 +1235,23 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .tabs button { flex: 1 0 auto; padding: 8px 5px; font-size: 0.74rem; }
 @media (max-width: 370px) { .tabs button { padding: 8px 3px; font-size: 0.7rem; } }
 
+/* ---------- Erledigtes: halb durchsichtig, kleiner, ohne Leuchten ---------- */
+.pin.done {
+  opacity: 0.45; filter: saturate(0.3) brightness(1.05);
+  transform: rotate(-45deg) scale(0.78);
+  box-shadow: inset -3px -3px 0 rgba(0, 0, 0, 0.08), 1px 2px 0 rgba(43, 38, 34, 0.12);
+}
+.pin.done.live { animation: pinDrop 0.55s both var(--spring); animation-delay: var(--d, 0s); }
+.pin.done.live::after { display: none; }
+.pin-wrap:has(.pin.done) .pin-schatten { opacity: 0.35; transform: scale(0.75); }
+.pin-wrap:hover .pin.done { opacity: 0.8; transform: rotate(-45deg) scale(0.9); }
+.pin.done.gewaehlt { opacity: 1; filter: none; }
+.pin.done::before { width: 17px; height: 17px; font-size: 10px; top: -7px; right: -7px; }
+:root[data-theme="dark"] .pin.done { opacity: 0.4; box-shadow: none; }
+/* In Listen: blass mit kleinem Haken */
+.list-item.erledigt { opacity: 0.5; filter: saturate(0.4); box-shadow: none; }
+.list-item.erledigt b::before { content: "✓ "; color: var(--matcha); }
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
