@@ -279,7 +279,7 @@ function laubLegende(e, laub, live) {
   }).join("");
   let stand;
   if (live) {
-    const zeit = live.aktualisiert ? ` · Stand ${kurz(live.aktualisiert.slice(0, 10))}, ${live.aktualisiert.slice(11, 16)} Uhr` : "";
+    const zeit = live.aktualisiert ? ` · Stand ${kurz(live.aktualisiert.slice(0, 10))}, ${live.aktualisiert.slice(11, 16)} Uhr Japan` : "";
     stand = `<div class="lw-live">📡 <b>Tagesaktuell</b> (Walkerplus${zeit}):<br><b class="gross">${live.wort.ja}</b> = ${esc(live.wort.de)}</div>`;
   } else if (laubOhneDaten(e)) {
     stand = `<div class="lw-live keine">📡 Für diesen Ort liefert Walkerplus <b>keinen tagesaktuellen Stand</b>.
