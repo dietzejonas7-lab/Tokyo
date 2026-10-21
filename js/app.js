@@ -85,6 +85,7 @@ const state = {
   favoriten: new Set(laden(SPEICHER.favoriten, [])), // ❤️ gemerkte Orte – immer auf der Karte
   nurFavoriten: false,     // Karte zeigt nur die Favoriten
   erledigteAusblenden: laden(SPEICHER.erledigtAus, false), // Erledigtes ganz von der Karte nehmen
+  laubLive: {},            // echter Laub-Stand von Walkerplus (data/laub-stand.json, täglich automatisch)
   eigene: laden(SPEICHER.eigene, []),
   fotos: new Map(),        // eigene Fotos (z. B. vom Goshuin), gespeichert in IndexedDB
   meinOrt: null,           // GPS-Position
@@ -208,14 +209,31 @@ function zeitStatus(e, datum = state.datum) {
  * Daten-Feld: "laub": { beginn, von, bis } – beginn = färbt sich, von–bis = Höhepunkt.
  */
 const LAUB_STUFEN = {
-  gruen:   { icon: "🌿", farbe: "#5f8f3e", name: "Noch grün" },
-  faerbt:  { icon: "🍁", farbe: "#d9a21b", name: "Färbt sich" },
-  hoch:    { icon: "🍁", farbe: "#c8361f", name: "Höhepunkt" },
-  vorbei:  { icon: "🍂", farbe: "#8a6a4f", name: "Meist vorbei" },
+  gruen:     { icon: "🌿", farbe: "#5f8f3e", name: "Noch grün" },
+  faerbt:    { icon: "🍁", farbe: "#d9a21b", name: "Färbt sich" },
+  hoch:      { icon: "🍁", farbe: "#c8361f", name: "Höhepunkt" },
+  verblasst: { icon: "🍂", farbe: "#b0703a", name: "Verblasst" },
+  vorbei:    { icon: "🍂", farbe: "#8a6a4f", name: "Meist vorbei" },
 };
+
+/** Echter Stand von Walkerplus für einen Ort (oder null) – mit deutscher Bedeutung */
+function laubLive(e) {
+  const live = state.laubLive[e.id];
+  if (!live?.stand) return null;
+  const wort = LAUB_WOERTER.find((w) => live.stand.includes(w.ja)) ||
+    (live.stand.includes("見頃") ? LAUB_WOERTER.find((w) => w.stufe === "hoch") : null);
+  return wort ? { ...live, wort } : null;
+}
+
 function laubStatus(e, datum = state.datum) {
   const l = e.laub;
   if (!l) return null;
+  // Für HEUTE gilt der echte Stand von Walkerplus (wenn er höchstens 3 Tage alt ist)
+  const live = laubLive(e);
+  if (live && datum === heuteInTokio() && (!live.aktualisiert || tageZwischen(live.aktualisiert.slice(0, 10), datum) <= 3)) {
+    const stufe = live.wort.stufe;
+    return { stufe, live: true, text: `Aktuell: ${live.wort.de} (${live.wort.ja})`, kurz: live.wort.de.split(" – ")[0], ...LAUB_STUFEN[stufe] };
+  }
   const kurzDatum = (iso) => datumSchoen(iso, { day: "numeric", month: "numeric" });
   let stufe, text, kurz;
   if (datum < l.beginn) {
@@ -236,19 +254,23 @@ const LAUB_WOERTER = [
   { ja: "青葉", lesung: "aoba", de: "Noch grün", farbe: "#5f8f3e", stufe: "gruen" },
   { ja: "色づき始め", lesung: "irozuki hajime", de: "Färbt sich gerade", farbe: "#d9a21b", stufe: "faerbt" },
   { ja: "今見頃", lesung: "ima migoro", de: "Jetzt Höhepunkt – hingehen!", farbe: "#c8361f", stufe: "hoch" },
-  { ja: "色あせ始め", lesung: "iroase hajime", de: "Verblasst – oft noch schön", farbe: "#b0703a", stufe: "vorbei" },
-  { ja: "落葉", lesung: "rakuyō", de: "Laub fällt – meist vorbei", farbe: "#8a6a4f", stufe: "" },
+  { ja: "色あせ始め", lesung: "iroase hajime", de: "Verblasst – oft noch schön", farbe: "#b0703a", stufe: "verblasst" },
+  { ja: "落葉", lesung: "rakuyō", de: "Laub fällt – meist vorbei", farbe: "#8a6a4f", stufe: "vorbei" },
 ];
-function laubLegende(laub) {
+function laubLegende(laub, live) {
+  // Hervorheben: echter Stand (falls heute gültig), sonst die Schätzung der App
+  const markiert = (w) => laub.live ? w.stufe === laub.stufe : w.stufe === (laub.stufe === "vorbei" ? "verblasst" : laub.stufe);
   const zeilen = LAUB_WOERTER.map((w, i) => `
-    <div class="lw-zeile ${w.stufe === laub.stufe ? "jetzt" : ""}" style="--c:${w.farbe};--i:${i}">
+    <div class="lw-zeile ${markiert(w) ? "jetzt" : ""}" style="--c:${w.farbe};--i:${i}">
       <span class="lw-punkt"></span>
       <b class="lw-ja">${w.ja}</b>
       <span class="lw-text"><small>${w.lesung}</small>${esc(w.de)}</span>
-      ${w.stufe === laub.stufe ? `<em>laut App</em>` : ""}
+      ${markiert(w) ? `<em>${laub.live ? "aktuell" : "laut App"}</em>` : ""}
     </div>`).join("");
   return `<div class="laub-woerter">
     <div class="lw-kopf"><b>色づき状況</b><span>„Stand der Färbung“ – steht auf der Seite direkt unter dem Namen</span></div>
+    ${live ? `<div class="lw-live ${laub.live ? "" : "alt"}">📡 Walkerplus${live.aktualisiert ? `, Stand ${datumSchoen(live.aktualisiert.slice(0, 10), { day: "numeric", month: "numeric" })} ${live.aktualisiert.slice(11, 16)} Uhr` : ""}:
+      <b>${live.wort.ja}</b> = ${esc(live.wort.de)}${laub.live ? "" : `<small>Gilt für heute – für den gewählten Tag zeigt die App ihre Schätzung.</small>`}</div>` : ""}
     ${zeilen}
     <p class="lw-tipp">Darunter steht, wann zuletzt aktualisiert wurde (z. B. 10月20日 16:05更新 = 20. Oktober, 16:05 Uhr).
       Weiter unten: <b>ちなみに2025年は…</b> = Höhepunkt im letzten Jahr · <b>ライトアップ</b> = abendliche Beleuchtung.</p>
@@ -286,6 +308,10 @@ async function datenLaden() {
     })
   );
   alleEintraegeNeu(listen.flat());
+  // Echter Laub-Stand – wird von GitHub täglich automatisch abgeholt (fehlt die Datei, geht es auch ohne)
+  try {
+    state.laubLive = (await fetch("data/laub-stand.json", { cache: "no-cache" }).then((r) => r.json())).orte || {};
+  } catch { state.laubLive = {}; }
 
   const gespeichert = laden(SPEICHER.aktiv, null);
   state.aktiv = new Set(gespeichert || kats.map((k) => k.id));
@@ -695,7 +721,9 @@ function sheetOeffnen(e) {
   const laub = laubStatus(e);
   const laubZeit = e.laub && `Höhepunkt ca. ${datumSchoen(e.laub.von, { day: "numeric", month: "numeric" })}–${datumSchoen(e.laub.bis, { day: "numeric", month: "numeric" })}`;
 
+  const live = e.laub && laubLive(e);
   const fakten = [
+    ["📡", live && `Gerade: ${live.wort.de.split(" – ")[0]} (${live.wort.ja}) · Walkerplus${live.aktualisiert ? " " + datumSchoen(live.aktualisiert.slice(0, 10), { day: "numeric", month: "numeric" }) : ""}`],
     ["🍁", laubZeit],
     ["📊", e.laub?.vorjahr && `Letztes Jahr: ${e.laub.vorjahr}`],
     ["🎨", e.laub?.farbe && `Farben: ${e.laub.farbe}`],
@@ -745,7 +773,7 @@ function sheetOeffnen(e) {
         ${e.eigen ? `<button class="btn danger full" id="btn-delete">🗑️ Meinen Ort löschen</button>` : ""}
       </div>
       ${e.links?.length ? `<div class="links">${e.links.filter((l) => sichereUrl(l.url)).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">↗ ${esc(l.titel)}</a>`).join("")}</div>` : ""}
-      ${laub ? laubLegende(laub) : ""}
+      ${laub ? laubLegende(laub, laubLive(e)) : ""}
     </div>`;
 
   if (gesammelt) Effekte.hanko($("#sheet .hero"), state.frischGesammelt === e.id);

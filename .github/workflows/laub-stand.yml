@@ -1,0 +1,43 @@
+# Holt jeden Tag den aktuellen Laub-Stand (色づき状況) von koyo.walkerplus.com
+# und speichert ihn in data/laub-stand.json – die App zeigt ihn dann an.
+# Läuft nur von Oktober bis Dezember. Von Hand starten: GitHub → Actions → „Laub-Stand abholen“ → „Run workflow“.
+name: Laub-Stand abholen
+
+on:
+  schedule:
+    - cron: "20 8 * 10-12 *"   # 17:20 Uhr in Tokio (Walkerplus aktualisiert gegen 16 Uhr)
+    - cron: "20 22 * 10-12 *"  # 7:20 Uhr in Tokio (damit morgens alles frisch ist)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: laub-stand
+  cancel-in-progress: false
+
+jobs:
+  abholen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Laub-Stand abholen
+        run: python3 scripts/laub_stand.py
+
+      - name: Speichern, falls sich etwas geändert hat
+        run: |
+          if git diff --quiet -- data/laub-stand.json && git ls-files --error-unmatch data/laub-stand.json >/dev/null 2>&1; then
+            echo "Keine Änderung."
+            exit 0
+          fi
+          git config user.name "Laub-Stand-Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/laub-stand.json
+          git commit -m "Laub-Stand aktualisiert ($(TZ=Asia/Tokyo date '+%d.%m. %H:%M'))"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep 5
+          done
+          exit 1

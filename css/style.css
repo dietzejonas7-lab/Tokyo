@@ -1274,6 +1274,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
   font-style: normal; font-size: 0.64rem; font-weight: 800; padding: 2px 7px; border-radius: 999px;
   color: #fff; background: var(--c); white-space: nowrap;
 }
+.lw-live {
+  padding: 8px 10px; border-radius: 10px; font-size: 0.84rem; line-height: 1.4;
+  background: color-mix(in srgb, var(--matcha) 14%, transparent); border: 1.5px solid color-mix(in srgb, var(--matcha) 55%, transparent);
+  animation: popIn 0.5s 0.2s both var(--spring);
+}
+.lw-live b { font-family: var(--pinsel); font-weight: 400; font-size: 1.05rem; }
+.lw-live small { display: block; margin-top: 2px; font-size: 0.72rem; color: var(--muted); }
+.lw-live.alt { background: var(--line); border-color: var(--rand); }
 .lw-tipp { margin: 4px 0 0; font-size: 0.74rem; line-height: 1.45; color: var(--muted); }
 
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
