@@ -1458,11 +1458,6 @@ function panelZeichnen(suchbegriff = "") {
       <span class="es-text"><b>Klänge</b><small>Leises Klicken & kurze Töne</small></span>
       <span class="schalter" aria-hidden="true"></span>
     </button>
-    <button class="einstellung ${Splash3D.aktiv ? "on" : ""}" id="drei-schalter" aria-pressed="${Splash3D.aktiv}" style="margin-top:10px">
-      <span class="es-icon">⛩️</span>
-      <span class="es-text"><b>3D-Startbildschirm</b><small>Aus = spart Akku und startet schneller</small></span>
-      <span class="schalter" aria-hidden="true"></span>
-    </button>
     <button class="einstellung ${OrtFotos.aktiv ? "on" : ""}" id="foto-schalter" aria-pressed="${OrtFotos.aktiv}" style="margin-top:10px">
       <span class="es-icon">🖼️</span>
       <span class="es-text"><b>Beispielfotos</b><small>Freie Fotos von Wikimedia Commons (braucht Internet)</small></span>
@@ -1503,11 +1498,6 @@ function panelKlick(ev) {
     setTimeout(() => sheetOeffnen(e), 500);
   }
   if (ev.target.id === "btn-export") exportieren();
-  if (ev.target.closest("#drei-schalter")) {
-    Splash3D.umschalten();
-    panelZeichnen();
-    toast(Splash3D.aktiv ? "⛩️ 3D-Start ist an (beim nächsten Öffnen)" : "Einfacher Startbildschirm – spart Akku");
-  }
   if (ev.target.closest("#foto-schalter")) {
     OrtFotos.umschalten();
     panelZeichnen();
@@ -1816,14 +1806,7 @@ async function start() {
   splashBlueten();
   Effekte.titelZerlegen($("#splash .kanji"));
   Effekte.wellenAktivieren();
-  // 3D-Startbildschirm (three.js) – fällt bei Problemen auf den gezeichneten zurück
-  const mit3D = Splash3D.aktiv && !Effekte.ruhig && webglMoeglich();
-  let splashWeiter;
-  const splashMin = new Promise((r) => { splashWeiter = r; setTimeout(r, mit3D ? 4300 : 2600); });
-  $("#splash").addEventListener("click", () => splashWeiter()); // Antippen = überspringen
-  if (mit3D) {
-    Splash3D.laden().then(() => Splash3D.starten($("#splash"))).catch((fehler) => console.warn("3D nicht möglich", fehler));
-  }
+  const splashMin = new Promise((r) => setTimeout(r, 2600));
 
   // Außerhalb der Reise: Kalender trotzdem auf den 1. November stellen
   if (state.datum < REISE.von || state.datum > REISE.bis) {
@@ -1850,7 +1833,6 @@ async function start() {
     if (document.visibilityState === "visible") Wetter.laden().then(wetterAktualisieren);
   });
   await splashMin;
-  Splash3D.beenden();
   $("#splash").classList.add("hide");
   setTimeout(metaFarbeSetzen, 400);
   setTimeout(() => $("#splash").remove(), 1000);

@@ -1456,14 +1456,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .rz-knoepfe .btn { padding: 6px 10px; font-size: 0.78rem; }
 .radar-quelle { font-size: 0.72rem; text-align: center; margin: 0; }
 
-/* ---------- 3D-Startbildschirm ---------- */
-#splash .splash3d { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1s ease; }
-#splash.drei-d .splash3d { opacity: 1; }
-#splash.drei-d .szene { opacity: 0; transition: opacity 1.1s ease; }
-#splash.drei-d .petals { display: none; }
-#splash.drei-d.hide .szene { transform: none; }
-#splash.drei-d .splash-text { text-shadow: 0 2px 12px rgba(10, 8, 30, 0.6); }
-
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
