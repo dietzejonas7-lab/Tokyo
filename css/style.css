@@ -904,18 +904,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transform: translateX(-100%); animation: heroGlanz 1.4s 0.3s var(--ease) forwards;
 }
 @keyframes heroGlanz { to { transform: translateX(100%); } }
-.hero-wolke {
-  position: absolute; z-index: 0; height: 14px; border-radius: 999px; background: rgba(255, 253, 248, 0.55);
-  box-shadow: 18px -7px 0 3px rgba(255, 253, 248, 0.55), 40px -2px 0 0 rgba(255, 253, 248, 0.55);
-  animation: wolkeZiehen var(--t, 18s) linear infinite; animation-delay: var(--v, 0s);
-}
-@keyframes wolkeZiehen { from { transform: translateX(-120px); } to { transform: translateX(560px); } }
-.hero-funken i {
-  position: absolute; z-index: 1; color: #fffdf8; font-style: normal; font-size: var(--g, 12px); pointer-events: none;
-  animation: funke 2.4s ease-in-out infinite; animation-delay: var(--v, 0s);
-}
-@keyframes funke { 0%, 100% { opacity: 0; transform: scale(0.4) rotate(0deg); } 50% { opacity: 1; transform: scale(1) rotate(90deg); } }
-.hero.mit-foto .hero-wolke, .hero.mit-foto .hero-funken, .hero.mein .hero-wolke, .hero.mein .hero-funken { display: none; }
 .hero .hero-icon { animation: iconRein 0.8s both var(--spring), floaty 3.2s 0.8s infinite alternate ease-in-out; }
 @keyframes iconRein { from { opacity: 0; transform: scale(0.2) rotate(-30deg); } }
 .hero .hero-ja { animation: pinselRunter 1.1s 0.25s both var(--ease); }
@@ -1086,6 +1074,133 @@ button { font: inherit; color: inherit; cursor: pointer; }
   content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 1.5px dashed #d4ad55;
   animation: kreisen 16s linear infinite;
 }
+
+/* =========================================================
+   Gezeichnete Mini-Szenen (js/szenen.js)
+   ========================================================= */
+.hero .szene-mini { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; }
+.hero img.commons { z-index: 1; }
+.hero .hero-ja { z-index: 2; }
+.hanko { z-index: 3; }
+.hero:has(.sz-stempel) .hero-ja, .hero:has(.sz-garten) .hero-ja { color: #2b2622; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); }
+.hero:has(.szene-mini) { border-bottom-width: 2.5px; }
+.hero.mit-foto .szene-mini { opacity: 0; transition: opacity 0.8s 0.4s; }
+/* Rundes Medaillon mit dem Kategorie-Symbol */
+.hero-medaillon {
+  position: absolute; left: 14px; bottom: 12px; z-index: 2; width: 50px; height: 50px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 1.55rem; line-height: 1;
+  background: #fffdf8; border: 2px solid var(--tusche);
+  box-shadow: 0 3px 0 var(--tusche), 0 0 0 4px color-mix(in srgb, var(--c) 55%, transparent);
+  animation: iconRein 0.8s 0.35s both var(--spring), medaillon 3.4s 1.2s ease-in-out infinite;
+}
+@keyframes medaillon { 50% { transform: translateY(-3px) rotate(-6deg); } }
+.hero.mit-foto .hero-medaillon, .hero.mein .hero-medaillon { display: none; }
+
+.szene-mini * { transform-box: fill-box; transform-origin: center; }
+.m-stern { fill: #fff; animation: funkeln var(--t, 3s) var(--d, 0s) ease-in-out infinite both; }
+.m-streifen { animation: ziehen 9s var(--d, 0s) ease-in-out infinite alternate; }
+.m-mond { filter: drop-shadow(0 0 6px #fde7b0); animation: einblenden 1.2s both; }
+.m-sonne { animation: aufgehen 2s both cubic-bezier(.2, .8, .2, 1); }
+.m-schnee { animation: glitzern 3.5s 1.5s ease-in-out infinite; }
+.m-vogel { animation: fliegen 16s var(--d, 0s) linear infinite; }
+@keyframes fliegen { from { transform: translate(0, 0); } 50% { transform: translate(230px, -12px); } to { transform: translate(470px, 6px); } }
+.m-fenster { animation: fenster var(--t, 6s) var(--d, 0s) steps(1) infinite; }
+.m-fenster.an { animation: flackern var(--t, 4s) var(--d, 0s) ease-in-out infinite; }
+@keyframes fenster { 0% { opacity: 1; } 45% { opacity: 0.2; } 70% { opacity: 1; } }
+@keyframes flackern { 50% { opacity: 0.7; } }
+.m-schild { animation: schild 2.6s var(--d, 0s) ease-in-out infinite; }
+@keyframes schild { 0%, 100% { filter: drop-shadow(0 0 4px rgba(255, 210, 160, 0.9)); } 50% { filter: none; opacity: 0.8; } }
+.m-blink { animation: blinken 1.4s infinite; }
+.m-turm { transform-origin: 50% 100%; animation: aufsteigen 1.2s both var(--ease); }
+.m-laterne { transform-origin: 50% 0; animation: pendeln 3s var(--d, 0s) ease-in-out infinite alternate; }
+.m-laterne.gross { animation: pendelnKlein 4s ease-in-out infinite alternate; }
+@keyframes pendeln { from { transform: rotate(-6deg); } to { transform: rotate(6deg); } }
+@keyframes pendelnKlein { from { transform: rotate(-2.5deg); } to { transform: rotate(2.5deg); } }
+.m-glut { animation: glut 2.6s ease-in-out infinite; }
+.m-licht { animation: funkeln 1.6s var(--d, 0s) ease-in-out infinite; }
+.m-wolke { animation: ziehen 12s var(--d, 0s) ease-in-out infinite alternate; }
+.m-koi { animation: schwimmen 14s var(--d, 0s) linear infinite; }
+@keyframes schwimmen {
+  0% { transform: translateX(-60px); } 49.9% { transform: translateX(60px); }
+  50% { transform: translateX(60px) scaleX(-1); } 100% { transform: translateX(-60px) scaleX(-1); }
+}
+.m-kreis { animation: teich 3.2s var(--d, 0s) ease-out infinite; }
+@keyframes teich { from { transform: scale(0.3); opacity: 1; } to { transform: scale(2.6); opacity: 0; } }
+.m-kiefer { transform-origin: 50% 100%; animation: wiegen 6s ease-in-out infinite; }
+.m-baeume { animation: aufsteigen 1s both var(--ease); }
+.m-blatt { animation: blattFall var(--t, 7s) var(--d, 0s) linear infinite; }
+@keyframes blattFall {
+  from { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(var(--x, 20px), 105px) rotate(200deg); }
+  to { transform: translate(0, 225px) rotate(420deg); }
+}
+.m-pinsel { stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw 1.3s 0.2s forwards var(--ease); }
+.m-pinsel.zwei { animation-delay: 0.7s; }
+.m-datum { animation: einblenden 1s 1.1s both; }
+.m-hanko { animation: stempeln 0.6s 0.55s cubic-bezier(0.3, 1.6, 0.5, 1) both; }
+.m-spritzer { animation: spritzer2 0.6s 0.9s ease-out both; }
+@keyframes spritzer2 { from { opacity: 0; transform: scale(0.3); } to { opacity: 1; transform: scale(1); } }
+
+/* ---------- Kalenderblatt mit Bild ---------- */
+.tageskarte { flex-wrap: wrap; }
+.tk-szene {
+  flex: 0 0 calc(100% + 28px); height: 104px; margin: -14px -14px 0; overflow: hidden;
+  border-bottom: 2px solid var(--tusche); position: relative;
+}
+.tk-szene svg { display: block; width: 100%; height: 100%; }
+.tageskarte .tk-datum { margin-top: -44px; z-index: 1; }
+.tageskarte .tk-info { padding-top: 4px; }
+
+/* ---------- Stempelheft ---------- */
+.stempelheft {
+  margin: 0 0 10px; border-radius: 16px; border: 1.5px solid var(--rand); box-shadow: 0 2px 0 var(--rand);
+  background: var(--papier), color-mix(in srgb, #f6efe2 70%, var(--karte));
+  overflow: hidden;
+}
+:root[data-theme="dark"] .stempelheft { background: var(--papier), var(--karte); }
+.stempelheft summary {
+  list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+  padding: 14px; font-family: var(--rund); font-weight: 900;
+}
+.stempelheft summary::-webkit-details-marker { display: none; }
+.stempelheft summary::after { content: "▾"; margin-left: 8px; transition: transform 0.3s var(--spring); }
+.stempelheft[open] summary::after { transform: rotate(180deg); }
+.stempelheft summary b { margin-left: auto; padding-left: 10px; color: #c8352a; white-space: nowrap; }
+.siegel-raster {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 8px;
+  position: relative; padding: 12px 12px 14px; border-top: 1.5px dashed var(--rand);
+}
+.siegel-raster::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: var(--seigaiha); background-size: 48px 24px; opacity: 0.05;
+}
+:root[data-theme="dark"] .siegel-raster::before { background-image: var(--seigaiha-hell); }
+.siegel {
+  aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; padding: 0;
+  position: relative; border: 1.8px dashed color-mix(in srgb, var(--muted) 70%, transparent); background: color-mix(in srgb, var(--karte) 70%, transparent);
+  font-family: var(--pinsel); font-size: 1.15rem; color: color-mix(in srgb, var(--muted) 75%, transparent);
+  transform: rotate(var(--r, 0deg));
+  transition: transform 0.25s var(--spring);
+}
+.stempelheft[open] .siegel { animation: siegelRein 0.45s both var(--spring); animation-delay: calc(var(--i, 0) * 12ms); }
+@keyframes siegelRein { from { opacity: 0; transform: rotate(var(--r, 0deg)) scale(0.4); } }
+.siegel:active { transform: rotate(var(--r, 0deg)) scale(0.9); }
+.siegel.voll {
+  color: #fff6ee; border: 2.5px solid #c8352a; background: radial-gradient(circle at 40% 35%, #e0503a, #c8352a 70%);
+  box-shadow: inset 0 0 0 2px rgba(255, 240, 230, 0.55), 0 2px 0 rgba(120, 30, 20, 0.35);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.stempelheft[open] .siegel.voll { animation: stempeln 0.55s both cubic-bezier(0.3, 1.6, 0.5, 1); animation-delay: calc(var(--i, 0) * 12ms); }
+
+/* ---------- Tuschetropfen beim Antippen der Karte ---------- */
+.tusche-tropfen {
+  position: fixed; z-index: 450; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%;
+  pointer-events: none; border: 2px solid color-mix(in srgb, var(--tusche) 70%, transparent);
+  background: radial-gradient(circle, color-mix(in srgb, var(--tusche) 22%, transparent) 0 30%, transparent 62%);
+  animation: tropfen 0.7s ease-out forwards;
+}
+:root[data-theme="dark"] .tusche-tropfen { border-color: rgba(240, 180, 120, 0.7); background: radial-gradient(circle, rgba(240, 160, 90, 0.25) 0 30%, transparent 62%); }
+@keyframes tropfen { from { transform: scale(0.2); opacity: 1; } to { transform: scale(1.6); opacity: 0; } }
 
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {

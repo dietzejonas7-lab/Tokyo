@@ -36,9 +36,18 @@ const VEKTOR_KARTE = {
   attribution: '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
 };
 // Eigene Kartenfarben passend zum App-Design (nur Flächen – Straßen bleiben wie im Original)
+// neon = Straßenfarben, bahn = Bahnlinien, leuchten = große Straßen glühen (Nachtkarte „Tokio bei Nacht“)
 const KARTEN_FARBEN = {
-  light: { hintergrund: "#efe7d6", wasser: "#b7cdd6", gruen: "#d3dfbd", gebaeude: "#e3d8c3" },
-  dark: { hintergrund: "#16152f", wasser: "#1d2350", gruen: "#1d2a33", gebaeude: "#252344" },
+  light: {
+    hintergrund: "#efe7d6", wasser: "#b7cdd6", gruen: "#d3dfbd", gebaeude: "#e3d8c3",
+    neon: { rand: "#dccbaa", schnell: "#e9a27e", haupt: "#f6e2b8", neben: "#fffaf0", klein: "#fffdf7" },
+    bahn: "#9aa3c0", text: "#4a4038", textRand: "#f7f1e6",
+  },
+  dark: {
+    hintergrund: "#16152f", wasser: "#1d2350", gruen: "#1d2a33", gebaeude: "#252344",
+    neon: { rand: "#100e26", schnell: "#f08a4b", haupt: "#d9a35a", neben: "#6e5a7e", klein: "#3a3466" },
+    bahn: "#8a6fb0", text: "#e9dcc8", textRand: "#16152f", leuchten: true,
+  },
 };
 // Sprache der Kartenbeschriftung: erst Deutsch, dann Englisch, dann lateinische Schrift, sonst Japanisch
 const KARTEN_SPRACHE = ["name:de", "name_de", "name:en", "name_en", "name:latin", "name"];
@@ -284,7 +293,7 @@ function karteStarten() {
 
   // Lange drücken (Handy) oder Rechtsklick (PC) = neuen Ort hier anlegen
   map.on("contextmenu", (ev) => formularOeffnen(ev.latlng));
-  map.on("click", () => { sheetSchliessen(); });
+  map.on("click", (ev) => { sheetSchliessen(); Effekte.tuscheTropfen(ev.containerPoint); });
 }
 
 /** Vektor-Karte laden; klappt das nicht, Bilder-Kacheln als Ersatz nehmen */
@@ -341,16 +350,35 @@ function kartenFarben(stil, theme) {
     if (layer.type === "line" && !/water|rail|boundary|admin|ferry|aeroway/.test(id) && /road|highway|street|motorway|trunk|primary|secondary|tertiary|minor|service|path|bridge|tunnel/.test(id)) {
       if (id.includes("casing")) layer.paint["line-color"] = f.neon.rand;
       else if (/motorway|trunk/.test(id)) layer.paint["line-color"] = f.neon.schnell;
-      else if (/primary/.test(id)) layer.paint["line-color"] = f.neon.haupt;
+      else if (/primary|major/.test(id)) layer.paint["line-color"] = f.neon.haupt;
       else if (/secondary|tertiary/.test(id)) layer.paint["line-color"] = f.neon.neben;
       else layer.paint["line-color"] = f.neon.klein;
     }
+    if (layer.type === "line" && /rail/.test(id)) layer.paint["line-color"] = /dashline/.test(id) ? f.hintergrund : f.bahn;
     if (layer.type === "symbol" && layer.layout?.["text-field"]) {
       layer.paint["text-color"] = f.text;
       layer.paint["text-halo-color"] = f.textRand;
     }
   });
+  if (f.leuchten) stil.layers = strassenLeuchten(stil.layers, f);
   return stil;
+}
+
+/** Nachtkarte: unter die großen Straßen eine weich verschwommene Kopie legen – sieht aus wie Lichter der Stadt */
+function strassenLeuchten(layers, f) {
+  const breite = (faktor) => ["interpolate", ["exponential", 1.4], ["zoom"], 8, 3 * faktor, 12, 7 * faktor, 16, 22 * faktor, 19, 46 * faktor];
+  return layers.flatMap((layer) => {
+    const id = layer.id.toLowerCase();
+    if (layer.type !== "line" || !/motorway|major|trunk_primary/.test(id) || /casing|subtle|link|tunnel/.test(id)) return [layer];
+    const schnell = /motorway/.test(id);
+    const glow = {
+      id: layer.id + "_leuchten", type: "line", source: layer.source, "source-layer": layer["source-layer"],
+      layout: { ...(layer.layout || {}), "line-cap": "round" },
+      paint: { "line-color": schnell ? f.neon.schnell : f.neon.haupt, "line-width": breite(schnell ? 1.3 : 1), "line-blur": breite(0.9), "line-opacity": schnell ? 0.45 : 0.3 },
+    };
+    ["filter", "minzoom", "maxzoom"].forEach((k) => layer[k] !== undefined && (glow[k] = layer[k]));
+    return [glow, layer];
+  });
 }
 
 function vektorStarten(stil) {
@@ -628,7 +656,7 @@ function sheetOeffnen(e) {
   $("#sheet-body").innerHTML = `
     <div class="hero ${meinFoto ? "mein" : ""}" style="--c:${esc(k.farbe)}">
       ${bild ? `<img src="${esc(bild)}" alt="${esc(e.name)}" loading="lazy">`
-             : `${heroDeko()}<span class="hero-icon">${laub ? laub.icon : k.icon}</span><span class="hero-ja">${esc(e.nameJa || "")}</span>`}
+             : `${Szenen.fuer(k.id)}<span class="hero-glanz"></span><span class="hero-medaillon">${laub ? laub.icon : k.icon}</span><span class="hero-ja">${esc(e.nameJa || "")}</span>`}
       ${meinFoto ? `<span class="hero-badge">📷 Mein Foto</span>` : ""}
     </div>
     <div class="sheet-content">
@@ -721,17 +749,6 @@ function heroFotosZeigen(e, fotos) {
   zeigen();
 }
 
-/** Wolken und Funkeln für das Kopfbild der Detail-Karte (zufällig verteilt) */
-function heroDeko() {
-  const zufall = (a, b) => (a + Math.random() * (b - a)).toFixed(1);
-  const wolken = [0, 1, 2].map((i) =>
-    `<i class="hero-wolke" style="top:${20 + i * 26}%;width:${zufall(40, 70)}px;--t:${zufall(14, 24)}s;--v:-${zufall(0, 20)}s"></i>`).join("");
-  const funken = Array.from({ length: 6 }, () =>
-    `<i style="left:${zufall(8, 90)}%;top:${zufall(10, 80)}%;--g:${zufall(9, 18)}px;--v:${zufall(0, 2.4)}s">✦</i>`).join("");
-  return `${wolken}<span class="hero-funken">${funken}</span><span class="hero-glanz"></span>`;
-}
-
-/** Den Marker des geöffneten Orts hüpfen lassen und hervorheben */
 /** Hotel-Markierung: liegt außerhalb der Kategorien und ist deshalb immer zu sehen */
 function hotelMarkerSetzen() {
   const icon = L.divIcon({
@@ -893,6 +910,15 @@ function listItem(e, i, seite = "") {
   </button>`;
 }
 
+/** Ein Siegel im Stempelheft: erstes japanisches Schriftzeichen des Namens */
+function siegel(e, i) {
+  const zeichen = [...(e.nameJa || "")].find((z) => /[\u3400-\u9fff\u3040-\u30ff]/.test(z)) || kategorie(e.kategorie).icon;
+  const voll = state.besucht.has(e.id);
+  const drehung = ((e.id.length * 37) % 24) - 12;
+  return `<button class="siegel ${voll ? "voll" : ""}" data-id="${esc(e.id)}" title="${esc(e.name)}"
+    style="--r:${drehung}deg;--i:${Math.min(i, 60)}"><span>${esc(zeichen)}</span></button>`;
+}
+
 function nachDistanz(liste) {
   return state.meinOrt ? [...liste].sort((a, b) => distanzKm(state.meinOrt, a) - distanzKm(state.meinOrt, b)) : liste;
 }
@@ -921,7 +947,10 @@ function panelZeichnen(suchbegriff = "") {
       .sort((a, b) => naechsterStart(a).localeCompare(naechsterStart(b)));
     const reiseTag = tageZwischen(REISE.von, state.datum) + 1;
     const reiseTage = tageZwischen(REISE.von, REISE.bis) + 1;
+    // Bild über dem Kalenderblatt: Herbstlaub, sobald viele Orte auf dem Höhepunkt sind
+    const laubHoch = state.eintraege.filter((e) => e.laub && laubStatus(e).stufe === "hoch").length;
     html += `<div class="tageskarte">
+      <div class="tk-szene">${Szenen.fuer(laubHoch >= 15 ? "herbstlaub" : "abend")}</div>
       <div class="tk-datum">
         <span class="tk-monat">${datumSchoen(state.datum, { month: "long" })}</span>
         <b>${Number(state.datum.slice(8))}</b>
@@ -968,6 +997,14 @@ function panelZeichnen(suchbegriff = "") {
           <div class="bar"><i data-w="${pz}%"></i></div></div>`;
       })
       .join("");
+    // Stempelheft: jeder Stempel/Goshuin als Siegel – rot, sobald gesammelt
+    state.kategorien.filter((k) => k.sammelbar).forEach((k) => {
+      const alle = state.eintraege.filter((e) => e.kategorie === k.id);
+      const done = alle.filter((e) => state.besucht.has(e.id)).length;
+      html += `<details class="stempelheft" style="--c:${esc(k.farbe)}">
+        <summary><span>📖 Stempelheft: ${esc(k.name)}</span><b>${done} / ${alle.length}</b></summary>
+        <div class="siegel-raster">${alle.map((e, i) => siegel(e, i)).join("")}</div></details>`;
+    });
     const mitFoto = state.eintraege.filter((e) => state.fotos.has(e.id));
     if (mitFoto.length) {
       html += `<h3 class="section-title">📷 Meine Fotos (${mitFoto.length})</h3><div class="galerie">${mitFoto
@@ -1022,8 +1059,8 @@ function panelZeichnen(suchbegriff = "") {
 
 function panelKlick(ev) {
   const tab = ev.target.closest("[data-tab]");
-  if (tab) { panelTab = tab.dataset.tab; return panelZeichnen(); }
-  const item = ev.target.closest(".list-item");
+  if (tab) { panelTab = tab.dataset.tab; dockMarkieren(); return panelZeichnen(); }
+  const item = ev.target.closest(".list-item, .siegel");
   if (item) {
     const e = state.eintraege.find((x) => x.id === item.dataset.id);
     if (!e) return;

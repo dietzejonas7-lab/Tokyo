@@ -88,6 +88,17 @@ const Effekte = {
     setTimeout(() => el.remove(), 1300);
   },
 
+  /** Antippen der Karte: ein Tuschetropfen breitet sich wie auf Papier aus */
+  tuscheTropfen(punkt) {
+    if (this.ruhig || !punkt) return;
+    const t = document.createElement("i");
+    t.className = "tusche-tropfen";
+    t.style.left = punkt.x + "px";
+    t.style.top = punkt.y + "px";
+    document.body.appendChild(t);
+    t.addEventListener("animationend", () => t.remove());
+  },
+
   /** Splash: Schriftzeichen nacheinander erscheinen lassen */
   titelZerlegen(el) {
     el.innerHTML = [...el.textContent].map((z, i) => `<i style="--i:${i}">${z}</i>`).join("");

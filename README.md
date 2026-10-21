@@ -132,6 +132,7 @@ index.html              ← das Gerüst der Seite
 css/style.css           ← Design „Washi & Sumi“, Farben & Animationen (Farben ganz oben änderbar)
 js/app.js               ← die Logik (Karte, Filter, Kalender …), mit Kommentaren
 js/effekte.js           ← Animationen & Effekte (Stempel, Übergänge, Wellen)
+js/szenen.js            ← gezeichnete, animierte Mini-Szenen je Kategorie (Detail-Karte & Tagesblatt)
 js/fotos.js             ← Beispielfotos von Wikimedia Commons (mit Fotonachweis)
 js/klang.js             ← schlichte Klänge (Klicken, kurze Töne) – direkt im Browser erzeugt
 data/kategorien.json    ← Liste aller Kategorien
