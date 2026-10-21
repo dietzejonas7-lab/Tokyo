@@ -1245,6 +1245,7 @@ async function start() {
   }
   themeSetzen(laden(SPEICHER.theme, "light"));
   splashBlueten();
+  Effekte.titelZerlegen($("#splash .kanji"));
   Effekte.wellenAktivieren();
   const splashMin = new Promise((r) => setTimeout(r, 2600));
 
