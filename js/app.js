@@ -780,6 +780,8 @@ function sheetOeffnen(e) {
       : laubOhneDaten(e) ? "Kein tagesaktueller Stand – Walkerplus liefert für diesen Ort keine Daten" : "Tagesaktueller Stand gerade nicht verfügbar")],
     ["🍁", laubZeit],
     ["🎥", e.kamera && `Filmtipp: ${e.kamera}`],
+    ["🧳", e.touristen && `Für Touristen: ${touristenText(e, true)}`],
+    ["⭐", e.tabelogNote && `Tabelog-Bewertung ${e.tabelogNote.toFixed(2)} (ab 3,5 gilt in Japan als sehr gut)`],
     ["📊", e.laub?.vorjahr && `Letztes Jahr: ${e.laub.vorjahr}`],
     ["🎨", e.laub?.farbe && `Farben: ${e.laub.farbe}`],
     ["🗓️", zeitraeume],
@@ -1165,8 +1167,22 @@ function nurDrinnenZeigen() {
 }
 
 /* ---------- Gyoza-Radar 🥟 ---------- */
+/** Touristenfreundlichkeit (aus den Tabelog-Angaben, siehe data/gyoza.json → touristen) */
+const TOURISTEN_STUFEN = {
+  gruen: { icon: "🟢", text: "Sehr touristenfreundlich" },
+  gelb: { icon: "🟡", text: "Gut machbar" },
+  orange: { icon: "🟠", text: "Eher lokal" },
+};
+function touristenText(e, lang = false) {
+  const t = e.touristen;
+  if (!t) return "";
+  const s = TOURISTEN_STUFEN[t.stufe];
+  return lang ? `${s.icon} ${s.text}${t.plus.length || t.minus.length ? " – " + [...t.plus, ...t.minus].join(" · ") : ""}` : `${s.icon} ${s.text}`;
+}
+
 const GyozaRadar = {
   zentrum: null,      // { lat, lng, art: "ich" | "karte" | "hotel" }
+  nurTouristen: false, // nur 🟢/🟡 zeigen
   RUND: 4,            // Sekunden pro Umdrehung des Radarstrahls
 
   async oeffnen() {
@@ -1204,7 +1220,8 @@ const GyozaRadar = {
 
   zeigen(zentrum, text) {
     this.zentrum = zentrum;
-    const laeden = state.eintraege.filter((e) => e.kategorie === "gyoza")
+    this.zentrumText = text;
+    const laeden = state.eintraege.filter((e) => e.kategorie === "gyoza" && (!this.nurTouristen || ["gruen", "gelb"].includes(e.touristen?.stufe)))
       .map((e) => ({ e, km: distanzKm(zentrum, e), grad: this.peilung(zentrum, e) }))
       .sort((a, b) => a.km - b.km);
     // Reichweite so wählen, dass mindestens 5 Läden auf dem Schirm sind
@@ -1251,7 +1268,8 @@ const GyozaRadar = {
       <span class="rz-nr">${i + 1}</span>
       <div class="rz-text">
         <b>${esc(e.name)}</b>
-        <small>${e.top ? "⭐ Bestenliste 2024" : "👍 Bestenliste " + esc(e.listen.join(" / "))} · ${esc(e.station)}</small>
+        <small>${e.top ? "⭐ Bestenliste 2024" : "👍 Bestenliste " + esc(e.listen.join(" / "))}${e.tabelogNote ? ` · Tabelog ${e.tabelogNote.toFixed(2)}` : ""} · ${esc(e.station)}</small>
+        ${e.touristen ? `<small class="rz-touri ${e.touristen.stufe}">${touristenText(e)}${e.touristen.plus.length ? " · " + e.touristen.plus.map((p) => p.split(" ")[0]).join(" ") : ""}${e.touristen.minus.length ? " · " + e.touristen.minus.map((p) => p.split(" ")[0]).join(" ") : ""}</small>` : ""}
         <small>${meter < 1000 ? Math.round(meter / 10) * 10 + " m" : l.km.toFixed(1) + " km"} · ${l.km < 2 ? `ca. ${minuten} Min. zu Fuß` : "mit der Bahn"}${e.lageUngefaehr ? " · Lage ungefähr" : ""}
           ${ruhetagHeute ? ` · <em>heute Ruhetag!</em>` : ""}</small>
       </div>
@@ -1749,6 +1767,12 @@ function ereignisseVerbinden() {
   $("#btn-hotel").onclick = zumHotel;
   $("#btn-gyoza").onclick = () => GyozaRadar.oeffnen();
   $("#radar-wahl").onclick = (ev) => { const b = ev.target.closest("[data-zentrum]"); if (b) GyozaRadar.zentrumWaehlen(b.dataset.zentrum); };
+  $("#radar-touri").onclick = () => {
+    GyozaRadar.nurTouristen = !GyozaRadar.nurTouristen;
+    $("#radar-touri").classList.toggle("on", GyozaRadar.nurTouristen);
+    $("#radar-touri").setAttribute("aria-pressed", GyozaRadar.nurTouristen);
+    if (GyozaRadar.zentrum) GyozaRadar.zeigen(GyozaRadar.zentrum, GyozaRadar.zentrumText);
+  };
   $("#radar-liste").onclick = (ev) => GyozaRadar.listeKlick(ev);
   $("#radar-schirm").onclick = (ev) => GyozaRadar.listeKlick(ev);
   $("#btn-add").onclick = addKnopf;

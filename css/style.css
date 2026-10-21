@@ -1454,7 +1454,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .rz-text em { font-style: normal; color: var(--shu); font-weight: 900; }
 .rz-knoepfe { display: grid; gap: 6px; }
 .rz-knoepfe .btn { padding: 6px 10px; font-size: 0.78rem; }
-.radar-quelle { font-size: 0.72rem; text-align: center; margin: 0; }
+.radar-quelle { font-size: 0.72rem; text-align: center; margin: 0; line-height: 1.45; }
+.radar-touri {
+  justify-self: center; padding: 7px 14px; border-radius: 999px; border: 1.5px solid var(--rand); background: var(--karte);
+  font-family: var(--rund); font-weight: 800; font-size: 0.8rem; color: var(--muted); transition: all 0.25s;
+}
+.radar-touri.on { color: var(--text); border-color: var(--matcha); background: color-mix(in srgb, var(--matcha) 16%, var(--karte)); box-shadow: 0 0 0 3px color-mix(in srgb, var(--matcha) 20%, transparent); }
+.rz-touri { font-weight: 800; }
+.rz-touri.gruen { color: #3d7a2e; } .rz-touri.gelb { color: #a07812; } .rz-touri.orange { color: #c0581f; }
+:root[data-theme="dark"] .rz-touri.gruen { color: #8fd07a; } :root[data-theme="dark"] .rz-touri.gelb { color: #e8c35a; } :root[data-theme="dark"] .rz-touri.orange { color: #f09a5a; }
 
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {

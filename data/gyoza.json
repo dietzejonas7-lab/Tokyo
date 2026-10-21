@@ -3,10 +3,25 @@
     "id": "gyoza-13140146",
     "name": "Anda Gyōza Yoyogi-Uehara",
     "nameJa": "按田餃子 代々木上原店",
-    "lat": 35.66841,
-    "lng": 139.67776,
+    "lat": 35.6706,
+    "lng": 139.68191,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Täglich 11:00–22:00 (l. B. 21:30)",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都渋谷区西原3-21-2 1F",
+    "tabelogNote": 3.52,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 1.5,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "🪑 nur 10 Plätze – oft Wartezeit"
+      ]
+    },
     "station": "代々木上原駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -16,7 +31,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -34,13 +49,175 @@
     ]
   },
   {
+    "id": "gyoza-13182912",
+    "name": "Asia Kappou Rengetsu",
+    "nameJa": "亜細亜割烹 蓮月",
+    "lat": 35.66656,
+    "lng": 139.72478,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Mo, Di, Mi, Do, Fr 17:00–23:00 · Sa, So, Feiertage 17:00–21:00",
+    "preis": "abends ¥4.000–¥4.999 · mittags ¥3.000–¥3.999",
+    "adresse": "東京都港区南青山1-23-7 Grange南青山 101",
+    "tabelogNote": 3.57,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -2.0,
+      "plus": [],
+      "minus": [
+        "💴 Nur Bargeld",
+        "🚬 Rauchen erlaubt"
+      ]
+    },
+    "station": "乃木坂駅",
+    "ruhetagJa": "",
+    "ruhetage": [],
+    "top": true,
+    "listen": [
+      "2024",
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1307/A130701/13182912/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%89%B2%E7%83%B9%20%E8%93%AE%E6%9C%88%20%E4%B9%83%E6%9C%A8%E5%9D%82%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13008958",
+    "name": "Azuma Tei",
+    "nameJa": "東亭",
+    "lat": 35.73251,
+    "lng": 139.71979,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Di, Fr 16:00–18:30 · Ruhetag: Mo, Mi, Do, Sa, So",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都豊島区東池袋2-50-13",
+    "tabelogNote": 3.47,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -0.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "向原駅",
+    "ruhetagJa": "月曜日、水曜日、木曜日、土曜日、日曜日、祝日",
+    "ruhetage": [
+      "Mo",
+      "Mi",
+      "Do",
+      "Sa",
+      "So"
+    ],
+    "top": true,
+    "listen": [
+      "2024",
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1305/A130501/13008958/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AD%20%E5%90%91%E5%8E%9F%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13020138",
+    "name": "Chinkai Rou",
+    "nameJa": "鎮海楼",
+    "lat": 35.63459,
+    "lng": 139.7169,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021).",
+    "zeiten": "Mo, Di, Mi, Do, Fr, Sa 18:00–0:00 · Feiertage 18:00–23:00 · Ruhetag: So",
+    "preis": "abends ¥3.000–¥3.999 · mittags ¥5.000–¥5.999",
+    "adresse": "東京都品川区上大崎2-15-6 市川ビル 1F",
+    "tabelogNote": 3.53,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 40 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "目黒駅",
+    "ruhetagJa": "日曜日",
+    "ruhetage": [
+      "So"
+    ],
+    "top": true,
+    "listen": [
+      "2024",
+      "2021"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1316/A131601/13020138/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%8E%AE%E6%B5%B7%E6%A5%BC%20%E7%9B%AE%E9%BB%92%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13117106",
     "name": "Ebisu no Yasubee",
     "nameJa": "えびすの安兵衛",
-    "lat": 35.6464,
-    "lng": 139.7077,
+    "lat": 35.64561,
+    "lng": 139.7147,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Di, Mi, Do, Fr 16:00–0:00 (l. B. 23:30) · Sa, So, Feiertage 15:00–0:00 (l. B. 23:30)",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥2.000–¥2.999",
+    "adresse": "東京都渋谷区恵比寿4-9-15 荻原ビル5 1F",
+    "tabelogNote": 3.59,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 35 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "恵比寿駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -50,7 +227,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -68,13 +245,174 @@
     ]
   },
   {
+    "id": "gyoza-13052293",
+    "name": "Eiraku",
+    "nameJa": "永楽",
+    "lat": 35.74055,
+    "lng": 139.88928,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Mo 11:00–14:00 (l. B. 13:30) · Mi, Do, Fr, Sa, So 11:00–14:00 (l. B. 13:30), 17:30–21:00 (l. B. 20:00) · Ruhetag: Di",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都江戸川区北小岩5-16-2",
+    "tabelogNote": 3.5,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 1.5,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "🪑 nur 12 Plätze – oft Wartezeit"
+      ]
+    },
+    "station": "京成小岩駅",
+    "ruhetagJa": "月曜日、火曜日",
+    "ruhetage": [
+      "Di"
+    ],
+    "top": true,
+    "listen": [
+      "2024",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1312/A131204/13052293/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E6%A5%BD%20%E4%BA%AC%E6%88%90%E5%B0%8F%E5%B2%A9%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13090377",
+    "name": "Gyoza Bo Butahakkai",
+    "nameJa": "餃子坊 豚八戒",
+    "lat": 35.70448,
+    "lng": 139.63495,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
+    "zeiten": "Di, Mi, Do, Fr, Sa 18:00–23:00 · Ruhetag: Mo, So",
+    "preis": "abends ¥3.000–¥3.999 · mittags ¥2.000–¥2.999",
+    "adresse": "東京都杉並区阿佐谷南3-37-5",
+    "tabelogNote": 3.66,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 2.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚭 Nichtraucher",
+        "🪑 49 Plätze"
+      ],
+      "minus": []
+    },
+    "station": "阿佐ケ谷駅",
+    "ruhetagJa": "月曜日、日曜日",
+    "ruhetage": [
+      "Mo",
+      "So"
+    ],
+    "top": true,
+    "listen": [
+      "2024",
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1319/A131905/13090377/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%A4%83%E5%AD%90%E5%9D%8A%20%E8%B1%9A%E5%85%AB%E6%88%92%20%E9%98%BF%E4%BD%90%E3%82%B1%E8%B0%B7%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13108385",
+    "name": "Gyoza Kan",
+    "nameJa": "餃子館",
+    "lat": 35.6711,
+    "lng": 139.6189,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Mi, Do, Fr, Sa, So 17:00–22:00 (l. B. 21:30) · Ruhetag: Mo, Di",
+    "preis": "abends ¥2.000–¥2.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都世田谷区上北沢4-29-19",
+    "tabelogNote": 3.68,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -0.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "八幡山駅",
+    "ruhetagJa": "月曜日、火曜日",
+    "ruhetage": [
+      "Mo",
+      "Di"
+    ],
+    "top": true,
+    "listen": [
+      "2024"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1318/A131809/13108385/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%A4%83%E5%AD%90%E9%A4%A8%20%E5%85%AB%E5%B9%A1%E5%B1%B1%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13247755",
     "name": "Gyōza Mania Shinagawa",
     "nameJa": "餃子マニア 品川本店",
-    "lat": 35.62683,
+    "lat": 35.62688,
     "lng": 139.73734,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024).",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Di, Mi, Do, Fr 17:00–23:00 · Sa 16:00–23:00 · So 16:00–22:00",
+    "preis": "abends ¥3.000–¥3.999 · mittags ¥3.000–¥3.999",
+    "adresse": "東京都港区高輪4-11-16 京急第11ビル 2F",
+    "tabelogNote": 3.57,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 2.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚭 Nichtraucher",
+        "🪑 72 Plätze"
+      ],
+      "minus": []
+    },
     "station": "品川駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -103,10 +441,23 @@
     "id": "gyoza-13005875",
     "name": "Gyōza no Harupin (Mitaka)",
     "nameJa": "餃子のハルピン",
-    "lat": 35.69771,
-    "lng": 139.56054,
+    "lat": 35.69775,
+    "lng": 139.56056,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Ruhetag: Di, Mi",
+    "zeiten": "Mo 11:30–14:00, 17:00–21:00 · Do, Fr, Sa, So 11:30–14:00 (l. B. 13:30), 17:00–21:00 (l. B. 20:30) · Ruhetag: Di, Mi",
+    "preis": "abends ¥2.000–¥2.999 · mittags - ¥999",
+    "adresse": "東京都三鷹市下連雀3-31-8",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 2.5,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "🚭 Nichtraucher"
+      ],
+      "minus": []
+    },
     "station": "三鷹駅",
     "ruhetagJa": "火曜日、水曜日",
     "ruhetage": [
@@ -140,10 +491,23 @@
     "id": "gyoza-13016814",
     "name": "Gyōza no Ōsama (Asakusa)",
     "nameJa": "餃子の王さま",
-    "lat": 35.71211,
-    "lng": 139.79567,
+    "lat": 35.71214,
+    "lng": 139.79566,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Ruhetag: Di",
+    "zeiten": "Mo, Mi, Do, Fr 11:15–14:00, 16:00–20:00 · Sa, So 11:15–20:00 · Ruhetag: Di",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都台東区浅草1-30-8",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 2.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚭 Nichtraucher",
+        "🪑 31 Plätze"
+      ],
+      "minus": []
+    },
     "station": "浅草（東武・都営・メトロ）駅",
     "ruhetagJa": "火曜日",
     "ruhetage": [
@@ -176,13 +540,29 @@
     "id": "gyoza-13003078",
     "name": "Kameido Gyōza (Hauptladen)",
     "nameJa": "亀戸餃子 本店",
-    "lat": 35.69867,
-    "lng": 139.82624,
+    "lat": 35.69855,
+    "lng": 139.82625,
     "beschreibung": "Kult: Auf der Karte stehen praktisch nur Gyoza – die Teller kommen automatisch nach, bis du stoppst. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Mi, Do, Fr, Sa, So 11:00–20:00 (l. B. 19:30) · Ruhetag: Di",
+    "preis": "abends - ¥999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都江東区亀戸5-3-4",
+    "tabelogNote": 3.51,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 40 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "亀戸駅",
     "ruhetagJa": "",
-    "ruhetage": [],
+    "ruhetage": [
+      "Di"
+    ],
     "top": true,
     "listen": [
       "2024",
@@ -210,13 +590,29 @@
     "id": "gyoza-13041091",
     "name": "Kameido Gyōza Kinshichō",
     "nameJa": "亀戸ぎょうざ 錦糸町店",
-    "lat": 35.69463,
-    "lng": 139.81321,
+    "lat": 35.69464,
+    "lng": 139.81318,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Mi, Do, Fr 11:00–20:00 (l. B. 19:30) · Sa, So, Feiertage 10:30–19:30 (l. B. 19:00) · Ruhetag: Di",
+    "preis": "abends ¥1.000–¥1.999 · mittags - ¥999",
+    "adresse": "東京都墨田区江東橋3-9-1",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.5,
+      "plus": [
+        "🚃 Suica",
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "錦糸町駅",
     "ruhetagJa": "",
-    "ruhetage": [],
+    "ruhetage": [
+      "Di"
+    ],
     "top": true,
     "listen": [
       "2024",
@@ -244,20 +640,35 @@
     "id": "gyoza-13039735",
     "name": "Kameido Gyōza Ryōgoku",
     "nameJa": "亀戸ぎょうざ 両国支店",
-    "lat": 35.696,
-    "lng": 139.79275,
+    "lat": 35.69499,
+    "lng": 139.79727,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo 11:30–20:00 (l. B. 19:40) · Mi, Do, Fr 11:30–15:00 (l. B. 14:40), 17:00–21:00 (l. B. 20:40) · Sa, So, Feiertage 11:00–21:00 (l. B. 20:40) · Ruhetag: Di",
+    "preis": "abends ¥2.000–¥2.999 · mittags - ¥999",
+    "adresse": "東京都墨田区両国4-34-10",
+    "tabelogNote": 3.52,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 2.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚭 Nichtraucher",
+        "🪑 29 Plätze"
+      ],
+      "minus": []
+    },
     "station": "両国駅",
     "ruhetagJa": "",
-    "ruhetage": [],
+    "ruhetage": [
+      "Di"
+    ],
     "top": true,
     "listen": [
       "2024",
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -275,13 +686,78 @@
     ]
   },
   {
+    "id": "gyoza-13001812",
+    "name": "Nihao",
+    "nameJa": "您好",
+    "lat": 35.67524,
+    "lng": 139.67837,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Di, Mi, Do, Fr, Sa 17:00–22:00 (l. B. 21:30) · Ruhetag: Mo, So",
+    "preis": "abends ¥2.000–¥2.999 · mittags ¥2.000–¥2.999",
+    "adresse": "東京都渋谷区西原2-27-4 升本酒店　２Ｆ",
+    "tabelogNote": 3.66,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 34 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "幡ケ谷駅",
+    "ruhetagJa": "月曜日、日曜日",
+    "ruhetage": [
+      "Mo",
+      "So"
+    ],
+    "top": true,
+    "listen": [
+      "2024",
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1318/A131807/13001812/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%82%A8%E5%A5%BD%20%E5%B9%A1%E3%82%B1%E8%B0%B7%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13154377",
     "name": "Nogata Gyōza",
     "nameJa": "野方餃子",
     "lat": 35.72305,
-    "lng": 139.65217,
+    "lng": 139.6522,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021).",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Di, Mi, Do, Fr 11:30–14:30 (l. B. 14:10), 17:00–23:00 (l. B. 22:30) · Sa, So, Feiertage 11:30–15:00 (l. B. 14:30), 17:00–23:00 (l. B. 22:30)",
+    "preis": "abends ¥3.000–¥3.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都中野区野方6-18-8 杉山ビル 1Ｆ",
+    "tabelogNote": 3.65,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 3.5,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "📅 Online reservierbar",
+        "🚭 Nichtraucher"
+      ],
+      "minus": []
+    },
     "station": "野方駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -308,81 +784,26 @@
     ]
   },
   {
-    "id": "gyoza-13127427",
-    "name": "PAIRON Iidabashi",
-    "nameJa": "PAIRON 飯田橋本店",
-    "lat": 35.70585,
-    "lng": 139.7415,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "飯田橋駅",
-    "ruhetagJa": "",
-    "ruhetage": [],
-    "top": true,
-    "listen": [
-      "2024",
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1309/A130905/13127427/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=PAIRON%20%E9%A3%AF%E7%94%B0%E6%A9%8B%E6%9C%AC%E5%BA%97%20%E9%A3%AF%E7%94%B0%E6%A9%8B%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13004530",
-    "name": "Tōkyō Gyōzarō Sangenjaya",
-    "nameJa": "東京餃子楼 三軒茶屋店",
-    "lat": 35.64459,
-    "lng": 139.6663,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "西太子堂駅",
-    "ruhetagJa": "",
-    "ruhetage": [],
-    "top": true,
-    "listen": [
-      "2024",
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1317/A131706/13004530/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%A4%83%E5%AD%90%E6%A5%BC%20%E4%B8%89%E8%BB%92%E8%8C%B6%E5%B1%8B%E5%BA%97%20%E8%A5%BF%E5%A4%AA%E5%AD%90%E5%A0%82%E9%A7%85"
-      }
-    ]
-  },
-  {
     "id": "gyoza-13000410",
-    "name": "おけ以",
+    "name": "Okei",
     "nameJa": "おけ以",
-    "lat": 35.69887,
-    "lng": 139.74452,
+    "lat": 35.69889,
+    "lng": 139.7445,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Ruhetag: So, Feiertage",
+    "zeiten": "Mo, Di, Mi, Do, Fr 17:00–21:00 (l. B. Food 20:30 Drinks 20:45) · Sa 11:30–14:00 (l. B. Food 13:30 Drinks 13:45), 17:00–21:00 (l. B. Food 20:30 Drinks 20:45) · Ruhetag: So, Feiertage",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都千代田区富士見2-12-16",
+    "tabelogNote": 3.55,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -0.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "飯田橋駅",
     "ruhetagJa": "日曜日、祝日",
     "ruhetage": [
@@ -412,14 +833,27 @@
     ]
   },
   {
-    "id": "gyoza-13182912",
-    "name": "亜細亜割烹 蓮月",
-    "nameJa": "亜細亜割烹 蓮月",
-    "lat": 35.66562,
-    "lng": 139.7249,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "乃木坂駅",
+    "id": "gyoza-13127427",
+    "name": "PAIRON Iidabashi",
+    "nameJa": "PAIRON 飯田橋本店",
+    "lat": 35.70585,
+    "lng": 139.74154,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
+    "zeiten": "Mo, Di, Mi, Do, Fr, Sa, Feiertage 11:30–15:00 (l. B. Food 14:30), 17:00–23:00 (l. B. Food 22:30) · So 11:30–21:00 (l. B. Food 20:30)",
+    "preis": "abends ¥4.000–¥4.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都新宿区新小川町8-32",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 2.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚭 Nichtraucher",
+        "🪑 30 Plätze"
+      ],
+      "minus": []
+    },
+    "station": "飯田橋駅",
     "ruhetagJa": "",
     "ruhetage": [],
     "top": true,
@@ -428,7 +862,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -437,22 +871,36 @@
     "links": [
       {
         "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1307/A130701/13182912/"
+        "url": "https://tabelog.com/tokyo/A1309/A130905/13127427/"
       },
       {
         "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%89%B2%E7%83%B9%20%E8%93%AE%E6%9C%88%20%E4%B9%83%E6%9C%A8%E5%9D%82%E9%A7%85"
+        "url": "https://www.google.com/maps/search/?api=1&query=PAIRON%20%E9%A3%AF%E7%94%B0%E6%A9%8B%E6%9C%AC%E5%BA%97%20%E9%A3%AF%E7%94%B0%E6%A9%8B%E9%A7%85"
       }
     ]
   },
   {
     "id": "gyoza-13098822",
-    "name": "來々軒",
+    "name": "Rairai Ken",
     "nameJa": "來々軒",
-    "lat": 35.66942,
-    "lng": 139.80655,
+    "lat": 35.66914,
+    "lng": 139.81147,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Mi",
+    "zeiten": "Mo, Di, Do, Fr, Sa, So, Feiertage 10:30–15:00, 17:00–20:00 · Ruhetag: Mi",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都江東区東陽3-21-4 ライオンズマンション　1F",
+    "tabelogNote": 3.58,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.5,
+      "plus": [
+        "🚃 Suica",
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "木場駅",
     "ruhetagJa": "水曜日",
     "ruhetage": [
@@ -464,7 +912,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -482,267 +930,27 @@
     ]
   },
   {
-    "id": "gyoza-13001812",
-    "name": "您好",
-    "nameJa": "您好",
-    "lat": 35.67748,
-    "lng": 139.67689,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Mo, So",
-    "station": "幡ケ谷駅",
-    "ruhetagJa": "月曜日、日曜日",
-    "ruhetage": [
-      "Mo",
-      "So"
-    ],
-    "top": true,
-    "listen": [
-      "2024",
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1318/A131807/13001812/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E6%82%A8%E5%A5%BD%20%E5%B9%A1%E3%82%B1%E8%B0%B7%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13254805",
-    "name": "手作り餃子の店 吉春",
-    "nameJa": "手作り餃子の店 吉春",
-    "lat": 35.64995,
-    "lng": 139.55822,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Di",
-    "station": "国領駅",
-    "ruhetagJa": "火曜日",
-    "ruhetage": [
-      "Di"
-    ],
-    "top": true,
-    "listen": [
-      "2024"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1326/A132601/13254805/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E6%89%8B%E4%BD%9C%E3%82%8A%E9%A4%83%E5%AD%90%E3%81%AE%E5%BA%97%20%E5%90%89%E6%98%A5%20%E5%9B%BD%E9%A0%98%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13008958",
-    "name": "東亭",
-    "nameJa": "東亭",
-    "lat": 35.7312,
-    "lng": 139.7205,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Mo, Mi, Do, Sa, So, Feiertage",
-    "station": "向原駅",
-    "ruhetagJa": "月曜日、水曜日、木曜日、土曜日、日曜日、祝日",
-    "ruhetage": [
-      "Mo",
-      "Mi",
-      "Do",
-      "Sa",
-      "So"
-    ],
-    "top": true,
-    "listen": [
-      "2024",
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1305/A130501/13008958/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AD%20%E5%90%91%E5%8E%9F%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13052293",
-    "name": "永楽",
-    "nameJa": "永楽",
-    "lat": 35.74217,
-    "lng": 139.88404,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Mo, Di",
-    "station": "京成小岩駅",
-    "ruhetagJa": "月曜日、火曜日",
-    "ruhetage": [
-      "Mo",
-      "Di"
-    ],
-    "top": true,
-    "listen": [
-      "2024",
-      "2019"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1312/A131204/13052293/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E6%A5%BD%20%E4%BA%AC%E6%88%90%E5%B0%8F%E5%B2%A9%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13020138",
-    "name": "鎮海楼",
-    "nameJa": "鎮海楼",
-    "lat": 35.63457,
-    "lng": 139.71691,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021).",
-    "zeiten": "Ruhetag: So",
-    "station": "目黒駅",
-    "ruhetagJa": "日曜日",
-    "ruhetage": [
-      "So"
-    ],
-    "top": true,
-    "listen": [
-      "2024",
-      "2021"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1316/A131601/13020138/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E9%8E%AE%E6%B5%B7%E6%A5%BC%20%E7%9B%AE%E9%BB%92%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13090377",
-    "name": "餃子坊 豚八戒",
-    "nameJa": "餃子坊 豚八戒",
-    "lat": 35.70452,
-    "lng": 139.63495,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Ruhetag: Mo, So",
-    "station": "阿佐ケ谷駅",
-    "ruhetagJa": "月曜日、日曜日",
-    "ruhetage": [
-      "Mo",
-      "So"
-    ],
-    "top": true,
-    "listen": [
-      "2024",
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1319/A131905/13090377/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E9%A4%83%E5%AD%90%E5%9D%8A%20%E8%B1%9A%E5%85%AB%E6%88%92%20%E9%98%BF%E4%BD%90%E3%82%B1%E8%B0%B7%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13108385",
-    "name": "餃子館",
-    "nameJa": "餃子館",
-    "lat": 35.6695,
-    "lng": 139.61707,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Mo, Di",
-    "station": "八幡山駅",
-    "ruhetagJa": "月曜日、火曜日",
-    "ruhetage": [
-      "Mo",
-      "Di"
-    ],
-    "top": true,
-    "listen": [
-      "2024"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2024"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1318/A131809/13108385/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E9%A4%83%E5%AD%90%E9%A4%A8%20%E5%85%AB%E5%B9%A1%E5%B1%B1%E9%A7%85"
-      }
-    ]
-  },
-  {
     "id": "gyoza-13017770",
-    "name": "龍門",
+    "name": "Ryumon",
     "nameJa": "龍門",
-    "lat": 35.55258,
-    "lng": 139.73932,
+    "lat": 35.55405,
+    "lng": 139.73914,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: So",
+    "zeiten": "Mo, Di, Mi, Do, Fr, Sa 11:30–13:00, 17:00–19:00 · Ruhetag: So, Feiertage",
+    "preis": "abends - ¥999 · mittags - ¥999",
+    "adresse": "東京都大田区西糀谷3-35-3",
+    "tabelogNote": 3.68,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -1.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld",
+        "🪑 nur 7 Plätze – oft Wartezeit"
+      ]
+    },
     "station": "大鳥居駅",
     "ruhetagJa": "日曜日",
     "ruhetage": [
@@ -754,7 +962,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -772,13 +980,223 @@
     ]
   },
   {
+    "id": "gyoza-13254805",
+    "name": "Tezukuri Gyoza No Mise Yoshiharu",
+    "nameJa": "手作り餃子の店 吉春",
+    "lat": 35.64655,
+    "lng": 139.56192,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Mo, Mi, Do, Fr, Sa, So, Feiertage 17:00–19:15, 19:30–22:00 (l. B. 21:15) · Ruhetag: Di",
+    "preis": "abends ¥5.000–¥5.999 · mittags ¥6.000–¥7.999",
+    "adresse": "東京都調布市国領町8-1-14",
+    "tabelogNote": 3.72,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -1.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld",
+        "🪑 nur 10 Plätze – oft Wartezeit"
+      ]
+    },
+    "station": "国領駅",
+    "ruhetagJa": "火曜日",
+    "ruhetage": [
+      "Di"
+    ],
+    "top": true,
+    "listen": [
+      "2024"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1326/A132601/13254805/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%89%8B%E4%BD%9C%E3%82%8A%E9%A4%83%E5%AD%90%E3%81%AE%E5%BA%97%20%E5%90%89%E6%98%A5%20%E5%9B%BD%E9%A0%98%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13004530",
+    "name": "Tōkyō Gyōzarō Sangenjaya",
+    "nameJa": "東京餃子楼 三軒茶屋店",
+    "lat": 35.64322,
+    "lng": 139.66764,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019). Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Täglich 11:30–23:00 (l. B. 22:30)",
+    "preis": "abends ¥2.000–¥2.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都世田谷区太子堂4-4-2 ラウスパレス三軒茶屋",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 4.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "📅 Online reservierbar",
+        "🚭 Nichtraucher",
+        "🪑 40 Plätze"
+      ],
+      "minus": []
+    },
+    "station": "西太子堂駅",
+    "ruhetagJa": "",
+    "ruhetage": [],
+    "top": true,
+    "listen": [
+      "2024",
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2024"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1317/A131706/13004530/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%A4%83%E5%AD%90%E6%A5%BC%20%E4%B8%89%E8%BB%92%E8%8C%B6%E5%B1%8B%E5%BA%97%20%E8%A5%BF%E5%A4%AA%E5%AD%90%E5%A0%82%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13003379",
+    "name": "Dalian",
+    "nameJa": "大連",
+    "lat": 35.59324,
+    "lng": 139.72548,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Mo, Mi, Do, Fr, Sa, So 11:30–14:00, 17:00–22:00 · Ruhetag: Di",
+    "preis": "abends ¥3.000–¥3.999 · mittags - ¥999",
+    "adresse": "東京都大田区山王1-25-14",
+    "tabelogNote": 3.52,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 50 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "大森駅",
+    "ruhetagJa": "火曜日",
+    "ruhetage": [
+      "Di"
+    ],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1315/A131502/13003379/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%80%A3%20%E5%A4%A7%E6%A3%AE%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13020500",
+    "name": "Dan Ta",
+    "nameJa": "壇太",
+    "lat": 35.63269,
+    "lng": 139.7317,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
+    "zeiten": "Mo, Di, Mi, Do, Fr, Sa 17:30–23:00 · Ruhetag: So, Feiertage",
+    "preis": "abends ¥4.000–¥4.999 · mittags - ¥999",
+    "adresse": "東京都港区高輪3-7-14",
+    "tabelogNote": 3.53,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -1.5,
+      "plus": [
+        "🪑 42 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld",
+        "🚬 Rauchen erlaubt"
+      ]
+    },
+    "station": "高輪台駅",
+    "ruhetagJa": "日曜・祝日・第3土曜",
+    "ruhetage": [
+      "So"
+    ],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1316/A131603/13020500/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E5%A3%87%E5%A4%AA%20%E9%AB%98%E8%BC%AA%E5%8F%B0%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13021680",
     "name": "Dekkai Gyōza – Sō-san (Yoyogi)",
     "nameJa": "でっかい餃子 曽さんの店 代々木店",
-    "lat": 35.68301,
-    "lng": 139.70207,
+    "lat": 35.6827,
+    "lng": 139.70231,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Täglich 11:00–0:00",
+    "preis": "abends - ¥999 · mittags - ¥999",
+    "adresse": "東京都渋谷区代々木1-33-2",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 1.0,
+      "plus": [
+        "🚃 Suica",
+        "🚭 Nichtraucher",
+        "🪑 31 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "代々木駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -787,7 +1205,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -808,10 +1226,24 @@
     "id": "gyoza-13008712",
     "name": "Dokuitsusho Gyōza Kasai",
     "nameJa": "独一処餃子 葛西本店",
-    "lat": 35.66425,
-    "lng": 139.87331,
+    "lat": 35.66462,
+    "lng": 139.87121,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Mo",
+    "zeiten": "11:30–14:30 (l. B. 14:15), 17:25–23:00 (l. B. 22:30) · Ruhetag: Mo",
+    "preis": "abends ¥2.000–¥2.999 · mittags - ¥999",
+    "adresse": "東京都江戸川区中葛西3-33-19",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 3.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "📅 Online reservierbar",
+        "🚭 Nichtraucher",
+        "🪑 62 Plätze"
+      ],
+      "minus": []
+    },
     "station": "葛西駅",
     "ruhetagJa": "月曜日 (月曜が祝日の場合月曜営業、翌営業日振替休日)",
     "ruhetage": [
@@ -822,7 +1254,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -843,10 +1275,23 @@
     "id": "gyoza-13054311",
     "name": "Ganso Harupin (Mitaka)",
     "nameJa": "元祖ハルピン",
-    "lat": 35.69777,
-    "lng": 139.56054,
+    "lat": 35.69775,
+    "lng": 139.56053,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag: Mo, Di",
+    "zeiten": "Mi, Do, Fr, Sa, So 11:30–14:00, 17:00–21:00 · Ruhetag: Mo, Di",
+    "preis": "abends - ¥999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都三鷹市下連雀3-31-9",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -0.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "三鷹駅",
     "ruhetagJa": "月曜日・火曜日",
     "ruhetage": [
@@ -878,10 +1323,23 @@
     "id": "gyoza-13193356",
     "name": "Ginza Tenryū",
     "nameJa": "銀座 天龍 本店",
-    "lat": 35.67417,
-    "lng": 139.76694,
+    "lat": 35.67423,
+    "lng": 139.76693,
     "beschreibung": "Berühmt für riesige Gyoza – ein Teller reicht fast als Mahlzeit. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Di, Mi, Do, Fr 11:00–21:30 (l. B. 21:00) · Sa, So, Feiertage 11:30–21:30 (l. B. 21:00)",
+    "preis": "abends ¥3.000–¥3.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都中央区銀座2-5-19 ヒューリック銀座二丁目柳通ビル 4F",
+    "tabelogNote": 3.66,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 2.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚭 Nichtraucher",
+        "🪑 94 Plätze"
+      ],
+      "minus": []
+    },
     "station": "銀座一丁目駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -911,10 +1369,24 @@
     "id": "gyoza-13050544",
     "name": "Gyōza no Fukuhō Shinjuku",
     "nameJa": "餃子の福包 新宿店",
-    "lat": 35.68921,
-    "lng": 139.70889,
+    "lat": 35.68917,
+    "lng": 139.7089,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Di, Mi, Do, Fr 11:30–15:30, 17:00–23:00 · Sa, So 11:30–23:00",
+    "preis": "abends - ¥999 · mittags ¥3.000–¥3.999",
+    "adresse": "東京都新宿区新宿2-8-6 KDX新宿286ビル 1F",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 3.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "🚭 Nichtraucher",
+        "🪑 32 Plätze"
+      ],
+      "minus": []
+    },
     "station": "新宿御苑前駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -948,6 +1420,10 @@
     "lng": 139.70619,
     "beschreibung": "Günstig, schnell und beliebt – oft mit kurzer Schlange; gebraten oder gekocht. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "明治神宮前駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -980,6 +1456,10 @@
     "lng": 139.76851,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "京橋駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1008,10 +1488,24 @@
     "id": "gyoza-13003304",
     "name": "Huanying Kamata (Hauptladen)",
     "nameJa": "歓迎 本店",
-    "lat": 35.55999,
-    "lng": 139.71566,
+    "lat": 35.55996,
+    "lng": 139.71563,
     "beschreibung": "Kamata ist die Heimat der „Hane-tsuki“-Gyoza mit knusprigem Flügel aus Teig. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Di, Mi, Do, Fr 11:30–14:00 (l. B. 13:30), 17:00–22:00 (l. B. 21:30) · Sa, So 11:30–14:30 (l. B. 14:00), 17:00–22:00 (l. B. 21:30)",
+    "preis": "abends ¥2.000–¥2.999 · mittags - ¥999",
+    "adresse": "東京都大田区蒲田5-13-26 大田区生活センター　１Ｆ",
+    "tabelogNote": 3.48,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 60 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
     "station": "蒲田駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1046,6 +1540,10 @@
     "lng": 139.7156,
     "beschreibung": "Kamata ist die Heimat der „Hane-tsuki“-Gyoza mit knusprigem Flügel aus Teig. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "蒲田駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1073,6 +1571,55 @@
     ]
   },
   {
+    "id": "gyoza-13020141",
+    "name": "Ichimi Reirei Honten Reservation",
+    "nameJa": "一味玲玲 本店",
+    "lat": 35.66503,
+    "lng": 139.75756,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
+    "zeiten": "Mo, Di, Mi, Do, Fr 11:00–14:00, 16:00–23:30 · Sa, So, Feiertage 11:00–14:00, 16:00–23:00",
+    "preis": "abends ¥4.000–¥4.999 · mittags - ¥999",
+    "adresse": "東京都港区新橋3-19-2 2階",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 3.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "📅 Online reservierbar",
+        "🚭 Nichtraucher",
+        "🪑 35 Plätze"
+      ],
+      "minus": []
+    },
+    "station": "新橋駅",
+    "ruhetagJa": "日曜日※祝日は営業しております。",
+    "ruhetage": [
+      "So"
+    ],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1301/A130103/13020141/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E5%91%B3%E7%8E%B2%E7%8E%B2%20%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A9%8B%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13101510",
     "name": "Kitchen Tachikichi Shibuya",
     "nameJa": "KITCHEN TACHIKICHI 渋谷本店",
@@ -1080,6 +1627,10 @@
     "lng": 139.70253,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "渋谷駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1105,13 +1656,74 @@
     ]
   },
   {
+    "id": "gyoza-13008262",
+    "name": "Konparu (Haupthaus)",
+    "nameJa": "金春 本館",
+    "lat": 35.5615,
+    "lng": 139.72264,
+    "beschreibung": "Kamata ist die Heimat der „Hane-tsuki“-Gyoza mit knusprigem Flügel aus Teig. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
+    "zeiten": "Täglich 11:30–23:00 (l. B. 22:30)",
+    "preis": "abends ¥2.000–¥2.999 · mittags - ¥999",
+    "adresse": "東京都大田区蒲田4-5-6 プロスペリアルビル　１・２Ｆ",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 200 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "京急蒲田駅",
+    "ruhetagJa": "",
+    "ruhetage": [],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021",
+      "Hane-tsuki"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1315/A131503/13008262/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%87%91%E6%98%A5%20%E6%9C%AC%E9%A4%A8%20%E4%BA%AC%E6%80%A5%E8%92%B2%E7%94%B0%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13133812",
     "name": "Little Taikōrō Fei",
     "nameJa": "リトル泰興楼 Fei店",
-    "lat": 35.68164,
-    "lng": 139.77619,
+    "lat": 35.6822,
+    "lng": 139.77151,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag: So, Feiertage, Jahreswechsel",
+    "preis": "abends ¥3.000–¥3.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都中央区八重洲1-4-16 八重仲ダイニング B1F",
+    "tabelogNote": 3.51,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 2.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚭 Nichtraucher",
+        "🪑 50 Plätze"
+      ],
+      "minus": []
+    },
     "station": "日本橋駅",
     "ruhetagJa": "日、祝日 、年末年始",
     "ruhetage": [
@@ -1122,7 +1734,7 @@
       "2021",
       "2019"
     ],
-    "lageUngefaehr": true,
+    "lageUngefaehr": false,
     "fotoSuche": false,
     "tags": [
       "Gyoza",
@@ -1140,13 +1752,75 @@
     ]
   },
   {
+    "id": "gyoza-13015935",
+    "name": "Minmin",
+    "nameJa": "みんみん",
+    "lat": 35.70375,
+    "lng": 139.57937,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
+    "zeiten": "Mo, Di, Mi, Fr 11:30–15:00, 16:00–20:30 · Sa, So 11:00–20:00 · Feiertage 11:00–20:30 · Ruhetag: Do",
+    "preis": "abends - ¥999 · mittags - ¥999",
+    "adresse": "東京都武蔵野市吉祥寺本町1-1-9",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -0.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "吉祥寺駅",
+    "ruhetagJa": "木曜日",
+    "ruhetage": [
+      "Do"
+    ],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1320/A132001/13015935/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%82%93%E3%81%BF%E3%82%93%20%E5%90%89%E7%A5%A5%E5%AF%BA%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13012005",
     "name": "Rōhen Gyōzakan Shinjuku",
     "nameJa": "老辺餃子舘 新宿本店",
-    "lat": 35.68892,
-    "lng": 139.69864,
+    "lat": 35.68899,
+    "lng": 139.69865,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "zeiten": "Mo, Di, Mi, Do, Fr 11:30–15:00 (l. B. Food 14:30), 17:00–23:00 (l. B. Food 22:30) · Sa 11:30–23:00 (l. B. Food 22:30) · So, Feiertage 11:30–22:00 (l. B. Food 21:30)",
+    "preis": "abends ¥3.000–¥3.999 · mittags - ¥999",
+    "adresse": "東京都新宿区西新宿1-18-1 小川ビル 3F",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 3.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "🚭 Nichtraucher",
+        "🪑 100 Plätze"
+      ],
+      "minus": []
+    },
     "station": "新宿駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1179,6 +1853,10 @@
     "lng": 139.75839,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag: Sa",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "神保町駅",
     "ruhetagJa": "土曜日",
     "ruhetage": [
@@ -1206,6 +1884,104 @@
     ]
   },
   {
+    "id": "gyoza-13003608",
+    "name": "Shoryu",
+    "nameJa": "昇龍",
+    "lat": 35.71037,
+    "lng": 139.77485,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
+    "zeiten": "Di, Mi, Do 11:20–21:00 · Fr, Sa 11:20–21:30 · So, Feiertage 11:20–20:00 · Ruhetag: Mo",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "東京都台東区上野6-10-14",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 26 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "京成上野駅",
+    "ruhetagJa": "",
+    "ruhetage": [
+      "Mo"
+    ],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1311/A131101/13003608/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%98%87%E9%BE%8D%20%E4%BA%AC%E6%88%90%E4%B8%8A%E9%87%8E%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-13057671",
+    "name": "Shunkou En Kamata Ten Reservation",
+    "nameJa": "春香園 蒲田店",
+    "lat": 35.5623,
+    "lng": 139.71893,
+    "beschreibung": "Kamata ist die Heimat der „Hane-tsuki“-Gyoza mit knusprigem Flügel aus Teig. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
+    "zeiten": "Täglich 11:00–14:00, 17:00–23:00",
+    "preis": "abends ¥2.000–¥2.999 · mittags - ¥999",
+    "adresse": "東京都大田区蒲田5-22-1",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gelb",
+      "punkte": 1.0,
+      "plus": [
+        "📅 Online reservierbar",
+        "🚭 Nichtraucher",
+        "🪑 100 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "蒲田駅",
+    "ruhetagJa": "",
+    "ruhetage": [],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021",
+      "Hane-tsuki"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1315/A131503/13057671/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E9%A6%99%E5%9C%92%20%E8%92%B2%E7%94%B0%E5%BA%97%20%E8%92%B2%E7%94%B0%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13000637",
     "name": "Sweet Pots (Jimbōchō)",
     "nameJa": "スヰートポーヅ",
@@ -1213,6 +1989,10 @@
     "lng": 139.7588,
     "beschreibung": "Traditionsladen mit länglichen, an den Enden offenen Gyoza – ganz anders als üblich. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "神保町駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1245,6 +2025,10 @@
     "lng": 139.66855,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag: Mi",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "自由が丘駅",
     "ruhetagJa": "水曜日,",
     "ruhetage": [
@@ -1280,6 +2064,10 @@
     "lng": 139.76486,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "東京駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1305,6 +2093,53 @@
     ]
   },
   {
+    "id": "gyoza-13000118",
+    "name": "Tairiku",
+    "nameJa": "大陸",
+    "lat": 35.69365,
+    "lng": 139.70247,
+    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
+    "zeiten": "Mo, Di, Mi, Do, Fr 16:00–23:00 · Sa, So, Feiertage 15:00–23:00",
+    "preis": "abends ¥5.000–¥5.999 · mittags ¥5.000–¥5.999",
+    "adresse": "東京都新宿区歌舞伎町1-6-3 石塚ビル 4F",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 3.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "🚭 Nichtraucher",
+        "🪑 90 Plätze"
+      ],
+      "minus": []
+    },
+    "station": "新宿西口駅",
+    "ruhetagJa": "",
+    "ruhetage": [],
+    "top": false,
+    "listen": [
+      "2021",
+      "2019"
+    ],
+    "lageUngefaehr": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Bestenliste 2021"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/tokyo/A1304/A130401/13000118/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%99%B8%20%E6%96%B0%E5%AE%BF%E8%A5%BF%E5%8F%A3%E9%A7%85"
+      }
+    ]
+  },
+  {
     "id": "gyoza-13000676",
     "name": "Tetsunabe Gyōza Nakayoshi",
     "nameJa": "鉄なべ餃子なかよし",
@@ -1312,6 +2147,10 @@
     "lng": 139.63571,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag: Do, Feiertage",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "南阿佐ケ谷駅",
     "ruhetagJa": "木曜・祝日",
     "ruhetage": [
@@ -1340,18 +2179,29 @@
     ]
   },
   {
-    "id": "gyoza-13015935",
-    "name": "みんみん",
-    "nameJa": "みんみん",
-    "lat": 35.70374,
-    "lng": 139.57935,
+    "id": "gyoza-13003085",
+    "name": "[Closed]Harbin Gyoza",
+    "nameJa": "哈爾濱餃子",
+    "lat": 35.74691,
+    "lng": 139.82682,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag: Do",
-    "station": "吉祥寺駅",
-    "ruhetagJa": "木曜日",
-    "ruhetage": [
-      "Do"
-    ],
+    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": "東京都葛飾区堀切3-7-17",
+    "tabelogNote": 3.56,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -3.0,
+      "plus": [],
+      "minus": [
+        "💴 Nur Bargeld",
+        "🚬 Rauchen erlaubt",
+        "🪑 nur 5 Plätze – oft Wartezeit"
+      ]
+    },
+    "station": "堀切菖蒲園駅",
+    "ruhetagJa": "",
+    "ruhetage": [],
     "top": false,
     "listen": [
       "2021",
@@ -1366,46 +2216,11 @@
     "links": [
       {
         "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1320/A132001/13015935/"
+        "url": "https://tabelog.com/tokyo/A1324/A132403/13003085/"
       },
       {
         "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%82%93%E3%81%BF%E3%82%93%20%E5%90%89%E7%A5%A5%E5%AF%BA%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13020141",
-    "name": "一味玲玲 本店",
-    "nameJa": "一味玲玲 本店",
-    "lat": 35.66501,
-    "lng": 139.75757,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag: So",
-    "station": "新橋駅",
-    "ruhetagJa": "日曜日※祝日は営業しております。",
-    "ruhetage": [
-      "So"
-    ],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1301/A130103/13020141/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E5%91%B3%E7%8E%B2%E7%8E%B2%20%E6%9C%AC%E5%BA%97%20%E6%96%B0%E6%A9%8B%E9%A7%85"
+        "url": "https://www.google.com/maps/search/?api=1&query=%E5%93%88%E7%88%BE%E6%BF%B1%E9%A4%83%E5%AD%90%20%E5%A0%80%E5%88%87%E8%8F%96%E8%92%B2%E5%9C%92%E9%A7%85"
       }
     ]
   },
@@ -1417,6 +2232,10 @@
     "lng": 139.77409,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "上野御徒町駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1449,6 +2268,10 @@
     "lng": 139.71409,
     "beschreibung": "Kamata ist die Heimat der „Hane-tsuki“-Gyoza mit knusprigem Flügel aus Teig. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "蒲田駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1483,6 +2306,10 @@
     "lng": 139.68239,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "東中野駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1508,142 +2335,6 @@
     ]
   },
   {
-    "id": "gyoza-13003085",
-    "name": "哈爾濱餃子",
-    "nameJa": "哈爾濱餃子",
-    "lat": 35.7469,
-    "lng": 139.82683,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "堀切菖蒲園駅",
-    "ruhetagJa": "",
-    "ruhetage": [],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1324/A132403/13003085/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E5%93%88%E7%88%BE%E6%BF%B1%E9%A4%83%E5%AD%90%20%E5%A0%80%E5%88%87%E8%8F%96%E8%92%B2%E5%9C%92%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13020500",
-    "name": "壇太",
-    "nameJa": "壇太",
-    "lat": 35.63267,
-    "lng": 139.73168,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag: So, Feiertage, 3. Samstag im Monat",
-    "station": "高輪台駅",
-    "ruhetagJa": "日曜・祝日・第3土曜",
-    "ruhetage": [
-      "So"
-    ],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1316/A131603/13020500/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E5%A3%87%E5%A4%AA%20%E9%AB%98%E8%BC%AA%E5%8F%B0%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13003379",
-    "name": "大連",
-    "nameJa": "大連",
-    "lat": 35.58805,
-    "lng": 139.72885,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag: Di",
-    "station": "大森駅",
-    "ruhetagJa": "火曜日",
-    "ruhetage": [
-      "Di"
-    ],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1315/A131502/13003379/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%80%A3%20%E5%A4%A7%E6%A3%AE%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13000118",
-    "name": "大陸",
-    "nameJa": "大陸",
-    "lat": 35.6929,
-    "lng": 139.6991,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "新宿西口駅",
-    "ruhetagJa": "",
-    "ruhetage": [],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": true,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1304/A130401/13000118/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%99%B8%20%E6%96%B0%E5%AE%BF%E8%A5%BF%E5%8F%A3%E9%A7%85"
-      }
-    ]
-  },
-  {
     "id": "gyoza-13000732",
     "name": "太陽",
     "nameJa": "太陽",
@@ -1651,6 +2342,10 @@
     "lng": 139.65858,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "高円寺駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1683,6 +2378,10 @@
     "lng": 139.80655,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "木場駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1708,73 +2407,6 @@
     ]
   },
   {
-    "id": "gyoza-13003608",
-    "name": "昇龍",
-    "nameJa": "昇龍",
-    "lat": 35.71038,
-    "lng": 139.77481,
-    "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "京成上野駅",
-    "ruhetagJa": "",
-    "ruhetage": [],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1311/A131101/13003608/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E6%98%87%E9%BE%8D%20%E4%BA%AC%E6%88%90%E4%B8%8A%E9%87%8E%E9%A7%85"
-      }
-    ]
-  },
-  {
-    "id": "gyoza-13057671",
-    "name": "春香園 蒲田店",
-    "nameJa": "春香園 蒲田店",
-    "lat": 35.56231,
-    "lng": 139.71896,
-    "beschreibung": "Kamata ist die Heimat der „Hane-tsuki“-Gyoza mit knusprigem Flügel aus Teig. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "蒲田駅",
-    "ruhetagJa": "",
-    "ruhetage": [],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021",
-      "Hane-tsuki"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1315/A131503/13057671/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E9%A6%99%E5%9C%92%20%E8%92%B2%E7%94%B0%E5%BA%97%20%E8%92%B2%E7%94%B0%E9%A7%85"
-      }
-    ]
-  },
-  {
     "id": "gyoza-13013002",
     "name": "福蘭",
     "nameJa": "福蘭",
@@ -1782,6 +2414,10 @@
     "lng": 139.71765,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "外苑前駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1814,6 +2450,10 @@
     "lng": 139.80394,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag: Sa, So, Feiertage",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "北千住駅",
     "ruhetagJa": "土曜・日曜・祝日",
     "ruhetage": [
@@ -1843,40 +2483,6 @@
     ]
   },
   {
-    "id": "gyoza-13008262",
-    "name": "金春 本館",
-    "nameJa": "金春 本館",
-    "lat": 35.56151,
-    "lng": 139.72263,
-    "beschreibung": "Kamata ist die Heimat der „Hane-tsuki“-Gyoza mit knusprigem Flügel aus Teig. Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
-    "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
-    "station": "京急蒲田駅",
-    "ruhetagJa": "",
-    "ruhetage": [],
-    "top": false,
-    "listen": [
-      "2021",
-      "2019"
-    ],
-    "lageUngefaehr": false,
-    "fotoSuche": false,
-    "tags": [
-      "Gyoza",
-      "Bestenliste 2021",
-      "Hane-tsuki"
-    ],
-    "links": [
-      {
-        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
-        "url": "https://tabelog.com/tokyo/A1315/A131503/13008262/"
-      },
-      {
-        "titel": "In Google Maps suchen",
-        "url": "https://www.google.com/maps/search/?api=1&query=%E9%87%91%E6%98%A5%20%E6%9C%AC%E9%A4%A8%20%E4%BA%AC%E6%80%A5%E8%92%B2%E7%94%B0%E9%A7%85"
-      }
-    ]
-  },
-  {
     "id": "gyoza-13017017",
     "name": "開楽 本店",
     "nameJa": "開楽 本店",
@@ -1884,6 +2490,10 @@
     "lng": 139.71288,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "池袋駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1917,6 +2527,10 @@
     "lng": 139.84793,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag & Zeiten: siehe Tabelog",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "京成立石駅",
     "ruhetagJa": "",
     "ruhetage": [],
@@ -1949,6 +2563,10 @@
     "lng": 139.70447,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2021, 2019). Aus einer älteren Liste – vorher kurz prüfen, ob der Laden noch so geöffnet hat. Punkt auf der Karte = Bahnhof, der Laden ist in der Nähe – für den genauen Weg den Google-Maps-Link nutzen.",
     "zeiten": "Ruhetag: So",
+    "preis": null,
+    "adresse": null,
+    "tabelogNote": null,
+    "touristen": null,
     "station": "高田馬場駅",
     "ruhetagJa": "日曜※祝日はお問い合わせください。",
     "ruhetage": [
