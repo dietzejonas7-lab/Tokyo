@@ -1340,6 +1340,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .sonnen-karte small { font-size: 0.68rem; opacity: 0.85; }
 .sonnen-karte b { font-family: var(--rund); font-size: 0.95rem; }
 .sonnen-karte p { grid-column: 1 / -1; margin: 4px 0 0; font-size: 0.8rem; text-align: center; opacity: 0.95; }
+.sonnen-karte p small { font-size: 0.68rem; opacity: 0.8; }
 .wk-quelle { margin: 4px 2px 0; font-size: 0.7rem; color: var(--muted); }
 .wk-quelle a { color: var(--muted); }
 /* Regen über dem Kalenderblatt, wenn es am Tag regnet */

@@ -1102,9 +1102,10 @@ function wetterHtml() {
     <div><span>🌅</span><small>Aufgang</small><b>${Wetter.zeit(sonne.auf)}</b></div>
     <div><span>🌇</span><small>Untergang</small><b>${Wetter.zeit(sonne.unter)}</b></div>
     <div><span>🔵</span><small>Blaue Stunde</small><b>${plusMin(sonne.unter, 5)}–${plusMin(sonne.unter, 30)}</b></div>
-    <p>✨ Illuminationen & Tempel bei Nacht lohnen sich ab ca. <b>${plusMin(sonne.unter, 20)} Uhr</b>.${sonne.genau ? "" : " (Zeiten ± 3 Min.)"}</p>
+    <p>✨ Illuminationen & Tempel bei Nacht lohnen sich ab ca. <b>${plusMin(sonne.unter, 20)} Uhr</b>.<br>
+      <small>Alle Uhrzeiten in japanischer Zeit${sonne.genau ? "" : " · ± 3 Min."}</small></p>
   </div>`;
-  const stand = `<p class="wk-quelle">Wetter: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo.com</a> · aktualisiert ${new Date(Wetter.daten.geholt).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr (deine Zeit)</p>`;
+  const stand = `<p class="wk-quelle">Wetter: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo.com</a> (die ersten Tage vom japanischen Wetterdienst JMA) · aktualisiert ${new Date(Wetter.daten.geholt).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr (deine Zeit)</p>`;
   return `<h3 class="section-title">🌤️ Wetter & Sonne</h3>` + (iso === heute ? wirklich + auswahl : auswahl + wirklich) + licht + stand;
 }
 
