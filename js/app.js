@@ -1151,6 +1151,17 @@ function themeSetzen(theme) {
 }
 
 function splashBlueten() {
+  // Funkelnde Sterne im oberen Himmel
+  const sterne = document.querySelector(".sz-sterne");
+  for (let i = 0; i < 70; i++) {
+    const s = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    s.setAttribute("cx", (Math.random() * 390).toFixed(1));
+    s.setAttribute("cy", (Math.random() * Math.random() * 520).toFixed(1));
+    s.setAttribute("r", (0.5 + Math.random() * 1.2).toFixed(2));
+    s.style.setProperty("--t", 2 + Math.random() * 3 + "s");
+    s.style.setProperty("--d", -Math.random() * 4 + "s");
+    sterne.appendChild(s);
+  }
   const box = document.querySelector(".petals");
   for (let i = 0; i < 26; i++) {
     const p = document.createElement("span");
@@ -1234,9 +1245,8 @@ async function start() {
   }
   themeSetzen(laden(SPEICHER.theme, "light"));
   splashBlueten();
-  Effekte.titelZerlegen($("#splash .kanji"));
   Effekte.wellenAktivieren();
-  const splashMin = new Promise((r) => setTimeout(r, 1800));
+  const splashMin = new Promise((r) => setTimeout(r, 2600));
 
   // Außerhalb der Reise: Kalender trotzdem auf den 1. November stellen
   if (state.datum < REISE.von || state.datum > REISE.bis) {
@@ -1259,7 +1269,7 @@ async function start() {
   datumAnzeigen();
   await splashMin;
   $("#splash").classList.add("hide");
-  setTimeout(() => $("#splash").remove(), 800);
+  setTimeout(() => $("#splash").remove(), 1000);
   markerZeichnen();
 
   if ("serviceWorker" in navigator) {
