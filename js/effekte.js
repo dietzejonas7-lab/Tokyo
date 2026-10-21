@@ -76,6 +76,18 @@ const Effekte = {
     el.classList.add(klasse);
   },
 
+  /** Tageswechsel: Wellenband zieht über den Bildschirm, das neue Datum wird „gestempelt“ */
+  tagWechsel(iso) {
+    if (this.ruhig) return;
+    document.querySelector(".tag-wechsel")?.remove();
+    const d = new Date(iso + "T12:00:00Z");
+    const el = document.createElement("div");
+    el.className = "tag-wechsel";
+    el.innerHTML = `<b>${d.getUTCDate()}日<small>${"日月火水木金土"[d.getUTCDay()]}曜日</small></b>`;
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 1300);
+  },
+
   /** Splash: Schriftzeichen nacheinander erscheinen lassen */
   titelZerlegen(el) {
     el.innerHTML = [...el.textContent].map((z, i) => `<i style="--i:${i}">${z}</i>`).join("");

@@ -27,7 +27,7 @@ const VEKTOR_KARTE = {
 // Eigene Kartenfarben passend zum App-Design (nur Flächen – Straßen bleiben wie im Original)
 const KARTEN_FARBEN = {
   light: { hintergrund: "#efe7d6", wasser: "#b7cdd6", gruen: "#d3dfbd", gebaeude: "#e3d8c3" },
-  dark: { hintergrund: "#171b2c", wasser: "#1c2a44", gruen: "#1e2d27", gebaeude: "#242838" },
+  dark: { hintergrund: "#16152f", wasser: "#1d2350", gruen: "#1d2a33", gebaeude: "#252344" },
 };
 // Sprache der Kartenbeschriftung: erst Deutsch, dann Englisch, dann lateinische Schrift, sonst Japanisch
 const KARTEN_SPRACHE = ["name:de", "name_de", "name:en", "name_en", "name:latin", "name"];
@@ -615,7 +615,7 @@ function sheetOeffnen(e) {
   $("#sheet-body").innerHTML = `
     <div class="hero ${meinFoto ? "mein" : ""}" style="--c:${esc(k.farbe)}">
       ${bild ? `<img src="${esc(bild)}" alt="${esc(e.name)}" loading="lazy">`
-             : `<span class="hero-icon">${k.icon}</span><span class="hero-ja">${esc(e.nameJa || "")}</span>`}
+             : `${heroDeko()}<span class="hero-icon">${laub ? laub.icon : k.icon}</span><span class="hero-ja">${esc(e.nameJa || "")}</span>`}
       ${meinFoto ? `<span class="hero-badge">📷 Mein Foto</span>` : ""}
     </div>
     <div class="sheet-content">
@@ -706,12 +706,24 @@ function heroFotosZeigen(e, fotos) {
   zeigen();
 }
 
+/** Wolken und Funkeln für das Kopfbild der Detail-Karte (zufällig verteilt) */
+function heroDeko() {
+  const zufall = (a, b) => (a + Math.random() * (b - a)).toFixed(1);
+  const wolken = [0, 1, 2].map((i) =>
+    `<i class="hero-wolke" style="top:${20 + i * 26}%;width:${zufall(40, 70)}px;--t:${zufall(14, 24)}s;--v:-${zufall(0, 20)}s"></i>`).join("");
+  const funken = Array.from({ length: 6 }, () =>
+    `<i style="left:${zufall(8, 90)}%;top:${zufall(10, 80)}%;--g:${zufall(9, 18)}px;--v:${zufall(0, 2.4)}s">✦</i>`).join("");
+  return `${wolken}<span class="hero-funken">${funken}</span><span class="hero-glanz"></span>`;
+}
+
 /** Den Marker des geöffneten Orts hüpfen lassen und hervorheben */
 function markerHervorheben(e) {
   document.querySelectorAll(".pin.gewaehlt").forEach((p) => p.classList.remove("gewaehlt"));
+  document.querySelectorAll(".pin-wrap.gewaehlt").forEach((p) => p.classList.remove("gewaehlt"));
   const m = e && markerNachId.get(e.id);
   if (!m) return;
   m.setZIndexOffset(1000);
+  m.getElement()?.classList.add("gewaehlt");
   Effekte.nochmal(m.getElement()?.querySelector(".pin"), "gewaehlt");
 }
 
@@ -764,23 +776,30 @@ async function fotoEntfernen(e) {
   sheetOeffnen(e);
 }
 
-/** Kleine Feier-Animation beim Sammeln */
+/** Kleine Feier-Animation beim Sammeln: Kirschblüten und Goldfunken fliegen auf */
 function konfetti() {
-  const farben = ["#f4b6c2", "#fbd3dc", "#ffffff", "#d2462c", "#c9a14a", "#f7c9d2"];
-  for (let i = 0; i < 28; i++) {
+  if (Effekte.ruhig) return;
+  const farben = ["#f4b6c2", "#fbd3dc", "#ffffff", "#f7c9d2", "#e8a0b4"];
+  for (let i = 0; i < 34; i++) {
     const p = document.createElement("i");
-    const winkel = Math.random() * Math.PI * 2, weite = 80 + Math.random() * 140;
+    const blatt = i % 4 !== 0;
+    const winkel = -Math.PI / 2 + (Math.random() - 0.5) * 2.4, weite = 90 + Math.random() * 170;
     Object.assign(p.style, {
-      position: "fixed", left: "50%", top: "60%", width: "9px", height: "9px", zIndex: 2000,
-      borderRadius: i % 2 ? "50%" : "2px", background: farben[i % farben.length], pointerEvents: "none",
+      position: "fixed", left: "50%", top: "62%", zIndex: 2000, pointerEvents: "none",
+      width: blatt ? "12px" : "6px", height: blatt ? "10px" : "6px",
+      borderRadius: blatt ? "12px 0 12px 0" : "50%",
+      background: blatt ? farben[i % farben.length] : "#e0b86a",
+      boxShadow: blatt ? "none" : "0 0 8px #ffd98a",
     });
     document.body.appendChild(p);
+    const x = Math.cos(winkel) * weite, y = Math.sin(winkel) * weite;
     p.animate(
       [
-        { transform: "translate(0,0) rotate(0)", opacity: 1 },
-        { transform: `translate(${Math.cos(winkel) * weite}px, ${Math.sin(winkel) * weite - 120}px) rotate(${Math.random() * 720}deg)`, opacity: 0 },
+        { transform: "translate(0,0) rotate(0) scale(0.4)", opacity: 1 },
+        { transform: `translate(${x}px, ${y}px) rotate(${Math.random() * 360}deg) scale(1)`, opacity: 1, offset: 0.45 },
+        { transform: `translate(${x + (Math.random() - 0.5) * 80}px, ${y + 160}px) rotate(${Math.random() * 720}deg) scale(0.9)`, opacity: 0 },
       ],
-      { duration: 900 + Math.random() * 500, easing: "cubic-bezier(.2,.8,.2,1)" }
+      { duration: 1400 + Math.random() * 700, easing: "cubic-bezier(.2,.7,.3,1)" }
     ).onfinish = () => p.remove();
   }
 }
@@ -818,10 +837,18 @@ function panelOeffnen(tab = panelTab) {
   panelZeichnen();
   $("#panel").classList.add("open");
   $("#panel").setAttribute("aria-hidden", "false");
+  dockMarkieren();
 }
 function panelSchliessen() {
   $("#panel").classList.remove("open");
   $("#panel").setAttribute("aria-hidden", "true");
+  dockMarkieren();
+}
+/** Unten in der Leiste zeigen, welcher Bereich gerade offen ist */
+function dockMarkieren() {
+  const offen = $("#panel").classList.contains("open");
+  $("#dock-tag").classList.toggle("aktiv", offen && panelTab === "heute");
+  $("#dock-sammlung").classList.toggle("aktiv", offen && panelTab === "sammlung");
 }
 
 function listItem(e, i, seite = "") {
@@ -1040,6 +1067,7 @@ function kalenderZeichnen() {
 }
 
 function datumSetzen(iso) {
+  if (iso !== state.datum) Effekte.tagWechsel(iso);
   state.datum = iso;
   datumAnzeigen();
   kalenderZeichnen();
@@ -1146,6 +1174,7 @@ function modal(id, auf) {
 function themeSetzen(theme) {
   document.documentElement.dataset.theme = theme;
   $("#btn-theme span").textContent = theme === "dark" ? "☀️" : "🌙";
+  Effekte.nochmal($("#btn-theme span"), "dreh");
   document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#141826" : "#f5efe3";
   if (vektor) karteSetzen(); // Vektor-Karte hat einen eigenen Dunkel-Stil
 }
