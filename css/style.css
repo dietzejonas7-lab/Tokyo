@@ -1252,6 +1252,30 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .list-item.erledigt { opacity: 0.5; filter: saturate(0.4); box-shadow: none; }
 .list-item.erledigt b::before { content: "✓ "; color: var(--matcha); }
 
+/* ---------- Übersetzungshilfe Laub-Stand ---------- */
+.laub-woerter {
+  display: grid; gap: 6px; padding: 12px; border-radius: 16px;
+  background: var(--papier), var(--karte); border: 1.5px solid var(--rand); box-shadow: 0 2px 0 var(--rand);
+}
+.lw-kopf { display: grid; gap: 2px; padding-bottom: 6px; border-bottom: 1.5px dashed var(--rand); }
+.lw-kopf b { font-family: var(--pinsel); font-weight: 400; font-size: 1.15rem; }
+.lw-kopf span { font-size: 0.78rem; color: var(--muted); }
+.lw-zeile {
+  position: relative; display: grid; grid-template-columns: 12px 88px 1fr auto; gap: 8px; align-items: center;
+  padding: 6px 8px; border-radius: 10px; animation: vonLinks 0.45s both var(--ease); animation-delay: calc(0.3s + var(--i) * 60ms);
+}
+.lw-punkt { width: 12px; height: 12px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 2px color-mix(in srgb, var(--c) 25%, transparent); }
+.lw-ja { font-family: var(--pinsel); font-weight: 400; font-size: 1.12rem; color: var(--c); white-space: nowrap; }
+.lw-text { display: grid; font-size: 0.84rem; line-height: 1.25; }
+.lw-text small { font-size: 0.7rem; color: var(--muted); font-style: italic; }
+.lw-zeile.jetzt { background: color-mix(in srgb, var(--c) 14%, transparent); outline: 1.5px solid color-mix(in srgb, var(--c) 60%, transparent); }
+.lw-zeile.jetzt .lw-punkt { animation: blinken 1.6s infinite; }
+.lw-zeile em {
+  font-style: normal; font-size: 0.64rem; font-weight: 800; padding: 2px 7px; border-radius: 999px;
+  color: #fff; background: var(--c); white-space: nowrap;
+}
+.lw-tipp { margin: 4px 0 0; font-size: 0.74rem; line-height: 1.45; color: var(--muted); }
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

@@ -231,6 +231,30 @@ function laubStatus(e, datum = state.datum) {
   return { stufe, text, kurz, ...LAUB_STUFEN[stufe] };
 }
 
+/** Kleine Übersetzungshilfe für die japanische Laub-Seite (Walkerplus) */
+const LAUB_WOERTER = [
+  { ja: "青葉", lesung: "aoba", de: "Noch grün", farbe: "#5f8f3e", stufe: "gruen" },
+  { ja: "色づき始め", lesung: "irozuki hajime", de: "Färbt sich gerade", farbe: "#d9a21b", stufe: "faerbt" },
+  { ja: "今見頃", lesung: "ima migoro", de: "Jetzt Höhepunkt – hingehen!", farbe: "#c8361f", stufe: "hoch" },
+  { ja: "色あせ始め", lesung: "iroase hajime", de: "Verblasst – oft noch schön", farbe: "#b0703a", stufe: "vorbei" },
+  { ja: "落葉", lesung: "rakuyō", de: "Laub fällt – meist vorbei", farbe: "#8a6a4f", stufe: "" },
+];
+function laubLegende(laub) {
+  const zeilen = LAUB_WOERTER.map((w, i) => `
+    <div class="lw-zeile ${w.stufe === laub.stufe ? "jetzt" : ""}" style="--c:${w.farbe};--i:${i}">
+      <span class="lw-punkt"></span>
+      <b class="lw-ja">${w.ja}</b>
+      <span class="lw-text"><small>${w.lesung}</small>${esc(w.de)}</span>
+      ${w.stufe === laub.stufe ? `<em>laut App</em>` : ""}
+    </div>`).join("");
+  return `<div class="laub-woerter">
+    <div class="lw-kopf"><b>色づき状況</b><span>„Stand der Färbung“ – steht auf der Seite direkt unter dem Namen</span></div>
+    ${zeilen}
+    <p class="lw-tipp">Darunter steht, wann zuletzt aktualisiert wurde (z. B. 10月20日 16:05更新 = 20. Oktober, 16:05 Uhr).
+      Weiter unten: <b>ちなみに2025年は…</b> = Höhepunkt im letzten Jahr · <b>ライトアップ</b> = abendliche Beleuchtung.</p>
+  </div>`;
+}
+
 function distanzKm(a, b) {
   const R = 6371, rad = Math.PI / 180;
   const dLat = (b.lat - a.lat) * rad, dLng = (b.lng - a.lng) * rad;
@@ -721,6 +745,7 @@ function sheetOeffnen(e) {
         ${e.eigen ? `<button class="btn danger full" id="btn-delete">🗑️ Meinen Ort löschen</button>` : ""}
       </div>
       ${e.links?.length ? `<div class="links">${e.links.filter((l) => sichereUrl(l.url)).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">↗ ${esc(l.titel)}</a>`).join("")}</div>` : ""}
+      ${laub ? laubLegende(laub) : ""}
     </div>`;
 
   if (gesammelt) Effekte.hanko($("#sheet .hero"), state.frischGesammelt === e.id);
