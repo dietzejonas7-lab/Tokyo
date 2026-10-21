@@ -1461,6 +1461,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .radar-touri.on { color: var(--text); border-color: var(--matcha); background: color-mix(in srgb, var(--matcha) 16%, var(--karte)); box-shadow: 0 0 0 3px color-mix(in srgb, var(--matcha) 20%, transparent); }
 .rz-touri { font-weight: 800; }
+.rz-merkmale { font-size: 0.7rem !important; }
 .rz-touri.gruen { color: #3d7a2e; } .rz-touri.gelb { color: #a07812; } .rz-touri.orange { color: #c0581f; }
 :root[data-theme="dark"] .rz-touri.gruen { color: #8fd07a; } :root[data-theme="dark"] .rz-touri.gelb { color: #e8c35a; } :root[data-theme="dark"] .rz-touri.orange { color: #f09a5a; }
 

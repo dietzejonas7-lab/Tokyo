@@ -1180,6 +1180,16 @@ function touristenText(e, lang = false) {
   return lang ? `${s.icon} ${s.text}${t.plus.length || t.minus.length ? " – " + [...t.plus, ...t.minus].join(" · ") : ""}` : `${s.icon} ${s.text}`;
 }
 
+/** Kurzform für die Radar-Liste: „💳 Kartenzahlung“ → „💳 Karte“ */
+function merkmalKurz(m) {
+  const kurz = { "Kartenzahlung": "Karte", "Nur Bargeld": "nur bar", "Suica": "Suica", "Online reservierbar": "Reservierung",
+    "Nichtraucher": "rauchfrei", "Rauchen erlaubt": "Raucher", "Englische Karte": "englische Karte" };
+  const [icon, ...rest] = m.split(" ");
+  const text = rest.join(" ");
+  if (icon === "🪑") return `🪑 ${text.match(/\d+/)?.[0] || ""} Plätze`;
+  return `${icon} ${kurz[text] || text}`;
+}
+
 const GyozaRadar = {
   zentrum: null,      // { lat, lng, art: "ich" | "karte" | "hotel" }
   nurTouristen: false, // nur 🟢/🟡 zeigen
@@ -1269,8 +1279,9 @@ const GyozaRadar = {
       <div class="rz-text">
         <b>${esc(e.name)}</b>
         <small>${e.top ? "⭐ Bestenliste 2024" : "👍 Bestenliste " + esc(e.listen.join(" / "))}${e.tabelogNote ? ` · Tabelog ${e.tabelogNote.toFixed(2)}` : ""} · ${esc(e.station)}</small>
-        ${e.touristen ? `<small class="rz-touri ${e.touristen.stufe}">${touristenText(e)}${e.touristen.plus.length ? " · " + e.touristen.plus.map((p) => p.split(" ")[0]).join(" ") : ""}${e.touristen.minus.length ? " · " + e.touristen.minus.map((p) => p.split(" ")[0]).join(" ") : ""}</small>` : ""}
-        <small>${meter < 1000 ? Math.round(meter / 10) * 10 + " m" : l.km.toFixed(1) + " km"} · ${l.km < 2 ? `ca. ${minuten} Min. zu Fuß` : "mit der Bahn"}${e.lageUngefaehr ? " · Lage ungefähr" : ""}
+        ${e.touristen ? `<small class="rz-touri ${e.touristen.stufe}">${touristenText(e)}</small>
+          <small class="rz-merkmale">${[...e.touristen.plus, ...e.touristen.minus].map(merkmalKurz).join(" · ")}</small>` : ""}
+        <small>${meter < 1000 ? Math.round(meter / 10) * 10 + " m" : l.km.toFixed(1) + " km"} · ${l.km < 2 ? `ca. ${minuten} Min. zu Fuß` : "mit der Bahn"}${e.umgezogen ? " · <em>⚠️ umgezogen – neue Adresse prüfen</em>" : e.lageUngefaehr ? " · Lage ungefähr" : ""}
           ${ruhetagHeute ? ` · <em>heute Ruhetag!</em>` : ""}</small>
       </div>
       <div class="rz-knoepfe">
