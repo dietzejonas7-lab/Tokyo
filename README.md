@@ -23,6 +23,8 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 
 **Unser Hotel:** Tosei Hotel Cocone Kanda ist immer als goldenes 宿-Schild auf der Karte, unabhängig von den Kategorien. Der runde 宿-Knopf unten rechts fliegt direkt dorthin. Ändern kannst du es in `js/app.js` unter `HOTEL`.
 
+**Favoriten:** In jedem Ort mit dem Herz ♡ neben dem Namen merken. Favoriten sind immer auf der Karte (kleines Herz am Punkt), stehen unter ☰ → ❤️ Favoriten, und der Chip „Favoriten“ blendet alles andere aus. Gespeichert wird auf deinem Handy.
+
 **Funktionen:** große Karte · Kategorien an/aus · Kalender (1.–25.11.) mit Event-Punkten · „Was läuft heute?“ · Suche (auch auf Japanisch) · Route über Google Maps · Sammel-Fortschritt · Fotos deiner Goshuin und Stempel (Galerie) · eigene Orte mit Foto · hell und dunkel · funktioniert offline.
 
 ---

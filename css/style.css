@@ -663,7 +663,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   padding: 11px 18px; border-radius: 14px; font-weight: 800;
   background: var(--tusche); color: #fff8ef;
   box-shadow: 0 10px 26px rgba(43, 38, 34, 0.3);
-  max-width: calc(100vw - 48px); text-align: center;
+  width: max-content; max-width: calc(100vw - 48px); text-align: center;
   opacity: 0; transform: translate(-50%, calc(100% + 40px));
   transition: transform 0.45s var(--spring), opacity 0.3s;
 }
@@ -1024,56 +1024,52 @@ button { font: inherit; color: inherit; cursor: pointer; }
   100% { opacity: 0; transform: scale(0.9) rotate(-6deg) translateY(-20px); }
 }
 
-/* ---------- Unser Hotel: immer sichtbar, eigenes Aussehen ---------- */
+/* ---------- Unser Hotel: immer sichtbar, eigenes Aussehen (bewusst etwas zurückhaltend) ---------- */
 .hotel-wrap { z-index: 5000 !important; }
-.hotel-pin { position: relative; width: 56px; height: 70px; display: grid; justify-items: center; }
-/* Goldenes Schild mit „宿“ (= Unterkunft), wie ein Laternenschild */
+.hotel-pin { position: relative; width: 44px; height: 56px; display: grid; justify-items: center; }
+/* Goldenes Schild mit „宿“ (= Unterkunft) */
 .hotel-schild {
-  position: relative; z-index: 1; width: 48px; height: 48px; display: grid; place-items: center;
-  border-radius: 14px; transform: rotate(45deg);
-  background: linear-gradient(135deg, #f3d27a, #b8913a 60%, #8a6a22);
-  border: 2.5px solid var(--tusche);
-  box-shadow: inset 0 0 0 3px rgba(255, 248, 225, 0.55), 3px 5px 0 rgba(43, 38, 34, 0.3), 0 0 18px rgba(240, 200, 110, 0.7);
-  animation: hotelRein 0.9s 0.6s both cubic-bezier(.3, 1.6, .5, 1), hotelSchweben 3s 1.5s ease-in-out infinite;
+  position: relative; z-index: 1; width: 36px; height: 36px; display: grid; place-items: center; margin-top: 4px;
+  border-radius: 11px; transform: rotate(45deg);
+  background: linear-gradient(135deg, #e9cc84, #b8913a 65%);
+  border: 2px solid var(--tusche);
+  box-shadow: inset 0 0 0 2px rgba(255, 248, 225, 0.45), 2px 3px 0 rgba(43, 38, 34, 0.25);
+  animation: hotelRein 0.9s 0.6s both cubic-bezier(.3, 1.6, .5, 1);
 }
 .hotel-schild span {
-  transform: rotate(-45deg); width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
-  background: #c8352a; color: #fff8ef; font-family: var(--pinsel); font-size: 20px; line-height: 1;
-  border: 2px solid #fff3d6;
+  transform: rotate(-45deg); width: 25px; height: 25px; border-radius: 50%; display: grid; place-items: center;
+  background: #c8352a; color: #fff8ef; font-family: var(--pinsel); font-size: 15px; line-height: 1;
+  border: 1.5px solid #fff3d6;
 }
-@keyframes hotelRein { from { opacity: 0; transform: rotate(45deg) translateY(-60px) scale(0.3); } }
-@keyframes hotelSchweben { 50% { transform: rotate(45deg) translate(-3px, -3px); } }
-/* Zwei goldene Ringe breiten sich am Boden aus */
+@keyframes hotelRein { from { opacity: 0; transform: rotate(45deg) translateY(-40px) scale(0.3); } }
+/* Ein sanfter goldener Ring am Boden */
 .hotel-halo {
-  position: absolute; left: 50%; top: 52px; width: 30px; height: 12px; margin-left: -15px; border-radius: 50%;
-  border: 2.5px solid #d4ad55; animation: bodenWelle 2.4s ease-out infinite;
+  position: absolute; left: 50%; top: 42px; width: 24px; height: 9px; margin-left: -12px; border-radius: 50%;
+  border: 1.5px solid rgba(212, 173, 85, 0.7); animation: bodenWelle 3.2s ease-out infinite;
 }
-.hotel-halo + .hotel-halo { animation-delay: 1.2s; }
+.hotel-halo + .hotel-halo { display: none; }
 .hotel-name {
-  position: absolute; top: 62px; left: 50%; transform: translateX(-50%); white-space: nowrap;
-  padding: 2px 9px; border-radius: 999px; font-family: var(--rund); font-size: 0.7rem; font-weight: 900;
-  color: #fff8ef; background: var(--tusche); border: 1.5px solid #d4ad55;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); animation: rise 0.6s 1.2s both var(--ease);
+  position: absolute; top: 48px; left: 50%; transform: translateX(-50%); white-space: nowrap;
+  padding: 1px 7px; border-radius: 999px; font-family: var(--rund); font-size: 0.6rem; font-weight: 800;
+  color: #fff8ef; background: rgba(43, 38, 34, 0.78); border: 1px solid rgba(212, 173, 85, 0.8);
+  animation: rise 0.6s 1.2s both var(--ease);
 }
-:root[data-theme="dark"] .hotel-name { background: #2b2860; }
+:root[data-theme="dark"] .hotel-name { background: rgba(43, 40, 96, 0.85); }
 
 /* Runder Knopf „Zum Hotel“ rechts über der Leiste */
 #btn-hotel {
-  position: fixed; right: 14px; bottom: calc(env(safe-area-inset-bottom) + var(--dock-h) + 26px); z-index: 450;
-  width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; align-content: center; gap: 0;
+  position: fixed; right: 14px; bottom: calc(env(safe-area-inset-bottom) + var(--dock-h) + 30px); z-index: 450;
+  width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; align-content: center; gap: 0;
   border: 2px solid var(--tusche); color: #fff8ef;
   background: linear-gradient(135deg, #e0b86a, #b8913a);
-  box-shadow: 0 4px 0 var(--tusche), 0 8px 18px rgba(184, 145, 58, 0.45);
+  box-shadow: 0 3px 0 var(--tusche), 0 6px 12px rgba(184, 145, 58, 0.3);
   animation: popIn 0.6s 0.9s both var(--spring);
   transition: transform 0.2s var(--spring);
 }
 #btn-hotel span { font-family: var(--pinsel); font-size: 1.35rem; line-height: 1; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); }
 #btn-hotel small { font-family: var(--rund); font-size: 0.55rem; font-weight: 900; color: #2b2622; }
 #btn-hotel:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--tusche); }
-#btn-hotel::after {
-  content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 1.5px dashed #d4ad55;
-  animation: kreisen 16s linear infinite;
-}
+
 
 /* =========================================================
    Gezeichnete Mini-Szenen (js/szenen.js)
@@ -1201,6 +1197,43 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 :root[data-theme="dark"] .tusche-tropfen { border-color: rgba(240, 180, 120, 0.7); background: radial-gradient(circle, rgba(240, 160, 90, 0.25) 0 30%, transparent 62%); }
 @keyframes tropfen { from { transform: scale(0.2); opacity: 1; } to { transform: scale(1.6); opacity: 0; } }
+
+/* ---------- Favoriten ❤️ ---------- */
+.sheet-title { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.fav-knopf {
+  flex: none; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; padding: 0;
+  border: 2px solid var(--rand); background: var(--karte); color: #d65b78; font-size: 1.7rem; line-height: 1;
+  box-shadow: 0 3px 0 var(--rand); transition: transform 0.2s var(--spring), background 0.3s, border-color 0.3s;
+  animation: popIn 0.5s 0.3s both var(--spring);
+}
+.fav-knopf span { transform: translateY(1px); }
+.fav-knopf:active { transform: translateY(2px) scale(0.92); box-shadow: 0 1px 0 var(--rand); }
+.fav-knopf.an {
+  color: #fff; background: radial-gradient(circle at 40% 35%, #f07c98, #d65b78 70%); border-color: var(--tusche);
+  box-shadow: 0 3px 0 var(--tusche), 0 0 0 4px rgba(214, 91, 120, 0.18);
+  animation: herzPop 0.55s cubic-bezier(0.3, 1.8, 0.5, 1), herzSchlag 2.4s 1s ease-in-out infinite;
+}
+@keyframes herzPop { 0% { transform: scale(0.6); } 60% { transform: scale(1.15); } }
+@keyframes herzSchlag { 0%, 30%, 100% { transform: scale(1); } 10% { transform: scale(1.1); } 20% { transform: scale(0.97); } }
+.flug-herz { position: fixed; z-index: 2000; color: #e0607e; pointer-events: none; line-height: 1; text-shadow: 0 0 6px rgba(255, 180, 200, 0.8); }
+/* Kleines Herz am Kartenpunkt */
+.fav-herz {
+  position: absolute; top: -8px; left: -8px; z-index: 2; transform: rotate(45deg);
+  width: 19px; height: 19px; border-radius: 50%; display: grid; place-items: center;
+  background: #fff8f9; color: #d65b78; border: 1.5px solid #d65b78; font-style: normal; font-size: 11px; line-height: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  animation: pinHerz 2.4s ease-in-out infinite;
+}
+@keyframes pinHerz { 0%, 30%, 100% { transform: rotate(45deg) scale(1); } 12% { transform: rotate(45deg) scale(1.2); } }
+.chip.chip-fav.on { background: color-mix(in srgb, #e0607e 16%, var(--surface-solid)); }
+.fav-leer { line-height: 1.6; }
+.fav-leer span { display: block; font-size: 3rem; color: #d65b78; animation: herzSchlag 2.4s ease-in-out infinite; }
+/* Fünf Reiter im Seitenpanel: bei Platzmangel seitlich wischbar */
+.tabs { overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tabs { gap: 2px; }
+.tabs button { flex: 1 0 auto; padding: 8px 5px; font-size: 0.74rem; }
+@media (max-width: 370px) { .tabs button { padding: 8px 3px; font-size: 0.7rem; } }
 
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {

@@ -71,6 +71,7 @@ const SPEICHER = {
   bekannt: "tokio.bekannteKategorien",
   theme: "tokio.theme",
   design: "tokio.designVersion",
+  favoriten: "tokio.favoriten",
 };
 
 const state = {
@@ -80,6 +81,8 @@ const state = {
   datum: heuteInTokio(),   // gewählter Tag (YYYY-MM-DD)
   alleZeigen: false,       // Zeitraum-Filter ignorieren?
   besucht: new Set(laden(SPEICHER.besucht, [])),
+  favoriten: new Set(laden(SPEICHER.favoriten, [])), // ❤️ gemerkte Orte – immer auf der Karte
+  nurFavoriten: false,     // Karte zeigt nur die Favoriten
   eigene: laden(SPEICHER.eigene, []),
   fotos: new Map(),        // eigene Fotos (z. B. vom Goshuin), gespeichert in IndexedDB
   meinOrt: null,           // GPS-Position
@@ -426,7 +429,30 @@ function clusterIcon(c) {
 }
 
 function sichtbareEintraege() {
-  return state.eintraege.filter((e) => state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e)));
+  // Favoriten sind immer zu sehen – egal welche Kategorie oder welcher Tag gewählt ist
+  if (state.nurFavoriten) return state.eintraege.filter((e) => state.favoriten.has(e.id));
+  return state.eintraege.filter((e) =>
+    state.favoriten.has(e.id) || (state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e))));
+}
+
+/** Aussehen eines Kartenpunkts (Farbe, Symbol, Erledigt-Stempel, Favoriten-Herz) */
+function pinIcon(e, i = 0) {
+  const k = kategorie(e.kategorie);
+  const klassen = ["pin"];
+  if (e.zeitraum && istAktiv(e)) klassen.push("live");
+  if (state.besucht.has(e.id)) klassen.push("done");
+  if (e.eigen) klassen.push("mine");
+  // Herbstlaub: Pin-Farbe zeigt den Laub-Stand am gewählten Tag
+  const laub = laubStatus(e);
+  if (laub?.stufe === "hoch") klassen.push("live");
+  const farbe = laub ? laub.farbe : k.farbe;
+  const herz = state.favoriten.has(e.id) ? `<i class="fav-herz">♥</i>` : "";
+  return L.divIcon({
+    className: "pin-wrap",
+    html: `<i class="pin-schatten" style="--d:${Math.min(i * 12, 400)}ms"></i><div class="${klassen.join(" ")}" style="--c:${farbe};--d:${Math.min(i * 12, 400)}ms"><span>${laub ? laub.icon : k.icon}</span>${herz}</div>`,
+    iconSize: [40, 40],
+    iconAnchor: [20, 44],
+  });
 }
 
 function markerZeichnen() {
@@ -435,21 +461,7 @@ function markerZeichnen() {
   const liste = sichtbareEintraege();
   const marker = liste.map((e, i) => {
     const k = kategorie(e.kategorie);
-    const klassen = ["pin"];
-    if (e.zeitraum && istAktiv(e)) klassen.push("live");
-    if (state.besucht.has(e.id)) klassen.push("done");
-    if (e.eigen) klassen.push("mine");
-    // Herbstlaub: Pin-Farbe zeigt den Laub-Stand am gewählten Tag
-    const laub = laubStatus(e);
-    if (laub?.stufe === "hoch") klassen.push("live");
-    const farbe = laub ? laub.farbe : k.farbe;
-    const icon = L.divIcon({
-      className: "pin-wrap",
-      html: `<i class="pin-schatten" style="--d:${Math.min(i * 12, 400)}ms"></i><div class="${klassen.join(" ")}" style="--c:${farbe};--d:${Math.min(i * 12, 400)}ms"><span>${laub ? laub.icon : k.icon}</span></div>`,
-      iconSize: [40, 40],
-      iconAnchor: [20, 44],
-    });
-    const m = L.marker([e.lat, e.lng], { icon, farbe: k.farbe, title: e.name });
+    const m = L.marker([e.lat, e.lng], { icon: pinIcon(e, i), farbe: k.farbe, title: e.name });
     m.on("click", () => sheetOeffnen(e));
     markerNachId.set(e.id, m);
     return m;
@@ -486,11 +498,14 @@ function chipsZeichnen() {
   const nav = $("#chips");
   const filter = `<button class="chip chip-filter" id="chip-filter" style="--i:0" aria-label="Kategorien auswählen">
     <span>🎛️</span>Kategorien<span class="count">${state.aktiv.size}/${state.kategorien.length}</span></button>`;
-  nav.innerHTML = filter + state.kategorien
+  const favChip = `<button class="chip chip-fav ${state.nurFavoriten ? "on" : ""}" id="chip-fav" style="--i:1;--c:#e0607e"
+    aria-pressed="${state.nurFavoriten}" title="Nur Favoriten auf der Karte zeigen">
+    <span>${state.nurFavoriten ? "❤️" : "🤍"}</span>Favoriten<span class="count">${state.favoriten.size}</span></button>`;
+  nav.innerHTML = filter + favChip + state.kategorien
     .map((k, i) => {
       const anzahl = state.eintraege.filter((e) => e.kategorie === k.id && (state.alleZeigen || istAktiv(e))).length;
       return `<button class="chip ${state.aktiv.has(k.id) ? "on" : ""}" data-kat="${esc(k.id)}"
-        style="--c:${esc(k.farbe)};--i:${i + 1}" title="${esc(k.beschreibung)}">
+        style="--c:${esc(k.farbe)};--i:${i + 2}" title="${esc(k.beschreibung)}">
         <span>${k.icon}</span>${esc(k.name)}<span class="count">${anzahl}</span></button>`;
     })
     .join("");
@@ -501,6 +516,7 @@ function chipsZeichnen() {
 
 function chipKlick(ev) {
   if (ev.target.closest("#chip-filter")) return katAuswahlOeffnen();
+  if (ev.target.closest("#chip-fav")) return nurFavoritenUmschalten();
   const chip = ev.target.closest(".chip");
   if (!chip) return;
   const id = chip.dataset.kat;
@@ -668,8 +684,11 @@ function sheetOeffnen(e) {
         ${e.eigen ? `<span class="badge">✏️ Mein Ort</span>` : ""}
       </div>
       <div class="sheet-title">
-        <h2>${esc(e.name)}</h2>
-        ${e.nameJa ? `<div class="ja">${esc(e.nameJa)}</div>` : ""}
+        <div>
+          <h2>${esc(e.name)}</h2>
+          ${e.nameJa ? `<div class="ja">${esc(e.nameJa)}</div>` : ""}
+        </div>
+        ${e.hotel ? "" : favKnopf(e)}
       </div>
       ${e.beschreibung ? `<p class="desc">${esc(e.beschreibung)}</p>` : ""}
       ${fakten.length ? `<dl class="facts">${fakten.map(([i, w]) => `<div><dt>${i}</dt><dd>${esc(w)}</dd></div>`).join("")}</dl>` : ""}
@@ -699,7 +718,10 @@ function sheetOeffnen(e) {
       if (offenerEintrag?.id === e.id && fotos.length) heroFotosZeigen(e, fotos);
     });
   }
-  if (!e.hotel) $("#btn-collect").onclick = () => besuchtUmschalten(e);
+  if (!e.hotel) {
+    $("#btn-collect").onclick = () => besuchtUmschalten(e);
+    $("#btn-fav").onclick = () => favoritUmschalten(e);
+  }
   if (e.eigen) $("#btn-delete").onclick = () => eigenenLoeschen(e);
   $("#foto-input").onchange = (ev) => ev.target.files[0] && fotoSpeichern(e, ev.target.files[0]);
   if (meinFoto) $("#btn-foto-weg").onclick = () => fotoEntfernen(e);
@@ -783,6 +805,44 @@ function sheetSchliessen() {
   $("#sheet").classList.remove("open");
   $("#sheet").setAttribute("aria-hidden", "true");
   offenerEintrag = null;
+}
+
+/* ---------- Favoriten ❤️ ---------- */
+function favKnopf(e) {
+  const an = state.favoriten.has(e.id);
+  return `<button class="fav-knopf ${an ? "an" : ""}" id="btn-fav" aria-pressed="${an}"
+    aria-label="${an ? "Aus Favoriten entfernen" : "Als Favorit merken"}"><span>${an ? "♥" : "♡"}</span></button>`;
+}
+
+function favoritUmschalten(e) {
+  const an = !state.favoriten.has(e.id);
+  if (an) state.favoriten.add(e.id);
+  else state.favoriten.delete(e.id);
+  speichern(SPEICHER.favoriten, [...state.favoriten]);
+  // Knopf in der Detail-Karte austauschen (ohne die ganze Karte neu aufzubauen)
+  const knopf = $("#btn-fav");
+  if (knopf) {
+    knopf.outerHTML = favKnopf(e);
+    $("#btn-fav").onclick = () => favoritUmschalten(e);
+    if (an) Effekte.herzen($("#btn-fav"));
+  }
+  if (an) { Klang.sammeln(); toast("❤️ Als Favorit gemerkt – ist jetzt immer auf der Karte"); }
+  else toast("Aus den Favoriten entfernt");
+  // Nur diesen einen Punkt neu zeichnen – außer er verschwindet dadurch von der Karte
+  const m = markerNachId.get(e.id);
+  const bleibtSichtbar = !state.nurFavoriten && state.aktiv.has(e.kategorie) && (state.alleZeigen || istAktiv(e));
+  if (m && (an || bleibtSichtbar)) { m.setIcon(pinIcon(e)); chipsZeichnen(); markerHervorheben(e); }
+  else markerZeichnen();
+  if ($("#panel").classList.contains("open")) panelZeichnen();
+}
+
+function nurFavoritenUmschalten() {
+  if (!state.nurFavoriten && !state.favoriten.size) return toast("Noch keine Favoriten – tippe in einem Ort auf ♡");
+  state.nurFavoriten = !state.nurFavoriten;
+  markerZeichnen();
+  Effekte.nochmal($("#chip-fav"), "bump");
+  toast(state.nurFavoriten ? "❤️ Karte zeigt nur deine Favoriten" : "Alle Kategorien wieder sichtbar");
+  if ($("#panel").classList.contains("open")) panelZeichnen();
 }
 
 function besuchtUmschalten(e) {
@@ -899,6 +959,7 @@ function dockMarkieren() {
   const offen = $("#panel").classList.contains("open");
   $("#dock-tag").classList.toggle("aktiv", offen && panelTab === "heute");
   $("#dock-sammlung").classList.toggle("aktiv", offen && panelTab === "sammlung");
+  $("#dock-fav")?.classList.toggle("aktiv", offen && panelTab === "favoriten");
 }
 
 function listItem(e, i, seite = "") {
@@ -924,7 +985,7 @@ function nachDistanz(liste) {
 }
 
 function panelZeichnen(suchbegriff = "") {
-  const tabs = [["heute", "📅 Tag"], ["sammlung", "🏆 Sammlung"], ["meine", "✏️ Meine"], ["hilfe", "⚙️"]];
+  const tabs = [["heute", "📅 Tag"], ["favoriten", "❤️ Favoriten"], ["sammlung", "🏆 Sammlung"], ["meine", "✏️ Meine"], ["hilfe", "⚙️"]];
   let html = `<div class="tabs">${tabs.map(([id, t]) => `<button data-tab="${id}" class="${panelTab === id ? "on" : ""}">${t}</button>`).join("")}</div>`;
 
   if (panelTab === "suche") {
@@ -1015,6 +1076,23 @@ function panelZeichnen(suchbegriff = "") {
     if (erledigt.length) html += `<h3 class="section-title">✓ Erledigt</h3><div class="list">${erledigt.map((e, i) => listItem(e, i, "✓")).join("")}</div>`;
   }
 
+  if (panelTab === "favoriten") {
+    $("#panel-title").textContent = "Meine Favoriten";
+    const favs = state.eintraege.filter((e) => state.favoriten.has(e.id));
+    if (!favs.length) {
+      html += `<div class="empty fav-leer"><span>♡</span>Noch keine Favoriten.<br>Öffne einen Ort und tippe auf das Herz ♡ neben dem Namen –
+        dann landet er hier und ist immer auf der Karte zu sehen.</div>`;
+    } else {
+      html += `<button class="einstellung ${state.nurFavoriten ? "on" : ""}" id="fav-schalter" aria-pressed="${state.nurFavoriten}">
+        <span class="es-icon">🗺️</span>
+        <span class="es-text"><b>Nur Favoriten auf der Karte</b><small>Blendet alles andere aus</small></span>
+        <span class="schalter" aria-hidden="true"></span></button>`;
+      const seite = (e) => distanzText(e) || laubStatus(e)?.kurz || zeitStatus(e)?.kurz || kategorie(e.kategorie).name;
+      html += `<h3 class="section-title">❤️ ${favs.length} ${favs.length === 1 ? "Ort" : "Orte"} gemerkt</h3>
+        <div class="list">${nachDistanz(favs).map((e, i) => listItem(e, i, seite(e))).join("")}</div>`;
+    }
+  }
+
   if (panelTab === "meine") {
     $("#panel-title").textContent = "Meine Orte";
     html += `<p class="muted">Orte, die du mit ＋ angelegt hast. Sie sind nur auf diesem Gerät gespeichert. Mit „Exportieren“ bekommst du sie als Text, den du in eine Datei in <code>data/</code> kopieren kannst – dann sind sie dauerhaft in der App.</p>
@@ -1074,6 +1152,7 @@ function panelKlick(ev) {
     OrtFotos.umschalten();
     panelZeichnen();
   }
+  if (ev.target.closest("#fav-schalter")) nurFavoritenUmschalten();
   if (ev.target.closest("#klang-schalter")) {
     Klang.umschalten();
     panelZeichnen();
@@ -1245,8 +1324,14 @@ function themeSetzen(theme) {
   document.documentElement.dataset.theme = theme;
   $("#btn-theme span").textContent = theme === "dark" ? "☀️" : "🌙";
   Effekte.nochmal($("#btn-theme span"), "dreh");
-  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#141826" : "#f5efe3";
+  if (!$("#splash")) metaFarbeSetzen();
   if (vektor) karteSetzen(); // Vektor-Karte hat einen eigenen Dunkel-Stil
+}
+
+/** Farbe der Handy-Statusleiste passend zum Hell/Dunkel-Modus */
+function metaFarbeSetzen() {
+  document.querySelector('meta[name="theme-color"]').content =
+    document.documentElement.dataset.theme === "dark" ? "#12112a" : "#f5efe3";
 }
 
 function splashBlueten() {
@@ -1370,6 +1455,7 @@ async function start() {
   datumAnzeigen();
   await splashMin;
   $("#splash").classList.add("hide");
+  setTimeout(metaFarbeSetzen, 400);
   setTimeout(() => $("#splash").remove(), 1000);
   markerZeichnen();
 

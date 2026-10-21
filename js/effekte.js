@@ -10,7 +10,7 @@ const Effekte = {
   /** Wellen-Effekt beim Antippen von Knöpfen */
   wellenAktivieren() {
     document.addEventListener("pointerdown", (ev) => {
-      const ziel = ev.target.closest(".btn, .dock-btn, .logo-btn, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button, .kat-kachel");
+      const ziel = ev.target.closest(".btn, .dock-btn, .logo-btn, .chip, .icon-btn, .list-item, .date-pill, #calendar button, .tabs button, .kat-kachel, .fav-knopf, .siegel, #btn-hotel");
       if (!ziel) return;
       Klang.tippen();
       if (this.ruhig) return;
@@ -86,6 +86,29 @@ const Effekte = {
     el.innerHTML = `<b>${d.getUTCDate()}日<small>${"日月火水木金土"[d.getUTCDay()]}曜日</small></b>`;
     document.body.appendChild(el);
     setTimeout(() => el.remove(), 1300);
+  },
+
+  /** Favorit: kleine Herzen fliegen aus dem Knopf */
+  herzen(knopf) {
+    if (this.ruhig || !knopf) return;
+    const r = knopf.getBoundingClientRect();
+    for (let i = 0; i < 9; i++) {
+      const h = document.createElement("i");
+      h.className = "flug-herz";
+      h.textContent = "♥";
+      const winkel = -Math.PI / 2 + (i - 4) * 0.32, weite = 46 + Math.random() * 40;
+      Object.assign(h.style, { left: r.left + r.width / 2 + "px", top: r.top + r.height / 2 + "px", fontSize: 10 + Math.random() * 10 + "px" });
+      document.body.appendChild(h);
+      h.animate(
+        [
+          { transform: "translate(-50%, -50%) scale(0.3)", opacity: 1 },
+          { transform: `translate(calc(-50% + ${Math.cos(winkel) * weite}px), calc(-50% + ${Math.sin(winkel) * weite}px)) scale(1)`, opacity: 1, offset: 0.6 },
+          { transform: `translate(calc(-50% + ${Math.cos(winkel) * weite * 1.2}px), calc(-50% + ${Math.sin(winkel) * weite * 1.2 - 20}px)) scale(0.8)`, opacity: 0 },
+        ],
+        { duration: 800 + Math.random() * 300, easing: "cubic-bezier(.2,.8,.2,1)" }
+      ).onfinish = () => h.remove();
+    }
+    navigator.vibrate?.(20);
   },
 
   /** Antippen der Karte: ein Tuschetropfen breitet sich wie auf Papier aus */
