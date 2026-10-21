@@ -1387,6 +1387,75 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .kt-zeile p { margin: 0; font-size: 0.85rem; line-height: 1.45; }
 .kt-zeile b { display: block; font-family: var(--rund); }
 
+/* ---------- Gyoza-Radar 🥟 ---------- */
+.m-dampf { animation: dampf 2.7s var(--d, 0s) ease-in-out infinite; }
+@keyframes dampf { 0% { opacity: 0; transform: translateY(10px) scaleY(0.8); } 40% { opacity: 0.55; } 100% { opacity: 0; transform: translateY(-26px) scaleY(1.1); } }
+.m-noren { transform-origin: 50% 0; animation: wiegen 4s var(--d, 0s) ease-in-out infinite; }
+.m-gyoza { animation: aufsteigen 0.8s 0.2s both var(--spring); }
+#btn-gyoza {
+  position: fixed; right: 14px; bottom: calc(env(safe-area-inset-bottom) + var(--dock-h) + 88px); z-index: 450;
+  width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; align-content: center; padding: 0;
+  border: 2px solid var(--tusche); background: radial-gradient(circle at 40% 35%, #3a2a1a, #1a120c 75%);
+  box-shadow: 0 3px 0 var(--tusche), 0 6px 14px rgba(255, 170, 60, 0.3);
+  animation: popIn 0.6s 1.1s both var(--spring); transition: transform 0.2s var(--spring);
+}
+#btn-gyoza span { font-size: 1.35rem; line-height: 1; }
+#btn-gyoza small { font-family: var(--rund); font-size: 0.5rem; font-weight: 900; color: #ffb347; letter-spacing: 0.05em; }
+#btn-gyoza::after {
+  content: ""; position: absolute; inset: 3px; border-radius: 50%; pointer-events: none;
+  background: conic-gradient(from 0deg, transparent 0 300deg, rgba(255, 179, 71, 0.6) 360deg);
+  animation: kreisen 2.4s linear infinite;
+}
+#btn-gyoza:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--tusche); }
+
+.radar-karte { gap: 10px; }
+.radar-wahl { display: flex; gap: 6px; }
+.radar-wahl button {
+  flex: 1; padding: 8px 4px; border-radius: 12px; border: 1.5px solid var(--rand); background: var(--karte);
+  font-family: var(--rund); font-weight: 800; font-size: 0.78rem; color: var(--muted); transition: all 0.25s;
+}
+.radar-wahl button.on { color: #fff; background: #2a1d10; border-color: #ffb347; box-shadow: 0 0 0 3px rgba(255, 179, 71, 0.25); }
+#radar-schirm { display: grid; place-items: center; }
+#radar-schirm svg { width: min(100%, 300px); aspect-ratio: 1; overflow: visible; }
+#radar-schirm svg * { transform-box: view-box; }
+.r-grund { fill: #120c08; stroke: #ffb347; stroke-width: 2; filter: drop-shadow(0 0 10px rgba(255, 170, 60, 0.35)); }
+.r-ring { fill: none; stroke: rgba(255, 179, 71, 0.28); stroke-width: 1; stroke-dasharray: 3 4; }
+.r-kreuz { stroke: rgba(255, 179, 71, 0.18); stroke-width: 1; }
+.r-text { fill: rgba(255, 200, 130, 0.7); font-size: 9px; font-family: var(--rund); font-weight: 800; }
+.r-n { fill: #ffb347; font-size: 11px; font-weight: 900; text-anchor: middle; font-family: var(--rund); }
+.r-strahl { transform-origin: 0 0; animation: kreisen var(--rund, 4s) linear infinite; }
+.sucht .r-strahl { animation-duration: 1.2s; }
+.r-ich { fill: #ffb347; stroke: #fff3d6; stroke-width: 2; }
+.r-ich-welle { fill: none; stroke: #ffb347; stroke-width: 2; transform-origin: 0 0; animation: ichWelle 2s ease-out infinite; }
+@keyframes ichWelle { from { transform: scale(1); opacity: 0.9; } to { transform: scale(4); opacity: 0; } }
+.r-punkt { cursor: pointer; }
+.r-blip { fill: #e8a23a; stroke: #fff3d6; stroke-width: 1.2; opacity: 0.55; animation: blipLeuchten var(--rund, 4s) linear infinite; animation-delay: var(--v, 0s); }
+.r-punkt.top .r-blip { fill: #ff5a3c; }
+@keyframes blipLeuchten { 0% { opacity: 1; filter: drop-shadow(0 0 6px #ffd27a); } 40% { opacity: 0.55; filter: none; } 100% { opacity: 0.55; } }
+.r-welle { fill: none; stroke: #ffd27a; stroke-width: 1.5; opacity: 0; animation: blipWelle 4s ease-out infinite; animation-delay: var(--v, 0s); }
+.r-punkt * { transform-box: fill-box; transform-origin: center; }
+@keyframes blipWelle { 0% { opacity: 0.9; transform: scale(1); } 25% { opacity: 0; transform: scale(3); } 100% { opacity: 0; } }
+.r-nr { fill: #fff3d6; font-size: 10px; font-weight: 900; text-anchor: middle; font-family: var(--rund); paint-order: stroke; stroke: #120c08; stroke-width: 3px; }
+#radar-liste { display: grid; gap: 8px; }
+.radar-zeile {
+  display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: center; padding: 10px;
+  border-radius: 14px; border: 1.5px solid var(--rand); background: var(--karte); box-shadow: 0 2px 0 var(--rand);
+  animation: vonLinks 0.45s both var(--ease); animation-delay: calc(0.3s + var(--i) * 60ms);
+}
+.radar-zeile.top { border-color: color-mix(in srgb, #ff5a3c 50%, var(--rand)); }
+.rz-nr {
+  width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+  font-family: var(--rund); font-weight: 900; color: #fff3d6; background: #2a1d10; border: 2px solid #ffb347;
+}
+.radar-zeile.top .rz-nr { border-color: #ff5a3c; }
+.rz-text { display: grid; gap: 2px; min-width: 0; }
+.rz-text b { font-size: 0.95rem; }
+.rz-text small { color: var(--muted); font-size: 0.74rem; line-height: 1.3; }
+.rz-text em { font-style: normal; color: var(--shu); font-weight: 900; }
+.rz-knoepfe { display: grid; gap: 6px; }
+.rz-knoepfe .btn { padding: 6px 10px; font-size: 0.78rem; }
+.radar-quelle { font-size: 0.72rem; text-align: center; margin: 0; }
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

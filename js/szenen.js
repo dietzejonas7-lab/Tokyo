@@ -9,7 +9,7 @@
 const Szenen = {
   ZUORDNUNG: {
     anime: "stadt", premiumfiguren: "stadt", gacha: "stadt", mode: "stadt",
-    illumination: "lichter", events: "fest", nachttempel: "tempel", hotel: "hotel", filmspots: "gasse",
+    illumination: "lichter", events: "fest", nachttempel: "tempel", hotel: "hotel", filmspots: "gasse", gyoza: "gyoza",
     gaerten: "garten", herbstlaub: "herbst",
     stempel: "stempel", goshuin: "stempel", goshuincho: "stempel",
   },
@@ -245,6 +245,40 @@ const Szenen = {
       <path d="M0 22 L400 34 M0 48 Q200 70 400 52" stroke="#0c0814" stroke-width="1" fill="none"/>` +
       spiegel + schilder +
       this.laternen([60, 52], [200, 76], [340, 52], 5) + tropfen;
+  },
+
+  /** Gyoza-Laden: Noren-Vorhang, dampfender Teller auf der Holztheke (Gyoza) */
+  gyoza(p) {
+    const tasche = (x, y, w, dreh) => `<g transform="translate(${x} ${y}) rotate(${dreh})">
+      <path d="M-20 0 Q0 -20 20 0 Q0 7 -20 0Z" fill="#f3dcae" stroke="#c99a55" stroke-width="1"/>
+      <path d="M-20 0 Q0 7 20 0 Q0 11 -20 0Z" fill="#b8742e"/>
+      ${[-12, -6, 0, 6, 12].map((px) => `<path d="M${px} ${-12 + Math.abs(px) * 0.55} q2 3 0 6" stroke="#d9b47a" stroke-width="1.2" fill="none"/>`).join("")}</g>`;
+    const dampf = [170, 200, 230].map((x, i) =>
+      `<path class="m-dampf" d="M${x} 128 q-8 -12 0 -24 q8 -12 0 -24" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none" opacity=".5" style="--d:-${i * 0.9}s"/>`).join("");
+    const noren = [0, 1, 2, 3].map((i) =>
+      `<g class="m-noren" style="--d:-${i * 0.6}s"><rect x="${70 + i * 66}" y="10" width="62" height="58" fill="#c8352a"/>
+        <rect x="${70 + i * 66}" y="10" width="62" height="6" fill="#a82a22"/></g>`).join("");
+    return `<defs><linearGradient id="${p}h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2414"/><stop offset="1" stop-color="#1e120a"/></linearGradient>
+        <linearGradient id="${p}t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a6a3c"/><stop offset="1" stop-color="#6e4624"/></linearGradient>
+        <radialGradient id="${p}g"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".55"/><stop offset="1" stop-color="#ffd9a0" stop-opacity="0"/></radialGradient></defs>
+      <rect width="400" height="200" fill="url(#${p}h)"/>
+      ${[30, 60, 340, 370].map((x) => `<line x1="${x}" y1="0" x2="${x}" y2="150" stroke="#2a1a0e" stroke-width="3"/>`).join("")}
+      <circle cx="200" cy="140" r="120" fill="url(#${p}g)"/>
+      <rect x="64" y="6" width="272" height="5" rx="2" fill="#2a1a0e"/>${noren}
+      <text x="200" y="52" text-anchor="middle" font-size="30" fill="#fff8ef" style="font-family:var(--pinsel)" letter-spacing="40">餃子</text>
+      <g class="m-laterne" style="--d:-1s"><line x1="32" y1="0" x2="32" y2="30" stroke="#1a1020"/>
+        <ellipse class="m-glut" cx="32" cy="54" rx="26" ry="26" fill="#e8553a" opacity=".3"/>
+        <ellipse cx="32" cy="54" rx="14" ry="20" fill="#e8553a"/><rect x="24" y="30" width="16" height="5" fill="#1a1020"/><rect x="24" y="73" width="16" height="5" fill="#1a1020"/>
+        <text x="32" y="60" text-anchor="middle" font-size="14" fill="#fff3d6" style="font-family:var(--pinsel)">餃</text></g>
+      <rect y="150" width="400" height="50" fill="url(#${p}t)"/>
+      ${[160, 172, 186].map((y) => `<path d="M0 ${y} Q200 ${y + 4} 400 ${y}" stroke="#5a381c" stroke-width="1" fill="none" opacity=".5"/>`).join("")}
+      <ellipse cx="200" cy="160" rx="88" ry="20" fill="#fdfaf3"/><ellipse cx="200" cy="160" rx="88" ry="20" fill="none" stroke="#2f4b7c" stroke-width="3"/>
+      <ellipse cx="200" cy="156" rx="70" ry="13" fill="#e8b866" opacity=".55"/>
+      <g class="m-gyoza">${tasche(152, 156, 1, -8)}${tasche(184, 152, 1, -3)}${tasche(216, 152, 1, 3)}${tasche(248, 156, 1, 8)}${tasche(200, 166, 1, 0)}</g>
+      ${dampf}
+      <ellipse cx="320" cy="170" rx="22" ry="7" fill="#fdfaf3" stroke="#2f4b7c" stroke-width="2"/><ellipse cx="320" cy="169" rx="15" ry="4" fill="#4a2414"/>
+      <line x1="300" y1="186" x2="380" y2="150" stroke="#c9a06a" stroke-width="4" stroke-linecap="round"/>
+      <line x1="306" y1="190" x2="386" y2="156" stroke="#b8905a" stroke-width="4" stroke-linecap="round"/>`;
   },
 
   /** Washi-Papier mit rotem Stempel und Pinselschrift (Stempel, Goshuin) */

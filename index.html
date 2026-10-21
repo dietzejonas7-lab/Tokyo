@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Maru+Gothic:wght@500;700;900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=36">
+  <link rel="stylesheet" href="css/style.css?v=37">
 </head>
 <body>
 
@@ -240,6 +240,26 @@
 
   <!-- Schnell zum Hotel (immer da) -->
   <button id="btn-hotel" aria-label="Zum Hotel"><span>宿</span><small>Hotel</small></button>
+  <!-- Gyoza-Radar -->
+  <button id="btn-gyoza" aria-label="Gyoza-Radar öffnen"><span>🥟</span><small>Radar</small></button>
+  <div class="modal unten" id="radar-modal" aria-hidden="true">
+    <div class="modal-card radar-karte">
+      <div class="sheet-grip"></div>
+      <div class="panel-head">
+        <div><h2>🥟 Gyoza-Radar</h2><p class="muted" id="radar-info">Suche …</p></div>
+        <button class="icon-btn" data-close="radar-modal" aria-label="Schließen">✕</button>
+      </div>
+      <div class="radar-wahl" id="radar-wahl">
+        <button data-zentrum="ich" class="on">📍 Um mich</button>
+        <button data-zentrum="karte">🗺️ Kartenmitte</button>
+        <button data-zentrum="hotel">宿 Hotel</button>
+      </div>
+      <div id="radar-schirm"></div>
+      <div id="radar-liste"></div>
+      <p class="muted radar-quelle">Auswahl: Tabelog „餃子 百名店“ (die 100 besten Gyoza-Läden Japans) 2024, 2021 & 2019.
+        Läden aus älteren Listen vorher kurz prüfen – Öffnungszeiten ändern sich.</p>
+    </div>
+  </div>
 
   <div id="center-pin" aria-hidden="true">📌</div>
   <div id="toast" role="status"></div>
@@ -250,11 +270,11 @@
   <script src="lib/maplibre/leaflet-maplibre-gl.js"></script>
   <script src="lib/markercluster/leaflet.markercluster.js"></script>
   <!-- Unsere App -->
-  <script src="js/klang.js?v=36"></script>
-  <script src="js/fotos.js?v=36"></script>
-  <script src="js/effekte.js?v=36"></script>
-  <script src="js/szenen.js?v=36"></script>
-  <script src="js/wetter.js?v=36"></script>
-  <script src="js/app.js?v=36"></script>
+  <script src="js/klang.js?v=37"></script>
+  <script src="js/fotos.js?v=37"></script>
+  <script src="js/effekte.js?v=37"></script>
+  <script src="js/szenen.js?v=37"></script>
+  <script src="js/wetter.js?v=37"></script>
+  <script src="js/app.js?v=37"></script>
 </body>
 </html>

@@ -18,6 +18,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |
 | 🍁 | Herbstlaub | 62 Koyo-Orte. Die Pin-Farbe zeigt den Laub-Stand am gewählten Tag (grün → färbt sich → Höhepunkt → vorbei) |
 | 🎥 | Neon & Filmspots | 22 leuchtende Gassen, Neon- und Laternenstraßen für cinematische Nachtaufnahmen – mit Filmtipp je Ort und allgemeinen Kamera-Tipps |
+| 🥟 | Gyoza | 58 sehr gute Gyoza-Läden (Tabelog-Bestenliste „餃子 百名店“ 2019/2021/2024) – standardmäßig aus, am besten über das 🥟 Gyoza-Radar |
 | 🚇 | Bahnhofs-Stempel | Alle 78 offiziellen JR-East-Stempel der Tokio-Serie, 56 Toei-U-Bahn-Stationen, Metro-Museum, Ekitag & Garten-Stempelrallye – zum Abhaken |
 | ⛩️ | Goshuin | 21 Tempel und Schreine mit Goshuin – zum Abhaken, mit 📷 eigenem Foto und 🔍 Beispielbildern |
 | 📕 | Limitierte Goshuincho | zeitlich begrenzte Goshuin und Goshuincho, tagesaktuell gefiltert |
@@ -27,6 +28,8 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 **Favoriten:** In jedem Ort mit dem Herz ♡ neben dem Namen merken. Favoriten haben ein kleines Herz am Punkt und stehen unter ☰ → ❤️ Favoriten. Der Chip „Favoriten“ funktioniert wie eine Kategorie: antippen = Favoriten immer zeigen bzw. ausblenden, lange drücken = nur noch Favoriten. Gespeichert wird auf deinem Handy.
 
 **Wetter & Sonne:** Unter „Dein Tag“ steht für den gewählten Tag die Vorhersage (ca. 16 Tage im Voraus, mit Verlauf alle 2 Stunden). Ist der Tag weiter weg, steht dort der Durchschnitt der letzten 10 Jahre. Immer dabei ist das Wetter „jetzt gerade“ in Tokio. Dazu kommen Sonnenauf- und -untergang, die blaue Stunde und ab wann sich Illuminationen lohnen. An Regentagen zeigt ein Knopf nur Ziele unter Dach. Daten: Open-Meteo.com, kostenlos, wird alle 30 Minuten automatisch aufgefrischt (`js/wetter.js`).
+
+**Gyoza-Radar 🥟:** Runder Knopf unten rechts. Zeigt auf einem Radarschirm die nächsten guten Gyoza-Läden um dich (oder um die Kartenmitte bzw. das Hotel), mit Entfernung, Fußweg, Ruhetag-Warnung und Route.
 
 **Funktionen:** große Karte · Kategorien an/aus · Kalender (1.–25.11.) mit Event-Punkten · „Was läuft heute?“ · Suche (auch auf Japanisch) · Route über Google Maps · Sammel-Fortschritt · Fotos deiner Goshuin und Stempel (Galerie) · eigene Orte mit Foto · hell und dunkel · funktioniert offline.
 

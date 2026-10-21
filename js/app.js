@@ -364,7 +364,8 @@ async function datenLaden() {
   // (Ohne gespeicherte Liste: die 7 Kategorien der ersten App-Version gelten als bekannt)
   const ersteVersion = ["anime", "illumination", "gaerten", "nachttempel", "stempel", "goshuin", "goshuincho"];
   const bekannt = new Set(laden(SPEICHER.bekannt, ersteVersion));
-  kats.filter((k) => gespeichert && !bekannt.has(k.id)).forEach((k) => state.aktiv.add(k.id));
+  kats.filter((k) => gespeichert && !bekannt.has(k.id) && !k.standardAus).forEach((k) => state.aktiv.add(k.id));
+  if (!gespeichert) kats.filter((k) => k.standardAus).forEach((k) => state.aktiv.delete(k.id));
   speichern(SPEICHER.bekannt, kats.map((k) => k.id));
 }
 
@@ -653,6 +654,7 @@ function katGespeichert() {
 const GRUPPEN = [
   ["shoppen", "🛍️ Shoppen & Stöbern"],
   ["erleben", "✨ Erleben"],
+  ["essen", "🥢 Essen"],
   ["sammeln", "🏆 Sammeln"],
 ];
 
@@ -1162,6 +1164,117 @@ function nurDrinnenZeigen() {
   toast("☔ Nur noch Ziele unter Dach – über „Kategorien“ wieder alles einschalten");
 }
 
+/* ---------- Gyoza-Radar 🥟 ---------- */
+const GyozaRadar = {
+  zentrum: null,      // { lat, lng, art: "ich" | "karte" | "hotel" }
+  RUND: 4,            // Sekunden pro Umdrehung des Radarstrahls
+
+  async oeffnen() {
+    modal("radar-modal", true);
+    Klang.oeffnen();
+    this.zentrumWaehlen("ich");
+  },
+
+  async zentrumWaehlen(art) {
+    document.querySelectorAll("#radar-wahl button").forEach((b) => b.classList.toggle("on", b.dataset.zentrum === art));
+    if (art === "hotel") return this.zeigen({ lat: HOTEL.lat, lng: HOTEL.lng, art }, "rund ums Hotel");
+    if (art === "karte") { const c = map.getCenter(); return this.zeigen({ lat: c.lat, lng: c.lng, art }, "rund um die Kartenmitte"); }
+    // „Um mich“: Standort holen
+    $("#radar-info").textContent = "📡 Suche deinen Standort …";
+    $("#radar-schirm").innerHTML = this.schirm([], 1, true);
+    $("#radar-liste").innerHTML = "";
+    const pos = await new Promise((fertig) => {
+      if (!navigator.geolocation) return fertig(null);
+      navigator.geolocation.getCurrentPosition((p) => fertig({ lat: p.coords.latitude, lng: p.coords.longitude }),
+        () => fertig(null), { enableHighAccuracy: true, timeout: 9000, maximumAge: 60000 });
+    });
+    if (!pos) return this.zeigen({ lat: HOTEL.lat, lng: HOTEL.lng, art: "hotel" }, "Standort nicht verfügbar – zeige rund ums Hotel");
+    state.meinOrt = pos;
+    if (distanzKm(pos, START_ANSICHT) > 60) return this.zeigen({ lat: HOTEL.lat, lng: HOTEL.lng, art: "hotel" }, "Du bist (noch) nicht in Tokio – zeige rund ums Hotel");
+    this.zeigen({ ...pos, art: "ich" }, "rund um dich");
+  },
+
+  /** Richtung (0° = Norden, im Uhrzeigersinn) und Entfernung von a nach b */
+  peilung(a, b) {
+    const rad = Math.PI / 180;
+    const y = Math.sin((b.lng - a.lng) * rad) * Math.cos(b.lat * rad);
+    const x = Math.cos(a.lat * rad) * Math.sin(b.lat * rad) - Math.sin(a.lat * rad) * Math.cos(b.lat * rad) * Math.cos((b.lng - a.lng) * rad);
+    return ((Math.atan2(y, x) / rad) + 360) % 360;
+  },
+
+  zeigen(zentrum, text) {
+    this.zentrum = zentrum;
+    const laeden = state.eintraege.filter((e) => e.kategorie === "gyoza")
+      .map((e) => ({ e, km: distanzKm(zentrum, e), grad: this.peilung(zentrum, e) }))
+      .sort((a, b) => a.km - b.km);
+    // Reichweite so wählen, dass mindestens 5 Läden auf dem Schirm sind
+    const stufen = [0.5, 1, 2, 3, 5, 8, 12, 20, 40];
+    const weite = stufen.find((w) => laeden.filter((l) => l.km <= w).length >= 5) || 40;
+    const imRadar = laeden.filter((l) => l.km <= weite);
+    $("#radar-info").textContent = `${imRadar.length} Gyoza-Läden im Umkreis von ${weite < 1 ? weite * 1000 + " m" : weite + " km"} – ${text}`;
+    $("#radar-schirm").innerHTML = this.schirm(imRadar, weite);
+    $("#radar-liste").innerHTML = laeden.slice(0, 12).map((l, i) => this.zeile(l, i)).join("");
+    navigator.vibrate?.([20, 60, 20]);
+  },
+
+  /** Der runde Radarschirm (SVG) mit kreisendem Strahl und aufleuchtenden Punkten */
+  schirm(laeden, weite, sucht = false) {
+    const R = 140;
+    const ringe = [1 / 3, 2 / 3, 1].map((f) => {
+      const km = weite * f;
+      return `<circle r="${R * f}" class="r-ring"/><text x="4" y="${-R * f + 12}" class="r-text">${km < 1 ? Math.round(km * 1000) + " m" : (Math.round(km * 10) / 10) + " km"}</text>`;
+    }).join("");
+    const punkte = laeden.map((l, i) => {
+      const r = Math.min(1, l.km / weite) * R, w = (l.grad * Math.PI) / 180;
+      const x = Math.sin(w) * r, y = -Math.cos(w) * r;
+      return `<g class="r-punkt ${l.e.top ? "top" : ""}" data-id="${esc(l.e.id)}" style="--v:${((l.grad / 360) * this.RUND).toFixed(2)}s" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})">
+        <circle r="${l.e.top ? 7 : 5.5}" class="r-blip"/><circle r="${l.e.top ? 7 : 5.5}" class="r-welle"/>${i < 3 ? `<text y="-10" class="r-nr">${i + 1}</text>` : ""}</g>`;
+    }).join("");
+    return `<svg viewBox="-150 -150 300 300" class="${sucht ? "sucht" : ""}" aria-label="Radar">
+      <defs><linearGradient id="r-strahl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffb347" stop-opacity="0"/><stop offset="1" stop-color="#ffb347" stop-opacity=".55"/></linearGradient></defs>
+      <circle r="${R}" class="r-grund"/>${ringe}
+      <path d="M0 ${-R} V${R} M${-R} 0 H${R}" class="r-kreuz"/>
+      <text y="${-R - 2}" class="r-n">N</text>
+      <g class="r-strahl" style="--rund:${this.RUND}s"><path d="M0 0 L0 ${-R} A${R} ${R} 0 0 1 ${(R * Math.sin(Math.PI / 4)).toFixed(1)} ${(-R * Math.cos(Math.PI / 4)).toFixed(1)} Z" fill="url(#r-strahl)" transform="rotate(-45)"/></g>
+      ${punkte}
+      <circle r="6" class="r-ich"/><circle r="6" class="r-ich-welle"/>
+    </svg>`;
+  },
+
+  zeile(l, i) {
+    const e = l.e;
+    const meter = l.km * 1000, minuten = Math.max(1, Math.round(meter / 80));
+    const tag = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"][new Date(heuteInTokio() + "T12:00:00Z").getUTCDay()];
+    const ruhetagHeute = (e.ruhetage || []).includes(tag);
+    const route = `https://www.google.com/maps/dir/?api=1&destination=${e.lat},${e.lng}&travelmode=${l.km < 2 ? "walking" : "transit"}`;
+    return `<div class="radar-zeile ${e.top ? "top" : ""}" style="--i:${i}" data-id="${esc(e.id)}">
+      <span class="rz-nr">${i + 1}</span>
+      <div class="rz-text">
+        <b>${esc(e.name)}</b>
+        <small>${e.top ? "⭐ Bestenliste 2024" : "👍 Bestenliste " + esc(e.listen.join(" / "))} · ${esc(e.station)}</small>
+        <small>${meter < 1000 ? Math.round(meter / 10) * 10 + " m" : l.km.toFixed(1) + " km"} · ${l.km < 2 ? `ca. ${minuten} Min. zu Fuß` : "mit der Bahn"}${e.lageUngefaehr ? " · Lage ungefähr" : ""}
+          ${ruhetagHeute ? ` · <em>heute Ruhetag!</em>` : ""}</small>
+      </div>
+      <div class="rz-knoepfe">
+        <a class="btn" href="${route}" target="_blank" rel="noopener">🧭</a>
+        <button class="btn ghost" data-info="${esc(e.id)}">Infos</button>
+      </div>
+    </div>`;
+  },
+
+  listeKlick(ev) {
+    const info = ev.target.closest("[data-info]") || ev.target.closest(".r-punkt");
+    if (!info) return;
+    const id = info.dataset.info || info.dataset.id;
+    const e = state.eintraege.find((x) => x.id === id);
+    if (!e) return;
+    modal("radar-modal", false);
+    if (!state.aktiv.has("gyoza")) { state.aktiv.add("gyoza"); katGespeichert(); }
+    zuOrt(e);
+    setTimeout(() => sheetOeffnen(e), 600);
+  },
+};
+
 /* ---------- 7. Seitenpanel ---------- */
 let panelTab = "heute";
 
@@ -1634,6 +1747,10 @@ function ereignisseVerbinden() {
   $("#show-all").onchange = (ev) => { state.alleZeigen = ev.target.checked; datumAnzeigen(); markerZeichnen(); };
   $("#btn-locate").onclick = standortSuchen;
   $("#btn-hotel").onclick = zumHotel;
+  $("#btn-gyoza").onclick = () => GyozaRadar.oeffnen();
+  $("#radar-wahl").onclick = (ev) => { const b = ev.target.closest("[data-zentrum]"); if (b) GyozaRadar.zentrumWaehlen(b.dataset.zentrum); };
+  $("#radar-liste").onclick = (ev) => GyozaRadar.listeKlick(ev);
+  $("#radar-schirm").onclick = (ev) => GyozaRadar.listeKlick(ev);
   $("#btn-add").onclick = addKnopf;
   $("#btn-theme").onclick = () => {
     const neu = document.documentElement.dataset.theme === "dark" ? "light" : "dark";

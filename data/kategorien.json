@@ -120,6 +120,17 @@
     "beschreibung": "Leuchtende Gassen, Neonschilder & Laternen – die besten Orte für cinematische Nachtaufnahmen."
   },
   {
+    "id": "gyoza",
+    "name": "Gyoza",
+    "icon": "🥟",
+    "farbe": "#d98b2b",
+    "datei": "gyoza.json",
+    "gruppe": "essen",
+    "standardAus": true,
+    "bildersuche": "餃子",
+    "beschreibung": "Sehr gute Gyoza-Läden aus der Tabelog-Bestenliste – am schnellsten findest du sie mit dem 🥟 Gyoza-Radar unten rechts."
+  },
+  {
     "id": "stempel",
     "name": "Bahnhofs-Stempel",
     "icon": "🚇",
