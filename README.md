@@ -21,6 +21,8 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | ⛩️ | Goshuin | 21 Tempel und Schreine mit Goshuin – zum Abhaken, mit 📷 eigenem Foto und 🔍 Beispielbildern |
 | 📕 | Limitierte Goshuincho | zeitlich begrenzte Goshuin und Goshuincho, tagesaktuell gefiltert |
 
+**Unser Hotel:** Tosei Hotel Cocone Kanda ist immer als goldenes 宿-Schild auf der Karte, unabhängig von den Kategorien. Der runde 宿-Knopf unten rechts fliegt direkt dorthin. Ändern kannst du es in `js/app.js` unter `HOTEL`.
+
 **Funktionen:** große Karte · Kategorien an/aus · Kalender (1.–25.11.) mit Event-Punkten · „Was läuft heute?“ · Suche (auch auf Japanisch) · Route über Google Maps · Sammel-Fortschritt · Fotos deiner Goshuin und Stempel (Galerie) · eigene Orte mit Foto · hell und dunkel · funktioniert offline.
 
 ---

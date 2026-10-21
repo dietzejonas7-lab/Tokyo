@@ -17,6 +17,17 @@
 
 /* ---------- 1. Einstellungen ---------- */
 const REISE = { von: "2026-11-01", bis: "2026-11-25" };
+// Unser Hotel: immer sichtbar, lässt sich nicht ausschalten
+const HOTEL = {
+  id: "unser-hotel", kategorie: "hotel", hotel: true, fotoSuche: false,
+  name: "Tosei Hotel Cocone Kanda", nameJa: "トーセイホテル ココネ神田",
+  lat: 35.68952, lng: 139.76905,
+  beschreibung: "Unser Zuhause in Tokio! 3-Sterne-Hotel zwischen Kanda und Ōtemachi, nur ein paar Minuten zu Fuß vom Bahnhof Kanda. In der Lobby gibt es kostenlosen Kaffee und eine große Manga-Auswahl.",
+  station: "Kanda (JR Yamanote/Chūō, Ginza-Linie) · Ōtemachi",
+  adresse: "東京都千代田区内神田3丁目",
+  tags: ["Unser Hotel", "Kanda"],
+};
+const HOTEL_KAT = { id: "hotel", name: "Unser Hotel", icon: "🏨", farbe: "#b8913a" };
 const START_ANSICHT = { lat: 35.6895, lng: 139.7400, zoom: 12 };
 // Hauptkarte: moderne Vektor-Karte (ähnlich wie Google Maps) von OpenFreeMap – kostenlos, ohne API-Schlüssel.
 const VEKTOR_KARTE = {
@@ -147,6 +158,7 @@ function toast(text) {
 }
 
 function kategorie(id) {
+  if (id === "hotel") return HOTEL_KAT;
   return state.kategorien.find((k) => k.id === id) || { id, name: id, icon: "📍", farbe: "#888" };
 }
 
@@ -268,6 +280,7 @@ function karteStarten() {
     iconCreateFunction: clusterIcon,
   });
   map.addLayer(cluster);
+  hotelMarkerSetzen();
 
   // Lange drücken (Handy) oder Rechtsklick (PC) = neuen Ort hier anlegen
   map.on("contextmenu", (ev) => formularOeffnen(ev.latlng));
@@ -635,9 +648,11 @@ function sheetOeffnen(e) {
       ${e.tags?.length ? `<div class="tags">${e.tags.map((t) => `<span class="tag">#${esc(t)}</span>`).join("")}</div>` : ""}
       <div class="actions">
         <a class="btn" href="${route}" target="_blank" rel="noopener">🧭 Route</a>
-        <button class="btn collect ${gesammelt ? "done" : ""}" id="btn-collect">
+        ${e.hotel
+          ? `<a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Tosei Hotel Cocone Kanda")}" target="_blank" rel="noopener">📍 Google Maps</a>`
+          : `<button class="btn collect ${gesammelt ? "done" : ""}" id="btn-collect">
           ${gesammelt ? "✓ Erledigt" : k.sammelbar ? "✅ Gesammelt!" : "✅ Besucht"}
-        </button>
+        </button>`}
         ${bilderLink ? `<a class="btn ghost" href="${bilderLink}" target="_blank" rel="noopener">🔍 So sieht's aus</a>` : ""}
         <label class="btn ghost ${bilderLink ? "" : "full"}">${meinFoto ? "📷 Foto ändern" : "📷 Mein Foto"}
           <input type="file" accept="image/*" id="foto-input" hidden></label>
@@ -656,7 +671,7 @@ function sheetOeffnen(e) {
       if (offenerEintrag?.id === e.id && fotos.length) heroFotosZeigen(e, fotos);
     });
   }
-  $("#btn-collect").onclick = () => besuchtUmschalten(e);
+  if (!e.hotel) $("#btn-collect").onclick = () => besuchtUmschalten(e);
   if (e.eigen) $("#btn-delete").onclick = () => eigenenLoeschen(e);
   $("#foto-input").onchange = (ev) => ev.target.files[0] && fotoSpeichern(e, ev.target.files[0]);
   if (meinFoto) $("#btn-foto-weg").onclick = () => fotoEntfernen(e);
@@ -717,6 +732,24 @@ function heroDeko() {
 }
 
 /** Den Marker des geöffneten Orts hüpfen lassen und hervorheben */
+/** Hotel-Markierung: liegt außerhalb der Kategorien und ist deshalb immer zu sehen */
+function hotelMarkerSetzen() {
+  const icon = L.divIcon({
+    className: "pin-wrap hotel-wrap",
+    html: `<div class="hotel-pin"><i class="hotel-halo"></i><i class="hotel-halo"></i>
+      <div class="hotel-schild"><span>宿</span></div><b class="hotel-name">Unser Hotel</b></div>`,
+    iconSize: [56, 70],
+    iconAnchor: [28, 62],
+  });
+  L.marker([HOTEL.lat, HOTEL.lng], { icon, zIndexOffset: 5000, title: HOTEL.name, keyboard: false })
+    .on("click", () => sheetOeffnen(HOTEL))
+    .addTo(map);
+}
+function zumHotel() {
+  map.flyTo([HOTEL.lat, HOTEL.lng], Math.max(map.getZoom(), 16), { duration: 1 });
+  setTimeout(() => sheetOeffnen(HOTEL), 700);
+}
+
 function markerHervorheben(e) {
   document.querySelectorAll(".pin.gewaehlt").forEach((p) => p.classList.remove("gewaehlt"));
   document.querySelectorAll(".pin-wrap.gewaehlt").forEach((p) => p.classList.remove("gewaehlt"));
@@ -1221,6 +1254,7 @@ function ereignisseVerbinden() {
   });
   $("#show-all").onchange = (ev) => { state.alleZeigen = ev.target.checked; datumAnzeigen(); markerZeichnen(); };
   $("#btn-locate").onclick = standortSuchen;
+  $("#btn-hotel").onclick = zumHotel;
   $("#btn-add").onclick = addKnopf;
   $("#btn-theme").onclick = () => {
     const neu = document.documentElement.dataset.theme === "dark" ? "light" : "dark";

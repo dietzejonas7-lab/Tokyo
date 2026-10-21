@@ -1036,6 +1036,57 @@ button { font: inherit; color: inherit; cursor: pointer; }
   100% { opacity: 0; transform: scale(0.9) rotate(-6deg) translateY(-20px); }
 }
 
+/* ---------- Unser Hotel: immer sichtbar, eigenes Aussehen ---------- */
+.hotel-wrap { z-index: 5000 !important; }
+.hotel-pin { position: relative; width: 56px; height: 70px; display: grid; justify-items: center; }
+/* Goldenes Schild mit „宿“ (= Unterkunft), wie ein Laternenschild */
+.hotel-schild {
+  position: relative; z-index: 1; width: 48px; height: 48px; display: grid; place-items: center;
+  border-radius: 14px; transform: rotate(45deg);
+  background: linear-gradient(135deg, #f3d27a, #b8913a 60%, #8a6a22);
+  border: 2.5px solid var(--tusche);
+  box-shadow: inset 0 0 0 3px rgba(255, 248, 225, 0.55), 3px 5px 0 rgba(43, 38, 34, 0.3), 0 0 18px rgba(240, 200, 110, 0.7);
+  animation: hotelRein 0.9s 0.6s both cubic-bezier(.3, 1.6, .5, 1), hotelSchweben 3s 1.5s ease-in-out infinite;
+}
+.hotel-schild span {
+  transform: rotate(-45deg); width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  background: #c8352a; color: #fff8ef; font-family: var(--pinsel); font-size: 20px; line-height: 1;
+  border: 2px solid #fff3d6;
+}
+@keyframes hotelRein { from { opacity: 0; transform: rotate(45deg) translateY(-60px) scale(0.3); } }
+@keyframes hotelSchweben { 50% { transform: rotate(45deg) translate(-3px, -3px); } }
+/* Zwei goldene Ringe breiten sich am Boden aus */
+.hotel-halo {
+  position: absolute; left: 50%; top: 52px; width: 30px; height: 12px; margin-left: -15px; border-radius: 50%;
+  border: 2.5px solid #d4ad55; animation: bodenWelle 2.4s ease-out infinite;
+}
+.hotel-halo + .hotel-halo { animation-delay: 1.2s; }
+.hotel-name {
+  position: absolute; top: 62px; left: 50%; transform: translateX(-50%); white-space: nowrap;
+  padding: 2px 9px; border-radius: 999px; font-family: var(--rund); font-size: 0.7rem; font-weight: 900;
+  color: #fff8ef; background: var(--tusche); border: 1.5px solid #d4ad55;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); animation: rise 0.6s 1.2s both var(--ease);
+}
+:root[data-theme="dark"] .hotel-name { background: #2b2860; }
+
+/* Runder Knopf „Zum Hotel“ rechts über der Leiste */
+#btn-hotel {
+  position: fixed; right: 14px; bottom: calc(env(safe-area-inset-bottom) + var(--dock-h) + 26px); z-index: 450;
+  width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; align-content: center; gap: 0;
+  border: 2px solid var(--tusche); color: #fff8ef;
+  background: linear-gradient(135deg, #e0b86a, #b8913a);
+  box-shadow: 0 4px 0 var(--tusche), 0 8px 18px rgba(184, 145, 58, 0.45);
+  animation: popIn 0.6s 0.9s both var(--spring);
+  transition: transform 0.2s var(--spring);
+}
+#btn-hotel span { font-family: var(--pinsel); font-size: 1.35rem; line-height: 1; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); }
+#btn-hotel small { font-family: var(--rund); font-size: 0.55rem; font-weight: 900; color: #2b2622; }
+#btn-hotel:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--tusche); }
+#btn-hotel::after {
+  content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 1.5px dashed #d4ad55;
+  animation: kreisen 16s linear infinite;
+}
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
