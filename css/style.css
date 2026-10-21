@@ -803,17 +803,22 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* ---------- Kopfzeile ---------- */
 /* Goldener Glanz wandert regelmäßig über die Leiste */
 .topbar-row { overflow: hidden; }
+.topbar-row > * { position: relative; z-index: 1; }
 .topbar-row::after {
   content: ""; position: absolute; top: 0; bottom: 0; left: -40%; width: 30%; pointer-events: none;
   background: linear-gradient(100deg, transparent, rgba(255, 236, 190, 0.35), transparent);
-  transform: skewX(-20deg); animation: glanz 7s 2.5s ease-in-out infinite;
+  transform: skewX(-20deg); animation: glanz 7s 2.5s ease-in-out infinite; z-index: 0;
 }
+:root[data-theme="dark"] .topbar-row::after { background: linear-gradient(100deg, transparent, rgba(255, 220, 170, 0.1), transparent); }
 @keyframes glanz { 0% { left: -40%; } 18%, 100% { left: 130%; } }
 /* Logo: drehender Goldring + atmendes Leuchten */
 .logo-btn { overflow: visible; isolation: isolate; }
+/* Nur ein schmaler Ring (die Maske schneidet die Mitte aus), damit das Rot kräftig bleibt */
 .logo-btn::before {
-  content: ""; position: absolute; inset: -3px; z-index: -1; border-radius: 14px;
+  content: ""; position: absolute; inset: -3px; border-radius: 14px; padding: 2.5px; pointer-events: none;
   background: conic-gradient(from var(--w, 0deg), var(--kin), transparent 30%, var(--sakura) 50%, transparent 70%, var(--kin));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
   animation: ringDreh 6s linear infinite;
 }
 @property --w { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
