@@ -1291,6 +1291,67 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .lw-live.keine { background: var(--line); border: 1.5px dashed var(--rand); }
 .lw-tipp { margin: 4px 0 0; font-size: 0.74rem; line-height: 1.45; color: var(--muted); }
 
+/* ---------- Wetter & Sonne („Dein Tag“) ---------- */
+.wetter-karte {
+  position: relative; overflow: hidden; display: grid; gap: 10px; padding: 14px; margin-bottom: 10px;
+  border-radius: 18px; border: 1.5px solid var(--rand); box-shadow: 0 3px 0 var(--rand);
+  background: linear-gradient(160deg, color-mix(in srgb, #9fc0e0 22%, var(--karte)), var(--karte) 60%);
+  animation: rise 0.5s both var(--ease);
+}
+.wetter-karte.nass { background: linear-gradient(160deg, color-mix(in srgb, #6f86a8 28%, var(--karte)), var(--karte) 65%); }
+.wetter-karte.klima { background: linear-gradient(160deg, color-mix(in srgb, var(--kin) 14%, var(--karte)), var(--karte) 60%); border-style: dashed; }
+.wetter-karte.jetzt { background: linear-gradient(160deg, color-mix(in srgb, var(--matcha) 18%, var(--karte)), var(--karte) 60%); animation-delay: 0.08s; }
+.wetter-karte.laedt { color: var(--muted); font-size: 0.9rem; }
+.wk-kopf { font-family: var(--rund); font-weight: 900; font-size: 0.82rem; color: var(--muted); }
+.wk-haupt { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; }
+.wk-icon { font-size: 2.8rem; line-height: 1; filter: drop-shadow(0 3px 0 rgba(43, 38, 34, 0.12)); animation: wolkeWippen 4s ease-in-out infinite; }
+@keyframes wolkeWippen { 50% { transform: translateY(-4px) rotate(-4deg); } }
+.wk-temp { display: grid; grid-template-columns: auto 1fr; align-items: baseline; column-gap: 6px; white-space: nowrap; min-width: 0; }
+.wk-temp b { font-family: var(--rund); font-size: 2rem; font-weight: 900; line-height: 1; }
+.wk-temp span { color: var(--muted); font-weight: 700; }
+.wk-temp small { grid-column: 1 / -1; color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+.wk-werte { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; font-size: 0.78rem; font-weight: 700; text-align: right; max-width: 9rem; }
+.wk-hinweis { margin: 0; font-size: 0.82rem; line-height: 1.45; color: var(--muted); }
+/* Stündlicher Verlauf: seitlich wischbar */
+.wk-stunden { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.wk-stunden::-webkit-scrollbar { display: none; }
+.wk-stunden > div {
+  flex: none; display: grid; justify-items: center; gap: 1px; min-width: 50px; padding: 6px 4px; border-radius: 12px;
+  background: color-mix(in srgb, var(--karte) 75%, transparent); border: 1px solid var(--rand);
+  animation: popIn 0.4s both var(--spring); animation-delay: calc(0.15s + var(--i) * 35ms);
+}
+.wk-stunden small { font-size: 0.66rem; color: var(--muted); font-weight: 700; }
+.wk-stunden span { font-size: 1.2rem; line-height: 1.2; }
+.wk-stunden b { font-size: 0.86rem; }
+.wk-stunden i { font-style: normal; font-size: 0.66rem; color: #4a78b0; font-weight: 800; }
+.regen-tipp {
+  display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; align-items: center; margin: -2px 0 10px; padding: 10px 12px;
+  border-radius: 14px; font-size: 0.84rem; background: color-mix(in srgb, #4a78b0 12%, var(--karte)); border: 1.5px solid color-mix(in srgb, #4a78b0 45%, transparent);
+}
+.regen-tipp .btn { grid-column: 1 / -1; padding: 8px 12px; font-size: 0.84rem; }
+/* Sonne */
+.sonnen-karte {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px; margin-bottom: 6px; border-radius: 18px;
+  background: linear-gradient(135deg, #2b2160, #a2456a 60%, #ec8458); color: #fff8ef;
+  box-shadow: 0 3px 0 rgba(43, 38, 34, 0.25); animation: rise 0.5s 0.12s both var(--ease);
+}
+.sonnen-karte > div { display: grid; justify-items: center; gap: 1px; text-align: center; }
+.sonnen-karte span { font-size: 1.4rem; }
+.sonnen-karte small { font-size: 0.68rem; opacity: 0.85; }
+.sonnen-karte b { font-family: var(--rund); font-size: 0.95rem; }
+.sonnen-karte p { grid-column: 1 / -1; margin: 4px 0 0; font-size: 0.8rem; text-align: center; opacity: 0.95; }
+.wk-quelle { margin: 4px 2px 0; font-size: 0.7rem; color: var(--muted); }
+.wk-quelle a { color: var(--muted); }
+/* Regen über dem Kalenderblatt, wenn es am Tag regnet */
+.tk-szene.regen::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(105deg, transparent 0 9px, rgba(220, 235, 255, 0.45) 9px 10px, transparent 10px 22px);
+  background-size: 60px 60px; animation: regenFall 0.6s linear infinite;
+}
+@keyframes regenFall { to { background-position: -16px 60px; } }
+/* Wetter im Kalender */
+#calendar button .kal-wetter { position: absolute; top: 2px; right: 3px; font-size: 0.78rem; line-height: 1; }
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

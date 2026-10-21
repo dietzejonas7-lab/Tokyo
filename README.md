@@ -25,6 +25,8 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 
 **Favoriten:** In jedem Ort mit dem Herz ♡ neben dem Namen merken. Favoriten sind immer auf der Karte (kleines Herz am Punkt), stehen unter ☰ → ❤️ Favoriten, und der Chip „Favoriten“ blendet alles andere aus. Gespeichert wird auf deinem Handy.
 
+**Wetter & Sonne:** Unter „Dein Tag“ steht für den gewählten Tag die Vorhersage (ca. 16 Tage im Voraus, mit Verlauf alle 2 Stunden). Ist der Tag weiter weg, steht dort der Durchschnitt der letzten 10 Jahre. Immer dabei ist das Wetter „jetzt gerade“ in Tokio. Dazu kommen Sonnenauf- und -untergang, die blaue Stunde und ab wann sich Illuminationen lohnen. An Regentagen zeigt ein Knopf nur Ziele unter Dach. Daten: Open-Meteo.com, kostenlos, wird alle 30 Minuten automatisch aufgefrischt (`js/wetter.js`).
+
 **Funktionen:** große Karte · Kategorien an/aus · Kalender (1.–25.11.) mit Event-Punkten · „Was läuft heute?“ · Suche (auch auf Japanisch) · Route über Google Maps · Sammel-Fortschritt · Fotos deiner Goshuin und Stempel (Galerie) · eigene Orte mit Foto · hell und dunkel · funktioniert offline.
 
 ---
@@ -135,6 +137,7 @@ index.html              ← das Gerüst der Seite
 css/style.css           ← Design „Washi & Sumi“, Farben & Animationen (Farben ganz oben änderbar)
 js/app.js               ← die Logik (Karte, Filter, Kalender …), mit Kommentaren
 js/effekte.js           ← Animationen & Effekte (Stempel, Übergänge, Wellen)
+js/wetter.js            ← Wetter (Open-Meteo) & Sonnenauf-/-untergang
 js/szenen.js            ← gezeichnete, animierte Mini-Szenen je Kategorie (Detail-Karte & Tagesblatt)
 js/fotos.js             ← Beispielfotos von Wikimedia Commons (mit Fotonachweis)
 js/klang.js             ← schlichte Klänge (Klicken, kurze Töne) – direkt im Browser erzeugt

@@ -1031,6 +1031,96 @@ function sheetWischen() {
   });
 }
 
+/* ---------- Wetter & Sonne (Daten: js/wetter.js) ---------- */
+const INDOOR_KATEGORIEN = ["anime", "premiumfiguren", "gacha", "mode", "attraktionen"];
+
+function wetterHtml() {
+  const iso = state.datum, heute = heuteInTokio();
+  const kurz = (d) => datumSchoen(d, { weekday: "short", day: "numeric", month: "numeric" });
+  const grad = (x) => (x == null ? "–" : Math.round(x) + "°");
+  if (!Wetter.daten) {
+    if (Wetter.versucht) return `<h3 class="section-title">🌤️ Wetter & Sonne</h3><div class="wetter-karte laedt">📵 Wetter gerade nicht erreichbar – kein Internet? Es wird beim nächsten Öffnen neu geladen.</div>`;
+    Wetter.laden().then(wetterAktualisieren);
+    return `<h3 class="section-title">🌤️ Wetter & Sonne</h3><div class="wetter-karte laedt">⏳ Wetter wird geladen …</div>`;
+  }
+  // 1) Gewählter Tag: Vorhersage (bzw. „so war es“ für vergangene Tage) oder Durchschnitt
+  const tag = Wetter.tag(iso);
+  let auswahl = "";
+  if (tag) {
+    const c = Wetter.code(tag.code);
+    const titel = iso < heute ? "So war das Wetter" : iso === heute ? "Heute – Vorhersage" : "Vorhersage";
+    const jetztStunde = iso === heute ? (Wetter.daten.current?.time || "").slice(11, 13) : "";
+    const stunden = Wetter.stunden(iso).filter((h) => !jetztStunde || h.uhr.slice(0, 2) >= jetztStunde);
+    auswahl = `<div class="wetter-karte ${c.regen ? "nass" : ""}">
+      <div class="wk-kopf">${titel} · ${kurz(iso)}</div>
+      <div class="wk-haupt">
+        <span class="wk-icon">${c.icon}</span>
+        <div class="wk-temp"><b>${grad(tag.max)}</b><span>/ ${grad(tag.min)}</span><small>${c.text}</small></div>
+        <ul class="wk-werte"><li>☔ ${tag.regen ?? "–"} %</li><li>💧 ${tag.menge?.toFixed(1) ?? "–"} mm</li><li>💨 ${Math.round(tag.wind ?? 0)} km/h</li></ul>
+      </div>
+      ${stunden.length ? `<div class="wk-stunden">${stunden.map((h, i) => `<div style="--i:${i}">
+        <small>${h.uhr.slice(0, 2)} Uhr</small><span>${Wetter.code(h.code, h.tag).icon}</span><b>${grad(h.temp)}</b><i>${h.regen ?? 0} %</i></div>`).join("")}</div>` : ""}
+    </div>`;
+    if (iso >= heute && (tag.regen >= 60 || tag.menge >= 5)) {
+      auswahl += `<div class="regen-tipp">☔ <span><b>Regentag?</b> Shops, Figuren, Gachapon & Attraktionen sind meist drinnen.</span>
+        <button class="btn ghost" id="indoor-knopf">Nur drinnen zeigen</button></div>`;
+    }
+  } else if (iso > (Wetter.letzterTag() || iso)) {
+    const ab = plusTage(iso, -15);
+    const k = Wetter.klima?.[iso.slice(5)];
+    if (!Wetter.klima && !Wetter.klimaVersucht) Wetter.klimaLaden().then(wetterAktualisieren);
+    auswahl = `<div class="wetter-karte klima">
+      <div class="wk-kopf">Noch keine Vorhersage · ${kurz(iso)}</div>
+      <p class="wk-hinweis">Die Vorhersage gibt es ca. 16 Tage vorher – ab dem ${datumSchoen(ab, { day: "numeric", month: "long" })}.
+        ${k ? "So ist es an diesem Tag normalerweise (Durchschnitt der letzten 10 Jahre):" : Wetter.klimaVersucht && !Wetter.klima ? "" : "Durchschnittswerte werden geladen …"}</p>
+      ${k ? `<div class="wk-haupt">
+        <span class="wk-icon">${k.sonne >= 6 ? "☀️" : k.sonne >= 3 ? "⛅" : "☁️"}</span>
+        <div class="wk-temp"><b>${grad(k.max)}</b><span>/ ${grad(k.min)}</span><small>üblich</small></div>
+        <ul class="wk-werte"><li>☔ Regen in ${k.regenJahre} von ${k.jahre} Jahren</li><li>☀️ ca. ${k.sonne.toFixed(1)} h Sonne</li></ul>
+      </div>` : ""}
+    </div>`;
+  }
+  // 2) Immer dabei: wie es gerade wirklich ist
+  const jetzt = Wetter.daten.current;
+  let wirklich = "";
+  if (jetzt) {
+    const c = Wetter.code(jetzt.weather_code, jetzt.is_day);
+    const heuteTag = Wetter.tag(heute);
+    wirklich = `<div class="wetter-karte jetzt">
+      <div class="wk-kopf">📡 Jetzt gerade in Tokio · ${kurz(heute)}, ${jetzt.time.slice(11, 16)} Uhr Japan</div>
+      <div class="wk-haupt">
+        <span class="wk-icon">${c.icon}</span>
+        <div class="wk-temp"><b>${grad(jetzt.temperature_2m)}</b><span>gefühlt ${grad(jetzt.apparent_temperature)}</span><small>${c.text}</small></div>
+        <ul class="wk-werte">${heuteTag ? `<li>🌡️ heute ${grad(heuteTag.max)} / ${grad(heuteTag.min)}</li>` : ""}<li>💨 ${Math.round(jetzt.wind_speed_10m)} km/h</li><li>💧 ${jetzt.relative_humidity_2m} % Luftf.</li></ul>
+      </div>
+    </div>`;
+  }
+  // 3) Sonne für den gewählten Tag
+  const sonne = Wetter.sonne(iso);
+  const plusMin = (d, m) => Wetter.zeit(new Date(d.getTime() + m * 60000));
+  const licht = `<div class="sonnen-karte">
+    <div><span>🌅</span><small>Aufgang</small><b>${Wetter.zeit(sonne.auf)}</b></div>
+    <div><span>🌇</span><small>Untergang</small><b>${Wetter.zeit(sonne.unter)}</b></div>
+    <div><span>🔵</span><small>Blaue Stunde</small><b>${plusMin(sonne.unter, 5)}–${plusMin(sonne.unter, 30)}</b></div>
+    <p>✨ Illuminationen & Tempel bei Nacht lohnen sich ab ca. <b>${plusMin(sonne.unter, 20)} Uhr</b>.${sonne.genau ? "" : " (Zeiten ± 3 Min.)"}</p>
+  </div>`;
+  const stand = `<p class="wk-quelle">Wetter: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo.com</a> · aktualisiert ${new Date(Wetter.daten.geholt).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr (deine Zeit)</p>`;
+  return `<h3 class="section-title">🌤️ Wetter & Sonne</h3>` + (iso === heute ? wirklich + auswahl : auswahl + wirklich) + licht + stand;
+}
+
+/** Wetter-Bereich neu zeichnen, sobald Daten da sind (ohne das ganze Panel neu aufzubauen) */
+function wetterAktualisieren() {
+  const block = $("#wetter-block");
+  if (block) block.innerHTML = wetterHtml();
+  if ($("#date-modal").classList.contains("open")) kalenderZeichnen();
+}
+
+function nurDrinnenZeigen() {
+  state.aktiv = new Set(INDOOR_KATEGORIEN.filter((id) => state.kategorien.some((k) => k.id === id)));
+  katGespeichert();
+  toast("☔ Nur noch Ziele unter Dach – über „Kategorien“ wieder alles einschalten");
+}
+
 /* ---------- 7. Seitenpanel ---------- */
 let panelTab = "heute";
 
@@ -1104,8 +1194,10 @@ function panelZeichnen(suchbegriff = "") {
     const reiseTage = tageZwischen(REISE.von, REISE.bis) + 1;
     // Bild über dem Kalenderblatt: Herbstlaub, sobald viele Orte auf dem Höhepunkt sind
     const laubHoch = state.eintraege.filter((e) => e.laub && laubStatus(e).stufe === "hoch").length;
+    const wetterTag = Wetter.tag(state.datum);
+    const regnet = wetterTag && Wetter.code(wetterTag.code).regen;
     html += `<div class="tageskarte">
-      <div class="tk-szene">${Szenen.fuer(laubHoch >= 15 ? "herbstlaub" : "abend")}</div>
+      <div class="tk-szene ${regnet ? "regen" : ""}">${Szenen.fuer(laubHoch >= 15 ? "herbstlaub" : "abend")}</div>
       <div class="tk-datum">
         <span class="tk-monat">${datumSchoen(state.datum, { month: "long" })}</span>
         <b>${Number(state.datum.slice(8))}</b>
@@ -1116,7 +1208,8 @@ function panelZeichnen(suchbegriff = "") {
         ${reiseTag >= 1 && reiseTag <= reiseTage ? `<span>Reisetag ${reiseTag} von ${reiseTage}</span>` : ""}
         <span>✨ <b data-ziel="${zeitlich.length}">0</b> Highlights an diesem Tag</span>
       </div>
-    </div>`;
+    </div>
+    <div id="wetter-block">${wetterHtml()}</div>`;
     html += `<h3 class="section-title">✨ Läuft an diesem Tag (${zeitlich.length})</h3>`;
     html += zeitlich.length
       ? `<div class="list">${erledigtNachHinten(nachDistanz(zeitlich)).map((e, i) => listItem(e, i, zeitStatus(e).kurz)).join("")}</div>`
@@ -1252,6 +1345,7 @@ function panelKlick(ev) {
     panelZeichnen();
   }
   if (ev.target.closest("#fav-schalter")) nurFavoritenUmschalten();
+  if (ev.target.closest("#indoor-knopf")) nurDrinnenZeigen();
   if (ev.target.closest("#erledigt-schalter")) {
     state.erledigteAusblenden = !state.erledigteAusblenden;
     speichern(SPEICHER.erledigtAus, state.erledigteAusblenden);
@@ -1316,7 +1410,7 @@ function kalenderZeichnen() {
     const events = state.eintraege.filter((e) => e.zeitraum && istAktiv(e, iso)).length;
     const dots = "<i></i>".repeat(Math.min(events, 4));
     html += `<button data-datum="${iso}" style="--i:${i}" class="${iso === state.datum ? "sel" : ""} ${iso === heute ? "today" : ""}"
-      title="${events} Events">${Number(iso.slice(8))}<span class="dots">${dots}</span></button>`;
+      title="${events} Events">${Number(iso.slice(8))}${Wetter.tag(iso) ? `<span class="kal-wetter">${Wetter.code(Wetter.tag(iso).code).icon}</span>` : ""}<span class="dots">${dots}</span></button>`;
   }
   $("#calendar").innerHTML = html;
 }
@@ -1559,6 +1653,11 @@ async function start() {
     toast("⚠️ Daten konnten nicht geladen werden");
   }
   datumAnzeigen();
+  Wetter.laden().then(wetterAktualisieren);
+  // Kommt die App wieder in den Vordergrund: Wetter auffrischen (höchstens alle 30 Minuten)
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") Wetter.laden().then(wetterAktualisieren);
+  });
   await splashMin;
   $("#splash").classList.add("hide");
   setTimeout(metaFarbeSetzen, 400);
