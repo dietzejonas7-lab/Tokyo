@@ -9,7 +9,7 @@
 const Szenen = {
   ZUORDNUNG: {
     anime: "stadt", premiumfiguren: "stadt", gacha: "stadt", mode: "stadt",
-    illumination: "lichter", events: "fest", nachttempel: "tempel", hotel: "hotel",
+    illumination: "lichter", events: "fest", nachttempel: "tempel", hotel: "hotel", filmspots: "gasse",
     gaerten: "garten", herbstlaub: "herbst",
     stempel: "stempel", goshuin: "stempel", goshuincho: "stempel",
   },
@@ -204,6 +204,47 @@ const Szenen = {
         ${baum(190, 56, ["#e0b040", "#e8c860", "#d8a030", "#f0d070", "#c89020"])}
         ${baum(350, 64, ["#a8282a", "#c8362a", "#e0782f", "#c8362a", "#e85a3a"])}</g>
       <rect y="194" width="400" height="6" fill="#3a1828"/>` + fallend;
+  },
+
+  /** Nächtliche Gasse: flackernde Neonschilder, Laternen, Regen und Spiegelungen auf nassem Boden (Filmspots) */
+  gasse(p) {
+    const farben = ["#ff4fa0", "#38d6ff", "#ffd23f", "#ff5a3c", "#b26bff"];
+    const woerter = [["居酒屋", "焼鳥", "スナック", "酒"], ["ラーメン", "BAR", "カラオケ", "喫茶"]];
+    let schilder = "", spiegel = "";
+    [0, 1].forEach((seite) => {
+      woerter[seite].forEach((wort, i) => {
+        const s = 1 - i * 0.2, b = 16 * s, h = 64 * s;
+        const x = seite === 0 ? 14 + i * 40 : 400 - 14 - i * 40 - b;
+        const y = 28 + i * 13;
+        const c = farben[(i * 2 + seite) % farben.length];
+        const zeichen = [...wort].slice(0, 4);
+        const gross = Math.min(11 * s, (h - 6) / zeichen.length);
+        schilder += `<g class="m-neon" style="--d:-${this.f(this.z(0, 5))}s;--t:${this.f(this.z(4, 9))}s">
+          <rect x="${this.f(x - 3)}" y="${this.f(y - 3)}" width="${this.f(b + 6)}" height="${this.f(h + 6)}" rx="3" fill="${c}" opacity=".45" filter="url(#${p}b)"/>
+          <rect x="${this.f(x)}" y="${this.f(y)}" width="${this.f(b)}" height="${this.f(h)}" rx="2" fill="#140c1e" stroke="${c}" stroke-width="1.6"/>
+          ${zeichen.map((z, k) => `<text x="${this.f(x + b / 2)}" y="${this.f(y + 4 + gross * (k + 0.9))}" text-anchor="middle" font-size="${this.f(gross)}" fill="${c}" style="font-family:var(--rund);font-weight:900">${z}</text>`).join("")}</g>`;
+        spiegel += `<rect class="m-spiegel" x="${this.f(x - 2)}" y="${this.f(162 + i * 4)}" width="${this.f(b + 4)}" height="${this.f(34 - i * 6)}" fill="${c}" opacity=".3" filter="url(#${p}b)" style="--d:-${this.f(this.z(0, 3))}s"/>`;
+      });
+    });
+    const fenster = [[178, 80], [192, 80], [206, 80], [220, 80], [178, 96], [206, 96], [220, 96], [192, 112], [220, 112]].map(([x, y], i) =>
+      `<rect class="m-fenster" x="${x}" y="${y}" width="6" height="8" fill="#ffd98a" style="--d:-${i}s;--t:${5 + (i % 3)}s"/>`).join("");
+    const tropfen = Array.from({ length: 34 }, () => {
+      const x = this.z(0, 400), y = this.z(-60, 150);
+      return `<line class="m-tropfen" x1="${this.f(x)}" y1="${this.f(y)}" x2="${this.f(x - 3)}" y2="${this.f(y + 12)}" stroke="#cfe3ff" stroke-width=".8" opacity=".35" style="--d:-${this.f(this.z(0, 1.2))}s"/>`;
+    }).join("");
+    return `<defs><linearGradient id="${p}h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0e2a"/><stop offset="1" stop-color="#3a2466"/></linearGradient>
+        <linearGradient id="${p}n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22183a"/><stop offset="1" stop-color="#0b0812"/></linearGradient>
+        <radialGradient id="${p}g"><stop offset="0" stop-color="#ff8ac8" stop-opacity=".55"/><stop offset="1" stop-color="#ff8ac8" stop-opacity="0"/></radialGradient>
+        <filter id="${p}b"><feGaussianBlur stdDeviation="3"/></filter></defs>
+      <rect width="400" height="200" fill="url(#${p}h)"/>` + this.sterne(10, 50) +
+      `<circle cx="200" cy="105" r="70" fill="url(#${p}g)"/>
+      <rect x="170" y="70" width="60" height="82" fill="#241a3e"/>${fenster}
+      <polygon points="0,0 170,70 170,152 0,200" fill="#1a1430"/>
+      <polygon points="400,0 230,70 230,152 400,200" fill="#1c1634"/>
+      <polygon points="0,200 170,152 230,152 400,200" fill="url(#${p}n)"/>
+      <path d="M0 22 L400 34 M0 48 Q200 70 400 52" stroke="#0c0814" stroke-width="1" fill="none"/>` +
+      spiegel + schilder +
+      this.laternen([60, 52], [200, 76], [340, 52], 5) + tropfen;
   },
 
   /** Washi-Papier mit rotem Stempel und Pinselschrift (Stempel, Goshuin) */

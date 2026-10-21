@@ -110,6 +110,16 @@
     "bildersuche": ""
   },
   {
+    "id": "filmspots",
+    "name": "Neon & Filmspots",
+    "icon": "🎥",
+    "farbe": "#b5338a",
+    "datei": "filmspots.json",
+    "gruppe": "erleben",
+    "bildersuche": "夜 路地",
+    "beschreibung": "Leuchtende Gassen, Neonschilder & Laternen – die besten Orte für cinematische Nachtaufnahmen."
+  },
+  {
     "id": "stempel",
     "name": "Bahnhofs-Stempel",
     "icon": "🚇",

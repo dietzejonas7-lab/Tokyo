@@ -1361,6 +1361,32 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* Wetter im Kalender */
 #calendar button .kal-wetter { position: absolute; top: 2px; right: 3px; font-size: 0.78rem; line-height: 1; }
 
+/* ---------- Neon & Filmspots ---------- */
+.m-neon { animation: neonFlackern var(--t, 6s) var(--d, 0s) linear infinite; }
+@keyframes neonFlackern {
+  0%, 88%, 100% { opacity: 1; } 89% { opacity: 0.35; } 90% { opacity: 1; } 92% { opacity: 0.55; } 93% { opacity: 1; }
+}
+.m-spiegel { animation: spiegeln 2.4s var(--d, 0s) ease-in-out infinite alternate; }
+@keyframes spiegeln { from { opacity: 0.22; transform: scaleX(0.9); } to { opacity: 0.45; transform: scaleX(1.15); } }
+.m-tropfen { animation: tropfenFall 0.9s var(--d, 0s) linear infinite; }
+@keyframes tropfenFall { from { transform: translate(0, -20px); } to { transform: translate(-10px, 70px); opacity: 0; } }
+.kamera-tipps {
+  border-radius: 16px; border: 1.5px solid color-mix(in srgb, #b5338a 45%, var(--rand)); overflow: hidden;
+  background: var(--papier), linear-gradient(160deg, color-mix(in srgb, #b5338a 10%, var(--karte)), var(--karte) 60%);
+}
+.kamera-tipps summary {
+  list-style: none; cursor: pointer; padding: 12px 14px; font-family: var(--rund); font-weight: 900;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.kamera-tipps summary::-webkit-details-marker { display: none; }
+.kamera-tipps summary::after { content: "▾"; transition: transform 0.3s var(--spring); }
+.kamera-tipps[open] summary::after { transform: rotate(180deg); }
+.kt-zeile { display: grid; grid-template-columns: 28px 1fr; gap: 8px; padding: 8px 14px; border-top: 1px dashed var(--rand); }
+.kamera-tipps[open] .kt-zeile { animation: vonLinks 0.4s both var(--ease); animation-delay: calc(var(--i) * 50ms); }
+.kt-zeile span { font-size: 1.2rem; }
+.kt-zeile p { margin: 0; font-size: 0.85rem; line-height: 1.45; }
+.kt-zeile b { display: block; font-family: var(--rund); }
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

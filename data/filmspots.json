@@ -1,0 +1,355 @@
+[
+  {
+    "id": "film-omoide",
+    "name": "Omoide Yokochō („Erinnerungsgasse“)",
+    "nameJa": "思い出横丁",
+    "lat": 35.69301,
+    "lng": 139.69969,
+    "station": "Shinjuku (Westausgang)",
+    "beschreibung": "Die Gasse schlechthin: winzige Yakitori-Buden unter roten Laternen, Rauch vom Grill, Neon von den Hochhäusern dahinter. Sehr eng und voll.",
+    "kamera": "Langsamer „Ninja-Walk“ durch die Hauptgasse, Kamera auf Brusthöhe. Der Grillrauch im Gegenlicht der Laternen wirkt fast wie Nebel. Viele Läden möchten nicht, dass man hineinfilmt – von der Gasse aus filmen.",
+    "tags": [
+      "Laternen",
+      "Rauch",
+      "Gasse"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-golden-gai",
+    "name": "Golden Gai",
+    "nameJa": "新宿ゴールデン街",
+    "lat": 35.69399,
+    "lng": 139.7047,
+    "station": "Shinjuku-sanchōme / Shinjuku",
+    "beschreibung": "Sechs schmale Gassen mit rund 200 Mini-Bars, bunte Schilder und alte Holzfassaden – wie aus einem Film. Vor 21 Uhr noch ruhig.",
+    "kamera": "Früh am Abend kommen, solange die Gassen leer sind – dann wirken die Schilder am besten. Viele Bars haben Schilder „No Photo“ oder 撮影禁止 (satsuei kinshi = Filmen verboten): Gäste und Innenräume nicht filmen.",
+    "tags": [
+      "Schilder",
+      "Gasse",
+      "Retro"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-kabukicho",
+    "name": "Kabukichō: Ichiban-gai-Tor & Godzilla",
+    "nameJa": "歌舞伎町一番街・ゴジラヘッド",
+    "lat": 35.69506,
+    "lng": 139.70188,
+    "station": "Seibu-Shinjuku / Shinjuku",
+    "beschreibung": "Das rote Neon-Tor „歌舞伎町一番街“, dahinter die Central Road mit Leuchtreklamen bis zum Godzilla-Kopf auf dem Hotel Gracery. Laut, grell, sehr „Tokio bei Nacht“.",
+    "kamera": "Vom Tor aus langsam die Straße hoch gehen, am Ende nach oben zu Godzilla schwenken (zu bestimmten Zeiten „brüllt“ er mit Licht- und Rauch-Effekt). Werbe-Anwerber nicht frontal filmen.",
+    "tags": [
+      "Neon",
+      "Godzilla",
+      "Straße"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-3d-katze",
+    "name": "3D-Katze (Cross Shinjuku Vision)",
+    "nameJa": "クロス新宿ビジョン",
+    "lat": 35.69261,
+    "lng": 139.70079,
+    "station": "Shinjuku (Ostausgang)",
+    "beschreibung": "Riesiger gebogener Bildschirm, auf dem eine 3D-Katze aus dem Gebäude zu klettern scheint – gegenüber dem Bahnhof Shinjuku-Ost.",
+    "kamera": "Vom Platz vor dem Ostausgang filmen, damit der 3D-Effekt funktioniert. Videos laufen im Wechsel – ein paar Minuten warten.",
+    "tags": [
+      "Bildschirm",
+      "3D",
+      "Shinjuku"
+    ],
+    "zeiten": "Ca. 7–25 Uhr, abends am wirkungsvollsten"
+  },
+  {
+    "id": "film-shibuya-crossing",
+    "name": "Shibuya Crossing",
+    "nameJa": "渋谷スクランブル交差点",
+    "lat": 35.65949,
+    "lng": 139.70049,
+    "station": "Shibuya",
+    "beschreibung": "Die berühmteste Kreuzung der Welt: bei Grün laufen Hunderte Menschen gleichzeitig los, rundherum riesige Bildschirme.",
+    "kamera": "Selbst mitten durch laufen (Gimbal im Folgemodus) oder von oben: von der Brücke im Bahnhof Richtung Shibuya Mark City oder aus dem Starbucks/„Magnet by Shibuya 109“. Für Zeitlupe hohe Bildrate wählen.",
+    "tags": [
+      "Menschenmenge",
+      "Bildschirme",
+      "Ikone"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-center-gai",
+    "name": "Shibuya Center-gai",
+    "nameJa": "渋谷センター街",
+    "lat": 35.66055,
+    "lng": 139.6988,
+    "station": "Shibuya",
+    "beschreibung": "Die Einkaufsstraße hinter der Kreuzung: Neon, Spielhallen, Werbung auf allen Etagen.",
+    "kamera": "Gut für Low-Angle-Aufnahmen (Kamera nah am Boden) mit vorbeilaufenden Menschen – besonders nach Regen auf nassem Pflaster.",
+    "tags": [
+      "Neon",
+      "Straße",
+      "Shibuya"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-nonbei",
+    "name": "Nonbei Yokochō („Säufergasse“)",
+    "nameJa": "のんべい横丁",
+    "lat": 35.65999,
+    "lng": 139.70154,
+    "station": "Shibuya",
+    "beschreibung": "Zwei winzige Laternengassen direkt an den Bahngleisen – ruhiger Gegenpol zum Trubel am Crossing. Nur wenige Meter lang.",
+    "kamera": "Mit vorbeifahrenden Zügen im Hintergrund filmen. Die Bars sind winzig (5–8 Plätze) – von außen filmen und Gäste nicht zeigen.",
+    "tags": [
+      "Laternen",
+      "Gasse",
+      "Zug"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-shibuya-yokocho",
+    "name": "Shibuya Yokochō (Miyashita Park)",
+    "nameJa": "渋谷横丁",
+    "lat": 35.66077,
+    "lng": 139.70178,
+    "station": "Shibuya",
+    "beschreibung": "Moderne „Gasse“ unter dem Miyashita Park: 19 Imbisse aus ganz Japan, viele Laternen und Neonschilder, sehr lebendig.",
+    "kamera": "Langer Gang mit Lichtern auf beiden Seiten – ideal für eine gleichmäßige Gimbal-Fahrt geradeaus.",
+    "tags": [
+      "Laternen",
+      "Neon",
+      "Essen"
+    ],
+    "zeiten": "Ca. 11–5 Uhr, abends am stimmungsvollsten"
+  },
+  {
+    "id": "film-ebisu-yokocho",
+    "name": "Ebisu Yokochō",
+    "nameJa": "恵比寿横丁",
+    "lat": 35.64815,
+    "lng": 139.71074,
+    "station": "Ebisu",
+    "beschreibung": "Überdachte Gasse voller kleiner Lokale mit bunten Lichterketten und Laternen – laut, fröhlich, viele Einheimische.",
+    "kamera": "Wenig Platz – nur im ruhigen Moment durch den Gang filmen. Lichterketten unscharf im Vordergrund ergeben schöne Lichtkreise (Bokeh).",
+    "tags": [
+      "Lichterketten",
+      "Gasse",
+      "Essen"
+    ],
+    "zeiten": "Ab ca. 17 Uhr"
+  },
+  {
+    "id": "film-harmonica",
+    "name": "Harmonica Yokochō",
+    "nameJa": "ハモニカ横丁",
+    "lat": 35.70375,
+    "lng": 139.57932,
+    "station": "Kichijōji",
+    "beschreibung": "Labyrinth aus über 100 Mini-Läden und Bars aus der Nachkriegszeit, gleich am Bahnhof Kichijōji – gut mit Inokashira-Park und Ghibli-Museum kombinierbar.",
+    "kamera": "Abends durch die verwinkelten Gänge treiben lassen – jede Abzweigung sieht anders aus.",
+    "tags": [
+      "Gasse",
+      "Retro",
+      "Kichijōji"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-ameyoko",
+    "name": "Ameyoko",
+    "nameJa": "アメヤ横丁",
+    "lat": 35.71002,
+    "lng": 139.77454,
+    "station": "Ueno / Okachimachi",
+    "beschreibung": "Marktstraße unter und neben den Bahngleisen: Händler rufen, Neon, Fisch, Süßigkeiten, Izakayas unter den Bögen.",
+    "kamera": "Unter den Gleisbögen von der Seite filmen, wenn oben ein Zug drüberfährt. Gegen 19–20 Uhr schließen viele Stände – lieber früher kommen.",
+    "tags": [
+      "Markt",
+      "Bahnbögen",
+      "Ueno"
+    ],
+    "zeiten": "Ca. 10–20 Uhr (Izakayas länger)"
+  },
+  {
+    "id": "film-hoppy",
+    "name": "Hoppy-dōri (Asakusa)",
+    "nameJa": "ホッピー通り",
+    "lat": 35.71376,
+    "lng": 139.79422,
+    "station": "Asakusa",
+    "beschreibung": "Gasse voller Izakayas mit roten Laternen und Plastikstühlen draußen – sehr traditionell, Blick zum Skytree möglich.",
+    "kamera": "Laternen-Reihen mit langsamem seitlichen Schwenk. Mit dem beleuchteten Sensō-ji ein paar Minuten weiter kombinieren.",
+    "tags": [
+      "Laternen",
+      "Izakaya",
+      "Asakusa"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-nakamise-nacht",
+    "name": "Nakamise nach Ladenschluss",
+    "nameJa": "仲見世（夜）",
+    "lat": 35.71243,
+    "lng": 139.79671,
+    "station": "Asakusa",
+    "beschreibung": "Nach ca. 19 Uhr sind die Läden zu – dann sieht man die bemalten Rollläden mit Asakusa-Motiven, und der beleuchtete Sensō-ji leuchtet am Ende der Straße.",
+    "kamera": "Mittig auf der leeren Straße langsam auf das Tor Hōzōmon zugehen – sehr symmetrisch und ruhig, ideal für Kino-Look.",
+    "tags": [
+      "Tempel",
+      "Rollläden",
+      "ruhig"
+    ],
+    "zeiten": "Ab ca. 19 Uhr"
+  },
+  {
+    "id": "film-akiba",
+    "name": "Akihabara Chūō-dōri bei Nacht",
+    "nameJa": "秋葉原 中央通り（夜）",
+    "lat": 35.7005,
+    "lng": 139.7714,
+    "station": "Akihabara",
+    "beschreibung": "Riesige Leuchtreklamen für Anime, Spiele und Elektronik auf allen Etagen – die „Electric Town“ bei Nacht.",
+    "kamera": "Von der Brücke Mansei-bashi oder vom Gehweg nach oben schwenken – die Fassaden wirken nachts wie aus einem Cyberpunk-Film.",
+    "tags": [
+      "Neon",
+      "Anime",
+      "Akihabara"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-radio-center",
+    "name": "Akihabara Radio Center",
+    "nameJa": "秋葉原ラジオセンター",
+    "lat": 35.69848,
+    "lng": 139.77166,
+    "station": "Akihabara",
+    "beschreibung": "Enge Gänge unter den Gleisen mit winzigen Elektronik-Ständen, Kabeln und Bauteilen – ein Stück altes Akihabara.",
+    "kamera": "Detailaufnahmen (Bauteile, Schilder) und kurze Fahrten durch die Gänge. Ladenbesitzer vorher fragen. Schließt meist gegen 19 Uhr.",
+    "tags": [
+      "Retro",
+      "Elektronik",
+      "Gasse"
+    ],
+    "zeiten": "Ca. 10–19 Uhr"
+  },
+  {
+    "id": "film-kanda",
+    "name": "Kanda: Westausgang & Gleisbögen",
+    "nameJa": "神田駅西口・ガード下",
+    "lat": 35.69129,
+    "lng": 139.76794,
+    "station": "Kanda – direkt beim Hotel",
+    "beschreibung": "Gleich ums Eck vom Hotel: Izakayas unter den Bahnbögen und die belebte Einkaufsstraße am Westausgang mit vielen Leuchtschildern – nach Feierabend voller Büroleute.",
+    "kamera": "Perfekt für den ersten Testabend mit der Kamera: kurze Wege, viele Lichter, Züge über dir.",
+    "tags": [
+      "Bahnbögen",
+      "Izakaya",
+      "beim Hotel"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-yurakucho",
+    "name": "Yūrakuchō Gado-shita",
+    "nameJa": "有楽町ガード下",
+    "lat": 35.674,
+    "lng": 139.7627,
+    "station": "Yūrakuchō",
+    "beschreibung": "Alte Izakayas unter den Ziegelbögen der Yamanote-Linie – Laternen, Rauch, Züge rattern über die Köpfe.",
+    "kamera": "Die Bögen ergeben schöne Bildrahmen. Lage ungefähr – einfach unter den Gleisen südlich vom Bahnhof Yūrakuchō entlanggehen.",
+    "tags": [
+      "Bahnbögen",
+      "Laternen",
+      "Retro"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-okuroji",
+    "name": "Hibiya OKUROJI",
+    "nameJa": "日比谷OKUROJI",
+    "lat": 35.66959,
+    "lng": 139.75896,
+    "station": "Hibiya / Shimbashi / Yūrakuchō",
+    "beschreibung": "Moderne Variante: 300 m sanierte Ziegelbögen mit Bars und Läden, warm und edel beleuchtet.",
+    "kamera": "Der lange, gleichmäßig beleuchtete Gang eignet sich für ruhige, gerade Gimbal-Fahrten.",
+    "tags": [
+      "Bahnbögen",
+      "modern",
+      "edel"
+    ],
+    "zeiten": "Ca. 11–23 Uhr",
+    "adresse": "東京都千代田区内幸町1-7-1"
+  },
+  {
+    "id": "film-shimbashi",
+    "name": "Shimbashi: Gassen um den Karasumori-Schrein",
+    "nameJa": "新橋 烏森神社周辺",
+    "lat": 35.66679,
+    "lng": 139.75681,
+    "station": "Shimbashi",
+    "beschreibung": "Das Viertel der Büroleute: enge Izakaya-Gassen voller Schilder rund um einen kleinen, nachts beleuchteten Schrein.",
+    "kamera": "Kontrast filmen: ruhiger Schrein und direkt daneben die vollen Kneipengassen.",
+    "tags": [
+      "Izakaya",
+      "Schrein",
+      "Gasse"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-ginza",
+    "name": "Ginza Chūō-dōri bei Nacht",
+    "nameJa": "銀座 中央通り（夜）",
+    "lat": 35.67158,
+    "lng": 139.76559,
+    "station": "Ginza",
+    "beschreibung": "Die elegante Seite: beleuchtete Fassaden der Luxusmarken und der Wakō-Uhrturm an der Kreuzung Ginza 4-chōme.",
+    "kamera": "Weite, ruhige Fahrten entlang der Fassaden. Am Wochenende ist die Straße nachmittags autofrei (Hokōsha Tengoku).",
+    "tags": [
+      "elegant",
+      "Fassaden",
+      "Ginza"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-kagurazaka",
+    "name": "Kagurazaka: Hyōgo-yokochō",
+    "nameJa": "神楽坂 兵庫横丁",
+    "lat": 35.70245,
+    "lng": 139.73984,
+    "station": "Kagurazaka / Iidabashi",
+    "beschreibung": "Ruhige, gepflasterte Gassen mit Holzzäunen und Laternen – das „alte Tokio“, ganz ohne Neon.",
+    "kamera": "Sehr langsam gehen, viel Ruhe im Bild lassen. Bei Regen glänzt das Pflaster besonders schön.",
+    "tags": [
+      "Laternen",
+      "ruhig",
+      "Pflaster"
+    ],
+    "zeiten": "Abends"
+  },
+  {
+    "id": "film-sankaku",
+    "name": "Sangenjaya: Sankaku Chitai",
+    "nameJa": "三軒茶屋 三角地帯",
+    "lat": 35.64396,
+    "lng": 139.67041,
+    "station": "Sangen-jaya",
+    "beschreibung": "Ein Dreieck aus schmalen Gassen voller Bars und Leuchtschilder – Geheimtipp unter Fotografen, kaum Touristen.",
+    "kamera": "Die engen Gänge mit vielen Schildern übereinander wirken besonders dicht – gut für kurze Szenen mit Blick nach oben.",
+    "tags": [
+      "Gasse",
+      "Geheimtipp",
+      "Schilder"
+    ],
+    "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  }
+]

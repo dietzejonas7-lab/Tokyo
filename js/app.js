@@ -259,6 +259,26 @@ const LAUB_WOERTER = [
   { ja: "色あせ始め", lesung: "iroase hajime", de: "Verblasst – oft noch schön", farbe: "#b0703a", stufe: "verblasst" },
   { ja: "落葉", lesung: "rakuyō", de: "Laub fällt – meist vorbei", farbe: "#8a6a4f", stufe: "vorbei" },
 ];
+/** Allgemeine Tipps für cinematische Nachtaufnahmen (Kategorie Neon & Filmspots) */
+function kameraTipps() {
+  const sonne = Wetter.sonne(state.datum);
+  const blau = (m) => Wetter.zeit(new Date(sonne.unter.getTime() + m * 60000));
+  const tipps = [
+    ["🎞️", "Kino-Look", "4K mit 24 oder 25 Bildern pro Sekunde. Für Zeitlupe 60 oder 120 Bilder/s aufnehmen und später verlangsamen."],
+    ["🔵", "Blaue Stunde", `Direkt nach Sonnenuntergang ist der Himmel noch tiefblau und die Schilder leuchten schon – am ${datumSchoen(state.datum, { day: "numeric", month: "numeric" })} ca. ${blau(5)}–${blau(30)} Uhr.`],
+    ["🌧️", "Regen ist dein Freund", "Nasse Straßen spiegeln die Neonschilder – die schönsten Aufnahmen gibt es während und kurz nach dem Regen. Das Wetter steht unter „Dein Tag“."],
+    ["🌃", "Wenig Licht", "Neon und Laternen als Lichtquelle nutzen und nah an die Lichter gehen. Nachtmodus nutzen, falls vorhanden; ISO nicht zu hoch (etwa unter 3200), sonst rauscht das Bild."],
+    ["🎨", "Farbprofil", "„Normal“, wenn du die Videos direkt teilen willst. D-Log M nur, wenn du später am Handy oder PC die Farben bearbeitest."],
+    ["🚶", "Ruhige Bewegung", "„Ninja-Walk“: Knie leicht beugen, langsam mit der Ferse zuerst aufsetzen. Folgemodus für Fahrten, gesperrte Neigung für ruhige Bilder. Low-Angle (Kamera nah am Boden) wirkt besonders filmisch."],
+    ["🙇", "Rücksicht", "In Japan ist Privatsphäre wichtig: Gesichter nicht nah filmen, in Bars und Lokalen vorher fragen, Schilder 撮影禁止 (satsuei kinshi = Filmen verboten) beachten. In engen Gassen nicht im Weg stehen, kein Stativ."],
+    ["🔋", "Strom", "Nachtaufnahmen und Kälte leeren den Akku schnell – Powerbank und Kabel mitnehmen."],
+  ];
+  return `<details class="kamera-tipps">
+    <summary>🎥 Tipps für cinematische Nachtaufnahmen</summary>
+    ${tipps.map(([icon, titel, text], i) => `<div class="kt-zeile" style="--i:${i}"><span>${icon}</span><p><b>${titel}</b>${esc(text)}</p></div>`).join("")}
+  </details>`;
+}
+
 /** Ob Walkerplus für diesen Ort überhaupt einen täglichen Stand liefert */
 function laubOhneDaten(e) {
   const hatSeite = (e.links || []).some((l) => l.url.includes("koyo.walkerplus.com/detail/"));
@@ -757,6 +777,7 @@ function sheetOeffnen(e) {
       ? `Tagesaktuell: ${live.wort.de.split(" – ")[0]} (${live.wort.ja}) · Walkerplus${live.aktualisiert ? " " + datumSchoen(live.aktualisiert.slice(0, 10), { day: "numeric", month: "numeric" }) : ""}`
       : laubOhneDaten(e) ? "Kein tagesaktueller Stand – Walkerplus liefert für diesen Ort keine Daten" : "Tagesaktueller Stand gerade nicht verfügbar")],
     ["🍁", laubZeit],
+    ["🎥", e.kamera && `Filmtipp: ${e.kamera}`],
     ["📊", e.laub?.vorjahr && `Letztes Jahr: ${e.laub.vorjahr}`],
     ["🎨", e.laub?.farbe && `Farben: ${e.laub.farbe}`],
     ["🗓️", zeitraeume],
@@ -806,6 +827,7 @@ function sheetOeffnen(e) {
       </div>
       ${e.links?.length ? `<div class="links">${e.links.filter((l) => sichereUrl(l.url)).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">↗ ${esc(l.titel)}</a>`).join("")}</div>` : ""}
       ${laub ? laubLegende(e, laub, laubLive(e)) : ""}
+      ${k.id === "filmspots" ? kameraTipps() : ""}
     </div>`;
 
   if (gesammelt) Effekte.hanko($("#sheet .hero"), state.frischGesammelt === e.id);
@@ -1079,7 +1101,8 @@ function wetterHtml() {
         <small>${h.uhr.slice(0, 2)} Uhr</small><span>${Wetter.code(h.code, h.tag).icon}</span><b>${grad(h.temp)}</b><i>${h.regen ?? 0} %</i></div>`).join("")}</div>` : ""}
     </div>`;
     if (iso >= heute && (tag.regen >= 60 || tag.menge >= 5)) {
-      auswahl += `<div class="regen-tipp">☔ <span><b>Regentag?</b> Shops, Figuren, Gachapon & Attraktionen sind meist drinnen.</span>
+      auswahl += `<div class="regen-tipp">☔ <span><b>Regentag?</b> Shops, Figuren, Gachapon & Attraktionen sind meist drinnen.
+        <br>🎥 Für Filmer ein Glücksfall: Abends spiegeln sich die Neonschilder auf den nassen Straßen.</span>
         <button class="btn ghost" id="indoor-knopf">Nur drinnen zeigen</button></div>`;
     }
   } else if (iso > (Wetter.letzterTag() || iso)) {

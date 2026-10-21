@@ -17,6 +17,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | 🌳 | Gärten | Edo-Gärten mit Teehäusern |
 | 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |
 | 🍁 | Herbstlaub | 62 Koyo-Orte. Die Pin-Farbe zeigt den Laub-Stand am gewählten Tag (grün → färbt sich → Höhepunkt → vorbei) |
+| 🎥 | Neon & Filmspots | 22 leuchtende Gassen, Neon- und Laternenstraßen für cinematische Nachtaufnahmen – mit Filmtipp je Ort und allgemeinen Kamera-Tipps |
 | 🚇 | Bahnhofs-Stempel | Alle 78 offiziellen JR-East-Stempel der Tokio-Serie, 56 Toei-U-Bahn-Stationen, Metro-Museum, Ekitag & Garten-Stempelrallye – zum Abhaken |
 | ⛩️ | Goshuin | 21 Tempel und Schreine mit Goshuin – zum Abhaken, mit 📷 eigenem Foto und 🔍 Beispielbildern |
 | 📕 | Limitierte Goshuincho | zeitlich begrenzte Goshuin und Goshuincho, tagesaktuell gefiltert |
