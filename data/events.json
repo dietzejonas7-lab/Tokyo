@@ -197,6 +197,34 @@
     ]
   },
   {
+    "id": "tsuchiura-hanabi",
+    "name": "Tsuchiura-Feuerwerk (All Japan Fireworks Competition)",
+    "nameJa": "第95回 土浦全国花火競技大会",
+    "lat": 36.0873,
+    "lng": 140.1805,
+    "beschreibung": "Einer der drei großen Feuerwerks-Wettbewerbe Japans: Feuerwerker aus dem ganzen Land kämpfen um den Titel – Starmines, riesige 10-Go-Kugeln und kreative Feuerwerke über dem Fluss Sakuragawa in Tsuchiura (Ibaraki, ca. 1 Std. mit der JR Jōban-Linie). Bei Unwetter auf Sa 14.11. verschoben. Wetter für den Abend: „Dein Tag“.",
+    "zeiten": "17:30 – ca. 20:00 Uhr",
+    "zeitraum": [
+      {
+        "von": "2026-11-07",
+        "bis": "2026-11-07"
+      }
+    ],
+    "geprueft": true,
+    "station": "Tsuchiura (JR Jōban-Linie)",
+    "tags": [
+      "Feuerwerk",
+      "Hanabi",
+      "Wettbewerb"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://www.tsuchiura-hanabi.jp/"
+      }
+    ]
+  },
+  {
     "id": "design-festa-64",
     "name": "Design Festa vol.64",
     "nameJa": "デザインフェスタ vol.64",

@@ -1465,6 +1465,63 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .rz-touri.gruen { color: #3d7a2e; } .rz-touri.gelb { color: #a07812; } .rz-touri.orange { color: #c0581f; }
 :root[data-theme="dark"] .rz-touri.gruen { color: #8fd07a; } :root[data-theme="dark"] .rz-touri.gelb { color: #e8c35a; } :root[data-theme="dark"] .rz-touri.orange { color: #f09a5a; }
 
+/* ---------- Feuerwerk in Tsuchiura („Dein Tag“, bis 7.11.) ---------- */
+.hanabi-karte {
+  position: relative; overflow: hidden; display: grid; gap: 10px; padding: 14px; margin-bottom: 12px;
+  border-radius: 18px; color: #fff8ef; box-shadow: 0 3px 0 rgba(43, 38, 34, 0.25);
+  background:
+    radial-gradient(120% 70% at 85% 0%, rgba(236, 132, 88, 0.28), transparent 60%),
+    linear-gradient(165deg, #141a3f, #2b2160 55%, #5a2f5e);
+  animation: rise 0.5s both var(--ease);
+}
+/* kleine Feuerwerks-Blüte oben rechts */
+.hb-funke { position: absolute; top: -14px; right: -10px; width: 110px; height: 110px; pointer-events: none; opacity: 0.85; }
+.hb-funke line {
+  stroke: var(--kin); stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 6 40; stroke-dashoffset: 30;
+  animation: hbBluete 3.2s calc(var(--i) * 0.12s) ease-out infinite;
+}
+.hb-funke line:nth-child(even) { stroke: #f2a3a0; }
+@keyframes hbBluete {
+  0% { stroke-dashoffset: 30; opacity: 0; }
+  12% { opacity: 1; }
+  55%, 100% { stroke-dashoffset: -14; opacity: 0; }
+}
+.hb-kopf { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; align-items: center; padding-right: 54px; }
+.hb-kopf b { font-family: var(--rund); font-size: 1rem; }
+.hb-kopf small { grid-column: 1 / -1; font-size: 0.7rem; opacity: 0.75; }
+.hb-countdown {
+  padding: 3px 9px; border-radius: 999px; font-family: var(--rund); font-weight: 900; font-size: 0.74rem; white-space: nowrap;
+  background: color-mix(in srgb, var(--kin) 85%, transparent); color: #2b2622;
+}
+.hanabi-karte .wk-temp span, .hanabi-karte .wk-temp small { color: rgba(255, 248, 239, 0.75); }
+.hanabi-karte .wk-temp small { white-space: normal; line-height: 1.35; }
+.hanabi-karte .wk-stunden > div { flex: 1 0 44px; min-width: 44px; }
+.hanabi-karte .wk-stunden > div { background: rgba(255, 255, 255, 0.07); border-color: rgba(255, 255, 255, 0.16); }
+.hanabi-karte .wk-stunden > div.fest { background: rgba(224, 184, 106, 0.18); border-color: rgba(224, 184, 106, 0.7); }
+.hanabi-karte .wk-stunden small { color: rgba(255, 248, 239, 0.7); }
+.hanabi-karte .wk-stunden i { color: #9cc7ff; }
+.hb-jetzt { font-size: 0.8rem; padding: 6px 10px; border-radius: 12px; background: rgba(255, 255, 255, 0.08); }
+/* Ampel: grün / gelb / rot */
+.hb-ampel { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; padding: 9px 11px; border-radius: 14px; font-size: 0.8rem; line-height: 1.4; background: rgba(255, 255, 255, 0.08); }
+.hb-ampel b { display: block; font-family: var(--rund); font-size: 0.9rem; }
+.hb-ampel i { width: 14px; height: 14px; border-radius: 50%; background: var(--ampel); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ampel) 30%, transparent), 0 0 14px var(--ampel); animation: hbPuls 2.4s ease-in-out infinite; }
+.hb-ampel.gruen { --ampel: #8fc46a; }
+.hb-ampel.gelb { --ampel: #f0c04a; }
+.hb-ampel.rot { --ampel: #ef6a5a; }
+@keyframes hbPuls { 50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--ampel) 12%, transparent), 0 0 18px var(--ampel); } }
+.hb-zeiten { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.76rem; opacity: 0.9; }
+.hb-hinweis { margin: 0; font-size: 0.76rem; line-height: 1.45; opacity: 0.8; }
+.hb-mehr summary {
+  cursor: pointer; list-style: none; width: fit-content; padding: 6px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 800;
+  background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.hb-mehr summary::-webkit-details-marker { display: none; }
+.hb-mehr[open] summary { margin-bottom: 8px; }
+.hb-mehr ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; font-size: 0.8rem; line-height: 1.45; }
+.hb-knoepfe { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.hanabi-karte .btn.ghost { color: #fff8ef; border-color: rgba(255, 255, 255, 0.35); background: rgba(255, 255, 255, 0.06); padding: 8px 12px; font-size: 0.82rem; text-decoration: none; }
+.hb-quelle { margin: 0; font-size: 0.66rem; opacity: 0.6; }
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

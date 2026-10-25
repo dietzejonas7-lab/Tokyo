@@ -1166,6 +1166,106 @@ function nurDrinnenZeigen() {
   toast("☔ Nur noch Ziele unter Dach – über „Kategorien“ wieder alles einschalten");
 }
 
+/* ---------- Feuerwerk in Tsuchiura 🎆 (eigene Wetterkarte, verschwindet nach dem 7.11.) ---------- */
+const HANABI = {
+  id: "tsuchiura-hanabi",                     // Eintrag in data/events.json
+  wetterId: "tsuchiura",
+  datum: "2026-11-07", ersatz: "2026-11-14",  // bei Unwetter (荒天) eine Woche später
+  ort: { lat: 36.0873, lng: 140.1805 },       // Sakuragawa-Ufer am Gakuen-Ōhashi
+  von: 17, bis: 20,                           // Wettbewerb 17:30 – ca. 20:00 Uhr
+  seite: "https://www.tsuchiura-hanabi.jp/",
+};
+
+function hanabiZeigen() { return heuteInTokio() <= HANABI.datum; }
+
+function hanabiLaden(erzwingen = false) {
+  if (hanabiZeigen()) Wetter.ortLaden(HANABI.wetterId, HANABI.ort, erzwingen).then(hanabiAktualisieren);
+}
+
+function hanabiAktualisieren() {
+  const block = $("#hanabi-block");
+  if (block) block.innerHTML = hanabiHtml();
+}
+
+/** Wie sieht es für den Feuerwerks-Abend aus? Regen & Wind zwischen 17 und 20 Uhr */
+function hanabiAmpel(stunden) {
+  const max = (k) => Math.max(0, ...stunden.map((h) => h[k] ?? 0));
+  const menge = stunden.reduce((s, h) => s + (h.menge || 0), 0);
+  if (max("wind") >= 36 || max("boe") >= 60 || menge >= 8) return { stufe: "rot", titel: "Wackelig",
+    text: "Starker Wind oder viel Regen angesagt. Bei Unwetter wird auf Sa 14.11. verschoben – am Tag auf der offiziellen Seite nachsehen." };
+  if (max("regen") >= 40 || menge >= 1) return { stufe: "gelb", titel: "Findet wohl statt – evtl. nass",
+    text: "Verschoben wird nur bei Unwetter, leichter Regen reicht dafür nicht. Regenponcho statt Schirm – Schirme versperren anderen die Sicht." };
+  return { stufe: "gruen", titel: "Gute Aussichten",
+    text: max("wind") < 6 ? "Trocken, aber kaum Wind – der Rauch kann etwas zwischen den Raketen hängen bleiben." : "Trocken und ein leichter Wind, der den Rauch wegträgt – ideal!" };
+}
+
+function hanabiHtml() {
+  if (!hanabiZeigen()) return "";
+  const heute = heuteInTokio(), noch = tageZwischen(heute, HANABI.datum);
+  const grad = (x) => (x == null ? "–" : Math.round(x) + "°");
+  const daten = Wetter.orte[HANABI.wetterId];
+  const tag = Wetter.ortTag(HANABI.wetterId, HANABI.datum);
+  let inhalt;
+  if (!daten) {
+    if (!Wetter.ortStatus[HANABI.wetterId]) hanabiLaden();
+    inhalt = `<p class="hb-hinweis">${Wetter.ortStatus[HANABI.wetterId] === "fertig" ? "📵 Wetter gerade nicht erreichbar – wird beim nächsten Öffnen neu geladen." : "⏳ Vorhersage für Tsuchiura wird geladen …"}</p>`;
+  } else if (!tag) {
+    inhalt = `<p class="hb-hinweis">Die Vorhersage für den 7.11. gibt es ab ca. 16 Tage vorher.</p>`;
+  } else {
+    const abend = tag.stunden.filter((h) => h.std >= 16 && h.std <= 21);
+    const fest = abend.filter((h) => h.std >= HANABI.von && h.std <= HANABI.bis);
+    const start = fest[0] || abend[0] || {}, ende = fest.at(-1) || start;
+    const c = Wetter.code(start.code ?? tag.code, false);
+    const ampel = hanabiAmpel(fest);
+    const genau = noch >= 8 ? "📏 Noch eine grobe Tendenz – richtig verlässlich wird es ca. 3 Tage vorher."
+      : noch >= 3 ? "📏 Wird langsam verlässlich – kann sich aber noch ändern."
+      : "📏 Recht verlässlich (Daten vom japanischen Wetterdienst JMA).";
+    const jetzt = noch === 0 && daten.current;
+    inhalt = `
+      ${jetzt ? `<div class="hb-jetzt">📡 Jetzt in Tsuchiura (${jetzt.time.slice(11, 16)} Uhr): ${Wetter.code(jetzt.weather_code, jetzt.is_day).icon} <b>${grad(jetzt.temperature_2m)}</b> · 💨 ${Math.round(jetzt.wind_speed_10m)} km/h</div>` : ""}
+      <div class="wk-haupt">
+        <span class="wk-icon">${c.icon}</span>
+        <div class="wk-temp"><b>${grad(start.temp)}</b><span>→ ${grad(ende.temp)}</span><small>${c.text}<br>gefühlt ${grad(ende.gefuehlt)} um ${ende.std ?? 20} Uhr</small></div>
+        <ul class="wk-werte"><li>☔ ${Math.max(0, ...fest.map((h) => h.regen ?? 0))} %</li><li>💧 ${fest.reduce((s, h) => s + (h.menge || 0), 0).toFixed(1)} mm</li><li>💨 ${Math.round(Math.max(0, ...fest.map((h) => h.wind ?? 0)))} km/h</li></ul>
+      </div>
+      <div class="hb-ampel ${ampel.stufe}"><i></i><span><b>${ampel.titel}</b>${ampel.text}</span></div>
+      ${abend.length ? `<div class="wk-stunden">${abend.map((h, i) => `<div class="${h.std >= HANABI.von && h.std <= HANABI.bis ? "fest" : ""}" style="--i:${i}">
+        <small>${h.std} Uhr</small><span>${Wetter.code(h.code, false).icon}</span><b>${grad(h.temp)}</b><i>${h.regen ?? 0} %</i></div>`).join("")}</div>` : ""}
+      <div class="hb-zeiten">
+        ${tag.unter ? `<span>🌇 <b>${Wetter.zeit(tag.unter)}</b> Sonnenuntergang</span>` : ""}
+        <span>🎆 <b>17:30</b> Start</span><span>🏁 <b>ca. 20:00</b> Ende</span>
+      </div>
+      <p class="hb-hinweis">${genau}</p>`;
+  }
+  const ersatz = Wetter.ortTag(HANABI.wetterId, HANABI.ersatz);
+  const ersatzText = ersatz ? ` Vorhersage für den 14.11.: ${Wetter.code(ersatz.code).icon} ${grad(ersatz.max)} / ${grad(ersatz.min)}, ☔ ${ersatz.regen ?? "–"} %.` : "";
+  return `<div class="hanabi-karte">
+    <svg class="hb-funke" viewBox="-50 -50 100 100" aria-hidden="true">${Array.from({ length: 12 }, (_, i) =>
+      `<line x1="0" y1="-12" x2="0" y2="-40" transform="rotate(${i * 30})" style="--i:${i % 3}"/>`).join("")}</svg>
+    <div class="hb-kopf">
+      <b>🎆 Feuerwerk in Tsuchiura</b>
+      <span class="hb-countdown">${noch === 0 ? "Heute!" : noch === 1 ? "Morgen!" : `noch ${noch} Tage`}</span>
+      <small>Sa 7. November · Wetter direkt am Festplatz (Sakuragawa) · 土浦全国花火競技大会</small>
+    </div>
+    ${inhalt}
+    <details class="hb-mehr">
+      <summary>🚃 Anreise & Tipps</summary>
+      <ul>
+        <li>🚃 JR <b>Jōban-Linie</b> bis <b>Tsuchiura</b> (土浦): ab Ueno ca. 70 Min., mit dem Express „Tokiwa“ ca. 45 Min. Viele Züge fahren schon ab Tokyo Station.</li>
+        <li>🚌 Vom Bahnhof mit dem Shuttlebus (ca. 10 Min.) oder ca. 30 Min. zu Fuß (2,5 km).</li>
+        <li>🧥 Abends am Fluss wird es kalt: warme Jacke, Sitzunterlage und Taschenwärmer (カイロ, gibt’s in jedem Konbini).</li>
+        <li>🚉 Nach dem Ende ist der Bahnhof extrem voll (manchmal Einlass-Stopp) – für die Rückfahrt viel Zeit einplanen.</li>
+        <li>⛈️ Bei Unwetter wird auf <b>Sa 14. November</b> verschoben.${ersatzText}</li>
+      </ul>
+      <div class="hb-knoepfe">
+        <a class="btn ghost" href="${HANABI.seite}" target="_blank" rel="noopener">Offizielle Seite ↗</a>
+        <button class="btn ghost zum-ort" data-id="${HANABI.id}">📍 Auf der Karte</button>
+      </div>
+    </details>
+    ${daten ? `<p class="hb-quelle">Open-Meteo.com · aktualisiert ${new Date(daten.geholt).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr (deine Zeit) · Uhrzeiten oben in japanischer Zeit</p>` : ""}
+  </div>`;
+}
+
 /* ---------- Gyoza-Radar 🥟 ---------- */
 /** Touristenfreundlichkeit (aus den Tabelog-Angaben, siehe data/gyoza.json → touristen) */
 const TOURISTEN_STUFEN = {
@@ -1392,6 +1492,7 @@ function panelZeichnen(suchbegriff = "") {
         <span>✨ <b data-ziel="${zeitlich.length}">0</b> Highlights an diesem Tag</span>
       </div>
     </div>
+    ${hanabiZeigen() ? `<div id="hanabi-block">${hanabiHtml()}</div>` : ""}
     <div id="wetter-block">${wetterHtml()}</div>`;
     html += `<h3 class="section-title">✨ Läuft an diesem Tag (${zeitlich.length})</h3>`;
     html += zeitlich.length
@@ -1517,7 +1618,7 @@ function panelZeichnen(suchbegriff = "") {
 function panelKlick(ev) {
   const tab = ev.target.closest("[data-tab]");
   if (tab) { panelTab = tab.dataset.tab; dockMarkieren(); return panelZeichnen(); }
-  const item = ev.target.closest(".list-item, .siegel");
+  const item = ev.target.closest(".list-item, .siegel, .zum-ort");
   if (item) {
     const e = state.eintraege.find((x) => x.id === item.dataset.id);
     if (!e) return;
@@ -1863,9 +1964,12 @@ async function start() {
   }
   datumAnzeigen();
   Wetter.laden().then(wetterAktualisieren);
+  hanabiLaden();
   // Kommt die App wieder in den Vordergrund: Wetter auffrischen (höchstens alle 30 Minuten)
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") Wetter.laden().then(wetterAktualisieren);
+    if (document.visibilityState !== "visible") return;
+    Wetter.laden().then(wetterAktualisieren);
+    hanabiLaden();
   });
   await splashMin;
   $("#splash").classList.add("hide");

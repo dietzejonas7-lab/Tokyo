@@ -6,6 +6,8 @@
    • Für Tage, die noch weiter weg sind: Durchschnitt der
      letzten 10 Novembertage in Tokio (Open-Meteo-Archiv).
    • Sonnenauf- und -untergang rechnet die App selbst aus.
+   • Extra-Vorhersage für einzelne Orte außerhalb von Tokio
+     (Feuerwerk in Tsuchiura am 7.11.): ortLaden() / ortTag().
    Alles wird auf dem Handy zwischengespeichert, damit es auch
    ohne Internet (U-Bahn) noch angezeigt wird.
    ========================================================= */
@@ -138,5 +140,52 @@ const Wetter = {
   /** Uhrzeit in Tokio, z. B. "16:41" */
   zeit(datum) {
     return datum.toLocaleTimeString("de-DE", { timeZone: "Asia/Tokyo", hour: "2-digit", minute: "2-digit" });
+  },
+
+  /* ---------- Vorhersage für einen einzelnen Ort (z. B. das Feuerwerk in Tsuchiura) ---------- */
+  orte: {},          // id → letzte Vorhersage für diesen Ort
+  ortStatus: {},     // id → "laeuft" während des Ladens, danach "fertig"
+
+  /** Vorhersage für einen anderen Ort holen – eigener Speicher, gleiche 30-Minuten-Regel wie oben */
+  async ortLaden(id, ort, erzwingen = false) {
+    const schluessel = `${this.SPEICHER}.${id}`;
+    try { this.orte[id] ??= JSON.parse(localStorage.getItem(schluessel)); } catch {}
+    const alt = this.orte[id] && Date.now() - this.orte[id].geholt < this.NEU_NACH_MIN * 60000;
+    if ((alt && !erzwingen) || this.ortStatus[id] === "laeuft") return this.orte[id];
+    const url = new URL("https://api.open-meteo.com/v1/forecast");
+    Object.entries({
+      latitude: ort.lat, longitude: ort.lng, timezone: "Asia/Tokyo", forecast_days: 16, wind_speed_unit: "kmh",
+      current: "temperature_2m,apparent_temperature,weather_code,wind_speed_10m,is_day",
+      daily: "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max,sunset",
+      hourly: "temperature_2m,apparent_temperature,precipitation_probability,precipitation,weather_code,wind_speed_10m,wind_gusts_10m",
+    }).forEach(([k, v]) => url.searchParams.set(k, v));
+    this.ortStatus[id] = "laeuft";
+    try {
+      const antwort = await fetch(url);
+      if (!antwort.ok) throw new Error("Wetter " + antwort.status);
+      this.orte[id] = { geholt: Date.now(), ...(await antwort.json()) };
+      try { localStorage.setItem(schluessel, JSON.stringify(this.orte[id])); } catch {}
+    } catch (fehler) {
+      console.warn(`Wetter für ${id} nicht erreichbar – nutze gespeicherte Daten`, fehler);
+    }
+    this.ortStatus[id] = "fertig";
+    return this.orte[id];
+  },
+
+  /** Ein Tag an diesem Ort: Tageswerte, Sonnenuntergang und jede Stunde (oder null, wenn außerhalb der Vorhersage) */
+  ortTag(id, iso) {
+    const d = this.orte[id]?.daily, h = this.orte[id]?.hourly;
+    const i = d?.time.indexOf(iso) ?? -1;
+    if (i < 0 || !h) return null;
+    const stunden = h.time.map((t, j) => ({ t, j })).filter(({ t }) => t.startsWith(iso)).map(({ t, j }) => ({
+      std: Number(t.slice(11, 13)), temp: h.temperature_2m[j], gefuehlt: h.apparent_temperature[j],
+      regen: h.precipitation_probability[j], menge: h.precipitation[j], code: h.weather_code[j],
+      wind: h.wind_speed_10m[j], boe: h.wind_gusts_10m[j],
+    }));
+    return {
+      code: d.weather_code[i], max: d.temperature_2m_max[i], min: d.temperature_2m_min[i],
+      regen: d.precipitation_probability_max[i], menge: d.precipitation_sum[i], wind: d.wind_speed_10m_max[i],
+      unter: d.sunset?.[i] ? new Date(d.sunset[i] + ":00+09:00") : null, stunden,
+    };
   },
 };
