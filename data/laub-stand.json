@@ -1,154 +1,154 @@
 {
  "quelle": "koyo.walkerplus.com (色づき状況, Daten von JRシステム)",
- "abgerufen": "2026-10-27T07:58+09:00",
+ "abgerufen": "2026-10-27T18:04+09:00",
  "orte": {
   "laub-yasukuni": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-hamarikyu-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-shiba-koen": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-shizen-kyoikuen": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-teien-museum": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-kyu-shiba-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-gaien-icho-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-korakuen-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-rikugien-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-iwasaki-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-ueno-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-hyakkaen-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-kiyosumi-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:06+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-rinshi-no-mori": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-komazawa": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-kinuta": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-otaguro": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-furukawa-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-shakujii": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-hikarigaoka": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-mizumoto": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-takao": {
-   "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "stand": "色づき始め",
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-ryonan": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-showa-koyo": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-inokashira": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-mitake-keikoku": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-mitake-san": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-fuchu-no-mori": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-musashino-koen": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-jindai": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-koganei": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-tonogayato-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-higashiyamato": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-noyama-kita": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-akigawa": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-okutama-ko": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   },
   "laub-hatonosu": {
    "stand": "色づき始め",
-   "aktualisiert": "2026-10-26T16:05+09:00"
+   "aktualisiert": "2026-10-27T16:05+09:00"
   }
  },
  "ohneStand": [
