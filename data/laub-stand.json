@@ -1,6 +1,6 @@
 {
  "quelle": "koyo.walkerplus.com (色づき状況, Daten von JRシステム)",
- "abgerufen": "2026-10-29T18:13+09:00",
+ "abgerufen": "2026-10-30T08:01+09:00",
  "orte": {
   "laub-yasukuni": {
    "stand": "青葉",
@@ -24,7 +24,7 @@
   },
   "laub-kyu-shiba-koyo": {
    "stand": "青葉",
-   "aktualisiert": "2026-10-29T16:05+09:00"
+   "aktualisiert": "2026-10-29T22:02+09:00"
   },
   "laub-gaien-icho-koyo": {
    "stand": "青葉",
@@ -103,8 +103,8 @@
    "aktualisiert": "2026-10-29T16:05+09:00"
   },
   "laub-mitake-keikoku": {
-   "stand": "色づき始め",
-   "aktualisiert": "2026-10-29T16:05+09:00"
+   "stand": "青葉",
+   "aktualisiert": "2026-10-29T21:36+09:00"
   },
   "laub-mitake-san": {
    "stand": "色づき始め",
