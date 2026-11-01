@@ -19,6 +19,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | 🍁 | Herbstlaub | 62 Koyo-Orte. Die Pin-Farbe zeigt den Laub-Stand am gewählten Tag (grün → färbt sich → Höhepunkt → vorbei) |
 | 🎥 | Neon & Filmspots | 22 leuchtende Gassen, Neon- und Laternenstraßen für cinematische Nachtaufnahmen – mit Filmtipp je Ort und allgemeinen Kamera-Tipps |
 | 🥟 | Gyoza | 53 sehr gute Gyoza-Läden (Tabelog-Bestenliste „餃子 百名店“ 2019/2021/2024) – standardmäßig aus, am besten über das 🥟 Gyoza-Radar |
+| 🫧 | Ramune | Wo es Ramune (Limonade mit Glasmurmel) gibt – mit Chance-Ampel 🟢/🟡. Im Herbst gibt es sie kaum in Konbinis, deshalb Retro-Läden, Dagashi-Läden und große Don-Quijote-Filialen |
 | 🚇 | Bahnhofs-Stempel | Alle 78 offiziellen JR-East-Stempel der Tokio-Serie, 56 Toei-U-Bahn-Stationen, Metro-Museum, Ekitag & Garten-Stempelrallye – zum Abhaken |
 | ⛩️ | Goshuin | 21 Tempel und Schreine mit Goshuin – zum Abhaken, mit 📷 eigenem Foto und 🔍 Beispielbildern |
 | 📕 | Limitierte Goshuincho | zeitlich begrenzte Goshuin und Goshuincho, tagesaktuell gefiltert |

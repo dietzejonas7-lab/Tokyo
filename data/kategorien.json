@@ -131,6 +131,16 @@
     "beschreibung": "Sehr gute Gyoza-Läden aus der Tabelog-Bestenliste – am schnellsten findest du sie mit dem 🥟 Gyoza-Radar unten rechts."
   },
   {
+    "id": "ramune",
+    "name": "Ramune",
+    "icon": "🫧",
+    "farbe": "#3a9fd1",
+    "datei": "ramune.json",
+    "beschreibung": "Wo du Ramune (Limonade mit Glasmurmel) bekommst – 🟢 gute Chance · 🟡 vielleicht. Achtung: Ramune ist in Japan eher ein Sommergetränk, im November haben Konbinis & Supermärkte sie meist nicht.",
+    "bildersuche": "ラムネ 瓶",
+    "gruppe": "essen"
+  },
+  {
     "id": "stempel",
     "name": "Bahnhofs-Stempel",
     "icon": "🚇",

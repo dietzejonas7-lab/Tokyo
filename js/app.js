@@ -654,7 +654,7 @@ function katGespeichert() {
 const GRUPPEN = [
   ["shoppen", "🛍️ Shoppen & Stöbern"],
   ["erleben", "✨ Erleben"],
-  ["essen", "🥢 Essen"],
+  ["essen", "🥢 Essen & Trinken"],
   ["sammeln", "🏆 Sammeln"],
 ];
 

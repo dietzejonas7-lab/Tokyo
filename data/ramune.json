@@ -1,0 +1,158 @@
+[
+  {
+    "id": "ramune-monzen-toraya",
+    "name": "Monzen Toraya (Shibamata-Ramune)",
+    "nameJa": "門前とらや（柴又ラムネ）",
+    "lat": 35.75775,
+    "lng": 139.87674,
+    "beschreibung": "🟢 Die sicherste Adresse: Hier gibt es „Shibamata-Ramune“ – sie wird direkt in Shibamata gemacht, in der klassischen Flasche ganz aus Glas (selten geworden!). Man trinkt sie gleich vor Ort. Liegt an der alten Tempelstraße zum Taishakuten, perfekt mit einem Besuch dort verbinden.",
+    "zeiten": "tagsüber",
+    "adresse": "東京都葛飾区柴又7-7-5",
+    "station": "Shibamata (Keisei)",
+    "tags": [
+      "🟢 Gute Chance",
+      "Glasflasche",
+      "Tokio-Ramune"
+    ],
+    "links": [
+      {
+        "titel": "Bericht mit Fotos (Japanisch)",
+        "url": "https://shibamata.yesfuji.com/shopping/shibamata-monzetoraya-w038-20211125/"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%96%80%E5%89%8D%E3%81%A8%E3%82%89%E3%82%84%20%E6%9F%B4%E5%8F%88"
+      }
+    ]
+  },
+  {
+    "id": "ramune-daiba-itchome",
+    "name": "Daiba Itchōme Shōtengai (Shōwa-Retro-Straße)",
+    "nameJa": "台場一丁目商店街",
+    "lat": 35.62928,
+    "lng": 139.77622,
+    "beschreibung": "🟢 Nachgebaute Retro-Einkaufsstraße der 1950er/60er im 4. Stock der DECKS Tokyo Beach (Odaiba) – mit Süßigkeitenläden (Dagashi-ya), alten Spielautomaten und Ramune. Auch im Winter gut, weil alles drinnen ist.",
+    "zeiten": "11:00–20:00 (Sa/So/Feiertag bis 21:00)",
+    "adresse": "東京都港区台場1-6-1 デックス東京ビーチ シーサイドモール4F",
+    "station": "Odaiba-kaihinkōen (Yurikamome)",
+    "tags": [
+      "🟢 Gute Chance",
+      "Dagashi",
+      "Retro"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E5%A0%B4%E4%B8%80%E4%B8%81%E7%9B%AE%E5%95%86%E5%BA%97%E8%A1%97"
+      }
+    ]
+  },
+  {
+    "id": "ramune-haikara-shibamata",
+    "name": "Shibamata Haikara Yokochō (Dagashi-Laden)",
+    "nameJa": "柴又ハイカラ横丁",
+    "lat": 35.75735,
+    "lng": 139.87599,
+    "beschreibung": "🟡 Uriger Süßigkeitenladen im Shōwa-Stil direkt am Bahnhof Shibamata, oben ein kleines Spielzeugmuseum. Dagashi-Läden haben oft Ramune im Kühlschrank – im Herbst aber nicht immer. Liegt nur ein paar Schritte von Monzen Toraya entfernt.",
+    "zeiten": "10:00–18:00",
+    "adresse": "東京都葛飾区柴又7-3-12",
+    "station": "Shibamata (Keisei)",
+    "tags": [
+      "🟡 Vielleicht",
+      "Dagashi",
+      "Retro"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%9F%B4%E5%8F%88%E3%83%8F%E3%82%A4%E3%82%AB%E3%83%A9%E6%A8%AA%E4%B8%81"
+      }
+    ]
+  },
+  {
+    "id": "ramune-niki-ueno",
+    "name": "Niki no Kashi (Süßigkeiten-Großhändler, Ameyoko)",
+    "nameJa": "二木の菓子 アメ横",
+    "lat": 35.70838,
+    "lng": 139.77447,
+    "beschreibung": "🟡 Riesiger Süßigkeiten- und Snackladen in der Marktstraße Ameyoko in Ueno, günstig wie beim Großhändler. Ramune als Bonbons gibt es hier sicher; Ramune zum Trinken oft auch – am besten fragen: „Ramune no nomimono wa arimasu ka?“",
+    "zeiten": "tagsüber bis abends",
+    "station": "Ueno / Okachimachi",
+    "tags": [
+      "🟡 Vielleicht",
+      "Süßigkeiten",
+      "günstig"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E4%BA%8C%E6%9C%A8%E3%81%AE%E8%8F%93%E5%AD%90%20%E3%82%A2%E3%83%A1%E6%A8%AA"
+      }
+    ]
+  },
+  {
+    "id": "ramune-donki-asakusa",
+    "name": "Don Quijote Asakusa",
+    "nameJa": "ドン・キホーテ浅草店",
+    "lat": 35.71386,
+    "lng": 139.79309,
+    "beschreibung": "🟡 Don Quijote-Filiale, die extra auf Touristen ausgelegt ist. In solchen Filialen steht Ramune oft das ganze Jahr bei den japanischen Snacks & Getränken – sicher ist es aber nicht. Rund um die Uhr geöffnet.",
+    "zeiten": "24 Stunden",
+    "station": "Asakusa",
+    "tags": [
+      "🟡 Vielleicht",
+      "Donki",
+      "24 h"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E6%B5%85%E8%8D%89%E5%BA%97"
+      }
+    ]
+  },
+  {
+    "id": "ramune-donki-shibuya",
+    "name": "MEGA Don Quijote Shibuya",
+    "nameJa": "MEGAドン・キホーテ渋谷本店",
+    "lat": 35.66034,
+    "lng": 139.69774,
+    "beschreibung": "🟡 Riesige Don Quijote mit großer Lebensmittel- und Getränke-Abteilung – große Filialen haben Ramune am ehesten auch außerhalb des Sommers. Rund um die Uhr geöffnet.",
+    "zeiten": "24 Stunden",
+    "adresse": "東京都渋谷区宇田川町28-6",
+    "station": "Shibuya",
+    "tags": [
+      "🟡 Vielleicht",
+      "Donki",
+      "24 h"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=MEGA%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E6%B8%8B%E8%B0%B7%E6%9C%AC%E5%BA%97"
+      }
+    ]
+  },
+  {
+    "id": "ramune-donki-kabukicho",
+    "name": "Don Quijote Shinjuku Kabukichō",
+    "nameJa": "ドン・キホーテ新宿歌舞伎町店",
+    "lat": 35.69379,
+    "lng": 139.70165,
+    "beschreibung": "🟡 Große Don Quijote mitten in Kabukichō, viele Touristen – gute Chancen auf Ramune bei den Getränken oder in der Ecke mit japanischen Süßigkeiten. Rund um die Uhr geöffnet.",
+    "zeiten": "24 Stunden",
+    "adresse": "東京都新宿区歌舞伎町1-16-5",
+    "station": "Shinjuku / Seibu-Shinjuku",
+    "tags": [
+      "🟡 Vielleicht",
+      "Donki",
+      "24 h"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E6%96%B0%E5%AE%BF%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA%E5%BA%97"
+      }
+    ]
+  }
+]
