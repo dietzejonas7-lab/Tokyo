@@ -901,5 +901,34 @@
       "Nebel",
       "Ausflug"
     ]
+  },
+  {
+    "id": "shonan-candle",
+    "name": "Shōnan Candle 2026 (Enoshima Sea Candle)",
+    "nameJa": "湘南キャンドル2026（江の島サムエル・コッキング苑）",
+    "lat": 35.29905,
+    "lng": 139.48018,
+    "beschreibung": "Rund 10.000 Kerzen, jeden Abend von Hand angezündet, im Garten rund um den Leuchtturm „Sea Candle“ auf der Insel Enoshima (bei Kamakura). Nur noch bis 3.11.! Die große Winter-Illumination „Shōnan no Hōseki“ (die bunten Lichter von den vielen Fotos) beginnt erst am 1. Dezember. Anfahrt ab Tokio ca. 1–1,5 Std. (z. B. JR bis Fujisawa, dann Enoden bis Enoshima, dann ca. 20 Min. zu Fuß bergauf).",
+    "zeiten": "Mo–Fr bis 20:00 (letzter Einlass 19:30) · Sa/So/Feiertag bis 21:00 (letzter Einlass 20:30) · Kerzen-Livemusik 1.11. & 3.11. um 18:00",
+    "zeitraum": [
+      {
+        "von": "2026-10-10",
+        "bis": "2026-11-03"
+      }
+    ],
+    "geprueft": true,
+    "station": "Enoshima (Enoden) / Katase-Enoshima (Odakyū)",
+    "tags": [
+      "Kerzen",
+      "Leuchtturm",
+      "Tagesausflug"
+    ],
+    "preis": "Garten abends 500 ¥ · Sea Candle (Turm) 800 ¥",
+    "links": [
+      {
+        "titel": "Offizielle Seite (Japanisch)",
+        "url": "https://enoshima-seacandle.com/information/post-4039/"
+      }
+    ]
   }
 ]
