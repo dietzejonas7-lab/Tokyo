@@ -1,0 +1,189 @@
+[
+  {
+    "id": "squishy-sukusen",
+    "name": "Nihon Squeeze Center („Sukusen“)",
+    "nameJa": "日本スクイーズセンター 原宿本店",
+    "lat": 35.6709,
+    "lng": 139.70767,
+    "beschreibung": "Japans erster Squishy-Fachladen und einer der größten: Squishys aus Japan und dem Ausland, viele Stücke gibt es nur hier, dazu Kooperationen mit YouTubern. Die beste Chance auf ausgefallene Sorten wie „crunchy“. Laut Webseite gerade großer Sale. Oft Schlange – an Wochenenden/Feiertagen besser vorher online reservieren. Erst ab Öffnung kommen, vor dem Haus darf man nicht warten.",
+    "zeiten": "Mo–Fr 10:30–18:30 · Sa & Feiertag 10:00–19:30 · sonntags geschlossen",
+    "ruhetage": [
+      "So"
+    ],
+    "adresse": "東京都渋谷区神宮前3-24-2 原宿MYビル2F",
+    "station": "Harajuku / Meiji-jingūmae",
+    "tags": [
+      "Riesenauswahl",
+      "Limitiert",
+      "Sale"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite (Öffnungstage-Kalender)",
+        "url": "https://r.goope.jp/sukusen/"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E6%9C%AC%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%BC%E3%82%BA%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E5%8E%9F%E5%AE%BF"
+      }
+    ]
+  },
+  {
+    "id": "squishy-mooosh",
+    "name": "MOOOSH SQUISHY (iBloom)",
+    "nameJa": "MOOOSH SQUISHY 原宿",
+    "lat": 35.6712,
+    "lng": 139.70485,
+    "beschreibung": "Offizieller Laden der bekannten Marke iBloom: sehr gute Qualität, alle Squishys duften, dazu Riesen-Squishys zum Fotografieren und Gacha-Automaten. Sehr beliebt – man bekommt einen Nummernzettel. Am besten vormittags hin, nachmittags sind die Zettel oft schon weg.",
+    "zeiten": "10:30–18:00",
+    "adresse": "東京都渋谷区神宮前1-16-7 Step In Harajuku 1F",
+    "station": "Harajuku",
+    "tags": [
+      "iBloom",
+      "duftend",
+      "Nummernzettel"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://i-bloom-squishy.com/stores/mooosh-squishy-harajuku/"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=MOOOSH%20SQUISHY%20%E5%8E%9F%E5%AE%BF"
+      }
+    ]
+  },
+  {
+    "id": "squishy-r27",
+    "name": "R27 Squeeze Shop (TOTTI CANDY FACTORY)",
+    "nameJa": "R27 スクイーズショップ（トッティキャンディファクトリー 4F）",
+    "lat": 35.67121,
+    "lng": 139.70457,
+    "beschreibung": "Im 4. Stock des bunten Süßigkeitenladens TOTTI CANDY FACTORY an der Takeshita-Straße: rund 200 Sorten, vor allem von ausländischen Marken – gute Chance auf Sorten, die man sonst nicht findet.",
+    "zeiten": "tagsüber (Zeiten wie TOTTI CANDY FACTORY)",
+    "station": "Harajuku",
+    "tags": [
+      "200 Sorten",
+      "ausländische Marken"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=TOTTI%20CANDY%20FACTORY%20%E5%8E%9F%E5%AE%BF"
+      }
+    ]
+  },
+  {
+    "id": "squishy-picnic",
+    "name": "PICNIC Harajuku",
+    "nameJa": "PICNIC 原宿店",
+    "lat": 35.6712,
+    "lng": 139.70321,
+    "beschreibung": "Bunter Krimskrams-Laden an der Takeshita-Straße, randvoll mit Squishys: Figuren, Essen, Glitzer. Oft mit Sale – manche gibt es schon für ca. 110 ¥. Ein guter Plan B, wenn die Fachläden zu voll sind (ist aber selbst gerade wegen der „Puku-Puku-Sticker“ oft voll).",
+    "zeiten": "tagsüber bis abends",
+    "station": "Harajuku",
+    "tags": [
+      "günstig",
+      "Sale",
+      "Takeshita-Straße"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=PICNIC%20%E5%8E%9F%E5%AE%BF%20%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A"
+      }
+    ]
+  },
+  {
+    "id": "squishy-mellojoy",
+    "name": "Mellojoy Pop-Up Shop",
+    "nameJa": "Mellojoy Pop-Up Shop 原宿",
+    "lat": 35.66795,
+    "lng": 139.70458,
+    "beschreibung": "Der erste echte Laden der in den sozialen Medien bekannten Marke Mellojoy (vorher fast nur online) – zum Anfassen und Ausprobieren. Pop-up seit 9.9.2026, Ende noch offen. ⚠️ Nur mit Reservierung.",
+    "zeiten": "10:30–20:30 (letzter Einlass 20:15)",
+    "adresse": "東京都渋谷区神宮前6-32-1",
+    "station": "Meiji-jingūmae (1–2 Min.)",
+    "tags": [
+      "Pop-up",
+      "Reservierung"
+    ],
+    "links": [
+      {
+        "titel": "Artikel (Englisch)",
+        "url": "https://www.fashion-headline.com/en/article/488013"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=Mellojoy%20%E5%8E%9F%E5%AE%BF"
+      }
+    ]
+  },
+  {
+    "id": "squishy-punikko-ikebukuro",
+    "name": "PUNIKKO by TOKOTOYZ (Ikebukuro PARCO)",
+    "nameJa": "PUNIKKO by TOKOTOYZ 池袋PARCO店",
+    "lat": 35.72712,
+    "lng": 139.71034,
+    "beschreibung": "Squishy-Laden im Stil einer Konditorei: In der Vitrine liegen Kuchen, Parfaits und Biskuitrollen als Squishys. Alle Muster darf man anfassen und drücken, bevor man kauft (z. B. die „Soufflé“-Reihe). Nach dem Kauf: Foto mit einem 10 kg schweren Riesen-Squishy. ⚠️ Nur mit Reservierung vorher (LivePocket, Link über Instagram).",
+    "zeiten": "11:00–21:00",
+    "adresse": "東京都豊島区南池袋1-28-2 池袋PARCO 本館7F",
+    "station": "Ikebukuro",
+    "tags": [
+      "Dessert-Squishys",
+      "Anfassen erlaubt",
+      "Reservierung"
+    ],
+    "links": [
+      {
+        "titel": "Instagram (Reservierung)",
+        "url": "https://www.instagram.com/punikko_by_tokotoyz/"
+      }
+    ]
+  },
+  {
+    "id": "squishy-punikko-shibuya",
+    "name": "PUNIKKO by TOKOTOYZ (Shibuya Sakura Stage)",
+    "nameJa": "PUNIKKO by TOKOTOYZ 渋谷サクラステージ店",
+    "lat": 35.65735,
+    "lng": 139.70187,
+    "beschreibung": "Squishy-Laden im Stil einer Konditorei: In der Vitrine liegen Kuchen, Parfaits und Biskuitrollen als Squishys. Alle Muster darf man anfassen und drücken, bevor man kauft (z. B. die „Soufflé“-Reihe). Nach dem Kauf: Foto mit einem 10 kg schweren Riesen-Squishy. ⚠️ Nur mit Reservierung vorher (LivePocket, Link über Instagram).",
+    "zeiten": "10:00–21:00",
+    "adresse": "東京都渋谷区桜丘町1-1 渋谷サクラステージ 3F",
+    "station": "Shibuya",
+    "tags": [
+      "Dessert-Squishys",
+      "Anfassen erlaubt",
+      "Reservierung"
+    ],
+    "links": [
+      {
+        "titel": "Instagram (Reservierung)",
+        "url": "https://www.instagram.com/punikko_by_tokotoyz/"
+      }
+    ]
+  },
+  {
+    "id": "squishy-punikko-kichijoji",
+    "name": "PUNIKKO by TOKOTOYZ (Kichijōji PARCO)",
+    "nameJa": "PUNIKKO by TOKOTOYZ 吉祥寺PARCO店",
+    "lat": 35.70348,
+    "lng": 139.57817,
+    "beschreibung": "Squishy-Laden im Stil einer Konditorei: In der Vitrine liegen Kuchen, Parfaits und Biskuitrollen als Squishys. Alle Muster darf man anfassen und drücken, bevor man kauft (z. B. die „Soufflé“-Reihe). Nach dem Kauf: Foto mit einem 10 kg schweren Riesen-Squishy. ⚠️ Nur mit Reservierung vorher (LivePocket, Link über Instagram).",
+    "zeiten": "10:00–20:00",
+    "adresse": "東京都武蔵野市吉祥寺本町1-5-1 吉祥寺PARCO 4F",
+    "station": "Kichijōji",
+    "tags": [
+      "Dessert-Squishys",
+      "Anfassen erlaubt",
+      "Reservierung"
+    ],
+    "links": [
+      {
+        "titel": "Instagram (Reservierung)",
+        "url": "https://www.instagram.com/punikko_by_tokotoyz/"
+      }
+    ]
+  }
+]

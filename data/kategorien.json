@@ -30,6 +30,16 @@
     "beschreibung": "Kapselautomaten-Läden mit hunderten bis tausenden Gacha-Maschinen."
   },
   {
+    "id": "squishys",
+    "name": "Squishys",
+    "icon": "🧁",
+    "farbe": "#e879b0",
+    "datei": "squishys.json",
+    "beschreibung": "Squishy-Läden (スクイーズ) – vor allem in Harajuku. Viele beliebte Läden arbeiten mit Nummernzetteln oder Reservierung: lieber vormittags hin.",
+    "bildersuche": "スクイーズ",
+    "gruppe": "shoppen"
+  },
+  {
     "id": "mode",
     "name": "Mode & Merch",
     "icon": "👕",

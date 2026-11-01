@@ -1075,7 +1075,7 @@ function sheetWischen() {
 }
 
 /* ---------- Wetter & Sonne (Daten: js/wetter.js) ---------- */
-const INDOOR_KATEGORIEN = ["anime", "premiumfiguren", "gacha", "mode", "attraktionen"];
+const INDOOR_KATEGORIEN = ["anime", "premiumfiguren", "gacha", "squishys", "mode", "attraktionen"];
 
 function wetterHtml() {
   const iso = state.datum, heute = heuteInTokio();
