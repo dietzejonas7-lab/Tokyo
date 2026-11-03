@@ -15,6 +15,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | 🏺 | Flohmärkte | Antik- und Flohmärkte, **gefiltert nach dem gewählten Tag** |
 | ✨ | Illuminationen | Lichter-Events, **gefiltert nach dem gewählten Tag** |
 | 🎏 | Events & Feste | Festivals, Feste und besondere Tage, **gefiltert nach dem gewählten Tag** |
+| 🎄 | Weihnachtsmärkte | 10 Weihnachtsmärkte, die im November öffnen (Ueno, Skytree, Tokyo Tower, Ebisu, Shin-Toyosu, Roppongi, Azabudai, Yokohama ×2, Chiikawa in Makuhari) – je nach gewähltem Tag |
 | 🎡 | Attraktionen | teamLab, PokéPark KANTO, Aquarien, Aussichtstürme, Freizeitparks |
 | 🌳 | Gärten | Edo-Gärten mit Teehäusern |
 | 🏮 | Tempel bei Nacht | Tempel und Schreine, die abends beleuchtet sind, plus Feste wie Tori-no-Ichi (7. & 19.11.) |

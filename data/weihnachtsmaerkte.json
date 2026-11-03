@@ -1,0 +1,231 @@
+[
+  {
+    "id": "ev-xmas-ueno",
+    "name": "Tokyo Christmas Advent (Ueno-Park)",
+    "nameJa": "東京クリスマスアドベント",
+    "lat": 35.71187,
+    "lng": 139.77086,
+    "beschreibung": "Weihnachtsmarkt mit Hütten, Lichtern und Bühne am Hakamagoshi-Platz im Ueno-Park; ab 18.11. kommt der Bereich am Shinobazu-Teich mit über 30 Hütten dazu. Sammel-Tassen, u. a. mit „Panda Kopanda“, und besondere „Regen-“ und „Schnee-Tassen“, die es nur an solchen Tagen gibt.",
+    "zeitraum": [
+      {
+        "von": "2026-11-06",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ueno / Keisei-Ueno",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Tassen",
+      "Ueno"
+    ],
+    "zeiten": "12:00–23:00"
+  },
+  {
+    "id": "xmas-skytree",
+    "name": "Weihnachtsmarkt „Wie im Bilderbuch“ (Skytree Town)",
+    "nameJa": "絵本の中のクリスマスマーケット in 東京スカイツリータウン 2026",
+    "lat": 35.71008,
+    "lng": 139.80861,
+    "beschreibung": "Weihnachtsmarkt auf der Sky Arena (4. Stock) direkt unter dem Skytree: Hütten im europäischen Stil, ein etwa 4 m langer Riesen-Stollen und Santa-Menüs. Findet auch bei Regen statt.",
+    "zeiten": "11:00–22:00 (letzte Bestellung 21:00)",
+    "zeitraum": [
+      {
+        "von": "2026-11-05",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Oshiage (Skytree)",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Skytree",
+      "bei Regen"
+    ]
+  },
+  {
+    "id": "ev-xmas-tower",
+    "name": "Tokyo Tower Christmas Market",
+    "nameJa": "TOKYO TOWER Christmas Market 2026",
+    "lat": 35.65845,
+    "lng": 139.74554,
+    "beschreibung": "Weihnachtsmarkt direkt vor dem Tokyo Tower (Platz vor dem Haupteingang) – abends mit dem beleuchteten Turm über den Hütten.",
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Akabanebashi",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Tokyo Tower"
+    ]
+  },
+  {
+    "id": "illu-ebisu-marche",
+    "name": "Ebisu Garden Place – Illumination & Weihnachtsmarkt",
+    "nameJa": "恵比寿ガーデンプレイス イルミネーション＆クリスマスマルシェ",
+    "lat": 35.64204,
+    "lng": 139.71356,
+    "beschreibung": "Lichter und kleiner Weihnachtsmarkt am Uhrenplatz und Château-Platz – zusätzlich zum Baccarat-Lüster.",
+    "zeiten": "17:00–20:00",
+    "zeitraum": [
+      {
+        "von": "2026-11-14",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Ebisu",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Ebisu",
+      "Illumination"
+    ]
+  },
+  {
+    "id": "ev-xmas-toyosu",
+    "name": "Tokyo Christmas Market in Shin-Toyosu",
+    "nameJa": "東京クリスマスマーケット2026 in 新豊洲",
+    "lat": 35.64852,
+    "lng": 139.78961,
+    "beschreibung": "Der große „Tokyo Christmas Market“ (früher in Jingū-Gaien) zieht 2026 nach Shin-Toyosu: deutsche Weihnachtspyramide, Glühwein, Bratwurst und Sammel-Tasse. Achtung: Eintritt kostet (Mo–Fr 1.000 ¥, Sa/So/Feiertag 1.500 ¥). Der zweite Standort im Shiba-Park öffnet erst am 4.12.",
+    "zeitraum": [
+      {
+        "von": "2026-11-20",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Shin-Toyosu",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Glühwein",
+      "Eintritt"
+    ],
+    "preis": "Mo–Fr 1.000 ¥ · Sa/So/Feiertag 1.500 ¥"
+  },
+  {
+    "id": "xmas-akarenga",
+    "name": "Weihnachtsmarkt Yokohama Red Brick Warehouse",
+    "nameJa": "横浜赤レンガ倉庫 クリスマスマーケット",
+    "lat": 35.45197,
+    "lng": 139.64331,
+    "beschreibung": "Einer der bekanntesten Weihnachtsmärkte Japans vor den alten Backstein-Lagerhäusern am Hafen von Yokohama: rund 60 Stände, ca. 11 m hoher Baum, deutsches Essen. Eintritt ab ca. 500 ¥ (Kinder bis Grundschule frei).",
+    "zeiten": "ca. 11:00–22:00",
+    "preis": "ab ca. 500 ¥",
+    "zeitraum": [
+      {
+        "von": "2026-11-20",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Bashamichi / Nihon-ōdōri (Yokohama)",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Yokohama",
+      "Eintritt"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://www.yokohama-akarenga.jp/christmas/"
+      }
+    ]
+  },
+  {
+    "id": "xmas-ballpark",
+    "name": "BALLPARK Xmas Yokohama",
+    "nameJa": "BALLPARK Xmas YOKOHAMA KANNAI 2026",
+    "lat": 35.44357,
+    "lng": 139.64015,
+    "beschreibung": "Weihnachtsmarkt im Yokohama-Park neben dem Baseball-Stadion – gut mit dem Red Brick Warehouse (ca. 15 Min. zu Fuß) zu verbinden.",
+    "zeitraum": [
+      {
+        "von": "2026-11-20",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kannai (Yokohama)",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Yokohama"
+    ]
+  },
+  {
+    "id": "roppongi-xmas-market",
+    "name": "Roppongi Hills Weihnachtsmarkt",
+    "nameJa": "六本木ヒルズ クリスマスマーケット",
+    "lat": 35.6603,
+    "lng": 139.7293,
+    "beschreibung": "Tokios ältester Weihnachtsmarkt (2026 zum 20. Mal) mit deutschen Ständen unter dem großen Dach der Ōyane-Plaza – Eintritt frei. Gleich daneben die Keyakizaka-Lichter.",
+    "zeiten": "11:00–21:00",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Roppongi",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Glühwein",
+      "frei"
+    ],
+    "preis": "Eintritt frei"
+  },
+  {
+    "id": "ev-xmas-azabudai",
+    "name": "Azabudai Hills Christmas Market",
+    "nameJa": "麻布台ヒルズ クリスマスマーケット 2026",
+    "lat": 35.66147,
+    "lng": 139.74083,
+    "beschreibung": "Weihnachtsmarkt am Hauptplatz der Azabudai Hills – direkt neben teamLab Borderless.",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kamiyacho",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Azabudai"
+    ]
+  },
+  {
+    "id": "xmas-chiikawa",
+    "name": "Chiikawa-Weihnachtsmarkt (Makuhari)",
+    "nameJa": "ちいかわクリスマスマーケット",
+    "lat": 35.65609,
+    "lng": 140.02652,
+    "beschreibung": "Weihnachtsmarkt rund um die Anime-Figuren Chiikawa im Toyosuna-Park vor der Aeon Mall Makuhari Shintoshin (Chiba, ca. 40 Min. ab Bahnhof Tokyo mit der JR Keiyō-Linie). ⚠️ Nur mit Ticket für Tag & Uhrzeit (Mo–Fr 2.500 ¥, Sa/So/Feiertag 2.800 ¥) – mit Pop-up-Weihnachtskarte und einmal Riesen-Gacha.",
+    "zeiten": "11:00–21:00 (letzter Einlass 18:30–19:00)",
+    "preis": "Mo–Fr 2.500 ¥ · Sa/So/Feiertag 2.800 ¥",
+    "zeitraum": [
+      {
+        "von": "2026-11-24",
+        "bis": "2026-12-25"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kaihin-Makuhari / Shin-Narashino (JR Keiyō)",
+    "tags": [
+      "Weihnachtsmarkt",
+      "Chiikawa",
+      "Ticket"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://contents-abema.com/chiikawa-christmas-market/"
+      }
+    ]
+  }
+]

@@ -90,6 +90,16 @@
     "bildersuche": ""
   },
   {
+    "id": "weihnachtsmaerkte",
+    "name": "Weihnachtsmärkte",
+    "icon": "🎄",
+    "farbe": "#2f8a57",
+    "datei": "weihnachtsmaerkte.json",
+    "beschreibung": "Weihnachtsmärkte, die schon im November öffnen – gezeigt wird nur, was am gewählten Tag offen hat. Glühwein heißt in Japan „Hotto Wain“.",
+    "bildersuche": "クリスマスマーケット",
+    "gruppe": "erleben"
+  },
+  {
     "id": "attraktionen",
     "name": "Attraktionen",
     "icon": "🎡",

@@ -51,26 +51,6 @@
     ]
   },
   {
-    "id": "roppongi-xmas-market",
-    "name": "Roppongi Hills Weihnachtsmarkt",
-    "nameJa": "六本木ヒルズ クリスマスマーケット",
-    "lat": 35.6603,
-    "lng": 139.7293,
-    "beschreibung": "Deutscher Weihnachtsmarkt unter dem Ōyane-Plaza – Glühwein in Tokio!",
-    "zeiten": "11:00–21:00",
-    "zeitraum": [
-      {
-        "von": "2026-11-21",
-        "bis": "2026-12-25"
-      }
-    ],
-    "geprueft": true,
-    "station": "Roppongi",
-    "tags": [
-      "Weihnachtsmarkt"
-    ]
-  },
-  {
     "id": "marunouchi",
     "name": "Marunouchi Bright Holiday",
     "nameJa": "丸の内 ブライトホリデー",
@@ -707,26 +687,6 @@
       "Ticket"
     ],
     "preis": "2.400–4.600 ¥ (Zeitfenster)"
-  },
-  {
-    "id": "illu-ebisu-marche",
-    "name": "Ebisu Garden Place – Illumination & Weihnachtsmarkt",
-    "nameJa": "恵比寿ガーデンプレイス イルミネーション＆クリスマスマルシェ",
-    "lat": 35.64204,
-    "lng": 139.71356,
-    "beschreibung": "Lichter und kleiner Weihnachtsmarkt am Uhrenplatz und Château-Platz – zusätzlich zum Baccarat-Lüster.",
-    "zeiten": "17:00–20:00",
-    "zeitraum": [
-      {
-        "von": "2026-11-14",
-        "bis": "2026-12-25"
-      }
-    ],
-    "geprueft": true,
-    "station": "Ebisu",
-    "tags": [
-      "Weihnachtsmarkt"
-    ]
   },
   {
     "id": "illu-tama",

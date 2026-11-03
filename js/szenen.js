@@ -9,7 +9,7 @@
 const Szenen = {
   ZUORDNUNG: {
     anime: "stadt", premiumfiguren: "stadt", gacha: "stadt", squishys: "stadt", mode: "stadt", raeucherstaebchen: "tempel",
-    illumination: "lichter", events: "fest", nachttempel: "tempel", hotel: "hotel", filmspots: "gasse", gyoza: "gyoza",
+    illumination: "lichter", events: "fest", weihnachtsmaerkte: "lichter", nachttempel: "tempel", hotel: "hotel", filmspots: "gasse", gyoza: "gyoza",
     gaerten: "garten", herbstlaub: "herbst",
     stempel: "stempel", goshuin: "stempel", goshuincho: "stempel",
   },
