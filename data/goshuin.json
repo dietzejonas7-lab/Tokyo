@@ -444,5 +444,268 @@
       "Schrein",
       "kawaii"
     ]
+  },
+  {
+    "id": "g-k-tsurugaoka",
+    "name": "Tsurugaoka Hachiman-gū",
+    "nameJa": "鶴岡八幡宮",
+    "lat": 35.32518,
+    "lng": 139.55618,
+    "beschreibung": "Kamakuras wichtigster Schrein (gegründet 1063, Schutzschrein der Samurai-Regierung). Goshuin am Amulettschalter neben der Haupthalle oben an der großen Treppe. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kamakura",
+    "tags": [
+      "Schrein",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-hasedera",
+    "name": "Hase-dera",
+    "nameJa": "長谷寺",
+    "lat": 35.31227,
+    "lng": 139.53331,
+    "beschreibung": "Tempel der elfköpfigen Kannon (über 9 m, eine der größten Holzfiguren Japans). Mehrere verschiedene Goshuin; dazu Höhle mit Benzaiten-Figuren und Aussichtsterrasse. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Hase (Enoden)",
+    "tags": [
+      "Tempel",
+      "Kannon",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-kotokuin",
+    "name": "Kōtoku-in (Großer Buddha)",
+    "nameJa": "高徳院（鎌倉大仏）",
+    "lat": 35.3165,
+    "lng": 139.53573,
+    "beschreibung": "Der Große Buddha von Kamakura (13 m, Bronze, seit 1252 unter freiem Himmel). Goshuin am Schalter auf dem Gelände. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Hase (Enoden, 7 Min.)",
+    "tags": [
+      "Tempel",
+      "Daibutsu",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-kenchoji",
+    "name": "Kenchō-ji",
+    "nameJa": "建長寺",
+    "lat": 35.33245,
+    "lng": 139.55753,
+    "beschreibung": "Ältestes Zen-Kloster Japans (1253). Eigenes Goshuin gibt es auch oben am Hansōbō (Schrein mit Tengu-Figuren) – wer hochsteigt, bekommt zwei. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kita-Kamakura (15 Min.)",
+    "tags": [
+      "Zen",
+      "Tempel",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-engakuji",
+    "name": "Engaku-ji",
+    "nameJa": "円覚寺",
+    "lat": 35.33794,
+    "lng": 139.54782,
+    "beschreibung": "Großer Zen-Tempel direkt am Bahnhof Kita-Kamakura. Mehrere Goshuin möglich (u. a. am Benten-dō oben bei der großen Glocke). Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kita-Kamakura (1 Min.)",
+    "tags": [
+      "Zen",
+      "Tempel",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-meigetsuin",
+    "name": "Meigetsu-in",
+    "nameJa": "明月院",
+    "lat": 35.33491,
+    "lng": 139.55164,
+    "beschreibung": "Der „Hortensien-Tempel“ mit dem berühmten runden Fenster. Goshuin am Eingangsbereich. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kita-Kamakura (10 Min.)",
+    "tags": [
+      "Zen",
+      "Tempel",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-hokokuji",
+    "name": "Hōkoku-ji (Bambustempel)",
+    "nameJa": "報国寺",
+    "lat": 35.31952,
+    "lng": 139.5689,
+    "beschreibung": "Bambuswald-Tempel mit Teehaus. Goshuin am Tempelbüro beim Eingang. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Bus bis Jōmyōji",
+    "tags": [
+      "Zen",
+      "Bambus",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-sugimotodera",
+    "name": "Sugimoto-dera",
+    "nameJa": "杉本寺",
+    "lat": 35.32263,
+    "lng": 139.56744,
+    "beschreibung": "Ältester Tempel Kamakuras (734) – mit der berühmten, völlig vermoosten Steintreppe (darf man nicht betreten, aber fotografieren). Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Bus bis Sugimoto Kannon",
+    "tags": [
+      "Tempel",
+      "Moos",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-zeniarai",
+    "name": "Zeniarai-Benzaiten",
+    "nameJa": "銭洗弁財天宇賀福神社",
+    "lat": 35.32576,
+    "lng": 139.54226,
+    "beschreibung": "Schrein in einer Felsenhöhle: Hier wäscht man Geld in Quellwasser – es soll sich dann vermehren. Durch einen Tunnel betritt man den Schrein. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kamakura (25 Min., bergauf)",
+    "tags": [
+      "Schrein",
+      "Geld waschen",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-sasukeinari",
+    "name": "Sasuke-Inari",
+    "nameJa": "佐助稲荷神社",
+    "lat": 35.32439,
+    "lng": 139.53925,
+    "beschreibung": "Versteckter Fuchs-Schrein im Wald: ein Weg aus roten Torii und hunderte kleine weiße Fuchsfiguren. Sehr fotogen. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kamakura (20 Min.)",
+    "tags": [
+      "Schrein",
+      "Torii",
+      "Füchse",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-enoshima",
+    "name": "Enoshima-Schrein (Hetsunomiya)",
+    "nameJa": "江島神社 辺津宮",
+    "lat": 35.30049,
+    "lng": 139.47954,
+    "beschreibung": "Drei Schreine der Glücks- und Musikgöttin Benzaiten verteilt über die Insel Enoshima. Goshuin am Hetsunomiya (erster Schrein oben an der Treppe). Gilt als Schrein für Liebe, Musik und Kunst. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Enoshima / Katase-Enoshima",
+    "tags": [
+      "Schrein",
+      "Benzaiten",
+      "Enoshima",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-ryukoji",
+    "name": "Ryūkō-ji",
+    "nameJa": "龍口寺",
+    "lat": 35.31171,
+    "lng": 139.48938,
+    "beschreibung": "Großer Nichiren-Tempel gleich beim Bahnhof Enoshima, mit der einzigen hölzernen fünfstöckigen Pagode der Präfektur Kanagawa. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Enoshima (3 Min.)",
+    "tags": [
+      "Tempel",
+      "Pagode",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-gokurakuji",
+    "name": "Gokuraku-ji",
+    "nameJa": "極楽寺",
+    "lat": 35.30976,
+    "lng": 139.52888,
+    "beschreibung": "Kleiner, stiller Tempel direkt neben dem nostalgischen Holzbahnhof Gokurakuji (im Tempel bitte nicht fotografieren). Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Gokurakuji (Enoden, 2 Min.)",
+    "tags": [
+      "Tempel",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-goryo",
+    "name": "Goryō-Schrein",
+    "nameJa": "御霊神社",
+    "lat": 35.31099,
+    "lng": 139.53279,
+    "beschreibung": "Winziger Schrein, bei dem die Enoden direkt vor dem Torii vorbeifährt – ein berühmtes Fotomotiv. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Hase (Enoden, 5 Min.)",
+    "tags": [
+      "Schrein",
+      "Enoden",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-kamakuragu",
+    "name": "Kamakura-gū",
+    "nameJa": "鎌倉宮",
+    "lat": 35.32593,
+    "lng": 139.56668,
+    "beschreibung": "Schrein für Prinz Morinaga. Besonderheit: Man wirft ein Tontellerchen auf einen Stein, um Unglück loszuwerden (厄割り). Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Bus bis Daitōnomiya",
+    "tags": [
+      "Schrein",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-egara",
+    "name": "Egara-Tenjin",
+    "nameJa": "荏柄天神社",
+    "lat": 35.32568,
+    "lng": 139.56425,
+    "beschreibung": "Schrein des Gelehrten-Gottes Sugawara no Michizane – hier beten Schüler für gute Prüfungen. Hübsches Goshuin mit Pflaumenblüten-Motiv. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Bus bis Daitōnomiya / Egara-Tenjin",
+    "tags": [
+      "Schrein",
+      "Lernen",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-tokeiji",
+    "name": "Tōkei-ji",
+    "nameJa": "東慶寺",
+    "lat": 35.3345,
+    "lng": 139.54535,
+    "beschreibung": "Früher Zufluchtsort für Frauen, die sich scheiden lassen wollten („Scheidungstempel“). Heute ein ruhiger Tempel mit vielen Blumen. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kita-Kamakura (4 Min.)",
+    "tags": [
+      "Tempel",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-hokaiji",
+    "name": "Hōkai-ji",
+    "nameJa": "宝戒寺",
+    "lat": 35.32212,
+    "lng": 139.55828,
+    "beschreibung": "Ruhiger Tempel nahe dem Hachiman-gū, im Herbst voller weißer Buschklee-Blüten. Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kamakura (13 Min.)",
+    "tags": [
+      "Tempel",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "g-k-jochiji",
+    "name": "Jōchi-ji",
+    "nameJa": "浄智寺",
+    "lat": 35.3334,
+    "lng": 139.54624,
+    "beschreibung": "Zen-Tempel mit Hotei-Figur (einer der sieben Glücksgötter von Kamakura & Enoshima). Die meisten Tempel in Kamakura vergeben Goshuin nur bis ca. 16:00 Uhr.",
+    "station": "Kita-Kamakura (8 Min.)",
+    "tags": [
+      "Zen",
+      "Glücksgötter",
+      "Kamakura"
+    ]
   }
 ]

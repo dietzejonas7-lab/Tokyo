@@ -806,7 +806,7 @@
     "lat": 35.69889,
     "lng": 139.7445,
     "beschreibung": "Einer der „100 besten Gyoza-Läden Japans“ laut Tabelog (2024, 2021, 2019).",
-    "zeiten": "Mo, Di, Mi, Do, Fr 17:00–21:00 (l. B. Food 20:30 Drinks 20:45) · Sa 11:30–14:00 (l. B. Food 13:30 Drinks 13:45), 17:00–21:00 (l. B. Food 20:30 Drinks 20:45) · Ruhetag: So, Feiertage",
+    "zeiten": "Mo, Di, Mi, Do, Fr 17:00–21:00 (l. B. Essen 20:30, Getränke 20:45) · Sa 11:30–14:00 (l. B. Essen 13:30, Getränke 13:45), 17:00–21:00 (l. B. Essen 20:30, Getränke 20:45) · Ruhetag: So, Feiertage",
     "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
     "adresse": "東京都千代田区富士見2-12-16",
     "tabelogNote": 3.55,
@@ -2600,6 +2600,242 @@
       {
         "titel": "In Google Maps suchen",
         "url": "https://www.google.com/maps/search/?api=1&query=%E9%89%84%E3%81%AA%E3%81%B9%E9%A4%83%E5%AD%90%E3%81%AA%E3%81%8B%E3%82%88%E3%81%97%20%E5%8D%97%E9%98%BF%E4%BD%90%E3%82%B1%E8%B0%B7%E9%A7%85"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-14042948",
+    "name": "Yamamoto Gyōza",
+    "nameJa": "山本餃子",
+    "lat": 35.31757,
+    "lng": 139.54897,
+    "beschreibung": "Kleiner, beliebter Laden beim Bahnhof Kamakura (Westseite): sanfte Gyoza ganz ohne Knoblauch, Lauch und Geschmacksverstärker. Nur 7 Plätze – mit Wartezeit rechnen. Beliebt auf Tabelog (nicht auf der Liste der 100 besten Gyoza-Läden).",
+    "zeiten": "Di 16:00–20:00 (l. B. 19:00) · Mi, Do, Fr, Sa, So 11:30–19:30 (l. B. 19:00) · Ruhetag: Mo",
+    "preis": "abends ¥2.000–¥2.999 · mittags ¥1.000–¥1.999",
+    "adresse": "神奈川県鎌倉市御成町9-6",
+    "tabelogNote": 3.39,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -1.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld",
+        "🪑 nur 7 Plätze – oft Wartezeit"
+      ]
+    },
+    "station": "Kamakura",
+    "ruhetagJa": "",
+    "ruhetage": [
+      "Mo"
+    ],
+    "top": false,
+    "listen": [],
+    "lageUngefaehr": false,
+    "umgezogen": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Kamakura & Enoshima"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/kanagawa/A1404/A140402/14042948/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E5%B1%B1%E6%9C%AC%E9%A4%83%E5%AD%90%20Kamakura"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-14001863",
+    "name": "Chūka Taishin Kamakura",
+    "nameJa": "中華大新 鎌倉店",
+    "lat": 35.31702,
+    "lng": 139.55105,
+    "beschreibung": "Traditions-Chinese an der Komachi-dōri mit leichten Gyoza, die man nicht leid wird. Abends bis spät in die Nacht offen. Beliebt auf Tabelog (nicht auf der Liste der 100 besten Gyoza-Läden).",
+    "zeiten": "Mo, Di, Mi, Fr, Sa, So 11:00–15:15, 17:00–4:00 · Ruhetag: Do",
+    "preis": "abends ¥1.000–¥1.999 · mittags ¥1.000–¥1.999",
+    "adresse": "神奈川県鎌倉市小町1-13-10",
+    "tabelogNote": 3.49,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 2.5,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "🚭 Nichtraucher"
+      ],
+      "minus": []
+    },
+    "station": "Kamakura",
+    "ruhetagJa": "",
+    "ruhetage": [
+      "Do"
+    ],
+    "top": false,
+    "listen": [],
+    "lageUngefaehr": false,
+    "umgezogen": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Kamakura & Enoshima"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/kanagawa/A1404/A140402/14001863/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E8%8F%AF%E5%A4%A7%E6%96%B0%20%E9%8E%8C%E5%80%89%E5%BA%97%20Kamakura"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-14083728",
+    "name": "Enoshima Gyōza",
+    "nameJa": "江ノ島ぎょうざ",
+    "lat": 35.30076,
+    "lng": 139.48193,
+    "beschreibung": "Winziger Laden auf Enoshima, Teig selbst gemacht, ausgefallene Füllungen. ⚠️ Laut Tabelog nur sonntags geöffnet und nur 4 Plätze. Beliebt auf Tabelog (nicht auf der Liste der 100 besten Gyoza-Läden).",
+    "zeiten": "Nur So 11:00–17:00",
+    "preis": "abends bis ¥999 · mittags bis ¥999",
+    "adresse": "神奈川県藤沢市江ノ島1-6-28",
+    "tabelogNote": 3.05,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": -1.5,
+      "plus": [
+        "🚭 Nichtraucher"
+      ],
+      "minus": [
+        "💴 Nur Bargeld",
+        "🪑 nur 4 Plätze – oft Wartezeit"
+      ]
+    },
+    "station": "Enoshima",
+    "ruhetagJa": "",
+    "ruhetage": [
+      "Mo",
+      "Di",
+      "Mi",
+      "Do",
+      "Fr",
+      "Sa"
+    ],
+    "top": false,
+    "listen": [],
+    "lageUngefaehr": false,
+    "umgezogen": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Kamakura & Enoshima"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/kanagawa/A1404/A140403/14083728/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%B1%9F%E3%83%8E%E5%B3%B6%E3%81%8E%E3%82%87%E3%81%86%E3%81%96%20Enoshima"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-14002904",
+    "name": "Aji no Kokuya Fujisawa",
+    "nameJa": "味の古久家 藤沢店",
+    "lat": 35.33839,
+    "lng": 139.48856,
+    "beschreibung": "Traditionsladen 1 Min. vom Bahnhof Fujisawa (Start der Enoden): die Gyoza sind seit über 50 Jahren der Klassiker. Günstig und viele Plätze. Beliebt auf Tabelog (nicht auf der Liste der 100 besten Gyoza-Läden).",
+    "zeiten": "Täglich 11:00–19:30",
+    "preis": "abends bis ¥999 · mittags bis ¥999",
+    "adresse": "神奈川県藤沢市南藤沢2-1-3 ダイヤモンドビル　Ｂ１Ｆ",
+    "tabelogNote": 3.58,
+    "touristen": {
+      "stufe": "orange",
+      "punkte": 0.0,
+      "plus": [
+        "🚭 Nichtraucher",
+        "🪑 80 Plätze"
+      ],
+      "minus": [
+        "💴 Nur Bargeld"
+      ]
+    },
+    "station": "Fujisawa",
+    "ruhetagJa": "",
+    "ruhetage": [],
+    "top": false,
+    "listen": [],
+    "lageUngefaehr": false,
+    "umgezogen": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Kamakura & Enoshima"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/kanagawa/A1404/A140404/14002904/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E5%91%B3%E3%81%AE%E5%8F%A4%E4%B9%85%E5%AE%B6%20%E8%97%A4%E6%B2%A2%E5%BA%97%20Fujisawa"
+      }
+    ]
+  },
+  {
+    "id": "gyoza-14094810",
+    "name": "Shonan Gyōza Mania",
+    "nameJa": "湘南餃子マニア",
+    "lat": 35.33694,
+    "lng": 139.48632,
+    "beschreibung": "Gyoza-Bar beim Bahnhof Fujisawa: Teig wird frisch gemacht, viele Sorten – abends gut mit Bier. Online reservierbar. Beliebt auf Tabelog (nicht auf der Liste der 100 besten Gyoza-Läden).",
+    "zeiten": "Mo, Di, Mi, Do 16:00–23:00 (l. B. Essen 22:00, Getränke 22:30) · Fr 16:00–0:00 (l. B. Essen 23:00, Getränke 23:30) · Sa 12:00–0:00 (l. B. Essen 23:00, Getränke 23:30) · So, Feiertage 12:00–23:00 (l. B. Essen 22:00, Getränke 22:30)",
+    "preis": "abends ¥2.000–¥2.999 · mittags ¥2.000–¥2.999",
+    "adresse": "神奈川県藤沢市鵠沼橘1-17-4 第一興産28号館 1F",
+    "tabelogNote": 3.46,
+    "touristen": {
+      "stufe": "gruen",
+      "punkte": 4.0,
+      "plus": [
+        "💳 Kartenzahlung",
+        "🚃 Suica",
+        "📅 Online reservierbar",
+        "🚭 Nichtraucher",
+        "🪑 30 Plätze"
+      ],
+      "minus": []
+    },
+    "station": "Fujisawa",
+    "ruhetagJa": "",
+    "ruhetage": [],
+    "top": false,
+    "listen": [],
+    "lageUngefaehr": false,
+    "umgezogen": false,
+    "fotoSuche": false,
+    "tags": [
+      "Gyoza",
+      "Kamakura & Enoshima"
+    ],
+    "links": [
+      {
+        "titel": "Tabelog (Fotos, Öffnungszeiten, Bewertungen)",
+        "url": "https://tabelog.com/kanagawa/A1404/A140404/14094810/"
+      },
+      {
+        "titel": "In Google Maps suchen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%B9%98%E5%8D%97%E9%A4%83%E5%AD%90%E3%83%9E%E3%83%8B%E3%82%A2%20Fujisawa"
       }
     ]
   }

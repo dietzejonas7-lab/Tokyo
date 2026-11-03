@@ -909,6 +909,34 @@ function hotelMarkerSetzen() {
     .on("click", () => sheetOeffnen(HOTEL))
     .addTo(map);
 }
+/* ---------- Ausflug Kamakura & Enoshima: schnell zwischen den Gegenden springen ---------- */
+const KAMAKURA = { grenzen: [[35.295, 139.47], [35.342, 139.58]], zeichen: "鎌", name: "Kamakura" };
+const TOKIO_ZURUECK = { zeichen: "東", name: "Tokio" };
+
+/** Liegt die Kartenmitte gerade im Raum Kamakura/Enoshima (südwestlich von Yokohama)? */
+function inKamakura() {
+  const m = map.getCenter();
+  return m.lat < 35.4 && m.lng < 139.62;
+}
+
+function regionKnopfSetzen() {
+  const ziel = inKamakura() ? TOKIO_ZURUECK : KAMAKURA;
+  const knopf = $("#btn-region");
+  knopf.querySelector("span").textContent = ziel.zeichen;
+  knopf.querySelector("small").textContent = ziel.name;
+  knopf.setAttribute("aria-label", `Karte nach ${ziel.name}`);
+}
+
+function regionWechseln() {
+  if (inKamakura()) {
+    map.flyTo([START_ANSICHT.lat, START_ANSICHT.lng], START_ANSICHT.zoom, { duration: 1.6 });
+    toast("🗼 Zurück nach Tokio");
+  } else {
+    map.flyToBounds(KAMAKURA.grenzen, { duration: 1.6, padding: [10, 10] });
+    toast("⛩️ Kamakura & Enoshima – alle Kategorien gelten auch hier");
+  }
+}
+
 function zumHotel() {
   map.flyTo([HOTEL.lat, HOTEL.lng], Math.max(map.getZoom(), 16), { duration: 1 });
   setTimeout(() => sheetOeffnen(HOTEL), 700);
@@ -1378,7 +1406,7 @@ const GyozaRadar = {
       <span class="rz-nr">${i + 1}</span>
       <div class="rz-text">
         <b>${esc(e.name)}</b>
-        <small>${e.top ? "⭐ Bestenliste 2024" : "👍 Bestenliste " + esc(e.listen.join(" / "))}${e.tabelogNote ? ` · Tabelog ${e.tabelogNote.toFixed(2)}` : ""} · ${esc(e.station)}</small>
+        <small>${e.top ? "⭐ Bestenliste 2024" : e.listen.length ? "👍 Bestenliste " + esc(e.listen.join(" / ")) : "👍 Tabelog-Tipp"}${e.tabelogNote ? ` · Tabelog ${e.tabelogNote.toFixed(2)}` : ""} · ${esc(e.station)}</small>
         ${e.touristen ? `<small class="rz-touri ${e.touristen.stufe}">${touristenText(e)}</small>
           <small class="rz-merkmale">${[...e.touristen.plus, ...e.touristen.minus].map(merkmalKurz).join(" · ")}</small>` : ""}
         <small>${meter < 1000 ? Math.round(meter / 10) * 10 + " m" : l.km.toFixed(1) + " km"} · ${l.km < 2 ? `ca. ${minuten} Min. zu Fuß` : "mit der Bahn"}${e.umgezogen ? " · <em>⚠️ umgezogen – neue Adresse prüfen</em>" : e.lageUngefaehr ? " · Lage ungefähr" : ""}
@@ -1877,6 +1905,9 @@ function ereignisseVerbinden() {
   $("#show-all").onchange = (ev) => { state.alleZeigen = ev.target.checked; datumAnzeigen(); markerZeichnen(); };
   $("#btn-locate").onclick = standortSuchen;
   $("#btn-hotel").onclick = zumHotel;
+  $("#btn-region").onclick = regionWechseln;
+  map.on("moveend", regionKnopfSetzen);
+  regionKnopfSetzen();
   $("#btn-gyoza").onclick = () => GyozaRadar.oeffnen();
   $("#radar-wahl").onclick = (ev) => { const b = ev.target.closest("[data-zentrum]"); if (b) GyozaRadar.zentrumWaehlen(b.dataset.zentrum); };
   $("#radar-touri").onclick = () => {

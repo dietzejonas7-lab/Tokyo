@@ -256,5 +256,58 @@
       "Games",
       "Pokémon"
     ]
+  },
+  {
+    "id": "anime-k-slamdunk",
+    "name": "„Slam Dunk“-Bahnübergang",
+    "nameJa": "鎌倉高校前駅 踏切（スラムダンク）",
+    "lat": 35.30695,
+    "lng": 139.50175,
+    "beschreibung": "Der Bahnübergang aus dem Vorspann von „Slam Dunk“ – einer der bekanntesten Anime-Pilgerorte Japans. Bitte nicht auf der Straße stehen, die Anwohner bitten um Rücksicht.",
+    "zeiten": "jederzeit",
+    "station": "Kamakura-Kōkōmae (Enoden)",
+    "tags": [
+      "Slam Dunk",
+      "Pilgerort",
+      "Kamakura"
+    ],
+    "fotoSuche": false
+  },
+  {
+    "id": "anime-k-aobuta",
+    "name": "„Bunny Girl Senpai“-Orte (Shichirigahama)",
+    "nameJa": "青春ブタ野郎 聖地 七里ヶ浜",
+    "lat": 35.30614,
+    "lng": 139.51118,
+    "beschreibung": "Schauplatz von „Seishun Buta Yarō“ (Rascal Does Not Dream of Bunny Girl Senpai): Bahnhof und Strand Shichirigahama, die Schule am Hang (in echt die Shichirigahama High School) und weiter Enoshima und Fujisawa.",
+    "zeiten": "jederzeit",
+    "station": "Shichirigahama (Enoden)",
+    "tags": [
+      "Aobuta",
+      "Pilgerort",
+      "Kamakura"
+    ],
+    "fotoSuche": false
+  },
+  {
+    "id": "anime-k-donguri",
+    "name": "Donguri Kyōwakoku Kamakura (Ghibli-Laden)",
+    "nameJa": "どんぐり共和国 鎌倉店",
+    "lat": 35.3197,
+    "lng": 139.5508,
+    "beschreibung": "Offizieller Studio-Ghibli-Laden mit Totoro, Kiki & Co. – nahe dem Anfang der Komachi-dōri beim Bahnhof (genaue Stelle über Google Maps).",
+    "zeiten": "ca. 10:00–18:00",
+    "station": "Kamakura (2 Min.)",
+    "tags": [
+      "Ghibli",
+      "Totoro",
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%A9%E3%82%93%E3%81%90%E3%82%8A%E5%85%B1%E5%92%8C%E5%9B%BD%20%E9%8E%8C%E5%80%89%E5%BA%97"
+      }
+    ]
   }
 ]

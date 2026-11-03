@@ -2037,5 +2037,173 @@
       "Garten",
       "Koyo"
     ]
+  },
+  {
+    "id": "stempel-enoden-fujisawa",
+    "name": "Fujisawa (Enoden) – Enoden-Stempel",
+    "nameJa": "江ノ電 藤沢駅",
+    "lat": 35.337,
+    "lng": 139.48714,
+    "beschreibung": "Startbahnhof der Enoden. Der Stempel steht innerhalb der Ticketsperre. Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Fujisawa",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
+  },
+  {
+    "id": "stempel-enoden-enoshima",
+    "name": "Enoshima (Enoden) – Enoden-Stempel",
+    "nameJa": "江ノ電 江ノ島駅",
+    "lat": 35.31104,
+    "lng": 139.48754,
+    "beschreibung": "Stempel außerhalb der Ticketsperre (Motiv: Insel Enoshima). Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Enoshima",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
+  },
+  {
+    "id": "stempel-enoden-shichirigahama",
+    "name": "Shichirigahama (Stempel liegt in Enoshima) – Enoden-Stempel",
+    "nameJa": "江ノ電 七里ヶ浜駅スタンプ",
+    "lat": 35.31114,
+    "lng": 139.48774,
+    "beschreibung": "Der Bahnhof Shichirigahama ist unbesetzt – sein Stempel wird am Schalter im Bahnhof Enoshima aufbewahrt: einfach nach „Shichirigahama no sutampu“ fragen. Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Shichirigahama",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
+  },
+  {
+    "id": "stempel-enoden-koshigoe",
+    "name": "Koshigoe (Enoden) – Enoden-Stempel",
+    "nameJa": "江ノ電 腰越駅",
+    "lat": 35.309,
+    "lng": 139.4934,
+    "beschreibung": "Stempel am Schalter – das Personal fragen (Motiv: Fischerhafen Koshigoe). Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Koshigoe",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
+  },
+  {
+    "id": "stempel-enoden-inamuragasaki",
+    "name": "Inamuragasaki (Enoden) – Enoden-Stempel",
+    "nameJa": "江ノ電 稲村ヶ崎駅",
+    "lat": 35.30521,
+    "lng": 139.52122,
+    "beschreibung": "Stempel außerhalb der Ticketsperre (Motiv: Kap Inamuragasaki). Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Inamuragasaki",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
+  },
+  {
+    "id": "stempel-enoden-kamakurakokomae",
+    "name": "Kamakura-Kōkōmae (Stempel liegt in Inamuragasaki) – Enoden-Stempel",
+    "nameJa": "江ノ電 鎌倉高校前駅スタンプ",
+    "lat": 35.30531,
+    "lng": 139.52142,
+    "beschreibung": "Der Stempel des berühmten Bahnhofs am Meer (Motiv: Enoden am Bahnübergang) liegt im Bahnhof Inamuragasaki außerhalb der Sperre. Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Kamakura-Kōkōmae",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
+  },
+  {
+    "id": "stempel-enoden-hase",
+    "name": "Hase (Enoden) – Enoden-Stempel",
+    "nameJa": "江ノ電 長谷駅",
+    "lat": 35.31128,
+    "lng": 139.53587,
+    "beschreibung": "Stempel innerhalb der Ticketsperre – der Bahnhof für den Großen Buddha und Hase-dera. Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Hase",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
+  },
+  {
+    "id": "stempel-enoden-kamakura",
+    "name": "Kamakura (Enoden) – Enoden-Stempel",
+    "nameJa": "江ノ電 鎌倉駅",
+    "lat": 35.319,
+    "lng": 139.55068,
+    "beschreibung": "Endbahnhof der Enoden, Stempel innerhalb der Ticketsperre. Zusätzlich gibt es an allen 15 Enoden-Bahnhöfen digitale Stempel über die App „Ekitag“ (エキタグ). (Standorte laut Stempel-Sammlerseite, Stand 2019–2025.)",
+    "linie": "Enoden (江ノ電)",
+    "station": "Kamakura",
+    "tags": [
+      "Enoden",
+      "Kamakura"
+    ],
+    "fotoSuche": false,
+    "links": [
+      {
+        "titel": "Stempel-Fotos & Standorte (Sammlerseite, japanisch)",
+        "url": "https://stamp.funakiya.com/enoden-line.html"
+      }
+    ]
   }
 ]

@@ -508,5 +508,19 @@
       "Kollabo-Café",
       "Keroro"
     ]
+  },
+  {
+    "id": "mode-k-makersshirt",
+    "name": "Maker's Shirt Kamakura (Hauptladen)",
+    "nameJa": "メーカーズシャツ鎌倉 本店",
+    "lat": 35.32291,
+    "lng": 139.55684,
+    "beschreibung": "Bekannte Hemdenmarke „Kamakura Shirts“, gegründet in Kamakura: in Japan genähte Hemden, Blusen und Krawatten in sehr guter Qualität für einen fairen Preis. Hier ist der Stammladen.",
+    "station": "Kamakura (12 Min.)",
+    "tags": [
+      "Hemden",
+      "Made in Japan",
+      "Kamakura"
+    ]
   }
 ]

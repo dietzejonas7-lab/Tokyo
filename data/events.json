@@ -765,5 +765,27 @@
     "tags": [
       "Weihnachtsmarkt"
     ]
+  },
+  {
+    "id": "ev-ryukoji-takedoro",
+    "name": "Bambus-Laternen am Ryūkō-ji",
+    "nameJa": "龍の口竹灯籠 2026（龍口寺）",
+    "lat": 35.31171,
+    "lng": 139.48938,
+    "beschreibung": "Abends leuchten unzählige Kerzen in Bambusrohren rund um den Tempel Ryūkō-ji mit seiner Holzpagode – gleich beim Bahnhof Enoshima, gut mit Enoshima zu verbinden.",
+    "zeiten": "abends",
+    "zeitraum": [
+      {
+        "von": "2026-11-13",
+        "bis": "2026-11-14"
+      }
+    ],
+    "geprueft": false,
+    "station": "Enoshima (Enoden, 3 Min.)",
+    "tags": [
+      "Laternen",
+      "Tempel",
+      "Enoshima"
+    ]
   }
 ]

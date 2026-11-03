@@ -219,5 +219,66 @@
       "Villa",
       "Meiji-Zeit"
     ]
+  },
+  {
+    "id": "garten-k-hokokuji",
+    "name": "Bambusgarten Hōkoku-ji",
+    "nameJa": "報国寺 竹の庭",
+    "lat": 35.31952,
+    "lng": 139.5689,
+    "beschreibung": "Rund 2.000 Bambusstämme mitten im Tempelgarten – grünes Licht, Stille, Matcha im kleinen Teehaus zwischen den Halmen.",
+    "zeiten": "ca. 9:00–16:00",
+    "preis": "ca. 400 ¥ (Matcha extra)",
+    "station": "Kamakura → Bus bis Jōmyōji",
+    "tags": [
+      "Bambus",
+      "Matcha",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "garten-k-zuisenji",
+    "name": "Felsengarten Zuisen-ji",
+    "nameJa": "瑞泉寺 庭園",
+    "lat": 35.32745,
+    "lng": 139.57512,
+    "beschreibung": "Garten des berühmten Zen-Gartenmeisters Musō Soseki (14. Jh.): direkt in den Fels gehauen, mit Teich und Höhle. Ruhig und wenig besucht.",
+    "zeiten": "ca. 9:00–16:30",
+    "preis": "ca. 200 ¥",
+    "station": "Kamakura → Bus bis Daitōnomiya (+15 Min.)",
+    "tags": [
+      "Zen-Garten",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "garten-k-cocking",
+    "name": "Samuel-Cocking-Garten (Enoshima)",
+    "nameJa": "江の島サムエル・コッキング苑",
+    "lat": 35.29974,
+    "lng": 139.47921,
+    "beschreibung": "Subtropischer Garten auf dem Gipfel von Enoshima rund um die Sea Candle, mit Resten eines alten Gewächshauses aus dem 19. Jh. Tagsüber frei.",
+    "zeiten": "9:00–20:00",
+    "preis": "tagsüber frei, abends 500 ¥",
+    "station": "Enoshima (20 Min. bergauf)",
+    "tags": [
+      "Garten",
+      "Enoshima"
+    ]
+  },
+  {
+    "id": "garten-k-ichijo",
+    "name": "Ichijō Ekan Sansō",
+    "nameJa": "一条恵観山荘",
+    "lat": 35.32045,
+    "lng": 139.57112,
+    "beschreibung": "Teehaus und Garten eines Prinzen aus Kyoto (17. Jh.), mit Café an einem Bach. Elegante Kyoto-Stimmung mitten in Kamakura.",
+    "zeiten": "ca. 10:00–16:00",
+    "preis": "Eintritt",
+    "station": "Kamakura → Bus bis Jōmyōji",
+    "tags": [
+      "Teehaus",
+      "Kamakura"
+    ]
   }
 ]

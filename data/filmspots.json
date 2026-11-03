@@ -351,5 +351,99 @@
       "Schilder"
     ],
     "zeiten": "Ab Sonnenuntergang (Nov. ca. 16:45) bis ca. 23 Uhr – blaue Stunde zuerst"
+  },
+  {
+    "id": "film-k-koshigoe",
+    "name": "Enoden auf der Straße (Koshigoe)",
+    "nameJa": "江ノ電 腰越 併用軌道",
+    "lat": 35.30985,
+    "lng": 139.49145,
+    "station": "Enoshima / Koshigoe",
+    "beschreibung": "Zwischen den Bahnhöfen Enoshima und Koshigoe fährt die Enoden mitten auf der Straße zwischen Autos und kleinen Läden – einmalig in der Gegend.",
+    "kamera": "Vom Gehweg aus die Bahn frontal auf dich zukommen lassen (sicher am Rand stehen!), dann mitschwenken. Zur blauen Stunde leuchten Scheinwerfer und Läden – schöner Kontrast. Etwa alle 6 Minuten kommt eine Bahn.",
+    "tags": [
+      "Bahn",
+      "Straße"
+    ],
+    "zeiten": "Am schönsten zur blauen Stunde (ca. 16:45–17:15)"
+  },
+  {
+    "id": "film-k-kokomae",
+    "name": "Bahnübergang Kamakura-Kōkōmae",
+    "nameJa": "鎌倉高校前 踏切",
+    "lat": 35.30695,
+    "lng": 139.50175,
+    "station": "Kamakura-Kōkōmae (Enoden)",
+    "beschreibung": "Bahnübergang direkt am Meer – Enoden, Strand und am Horizont Enoshima (bei klarem Wetter Fuji). Berühmt aus „Slam Dunk“, daher oft voll.",
+    "kamera": "Vom Gehweg am Hang (nicht auf der Straße stehen!) mit Teleblick über die Schienen aufs Meer. Sonnenuntergang über Enoshima gegen 16:40. Langsamer Schwenk vom Meer zum heranfahrenden Zug.",
+    "tags": [
+      "Meer",
+      "Sonnenuntergang",
+      "Anime"
+    ],
+    "zeiten": "Sonnenuntergang ca. 16:40"
+  },
+  {
+    "id": "film-k-goryo",
+    "name": "Enoden am Goryō-Schrein",
+    "nameJa": "御霊神社 江ノ電",
+    "lat": 35.31099,
+    "lng": 139.53279,
+    "station": "Hase (5 Min.)",
+    "beschreibung": "Die Enoden fährt direkt vor dem kleinen Schrein-Torii vorbei – klassisches Kamakura-Motiv, oft mit Fotografen.",
+    "kamera": "Statisch vom Torii aus filmen und den Zug durchs Bild fahren lassen – die Bahn bringt die Bewegung. Morgens weniger Leute.",
+    "tags": [
+      "Schrein",
+      "Bahn"
+    ],
+    "zeiten": "tagsüber"
+  },
+  {
+    "id": "film-k-gokurakuji",
+    "name": "Bahnhof Gokurakuji & Tunnel",
+    "nameJa": "極楽寺駅・極楽洞",
+    "lat": 35.30921,
+    "lng": 139.52867,
+    "station": "Gokurakuji (Enoden)",
+    "beschreibung": "Winziger Holzbahnhof wie aus einem alten Film, gleich daneben die rote Brücke über den Tunnel Gokurakudō, aus dem die Enoden auftaucht.",
+    "kamera": "Von der Brücke Sakurabashi aus auf den Tunneleingang filmen: erst die Lichter im Dunkeln, dann taucht der Zug auf. Bahnhofsschild und Laterne in der Dämmerung als Detail-Shots.",
+    "tags": [
+      "Retro",
+      "Bahnhof",
+      "Tunnel"
+    ],
+    "zeiten": "Dämmerung"
+  },
+  {
+    "id": "film-k-nakamise",
+    "name": "Enoshima: Gasse zum Schrein",
+    "nameJa": "江の島弁財天仲見世通り",
+    "lat": 35.30144,
+    "lng": 139.4807,
+    "station": "Enoshima / Katase-Enoshima",
+    "beschreibung": "Steile, enge Gasse mit Laternen, Andenkenläden und Grillständen vom Bronze-Torii hinauf zum Schrein. Abends schließen die Läden, die Laternen bleiben.",
+    "kamera": "Langsam die Gasse hinaufgehen, Kamera auf Brusthöhe, Torii und Laternen im Gegenlicht. Rauch der Tintenfisch-Grills wirkt wie Nebel.",
+    "tags": [
+      "Laternen",
+      "Gasse",
+      "Enoshima"
+    ],
+    "zeiten": "Dämmerung bis ca. 18 Uhr"
+  },
+  {
+    "id": "film-k-inamuragasaki",
+    "name": "Kap Inamuragasaki (Sonnenuntergang & Fuji)",
+    "nameJa": "稲村ヶ崎",
+    "lat": 35.3009,
+    "lng": 139.5236,
+    "station": "Inamuragasaki (Enoden, 5 Min.)",
+    "beschreibung": "Felsiges Kap mit Blick über die Bucht auf Enoshima und den Fuji – einer der schönsten Sonnenuntergangs-Spots der Gegend.",
+    "kamera": "Zeitraffer vom Sonnenuntergang bis zur blauen Stunde, Fuji-Silhouette und Lichter von Enoshima im Bild. Stativ oder Mauer als Stütze.",
+    "tags": [
+      "Sonnenuntergang",
+      "Fuji",
+      "Meer"
+    ],
+    "zeiten": "Sonnenuntergang ca. 16:40"
   }
 ]

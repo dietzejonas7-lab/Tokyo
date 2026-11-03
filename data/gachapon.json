@@ -124,5 +124,35 @@
       "Bandai",
       "Bahnhof"
     ]
+  },
+  {
+    "id": "gacha-k-omocha",
+    "name": "Kleiner Spielzeugladen (Gacha zum Aussuchen)",
+    "nameJa": "小さなおもちゃ屋さん（旧 ガチャガチャの杜）",
+    "lat": 35.32286,
+    "lng": 139.55299,
+    "beschreibung": "Besonderheit: Man sieht den Inhalt der Kapseln und sucht sich aus, welche man will – kein Glücksspiel! Eintritt symbolisch 10 ¥ für Spenden. Bis Juni 2026 hieß der Laden „Gachagacha no Mori“.",
+    "zeiten": "10:00–17:00",
+    "station": "Kamakura (Komachi-dōri)",
+    "tags": [
+      "Aussuchen",
+      "Kamakura"
+    ],
+    "adresse": "神奈川県鎌倉市雪ノ下1-5-33 2F"
+  },
+  {
+    "id": "gacha-k-gachadokoro",
+    "name": "Gacha-dokoro Kamakura",
+    "nameJa": "がちゃ処 鎌倉店",
+    "lat": 35.3242,
+    "lng": 139.55392,
+    "beschreibung": "Rund 200 Kapselautomaten an der Komachi-dōri – gut für eine Pause beim Bummeln.",
+    "zeiten": "tagsüber",
+    "station": "Kamakura (Komachi-dōri)",
+    "tags": [
+      "Gachapon",
+      "Kamakura"
+    ],
+    "adresse": "神奈川県鎌倉市雪ノ下1-8-20"
   }
 ]

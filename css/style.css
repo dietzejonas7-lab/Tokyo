@@ -1522,6 +1522,19 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hanabi-karte .btn.ghost { color: #fff8ef; border-color: rgba(255, 255, 255, 0.35); background: rgba(255, 255, 255, 0.06); padding: 8px 12px; font-size: 0.82rem; text-decoration: none; }
 .hb-quelle { margin: 0; font-size: 0.66rem; opacity: 0.6; }
 
+/* ---------- Ausflug Kamakura & Enoshima ---------- */
+#btn-region {
+  position: fixed; right: 14px; bottom: calc(env(safe-area-inset-bottom) + var(--dock-h) + 146px); z-index: 450;
+  width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; align-content: center; padding: 0;
+  border: 2px solid var(--tusche); color: #fff8ef;
+  background: linear-gradient(140deg, #3b6f8f, #23485f 70%);
+  box-shadow: 0 3px 0 var(--tusche), 0 6px 12px rgba(35, 72, 95, 0.3);
+  animation: popIn 0.6s 1.3s both var(--spring); transition: transform 0.2s var(--spring);
+}
+#btn-region span { font-family: var(--pinsel); font-size: 1.3rem; line-height: 1; }
+#btn-region small { font-family: var(--rund); font-size: 0.46rem; font-weight: 900; color: #cfe6f2; }
+#btn-region:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--tusche); }
+
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

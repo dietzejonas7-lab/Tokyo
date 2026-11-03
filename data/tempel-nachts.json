@@ -183,5 +183,63 @@
       "Koyo",
       "Ausflug"
     ]
+  },
+  {
+    "id": "nacht-k-kenchoji",
+    "name": "Kenchō-ji „ZEN NIGHT KAMAKURA“",
+    "nameJa": "建長寺 夜間拝観 ZEN NIGHT KAMAKURA",
+    "lat": 35.33245,
+    "lng": 139.55753,
+    "beschreibung": "Abendliche Sonderöffnung des großen Zen-Tempels: Spaziergang durch den beleuchteten Tempel mit Herbstlaub, Klang- und Lichtkunst, im Hōjō-Garten ein künstliches „Wolkenmeer“ aus Nebel. Tickets vorher online günstiger.",
+    "zeiten": "17:00–20:00 (letzter Einlass 19:30)",
+    "preis": "Mo–Fr 2.400 ¥ (Vorverkauf) / 2.900 ¥ · Sa/So/Feiertag 2.900 ¥ / 3.400 ¥",
+    "zeitraum": [
+      {
+        "von": "2026-10-29",
+        "bis": "2026-12-06"
+      }
+    ],
+    "geprueft": true,
+    "station": "Kita-Kamakura (15 Min.) / Kamakura (Bus)",
+    "tags": [
+      "Lichtkunst",
+      "Herbstlaub",
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Bericht mit Infos (japanisch)",
+        "url": "https://www.enjoytokyo.jp/news/205224/"
+      }
+    ]
+  },
+  {
+    "id": "nacht-k-hasedera",
+    "name": "Hase-dera – Herbst-Lightup",
+    "nameJa": "長谷寺 秋の夜間特別拝観・紅葉ライトアップ",
+    "lat": 35.31227,
+    "lng": 139.53331,
+    "beschreibung": "Kamakuras bekannteste Herbst-Beleuchtung: angestrahltes Herbstlaub, das sich in den Teichen spiegelt, und der Blick über das nächtliche Meer.",
+    "zeiten": "Sonnenuntergang–19:00 (Tor), Gelände bis 19:30",
+    "preis": "400 ¥",
+    "zeitraum": [
+      {
+        "von": "2026-11-21",
+        "bis": "2026-12-06"
+      }
+    ],
+    "geprueft": true,
+    "station": "Hase (Enoden, 5 Min.)",
+    "tags": [
+      "Lightup",
+      "Herbstlaub",
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://www.hasedera.jp/2026/10/23900/"
+      }
+    ]
   }
 ]

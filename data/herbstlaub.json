@@ -1680,5 +1680,406 @@
       "Ginkgo",
       "Uni"
     ]
+  },
+  {
+    "id": "laub-k-engakuji",
+    "name": "Engaku-ji (Kita-Kamakura)",
+    "nameJa": "円覚寺",
+    "lat": 35.33794,
+    "lng": 139.54782,
+    "beschreibung": "Einer der großen Zen-Tempel Kamakuras, direkt am Bahnhof Kita-Kamakura. Die Ahorne am Tor färben sich als eine der ersten in Kamakura; schöne Spiegelungen am Myōkō-Teich. Oben am Benten-dō hängt eine Glocke, die Nationalschatz ist – daneben ein Teehaus mit Matcha und Dango.",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kita-Kamakura (1 Min.)",
+    "laub": {
+      "beginn": "2026-10-22",
+      "von": "2026-11-11",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e322949/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-kenchoji",
+    "name": "Kenchō-ji",
+    "nameJa": "建長寺",
+    "lat": 35.33245,
+    "lng": 139.55753,
+    "beschreibung": "Ranghöchster der fünf großen Zen-Tempel Kamakuras. Das schönste Laub gibt es ganz hinten am Hansōbō (Treppen hoch, Blick bis zum Meer und bei gutem Wetter zum Fuji). Abends: „ZEN NIGHT KAMAKURA“ (siehe Tempel bei Nacht).",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kita-Kamakura (15 Min.)",
+    "laub": {
+      "beginn": "2026-10-22",
+      "von": "2026-11-11",
+      "bis": "2026-12-25",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e323198/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-meigetsuin",
+    "name": "Meigetsu-in",
+    "nameJa": "明月院",
+    "lat": 35.33491,
+    "lng": 139.55164,
+    "beschreibung": "Bekannt für das runde „Fenster der Erleuchtung“ mit Blick in den Garten. Nur zur Laubzeit wird der Garten hinter der Haupthalle geöffnet (extra Eintritt).",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kita-Kamakura (10 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e322957/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-jochiji",
+    "name": "Jōchi-ji",
+    "nameJa": "浄智寺",
+    "lat": 35.3334,
+    "lng": 139.54624,
+    "beschreibung": "Ruhiger Zen-Tempel mit moosigen Steinstufen und einer lachenden Hotei-Figur (Glück bringt es, ihren Bauch zu reiben). Das ganze Gelände färbt sich, auch das Laub am Boden ist hübsch.",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kita-Kamakura (8 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-25",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e322954/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-tsurugaoka",
+    "name": "Tsurugaoka Hachiman-gū",
+    "nameJa": "鶴岡八幡宮",
+    "lat": 35.32518,
+    "lng": 139.55618,
+    "beschreibung": "Kamakuras Hauptschrein am Ende der Komachi-dōri. Rotes Laub rund um den Genji-Teich und am großen Treppenaufgang.",
+    "preis": "frei",
+    "station": "Kamakura (10 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e154526/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-genjiyama",
+    "name": "Genjiyama-Park",
+    "nameJa": "源氏山公園",
+    "lat": 35.32648,
+    "lng": 139.54343,
+    "beschreibung": "Hügelpark mit Statue von Minamoto no Yoritomo, dem Gründer des Shogunats. Liegt am Wanderweg zum Großen Buddha – ideal zu verbinden mit Zeniarai-Benten und Sasuke-Inari.",
+    "preis": "frei",
+    "station": "Kamakura (30 Min. zu Fuß, bergauf)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e154533/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-kaizoji",
+    "name": "Kaizō-ji",
+    "nameJa": "海蔵寺",
+    "lat": 35.32886,
+    "lng": 139.54526,
+    "beschreibung": "Kleiner, stiller Tempel am Ende eines Tals – rote Ahorne vor alten Holzgebäuden, kaum Touristen.",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kamakura (20 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e322484/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-hasedera",
+    "name": "Hase-dera",
+    "nameJa": "長谷寺",
+    "lat": 35.31227,
+    "lng": 139.53331,
+    "beschreibung": "Kannon-Tempel am Hang mit Blick auf die Bucht. Das Laub spiegelt sich in zwei Teichen. Abends „Lightup“ vom 21.11. bis 6.12. (siehe Tempel bei Nacht).",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Hase (Enoden, 5 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e322746/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-kakuonji",
+    "name": "Kakuon-ji",
+    "nameJa": "覚園寺",
+    "lat": 35.33114,
+    "lng": 139.56411,
+    "beschreibung": "Abgelegener Tempel von 1218 in einem stillen Tal: viele Ahorne, Laub zwischen Steinlaternen und alten Holzbauten. Besuch nur zu bestimmten Zeiten – vorher kurz prüfen.",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kamakura → Bus bis Daitōnomiya (+10 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e322485/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-zuisenji",
+    "name": "Zuisen-ji",
+    "nameJa": "瑞泉寺",
+    "lat": 35.32745,
+    "lng": 139.57512,
+    "beschreibung": "„Blumentempel“ am Ende eines Tals, das „Momiji-ga-yatsu“ (Ahorntal) heißt, mit berühmtem Felsengarten. Färbt sich spät – Höhepunkt erst ab Anfang/Mitte Dezember.",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kamakura → Bus bis Daitōnomiya (+15 Min.)",
+    "laub": {
+      "beginn": "2026-11-11",
+      "von": "2026-12-01",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e12674/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-kamakuragu",
+    "name": "Kamakura-gū",
+    "nameJa": "鎌倉宮",
+    "lat": 35.32593,
+    "lng": 139.56668,
+    "beschreibung": "Wenig besuchter Schrein: Zwei 150 Jahre alte Ahorne aus Kyoto bilden das „rote Dach“ (紅天井) über dem Platz. Lustig: Hier zerschlägt man ein Tontellerchen, um Pech loszuwerden.",
+    "preis": "frei",
+    "station": "Kamakura → Bus bis Daitōnomiya",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e372785/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-myohonji",
+    "name": "Myōhon-ji",
+    "nameJa": "妙本寺",
+    "lat": 35.31718,
+    "lng": 139.55723,
+    "beschreibung": "Ältester Tempel der Nichiren-Schule, versteckt im grünen Tal Hikigayatsu, nur 8 Min. vom Bahnhof – und trotzdem ruhig.",
+    "preis": "frei",
+    "station": "Kamakura (8 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-25",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e373068/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-ichijo",
+    "name": "Ichijō Ekan Sansō",
+    "nameJa": "一条恵観山荘",
+    "lat": 35.32045,
+    "lng": 139.57112,
+    "beschreibung": "Edles Teehaus eines Prinzen aus dem 17. Jh., 1959 aus Kyoto hierher versetzt (wichtiges Kulturgut). Das Laub färbt sich in Stufen von Gelb über Orange bis Rot; Café am Flüsschen.",
+    "preis": "Eintritt",
+    "station": "Kamakura → Bus bis Jōmyōji (+2 Min.)",
+    "laub": {
+      "beginn": "2026-10-22",
+      "von": "2026-11-11",
+      "bis": "2026-12-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e478572/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-hokokuji",
+    "name": "Hōkoku-ji (Bambustempel)",
+    "nameJa": "報国寺",
+    "lat": 35.31952,
+    "lng": 139.5689,
+    "beschreibung": "Berühmt für den Wald aus rund 2.000 Bambusstämmen mit kleinem Teehaus (Matcha im Bambus!). Im Herbst kommt rotes Laub dazu.",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kamakura → Bus bis Jōmyōji (+3 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e479749/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-jomyoji",
+    "name": "Jōmyō-ji",
+    "nameJa": "浄妙寺",
+    "lat": 35.32338,
+    "lng": 139.57132,
+    "beschreibung": "Einer der fünf großen Zen-Tempel Kamakuras; hohe Bäume färben sich rund um die kupfergedeckte Haupthalle. Im Teeraum Kisen-an gibt es Matcha mit Blick in den Garten.",
+    "preis": "Eintritt (meist 300–500 ¥)",
+    "station": "Kamakura → Bus bis Jōmyōji (+2 Min.)",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0314e481767/"
+      }
+    ]
+  },
+  {
+    "id": "laub-k-shishimai",
+    "name": "Shishimai-Tal (Wanderung)",
+    "nameJa": "獅子舞",
+    "lat": 35.33489,
+    "lng": 139.57528,
+    "beschreibung": "Geheimtipp für Wanderer: ein Waldtal, in dem Ginkgos den Boden gelb bedecken und Ahorne rot leuchten. Nur zu Fuß über den Tenen-Wanderweg erreichbar (ab Kamakura-gū ca. 30–40 Min., teils steil und matschig – gute Schuhe!). Färbt sich spät, meist erst Ende November/Anfang Dezember.",
+    "preis": "frei",
+    "station": "Kamakura → Bus bis Daitōnomiya, dann zu Fuß",
+    "laub": {
+      "beginn": "2026-11-01",
+      "von": "2026-11-21",
+      "bis": "2026-12-10",
+      "farbe": "gelb & rot"
+    },
+    "tags": [
+      "Kamakura",
+      "Wanderung"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E7%8D%85%E5%AD%90%E8%88%9E%20%E9%8E%8C%E5%80%89%20%E7%B4%85%E8%91%89"
+      }
+    ]
   }
 ]

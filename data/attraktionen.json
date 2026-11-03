@@ -274,5 +274,111 @@
       "Tempel",
       "Fotospot"
     ]
+  },
+  {
+    "id": "att-k-daibutsu",
+    "name": "Großer Buddha von Kamakura",
+    "nameJa": "鎌倉大仏（高徳院）",
+    "lat": 35.3165,
+    "lng": 139.53573,
+    "beschreibung": "Die 13 m hohe Bronzefigur aus dem 13. Jahrhundert sitzt seit einem Tsunami 1498 unter freiem Himmel. Für ein paar Yen extra kann man in den hohlen Buddha hineingehen.",
+    "zeiten": "ca. 8:00–17:00",
+    "preis": "300 ¥",
+    "station": "Hase (Enoden, 7 Min.)",
+    "tags": [
+      "Daibutsu",
+      "Kamakura"
+    ],
+    "adresse": "神奈川県鎌倉市長谷4-2-28"
+  },
+  {
+    "id": "att-k-seacandle",
+    "name": "Enoshima Sea Candle & Samuel-Cocking-Garten",
+    "nameJa": "江の島シーキャンドル・サムエル・コッキング苑",
+    "lat": 35.29976,
+    "lng": 139.47848,
+    "beschreibung": "Leuchtturm-Aussichtsturm ganz oben auf der Insel: 360°-Blick über die Sagami-Bucht, bei klarem Wetter mit Fuji. Sonnenuntergang im November ca. 16:40. Die große Winter-Illumination beginnt erst am 1.12.",
+    "zeiten": "ca. 9:00–20:00",
+    "preis": "Turm ca. 500–800 ¥",
+    "station": "Enoshima / Katase-Enoshima (20 Min. bergauf)",
+    "tags": [
+      "Aussicht",
+      "Fuji",
+      "Enoshima"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://enoshima-seacandle.com/"
+      }
+    ]
+  },
+  {
+    "id": "att-k-iwaya",
+    "name": "Enoshima-Höhlen (Iwaya)",
+    "nameJa": "江の島岩屋",
+    "lat": 35.2959,
+    "lng": 139.4742,
+    "beschreibung": "Vom Meer ausgewaschene Höhlen an der Rückseite der Insel: Man geht mit einer kleinen Kerze durch die dunklen Gänge. Davor ein Felsplateau am Meer mit Fuji-Blick.",
+    "zeiten": "ca. 9:00–17:00",
+    "preis": "ca. 500 ¥",
+    "station": "Enoshima (ca. 30 Min. über die Insel)",
+    "tags": [
+      "Höhle",
+      "Enoshima"
+    ]
+  },
+  {
+    "id": "att-k-enoaq",
+    "name": "Enoshima-Aquarium (Enoaq)",
+    "nameJa": "新江ノ島水族館",
+    "lat": 35.31007,
+    "lng": 139.47944,
+    "beschreibung": "Großes Aquarium direkt am Strand vor Enoshima – bekannt für seine Quallen-Halle und die Delfin-Show mit Meerblick.",
+    "zeiten": "ca. 9:00–17:00",
+    "station": "Katase-Enoshima (3 Min.)",
+    "tags": [
+      "Aquarium",
+      "Quallen",
+      "Enoshima"
+    ]
+  },
+  {
+    "id": "att-k-komachi",
+    "name": "Komachi-dōri",
+    "nameJa": "小町通り",
+    "lat": 35.32078,
+    "lng": 139.55196,
+    "beschreibung": "Kamakuras Einkaufs- und Naschstraße vom Bahnhof bis fast zum Hachiman-gū: Matcha-Eis, Senbei, Taiyaki, kleine Läden (auch Gachapon und ein Ghibli-Laden). Mittags sehr voll – früh oder ab ca. 17 Uhr ist es ruhiger.",
+    "zeiten": "Läden meist ca. 10:00–18:00",
+    "preis": "frei",
+    "station": "Kamakura (1 Min.)",
+    "tags": [
+      "Shopping",
+      "Streetfood",
+      "Kamakura"
+    ]
+  },
+  {
+    "id": "att-k-enoden",
+    "name": "Fahrt mit der Enoden",
+    "nameJa": "江ノ電",
+    "lat": 35.31895,
+    "lng": 139.55035,
+    "beschreibung": "Die kleine grüne Bahn von Kamakura nach Fujisawa (ca. 35 Min.) fährt zwischen Häusern, am Meer entlang und in Koshigoe sogar mitten auf der Straße. Tipp: Auf der Seite zum Meer (in Richtung Fujisawa links) sitzen. Mit der Tageskarte „Noriori-kun“ kann man beliebig aussteigen.",
+    "zeiten": "ca. alle 12 Min.",
+    "preis": "Tageskarte „Noriori-kun“ ca. 800 ¥",
+    "station": "Kamakura / Fujisawa",
+    "tags": [
+      "Bahn",
+      "Meer",
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "Enoden (offizielle Seite)",
+        "url": "https://www.enoden.co.jp/"
+      }
+    ]
   }
 ]

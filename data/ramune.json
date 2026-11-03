@@ -154,5 +154,26 @@
         "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E6%96%B0%E5%AE%BF%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA%E5%BA%97"
       }
     ]
+  },
+  {
+    "id": "ramune-k-nakamuraya",
+    "name": "Nakamura-ya Café (Enoshima)",
+    "nameJa": "中村屋羊羹店 茶房（江の島）",
+    "lat": 35.29951,
+    "lng": 139.47769,
+    "beschreibung": "🟡 Altes Yōkan-Geschäft oben auf Enoshima mit kleinem Café: Laut Café-Karte gibt es Ramune als Getränk zum Süßen-Set. Auf dem Weg zur Sea Candle.",
+    "zeiten": "tagsüber",
+    "station": "Enoshima (20 Min. bergauf)",
+    "tags": [
+      "🟡 Vielleicht",
+      "Café",
+      "Enoshima"
+    ],
+    "links": [
+      {
+        "titel": "Café-Seite",
+        "url": "https://www.noriyoukan.com/cafe/"
+      }
+    ]
   }
 ]
