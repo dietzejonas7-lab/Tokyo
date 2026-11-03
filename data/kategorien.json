@@ -50,6 +50,16 @@
     "beschreibung": "Auffällige Mode: Anime, Gothic, Punk, japanische Designs – plus zeitlich begrenzte Pop-up-Shops."
   },
   {
+    "id": "raeucherstaebchen",
+    "name": "Räucherstäbchen",
+    "icon": "🪔",
+    "farbe": "#8a6d9e",
+    "datei": "raeucherstaebchen.json",
+    "beschreibung": "Läden mit großer Auswahl an Räucherstäbchen (お香, „Okō“) – von alten Traditionshäusern bis zum Riesenladen mit 5.000 Sorten.",
+    "bildersuche": "お香 専門店",
+    "gruppe": "shoppen"
+  },
+  {
     "id": "flohmarkt",
     "name": "Flohmärkte",
     "icon": "🏺",

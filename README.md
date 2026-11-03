@@ -10,6 +10,7 @@ Deine persönliche Tokio-Karte für den **1.–25. November 2026**. Die App läu
 | 💎 | Premium-Figuren | Hochwertige Figuren & Statuen: Prime 1 Studio, Tamashii Nations, Kotobukiya, Kaiyodo … |
 | 🧸 | Gachapon | Kapselautomaten-Läden – vom Rekord-Laden in Ikebukuro bis Akihabara |
 | 🧁 | Squishys | Squishy-Läden (スクイーズ), vor allem in Harajuku – mit Öffnungszeiten, Nummernzettel- & Reservierungs-Hinweisen |
+| 🪔 | Räucherstäbchen | Läden mit großer Auswahl an Räucherstäbchen (お香) – Kōgen (5.000 Sorten), Kōju, Kyūkyodō, Kitō Tenkundō in Kamakura |
 | 👕 | Mode & Merch | Auffällige Mode (Anime, Gothic, Punk, japanische Designs) und zeitlich begrenzte Pop-up-Shops |
 | 🏺 | Flohmärkte | Antik- und Flohmärkte, **gefiltert nach dem gewählten Tag** |
 | ✨ | Illuminationen | Lichter-Events, **gefiltert nach dem gewählten Tag** |

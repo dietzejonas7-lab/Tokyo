@@ -1,0 +1,168 @@
+[
+  {
+    "id": "kou-kogen-ginza",
+    "name": "Kōgen Ginza (Hauptladen)",
+    "nameJa": "香源 銀座本店",
+    "lat": 35.66913,
+    "lng": 139.76863,
+    "beschreibung": "Die größte Auswahl: über 4.000 Sorten von vielen Herstellern (Nippon Kōdō, Shōyeidō, Kyūkyodō, Baieidō, Gyokushōdō …) – von edlem Sandelholz und Adlerholz (Jinkō) bis zu modernen Duftstäbchen wie Blumen, Tee oder Früchte. Gut für Anfänger: ein Probierset mit 20 Sorten. Es gibt auch Kurse, in denen man selbst Räucherwerk oder Duftsäckchen macht.",
+    "zeiten": "10:17–19:17",
+    "adresse": "東京都中央区銀座4-14-15",
+    "station": "Higashi-Ginza",
+    "tags": [
+      "Riesenauswahl",
+      "Probierset",
+      "Kurse"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://okoh.co.jp/shop/ginza/"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%BA%90%20%E9%8A%80%E5%BA%A7%E6%9C%AC%E5%BA%97"
+      }
+    ]
+  },
+  {
+    "id": "kou-kogen-ueno",
+    "name": "Kōgen Ueno",
+    "nameJa": "香源 上野店",
+    "lat": 35.72069,
+    "lng": 139.76968,
+    "beschreibung": "Zweiter großer Kōgen-Laden mit über 5.000 Sorten: eine Ecke für klassische Hölzer (Kyara, Jinkō, Sandelholz) und eine für moderne Düfte. Liegt im ruhigen Altstadtviertel Yanaka – gut mit einem Spaziergang durch Yanaka verbinden.",
+    "zeiten": "9:17–18:17",
+    "adresse": "東京都台東区上野桜木1-10-16",
+    "station": "Nezu (7 Min.) / Nippori / Ueno",
+    "tags": [
+      "Riesenauswahl",
+      "Yanaka"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite",
+        "url": "https://okoh.co.jp/shop/uenosakuragi/"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%BA%90%20%E4%B8%8A%E9%87%8E%E5%BA%97"
+      }
+    ]
+  },
+  {
+    "id": "kou-koju-ginza",
+    "name": "Kōju Ginza (Hauptladen)",
+    "nameJa": "香十 銀座本店",
+    "lat": 35.67102,
+    "lng": 139.76726,
+    "beschreibung": "Einer der ältesten Räucherwerk-Hersteller Japans (über 440 Jahre, früher Lieferant des Kaiserhofs). Klassische Räucherstäbchen, Duftsäckchen und Hölzer, aber auch zarte Blumendüfte wie Kinmokusei (Duftblüte). Man kann „Kōdō“ (Duft-Zeremonie) ausprobieren. Tax-free.",
+    "zeiten": "11:00–19:00",
+    "adresse": "東京都中央区銀座4-9-1 B1F",
+    "station": "Ginza / Higashi-Ginza",
+    "tags": [
+      "Traditionshaus",
+      "Kōdō",
+      "Tax-free"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite (Läden)",
+        "url": "https://www.koju.co.jp/shoplist.html"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%8D%81%20%E9%8A%80%E5%BA%A7%E6%9C%AC%E5%BA%97"
+      }
+    ]
+  },
+  {
+    "id": "kou-koju-tokyo",
+    "name": "Kōju Tokyo (Bahnhof Tokyo, Yaesu-Untergrund)",
+    "nameJa": "香十 東京（八重洲地下街）",
+    "lat": 35.67986,
+    "lng": 139.76961,
+    "beschreibung": "Kleiner Kōju-Laden in der Einkaufspassage unter dem Bahnhof Tokyo (Yaesu-Seite) – praktisch, weil nah am Hotel und lange offen. Gut für Mitbringsel. Tax-free.",
+    "zeiten": "10:00–20:00",
+    "adresse": "東京都中央区八重洲2-1 八重洲地下街 中2号（八重洲地下1番通り）",
+    "station": "Tokyo (Yaesu)",
+    "tags": [
+      "Nah am Hotel",
+      "Tax-free"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite (Läden)",
+        "url": "https://www.koju.co.jp/shoplist.html"
+      }
+    ]
+  },
+  {
+    "id": "kou-koju-shibuya",
+    "name": "Kōju Shibuya (Hikarie)",
+    "nameJa": "香十 渋谷（渋谷ヒカリエShinQs 5F）",
+    "lat": 35.65927,
+    "lng": 139.70396,
+    "beschreibung": "Kōju-Laden im Kaufhaus Shibuya Hikarie, 5. Stock – direkt am Bahnhof Shibuya. Tax-free.",
+    "zeiten": "11:00–21:00 (So & Feiertag bis 20:00)",
+    "adresse": "東京都渋谷区渋谷2-21-1 渋谷ヒカリエShinQs 5F",
+    "station": "Shibuya",
+    "tags": [
+      "Kaufhaus",
+      "Tax-free"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite (Läden)",
+        "url": "https://www.koju.co.jp/shoplist.html"
+      }
+    ]
+  },
+  {
+    "id": "kou-kyukyodo",
+    "name": "Kyūkyodō Ginza",
+    "nameJa": "東京鳩居堂 銀座本店",
+    "lat": 35.67109,
+    "lng": 139.76468,
+    "beschreibung": "Berühmtes Traditionshaus (seit 1663) mitten in Ginza: Räucherstäbchen nach alten Rezepten, Duftsäckchen und Räucherkegel – dazu wunderschönes Washi-Papier, Pinsel und Grußkarten. Ideal für Geschenke.",
+    "zeiten": "11:00–19:00",
+    "adresse": "東京都中央区銀座5-7-4",
+    "station": "Ginza (1 Min.)",
+    "tags": [
+      "Traditionshaus",
+      "Washi",
+      "Geschenke"
+    ],
+    "links": [
+      {
+        "titel": "Offizielle Seite (Läden)",
+        "url": "https://kyukyodo.co.jp/shop/"
+      },
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%B3%A9%E5%B1%85%E5%A0%82%20%E9%8A%80%E5%BA%A7%E6%9C%AC%E5%BA%97"
+      }
+    ]
+  },
+  {
+    "id": "kou-kitotenkundo",
+    "name": "Kitō Tenkundō (Kamakura)",
+    "nameJa": "香司 鬼頭天薫堂",
+    "lat": 35.32344,
+    "lng": 139.55335,
+    "beschreibung": "Räucherwerk-Fachladen in Kamakura mit eigenen Mischungen: Räucherstäbchen, Räucherpaste, Duftsäckchen, Räuchergefäße und japanische Kerzen. Vor dem Laden duftet schon der „Duft des Tages“.",
+    "zeiten": "10:00–18:00",
+    "adresse": "神奈川県鎌倉市雪ノ下1-7-5",
+    "station": "Kamakura (7 Min.)",
+    "tags": [
+      "Eigene Mischungen",
+      "Kamakura"
+    ],
+    "links": [
+      {
+        "titel": "In Google Maps öffnen",
+        "url": "https://www.google.com/maps/search/?api=1&query=%E9%AC%BC%E9%A0%AD%E5%A4%A9%E8%96%AB%E5%A0%82%20%E9%8E%8C%E5%80%89"
+      }
+    ]
+  }
+]
