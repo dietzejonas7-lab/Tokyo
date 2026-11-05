@@ -909,32 +909,35 @@ function hotelMarkerSetzen() {
     .on("click", () => sheetOeffnen(HOTEL))
     .addTo(map);
 }
-/* ---------- Ausflug Kamakura & Enoshima: schnell zwischen den Gegenden springen ---------- */
-const KAMAKURA = { grenzen: [[35.295, 139.47], [35.342, 139.58]], zeichen: "鎌", name: "Kamakura" };
-const TOKIO_ZURUECK = { zeichen: "東", name: "Tokio" };
+/* ---------- Ausflüge: schnell zwischen Tokio, Kamakura/Enoshima und Nikkō springen ---------- */
+const REGIONEN = {
+  tokio: { name: "Tokio", hinweis: "🗼 Zurück nach Tokio" },
+  kamakura: { name: "Kamakura & Enoshima", grenzen: [[35.295, 139.47], [35.342, 139.58]], hinweis: "⛩️ Kamakura & Enoshima – alle Kategorien gelten auch hier" },
+  nikko: { name: "Nikkō", grenzen: [[36.72, 139.42], [36.87, 139.73]], kategorie: "herbstlaub", hinweis: "🍁 Nikkō – Herbstlaub mit Live-Stand (unten in der Detail-Karte)" },
+};
 
-/** Liegt die Kartenmitte gerade im Raum Kamakura/Enoshima (südwestlich von Yokohama)? */
-function inKamakura() {
+/** In welcher Gegend liegt die Kartenmitte gerade? */
+function regionJetzt() {
   const m = map.getCenter();
-  return m.lat < 35.4 && m.lng < 139.62;
+  if (m.lat > 36.4) return "nikko";
+  if (m.lat < 35.4 && m.lng < 139.62) return "kamakura";
+  return "tokio";
 }
 
-function regionKnopfSetzen() {
-  const ziel = inKamakura() ? TOKIO_ZURUECK : KAMAKURA;
-  const knopf = $("#btn-region");
-  knopf.querySelector("span").textContent = ziel.zeichen;
-  knopf.querySelector("small").textContent = ziel.name;
-  knopf.setAttribute("aria-label", `Karte nach ${ziel.name}`);
+function regionMenuUmschalten(offen = $("#region-menu").hidden) {
+  const menu = $("#region-menu");
+  menu.hidden = !offen;
+  if (offen) menu.querySelectorAll("[data-region]").forEach((b) => b.classList.toggle("on", b.dataset.region === regionJetzt()));
 }
 
-function regionWechseln() {
-  if (inKamakura()) {
-    map.flyTo([START_ANSICHT.lat, START_ANSICHT.lng], START_ANSICHT.zoom, { duration: 1.6 });
-    toast("🗼 Zurück nach Tokio");
-  } else {
-    map.flyToBounds(KAMAKURA.grenzen, { duration: 1.6, padding: [10, 10] });
-    toast("⛩️ Kamakura & Enoshima – alle Kategorien gelten auch hier");
-  }
+function regionWechseln(id) {
+  const r = REGIONEN[id];
+  regionMenuUmschalten(false);
+  if (r.grenzen) map.flyToBounds(r.grenzen, { duration: 1.6, padding: [10, 10] });
+  else map.flyTo([START_ANSICHT.lat, START_ANSICHT.lng], START_ANSICHT.zoom, { duration: 1.6 });
+  // Nikkō gibt es nur fürs Herbstlaub – die Kategorie also sicher einschalten
+  if (r.kategorie && !state.aktiv.has(r.kategorie)) { state.aktiv.add(r.kategorie); katGespeichert(); markerZeichnen(); }
+  toast(r.hinweis);
 }
 
 function zumHotel() {
@@ -1905,9 +1908,9 @@ function ereignisseVerbinden() {
   $("#show-all").onchange = (ev) => { state.alleZeigen = ev.target.checked; datumAnzeigen(); markerZeichnen(); };
   $("#btn-locate").onclick = standortSuchen;
   $("#btn-hotel").onclick = zumHotel;
-  $("#btn-region").onclick = regionWechseln;
-  map.on("moveend", regionKnopfSetzen);
-  regionKnopfSetzen();
+  $("#btn-region").onclick = (ev) => { ev.stopPropagation(); regionMenuUmschalten(); };
+  $("#region-menu").onclick = (ev) => { const b = ev.target.closest("[data-region]"); if (b) regionWechseln(b.dataset.region); };
+  document.addEventListener("click", (ev) => { if (!ev.target.closest("#region-menu")) regionMenuUmschalten(false); });
   $("#btn-gyoza").onclick = () => GyozaRadar.oeffnen();
   $("#radar-wahl").onclick = (ev) => { const b = ev.target.closest("[data-zentrum]"); if (b) GyozaRadar.zentrumWaehlen(b.dataset.zentrum); };
   $("#radar-touri").onclick = () => {

@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Maru+Gothic:wght@500;700;900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=48">
+  <link rel="stylesheet" href="css/style.css?v=49">
 </head>
 <body>
 
@@ -241,7 +241,12 @@
   <!-- Schnell zum Hotel (immer da) -->
   <button id="btn-hotel" aria-label="Zum Hotel"><span>宿</span><small>Hotel</small></button>
   <!-- Ausflug: Tokio ↔ Kamakura & Enoshima -->
-  <button id="btn-region" aria-label="Karte nach Kamakura"><span>鎌</span><small>Kamakura</small></button>
+  <button id="btn-region" aria-label="Ausflüge: Tokio, Kamakura, Nikkō"><span>旅</span><small>Ausflug</small></button>
+  <div id="region-menu" hidden>
+    <button data-region="tokio"><b>東</b><span>Tokio</span></button>
+    <button data-region="kamakura"><b>鎌</b><span>Kamakura & Enoshima<small>alle Kategorien</small></span></button>
+    <button data-region="nikko"><b>日</b><span>Nikkō<small>nur Herbstlaub · Live-Stand</small></span></button>
+  </div>
   <!-- Gyoza-Radar -->
   <button id="btn-gyoza" aria-label="Gyoza-Radar öffnen"><span>🥟</span><small>Radar</small></button>
   <div class="modal unten" id="radar-modal" aria-hidden="true">
@@ -274,11 +279,11 @@
   <script src="lib/maplibre/leaflet-maplibre-gl.js"></script>
   <script src="lib/markercluster/leaflet.markercluster.js"></script>
   <!-- Unsere App -->
-  <script src="js/klang.js?v=48"></script>
-  <script src="js/fotos.js?v=48"></script>
-  <script src="js/effekte.js?v=48"></script>
-  <script src="js/szenen.js?v=48"></script>
-  <script src="js/wetter.js?v=48"></script>
-  <script src="js/app.js?v=48"></script>
+  <script src="js/klang.js?v=49"></script>
+  <script src="js/fotos.js?v=49"></script>
+  <script src="js/effekte.js?v=49"></script>
+  <script src="js/szenen.js?v=49"></script>
+  <script src="js/wetter.js?v=49"></script>
+  <script src="js/app.js?v=49"></script>
 </body>
 </html>

@@ -2081,5 +2081,330 @@
         "url": "https://www.google.com/maps/search/?api=1&query=%E7%8D%85%E5%AD%90%E8%88%9E%20%E9%8E%8C%E5%80%89%20%E7%B4%85%E8%91%89"
       }
     ]
+  },
+  {
+    "id": "laub-n-shaji",
+    "name": "Nikkō Tōshō-gū & Welterbe-Tempel",
+    "nameJa": "日光の社寺（東照宮・輪王寺・二荒山神社）",
+    "lat": 36.75764,
+    "lng": 139.59911,
+    "beschreibung": "Die prachtvollen Welterbe-Schreine und -Tempel (Tōshō-gū mit den drei Affen, Rinnō-ji, Futarasan-Schrein) im Zedernwald – rundherum rote und gelbe Ahorne. Gleich unten die rote Brücke Shinkyō. Der tiefstgelegene Laub-Spot in Nikkō, daher am spätesten bunt.",
+    "preis": "Eintritt je Tempel/Schrein",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Shinkyō (5 Min.)",
+    "laub": {
+      "beginn": "2026-10-12",
+      "von": "2026-11-01",
+      "bis": "2026-11-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e13068/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-kanmangafuchi",
+    "name": "Kanmangafuchi-Schlucht",
+    "nameJa": "憾満ヶ淵",
+    "lat": 36.74903,
+    "lng": 139.58835,
+    "beschreibung": "Kleine Lavaschlucht am Fluss Daiya mit rund 70 Stein-Jizō mit roten Mützen – angeblich zählt man jedes Mal eine andere Zahl („Bake-Jizō“). Ruhig, nur 20 Min. zu Fuß vom Tōshō-gū.",
+    "preis": "frei",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Anzawa-chō (+20 Min.)",
+    "laub": {
+      "beginn": "2026-10-12",
+      "von": "2026-11-01",
+      "bis": "2026-11-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e415865/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-botanik",
+    "name": "Botanischer Garten Nikkō (Uni Tokio)",
+    "nameJa": "日光植物園",
+    "lat": 36.75113,
+    "lng": 139.58422,
+    "beschreibung": "Botanischer Garten der Universität Tokio direkt neben Kanmangafuchi: Ahorne, Katsura und Buchen färben sich nacheinander – in den letzten Jahren am schönsten Anfang November.",
+    "preis": "Eintritt",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Nikkō Shokubutsuen",
+    "laub": {
+      "beginn": "2026-10-12",
+      "von": "2026-11-01",
+      "bis": "2026-11-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e393038/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-kirifuri",
+    "name": "Kirifuri-Wasserfall",
+    "nameJa": "霧降ノ滝",
+    "lat": 36.78022,
+    "lng": 139.62379,
+    "beschreibung": "Einer der drei berühmten Wasserfälle Nikkōs: zwei Stufen, zusammen 75 m, vom Aussichtspunkt sieht man den ganzen Fall im bunten Wald (schon der Holzschnitt-Künstler Hokusai hat ihn gemalt).",
+    "preis": "frei",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Kirifuri-no-taki (+10 Min.)",
+    "laub": {
+      "beginn": "2026-10-01",
+      "von": "2026-10-21",
+      "bis": "2026-11-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e12860/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-roppozawa",
+    "name": "Roppōzawa-Brücke (Kirifuri-Hochland)",
+    "nameJa": "霧降高原 六方沢橋",
+    "lat": 36.81643,
+    "lng": 139.58752,
+    "beschreibung": "Weiße Bogenbrücke 134 m über einem bunten Tal auf ca. 1.400 m Höhe, bei gutem Wetter Blick bis zum Berg Tsukuba. Am besten mit Auto/Taxi.",
+    "preis": "frei",
+    "station": "Auto/Taxi (Bus bis Kirifuri Kōgen + 40 Min. zu Fuß)",
+    "laub": {
+      "beginn": "2026-09-21",
+      "von": "2026-10-11",
+      "bis": "2026-10-31",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e12644/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-irohazaka",
+    "name": "Irohazaka-Serpentinen",
+    "nameJa": "いろは坂",
+    "lat": 36.73685,
+    "lng": 139.51733,
+    "beschreibung": "Bergstraße mit 48 Haarnadelkurven zwischen Nikkō und dem Chūzenji-See – der Bus fährt hindurch, das Laub sieht man vom Fenster (440 m Höhenunterschied, die Farben wandern nach unten). Achtung: Zur Laubzeit oft Stau.",
+    "preis": "frei",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus (Richtung Chūzenji)",
+    "laub": {
+      "beginn": "2026-09-21",
+      "von": "2026-10-11",
+      "bis": "2026-11-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e12983/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-chuzenji",
+    "name": "Chūzenji-See",
+    "nameJa": "中禅寺湖湖畔",
+    "lat": 36.7398,
+    "lng": 139.4995,
+    "beschreibung": "Bergsee auf 1.269 m Höhe unter dem Vulkan Nantai – buntes Ufer, Ausflugsschiffe; ganz in der Nähe der berühmte Kegon-Wasserfall (97 m).",
+    "preis": "frei",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Chūzenji Onsen (ca. 50 Min.)",
+    "laub": {
+      "beginn": "2026-09-21",
+      "von": "2026-10-11",
+      "bis": "2026-11-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e13029/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-italia",
+    "name": "Villa der italienischen Botschaft",
+    "nameJa": "イタリア大使館別荘記念公園",
+    "lat": 36.72535,
+    "lng": 139.48517,
+    "beschreibung": "Holzvilla von 1928 am Südufer des Chūzenji-Sees, in der früher die Botschafter Urlaub machten – Blick über den See durch rotes Laub.",
+    "preis": "Eintritt",
+    "station": "Chūzenji Onsen (+35 Min. zu Fuß)",
+    "laub": {
+      "beginn": "2026-09-21",
+      "von": "2026-10-11",
+      "bis": "2026-11-10",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e322751/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-ryuzu",
+    "name": "Ryūzu-Wasserfall",
+    "nameJa": "竜頭ノ滝",
+    "lat": 36.75694,
+    "lng": 139.44999,
+    "beschreibung": "210 m lange Kaskade, die sich unten wie ein Drachenkopf teilt – oben in Oku-Nikkō, färbt sich früh.",
+    "preis": "frei",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Ryūzu-no-taki (ca. 65 Min.)",
+    "laub": {
+      "beginn": "2026-09-11",
+      "von": "2026-10-01",
+      "bis": "2026-10-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e12972/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-senjogahara",
+    "name": "Senjōgahara-Hochmoor",
+    "nameJa": "戦場ヶ原",
+    "lat": 36.7807,
+    "lng": 139.4398,
+    "beschreibung": "Weites Hochmoor auf ca. 1.400 m mit Holzstegen – im Herbst goldenes Gras vor den Bergen. Färbt sich als eines der ersten.",
+    "preis": "frei",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Sanbonmatsu (ca. 70 Min.)",
+    "laub": {
+      "beginn": "2026-09-21",
+      "von": "2026-10-11",
+      "bis": "2026-10-31",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e13028/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-yunoko",
+    "name": "Yu-no-ko-See (Yumoto Onsen)",
+    "nameJa": "湯ノ湖",
+    "lat": 36.80059,
+    "lng": 139.4237,
+    "beschreibung": "Kleiner Bergsee am Ende des Tals beim Thermalort Yumoto, Rundweg ca. 1 Std. Ganz oben – das Laub ist hier am frühesten vorbei.",
+    "preis": "frei",
+    "station": "Tōbu-Nikkō / JR Nikkō → Bus bis Yumoto Onsen (ca. 85 Min.)",
+    "laub": {
+      "beginn": "2026-09-11",
+      "von": "2026-10-01",
+      "bis": "2026-10-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e12908/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-ryuokyo",
+    "name": "Ryūō-kyō-Schlucht",
+    "nameJa": "龍王峡",
+    "lat": 36.86327,
+    "lng": 139.71374,
+    "beschreibung": "Schlucht des Kinu-Flusses mit bizarren Felsen („Drachenkönig“) – Wanderweg direkt am Bahnhof Ryūōkyō, zwischen Kinugawa und Kawaji Onsen.",
+    "preis": "frei",
+    "station": "Ryūōkyō (Yagan-Bahn, direkt am Bahnhof)",
+    "laub": {
+      "beginn": "2026-10-01",
+      "von": "2026-10-21",
+      "bis": "2026-11-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e12866/"
+      }
+    ]
+  },
+  {
+    "id": "laub-n-tateiwa",
+    "name": "Kinu-Tateiwa-Hängebrücke",
+    "nameJa": "鬼怒楯岩大吊橋",
+    "lat": 36.82069,
+    "lng": 139.70841,
+    "beschreibung": "140 m lange Fußgänger-Hängebrücke über den Kinu-Fluss im Thermalort Kinugawa – Rundumblick auf bunte Berge.",
+    "preis": "frei",
+    "station": "Kinugawa-Onsen (12 Min.)",
+    "laub": {
+      "beginn": "2026-10-01",
+      "von": "2026-10-21",
+      "bis": "2026-11-20",
+      "farbe": "rot & gelb"
+    },
+    "tags": [
+      "Nikkō"
+    ],
+    "links": [
+      {
+        "titel": "Aktueller Laub-Stand (Walkerplus, japanisch)",
+        "url": "https://koyo.walkerplus.com/detail/ar0309e393044/"
+      }
+    ]
   }
 ]

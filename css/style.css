@@ -1534,6 +1534,21 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #btn-region span { font-family: var(--pinsel); font-size: 1.3rem; line-height: 1; }
 #btn-region small { font-family: var(--rund); font-size: 0.46rem; font-weight: 900; color: #cfe6f2; }
 #btn-region:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--tusche); }
+#region-menu {
+  position: fixed; right: 72px; bottom: calc(env(safe-area-inset-bottom) + var(--dock-h) + 120px); z-index: 460;
+  display: grid; gap: 6px; padding: 8px; border-radius: 18px; min-width: 210px;
+  background: var(--karte); border: 2px solid var(--tusche); box-shadow: 0 4px 0 var(--tusche), 0 10px 24px rgba(0, 0, 0, 0.2);
+  animation: popIn 0.35s both var(--spring); transform-origin: 100% 100%;
+}
+#region-menu[hidden] { display: none; }
+#region-menu button {
+  display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 12px; border: 1.5px solid transparent;
+  background: none; color: var(--text); text-align: left; font-family: var(--rund); font-weight: 800; font-size: 0.9rem;
+}
+#region-menu button b { font-family: var(--pinsel); font-size: 1.3rem; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; color: #fff8ef; background: #23485f; flex: none; }
+#region-menu button span { display: grid; }
+#region-menu button small { font-size: 0.68rem; font-weight: 700; color: var(--muted); }
+#region-menu button.on { border-color: var(--rand); background: color-mix(in srgb, #3b6f8f 12%, var(--karte)); }
 
 /* Weniger Bewegung, wenn das im Handy so eingestellt ist */
 @media (prefers-reduced-motion: reduce) {
